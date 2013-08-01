@@ -1,0 +1,92 @@
+\hypertarget{classRS__LayerListListener}{\section{R\-S\-\_\-\-Layer\-List\-Listener Class Reference}
+\label{classRS__LayerListListener}\index{R\-S\-\_\-\-Layer\-List\-Listener@{R\-S\-\_\-\-Layer\-List\-Listener}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-layerlistlistener.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Layer\-List\-Listener\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__LayerListListener}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classRS__LayerListListener_a09ebd52346c417fe0e82876cc0abc59e}{layer\-Activated} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$)
+\item 
+virtual void \hyperlink{classRS__LayerListListener_a0dcaa002205a13589a576eebc1723153}{layer\-Added} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$)
+\item 
+virtual void \hyperlink{classRS__LayerListListener_a1135bfb08284866a5ea1190213b3e761}{layer\-Removed} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$)
+\item 
+virtual void \hyperlink{classRS__LayerListListener_a6953aab6245c88b0bed2f25493522791}{layer\-Edited} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$)
+\item 
+virtual void \hyperlink{classRS__LayerListListener_a159ef2488a66a30c08b050e277083c25}{layer\-Toggled} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is an interface for classes that are interested in knowing about changes in the layer list. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__LayerListListener_a09ebd52346c417fe0e82876cc0abc59e}{\index{R\-S\-\_\-\-Layer\-List\-Listener@{R\-S\-\_\-\-Layer\-List\-Listener}!layer\-Activated@{layer\-Activated}}
+\index{layer\-Activated@{layer\-Activated}!RS_LayerListListener@{R\-S\-\_\-\-Layer\-List\-Listener}}
+\subsubsection[{layer\-Activated}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Layer\-List\-Listener\-::layer\-Activated (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__LayerListListener_a09ebd52346c417fe0e82876cc0abc59e}
+Called when the active layer changes. 
+
+Reimplemented in \hyperlink{classQG__LayerWidget_af67ac3c98b8f8dba926345677ce90f62}{Q\-G\-\_\-\-Layer\-Widget}, and \hyperlink{classQG__PenToolBar_abff89708b0d26081464a27c8f38b56c8}{Q\-G\-\_\-\-Pen\-Tool\-Bar}.
+
+\hypertarget{classRS__LayerListListener_a0dcaa002205a13589a576eebc1723153}{\index{R\-S\-\_\-\-Layer\-List\-Listener@{R\-S\-\_\-\-Layer\-List\-Listener}!layer\-Added@{layer\-Added}}
+\index{layer\-Added@{layer\-Added}!RS_LayerListListener@{R\-S\-\_\-\-Layer\-List\-Listener}}
+\subsubsection[{layer\-Added}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Layer\-List\-Listener\-::layer\-Added (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__LayerListListener_a0dcaa002205a13589a576eebc1723153}
+Called when a new layer is added to the list. 
+
+Reimplemented in \hyperlink{classQG__LayerWidget_afd491d7e1792632c1dab71329c258f96}{Q\-G\-\_\-\-Layer\-Widget}.
+
+\hypertarget{classRS__LayerListListener_a6953aab6245c88b0bed2f25493522791}{\index{R\-S\-\_\-\-Layer\-List\-Listener@{R\-S\-\_\-\-Layer\-List\-Listener}!layer\-Edited@{layer\-Edited}}
+\index{layer\-Edited@{layer\-Edited}!RS_LayerListListener@{R\-S\-\_\-\-Layer\-List\-Listener}}
+\subsubsection[{layer\-Edited}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Layer\-List\-Listener\-::layer\-Edited (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__LayerListListener_a6953aab6245c88b0bed2f25493522791}
+Called when a layer's attributes are modified. 
+
+Reimplemented in \hyperlink{classQG__LayerWidget_a4de9c38c5374cd79855e69b1bb1929d4}{Q\-G\-\_\-\-Layer\-Widget}, \hyperlink{classQG__GraphicView_aed4216bc22167b95c85449216fb65ae7}{Q\-G\-\_\-\-Graphic\-View}, and \hyperlink{classQG__PenToolBar_a588144d019d5967f447ff1cdf0b38bec}{Q\-G\-\_\-\-Pen\-Tool\-Bar}.
+
+\hypertarget{classRS__LayerListListener_a1135bfb08284866a5ea1190213b3e761}{\index{R\-S\-\_\-\-Layer\-List\-Listener@{R\-S\-\_\-\-Layer\-List\-Listener}!layer\-Removed@{layer\-Removed}}
+\index{layer\-Removed@{layer\-Removed}!RS_LayerListListener@{R\-S\-\_\-\-Layer\-List\-Listener}}
+\subsubsection[{layer\-Removed}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Layer\-List\-Listener\-::layer\-Removed (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__LayerListListener_a1135bfb08284866a5ea1190213b3e761}
+Called when a layer is removed from the list. 
+
+Reimplemented in \hyperlink{classQG__LayerWidget_ac11105df931565da55e7299121823706}{Q\-G\-\_\-\-Layer\-Widget}, and \hyperlink{classQG__GraphicView_a6d7ba9e543d82b5c58db6879f2b8139f}{Q\-G\-\_\-\-Graphic\-View}.
+
+\hypertarget{classRS__LayerListListener_a159ef2488a66a30c08b050e277083c25}{\index{R\-S\-\_\-\-Layer\-List\-Listener@{R\-S\-\_\-\-Layer\-List\-Listener}!layer\-Toggled@{layer\-Toggled}}
+\index{layer\-Toggled@{layer\-Toggled}!RS_LayerListListener@{R\-S\-\_\-\-Layer\-List\-Listener}}
+\subsubsection[{layer\-Toggled}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Layer\-List\-Listener\-::layer\-Toggled (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__LayerListListener_a159ef2488a66a30c08b050e277083c25}
+Called when a layer's visibility is toggled. 
+
+Reimplemented in \hyperlink{classQG__LayerWidget_a4b5b55580590c971dffff3b9707b6b23}{Q\-G\-\_\-\-Layer\-Widget}, and \hyperlink{classQG__GraphicView_a04fce7c5a094ee5e2c85efc1d4d6bf3c}{Q\-G\-\_\-\-Graphic\-View}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-layerlistlistener.\-h\end{DoxyCompactItemize}

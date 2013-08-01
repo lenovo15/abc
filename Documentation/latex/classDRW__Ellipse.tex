@@ -1,0 +1,71 @@
+\hypertarget{classDRW__Ellipse}{\section{D\-R\-W\-\_\-\-Ellipse Class Reference}
+\label{classDRW__Ellipse}\index{D\-R\-W\-\_\-\-Ellipse@{D\-R\-W\-\_\-\-Ellipse}}
+}
+
+
+Class to handle ellipse entity.  
+
+
+
+
+{\ttfamily \#include $<$drw\-\_\-entities.\-h$>$}
+
+Inheritance diagram for D\-R\-W\-\_\-\-Ellipse\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classDRW__Ellipse}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDRW__Ellipse_a7e271b176d81110b92931514bddb2e6d}{void {\bfseries parse\-Code} (int code, \hyperlink{classdxfReader}{dxf\-Reader} $\ast$reader)}\label{classDRW__Ellipse_a7e271b176d81110b92931514bddb2e6d}
+
+\item 
+\hypertarget{classDRW__Ellipse_a50db2835775020b469572519304e7f61}{void {\bfseries to\-Polyline} (\hyperlink{classDRW__Polyline}{D\-R\-W\-\_\-\-Polyline} $\ast$pol)}\label{classDRW__Ellipse_a50db2835775020b469572519304e7f61}
+
+\item 
+\hypertarget{classDRW__Ellipse_af51db505ca2482be027739a9be86ba3c}{void {\bfseries correct\-Axis} ()}\label{classDRW__Ellipse_af51db505ca2482be027739a9be86ba3c}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classDRW__Ellipse_a5f99577d5e97fa8e0d308a2ab52a2f95}{ratio}
+\item 
+double \hyperlink{classDRW__Ellipse_a8b9ca88b1d30755bdaa2de0e11116ede}{staparam}
+\item 
+double \hyperlink{classDRW__Ellipse_a69490d7e26d7c8fa602ef4a540b22d52}{endparam}
+\item 
+int \hyperlink{classDRW__Ellipse_a6a8cd9de5c300fde3c52c26daf66ac77}{isccw}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class to handle ellipse entity. 
+
+Class to handle ellipse and elliptic arc entity Note\-: start/end parameter are in radians for ellipse entity but for hatch boundary are in degrees \begin{DoxyAuthor}{Author}
+Rallaz 
+\end{DoxyAuthor}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classDRW__Ellipse_a69490d7e26d7c8fa602ef4a540b22d52}{\index{D\-R\-W\-\_\-\-Ellipse@{D\-R\-W\-\_\-\-Ellipse}!endparam@{endparam}}
+\index{endparam@{endparam}!DRW_Ellipse@{D\-R\-W\-\_\-\-Ellipse}}
+\subsubsection[{endparam}]{\setlength{\rightskip}{0pt plus 5cm}double D\-R\-W\-\_\-\-Ellipse\-::endparam}}\label{classDRW__Ellipse_a69490d7e26d7c8fa602ef4a540b22d52}
+end parameter, code 42, 2$\ast$\-P\-I for full ellipse \hypertarget{classDRW__Ellipse_a6a8cd9de5c300fde3c52c26daf66ac77}{\index{D\-R\-W\-\_\-\-Ellipse@{D\-R\-W\-\_\-\-Ellipse}!isccw@{isccw}}
+\index{isccw@{isccw}!DRW_Ellipse@{D\-R\-W\-\_\-\-Ellipse}}
+\subsubsection[{isccw}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-Ellipse\-::isccw}}\label{classDRW__Ellipse_a6a8cd9de5c300fde3c52c26daf66ac77}
+is counter clockwise arc?, only used in hatch, code 73 \hypertarget{classDRW__Ellipse_a5f99577d5e97fa8e0d308a2ab52a2f95}{\index{D\-R\-W\-\_\-\-Ellipse@{D\-R\-W\-\_\-\-Ellipse}!ratio@{ratio}}
+\index{ratio@{ratio}!DRW_Ellipse@{D\-R\-W\-\_\-\-Ellipse}}
+\subsubsection[{ratio}]{\setlength{\rightskip}{0pt plus 5cm}double D\-R\-W\-\_\-\-Ellipse\-::ratio}}\label{classDRW__Ellipse_a5f99577d5e97fa8e0d308a2ab52a2f95}
+ratio, code 40 \hypertarget{classDRW__Ellipse_a8b9ca88b1d30755bdaa2de0e11116ede}{\index{D\-R\-W\-\_\-\-Ellipse@{D\-R\-W\-\_\-\-Ellipse}!staparam@{staparam}}
+\index{staparam@{staparam}!DRW_Ellipse@{D\-R\-W\-\_\-\-Ellipse}}
+\subsubsection[{staparam}]{\setlength{\rightskip}{0pt plus 5cm}double D\-R\-W\-\_\-\-Ellipse\-::staparam}}\label{classDRW__Ellipse_a8b9ca88b1d30755bdaa2de0e11116ede}
+start parameter, code 41, 0.\-0 for full ellipse 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+libraries/libdxfrw/src/drw\-\_\-entities.\-h\item 
+libraries/libdxfrw/src/drw\-\_\-entities.\-cpp\end{DoxyCompactItemize}

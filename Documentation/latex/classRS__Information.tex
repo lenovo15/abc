@@ -1,0 +1,275 @@
+\hypertarget{classRS__Information}{\section{R\-S\-\_\-\-Information Class Reference}
+\label{classRS__Information}\index{R\-S\-\_\-\-Information@{R\-S\-\_\-\-Information}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-information.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__Information_af7774f0cac8222df7d619d02e23c2098}{R\-S\-\_\-\-Information} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&entity\-Container)
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Information_a567a84e4695b290572828d4ecb6536a8}{get\-Nearest\-Endpoint} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&point, double $\ast$dist=N\-U\-L\-L) const 
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Information_a8a16ce644c16d3a5863728676f1ef3cf}{get\-Nearest\-Point\-On\-Entity} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&point, bool on\-Entity=true, double $\ast$dist=N\-U\-L\-L, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$$\ast$entity=N\-U\-L\-L) const 
+\item 
+\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$ \hyperlink{classRS__Information_a7b07a51e06cb8eeaa535ed1e4f25e0a5}{get\-Nearest\-Entity} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&point, double $\ast$dist=N\-U\-L\-L, \hyperlink{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20}{R\-S2\-::\-Resolve\-Level} level=\hyperlink{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20a2a4a53124bbf724f5f486e1066d99a74}{R\-S2\-::\-Resolve\-All}) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classRS__Information_a4ae006c6261e540a3e094d79329d031a}{is\-Dimension} (\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6a}{R\-S2\-::\-Entity\-Type} type)
+\item 
+static bool \hyperlink{classRS__Information_a54b779dbf677839b49ae94051429e191}{is\-Trimmable} (\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$e)
+\item 
+static bool \hyperlink{classRS__Information_ab5639e539443c3a7119180c961c8b8e6}{is\-Trimmable} (\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$e1, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$e2)
+\item 
+static \hyperlink{classRS__VectorSolutions}{R\-S\-\_\-\-Vector\-Solutions} \hyperlink{classRS__Information_af800c2fc40442c9dc3823a26393741e4}{get\-Intersection} (\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$e1, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$e2, bool on\-Entities=false)
+\item 
+static \hyperlink{classRS__VectorSolutions}{R\-S\-\_\-\-Vector\-Solutions} \hyperlink{classRS__Information_acf067ec9822ee209484176c882558182}{get\-Intersection\-Line\-Line} (\hyperlink{classRS__Line}{R\-S\-\_\-\-Line} $\ast$e1, \hyperlink{classRS__Line}{R\-S\-\_\-\-Line} $\ast$e2)
+\item 
+static \hyperlink{classRS__VectorSolutions}{R\-S\-\_\-\-Vector\-Solutions} \hyperlink{classRS__Information_af8076e33fda55f3f0ef55773c4282f73}{get\-Intersection\-Line\-Arc} (\hyperlink{classRS__Line}{R\-S\-\_\-\-Line} $\ast$line, \hyperlink{classRS__Arc}{R\-S\-\_\-\-Arc} $\ast$arc)
+\item 
+static \hyperlink{classRS__VectorSolutions}{R\-S\-\_\-\-Vector\-Solutions} \hyperlink{classRS__Information_a6f23afa351e5e5e8bc906c23f884b8c3}{get\-Intersection\-Arc\-Arc} (\hyperlink{classRS__Arc}{R\-S\-\_\-\-Arc} $\ast$e1, \hyperlink{classRS__Arc}{R\-S\-\_\-\-Arc} $\ast$e2)
+\item 
+\hypertarget{classRS__Information_a08ac773c3b934353df901ae379cc69c2}{static \hyperlink{classRS__VectorSolutions}{R\-S\-\_\-\-Vector\-Solutions} {\bfseries get\-Intersection\-Ellipse\-Ellipse} (\hyperlink{classRS__Ellipse}{R\-S\-\_\-\-Ellipse} $\ast$e1, \hyperlink{classRS__Ellipse}{R\-S\-\_\-\-Ellipse} $\ast$e2)}\label{classRS__Information_a08ac773c3b934353df901ae379cc69c2}
+
+\item 
+\hypertarget{classRS__Information_ab600a152a9f0cb2b547c9f3b96df05f4}{static \hyperlink{classRS__VectorSolutions}{R\-S\-\_\-\-Vector\-Solutions} {\bfseries get\-Intersection\-Arc\-Ellipse} (\hyperlink{classRS__Arc}{R\-S\-\_\-\-Arc} $\ast$e1, \hyperlink{classRS__Ellipse}{R\-S\-\_\-\-Ellipse} $\ast$e2)}\label{classRS__Information_ab600a152a9f0cb2b547c9f3b96df05f4}
+
+\item 
+\hypertarget{classRS__Information_abefb274bc3cc063a99e40d72a0dc6c57}{static \hyperlink{classRS__VectorSolutions}{R\-S\-\_\-\-Vector\-Solutions} {\bfseries get\-Intersection\-Circle\-Ellipse} (\hyperlink{classRS__Circle}{R\-S\-\_\-\-Circle} $\ast$e1, \hyperlink{classRS__Ellipse}{R\-S\-\_\-\-Ellipse} $\ast$e2)}\label{classRS__Information_abefb274bc3cc063a99e40d72a0dc6c57}
+
+\item 
+static \hyperlink{classRS__VectorSolutions}{R\-S\-\_\-\-Vector\-Solutions} \hyperlink{classRS__Information_a549a52318ca2277993b987aa2f980259}{get\-Intersection\-Ellipse\-Line} (\hyperlink{classRS__Line}{R\-S\-\_\-\-Line} $\ast$line, \hyperlink{classRS__Ellipse}{R\-S\-\_\-\-Ellipse} $\ast$ellipse)
+\item 
+static bool \hyperlink{classRS__Information_a2192a8e35849d1368fca3b98d2650b6e}{is\-Point\-Inside\-Contour} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&point, \hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} $\ast$contour, bool $\ast$on\-Contour=N\-U\-L\-L)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__Information_acf0965edf2e51cefc2b8996612ffa5ef}{\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} $\ast$ {\bfseries container}}\label{classRS__Information_acf0965edf2e51cefc2b8996612ffa5ef}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for getting information about entities. This includes also things like the end point of an element which is nearest to a given coordinate. There's no interaction handled in this class. This class is bound to an entity container.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__Information_af7774f0cac8222df7d619d02e23c2098}{\index{R\-S\-\_\-\-Information@{R\-S\-\_\-\-Information}!R\-S\-\_\-\-Information@{R\-S\-\_\-\-Information}}
+\index{R\-S\-\_\-\-Information@{R\-S\-\_\-\-Information}!RS_Information@{R\-S\-\_\-\-Information}}
+\subsubsection[{R\-S\-\_\-\-Information}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Information\-::\-R\-S\-\_\-\-Information (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container}
+\end{DoxyParamCaption}
+)}}\label{classRS__Information_af7774f0cac8222df7d619d02e23c2098}
+Default constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container to which we will add entities. Usually that's an \hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} entity but it can also be a polyline, text, ... \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Information_af800c2fc40442c9dc3823a26393741e4}{\index{R\-S\-\_\-\-Information@{R\-S\-\_\-\-Information}!get\-Intersection@{get\-Intersection}}
+\index{get\-Intersection@{get\-Intersection}!RS_Information@{R\-S\-\_\-\-Information}}
+\subsubsection[{get\-Intersection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector\-Solutions} R\-S\-\_\-\-Information\-::get\-Intersection (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{e1, }
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{e2, }
+\item[{bool}]{on\-Entities = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Information_af800c2fc40442c9dc3823a26393741e4}
+Calculates the intersection point(s) between two entities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em on\-Entities} & true\-: only return intersection points which are on both entities. false\-: return all intersection points.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000015}{Todo}]support more entities\end{DoxyRefDesc}
+
+
+\begin{DoxyReturn}{Returns}
+All intersections of the two entities. The tangent flag in \hyperlink{classRS__VectorSolutions}{R\-S\-\_\-\-Vector\-Solutions} is set if one intersection is a tangent point. 
+\end{DoxyReturn}
+\hypertarget{classRS__Information_a6f23afa351e5e5e8bc906c23f884b8c3}{\index{R\-S\-\_\-\-Information@{R\-S\-\_\-\-Information}!get\-Intersection\-Arc\-Arc@{get\-Intersection\-Arc\-Arc}}
+\index{get\-Intersection\-Arc\-Arc@{get\-Intersection\-Arc\-Arc}!RS_Information@{R\-S\-\_\-\-Information}}
+\subsubsection[{get\-Intersection\-Arc\-Arc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector\-Solutions} R\-S\-\_\-\-Information\-::get\-Intersection\-Arc\-Arc (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Arc} $\ast$}]{e1, }
+\item[{{\bf R\-S\-\_\-\-Arc} $\ast$}]{e2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Information_a6f23afa351e5e5e8bc906c23f884b8c3}
+\begin{DoxyReturn}{Returns}
+One or two intersection points between given entities. 
+\end{DoxyReturn}
+\hypertarget{classRS__Information_a549a52318ca2277993b987aa2f980259}{\index{R\-S\-\_\-\-Information@{R\-S\-\_\-\-Information}!get\-Intersection\-Ellipse\-Line@{get\-Intersection\-Ellipse\-Line}}
+\index{get\-Intersection\-Ellipse\-Line@{get\-Intersection\-Ellipse\-Line}!RS_Information@{R\-S\-\_\-\-Information}}
+\subsubsection[{get\-Intersection\-Ellipse\-Line}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector\-Solutions} R\-S\-\_\-\-Information\-::get\-Intersection\-Ellipse\-Line (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Line} $\ast$}]{line, }
+\item[{{\bf R\-S\-\_\-\-Ellipse} $\ast$}]{ellipse}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Information_a549a52318ca2277993b987aa2f980259}
+\begin{DoxyReturn}{Returns}
+One or two intersection points between given entities. 
+\end{DoxyReturn}
+\hypertarget{classRS__Information_af8076e33fda55f3f0ef55773c4282f73}{\index{R\-S\-\_\-\-Information@{R\-S\-\_\-\-Information}!get\-Intersection\-Line\-Arc@{get\-Intersection\-Line\-Arc}}
+\index{get\-Intersection\-Line\-Arc@{get\-Intersection\-Line\-Arc}!RS_Information@{R\-S\-\_\-\-Information}}
+\subsubsection[{get\-Intersection\-Line\-Arc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector\-Solutions} R\-S\-\_\-\-Information\-::get\-Intersection\-Line\-Arc (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Line} $\ast$}]{line, }
+\item[{{\bf R\-S\-\_\-\-Arc} $\ast$}]{arc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Information_af8076e33fda55f3f0ef55773c4282f73}
+\begin{DoxyReturn}{Returns}
+One or two intersection points between given entities. 
+\end{DoxyReturn}
+\hypertarget{classRS__Information_acf067ec9822ee209484176c882558182}{\index{R\-S\-\_\-\-Information@{R\-S\-\_\-\-Information}!get\-Intersection\-Line\-Line@{get\-Intersection\-Line\-Line}}
+\index{get\-Intersection\-Line\-Line@{get\-Intersection\-Line\-Line}!RS_Information@{R\-S\-\_\-\-Information}}
+\subsubsection[{get\-Intersection\-Line\-Line}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector\-Solutions} R\-S\-\_\-\-Information\-::get\-Intersection\-Line\-Line (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Line} $\ast$}]{e1, }
+\item[{{\bf R\-S\-\_\-\-Line} $\ast$}]{e2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Information_acf067ec9822ee209484176c882558182}
+\begin{DoxyReturn}{Returns}
+Intersection between two lines. 
+\end{DoxyReturn}
+\hypertarget{classRS__Information_a567a84e4695b290572828d4ecb6536a8}{\index{R\-S\-\_\-\-Information@{R\-S\-\_\-\-Information}!get\-Nearest\-Endpoint@{get\-Nearest\-Endpoint}}
+\index{get\-Nearest\-Endpoint@{get\-Nearest\-Endpoint}!RS_Information@{R\-S\-\_\-\-Information}}
+\subsubsection[{get\-Nearest\-Endpoint}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Information\-::get\-Nearest\-Endpoint (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord, }
+\item[{double $\ast$}]{dist = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const}}\label{classRS__Information_a567a84e4695b290572828d4ecb6536a8}
+Gets the nearest end point to the given coordinate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & Coordinate (typically a mouse coordinate)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the coordinate found or an invalid vector if there are no elements at all in this graphics container. 
+\end{DoxyReturn}
+\hypertarget{classRS__Information_a7b07a51e06cb8eeaa535ed1e4f25e0a5}{\index{R\-S\-\_\-\-Information@{R\-S\-\_\-\-Information}!get\-Nearest\-Entity@{get\-Nearest\-Entity}}
+\index{get\-Nearest\-Entity@{get\-Nearest\-Entity}!RS_Information@{R\-S\-\_\-\-Information}}
+\subsubsection[{get\-Nearest\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Entity} $\ast$ R\-S\-\_\-\-Information\-::get\-Nearest\-Entity (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord, }
+\item[{double $\ast$}]{dist = {\ttfamily NULL}, }
+\item[{{\bf R\-S2\-::\-Resolve\-Level}}]{level = {\ttfamily {\bf R\-S2\-::\-Resolve\-All}}}
+\end{DoxyParamCaption}
+) const}}\label{classRS__Information_a7b07a51e06cb8eeaa535ed1e4f25e0a5}
+Gets the nearest entity to the given coordinate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & Coordinate (typically a mouse coordinate) \\
+\hline
+{\em dist} & Pointer to a double which will contain the masured distance after return \\
+\hline
+{\em level} & Level of resolving entities.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the entity found or N\-U\-L\-L if there are no elements at all in this graphics container. 
+\end{DoxyReturn}
+\hypertarget{classRS__Information_a8a16ce644c16d3a5863728676f1ef3cf}{\index{R\-S\-\_\-\-Information@{R\-S\-\_\-\-Information}!get\-Nearest\-Point\-On\-Entity@{get\-Nearest\-Point\-On\-Entity}}
+\index{get\-Nearest\-Point\-On\-Entity@{get\-Nearest\-Point\-On\-Entity}!RS_Information@{R\-S\-\_\-\-Information}}
+\subsubsection[{get\-Nearest\-Point\-On\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Information\-::get\-Nearest\-Point\-On\-Entity (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord, }
+\item[{bool}]{on\-Entity = {\ttfamily true}, }
+\item[{double $\ast$}]{dist = {\ttfamily NULL}, }
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$$\ast$}]{entity = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const}}\label{classRS__Information_a8a16ce644c16d3a5863728676f1ef3cf}
+Gets the nearest point to the given coordinate which is on an entity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & Coordinate (typically a mouse coordinate) \\
+\hline
+{\em dist} & Pointer to a double which will contain the measured distance after return or N\-U\-L\-L \\
+\hline
+{\em entity} & Pointer to a pointer which will point to the entity on which the point is or N\-U\-L\-L\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the coordinate found or an invalid vector if there are no elements at all in this graphics container. 
+\end{DoxyReturn}
+\hypertarget{classRS__Information_a4ae006c6261e540a3e094d79329d031a}{\index{R\-S\-\_\-\-Information@{R\-S\-\_\-\-Information}!is\-Dimension@{is\-Dimension}}
+\index{is\-Dimension@{is\-Dimension}!RS_Information@{R\-S\-\_\-\-Information}}
+\subsubsection[{is\-Dimension}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Information\-::is\-Dimension (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Entity\-Type}}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Information_a4ae006c6261e540a3e094d79329d031a}
+\begin{DoxyReturn}{Returns}
+true\-: if the entity is a dimensioning enity. false\-: otherwise 
+\end{DoxyReturn}
+\hypertarget{classRS__Information_a2192a8e35849d1368fca3b98d2650b6e}{\index{R\-S\-\_\-\-Information@{R\-S\-\_\-\-Information}!is\-Point\-Inside\-Contour@{is\-Point\-Inside\-Contour}}
+\index{is\-Point\-Inside\-Contour@{is\-Point\-Inside\-Contour}!RS_Information@{R\-S\-\_\-\-Information}}
+\subsubsection[{is\-Point\-Inside\-Contour}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Information\-::is\-Point\-Inside\-Contour (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{point, }
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} $\ast$}]{contour, }
+\item[{bool $\ast$}]{on\-Contour = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Information_a2192a8e35849d1368fca3b98d2650b6e}
+Checks if the given coordinate is inside the given contour.
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & Coordinate to check. \\
+\hline
+{\em contour} & One or more entities which shape a contour. If the given contour is not closed, the result is undefined. The entities don't need to be in a specific order. \\
+\hline
+{\em on\-Contour} & Will be set to true if the given point it exactly on the contour. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Information_a54b779dbf677839b49ae94051429e191}{\index{R\-S\-\_\-\-Information@{R\-S\-\_\-\-Information}!is\-Trimmable@{is\-Trimmable}}
+\index{is\-Trimmable@{is\-Trimmable}!RS_Information@{R\-S\-\_\-\-Information}}
+\subsubsection[{is\-Trimmable}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Information\-::is\-Trimmable (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Information_a54b779dbf677839b49ae94051429e191}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & the entity can be trimmed. i.\-e. it is in a graphic or in a polyline. \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{classRS__Information_ab5639e539443c3a7119180c961c8b8e6}{\index{R\-S\-\_\-\-Information@{R\-S\-\_\-\-Information}!is\-Trimmable@{is\-Trimmable}}
+\index{is\-Trimmable@{is\-Trimmable}!RS_Information@{R\-S\-\_\-\-Information}}
+\subsubsection[{is\-Trimmable}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Information\-::is\-Trimmable (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{e1, }
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{e2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Information_ab5639e539443c3a7119180c961c8b8e6}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & the two entities can be trimmed to each other; i.\-e. they are in a graphic or in the same polyline. \\
+\hline
+\end{DoxyRetVals}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/information/rs\-\_\-information.\-h\item 
+librecad/src/lib/information/rs\-\_\-information.\-cpp\end{DoxyCompactItemize}

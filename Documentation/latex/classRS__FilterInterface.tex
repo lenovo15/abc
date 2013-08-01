@@ -1,0 +1,131 @@
+\hypertarget{classRS__FilterInterface}{\section{R\-S\-\_\-\-Filter\-Interface Class Reference}
+\label{classRS__FilterInterface}\index{R\-S\-\_\-\-Filter\-Interface@{R\-S\-\_\-\-Filter\-Interface}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-filterinterface.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Filter\-Interface\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.530055cm]{classRS__FilterInterface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__FilterInterface_ab7d0f43692efacdfaf86f3b77036c5e1}{R\-S\-\_\-\-Filter\-Interface} ()
+\item 
+virtual \hyperlink{classRS__FilterInterface_a13cfbcfea48ebd819ff51d8720eb9699}{$\sim$\-R\-S\-\_\-\-Filter\-Interface} ()
+\item 
+virtual bool \hyperlink{classRS__FilterInterface_a62540c02649ca2040be61e5ce9e56742}{can\-Import} (const Q\-String \&file\-Name, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} t) const =0
+\item 
+virtual bool \hyperlink{classRS__FilterInterface_af96c8b390ee351e7b7112a974a52828c}{can\-Export} (const Q\-String \&file\-Name, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} t) const =0
+\item 
+virtual bool \hyperlink{classRS__FilterInterface_a6d4bf32c02a4c61f8465acc78b10e090}{file\-Import} (\hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} \&g, const Q\-String \&file, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} type)=0
+\item 
+virtual bool \hyperlink{classRS__FilterInterface_a85601a186a66bbf6bedaed7b79cd034f}{file\-Export} (\hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} \&g, const Q\-String \&file, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} type)=0
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__FilterInterface_a27ce5aed62fd14a88102041523c7210e}{static \hyperlink{classRS__FilterInterface}{R\-S\-\_\-\-Filter\-Interface} $\ast$ {\bfseries create\-Filter} ()}\label{classRS__FilterInterface_a27ce5aed62fd14a88102041523c7210e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the interface that must be implemented for all format filter classes. The \hyperlink{classRS__FileIO}{R\-S\-\_\-\-File\-I\-O} class uses the methods defined in here to interact with the format filter classes.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__FilterInterface_ab7d0f43692efacdfaf86f3b77036c5e1}{\index{R\-S\-\_\-\-Filter\-Interface@{R\-S\-\_\-\-Filter\-Interface}!R\-S\-\_\-\-Filter\-Interface@{R\-S\-\_\-\-Filter\-Interface}}
+\index{R\-S\-\_\-\-Filter\-Interface@{R\-S\-\_\-\-Filter\-Interface}!RS_FilterInterface@{R\-S\-\_\-\-Filter\-Interface}}
+\subsubsection[{R\-S\-\_\-\-Filter\-Interface}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Filter\-Interface\-::\-R\-S\-\_\-\-Filter\-Interface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__FilterInterface_ab7d0f43692efacdfaf86f3b77036c5e1}
+Constructor. \hypertarget{classRS__FilterInterface_a13cfbcfea48ebd819ff51d8720eb9699}{\index{R\-S\-\_\-\-Filter\-Interface@{R\-S\-\_\-\-Filter\-Interface}!$\sim$\-R\-S\-\_\-\-Filter\-Interface@{$\sim$\-R\-S\-\_\-\-Filter\-Interface}}
+\index{$\sim$\-R\-S\-\_\-\-Filter\-Interface@{$\sim$\-R\-S\-\_\-\-Filter\-Interface}!RS_FilterInterface@{R\-S\-\_\-\-Filter\-Interface}}
+\subsubsection[{$\sim$\-R\-S\-\_\-\-Filter\-Interface}]{\setlength{\rightskip}{0pt plus 5cm}virtual R\-S\-\_\-\-Filter\-Interface\-::$\sim$\-R\-S\-\_\-\-Filter\-Interface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__FilterInterface_a13cfbcfea48ebd819ff51d8720eb9699}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__FilterInterface_af96c8b390ee351e7b7112a974a52828c}{\index{R\-S\-\_\-\-Filter\-Interface@{R\-S\-\_\-\-Filter\-Interface}!can\-Export@{can\-Export}}
+\index{can\-Export@{can\-Export}!RS_FilterInterface@{R\-S\-\_\-\-Filter\-Interface}}
+\subsubsection[{can\-Export}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Filter\-Interface\-::can\-Export (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{file\-Name, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{t}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classRS__FilterInterface_af96c8b390ee351e7b7112a974a52828c}
+Checks if this filter can export the given file type.
+
+\begin{DoxyReturn}{Returns}
+true if the filter can export the file type, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classRS__FilterJWW_a1a9b299728815569759917e40b3b98a7}{R\-S\-\_\-\-Filter\-J\-W\-W}, \hyperlink{classRS__FilterDXFRW_a59c829eab8ba4a12c937b10dc556e96e}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}, \hyperlink{classRS__FilterDXF_a0d69c493c3416af868a1c16f864a3b71}{R\-S\-\_\-\-Filter\-D\-X\-F}, \hyperlink{classRS__FilterLFF_a415559dd3dde9e25d528f204efa8a764}{R\-S\-\_\-\-Filter\-L\-F\-F}, \hyperlink{classRS__FilterDXF1_a556f382e48302117268f1080de34792d}{R\-S\-\_\-\-Filter\-D\-X\-F1}, and \hyperlink{classRS__FilterCXF_af999b918b8c86033c6943086aab809ae}{R\-S\-\_\-\-Filter\-C\-X\-F}.
+
+\hypertarget{classRS__FilterInterface_a62540c02649ca2040be61e5ce9e56742}{\index{R\-S\-\_\-\-Filter\-Interface@{R\-S\-\_\-\-Filter\-Interface}!can\-Import@{can\-Import}}
+\index{can\-Import@{can\-Import}!RS_FilterInterface@{R\-S\-\_\-\-Filter\-Interface}}
+\subsubsection[{can\-Import}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Filter\-Interface\-::can\-Import (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{file\-Name, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{t}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classRS__FilterInterface_a62540c02649ca2040be61e5ce9e56742}
+Checks if this filter can import the given file type.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & if the filter can import the file type \\
+\hline
+{\em false} & otherwise. \\
+\hline
+\end{DoxyRetVals}
+
+
+Implemented in \hyperlink{classRS__FilterJWW_a83ac942daf7b4c674f3f2c03c9dded27}{R\-S\-\_\-\-Filter\-J\-W\-W}, \hyperlink{classRS__FilterDXF_add335948d3bca1dd68b84f432f8e7628}{R\-S\-\_\-\-Filter\-D\-X\-F}, \hyperlink{classRS__FilterDXFRW_a85d528cdd4b31945e688bf5429f8e05d}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}, \hyperlink{classRS__FilterLFF_a7300515fad668c046a48cb6462aea484}{R\-S\-\_\-\-Filter\-L\-F\-F}, \hyperlink{classRS__FilterDXF1_ab201625ba2d95c01efe9cee244f4f187}{R\-S\-\_\-\-Filter\-D\-X\-F1}, and \hyperlink{classRS__FilterCXF_a4ce271ce310015e83a2955733bb9c78c}{R\-S\-\_\-\-Filter\-C\-X\-F}.
+
+\hypertarget{classRS__FilterInterface_a85601a186a66bbf6bedaed7b79cd034f}{\index{R\-S\-\_\-\-Filter\-Interface@{R\-S\-\_\-\-Filter\-Interface}!file\-Export@{file\-Export}}
+\index{file\-Export@{file\-Export}!RS_FilterInterface@{R\-S\-\_\-\-Filter\-Interface}}
+\subsubsection[{file\-Export}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Filter\-Interface\-::file\-Export (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Graphic} \&}]{g, }
+\item[{const Q\-String \&}]{file, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classRS__FilterInterface_a85601a186a66bbf6bedaed7b79cd034f}
+The implementation of this method in a inherited format class should write the entities in the current entity container to a file on the disk. 
+
+Implemented in \hyperlink{classRS__FilterJWW_a7c1cec5dda9cb54bb0f41d6f071c95df}{R\-S\-\_\-\-Filter\-J\-W\-W}, \hyperlink{classRS__FilterDXF_a55df0d99d7b7c67b94975b91cb85d191}{R\-S\-\_\-\-Filter\-D\-X\-F}, \hyperlink{classRS__FilterDXFRW_a45f31a6c4e858bca40ff80ef979a6518}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}, \hyperlink{classRS__FilterLFF_abe710b43b21eacacc38c373f716bac36}{R\-S\-\_\-\-Filter\-L\-F\-F}, \hyperlink{classRS__FilterDXF1_acbeb13283cf577c9d69ee1fafb3d323a}{R\-S\-\_\-\-Filter\-D\-X\-F1}, and \hyperlink{classRS__FilterCXF_aed470407f4caf1ba37b36b7a8e5b3b6c}{R\-S\-\_\-\-Filter\-C\-X\-F}.
+
+\hypertarget{classRS__FilterInterface_a6d4bf32c02a4c61f8465acc78b10e090}{\index{R\-S\-\_\-\-Filter\-Interface@{R\-S\-\_\-\-Filter\-Interface}!file\-Import@{file\-Import}}
+\index{file\-Import@{file\-Import}!RS_FilterInterface@{R\-S\-\_\-\-Filter\-Interface}}
+\subsubsection[{file\-Import}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Filter\-Interface\-::file\-Import (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Graphic} \&}]{g, }
+\item[{const Q\-String \&}]{file, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classRS__FilterInterface_a6d4bf32c02a4c61f8465acc78b10e090}
+The implementation of this method in a inherited format class should read a file from disk and put the entities into the current entity container. 
+
+Implemented in \hyperlink{classRS__FilterJWW_a3e0d5fe4f70f9605238c46957ec1d3c4}{R\-S\-\_\-\-Filter\-J\-W\-W}, \hyperlink{classRS__FilterDXFRW_a054c1910f411e9d9bfcd3e0c5289391e}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}, \hyperlink{classRS__FilterDXF_afa9715a120bca739600ff0fbeb913e65}{R\-S\-\_\-\-Filter\-D\-X\-F}, \hyperlink{classRS__FilterLFF_a476f960396265b15dfb43b9c4742f76e}{R\-S\-\_\-\-Filter\-L\-F\-F}, \hyperlink{classRS__FilterDXF1_a6beab6ec3b112a9c956150b0dd9db1df}{R\-S\-\_\-\-Filter\-D\-X\-F1}, and \hyperlink{classRS__FilterCXF_aa71e808f526fdfb8df9f147f642e3939}{R\-S\-\_\-\-Filter\-C\-X\-F}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/filters/rs\-\_\-filterinterface.\-h\end{DoxyCompactItemize}

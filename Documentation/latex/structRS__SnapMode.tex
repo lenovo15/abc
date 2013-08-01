@@ -1,0 +1,107 @@
+\hypertarget{structRS__SnapMode}{\section{R\-S\-\_\-\-Snap\-Mode Struct Reference}
+\label{structRS__SnapMode}\index{R\-S\-\_\-\-Snap\-Mode@{R\-S\-\_\-\-Snap\-Mode}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-snapper.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structRS__SnapMode_a4bbf83b7ff9cc2b0b5bd1f1a70e151d0}{R\-S\-\_\-\-Snap\-Mode} ()
+\begin{DoxyCompactList}\small\item\em The distance to snap before defaulting to free snaping. \end{DoxyCompactList}\item 
+\hyperlink{structRS__SnapMode}{R\-S\-\_\-\-Snap\-Mode} \& \hyperlink{structRS__SnapMode_a022bf0cf13684bf3e1048cd6781d0d1a}{clear} (void)
+\item 
+\hyperlink{structRS__SnapMode}{R\-S\-\_\-\-Snap\-Mode} \& \hyperlink{structRS__SnapMode_a74926c5cc16792b5a5f85b8e713d6bbb}{hard\-Reset} (void)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structRS__SnapMode_a3230bc87410988cde538bace80dd2b86}{bool {\bfseries snap\-Free}}\label{structRS__SnapMode_a3230bc87410988cde538bace80dd2b86}
+
+\item 
+\hypertarget{structRS__SnapMode_a7194e6193a87f1fe88bd8b03d83b606c}{bool \hyperlink{structRS__SnapMode_a7194e6193a87f1fe88bd8b03d83b606c}{snap\-Grid}}\label{structRS__SnapMode_a7194e6193a87f1fe88bd8b03d83b606c}
+
+\begin{DoxyCompactList}\small\item\em Whether to snap freely. \end{DoxyCompactList}\item 
+\hypertarget{structRS__SnapMode_ab629996c4efd367b2eef3264673cac17}{bool \hyperlink{structRS__SnapMode_ab629996c4efd367b2eef3264673cac17}{snap\-Endpoint}}\label{structRS__SnapMode_ab629996c4efd367b2eef3264673cac17}
+
+\begin{DoxyCompactList}\small\item\em Whether to snap to grid or not. \end{DoxyCompactList}\item 
+\hypertarget{structRS__SnapMode_aee8a57231200c50ba7419eda36d1ac02}{bool \hyperlink{structRS__SnapMode_aee8a57231200c50ba7419eda36d1ac02}{snap\-Middle}}\label{structRS__SnapMode_aee8a57231200c50ba7419eda36d1ac02}
+
+\begin{DoxyCompactList}\small\item\em Whether to snap to endpoints or not. \end{DoxyCompactList}\item 
+\hypertarget{structRS__SnapMode_a4766940a0b336254e0b9bc6483662030}{bool \hyperlink{structRS__SnapMode_a4766940a0b336254e0b9bc6483662030}{snap\-Distance}}\label{structRS__SnapMode_a4766940a0b336254e0b9bc6483662030}
+
+\begin{DoxyCompactList}\small\item\em Whether to snap to midpoints or not. \end{DoxyCompactList}\item 
+\hypertarget{structRS__SnapMode_acd650600c1024d685628c4d3dee97b80}{bool \hyperlink{structRS__SnapMode_acd650600c1024d685628c4d3dee97b80}{snap\-Center}}\label{structRS__SnapMode_acd650600c1024d685628c4d3dee97b80}
+
+\begin{DoxyCompactList}\small\item\em Whether to snap to distance from endpoints or not. \end{DoxyCompactList}\item 
+\hypertarget{structRS__SnapMode_ab8dece9c0357653b484abe8b1a8f01ec}{bool \hyperlink{structRS__SnapMode_ab8dece9c0357653b484abe8b1a8f01ec}{snap\-Intersection}}\label{structRS__SnapMode_ab8dece9c0357653b484abe8b1a8f01ec}
+
+\begin{DoxyCompactList}\small\item\em Whether to snap to centers or not. \end{DoxyCompactList}\item 
+\hypertarget{structRS__SnapMode_af09acd36fc2cc4ef1ec34715f2159667}{bool \hyperlink{structRS__SnapMode_af09acd36fc2cc4ef1ec34715f2159667}{snap\-On\-Entity}}\label{structRS__SnapMode_af09acd36fc2cc4ef1ec34715f2159667}
+
+\begin{DoxyCompactList}\small\item\em Whether to snap to intersections or not. \end{DoxyCompactList}\item 
+\hypertarget{structRS__SnapMode_a3c0363120474f907621fcbfa075156d7}{\hyperlink{classRS2_aac67b6890a08cff619c0fbef48377bae}{R\-S2\-::\-Snap\-Restriction} \hyperlink{structRS__SnapMode_a3c0363120474f907621fcbfa075156d7}{restriction}}\label{structRS__SnapMode_a3c0363120474f907621fcbfa075156d7}
+
+\begin{DoxyCompactList}\small\item\em Whether to snap to entities or not. \end{DoxyCompactList}\item 
+\hypertarget{structRS__SnapMode_a53d66fa4caaae122e52db9fb331f24e5}{double \hyperlink{structRS__SnapMode_a53d66fa4caaae122e52db9fb331f24e5}{distance}}\label{structRS__SnapMode_a53d66fa4caaae122e52db9fb331f24e5}
+
+\begin{DoxyCompactList}\small\item\em The restriction on the free snap. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class holds information on how to snap the mouse.
+
+\begin{DoxyAuthor}{Author}
+Kevin Cox 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structRS__SnapMode_a4bbf83b7ff9cc2b0b5bd1f1a70e151d0}{\index{R\-S\-\_\-\-Snap\-Mode@{R\-S\-\_\-\-Snap\-Mode}!R\-S\-\_\-\-Snap\-Mode@{R\-S\-\_\-\-Snap\-Mode}}
+\index{R\-S\-\_\-\-Snap\-Mode@{R\-S\-\_\-\-Snap\-Mode}!RS_SnapMode@{R\-S\-\_\-\-Snap\-Mode}}
+\subsubsection[{R\-S\-\_\-\-Snap\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Snap\-Mode\-::\-R\-S\-\_\-\-Snap\-Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structRS__SnapMode_a4bbf83b7ff9cc2b0b5bd1f1a70e151d0}
+
+
+The distance to snap before defaulting to free snaping. 
+
+Default Constructor
+
+Creates a \hyperlink{structRS__SnapMode}{R\-S\-\_\-\-Snap\-Mode} that specifies only free snapping. 
+
+\subsection{Member Function Documentation}
+\hypertarget{structRS__SnapMode_a022bf0cf13684bf3e1048cd6781d0d1a}{\index{R\-S\-\_\-\-Snap\-Mode@{R\-S\-\_\-\-Snap\-Mode}!clear@{clear}}
+\index{clear@{clear}!RS_SnapMode@{R\-S\-\_\-\-Snap\-Mode}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Snap\-Mode}\& R\-S\-\_\-\-Snap\-Mode\-::clear (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structRS__SnapMode_a022bf0cf13684bf3e1048cd6781d0d1a}
+Disable all snapping.
+
+This effectivly puts the object into free snap mode.
+
+\begin{DoxyReturn}{Returns}
+A refrence to itself. 
+\end{DoxyReturn}
+\hypertarget{structRS__SnapMode_a74926c5cc16792b5a5f85b8e713d6bbb}{\index{R\-S\-\_\-\-Snap\-Mode@{R\-S\-\_\-\-Snap\-Mode}!hard\-Reset@{hard\-Reset}}
+\index{hard\-Reset@{hard\-Reset}!RS_SnapMode@{R\-S\-\_\-\-Snap\-Mode}}
+\subsubsection[{hard\-Reset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Snap\-Mode}\& R\-S\-\_\-\-Snap\-Mode\-::hard\-Reset (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structRS__SnapMode_a74926c5cc16792b5a5f85b8e713d6bbb}
+Reset to default settings
+
+\begin{DoxyReturn}{Returns}
+A refrence to itself. 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/actions/rs\-\_\-snapper.\-h\end{DoxyCompactItemize}

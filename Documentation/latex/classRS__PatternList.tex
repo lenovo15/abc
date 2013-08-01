@@ -1,0 +1,136 @@
+\hypertarget{classRS__PatternList}{\section{R\-S\-\_\-\-Pattern\-List Class Reference}
+\label{classRS__PatternList}\index{R\-S\-\_\-\-Pattern\-List@{R\-S\-\_\-\-Pattern\-List}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-patternlist.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classRS__PatternList_aa76465362de1503c68e45bfc2b33da14}{init} ()
+\item 
+void \hyperlink{classRS__PatternList_ae8dd726d35bcccdc6ad9c4240acd4540}{clear\-Patterns} ()
+\item 
+\hypertarget{classRS__PatternList_a2678dee3bcc95db515da5f8ae684647c}{int {\bfseries count\-Patterns} ()}\label{classRS__PatternList_a2678dee3bcc95db515da5f8ae684647c}
+
+\item 
+virtual void \hyperlink{classRS__PatternList_a42b4698692b0885965ab36b85b83a1d2}{remove\-Pattern} (\hyperlink{classRS__Pattern}{R\-S\-\_\-\-Pattern} $\ast$pattern)
+\item 
+\hyperlink{classRS__Pattern}{R\-S\-\_\-\-Pattern} $\ast$ \hyperlink{classRS__PatternList_aeee4a567b87205b9f678cfdf524e0d2e}{request\-Pattern} (const Q\-String \&name)
+\item 
+Q\-List\-Iterator$<$ \hyperlink{classRS__Pattern}{R\-S\-\_\-\-Pattern} $\ast$ $>$ \hyperlink{classRS__PatternList_a682a3b9bf8baaea5af75283437a48dae}{get\-Iteretor} ()
+\item 
+\hypertarget{classRS__PatternList_a3111d8550c198dd069155fb354716d79}{bool {\bfseries contains} (const Q\-String \&name)}\label{classRS__PatternList_a3111d8550c198dd069155fb354716d79}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classRS__PatternList}{R\-S\-\_\-\-Pattern\-List} $\ast$ \hyperlink{classRS__PatternList_a1ddd2ff7072f76366b329db77baa535b}{instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__PatternList_ad59bf13b4525f8f90952694c51fd6208}{R\-S\-\_\-\-Pattern\-List} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__PatternList_a5a7d402bdd983e09c94e81f20343d0e7}{static \hyperlink{classRS__PatternList}{R\-S\-\_\-\-Pattern\-List} $\ast$ {\bfseries unique\-Instance} = N\-U\-L\-L}\label{classRS__PatternList_a5a7d402bdd983e09c94e81f20343d0e7}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{classRS__PatternList_a4a61c36eeb16baa8f44364a80313c15e}{operator$<$$<$} (std\-::ostream \&os, \hyperlink{classRS__PatternList}{R\-S\-\_\-\-Pattern\-List} \&l)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The global list of patterns. This is implemented as a singleton. Use \hyperlink{classRS__PatternList_a1ddd2ff7072f76366b329db77baa535b}{R\-S\-\_\-\-Pattern\-List\-::instance()} to get a pointer to the object.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__PatternList_ad59bf13b4525f8f90952694c51fd6208}{\index{R\-S\-\_\-\-Pattern\-List@{R\-S\-\_\-\-Pattern\-List}!R\-S\-\_\-\-Pattern\-List@{R\-S\-\_\-\-Pattern\-List}}
+\index{R\-S\-\_\-\-Pattern\-List@{R\-S\-\_\-\-Pattern\-List}!RS_PatternList@{R\-S\-\_\-\-Pattern\-List}}
+\subsubsection[{R\-S\-\_\-\-Pattern\-List}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Pattern\-List\-::\-R\-S\-\_\-\-Pattern\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__PatternList_ad59bf13b4525f8f90952694c51fd6208}
+Default constructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__PatternList_ae8dd726d35bcccdc6ad9c4240acd4540}{\index{R\-S\-\_\-\-Pattern\-List@{R\-S\-\_\-\-Pattern\-List}!clear\-Patterns@{clear\-Patterns}}
+\index{clear\-Patterns@{clear\-Patterns}!RS_PatternList@{R\-S\-\_\-\-Pattern\-List}}
+\subsubsection[{clear\-Patterns}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Pattern\-List\-::clear\-Patterns (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__PatternList_ae8dd726d35bcccdc6ad9c4240acd4540}
+Removes all patterns in the patternlist. \hypertarget{classRS__PatternList_a682a3b9bf8baaea5af75283437a48dae}{\index{R\-S\-\_\-\-Pattern\-List@{R\-S\-\_\-\-Pattern\-List}!get\-Iteretor@{get\-Iteretor}}
+\index{get\-Iteretor@{get\-Iteretor}!RS_PatternList@{R\-S\-\_\-\-Pattern\-List}}
+\subsubsection[{get\-Iteretor}]{\setlength{\rightskip}{0pt plus 5cm}Q\-List\-Iterator$<${\bf R\-S\-\_\-\-Pattern} $\ast$$>$ R\-S\-\_\-\-Pattern\-List\-::get\-Iteretor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__PatternList_a682a3b9bf8baaea5af75283437a48dae}
+\begin{DoxyReturn}{Returns}
+a const iterator for the pattern list. 
+\end{DoxyReturn}
+\hypertarget{classRS__PatternList_aa76465362de1503c68e45bfc2b33da14}{\index{R\-S\-\_\-\-Pattern\-List@{R\-S\-\_\-\-Pattern\-List}!init@{init}}
+\index{init@{init}!RS_PatternList@{R\-S\-\_\-\-Pattern\-List}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Pattern\-List\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__PatternList_aa76465362de1503c68e45bfc2b33da14}
+Initializes the pattern list by creating empty \hyperlink{classRS__Pattern}{R\-S\-\_\-\-Pattern} objects, one for each pattern that could be found. \hypertarget{classRS__PatternList_a1ddd2ff7072f76366b329db77baa535b}{\index{R\-S\-\_\-\-Pattern\-List@{R\-S\-\_\-\-Pattern\-List}!instance@{instance}}
+\index{instance@{instance}!RS_PatternList@{R\-S\-\_\-\-Pattern\-List}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf R\-S\-\_\-\-Pattern\-List}$\ast$ R\-S\-\_\-\-Pattern\-List\-::instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classRS__PatternList_a1ddd2ff7072f76366b329db77baa535b}
+\begin{DoxyReturn}{Returns}
+Instance to the unique pattern list. 
+\end{DoxyReturn}
+\hypertarget{classRS__PatternList_a42b4698692b0885965ab36b85b83a1d2}{\index{R\-S\-\_\-\-Pattern\-List@{R\-S\-\_\-\-Pattern\-List}!remove\-Pattern@{remove\-Pattern}}
+\index{remove\-Pattern@{remove\-Pattern}!RS_PatternList@{R\-S\-\_\-\-Pattern\-List}}
+\subsubsection[{remove\-Pattern}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Pattern\-List\-::remove\-Pattern (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Pattern} $\ast$}]{pattern}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__PatternList_a42b4698692b0885965ab36b85b83a1d2}
+Removes a pattern from the list. Listeners are notified after the pattern was removed from the list but before it gets deleted. \hypertarget{classRS__PatternList_aeee4a567b87205b9f678cfdf524e0d2e}{\index{R\-S\-\_\-\-Pattern\-List@{R\-S\-\_\-\-Pattern\-List}!request\-Pattern@{request\-Pattern}}
+\index{request\-Pattern@{request\-Pattern}!RS_PatternList@{R\-S\-\_\-\-Pattern\-List}}
+\subsubsection[{request\-Pattern}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Pattern} $\ast$ R\-S\-\_\-\-Pattern\-List\-::request\-Pattern (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{name}
+\end{DoxyParamCaption}
+)}}\label{classRS__PatternList_aeee4a567b87205b9f678cfdf524e0d2e}
+\begin{DoxyReturn}{Returns}
+Pointer to the pattern with the given name or {\ttfamily N\-U\-L\-L} if no such pattern was found. The pattern will be loaded into memory if it's not already. 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classRS__PatternList_a4a61c36eeb16baa8f44364a80313c15e}{\index{R\-S\-\_\-\-Pattern\-List@{R\-S\-\_\-\-Pattern\-List}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!RS_PatternList@{R\-S\-\_\-\-Pattern\-List}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os, }
+\item[{{\bf R\-S\-\_\-\-Pattern\-List} \&}]{l}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classRS__PatternList_a4a61c36eeb16baa8f44364a80313c15e}
+Dumps the patterns to stdout. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-patternlist.\-h\item 
+librecad/src/lib/engine/rs\-\_\-patternlist.\-cpp\end{DoxyCompactItemize}

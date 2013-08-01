@@ -1,0 +1,168 @@
+\hypertarget{classQG__BlockWidget}{\section{Q\-G\-\_\-\-Block\-Widget Class Reference}
+\label{classQG__BlockWidget}\index{Q\-G\-\_\-\-Block\-Widget@{Q\-G\-\_\-\-Block\-Widget}}
+}
+
+
+{\ttfamily \#include $<$qg\-\_\-blockwidget.\-h$>$}
+
+Inheritance diagram for Q\-G\-\_\-\-Block\-Widget\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classQG__BlockWidget}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classQG__BlockWidget_a1ba391712d62ae327328cdcbf26d04e6}{slot\-Activated} (Q\-Model\-Index block\-Idx)
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classQG__BlockWidget_a0138d7be563c9cf3184a5119516f2674}{void {\bfseries escape} ()}\label{classQG__BlockWidget_a0138d7be563c9cf3184a5119516f2674}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQG__BlockWidget_a785ad1be760206a539654f125cfe6bfc}{Q\-G\-\_\-\-Block\-Widget} (\hyperlink{classQG__ActionHandler}{Q\-G\-\_\-\-Action\-Handler} $\ast$ah, Q\-Widget $\ast$parent, const char $\ast$name=0, Qt\-::\-Window\-Flags f=0)
+\item 
+\hyperlink{classQG__BlockWidget_aac9227b37cff02a8964cabbd0cbccc8d}{$\sim$\-Q\-G\-\_\-\-Block\-Widget} ()
+\item 
+\hypertarget{classQG__BlockWidget_ad9ad3c5e08edb72fa2c2f2d3004a3c37}{void {\bfseries set\-Block\-List} (\hyperlink{classRS__BlockList}{R\-S\-\_\-\-Block\-List} $\ast$block\-List)}\label{classQG__BlockWidget_ad9ad3c5e08edb72fa2c2f2d3004a3c37}
+
+\item 
+\hypertarget{classQG__BlockWidget_a632ca3fde6015e97e48aeeb5217bd063}{\hyperlink{classRS__BlockList}{R\-S\-\_\-\-Block\-List} $\ast$ {\bfseries get\-Block\-List} ()}\label{classQG__BlockWidget_a632ca3fde6015e97e48aeeb5217bd063}
+
+\item 
+void \hyperlink{classQG__BlockWidget_a348c73c219362dd0ecb8aed78f65fe68}{update} ()
+\item 
+void \hyperlink{classQG__BlockWidget_a21ba65045a0b56274266f5645c002aaa}{activate\-Block} (\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$block)
+\item 
+virtual void \hyperlink{classQG__BlockWidget_a25d6562a145e8eb5039849acfc7081d5}{block\-Added} (\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$)
+\item 
+virtual void \hyperlink{classQG__BlockWidget_a6d38e6c479ab5a9b138c916e40448ec4}{block\-Edited} (\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$)
+\item 
+virtual void \hyperlink{classQG__BlockWidget_ad6c1a642da644216f03e6fbebf4ac6c1}{block\-Removed} (\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$)
+\item 
+virtual void \hyperlink{classQG__BlockWidget_afb8a75e75062026b8fbfeb9cd3ced5b4}{block\-Toggled} (\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classQG__BlockWidget_ab1c2b2e0da448a30d678ecb7698f23d9}{context\-Menu\-Event} (Q\-Context\-Menu\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classQG__BlockWidget_a7fc80babd222fa506b47939c832f4e19}{key\-Press\-Event} (Q\-Key\-Event $\ast$e)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the Qt implementation of a widget which can view a block list. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classQG__BlockWidget_a785ad1be760206a539654f125cfe6bfc}{\index{Q\-G\-\_\-\-Block\-Widget@{Q\-G\-\_\-\-Block\-Widget}!Q\-G\-\_\-\-Block\-Widget@{Q\-G\-\_\-\-Block\-Widget}}
+\index{Q\-G\-\_\-\-Block\-Widget@{Q\-G\-\_\-\-Block\-Widget}!QG_BlockWidget@{Q\-G\-\_\-\-Block\-Widget}}
+\subsubsection[{Q\-G\-\_\-\-Block\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}Q\-G\-\_\-\-Block\-Widget\-::\-Q\-G\-\_\-\-Block\-Widget (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-G\-\_\-\-Action\-Handler} $\ast$}]{ah, }
+\item[{Q\-Widget $\ast$}]{parent, }
+\item[{const char $\ast$}]{name = {\ttfamily 0}, }
+\item[{Qt\-::\-Window\-Flags}]{f = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classQG__BlockWidget_a785ad1be760206a539654f125cfe6bfc}
+Constructor. \hypertarget{classQG__BlockWidget_aac9227b37cff02a8964cabbd0cbccc8d}{\index{Q\-G\-\_\-\-Block\-Widget@{Q\-G\-\_\-\-Block\-Widget}!$\sim$\-Q\-G\-\_\-\-Block\-Widget@{$\sim$\-Q\-G\-\_\-\-Block\-Widget}}
+\index{$\sim$\-Q\-G\-\_\-\-Block\-Widget@{$\sim$\-Q\-G\-\_\-\-Block\-Widget}!QG_BlockWidget@{Q\-G\-\_\-\-Block\-Widget}}
+\subsubsection[{$\sim$\-Q\-G\-\_\-\-Block\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}Q\-G\-\_\-\-Block\-Widget\-::$\sim$\-Q\-G\-\_\-\-Block\-Widget (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQG__BlockWidget_aac9227b37cff02a8964cabbd0cbccc8d}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classQG__BlockWidget_a21ba65045a0b56274266f5645c002aaa}{\index{Q\-G\-\_\-\-Block\-Widget@{Q\-G\-\_\-\-Block\-Widget}!activate\-Block@{activate\-Block}}
+\index{activate\-Block@{activate\-Block}!QG_BlockWidget@{Q\-G\-\_\-\-Block\-Widget}}
+\subsubsection[{activate\-Block}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Block\-Widget\-::activate\-Block (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block} $\ast$}]{block}
+\end{DoxyParamCaption}
+)}}\label{classQG__BlockWidget_a21ba65045a0b56274266f5645c002aaa}
+Activates the given block and makes it the active block in the blocklist. \hypertarget{classQG__BlockWidget_a25d6562a145e8eb5039849acfc7081d5}{\index{Q\-G\-\_\-\-Block\-Widget@{Q\-G\-\_\-\-Block\-Widget}!block\-Added@{block\-Added}}
+\index{block\-Added@{block\-Added}!QG_BlockWidget@{Q\-G\-\_\-\-Block\-Widget}}
+\subsubsection[{block\-Added}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Q\-G\-\_\-\-Block\-Widget\-::block\-Added (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classQG__BlockWidget_a25d6562a145e8eb5039849acfc7081d5}
+Called when a new block is added to the list. 
+
+Reimplemented from \hyperlink{classRS__BlockListListener_a6424d65934abba9b4737413e1c35a922}{R\-S\-\_\-\-Block\-List\-Listener}.
+
+\hypertarget{classQG__BlockWidget_a6d38e6c479ab5a9b138c916e40448ec4}{\index{Q\-G\-\_\-\-Block\-Widget@{Q\-G\-\_\-\-Block\-Widget}!block\-Edited@{block\-Edited}}
+\index{block\-Edited@{block\-Edited}!QG_BlockWidget@{Q\-G\-\_\-\-Block\-Widget}}
+\subsubsection[{block\-Edited}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Q\-G\-\_\-\-Block\-Widget\-::block\-Edited (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classQG__BlockWidget_a6d38e6c479ab5a9b138c916e40448ec4}
+Called when a block's attributes are modified. 
+
+Reimplemented from \hyperlink{classRS__BlockListListener_a6025cde7a4f5f6f98f4a989d3302fb3a}{R\-S\-\_\-\-Block\-List\-Listener}.
+
+\hypertarget{classQG__BlockWidget_ad6c1a642da644216f03e6fbebf4ac6c1}{\index{Q\-G\-\_\-\-Block\-Widget@{Q\-G\-\_\-\-Block\-Widget}!block\-Removed@{block\-Removed}}
+\index{block\-Removed@{block\-Removed}!QG_BlockWidget@{Q\-G\-\_\-\-Block\-Widget}}
+\subsubsection[{block\-Removed}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Q\-G\-\_\-\-Block\-Widget\-::block\-Removed (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classQG__BlockWidget_ad6c1a642da644216f03e6fbebf4ac6c1}
+Called when a block is removed from the list. 
+
+Reimplemented from \hyperlink{classRS__BlockListListener_a80547616e22f383d40909b72352f01f0}{R\-S\-\_\-\-Block\-List\-Listener}.
+
+\hypertarget{classQG__BlockWidget_afb8a75e75062026b8fbfeb9cd3ced5b4}{\index{Q\-G\-\_\-\-Block\-Widget@{Q\-G\-\_\-\-Block\-Widget}!block\-Toggled@{block\-Toggled}}
+\index{block\-Toggled@{block\-Toggled}!QG_BlockWidget@{Q\-G\-\_\-\-Block\-Widget}}
+\subsubsection[{block\-Toggled}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Q\-G\-\_\-\-Block\-Widget\-::block\-Toggled (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classQG__BlockWidget_afb8a75e75062026b8fbfeb9cd3ced5b4}
+Called when a block's visibility is toggled. 
+
+Reimplemented from \hyperlink{classRS__BlockListListener_af30e8177f06cc254049194b4be88a620}{R\-S\-\_\-\-Block\-List\-Listener}.
+
+\hypertarget{classQG__BlockWidget_ab1c2b2e0da448a30d678ecb7698f23d9}{\index{Q\-G\-\_\-\-Block\-Widget@{Q\-G\-\_\-\-Block\-Widget}!context\-Menu\-Event@{context\-Menu\-Event}}
+\index{context\-Menu\-Event@{context\-Menu\-Event}!QG_BlockWidget@{Q\-G\-\_\-\-Block\-Widget}}
+\subsubsection[{context\-Menu\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Block\-Widget\-::context\-Menu\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Context\-Menu\-Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classQG__BlockWidget_ab1c2b2e0da448a30d678ecb7698f23d9}
+Shows a context menu for the block widget. Launched with a right click. \hypertarget{classQG__BlockWidget_a7fc80babd222fa506b47939c832f4e19}{\index{Q\-G\-\_\-\-Block\-Widget@{Q\-G\-\_\-\-Block\-Widget}!key\-Press\-Event@{key\-Press\-Event}}
+\index{key\-Press\-Event@{key\-Press\-Event}!QG_BlockWidget@{Q\-G\-\_\-\-Block\-Widget}}
+\subsubsection[{key\-Press\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Block\-Widget\-::key\-Press\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Key\-Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__BlockWidget_a7fc80babd222fa506b47939c832f4e19}
+Escape releases focus. \hypertarget{classQG__BlockWidget_a1ba391712d62ae327328cdcbf26d04e6}{\index{Q\-G\-\_\-\-Block\-Widget@{Q\-G\-\_\-\-Block\-Widget}!slot\-Activated@{slot\-Activated}}
+\index{slot\-Activated@{slot\-Activated}!QG_BlockWidget@{Q\-G\-\_\-\-Block\-Widget}}
+\subsubsection[{slot\-Activated}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Block\-Widget\-::slot\-Activated (
+\begin{DoxyParamCaption}
+\item[{Q\-Model\-Index}]{block\-Idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classQG__BlockWidget_a1ba391712d62ae327328cdcbf26d04e6}
+Called when the user activates (highlights) a block. \hypertarget{classQG__BlockWidget_a348c73c219362dd0ecb8aed78f65fe68}{\index{Q\-G\-\_\-\-Block\-Widget@{Q\-G\-\_\-\-Block\-Widget}!update@{update}}
+\index{update@{update}!QG_BlockWidget@{Q\-G\-\_\-\-Block\-Widget}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Block\-Widget\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQG__BlockWidget_a348c73c219362dd0ecb8aed78f65fe68}
+Updates the block box from the blocks in the graphic. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/ui/qg\-\_\-blockwidget.\-h\item 
+generated/librecad/moc/moc\-\_\-qg\-\_\-blockwidget.\-cpp\item 
+librecad/src/ui/qg\-\_\-blockwidget.\-cpp\end{DoxyCompactItemize}

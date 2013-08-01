@@ -1,0 +1,196 @@
+\hypertarget{classRS__ActionEditPaste}{\section{R\-S\-\_\-\-Action\-Edit\-Paste Class Reference}
+\label{classRS__ActionEditPaste}\index{R\-S\-\_\-\-Action\-Edit\-Paste@{R\-S\-\_\-\-Action\-Edit\-Paste}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actioneditpaste.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Edit\-Paste\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classRS__ActionEditPaste}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionEditPaste_a62a4fec76d478a15a268e05d776669a5}{Status} \{ \hyperlink{classRS__ActionEditPaste_a62a4fec76d478a15a268e05d776669a5aefbd837f53eb7762becc440909ca56cb}{Set\-Target\-Point}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__ActionEditPaste_a8266345ffa711e2c5f7c3add1e8b825c}{R\-S\-\_\-\-Action\-Edit\-Paste} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)
+\item 
+virtual void \hyperlink{classRS__ActionEditPaste_aba71f496f5330d89ee5827466f074b8e}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionEditPaste_a248285c542bbbdaac44f9d62e7bdd533}{trigger} ()
+\item 
+virtual void \hyperlink{classRS__ActionEditPaste_aea07419853986589c46d0ff28674db30}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionEditPaste_a64ad2cbda821d4e5cb043b0fffeb3331}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionEditPaste_a24fce8cf0fb82011441c915cf3af9f3f}{coordinate\-Event} (\hyperlink{classRS__CoordinateEvent}{R\-S\-\_\-\-Coordinate\-Event} $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionEditPaste_a4991afac6459a5be5e85d8cfafe78c3a}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionEditPaste_aa14d479a654caaf6e59bc9b6b13c756f}{update\-Mouse\-Cursor} ()
+\item 
+virtual void \hyperlink{classRS__ActionEditPaste_a461cac283cbd5e6f3759f59907320c94}{update\-Tool\-Bar} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionEditPaste_a039169c06037d04ea1e4ec4cd76040e6}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionEditPaste_a039169c06037d04ea1e4ec4cd76040e6}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionEditPaste_aa94c605e11bd657edd867e81055ee424}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries target\-Point}}\label{classRS__ActionEditPaste_aa94c605e11bd657edd867e81055ee424}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events for pasting entities from the clipboard into the current document.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionEditPaste_a62a4fec76d478a15a268e05d776669a5}{\index{R\-S\-\_\-\-Action\-Edit\-Paste@{R\-S\-\_\-\-Action\-Edit\-Paste}!Status@{Status}}
+\index{Status@{Status}!RS_ActionEditPaste@{R\-S\-\_\-\-Action\-Edit\-Paste}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Edit\-Paste\-::\-Status}}}\label{classRS__ActionEditPaste_a62a4fec76d478a15a268e05d776669a5}
+Action States. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Set\-Target\-Point@{Set\-Target\-Point}!R\-S\-\_\-\-Action\-Edit\-Paste@{R\-S\-\_\-\-Action\-Edit\-Paste}}\index{R\-S\-\_\-\-Action\-Edit\-Paste@{R\-S\-\_\-\-Action\-Edit\-Paste}!Set\-Target\-Point@{Set\-Target\-Point}}\item[{\em 
+\hypertarget{classRS__ActionEditPaste_a62a4fec76d478a15a268e05d776669a5aefbd837f53eb7762becc440909ca56cb}{Set\-Target\-Point}\label{classRS__ActionEditPaste_a62a4fec76d478a15a268e05d776669a5aefbd837f53eb7762becc440909ca56cb}
+}]Setting the reference point. \end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__ActionEditPaste_a8266345ffa711e2c5f7c3add1e8b825c}{\index{R\-S\-\_\-\-Action\-Edit\-Paste@{R\-S\-\_\-\-Action\-Edit\-Paste}!R\-S\-\_\-\-Action\-Edit\-Paste@{R\-S\-\_\-\-Action\-Edit\-Paste}}
+\index{R\-S\-\_\-\-Action\-Edit\-Paste@{R\-S\-\_\-\-Action\-Edit\-Paste}!RS_ActionEditPaste@{R\-S\-\_\-\-Action\-Edit\-Paste}}
+\subsubsection[{R\-S\-\_\-\-Action\-Edit\-Paste}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Action\-Edit\-Paste\-::\-R\-S\-\_\-\-Action\-Edit\-Paste (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} \&}]{graphic\-View}
+\end{DoxyParamCaption}
+)}}\label{classRS__ActionEditPaste_a8266345ffa711e2c5f7c3add1e8b825c}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em undo} & true for undo and false for redo. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionEditPaste_a24fce8cf0fb82011441c915cf3af9f3f}{\index{R\-S\-\_\-\-Action\-Edit\-Paste@{R\-S\-\_\-\-Action\-Edit\-Paste}!coordinate\-Event@{coordinate\-Event}}
+\index{coordinate\-Event@{coordinate\-Event}!RS_ActionEditPaste@{R\-S\-\_\-\-Action\-Edit\-Paste}}
+\subsubsection[{coordinate\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Edit\-Paste\-::coordinate\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Coordinate\-Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionEditPaste_a24fce8cf0fb82011441c915cf3af9f3f}
+Coordinate event. Triggered usually from a command line. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a9013e88769edd39b2a74af5add2986c9}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionEditPaste_aba71f496f5330d89ee5827466f074b8e}{\index{R\-S\-\_\-\-Action\-Edit\-Paste@{R\-S\-\_\-\-Action\-Edit\-Paste}!init@{init}}
+\index{init@{init}!RS_ActionEditPaste@{R\-S\-\_\-\-Action\-Edit\-Paste}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Edit\-Paste\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionEditPaste_aba71f496f5330d89ee5827466f074b8e}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae5113b2aef5a10acd192786b99580e4a}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionEditPaste_aea07419853986589c46d0ff28674db30}{\index{R\-S\-\_\-\-Action\-Edit\-Paste@{R\-S\-\_\-\-Action\-Edit\-Paste}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_ActionEditPaste@{R\-S\-\_\-\-Action\-Edit\-Paste}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Edit\-Paste\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionEditPaste_aea07419853986589c46d0ff28674db30}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionEditPaste_a64ad2cbda821d4e5cb043b0fffeb3331}{\index{R\-S\-\_\-\-Action\-Edit\-Paste@{R\-S\-\_\-\-Action\-Edit\-Paste}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionEditPaste@{R\-S\-\_\-\-Action\-Edit\-Paste}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Edit\-Paste\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionEditPaste_a64ad2cbda821d4e5cb043b0fffeb3331}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionEditPaste_a248285c542bbbdaac44f9d62e7bdd533}{\index{R\-S\-\_\-\-Action\-Edit\-Paste@{R\-S\-\_\-\-Action\-Edit\-Paste}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionEditPaste@{R\-S\-\_\-\-Action\-Edit\-Paste}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Edit\-Paste\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionEditPaste_a248285c542bbbdaac44f9d62e7bdd533}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionEditPaste_a4991afac6459a5be5e85d8cfafe78c3a}{\index{R\-S\-\_\-\-Action\-Edit\-Paste@{R\-S\-\_\-\-Action\-Edit\-Paste}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionEditPaste@{R\-S\-\_\-\-Action\-Edit\-Paste}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Edit\-Paste\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionEditPaste_a4991afac6459a5be5e85d8cfafe78c3a}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionEditPaste_aa14d479a654caaf6e59bc9b6b13c756f}{\index{R\-S\-\_\-\-Action\-Edit\-Paste@{R\-S\-\_\-\-Action\-Edit\-Paste}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionEditPaste@{R\-S\-\_\-\-Action\-Edit\-Paste}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Edit\-Paste\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionEditPaste_aa14d479a654caaf6e59bc9b6b13c756f}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionEditPaste_a461cac283cbd5e6f3759f59907320c94}{\index{R\-S\-\_\-\-Action\-Edit\-Paste@{R\-S\-\_\-\-Action\-Edit\-Paste}!update\-Tool\-Bar@{update\-Tool\-Bar}}
+\index{update\-Tool\-Bar@{update\-Tool\-Bar}!RS_ActionEditPaste@{R\-S\-\_\-\-Action\-Edit\-Paste}}
+\subsubsection[{update\-Tool\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Edit\-Paste\-::update\-Tool\-Bar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionEditPaste_a461cac283cbd5e6f3759f59907320c94}
+Should be overwritten to set the toolbar for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a25ec66468e5b09483afccd2358877361}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actioneditpaste.\-h\item 
+librecad/src/actions/rs\-\_\-actioneditpaste.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,76 @@
+\hypertarget{classRS__ActionBlocksRemove}{\section{R\-S\-\_\-\-Action\-Blocks\-Remove Class Reference}
+\label{classRS__ActionBlocksRemove}\index{R\-S\-\_\-\-Action\-Blocks\-Remove@{R\-S\-\_\-\-Action\-Blocks\-Remove}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionblocksremove.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Blocks\-Remove\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__ActionBlocksRemove}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionBlocksRemove_a53dae4fc02fed4ff4c274a3ddb6c9b39}{{\bfseries R\-S\-\_\-\-Action\-Blocks\-Remove} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionBlocksRemove_a53dae4fc02fed4ff4c274a3ddb6c9b39}
+
+\item 
+virtual void \hyperlink{classRS__ActionBlocksRemove_a8743536c35090ebb238e82c760d7df08}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionBlocksRemove_a7408cd0f8298e544fdbafe432cf4408f}{trigger} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionBlocksRemove_a25b2e7af17b2a44cd57564ba51d1df09}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionBlocksRemove_a25b2e7af17b2a44cd57564ba51d1df09}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to remove blocks.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionBlocksRemove_a8743536c35090ebb238e82c760d7df08}{\index{R\-S\-\_\-\-Action\-Blocks\-Remove@{R\-S\-\_\-\-Action\-Blocks\-Remove}!init@{init}}
+\index{init@{init}!RS_ActionBlocksRemove@{R\-S\-\_\-\-Action\-Blocks\-Remove}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Blocks\-Remove\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionBlocksRemove_a8743536c35090ebb238e82c760d7df08}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a05b7dca5deeb371eb51edcb73facd45f}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionBlocksRemove_a7408cd0f8298e544fdbafe432cf4408f}{\index{R\-S\-\_\-\-Action\-Blocks\-Remove@{R\-S\-\_\-\-Action\-Blocks\-Remove}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionBlocksRemove@{R\-S\-\_\-\-Action\-Blocks\-Remove}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Blocks\-Remove\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionBlocksRemove_a7408cd0f8298e544fdbafe432cf4408f}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa2ba8f6f697f735eace4ec5449c0b8cd}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionblocksremove.\-h\item 
+librecad/src/actions/rs\-\_\-actionblocksremove.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,117 @@
+\hypertarget{classQG__WidthBox}{\section{Q\-G\-\_\-\-Width\-Box Class Reference}
+\label{classQG__WidthBox}\index{Q\-G\-\_\-\-Width\-Box@{Q\-G\-\_\-\-Width\-Box}}
+}
+
+
+{\ttfamily \#include $<$qg\-\_\-widthbox.\-h$>$}
+
+Inheritance diagram for Q\-G\-\_\-\-Width\-Box\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classQG__WidthBox}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classQG__WidthBox_abe2b59e3fcd7cfa4e2a5304b406c1604}{void {\bfseries width\-Changed} (\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29}{R\-S2\-::\-Line\-Width})}\label{classQG__WidthBox_abe2b59e3fcd7cfa4e2a5304b406c1604}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQG__WidthBox_a7fa032d550049b6757688a2cbb51443b}{Q\-G\-\_\-\-Width\-Box} (Q\-Widget $\ast$parent=0, const char $\ast$name=0)
+\item 
+\hyperlink{classQG__WidthBox_a339092e1c23aeebe5281b9e7b29659d8}{Q\-G\-\_\-\-Width\-Box} (bool show\-By\-Layer, bool show\-Unchanged, Q\-Widget $\ast$parent=0, const char $\ast$name=0)
+\item 
+virtual \hyperlink{classQG__WidthBox_a3bce0e93c6e7faa388a2541bc52514d1}{$\sim$\-Q\-G\-\_\-\-Width\-Box} ()
+\item 
+\hypertarget{classQG__WidthBox_ac96e5bf7e7456916fa2beae81fe36908}{\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29}{R\-S2\-::\-Line\-Width} {\bfseries get\-Width} ()}\label{classQG__WidthBox_ac96e5bf7e7456916fa2beae81fe36908}
+
+\item 
+void \hyperlink{classQG__WidthBox_ace55184b4f8fa19513fe5d91a1c13a4d}{set\-Width} (\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29}{R\-S2\-::\-Line\-Width} w)
+\item 
+void \hyperlink{classQG__WidthBox_a6b9e282f967ccbabc2327d5d3a4595bf}{set\-Layer\-Width} (\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29}{R\-S2\-::\-Line\-Width} w)
+\item 
+void \hyperlink{classQG__WidthBox_a65effd0de93690e50640bd25909130c1}{init} (bool show\-By\-Layer, bool show\-Unchanged)
+\item 
+\hypertarget{classQG__WidthBox_a352e6171213983635d69f88a068d222d}{bool {\bfseries is\-Unchanged} ()}\label{classQG__WidthBox_a352e6171213983635d69f88a068d222d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A combobox for choosing a line width. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classQG__WidthBox_a7fa032d550049b6757688a2cbb51443b}{\index{Q\-G\-\_\-\-Width\-Box@{Q\-G\-\_\-\-Width\-Box}!Q\-G\-\_\-\-Width\-Box@{Q\-G\-\_\-\-Width\-Box}}
+\index{Q\-G\-\_\-\-Width\-Box@{Q\-G\-\_\-\-Width\-Box}!QG_WidthBox@{Q\-G\-\_\-\-Width\-Box}}
+\subsubsection[{Q\-G\-\_\-\-Width\-Box}]{\setlength{\rightskip}{0pt plus 5cm}Q\-G\-\_\-\-Width\-Box\-::\-Q\-G\-\_\-\-Width\-Box (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}, }
+\item[{const char $\ast$}]{name = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classQG__WidthBox_a7fa032d550049b6757688a2cbb51443b}
+Default Constructor. You must call init manually if you choose to use this constructor. \hypertarget{classQG__WidthBox_a339092e1c23aeebe5281b9e7b29659d8}{\index{Q\-G\-\_\-\-Width\-Box@{Q\-G\-\_\-\-Width\-Box}!Q\-G\-\_\-\-Width\-Box@{Q\-G\-\_\-\-Width\-Box}}
+\index{Q\-G\-\_\-\-Width\-Box@{Q\-G\-\_\-\-Width\-Box}!QG_WidthBox@{Q\-G\-\_\-\-Width\-Box}}
+\subsubsection[{Q\-G\-\_\-\-Width\-Box}]{\setlength{\rightskip}{0pt plus 5cm}Q\-G\-\_\-\-Width\-Box\-::\-Q\-G\-\_\-\-Width\-Box (
+\begin{DoxyParamCaption}
+\item[{bool}]{show\-By\-Layer, }
+\item[{bool}]{show\-Unchanged, }
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}, }
+\item[{const char $\ast$}]{name = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classQG__WidthBox_a339092e1c23aeebe5281b9e7b29659d8}
+Constructor that calls init and provides a fully functional combobox for choosing widths.
+
+
+\begin{DoxyParams}{Parameters}
+{\em show\-By\-Layer} & true\-: Show attributes By\-Layer, By\-Block \\
+\hline
+\end{DoxyParams}
+\hypertarget{classQG__WidthBox_a3bce0e93c6e7faa388a2541bc52514d1}{\index{Q\-G\-\_\-\-Width\-Box@{Q\-G\-\_\-\-Width\-Box}!$\sim$\-Q\-G\-\_\-\-Width\-Box@{$\sim$\-Q\-G\-\_\-\-Width\-Box}}
+\index{$\sim$\-Q\-G\-\_\-\-Width\-Box@{$\sim$\-Q\-G\-\_\-\-Width\-Box}!QG_WidthBox@{Q\-G\-\_\-\-Width\-Box}}
+\subsubsection[{$\sim$\-Q\-G\-\_\-\-Width\-Box}]{\setlength{\rightskip}{0pt plus 5cm}Q\-G\-\_\-\-Width\-Box\-::$\sim$\-Q\-G\-\_\-\-Width\-Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__WidthBox_a3bce0e93c6e7faa388a2541bc52514d1}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classQG__WidthBox_a65effd0de93690e50640bd25909130c1}{\index{Q\-G\-\_\-\-Width\-Box@{Q\-G\-\_\-\-Width\-Box}!init@{init}}
+\index{init@{init}!QG_WidthBox@{Q\-G\-\_\-\-Width\-Box}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Width\-Box\-::init (
+\begin{DoxyParamCaption}
+\item[{bool}]{show\-By\-Layer, }
+\item[{bool}]{show\-Unchanged}
+\end{DoxyParamCaption}
+)}}\label{classQG__WidthBox_a65effd0de93690e50640bd25909130c1}
+Initialisation (called from constructor or manually but only once).
+
+
+\begin{DoxyParams}{Parameters}
+{\em show\-By\-Layer} & true\-: Show attributes By\-Layer, By\-Block \\
+\hline
+\end{DoxyParams}
+\hypertarget{classQG__WidthBox_a6b9e282f967ccbabc2327d5d3a4595bf}{\index{Q\-G\-\_\-\-Width\-Box@{Q\-G\-\_\-\-Width\-Box}!set\-Layer\-Width@{set\-Layer\-Width}}
+\index{set\-Layer\-Width@{set\-Layer\-Width}!QG_WidthBox@{Q\-G\-\_\-\-Width\-Box}}
+\subsubsection[{set\-Layer\-Width}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Width\-Box\-::set\-Layer\-Width (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Line\-Width}}]{w}
+\end{DoxyParamCaption}
+)}}\label{classQG__WidthBox_a6b9e282f967ccbabc2327d5d3a4595bf}
+Sets the pixmap showing the width of the \char`\"{}\-By Layer\char`\"{} item. \hypertarget{classQG__WidthBox_ace55184b4f8fa19513fe5d91a1c13a4d}{\index{Q\-G\-\_\-\-Width\-Box@{Q\-G\-\_\-\-Width\-Box}!set\-Width@{set\-Width}}
+\index{set\-Width@{set\-Width}!QG_WidthBox@{Q\-G\-\_\-\-Width\-Box}}
+\subsubsection[{set\-Width}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Width\-Box\-::set\-Width (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Line\-Width}}]{w}
+\end{DoxyParamCaption}
+)}}\label{classQG__WidthBox_ace55184b4f8fa19513fe5d91a1c13a4d}
+Sets the currently selected width item to the given width. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/ui/qg\-\_\-widthbox.\-h\item 
+generated/librecad/moc/moc\-\_\-qg\-\_\-widthbox.\-cpp\item 
+librecad/src/ui/qg\-\_\-widthbox.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,137 @@
+\hypertarget{classQC__ActionGetSelect}{\section{Q\-C\-\_\-\-Action\-Get\-Select Class Reference}
+\label{classQC__ActionGetSelect}\index{Q\-C\-\_\-\-Action\-Get\-Select@{Q\-C\-\_\-\-Action\-Get\-Select}}
+}
+
+
+{\ttfamily \#include $<$qc\-\_\-actiongetselect.\-h$>$}
+
+Inheritance diagram for Q\-C\-\_\-\-Action\-Get\-Select\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classQC__ActionGetSelect}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classQC__ActionGetSelect_a3ecbb885911489407e842021af3f195b}{Status} \{ {\bfseries Select}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classQC__ActionGetSelect_a16f674bcce6894894fff3b90a56af7fb}{{\bfseries Q\-C\-\_\-\-Action\-Get\-Select} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classQC__ActionGetSelect_a16f674bcce6894894fff3b90a56af7fb}
+
+\item 
+virtual void \hyperlink{classQC__ActionGetSelect_a066acb57495e4a15669cc6b9b2ea10ce}{init} (int status=0)
+\item 
+virtual void \hyperlink{classQC__ActionGetSelect_aa1b4395fea31e9b509e1775a741bfcfb}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classQC__ActionGetSelect_ad33ab6700decba44190cf5daa515a188}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classQC__ActionGetSelect_a107d0a73b40f179c1830001e937013f6}{update\-Mouse\-Cursor} ()
+\item 
+virtual void \hyperlink{classQC__ActionGetSelect_af89f133fff86dd5bab9debbac6a5b435}{update\-Tool\-Bar} ()
+\item 
+\hypertarget{classQC__ActionGetSelect_af64ee49fa5889f65c0e607a076c51375}{void {\bfseries set\-Mesage} (Q\-String msg)}\label{classQC__ActionGetSelect_af64ee49fa5889f65c0e607a076c51375}
+
+\item 
+\hypertarget{classQC__ActionGetSelect_ac032c1f26f54957c9b68ef1d56ebfeca}{bool {\bfseries is\-Completed} ()}\label{classQC__ActionGetSelect_ac032c1f26f54957c9b68ef1d56ebfeca}
+
+\item 
+void \hyperlink{classQC__ActionGetSelect_a39310ab2d5c36e97589e437eb1766b3b}{get\-Selected} (Q\-List$<$ \hyperlink{classPlug__Entity}{Plug\-\_\-\-Entity} $\ast$ $>$ $\ast$se, \hyperlink{classDoc__plugin__interface}{Doc\-\_\-plugin\-\_\-interface} $\ast$d)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to select entities from plugin.
+
+\begin{DoxyAuthor}{Author}
+Rallaz 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classQC__ActionGetSelect_a3ecbb885911489407e842021af3f195b}{\index{Q\-C\-\_\-\-Action\-Get\-Select@{Q\-C\-\_\-\-Action\-Get\-Select}!Status@{Status}}
+\index{Status@{Status}!QC_ActionGetSelect@{Q\-C\-\_\-\-Action\-Get\-Select}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Q\-C\-\_\-\-Action\-Get\-Select\-::\-Status}}}\label{classQC__ActionGetSelect_a3ecbb885911489407e842021af3f195b}
+Action States. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classQC__ActionGetSelect_a39310ab2d5c36e97589e437eb1766b3b}{\index{Q\-C\-\_\-\-Action\-Get\-Select@{Q\-C\-\_\-\-Action\-Get\-Select}!get\-Selected@{get\-Selected}}
+\index{get\-Selected@{get\-Selected}!QC_ActionGetSelect@{Q\-C\-\_\-\-Action\-Get\-Select}}
+\subsubsection[{get\-Selected}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-C\-\_\-\-Action\-Get\-Select\-::get\-Selected (
+\begin{DoxyParamCaption}
+\item[{Q\-List$<$ {\bf Plug\-\_\-\-Entity} $\ast$ $>$ $\ast$}]{se, }
+\item[{{\bf Doc\-\_\-plugin\-\_\-interface} $\ast$}]{d}
+\end{DoxyParamCaption}
+)}}\label{classQC__ActionGetSelect_a39310ab2d5c36e97589e437eb1766b3b}
+Adds all selected entities from 'container' to the selection. \hypertarget{classQC__ActionGetSelect_a066acb57495e4a15669cc6b9b2ea10ce}{\index{Q\-C\-\_\-\-Action\-Get\-Select@{Q\-C\-\_\-\-Action\-Get\-Select}!init@{init}}
+\index{init@{init}!QC_ActionGetSelect@{Q\-C\-\_\-\-Action\-Get\-Select}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-C\-\_\-\-Action\-Get\-Select\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQC__ActionGetSelect_a066acb57495e4a15669cc6b9b2ea10ce}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a05b7dca5deeb371eb51edcb73facd45f}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classQC__ActionGetSelect_aa1b4395fea31e9b509e1775a741bfcfb}{\index{Q\-C\-\_\-\-Action\-Get\-Select@{Q\-C\-\_\-\-Action\-Get\-Select}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!QC_ActionGetSelect@{Q\-C\-\_\-\-Action\-Get\-Select}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-C\-\_\-\-Action\-Get\-Select\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQC__ActionGetSelect_aa1b4395fea31e9b509e1775a741bfcfb}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classQC__ActionGetSelect_ad33ab6700decba44190cf5daa515a188}{\index{Q\-C\-\_\-\-Action\-Get\-Select@{Q\-C\-\_\-\-Action\-Get\-Select}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!QC_ActionGetSelect@{Q\-C\-\_\-\-Action\-Get\-Select}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-C\-\_\-\-Action\-Get\-Select\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQC__ActionGetSelect_ad33ab6700decba44190cf5daa515a188}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classQC__ActionGetSelect_a107d0a73b40f179c1830001e937013f6}{\index{Q\-C\-\_\-\-Action\-Get\-Select@{Q\-C\-\_\-\-Action\-Get\-Select}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!QC_ActionGetSelect@{Q\-C\-\_\-\-Action\-Get\-Select}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-C\-\_\-\-Action\-Get\-Select\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQC__ActionGetSelect_a107d0a73b40f179c1830001e937013f6}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classQC__ActionGetSelect_af89f133fff86dd5bab9debbac6a5b435}{\index{Q\-C\-\_\-\-Action\-Get\-Select@{Q\-C\-\_\-\-Action\-Get\-Select}!update\-Tool\-Bar@{update\-Tool\-Bar}}
+\index{update\-Tool\-Bar@{update\-Tool\-Bar}!QC_ActionGetSelect@{Q\-C\-\_\-\-Action\-Get\-Select}}
+\subsubsection[{update\-Tool\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-C\-\_\-\-Action\-Get\-Select\-::update\-Tool\-Bar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQC__ActionGetSelect_af89f133fff86dd5bab9debbac6a5b435}
+Should be overwritten to set the toolbar for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a25ec66468e5b09483afccd2358877361}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/plugins/intern/qc\-\_\-actiongetselect.\-h\item 
+librecad/src/plugins/intern/qc\-\_\-actiongetselect.\-cpp\end{DoxyCompactItemize}

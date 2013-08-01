@@ -1,0 +1,154 @@
+\hypertarget{classDRW__Entity}{\section{D\-R\-W\-\_\-\-Entity Class Reference}
+\label{classDRW__Entity}\index{D\-R\-W\-\_\-\-Entity@{D\-R\-W\-\_\-\-Entity}}
+}
+
+
+Base class for entities.  
+
+
+
+
+{\ttfamily \#include $<$drw\-\_\-entities.\-h$>$}
+
+Inheritance diagram for D\-R\-W\-\_\-\-Entity\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.296296cm]{classDRW__Entity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDRW__Entity_a2ba4ca83e25eca36822cdf4b0b332efe}{{\bfseries D\-R\-W\-\_\-\-Entity} (const \hyperlink{classDRW__Entity}{D\-R\-W\-\_\-\-Entity} \&d)}\label{classDRW__Entity_a2ba4ca83e25eca36822cdf4b0b332efe}
+
+\item 
+\hypertarget{classDRW__Entity_a202fefae9154ebddcf7f007af5517982}{virtual void {\bfseries apply\-Extrusion} ()=0}\label{classDRW__Entity_a202fefae9154ebddcf7f007af5517982}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+enum D\-R\-W\-::\-E\-T\-Y\-P\-E \hyperlink{classDRW__Entity_a36dff42707384984a085dbea602d0217}{e\-Type}
+\item 
+int \hyperlink{classDRW__Entity_a32f66a2b4da26f1f9a42ffa8539c916c}{handle}
+\item 
+int \hyperlink{classDRW__Entity_a8be4a86f2b846ecc0723e2b9b5b33f0f}{handle\-Block}
+\item 
+U\-T\-F8\-S\-T\-R\-I\-N\-G \hyperlink{classDRW__Entity_a65b68c6c8712de3e2fada1d263b96042}{layer}
+\item 
+U\-T\-F8\-S\-T\-R\-I\-N\-G \hyperlink{classDRW__Entity_a1180883df434a22fdafbc8ac1273e46e}{line\-Type}
+\item 
+int \hyperlink{classDRW__Entity_a199afc08d2cc4c44ea58d49780582526}{color}
+\item 
+enum \hyperlink{classDRW__LW__Conv_aed68cbc3d8bdf7e20003dd2d970279b3}{D\-R\-W\-\_\-\-L\-W\-\_\-\-Conv\-::line\-Width} \hyperlink{classDRW__Entity_a5e01429ed3b7199b17367a5c85970a0d}{l\-Weight}
+\item 
+double \hyperlink{classDRW__Entity_a167d107e81c5b2bb4ee015fa62e2fde2}{ltype\-Scale}
+\item 
+bool \hyperlink{classDRW__Entity_a410a134f3127298598a0075e60f3616d}{visible}
+\item 
+int \hyperlink{classDRW__Entity_a4448fbdbe618f83ed71a7c1ed98caeae}{color24}
+\item 
+string \hyperlink{classDRW__Entity_a67795f82419627d5d6b56b874dc29f59}{color\-Name}
+\item 
+int \hyperlink{classDRW__Entity_aea0364c7833d7c0811b257292278fa7c}{space}
+\item 
+bool \hyperlink{classDRW__Entity_a62545716d4aec61cabb85576afc78dee}{have\-Extrusion}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDRW__Entity_aa652e55bf3c81bd22c5743797c9a366e}{void {\bfseries parse\-Code} (int code, \hyperlink{classdxfReader}{dxf\-Reader} $\ast$reader)}\label{classDRW__Entity_aa652e55bf3c81bd22c5743797c9a366e}
+
+\item 
+void \hyperlink{classDRW__Entity_a84d72c116d6bfaf0b1dab2782b8a764b}{calculate\-Axis} (\hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} ext\-Point)
+\begin{DoxyCompactList}\small\item\em Calculate arbitary axis. \end{DoxyCompactList}\item 
+void \hyperlink{classDRW__Entity_a1c82add778b9dc940fa8f0231287858c}{extrude\-Point} (\hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} ext\-Point, \hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} $\ast$point)
+\begin{DoxyCompactList}\small\item\em Extrude a point using arbitary axis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for entities. 
+
+Base class for entities \begin{DoxyAuthor}{Author}
+Rallaz 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDRW__Entity_a84d72c116d6bfaf0b1dab2782b8a764b}{\index{D\-R\-W\-\_\-\-Entity@{D\-R\-W\-\_\-\-Entity}!calculate\-Axis@{calculate\-Axis}}
+\index{calculate\-Axis@{calculate\-Axis}!DRW_Entity@{D\-R\-W\-\_\-\-Entity}}
+\subsubsection[{calculate\-Axis}]{\setlength{\rightskip}{0pt plus 5cm}void D\-R\-W\-\_\-\-Entity\-::calculate\-Axis (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-R\-W\-\_\-\-Coord}}]{ext\-Point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classDRW__Entity_a84d72c116d6bfaf0b1dab2782b8a764b}
+
+
+Calculate arbitary axis. 
+
+Calculate arbitary axis for apply extrusions \begin{DoxyAuthor}{Author}
+Rallaz 
+\end{DoxyAuthor}
+\hypertarget{classDRW__Entity_a1c82add778b9dc940fa8f0231287858c}{\index{D\-R\-W\-\_\-\-Entity@{D\-R\-W\-\_\-\-Entity}!extrude\-Point@{extrude\-Point}}
+\index{extrude\-Point@{extrude\-Point}!DRW_Entity@{D\-R\-W\-\_\-\-Entity}}
+\subsubsection[{extrude\-Point}]{\setlength{\rightskip}{0pt plus 5cm}void D\-R\-W\-\_\-\-Entity\-::extrude\-Point (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-R\-W\-\_\-\-Coord}}]{ext\-Point, }
+\item[{{\bf D\-R\-W\-\_\-\-Coord} $\ast$}]{point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classDRW__Entity_a1c82add778b9dc940fa8f0231287858c}
+
+
+Extrude a point using arbitary axis. 
+
+apply extrusion in a point using arbitary axis (previous calculated) \begin{DoxyAuthor}{Author}
+Rallaz 
+\end{DoxyAuthor}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classDRW__Entity_a199afc08d2cc4c44ea58d49780582526}{\index{D\-R\-W\-\_\-\-Entity@{D\-R\-W\-\_\-\-Entity}!color@{color}}
+\index{color@{color}!DRW_Entity@{D\-R\-W\-\_\-\-Entity}}
+\subsubsection[{color}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-Entity\-::color}}\label{classDRW__Entity_a199afc08d2cc4c44ea58d49780582526}
+entity color, code 62 \hypertarget{classDRW__Entity_a4448fbdbe618f83ed71a7c1ed98caeae}{\index{D\-R\-W\-\_\-\-Entity@{D\-R\-W\-\_\-\-Entity}!color24@{color24}}
+\index{color24@{color24}!DRW_Entity@{D\-R\-W\-\_\-\-Entity}}
+\subsubsection[{color24}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-Entity\-::color24}}\label{classDRW__Entity_a4448fbdbe618f83ed71a7c1ed98caeae}
+24-\/bit color, code 420 \hypertarget{classDRW__Entity_a67795f82419627d5d6b56b874dc29f59}{\index{D\-R\-W\-\_\-\-Entity@{D\-R\-W\-\_\-\-Entity}!color\-Name@{color\-Name}}
+\index{color\-Name@{color\-Name}!DRW_Entity@{D\-R\-W\-\_\-\-Entity}}
+\subsubsection[{color\-Name}]{\setlength{\rightskip}{0pt plus 5cm}string D\-R\-W\-\_\-\-Entity\-::color\-Name}}\label{classDRW__Entity_a67795f82419627d5d6b56b874dc29f59}
+color name, code 430 \hypertarget{classDRW__Entity_a36dff42707384984a085dbea602d0217}{\index{D\-R\-W\-\_\-\-Entity@{D\-R\-W\-\_\-\-Entity}!e\-Type@{e\-Type}}
+\index{e\-Type@{e\-Type}!DRW_Entity@{D\-R\-W\-\_\-\-Entity}}
+\subsubsection[{e\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum D\-R\-W\-::\-E\-T\-Y\-P\-E D\-R\-W\-\_\-\-Entity\-::e\-Type}}\label{classDRW__Entity_a36dff42707384984a085dbea602d0217}
+enum\-: entity type, code 0 \hypertarget{classDRW__Entity_a32f66a2b4da26f1f9a42ffa8539c916c}{\index{D\-R\-W\-\_\-\-Entity@{D\-R\-W\-\_\-\-Entity}!handle@{handle}}
+\index{handle@{handle}!DRW_Entity@{D\-R\-W\-\_\-\-Entity}}
+\subsubsection[{handle}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-Entity\-::handle}}\label{classDRW__Entity_a32f66a2b4da26f1f9a42ffa8539c916c}
+entity identifier, code 5 \hypertarget{classDRW__Entity_a8be4a86f2b846ecc0723e2b9b5b33f0f}{\index{D\-R\-W\-\_\-\-Entity@{D\-R\-W\-\_\-\-Entity}!handle\-Block@{handle\-Block}}
+\index{handle\-Block@{handle\-Block}!DRW_Entity@{D\-R\-W\-\_\-\-Entity}}
+\subsubsection[{handle\-Block}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-Entity\-::handle\-Block}}\label{classDRW__Entity_a8be4a86f2b846ecc0723e2b9b5b33f0f}
+Soft-\/pointer I\-D/handle to owner B\-L\-O\-C\-K\-\_\-\-R\-E\-C\-O\-R\-D object, code 330 \hypertarget{classDRW__Entity_a62545716d4aec61cabb85576afc78dee}{\index{D\-R\-W\-\_\-\-Entity@{D\-R\-W\-\_\-\-Entity}!have\-Extrusion@{have\-Extrusion}}
+\index{have\-Extrusion@{have\-Extrusion}!DRW_Entity@{D\-R\-W\-\_\-\-Entity}}
+\subsubsection[{have\-Extrusion}]{\setlength{\rightskip}{0pt plus 5cm}bool D\-R\-W\-\_\-\-Entity\-::have\-Extrusion}}\label{classDRW__Entity_a62545716d4aec61cabb85576afc78dee}
+set to true if the entity have extrusion \hypertarget{classDRW__Entity_a65b68c6c8712de3e2fada1d263b96042}{\index{D\-R\-W\-\_\-\-Entity@{D\-R\-W\-\_\-\-Entity}!layer@{layer}}
+\index{layer@{layer}!DRW_Entity@{D\-R\-W\-\_\-\-Entity}}
+\subsubsection[{layer}]{\setlength{\rightskip}{0pt plus 5cm}U\-T\-F8\-S\-T\-R\-I\-N\-G D\-R\-W\-\_\-\-Entity\-::layer}}\label{classDRW__Entity_a65b68c6c8712de3e2fada1d263b96042}
+layer name, code 8 \hypertarget{classDRW__Entity_a1180883df434a22fdafbc8ac1273e46e}{\index{D\-R\-W\-\_\-\-Entity@{D\-R\-W\-\_\-\-Entity}!line\-Type@{line\-Type}}
+\index{line\-Type@{line\-Type}!DRW_Entity@{D\-R\-W\-\_\-\-Entity}}
+\subsubsection[{line\-Type}]{\setlength{\rightskip}{0pt plus 5cm}U\-T\-F8\-S\-T\-R\-I\-N\-G D\-R\-W\-\_\-\-Entity\-::line\-Type}}\label{classDRW__Entity_a1180883df434a22fdafbc8ac1273e46e}
+line type, code 6 \hypertarget{classDRW__Entity_a167d107e81c5b2bb4ee015fa62e2fde2}{\index{D\-R\-W\-\_\-\-Entity@{D\-R\-W\-\_\-\-Entity}!ltype\-Scale@{ltype\-Scale}}
+\index{ltype\-Scale@{ltype\-Scale}!DRW_Entity@{D\-R\-W\-\_\-\-Entity}}
+\subsubsection[{ltype\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}double D\-R\-W\-\_\-\-Entity\-::ltype\-Scale}}\label{classDRW__Entity_a167d107e81c5b2bb4ee015fa62e2fde2}
+linetype scale, code 48 \hypertarget{classDRW__Entity_a5e01429ed3b7199b17367a5c85970a0d}{\index{D\-R\-W\-\_\-\-Entity@{D\-R\-W\-\_\-\-Entity}!l\-Weight@{l\-Weight}}
+\index{l\-Weight@{l\-Weight}!DRW_Entity@{D\-R\-W\-\_\-\-Entity}}
+\subsubsection[{l\-Weight}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf D\-R\-W\-\_\-\-L\-W\-\_\-\-Conv\-::line\-Width} D\-R\-W\-\_\-\-Entity\-::l\-Weight}}\label{classDRW__Entity_a5e01429ed3b7199b17367a5c85970a0d}
+entity lineweight, code 370 \hypertarget{classDRW__Entity_aea0364c7833d7c0811b257292278fa7c}{\index{D\-R\-W\-\_\-\-Entity@{D\-R\-W\-\_\-\-Entity}!space@{space}}
+\index{space@{space}!DRW_Entity@{D\-R\-W\-\_\-\-Entity}}
+\subsubsection[{space}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-Entity\-::space}}\label{classDRW__Entity_aea0364c7833d7c0811b257292278fa7c}
+space indicator 0 = model, 1 paper, code 67 \hypertarget{classDRW__Entity_a410a134f3127298598a0075e60f3616d}{\index{D\-R\-W\-\_\-\-Entity@{D\-R\-W\-\_\-\-Entity}!visible@{visible}}
+\index{visible@{visible}!DRW_Entity@{D\-R\-W\-\_\-\-Entity}}
+\subsubsection[{visible}]{\setlength{\rightskip}{0pt plus 5cm}bool D\-R\-W\-\_\-\-Entity\-::visible}}\label{classDRW__Entity_a410a134f3127298598a0075e60f3616d}
+entity visibility, code 60 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+libraries/libdxfrw/src/drw\-\_\-entities.\-h\item 
+libraries/libdxfrw/src/drw\-\_\-entities.\-cpp\end{DoxyCompactItemize}

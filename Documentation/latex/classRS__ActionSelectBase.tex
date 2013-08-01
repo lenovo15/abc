@@ -1,0 +1,63 @@
+\hypertarget{classRS__ActionSelectBase}{\section{R\-S\-\_\-\-Action\-Select\-Base Class Reference}
+\label{classRS__ActionSelectBase}\index{R\-S\-\_\-\-Action\-Select\-Base@{R\-S\-\_\-\-Action\-Select\-Base}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionselectbase.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Select\-Base\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__ActionSelectBase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionSelectBase_ad20e2f4959377fd34da469864b884bf9}{{\bfseries R\-S\-\_\-\-Action\-Select\-Base} (const char $\ast$\hyperlink{classRS__ActionInterface_a1fdccfa2fcee3e1d21e6f79e6987f3df}{name}, \hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionSelectBase_ad20e2f4959377fd34da469864b884bf9}
+
+\item 
+virtual void \hyperlink{classRS__ActionSelectBase_ae89489a425081c861ddb12c8ff02130d}{key\-Release\-Event} (Q\-Key\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionSelectBase_a4b3a05ffbe33b39963625d50e663a5ab}{update\-Mouse\-Cursor} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is the base class to all select actions.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionSelectBase_ae89489a425081c861ddb12c8ff02130d}{\index{R\-S\-\_\-\-Action\-Select\-Base@{R\-S\-\_\-\-Action\-Select\-Base}!key\-Release\-Event@{key\-Release\-Event}}
+\index{key\-Release\-Event@{key\-Release\-Event}!RS_ActionSelectBase@{R\-S\-\_\-\-Action\-Select\-Base}}
+\subsubsection[{key\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Select\-Base\-::key\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Key\-Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionSelectBase_ae89489a425081c861ddb12c8ff02130d}
+Default behaviour of this method is triggering the predecesing action and finishing this one when the enter key is pressed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_ad8e2085be7cde82f12c6145824956e81}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionSelectBase_a4b3a05ffbe33b39963625d50e663a5ab}{\index{R\-S\-\_\-\-Action\-Select\-Base@{R\-S\-\_\-\-Action\-Select\-Base}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionSelectBase@{R\-S\-\_\-\-Action\-Select\-Base}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Select\-Base\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionSelectBase_a4b3a05ffbe33b39963625d50e663a5ab}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionselectbase.\-h\item 
+librecad/src/actions/rs\-\_\-actionselectbase.\-cpp\end{DoxyCompactItemize}

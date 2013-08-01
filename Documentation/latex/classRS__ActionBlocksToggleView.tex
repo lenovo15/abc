@@ -1,0 +1,76 @@
+\hypertarget{classRS__ActionBlocksToggleView}{\section{R\-S\-\_\-\-Action\-Blocks\-Toggle\-View Class Reference}
+\label{classRS__ActionBlocksToggleView}\index{R\-S\-\_\-\-Action\-Blocks\-Toggle\-View@{R\-S\-\_\-\-Action\-Blocks\-Toggle\-View}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionblockstoggleview.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Blocks\-Toggle\-View\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__ActionBlocksToggleView}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionBlocksToggleView_acd701a128b0e3ba46e523187d02f3645}{{\bfseries R\-S\-\_\-\-Action\-Blocks\-Toggle\-View} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionBlocksToggleView_acd701a128b0e3ba46e523187d02f3645}
+
+\item 
+virtual void \hyperlink{classRS__ActionBlocksToggleView_a5aea3008bc4861591c1f4514ffe1d0ef}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionBlocksToggleView_a43f3d67b4c695cc34a676559fcd8da1a}{trigger} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionBlocksToggleView_a81ce4517731af7f489c7a7cba5ef3aa1}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionBlocksToggleView_a81ce4517731af7f489c7a7cba5ef3aa1}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to edit layers.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionBlocksToggleView_a5aea3008bc4861591c1f4514ffe1d0ef}{\index{R\-S\-\_\-\-Action\-Blocks\-Toggle\-View@{R\-S\-\_\-\-Action\-Blocks\-Toggle\-View}!init@{init}}
+\index{init@{init}!RS_ActionBlocksToggleView@{R\-S\-\_\-\-Action\-Blocks\-Toggle\-View}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Blocks\-Toggle\-View\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionBlocksToggleView_a5aea3008bc4861591c1f4514ffe1d0ef}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a05b7dca5deeb371eb51edcb73facd45f}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionBlocksToggleView_a43f3d67b4c695cc34a676559fcd8da1a}{\index{R\-S\-\_\-\-Action\-Blocks\-Toggle\-View@{R\-S\-\_\-\-Action\-Blocks\-Toggle\-View}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionBlocksToggleView@{R\-S\-\_\-\-Action\-Blocks\-Toggle\-View}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Blocks\-Toggle\-View\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionBlocksToggleView_a43f3d67b4c695cc34a676559fcd8da1a}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa2ba8f6f697f735eace4ec5449c0b8cd}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionblockstoggleview.\-h\item 
+librecad/src/actions/rs\-\_\-actionblockstoggleview.\-cpp\end{DoxyCompactItemize}

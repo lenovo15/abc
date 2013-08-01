@@ -1,0 +1,148 @@
+\hypertarget{classRS__FilterCXF}{\section{R\-S\-\_\-\-Filter\-C\-X\-F Class Reference}
+\label{classRS__FilterCXF}\index{R\-S\-\_\-\-Filter\-C\-X\-F@{R\-S\-\_\-\-Filter\-C\-X\-F}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-filtercxf.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Filter\-C\-X\-F\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRS__FilterCXF}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__FilterCXF_ab25b90e58b5701514899640ff5144ee7}{R\-S\-\_\-\-Filter\-C\-X\-F} ()
+\item 
+virtual bool \hyperlink{classRS__FilterCXF_a4ce271ce310015e83a2955733bb9c78c}{can\-Import} (const Q\-String \&, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} t) const 
+\item 
+virtual bool \hyperlink{classRS__FilterCXF_af999b918b8c86033c6943086aab809ae}{can\-Export} (const Q\-String \&, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} t) const 
+\item 
+virtual bool \hyperlink{classRS__FilterCXF_aa71e808f526fdfb8df9f147f642e3939}{file\-Import} (\hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} \&g, const Q\-String \&file, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type})
+\item 
+virtual bool \hyperlink{classRS__FilterCXF_aed470407f4caf1ba37b36b7a8e5b3b6c}{file\-Export} (\hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} \&g, const Q\-String \&file, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type})
+\item 
+void \hyperlink{classRS__FilterCXF_a42990bfe6c0875bf5c66b366e287ce51}{stream} (std\-::ofstream \&fs, double value)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__FilterCXF_ad47a435523c2cbbb6cde1186abd5b1db}{static \hyperlink{classRS__FilterInterface}{R\-S\-\_\-\-Filter\-Interface} $\ast$ {\bfseries create\-Filter} ()}\label{classRS__FilterCXF_ad47a435523c2cbbb6cde1186abd5b1db}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This format filter class can import and export C\-X\-F (C\-A\-M Expert Font) files.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__FilterCXF_ab25b90e58b5701514899640ff5144ee7}{\index{R\-S\-\_\-\-Filter\-C\-X\-F@{R\-S\-\_\-\-Filter\-C\-X\-F}!R\-S\-\_\-\-Filter\-C\-X\-F@{R\-S\-\_\-\-Filter\-C\-X\-F}}
+\index{R\-S\-\_\-\-Filter\-C\-X\-F@{R\-S\-\_\-\-Filter\-C\-X\-F}!RS_FilterCXF@{R\-S\-\_\-\-Filter\-C\-X\-F}}
+\subsubsection[{R\-S\-\_\-\-Filter\-C\-X\-F}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Filter\-C\-X\-F\-::\-R\-S\-\_\-\-Filter\-C\-X\-F (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterCXF_ab25b90e58b5701514899640ff5144ee7}
+Default constructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__FilterCXF_af999b918b8c86033c6943086aab809ae}{\index{R\-S\-\_\-\-Filter\-C\-X\-F@{R\-S\-\_\-\-Filter\-C\-X\-F}!can\-Export@{can\-Export}}
+\index{can\-Export@{can\-Export}!RS_FilterCXF@{R\-S\-\_\-\-Filter\-C\-X\-F}}
+\subsubsection[{can\-Export}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Filter\-C\-X\-F\-::can\-Export (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{file\-Name, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{t}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__FilterCXF_af999b918b8c86033c6943086aab809ae}
+Checks if this filter can export the given file type.
+
+\begin{DoxyReturn}{Returns}
+true if the filter can export the file type, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__FilterInterface_af96c8b390ee351e7b7112a974a52828c}{R\-S\-\_\-\-Filter\-Interface}.
+
+\hypertarget{classRS__FilterCXF_a4ce271ce310015e83a2955733bb9c78c}{\index{R\-S\-\_\-\-Filter\-C\-X\-F@{R\-S\-\_\-\-Filter\-C\-X\-F}!can\-Import@{can\-Import}}
+\index{can\-Import@{can\-Import}!RS_FilterCXF@{R\-S\-\_\-\-Filter\-C\-X\-F}}
+\subsubsection[{can\-Import}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Filter\-C\-X\-F\-::can\-Import (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{t}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__FilterCXF_a4ce271ce310015e83a2955733bb9c78c}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba9a2b7d7e9a64cd2022b599ff547c250c}{R\-S2\-::\-Format\-C\-X\-F}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__FilterInterface_a62540c02649ca2040be61e5ce9e56742}{R\-S\-\_\-\-Filter\-Interface}.
+
+\hypertarget{classRS__FilterCXF_aed470407f4caf1ba37b36b7a8e5b3b6c}{\index{R\-S\-\_\-\-Filter\-C\-X\-F@{R\-S\-\_\-\-Filter\-C\-X\-F}!file\-Export@{file\-Export}}
+\index{file\-Export@{file\-Export}!RS_FilterCXF@{R\-S\-\_\-\-Filter\-C\-X\-F}}
+\subsubsection[{file\-Export}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Filter\-C\-X\-F\-::file\-Export (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Graphic} \&}]{g, }
+\item[{const Q\-String \&}]{file, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterCXF_aed470407f4caf1ba37b36b7a8e5b3b6c}
+Implementation of the method used for R\-S\-\_\-\-Export to communicate with this filter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & Full path to the C\-X\-F file that will be written. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__FilterInterface_a85601a186a66bbf6bedaed7b79cd034f}{R\-S\-\_\-\-Filter\-Interface}.
+
+\hypertarget{classRS__FilterCXF_aa71e808f526fdfb8df9f147f642e3939}{\index{R\-S\-\_\-\-Filter\-C\-X\-F@{R\-S\-\_\-\-Filter\-C\-X\-F}!file\-Import@{file\-Import}}
+\index{file\-Import@{file\-Import}!RS_FilterCXF@{R\-S\-\_\-\-Filter\-C\-X\-F}}
+\subsubsection[{file\-Import}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Filter\-C\-X\-F\-::file\-Import (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Graphic} \&}]{g, }
+\item[{const Q\-String \&}]{file, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterCXF_aa71e808f526fdfb8df9f147f642e3939}
+Implementation of the method used for R\-S\-\_\-\-Import to communicate with this filter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & The graphic in which the entities from the file will be created or the graphics from which the entities are taken to be stored in a file. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__FilterInterface_a6d4bf32c02a4c61f8465acc78b10e090}{R\-S\-\_\-\-Filter\-Interface}.
+
+\hypertarget{classRS__FilterCXF_a42990bfe6c0875bf5c66b366e287ce51}{\index{R\-S\-\_\-\-Filter\-C\-X\-F@{R\-S\-\_\-\-Filter\-C\-X\-F}!stream@{stream}}
+\index{stream@{stream}!RS_FilterCXF@{R\-S\-\_\-\-Filter\-C\-X\-F}}
+\subsubsection[{stream}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-C\-X\-F\-::stream (
+\begin{DoxyParamCaption}
+\item[{std\-::ofstream \&}]{fs, }
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterCXF_a42990bfe6c0875bf5c66b366e287ce51}
+Streams a double value to the gien stream cutting away trailing 0's.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & A double value. e.\-g. 2.\-700000 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/filters/rs\-\_\-filtercxf.\-h\item 
+librecad/src/lib/filters/rs\-\_\-filtercxf.\-cpp\end{DoxyCompactItemize}

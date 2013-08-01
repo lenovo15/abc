@@ -1,0 +1,93 @@
+Libre\-C\-A\-D is a 2\-D C\-A\-D drawing tool based on the community edition of Q\-C\-A\-D (www.\-qcad.\-org). Libre\-C\-A\-D has been re-\/structured and ported to qt4 and works natively cross platform between O\-S\-X, Windows and Linux. See \href{http://www.librecad.org}{\tt http\-://www.\-librecad.\-org}
+
+\subsection*{User Manual and wiki}
+
+We are in the process of building a user manual and wiki\-:
+
+\href{http://wiki.librecad.org/index.php/Main_Page}{\tt http\-://wiki.\-librecad.\-org/index.\-php/\-Main\-\_\-\-Page}
+
+\subsection*{U\-N\-I\-X and O\-S\-X users}
+
+Unzip or checkout a version of Libre\-C\-A\-D into a directory. C\-D into that directory and follow these instructions\-:
+
+Build makefile and compile Libre\-C\-A\-D
+
+``` qmake librecad.\-pro make ```
+
+After successful compiling, the executible is generated\-:
+
+Linux\-: unix/librecad O\-S/\-X\-: Libre\-C\-A\-D.\-app/\-Contents/\-Mac\-O\-S/\-Libre\-C\-A\-D
+
+A sample building script for O\-S/\-X is included as scripts/build-\/osx.\-sh. This script file also generates a Libre\-C\-A\-D.\-dmg.
+
+\subsection*{Ubuntu/\-Debian users}
+
+Make sure you have the qt-\/4 S\-D\-K installed Install the qt4 S\-D\-K by executing the following commands\-:
+
+``` \$ sudo apt-\/get install g++ gcc make git-\/core libqt4-\/dev qt4-\/qmake \textbackslash{} libqt4-\/help qt4-\/dev-\/tools libboost-\/all-\/dev libmuparser-\/dev libfreetype6-\/dev ```
+
+Alternatively, you make sure you have deb-\/src lines enabled in your sources.\-list file, and run,
+
+``` \$ sudo apt-\/get build-\/dep librecad ```
+
+For S\-V\-N see also\-: \href{http://www.librecad.org/2010/10/debian-64-bit-and-ubuntu-compile-how-to/}{\tt http\-://www.\-librecad.\-org/2010/10/debian-\/64-\/bit-\/and-\/ubuntu-\/compile-\/how-\/to/}
+
+For git see also\-: \href{http://librecad.org/cms/home/from-source/linux.html}{\tt http\-://librecad.\-org/cms/home/from-\/source/linux.\-html}
+
+N\-O\-T\-E 1\-: On systems like fedora (\& Ubuntu??) You might need to run qmake-\/qt4 instead of just qmake
+
+\subsection*{Windows Users}
+
+Building steps are also given at our wiki page\-:
+
+\href{http://wiki.librecad.org/index.php/LibreCAD_Installation_from_Source}{\tt http\-://wiki.\-librecad.\-org/index.\-php/\-Libre\-C\-A\-D\-\_\-\-Installation\-\_\-from\-\_\-\-Source}
+
+A sample build batch file is included as scripts/build-\/windows.\-bat. If successful, this building script generates a Windows installer file using N\-S\-I\-S(\href{http://nsis.sourceforge.net/Main_Page}{\tt http\-://nsis.\-sourceforge.\-net/\-Main\-\_\-\-Page}).
+
+
+\begin{DoxyItemize}
+\item Download a copy of Qt S\-D\-K, 4.\-8.\-4 for example from \href{http://qt-project.org/downloads}{\tt http\-://qt-\/project.\-org/downloads}
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item Download boost, from \href{https://sourceforge.net/projects/boost/files/boost/}{\tt https\-://sourceforge.\-net/projects/boost/files/boost/}
+\item unzip into C\-:\textbackslash{}, for example C\-:\textbackslash{}1\-\_\-53\-\_\-0 (in this directory you will find boost root directory, I\-N\-S\-T\-A\-L\-L, index, Jamroot etc.. etc).
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item Download mu\-Parser 2.\-2.\-2 or later from \href{http://sourceforge.net/projects/muparser/files/muparser/}{\tt http\-://sourceforge.\-net/projects/muparser/files/muparser/}
+\item Create a directory named \char`\"{}muparser\char`\"{} in {\ttfamily C\-:\textbackslash{}}
+\item Unzip muparser\-\_\-v2\-\_\-2\-\_\-2.\-zip into {\ttfamily C\-:\textbackslash{}muparser\textbackslash{}}
+\end{DoxyItemize}
+
+Notes\-: At this point you will have the following directory structure\-: C\-:\textbackslash{} (assuming you are using muparser-\/2.\-2.\-2). If you prefer to keep mu\-Parser in other locations, you should specify the directiory location with a custom.\-pro file in Libre\-C\-A\-D source folder, for example, the following setting is equivalent to the default muparser path in common.\-pro\-:
+
+{\ttfamily M\-U\-P\-A\-R\-S\-E\-R\-\_\-\-D\-I\-R = /muparser/muparser\-\_\-v2\-\_\-2\-\_\-2}
+
+
+\begin{DoxyItemize}
+\item Start Qt Desktop using \char`\"{}\-Qt 4.\-8.\-4 for Desktop (\-Min\-G\-W)\char`\"{} shortcut.
+\item In Qt Desktop console, navigate to mu\-Parser build directory (C\-:), then type the following command to built mu\-Parser library\-: {\ttfamily mingw32-\/make -\/fmakefile.\-mingw}
+\end{DoxyItemize}
+
+After installation, start Qt Creator and load Libre\-C\-A\-D.\-pro, from the build menu select \char`\"{}\-Build All\char`\"{}.
+
+\subsection*{O\-S\-X U\-S\-E\-R\-S}
+
+install macports from \href{http://www.macports.org/}{\tt http\-://www.\-macports.\-org/}
+
+After that install Q\-T and a new gcc, at mimimum you properly need gcc 44
+
+Install a version of Qt, boost and muparser, for example {\ttfamily \$ sudo port install gcc46 qt4-\/creator-\/mac qt4-\/mac boost muparser}
+
+Select the right compiler, as Libre\-C\-A\-D doesn't build with the default llvm-\/gcc42, {\ttfamily \$ sudo port select -\/-\/set gcc mp-\/gcc46}
+
+When installed run to build a makefile in the Libre\-C\-A\-D source folder, {\ttfamily \$ qmake librecad.\-pro -\/r -\/spec mkspec/macports}
+
+If the previous step is successful, you can build Libre\-C\-A\-D by, `\$ make -\/j4'
+
+After a successful build, the generated executible of Libre\-C\-A\-D can be found as Libre\-C\-A\-D.\-app/\-Contents/\-Mac\-O\-S/\-Libre\-C\-A\-D.
+
+Alternatively, you may try the building script comes with Libre\-C\-A\-D at scripts/build-\/osx.\-sh {\ttfamily \$ cd scripts/} {\ttfamily \$ ./build-\/osx.sh} 

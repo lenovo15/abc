@@ -1,0 +1,572 @@
+\hypertarget{classRS__Graphic}{\section{R\-S\-\_\-\-Graphic Class Reference}
+\label{classRS__Graphic}\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-graphic.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Graphic\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classRS__Graphic}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__Graphic_ae0eebc0350b847e78f8102701cf0d015}{R\-S\-\_\-\-Graphic} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} $\ast$\hyperlink{classRS__Entity_a80358a8d2fc6739a516a278dc500b49f}{parent}=N\-U\-L\-L)
+\item 
+virtual \hyperlink{classRS__Graphic_a51ee2b4f30871713b9a90d11954076b3}{$\sim$\-R\-S\-\_\-\-Graphic} ()
+\item 
+virtual \hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6a}{R\-S2\-::\-Entity\-Type} \hyperlink{classRS__Graphic_a008220bc48d47c80b5286587b4ba808c}{rtti} () const 
+\item 
+virtual unsigned long int \hyperlink{classRS__Graphic_a853c7e684fc4518a1e699fecc1e40e42}{count\-Layer\-Entities} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$\hyperlink{classRS__Entity_a6e738a0a081f97b9923787777e639b27}{layer})
+\item 
+\hypertarget{classRS__Graphic_a684469bfb26e6f819595021b2ce96ffc}{virtual \hyperlink{classRS__LayerList}{R\-S\-\_\-\-Layer\-List} $\ast$ {\bfseries get\-Layer\-List} ()}\label{classRS__Graphic_a684469bfb26e6f819595021b2ce96ffc}
+
+\item 
+\hypertarget{classRS__Graphic_abf306446e00b85f1a2b3f29021aeae02}{virtual \hyperlink{classRS__BlockList}{R\-S\-\_\-\-Block\-List} $\ast$ {\bfseries get\-Block\-List} ()}\label{classRS__Graphic_abf306446e00b85f1a2b3f29021aeae02}
+
+\item 
+virtual void \hyperlink{classRS__Graphic_aa6f20491fdfd58917c43534205e1ed57}{new\-Doc} ()
+\item 
+\hypertarget{classRS__Graphic_a300b86eabb80b891875b5aeb730f4c34}{virtual bool {\bfseries save} (bool is\-Auto\-Save=false)}\label{classRS__Graphic_a300b86eabb80b891875b5aeb730f4c34}
+
+\item 
+\hypertarget{classRS__Graphic_a98311ef7d9254f3098135cb2d46994b0}{virtual bool {\bfseries save\-As} (const Q\-String \&\hyperlink{classRS__Document_aefd3d25d96ec31943bdfd1453031a423}{filename}, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} type, bool force=false)}\label{classRS__Graphic_a98311ef7d9254f3098135cb2d46994b0}
+
+\item 
+virtual bool \hyperlink{classRS__Graphic_ad61d265edfd31e3979cda94b2a5e3c4a}{open} (const Q\-String \&\hyperlink{classRS__Document_aefd3d25d96ec31943bdfd1453031a423}{filename}, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} type)
+\item 
+bool \hyperlink{classRS__Graphic_ad71c3d6b37d25d67c559e3614208e8dd}{load\-Template} (const Q\-String \&\hyperlink{classRS__Document_aefd3d25d96ec31943bdfd1453031a423}{filename}, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} type)
+\item 
+\hypertarget{classRS__Graphic_abb04340c5df523bfb1aad3f99db3a886}{void {\bfseries clear\-Layers} ()}\label{classRS__Graphic_abb04340c5df523bfb1aad3f99db3a886}
+
+\item 
+\hypertarget{classRS__Graphic_ad7cf309f02ff596dae5bc7c524db0daa}{uint {\bfseries count\-Layers} () const }\label{classRS__Graphic_ad7cf309f02ff596dae5bc7c524db0daa}
+
+\item 
+\hypertarget{classRS__Graphic_aea9e4546090159663f3222a659766b3f}{\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$ {\bfseries layer\-At} (uint i)}\label{classRS__Graphic_aea9e4546090159663f3222a659766b3f}
+
+\item 
+\hypertarget{classRS__Graphic_a719f8e5c76009727cb76af6863b09a21}{void {\bfseries activate\-Layer} (const Q\-String \&name)}\label{classRS__Graphic_a719f8e5c76009727cb76af6863b09a21}
+
+\item 
+\hypertarget{classRS__Graphic_aff6b3f5c83441d0397c1e3622e13f2bf}{void {\bfseries activate\-Layer} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$\hyperlink{classRS__Entity_a6e738a0a081f97b9923787777e639b27}{layer})}\label{classRS__Graphic_aff6b3f5c83441d0397c1e3622e13f2bf}
+
+\item 
+\hypertarget{classRS__Graphic_ae2afb83803347e9cf14eb6b8a973a599}{\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$ {\bfseries get\-Active\-Layer} ()}\label{classRS__Graphic_ae2afb83803347e9cf14eb6b8a973a599}
+
+\item 
+\hypertarget{classRS__Graphic_a690678ca735d11678ea6aa6cc79a24b0}{virtual void {\bfseries add\-Layer} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$\hyperlink{classRS__Entity_a6e738a0a081f97b9923787777e639b27}{layer})}\label{classRS__Graphic_a690678ca735d11678ea6aa6cc79a24b0}
+
+\item 
+virtual void \hyperlink{classRS__Graphic_af1b73c73b2acbb8e53b138584bfb5965}{add\-Entity} (\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$entity)
+\item 
+virtual void \hyperlink{classRS__Graphic_a54354821e11f240ceac751a23aacd177}{remove\-Layer} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$\hyperlink{classRS__Entity_a6e738a0a081f97b9923787777e639b27}{layer})
+\item 
+\hypertarget{classRS__Graphic_a68bdaed19adf5c65110608ca8910c7c7}{virtual void {\bfseries edit\-Layer} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$\hyperlink{classRS__Entity_a6e738a0a081f97b9923787777e639b27}{layer}, const \hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} \&source)}\label{classRS__Graphic_a68bdaed19adf5c65110608ca8910c7c7}
+
+\item 
+\hypertarget{classRS__Graphic_aa39ac7f018eb84e7b47e5f597498b58f}{\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$ {\bfseries find\-Layer} (const Q\-String \&name)}\label{classRS__Graphic_aa39ac7f018eb84e7b47e5f597498b58f}
+
+\item 
+\hypertarget{classRS__Graphic_aec533c0a40a3cea40b5180ad6249ff27}{void {\bfseries toggle\-Layer} (const Q\-String \&name)}\label{classRS__Graphic_aec533c0a40a3cea40b5180ad6249ff27}
+
+\item 
+\hypertarget{classRS__Graphic_a4205ef7c3e7633f4f1babc7c6c184cb1}{void {\bfseries toggle\-Layer} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$\hyperlink{classRS__Entity_a6e738a0a081f97b9923787777e639b27}{layer})}\label{classRS__Graphic_a4205ef7c3e7633f4f1babc7c6c184cb1}
+
+\item 
+\hypertarget{classRS__Graphic_ab0d847b430d3f7958779cebe334293bd}{void {\bfseries toggle\-Layer\-Lock} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$\hyperlink{classRS__Entity_a6e738a0a081f97b9923787777e639b27}{layer})}\label{classRS__Graphic_ab0d847b430d3f7958779cebe334293bd}
+
+\item 
+\hypertarget{classRS__Graphic_a847e520af96c2e87cd64636e83dd5623}{void {\bfseries freeze\-All\-Layers} (bool freeze)}\label{classRS__Graphic_a847e520af96c2e87cd64636e83dd5623}
+
+\item 
+\hypertarget{classRS__Graphic_a71eb3c3f0171053709b9d368cbe01ac8}{void {\bfseries add\-Layer\-List\-Listener} (\hyperlink{classRS__LayerListListener}{R\-S\-\_\-\-Layer\-List\-Listener} $\ast$listener)}\label{classRS__Graphic_a71eb3c3f0171053709b9d368cbe01ac8}
+
+\item 
+\hypertarget{classRS__Graphic_a06ca84adae4763591c26cd5c1261c02a}{void {\bfseries remove\-Layer\-List\-Listener} (\hyperlink{classRS__LayerListListener}{R\-S\-\_\-\-Layer\-List\-Listener} $\ast$listener)}\label{classRS__Graphic_a06ca84adae4763591c26cd5c1261c02a}
+
+\item 
+\hypertarget{classRS__Graphic_acba61ebb919074d16bdb01f51a75e4d5}{void {\bfseries clear\-Blocks} ()}\label{classRS__Graphic_acba61ebb919074d16bdb01f51a75e4d5}
+
+\item 
+\hypertarget{classRS__Graphic_abc78877ab3bd5b652ed8c712764f5b9f}{uint {\bfseries count\-Blocks} ()}\label{classRS__Graphic_abc78877ab3bd5b652ed8c712764f5b9f}
+
+\item 
+\hypertarget{classRS__Graphic_a361ed77f9945be4b601b70c5b1f5d421}{\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$ {\bfseries block\-At} (uint i)}\label{classRS__Graphic_a361ed77f9945be4b601b70c5b1f5d421}
+
+\item 
+\hypertarget{classRS__Graphic_a225b7902ec7aecbf4d5c1a4db9fbd7d2}{void {\bfseries activate\-Block} (const Q\-String \&name)}\label{classRS__Graphic_a225b7902ec7aecbf4d5c1a4db9fbd7d2}
+
+\item 
+\hypertarget{classRS__Graphic_a705de3e5e11606c59562e9caa1df09eb}{void {\bfseries activate\-Block} (\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$block)}\label{classRS__Graphic_a705de3e5e11606c59562e9caa1df09eb}
+
+\item 
+\hypertarget{classRS__Graphic_a9a41bf45834e70faf294d47f1742ebe9}{\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$ {\bfseries get\-Active\-Block} ()}\label{classRS__Graphic_a9a41bf45834e70faf294d47f1742ebe9}
+
+\item 
+\hypertarget{classRS__Graphic_ab70100e42b97e87a2c032c984a8c48d0}{virtual bool {\bfseries add\-Block} (\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$block, bool notify=true)}\label{classRS__Graphic_ab70100e42b97e87a2c032c984a8c48d0}
+
+\item 
+\hypertarget{classRS__Graphic_a243ac01d7424fc3c77d309bcaf25c417}{virtual void {\bfseries add\-Block\-Notification} ()}\label{classRS__Graphic_a243ac01d7424fc3c77d309bcaf25c417}
+
+\item 
+\hypertarget{classRS__Graphic_a23f458d966e5ce1b33121039986c6375}{virtual void {\bfseries remove\-Block} (\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$block)}\label{classRS__Graphic_a23f458d966e5ce1b33121039986c6375}
+
+\item 
+\hypertarget{classRS__Graphic_a843a8edfa76a50f373dc1465a61d81fa}{\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$ {\bfseries find\-Block} (const Q\-String \&name)}\label{classRS__Graphic_a843a8edfa76a50f373dc1465a61d81fa}
+
+\item 
+\hypertarget{classRS__Graphic_aa65169429f284cf51e0d449afa7aba7f}{Q\-String {\bfseries new\-Block\-Name} ()}\label{classRS__Graphic_aa65169429f284cf51e0d449afa7aba7f}
+
+\item 
+\hypertarget{classRS__Graphic_afea47296ec366ca10a6f05ff38504986}{void {\bfseries toggle\-Block} (const Q\-String \&name)}\label{classRS__Graphic_afea47296ec366ca10a6f05ff38504986}
+
+\item 
+\hypertarget{classRS__Graphic_af1d45be7c5125fe789f4d20c367d405b}{void {\bfseries toggle\-Block} (\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$block)}\label{classRS__Graphic_af1d45be7c5125fe789f4d20c367d405b}
+
+\item 
+\hypertarget{classRS__Graphic_aecd265a99ab7b0988fc6602078b7ac79}{void {\bfseries freeze\-All\-Blocks} (bool freeze)}\label{classRS__Graphic_aecd265a99ab7b0988fc6602078b7ac79}
+
+\item 
+\hypertarget{classRS__Graphic_a54b199da81b48ba41ab9cb506de302ea}{void {\bfseries add\-Block\-List\-Listener} (\hyperlink{classRS__BlockListListener}{R\-S\-\_\-\-Block\-List\-Listener} $\ast$listener)}\label{classRS__Graphic_a54b199da81b48ba41ab9cb506de302ea}
+
+\item 
+\hypertarget{classRS__Graphic_a5ff2748072fc0f049a86c191fd602cc6}{void {\bfseries remove\-Block\-List\-Listener} (\hyperlink{classRS__BlockListListener}{R\-S\-\_\-\-Block\-List\-Listener} $\ast$listener)}\label{classRS__Graphic_a5ff2748072fc0f049a86c191fd602cc6}
+
+\item 
+\hypertarget{classRS__Graphic_a4867767f912bf87f91672de69f2f8339}{void {\bfseries clear\-Variables} ()}\label{classRS__Graphic_a4867767f912bf87f91672de69f2f8339}
+
+\item 
+\hypertarget{classRS__Graphic_a256331a05868069dff1e4b1380f5f519}{int {\bfseries count\-Variables} ()}\label{classRS__Graphic_a256331a05868069dff1e4b1380f5f519}
+
+\item 
+\hypertarget{classRS__Graphic_abec6263809c6d6bd12b7e7ebb1ef4f13}{void {\bfseries add\-Variable} (const Q\-String \&key, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&value, int code)}\label{classRS__Graphic_abec6263809c6d6bd12b7e7ebb1ef4f13}
+
+\item 
+\hypertarget{classRS__Graphic_a474d2db5ec962c59f9dc9974cd7b5855}{void {\bfseries add\-Variable} (const Q\-String \&key, const Q\-String \&value, int code)}\label{classRS__Graphic_a474d2db5ec962c59f9dc9974cd7b5855}
+
+\item 
+\hypertarget{classRS__Graphic_a1c174efb429e0985d7d609ec9f2269e9}{void {\bfseries add\-Variable} (const Q\-String \&key, int value, int code)}\label{classRS__Graphic_a1c174efb429e0985d7d609ec9f2269e9}
+
+\item 
+\hypertarget{classRS__Graphic_a8752856b11ebf23fa813ac2079d718cf}{void {\bfseries add\-Variable} (const Q\-String \&key, double value, int code)}\label{classRS__Graphic_a8752856b11ebf23fa813ac2079d718cf}
+
+\item 
+\hypertarget{classRS__Graphic_ada2df3f201be4d7dea152c12ab7028f2}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries get\-Variable\-Vector} (const Q\-String \&key, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&def)}\label{classRS__Graphic_ada2df3f201be4d7dea152c12ab7028f2}
+
+\item 
+\hypertarget{classRS__Graphic_af70f02d1050d76e148c8f3d6a0fb58a8}{Q\-String {\bfseries get\-Variable\-String} (const Q\-String \&key, const Q\-String \&def)}\label{classRS__Graphic_af70f02d1050d76e148c8f3d6a0fb58a8}
+
+\item 
+\hypertarget{classRS__Graphic_a3c59b139bb5535a0254a3551a4fdc964}{int {\bfseries get\-Variable\-Int} (const Q\-String \&key, int def)}\label{classRS__Graphic_a3c59b139bb5535a0254a3551a4fdc964}
+
+\item 
+\hypertarget{classRS__Graphic_a1a61ee4f8752821bda85a1e7ffc5300d}{double {\bfseries get\-Variable\-Double} (const Q\-String \&key, double def)}\label{classRS__Graphic_a1a61ee4f8752821bda85a1e7ffc5300d}
+
+\item 
+\hypertarget{classRS__Graphic_a23e12a7935606703eb95f19e5fe29363}{void {\bfseries remove\-Variable} (const Q\-String \&key)}\label{classRS__Graphic_a23e12a7935606703eb95f19e5fe29363}
+
+\item 
+\hypertarget{classRS__Graphic_a4e66f859b184b54650d6ebed275baaf7}{Q\-Hash$<$ Q\-String, \hyperlink{classRS__Variable}{R\-S\-\_\-\-Variable} $>$ \& {\bfseries get\-Variable\-Dict} ()}\label{classRS__Graphic_a4e66f859b184b54650d6ebed275baaf7}
+
+\item 
+\hyperlink{classRS2_a0fa0506f1e870c169e8d8c1d58d3fa6e}{R\-S2\-::\-Linear\-Format} \hyperlink{classRS__Graphic_a22abb7c90d0b1c344a737e56f817bc9c}{get\-Linear\-Format} ()
+\item 
+int \hyperlink{classRS__Graphic_ab0d83770e835c42810480a4585e24b82}{get\-Linear\-Precision} ()
+\item 
+\hyperlink{classRS2_a9c7a07b03f910b04154536a28c151277}{R\-S2\-::\-Angle\-Format} \hyperlink{classRS__Graphic_ae8d5f96b0c2fe1b202226e20ea3d8290}{get\-Angle\-Format} ()
+\item 
+int \hyperlink{classRS__Graphic_a10d22f4e1095ac88108e9cdca4d8e1c1}{get\-Angle\-Precision} ()
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Graphic_ac1a8bdbee3f9a7de06254f43fe8801a1}{get\-Paper\-Size} ()
+\item 
+void \hyperlink{classRS__Graphic_ae28d9cf3a5c0a2768c0897bf997c5e42}{set\-Paper\-Size} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&s)
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Graphic_a890b743792e8dff37b3ca39b49e021b8}{get\-Paper\-Insertion\-Base} ()
+\item 
+void \hyperlink{classRS__Graphic_aff41a516c8d8cb9edad6812bae6cfa91}{set\-Paper\-Insertion\-Base} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&p)
+\item 
+\hyperlink{classRS2_a99636ecac997160f1e2982859a043cb4}{R\-S2\-::\-Paper\-Format} \hyperlink{classRS__Graphic_a8d50dc9750e59f0edec003b93d51b587}{get\-Paper\-Format} (bool $\ast$landscape)
+\item 
+void \hyperlink{classRS__Graphic_a1f065fb8865c9219de745011add5499d}{set\-Paper\-Format} (\hyperlink{classRS2_a99636ecac997160f1e2982859a043cb4}{R\-S2\-::\-Paper\-Format} f, bool landscape)
+\item 
+double \hyperlink{classRS__Graphic_ae5ce9c846bd2acbb1ee3fddef0f5f01b}{get\-Paper\-Scale} ()
+\item 
+void \hyperlink{classRS__Graphic_a34e884596b42df3a3bd557298d190e8f}{set\-Paper\-Scale} (double s)
+\item 
+virtual void \hyperlink{classRS__Graphic_a401cec1327c204c7c30a57c6ae27a140}{set\-Unit} (\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828}{R\-S2\-::\-Unit} u)
+\item 
+virtual \hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828}{R\-S2\-::\-Unit} \hyperlink{classRS__Graphic_a01b944ec4ed18fd216f42555f513f5fc}{get\-Unit} ()
+\item 
+bool \hyperlink{classRS__Graphic_a1fd6fa34dc9bcfd15fa7ef246b14f45a}{is\-Grid\-On} ()
+\item 
+void \hyperlink{classRS__Graphic_a07a4f0675d4bb37953e05073a7e55b9a}{set\-Grid\-On} (bool on)
+\item 
+bool \hyperlink{classRS__Graphic_a4d3ec30dedb39f6710eb850ca80a2a28}{is\-Isometric\-Grid} ()
+\item 
+void \hyperlink{classRS__Graphic_a501438cd7650b78622df79e4291c3f0d}{set\-Isometric\-Grid} (bool on)
+\item 
+\hypertarget{classRS__Graphic_a832512d0ad5837b35c2f39c2a9fc149e}{void {\bfseries set\-Crosshair\-Type} (\hyperlink{classRS2_a6900d729544a78e6cda74f93df772acc}{R\-S2\-::\-Crosshair\-Type} ch\-Type)}\label{classRS__Graphic_a832512d0ad5837b35c2f39c2a9fc149e}
+
+\item 
+\hypertarget{classRS__Graphic_ac8f5f4f8df9016ae18c2694cb07be50b}{\hyperlink{classRS2_a6900d729544a78e6cda74f93df772acc}{R\-S2\-::\-Crosshair\-Type} {\bfseries get\-Crosshair\-Type} ()}\label{classRS__Graphic_ac8f5f4f8df9016ae18c2694cb07be50b}
+
+\item 
+\hypertarget{classRS__Graphic_a45c766b161849f6efe06f411102f2f2a}{bool {\bfseries is\-Draft\-On} ()}\label{classRS__Graphic_a45c766b161849f6efe06f411102f2f2a}
+
+\item 
+\hypertarget{classRS__Graphic_a70841dd196121cedd1eb0d0c70360f8d}{void {\bfseries set\-Draft\-On} (bool on)}\label{classRS__Graphic_a70841dd196121cedd1eb0d0c70360f8d}
+
+\item 
+void \hyperlink{classRS__Graphic_aadc989101f3bce49c7b4599c6a9e945c}{center\-To\-Page} ()
+\item 
+bool \hyperlink{classRS__Graphic_a6844664d70e697a168d06719546a4028}{fit\-To\-Page} ()
+\item 
+virtual bool \hyperlink{classRS__Graphic_ab46ea774787769ba5ecde9f8025746e7}{is\-Modified} () const 
+\item 
+virtual void \hyperlink{classRS__Graphic_a03473e425c04214eb54238ed23842900}{set\-Modified} (bool m)
+\item 
+\hypertarget{classRS__Graphic_a4480e5f60ab409ac8737f8b958600206}{virtual Q\-Date\-Time {\bfseries get\-Modify\-Time} (void)}\label{classRS__Graphic_a4480e5f60ab409ac8737f8b958600206}
+
+\item 
+\hypertarget{classRS__Graphic_a4d8699746fd011c687b058092377c292}{void {\bfseries set\-Paper\-Scale\-Fixed} (bool fixed)}\label{classRS__Graphic_a4d8699746fd011c687b058092377c292}
+
+\item 
+\hypertarget{classRS__Graphic_a70addac2c919fcaa70b76d6301b40173}{bool {\bfseries get\-Paper\-Scale\-Fixed} ()}\label{classRS__Graphic_a70addac2c919fcaa70b76d6301b40173}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{classRS__Graphic_ad44f68d4cb86eb6294ee626cc4cdbbe0}{operator$<$$<$} (std\-::ostream \&os, \hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} \&g)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A graphic document which can contain entities layers and blocks.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__Graphic_ae0eebc0350b847e78f8102701cf0d015}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}}
+\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{R\-S\-\_\-\-Graphic}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Graphic\-::\-R\-S\-\_\-\-Graphic (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} $\ast$}]{parent = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classRS__Graphic_ae0eebc0350b847e78f8102701cf0d015}
+Default constructor. \hypertarget{classRS__Graphic_a51ee2b4f30871713b9a90d11954076b3}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!$\sim$\-R\-S\-\_\-\-Graphic@{$\sim$\-R\-S\-\_\-\-Graphic}}
+\index{$\sim$\-R\-S\-\_\-\-Graphic@{$\sim$\-R\-S\-\_\-\-Graphic}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{$\sim$\-R\-S\-\_\-\-Graphic}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Graphic\-::$\sim$\-R\-S\-\_\-\-Graphic (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Graphic_a51ee2b4f30871713b9a90d11954076b3}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Graphic_af1b73c73b2acbb8e53b138584bfb5965}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!add\-Entity@{add\-Entity}}
+\index{add\-Entity@{add\-Entity}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{add\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-::add\-Entity (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{entity}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Graphic_af1b73c73b2acbb8e53b138584bfb5965}
+Adds a entity to this container and updates the borders of this entity-\/container if auto\-Update\-Borders is true. 
+
+Reimplemented from \hyperlink{classRS__EntityContainer_a707175a62e2b4171691f90570f3867b3}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Graphic_aadc989101f3bce49c7b4599c6a9e945c}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!center\-To\-Page@{center\-To\-Page}}
+\index{center\-To\-Page@{center\-To\-Page}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{center\-To\-Page}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-::center\-To\-Page (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Graphic_aadc989101f3bce49c7b4599c6a9e945c}
+Sets the unit of this graphic's dimensions to 'u' Gets the unit of this graphic's dimension
+
+Centers drawing on page. Affects D\-X\-F variable \$\-P\-I\-N\-S\-B\-A\-S\-E. avoid zero size, bug\#3573158 \hypertarget{classRS__Graphic_a853c7e684fc4518a1e699fecc1e40e42}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!count\-Layer\-Entities@{count\-Layer\-Entities}}
+\index{count\-Layer\-Entities@{count\-Layer\-Entities}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{count\-Layer\-Entities}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long int R\-S\-\_\-\-Graphic\-::count\-Layer\-Entities (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer} $\ast$}]{layer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Graphic_a853c7e684fc4518a1e699fecc1e40e42}
+Counts the entities on the given layer. \hypertarget{classRS__Graphic_a6844664d70e697a168d06719546a4028}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!fit\-To\-Page@{fit\-To\-Page}}
+\index{fit\-To\-Page@{fit\-To\-Page}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{fit\-To\-Page}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Graphic\-::fit\-To\-Page (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Graphic_a6844664d70e697a168d06719546a4028}
+Fits drawing on page. Affects D\-X\-F variable \$\-P\-I\-N\-S\-B\-A\-S\-E. avoid zero size, bug\#3573158 \hypertarget{classRS__Graphic_ae8d5f96b0c2fe1b202226e20ea3d8290}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!get\-Angle\-Format@{get\-Angle\-Format}}
+\index{get\-Angle\-Format@{get\-Angle\-Format}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{get\-Angle\-Format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Angle\-Format} R\-S\-\_\-\-Graphic\-::get\-Angle\-Format (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Graphic_ae8d5f96b0c2fe1b202226e20ea3d8290}
+\begin{DoxyReturn}{Returns}
+The angle format type for this document. This is determined by the variable \char`\"{}\$\-A\-U\-N\-I\-T\-S\char`\"{}. 
+\end{DoxyReturn}
+\hypertarget{classRS__Graphic_a10d22f4e1095ac88108e9cdca4d8e1c1}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!get\-Angle\-Precision@{get\-Angle\-Precision}}
+\index{get\-Angle\-Precision@{get\-Angle\-Precision}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{get\-Angle\-Precision}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Graphic\-::get\-Angle\-Precision (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Graphic_a10d22f4e1095ac88108e9cdca4d8e1c1}
+\begin{DoxyReturn}{Returns}
+The linear precision for this document. This is determined by the variable \char`\"{}\$\-L\-U\-P\-R\-E\-C\char`\"{}. 
+\end{DoxyReturn}
+\hypertarget{classRS__Graphic_a22abb7c90d0b1c344a737e56f817bc9c}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!get\-Linear\-Format@{get\-Linear\-Format}}
+\index{get\-Linear\-Format@{get\-Linear\-Format}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{get\-Linear\-Format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Linear\-Format} R\-S\-\_\-\-Graphic\-::get\-Linear\-Format (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Graphic_a22abb7c90d0b1c344a737e56f817bc9c}
+\begin{DoxyReturn}{Returns}
+The linear format type for this document. This is determined by the variable \char`\"{}\$\-L\-U\-N\-I\-T\-S\char`\"{}. 
+\end{DoxyReturn}
+\hypertarget{classRS__Graphic_ab0d83770e835c42810480a4585e24b82}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!get\-Linear\-Precision@{get\-Linear\-Precision}}
+\index{get\-Linear\-Precision@{get\-Linear\-Precision}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{get\-Linear\-Precision}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Graphic\-::get\-Linear\-Precision (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Graphic_ab0d83770e835c42810480a4585e24b82}
+\begin{DoxyReturn}{Returns}
+The linear precision for this document. This is determined by the variable \char`\"{}\$\-L\-U\-P\-R\-E\-C\char`\"{}. 
+\end{DoxyReturn}
+\hypertarget{classRS__Graphic_a8d50dc9750e59f0edec003b93d51b587}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!get\-Paper\-Format@{get\-Paper\-Format}}
+\index{get\-Paper\-Format@{get\-Paper\-Format}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{get\-Paper\-Format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Paper\-Format} R\-S\-\_\-\-Graphic\-::get\-Paper\-Format (
+\begin{DoxyParamCaption}
+\item[{bool $\ast$}]{landscape}
+\end{DoxyParamCaption}
+)}}\label{classRS__Graphic_a8d50dc9750e59f0edec003b93d51b587}
+\begin{DoxyReturn}{Returns}
+Paper format. This is determined by the variables \char`\"{}\$\-P\-L\-I\-M\-M\-I\-N\char`\"{} and \char`\"{}\$\-P\-L\-I\-M\-M\-A\-X\char`\"{}.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em landscape} & will be set to true for landscape and false for portrait if not N\-U\-L\-L. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Graphic_a890b743792e8dff37b3ca39b49e021b8}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!get\-Paper\-Insertion\-Base@{get\-Paper\-Insertion\-Base}}
+\index{get\-Paper\-Insertion\-Base@{get\-Paper\-Insertion\-Base}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{get\-Paper\-Insertion\-Base}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Graphic\-::get\-Paper\-Insertion\-Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Graphic_a890b743792e8dff37b3ca39b49e021b8}
+\begin{DoxyReturn}{Returns}
+The insertion point of the drawing into the paper space. This is the distance from the lower left paper edge to the zero point of the drawing. D\-X\-F\-: \$\-P\-I\-N\-S\-B\-A\-S\-E. 
+\end{DoxyReturn}
+\hypertarget{classRS__Graphic_ae5ce9c846bd2acbb1ee3fddef0f5f01b}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!get\-Paper\-Scale@{get\-Paper\-Scale}}
+\index{get\-Paper\-Scale@{get\-Paper\-Scale}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{get\-Paper\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Graphic\-::get\-Paper\-Scale (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Graphic_ae5ce9c846bd2acbb1ee3fddef0f5f01b}
+\begin{DoxyReturn}{Returns}
+Paper space scaling (D\-X\-F\-: \$\-P\-S\-V\-P\-S\-C\-A\-L\-E). 
+\end{DoxyReturn}
+\hypertarget{classRS__Graphic_ac1a8bdbee3f9a7de06254f43fe8801a1}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!get\-Paper\-Size@{get\-Paper\-Size}}
+\index{get\-Paper\-Size@{get\-Paper\-Size}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{get\-Paper\-Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Graphic\-::get\-Paper\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Graphic_ac1a8bdbee3f9a7de06254f43fe8801a1}
+\begin{DoxyReturn}{Returns}
+Paper size in graphic units. 
+\end{DoxyReturn}
+\hypertarget{classRS__Graphic_a01b944ec4ed18fd216f42555f513f5fc}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!get\-Unit@{get\-Unit}}
+\index{get\-Unit@{get\-Unit}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{get\-Unit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Unit} R\-S\-\_\-\-Graphic\-::get\-Unit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Graphic_a01b944ec4ed18fd216f42555f513f5fc}
+Gets the unit of this graphic \hypertarget{classRS__Graphic_a1fd6fa34dc9bcfd15fa7ef246b14f45a}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!is\-Grid\-On@{is\-Grid\-On}}
+\index{is\-Grid\-On@{is\-Grid\-On}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{is\-Grid\-On}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Graphic\-::is\-Grid\-On (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Graphic_a1fd6fa34dc9bcfd15fa7ef246b14f45a}
+\begin{DoxyReturn}{Returns}
+true if the grid is switched on (visible). 
+\end{DoxyReturn}
+\hypertarget{classRS__Graphic_a4d3ec30dedb39f6710eb850ca80a2a28}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!is\-Isometric\-Grid@{is\-Isometric\-Grid}}
+\index{is\-Isometric\-Grid@{is\-Isometric\-Grid}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{is\-Isometric\-Grid}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Graphic\-::is\-Isometric\-Grid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Graphic_a4d3ec30dedb39f6710eb850ca80a2a28}
+\begin{DoxyReturn}{Returns}
+true if the isometric grid is switched on (visible). 
+\end{DoxyReturn}
+\hypertarget{classRS__Graphic_ab46ea774787769ba5ecde9f8025746e7}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!is\-Modified@{is\-Modified}}
+\index{is\-Modified@{is\-Modified}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{is\-Modified}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Graphic\-::is\-Modified (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__Graphic_ab46ea774787769ba5ecde9f8025746e7}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & The document has been modified since it was last saved. \\
+\hline
+{\em false} & The document has not been modified since it was last saved. \\
+\hline
+\end{DoxyRetVals}
+
+
+Reimplemented from \hyperlink{classRS__Document_a5a00e0dba56983d5ff2afe4e364c5c0c}{R\-S\-\_\-\-Document}.
+
+\hypertarget{classRS__Graphic_ad71c3d6b37d25d67c559e3614208e8dd}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!load\-Template@{load\-Template}}
+\index{load\-Template@{load\-Template}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{load\-Template}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Graphic\-::load\-Template (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{filename, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Graphic_ad71c3d6b37d25d67c559e3614208e8dd}
+Loads the given file into this graphic. 
+
+Implements \hyperlink{classRS__Document}{R\-S\-\_\-\-Document}.
+
+\hypertarget{classRS__Graphic_aa6f20491fdfd58917c43534205e1ed57}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!new\-Doc@{new\-Doc}}
+\index{new\-Doc@{new\-Doc}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{new\-Doc}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-::new\-Doc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Graphic_aa6f20491fdfd58917c43534205e1ed57}
+Clears all layers, blocks and entities of this graphic. A default layer (0) is created. 
+
+Implements \hyperlink{classRS__Document}{R\-S\-\_\-\-Document}.
+
+\hypertarget{classRS__Graphic_ad61d265edfd31e3979cda94b2a5e3c4a}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!open@{open}}
+\index{open@{open}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{open}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Graphic\-::open (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{filename, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Graphic_ad61d265edfd31e3979cda94b2a5e3c4a}
+Loads the given file into this graphic. 
+
+Implements \hyperlink{classRS__Document}{R\-S\-\_\-\-Document}.
+
+\hypertarget{classRS__Graphic_a54354821e11f240ceac751a23aacd177}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!remove\-Layer@{remove\-Layer}}
+\index{remove\-Layer@{remove\-Layer}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{remove\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-::remove\-Layer (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer} $\ast$}]{layer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Graphic_a54354821e11f240ceac751a23aacd177}
+Removes the given layer and undoes all entities on it. \hypertarget{classRS__Graphic_a008220bc48d47c80b5286587b4ba808c}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S2\-::\-Entity\-Type} R\-S\-\_\-\-Graphic\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__Graphic_a008220bc48d47c80b5286587b4ba808c}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aae07a37e33b457e3bca1f6c40ba59381b}{R\-S2\-::\-Entity\-Graphic} 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classRS__EntityContainer_ada84ceb9590c74cd3b46134cdde40a3d}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Graphic_a07a4f0675d4bb37953e05073a7e55b9a}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!set\-Grid\-On@{set\-Grid\-On}}
+\index{set\-Grid\-On@{set\-Grid\-On}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{set\-Grid\-On}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-::set\-Grid\-On (
+\begin{DoxyParamCaption}
+\item[{bool}]{on}
+\end{DoxyParamCaption}
+)}}\label{classRS__Graphic_a07a4f0675d4bb37953e05073a7e55b9a}
+Enables / disables the grid. \hypertarget{classRS__Graphic_a501438cd7650b78622df79e4291c3f0d}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!set\-Isometric\-Grid@{set\-Isometric\-Grid}}
+\index{set\-Isometric\-Grid@{set\-Isometric\-Grid}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{set\-Isometric\-Grid}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-::set\-Isometric\-Grid (
+\begin{DoxyParamCaption}
+\item[{bool}]{on}
+\end{DoxyParamCaption}
+)}}\label{classRS__Graphic_a501438cd7650b78622df79e4291c3f0d}
+Enables / disables isometric grid. \hypertarget{classRS__Graphic_a03473e425c04214eb54238ed23842900}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!set\-Modified@{set\-Modified}}
+\index{set\-Modified@{set\-Modified}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{set\-Modified}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Graphic\-::set\-Modified (
+\begin{DoxyParamCaption}
+\item[{bool}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__Graphic_a03473e425c04214eb54238ed23842900}
+Sets the documents modified status to 'm'. 
+
+Reimplemented from \hyperlink{classRS__Document_a18e1ef5e5bbc7d5425bbcffaca272a52}{R\-S\-\_\-\-Document}.
+
+\hypertarget{classRS__Graphic_a1f065fb8865c9219de745011add5499d}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!set\-Paper\-Format@{set\-Paper\-Format}}
+\index{set\-Paper\-Format@{set\-Paper\-Format}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{set\-Paper\-Format}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-::set\-Paper\-Format (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Paper\-Format}}]{f, }
+\item[{bool}]{landscape}
+\end{DoxyParamCaption}
+)}}\label{classRS__Graphic_a1f065fb8865c9219de745011add5499d}
+Sets the paper format to the given format. \hypertarget{classRS__Graphic_aff41a516c8d8cb9edad6812bae6cfa91}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!set\-Paper\-Insertion\-Base@{set\-Paper\-Insertion\-Base}}
+\index{set\-Paper\-Insertion\-Base@{set\-Paper\-Insertion\-Base}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{set\-Paper\-Insertion\-Base}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-::set\-Paper\-Insertion\-Base (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{p}
+\end{DoxyParamCaption}
+)}}\label{classRS__Graphic_aff41a516c8d8cb9edad6812bae6cfa91}
+Sets the P\-I\-N\-S\-B\-A\-S\-E variable. \hypertarget{classRS__Graphic_a34e884596b42df3a3bd557298d190e8f}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!set\-Paper\-Scale@{set\-Paper\-Scale}}
+\index{set\-Paper\-Scale@{set\-Paper\-Scale}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{set\-Paper\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-::set\-Paper\-Scale (
+\begin{DoxyParamCaption}
+\item[{double}]{s}
+\end{DoxyParamCaption}
+)}}\label{classRS__Graphic_a34e884596b42df3a3bd557298d190e8f}
+Sets a new scale factor for the paper space. \hypertarget{classRS__Graphic_ae28d9cf3a5c0a2768c0897bf997c5e42}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!set\-Paper\-Size@{set\-Paper\-Size}}
+\index{set\-Paper\-Size@{set\-Paper\-Size}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{set\-Paper\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-::set\-Paper\-Size (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{s}
+\end{DoxyParamCaption}
+)}}\label{classRS__Graphic_ae28d9cf3a5c0a2768c0897bf997c5e42}
+Sets a new paper size. \hypertarget{classRS__Graphic_a401cec1327c204c7c30a57c6ae27a140}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!set\-Unit@{set\-Unit}}
+\index{set\-Unit@{set\-Unit}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{set\-Unit}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-::set\-Unit (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Unit}}]{u}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Graphic_a401cec1327c204c7c30a57c6ae27a140}
+Sets the unit of this graphic to 'u' 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classRS__Graphic_ad44f68d4cb86eb6294ee626cc4cdbbe0}{\index{R\-S\-\_\-\-Graphic@{R\-S\-\_\-\-Graphic}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!RS_Graphic@{R\-S\-\_\-\-Graphic}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os, }
+\item[{{\bf R\-S\-\_\-\-Graphic} \&}]{g}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classRS__Graphic_ad44f68d4cb86eb6294ee626cc4cdbbe0}
+Dumps the entities to stdout. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-graphic.\-h\item 
+librecad/src/lib/engine/rs\-\_\-graphic.\-cpp\end{DoxyCompactItemize}

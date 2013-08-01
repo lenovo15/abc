@@ -1,0 +1,207 @@
+\hypertarget{classRS__Font}{\section{R\-S\-\_\-\-Font Class Reference}
+\label{classRS__Font}\index{R\-S\-\_\-\-Font@{R\-S\-\_\-\-Font}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-font.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__Font_aff46ea0e78be06c9bb9728e755a5ddd1}{R\-S\-\_\-\-Font} (const Q\-String \&name, bool owner=true)
+\item 
+Q\-String \hyperlink{classRS__Font_a249c3298451eefa121b68b239ec695ba}{get\-File\-Name} () const 
+\item 
+Q\-String \hyperlink{classRS__Font_a5e4f47993b7a1b5af099d3671686d302}{get\-File\-License} () const 
+\item 
+Q\-String \hyperlink{classRS__Font_a819de67e29d4a4e121d04b2b3d70000e}{get\-File\-Create} () const 
+\item 
+Q\-String \hyperlink{classRS__Font_ac45503fbc02a68b23d0783f8e3d4dc43}{get\-Encoding} () const 
+\item 
+const Q\-String\-List \& \hyperlink{classRS__Font_af5bf1b6e5fb4ce6643d3e630519b8e7e}{get\-Names} () const 
+\item 
+const Q\-String\-List \& \hyperlink{classRS__Font_a7ad1106dd035106dee659a58c8aff6d9}{get\-Authors} () const 
+\item 
+double \hyperlink{classRS__Font_a101280aaa7f2d7d30bd631910a85a40d}{get\-Letter\-Spacing} ()
+\item 
+double \hyperlink{classRS__Font_a86f589fbeac95c4f7370ea07ba876bd2}{get\-Word\-Spacing} ()
+\item 
+double \hyperlink{classRS__Font_a0e3e99c40c6b1889359fa979ff548497}{get\-Line\-Spacing\-Factor} ()
+\item 
+bool \hyperlink{classRS__Font_a19899262b590c197b3f02d15b263071b}{load\-Font} ()
+\item 
+\hypertarget{classRS__Font_ad52b6a307e6f357f2398d09159ca3e21}{void {\bfseries generate\-All\-Fonts} ()}\label{classRS__Font_ad52b6a307e6f357f2398d09159ca3e21}
+
+\item 
+\hypertarget{classRS__Font_af501f043d8c7415ca4320f99d7b61dc3}{\hyperlink{classRS__BlockList}{R\-S\-\_\-\-Block\-List} $\ast$ {\bfseries get\-Letter\-List} ()}\label{classRS__Font_af501f043d8c7415ca4320f99d7b61dc3}
+
+\item 
+\hypertarget{classRS__Font_afdb6fb2873f1ade286def4a82a9c81f9}{\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$ {\bfseries find\-Letter} (const Q\-String \&name)}\label{classRS__Font_afdb6fb2873f1ade286def4a82a9c81f9}
+
+\item 
+\hypertarget{classRS__Font_acec01ec6fc2ba713778def846bd31c66}{uint {\bfseries count\-Letters} ()}\label{classRS__Font_acec01ec6fc2ba713778def846bd31c66}
+
+\item 
+\hypertarget{classRS__Font_a8d6285e3dafa5076c34465fc507d32df}{\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$ {\bfseries letter\-At} (uint i)}\label{classRS__Font_a8d6285e3dafa5076c34465fc507d32df}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__Font_ac79ca0f74093a0efbe5e1527c27a579a}{class {\bfseries R\-S\-\_\-\-Font\-List}}\label{classRS__Font_ac79ca0f74093a0efbe5e1527c27a579a}
+
+\item 
+std\-::ostream \& \hyperlink{classRS__Font_af37e2008b29f49813065481e689b516f}{operator$<$$<$} (std\-::ostream \&os, const \hyperlink{classRS__Font}{R\-S\-\_\-\-Font} \&l)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for representing a font. This is implemented as a \hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} with a name (the font name) and several blocks, one for each letter in the font.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__Font_aff46ea0e78be06c9bb9728e755a5ddd1}{\index{R\-S\-\_\-\-Font@{R\-S\-\_\-\-Font}!R\-S\-\_\-\-Font@{R\-S\-\_\-\-Font}}
+\index{R\-S\-\_\-\-Font@{R\-S\-\_\-\-Font}!RS_Font@{R\-S\-\_\-\-Font}}
+\subsubsection[{R\-S\-\_\-\-Font}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Font\-::\-R\-S\-\_\-\-Font (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{file\-Name, }
+\item[{bool}]{owner = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classRS__Font_aff46ea0e78be06c9bb9728e755a5ddd1}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em owner} & true if the font owns the letters (blocks). Otherwise the letters will be deleted when the font is deleted. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Font_a7ad1106dd035106dee659a58c8aff6d9}{\index{R\-S\-\_\-\-Font@{R\-S\-\_\-\-Font}!get\-Authors@{get\-Authors}}
+\index{get\-Authors@{get\-Authors}!RS_Font@{R\-S\-\_\-\-Font}}
+\subsubsection[{get\-Authors}]{\setlength{\rightskip}{0pt plus 5cm}const Q\-String\-List\& R\-S\-\_\-\-Font\-::get\-Authors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Font_a7ad1106dd035106dee659a58c8aff6d9}
+\begin{DoxyReturn}{Returns}
+the author(s) of this font. 
+\end{DoxyReturn}
+\hypertarget{classRS__Font_ac45503fbc02a68b23d0783f8e3d4dc43}{\index{R\-S\-\_\-\-Font@{R\-S\-\_\-\-Font}!get\-Encoding@{get\-Encoding}}
+\index{get\-Encoding@{get\-Encoding}!RS_Font@{R\-S\-\_\-\-Font}}
+\subsubsection[{get\-Encoding}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Font\-::get\-Encoding (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Font_ac45503fbc02a68b23d0783f8e3d4dc43}
+\begin{DoxyReturn}{Returns}
+the encoding of this font. 
+\end{DoxyReturn}
+\hypertarget{classRS__Font_a819de67e29d4a4e121d04b2b3d70000e}{\index{R\-S\-\_\-\-Font@{R\-S\-\_\-\-Font}!get\-File\-Create@{get\-File\-Create}}
+\index{get\-File\-Create@{get\-File\-Create}!RS_Font@{R\-S\-\_\-\-Font}}
+\subsubsection[{get\-File\-Create}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Font\-::get\-File\-Create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Font_a819de67e29d4a4e121d04b2b3d70000e}
+\begin{DoxyReturn}{Returns}
+the creation date of this font. 
+\end{DoxyReturn}
+\hypertarget{classRS__Font_a5e4f47993b7a1b5af099d3671686d302}{\index{R\-S\-\_\-\-Font@{R\-S\-\_\-\-Font}!get\-File\-License@{get\-File\-License}}
+\index{get\-File\-License@{get\-File\-License}!RS_Font@{R\-S\-\_\-\-Font}}
+\subsubsection[{get\-File\-License}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Font\-::get\-File\-License (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Font_a5e4f47993b7a1b5af099d3671686d302}
+\begin{DoxyReturn}{Returns}
+the file\-License of this font. 
+\end{DoxyReturn}
+\hypertarget{classRS__Font_a249c3298451eefa121b68b239ec695ba}{\index{R\-S\-\_\-\-Font@{R\-S\-\_\-\-Font}!get\-File\-Name@{get\-File\-Name}}
+\index{get\-File\-Name@{get\-File\-Name}!RS_Font@{R\-S\-\_\-\-Font}}
+\subsubsection[{get\-File\-Name}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Font\-::get\-File\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Font_a249c3298451eefa121b68b239ec695ba}
+\begin{DoxyReturn}{Returns}
+the file\-Name of this font. 
+\end{DoxyReturn}
+\hypertarget{classRS__Font_a101280aaa7f2d7d30bd631910a85a40d}{\index{R\-S\-\_\-\-Font@{R\-S\-\_\-\-Font}!get\-Letter\-Spacing@{get\-Letter\-Spacing}}
+\index{get\-Letter\-Spacing@{get\-Letter\-Spacing}!RS_Font@{R\-S\-\_\-\-Font}}
+\subsubsection[{get\-Letter\-Spacing}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Font\-::get\-Letter\-Spacing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Font_a101280aaa7f2d7d30bd631910a85a40d}
+\begin{DoxyReturn}{Returns}
+Default letter spacing for this font 
+\end{DoxyReturn}
+\hypertarget{classRS__Font_a0e3e99c40c6b1889359fa979ff548497}{\index{R\-S\-\_\-\-Font@{R\-S\-\_\-\-Font}!get\-Line\-Spacing\-Factor@{get\-Line\-Spacing\-Factor}}
+\index{get\-Line\-Spacing\-Factor@{get\-Line\-Spacing\-Factor}!RS_Font@{R\-S\-\_\-\-Font}}
+\subsubsection[{get\-Line\-Spacing\-Factor}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Font\-::get\-Line\-Spacing\-Factor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Font_a0e3e99c40c6b1889359fa979ff548497}
+\begin{DoxyReturn}{Returns}
+Default line spacing factor for this font 
+\end{DoxyReturn}
+\hypertarget{classRS__Font_af5bf1b6e5fb4ce6643d3e630519b8e7e}{\index{R\-S\-\_\-\-Font@{R\-S\-\_\-\-Font}!get\-Names@{get\-Names}}
+\index{get\-Names@{get\-Names}!RS_Font@{R\-S\-\_\-\-Font}}
+\subsubsection[{get\-Names}]{\setlength{\rightskip}{0pt plus 5cm}const Q\-String\-List\& R\-S\-\_\-\-Font\-::get\-Names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Font_af5bf1b6e5fb4ce6643d3e630519b8e7e}
+\begin{DoxyReturn}{Returns}
+the alternative names of this font. 
+\end{DoxyReturn}
+\hypertarget{classRS__Font_a86f589fbeac95c4f7370ea07ba876bd2}{\index{R\-S\-\_\-\-Font@{R\-S\-\_\-\-Font}!get\-Word\-Spacing@{get\-Word\-Spacing}}
+\index{get\-Word\-Spacing@{get\-Word\-Spacing}!RS_Font@{R\-S\-\_\-\-Font}}
+\subsubsection[{get\-Word\-Spacing}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Font\-::get\-Word\-Spacing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Font_a86f589fbeac95c4f7370ea07ba876bd2}
+\begin{DoxyReturn}{Returns}
+Default word spacing for this font 
+\end{DoxyReturn}
+\hypertarget{classRS__Font_a19899262b590c197b3f02d15b263071b}{\index{R\-S\-\_\-\-Font@{R\-S\-\_\-\-Font}!load\-Font@{load\-Font}}
+\index{load\-Font@{load\-Font}!RS_Font@{R\-S\-\_\-\-Font}}
+\subsubsection[{load\-Font}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Font\-::load\-Font (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Font_a19899262b590c197b3f02d15b263071b}
+Loads the font into memory.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & font was already loaded or is loaded now. \\
+\hline
+{\em false} & font could not be loaded. \\
+\hline
+\end{DoxyRetVals}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classRS__Font_af37e2008b29f49813065481e689b516f}{\index{R\-S\-\_\-\-Font@{R\-S\-\_\-\-Font}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!RS_Font@{R\-S\-\_\-\-Font}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os, }
+\item[{const {\bf R\-S\-\_\-\-Font} \&}]{l}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classRS__Font_af37e2008b29f49813065481e689b516f}
+Dumps the fonts data to stdout. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-font.\-h\item 
+librecad/src/lib/engine/rs\-\_\-font.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,315 @@
+\hypertarget{classRS__OverlayBox}{\section{R\-S\-\_\-\-Overlay\-Box Class Reference}
+\label{classRS__OverlayBox}\index{R\-S\-\_\-\-Overlay\-Box@{R\-S\-\_\-\-Overlay\-Box}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-overlaybox.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Overlay\-Box\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classRS__OverlayBox}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__OverlayBox_aa26db5dc3b4c9f1103efea4483dd613d}{R\-S\-\_\-\-Overlay\-Box} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} $\ast$\hyperlink{classRS__Entity_a80358a8d2fc6739a516a278dc500b49f}{parent}, const \hyperlink{classRS__OverlayBoxData}{R\-S\-\_\-\-Overlay\-Box\-Data} \&d)
+\item 
+\hypertarget{classRS__OverlayBox_a0b19cc2714fd295b0ababd7e193a0731}{virtual \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$ {\bfseries clone} ()}\label{classRS__OverlayBox_a0b19cc2714fd295b0ababd7e193a0731}
+
+\item 
+virtual \hyperlink{classRS__OverlayBox_ac43a43655652c51870f25a017d7d8bc6}{$\sim$\-R\-S\-\_\-\-Overlay\-Box} ()
+\item 
+virtual \hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6a}{R\-S2\-::\-Entity\-Type} \hyperlink{classRS__OverlayBox_ab3761e6331522235b5df36fe22ea8573}{rtti} () const 
+\item 
+virtual void \hyperlink{classRS__OverlayBox_af6618d3f7cf36c5ec45514bbd9fb62a1}{draw} (\hyperlink{classRS__Painter}{R\-S\-\_\-\-Painter} $\ast$painter, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} $\ast$view, double \&pattern\-Offset)
+\item 
+virtual \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__OverlayBox_aee5554f95f3acbfe4751d693c1be4f0a}{get\-Corner1} () const 
+\item 
+virtual \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__OverlayBox_abd55e4d56775d92ebdb86a2d4c0571cd}{get\-Corner2} () const 
+\item 
+\hyperlink{classRS__OverlayBoxData}{R\-S\-\_\-\-Overlay\-Box\-Data} \hyperlink{classRS__OverlayBox_a4cdf11d9a9bfec2aa93b34e526d190ae}{get\-Data} () const 
+\item 
+virtual void \hyperlink{classRS__OverlayBox_a9bf1ea7b789b6fbc596f4656764a6d03}{move} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&)
+\item 
+virtual void \hyperlink{classRS__OverlayBox_a833e4397044c49628c055129cef11686}{rotate} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&, const double \&)
+\item 
+\hypertarget{classRS__OverlayBox_a683599d5984cda0457c5a812d5689c8d}{virtual void {\bfseries rotate} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&)}\label{classRS__OverlayBox_a683599d5984cda0457c5a812d5689c8d}
+
+\item 
+virtual void \hyperlink{classRS__OverlayBox_a552f121fb6950e0f014b2fe96cc8fdf8}{scale} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&)
+\item 
+virtual void \hyperlink{classRS__OverlayBox_a8c21edee7fbc33c3954f96e1b120a4c3}{mirror} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&)
+\item 
+virtual void \hyperlink{classRS__OverlayBox_a0538bdfc2a834b39a5ea17b30ec78706}{calculate\-Borders} ()
+\item 
+virtual \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__OverlayBox_a6a17bf5ab2ee517f6909ec564094a384}{get\-Nearest\-Endpoint} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&, double $\ast$) const 
+\item 
+virtual \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__OverlayBox_aa53efc146262763081955d56e0c9ea54}{get\-Nearest\-Point\-On\-Entity} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&, bool, double $\ast$, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$$\ast$) const 
+\item 
+virtual \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__OverlayBox_a302f6e87dda11fb51fe059466cab26e7}{get\-Nearest\-Center} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&, double $\ast$)
+\item 
+\hypertarget{classRS__OverlayBox_acf6243d8a602b83749a9f2ccd83b0d53}{virtual \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries get\-Nearest\-Middle} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&, double $\ast$, int) const }\label{classRS__OverlayBox_acf6243d8a602b83749a9f2ccd83b0d53}
+
+\item 
+virtual \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__OverlayBox_adaa59ee4fc3fddc76340b91d3985dc4a}{get\-Nearest\-Dist} (double, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&, double $\ast$)
+\item 
+\hypertarget{classRS__OverlayBox_aa633c55fc9fb71824abb112058b4f8ae}{virtual double {\bfseries get\-Distance\-To\-Point} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$$\ast$, \hyperlink{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20}{R\-S2\-::\-Resolve\-Level}, double) const }\label{classRS__OverlayBox_aa633c55fc9fb71824abb112058b4f8ae}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__OverlayBox_a2a69861201c03f1bc244f61e8c13f2a3}{\hyperlink{classRS__OverlayBoxData}{R\-S\-\_\-\-Overlay\-Box\-Data} {\bfseries data}}\label{classRS__OverlayBox_a2a69861201c03f1bc244f61e8c13f2a3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for a line entity.
+
+\begin{DoxyAuthor}{Author}
+R. van Twisk 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__OverlayBox_aa26db5dc3b4c9f1103efea4483dd613d}{\index{R\-S\-\_\-\-Overlay\-Box@{R\-S\-\_\-\-Overlay\-Box}!R\-S\-\_\-\-Overlay\-Box@{R\-S\-\_\-\-Overlay\-Box}}
+\index{R\-S\-\_\-\-Overlay\-Box@{R\-S\-\_\-\-Overlay\-Box}!RS_OverlayBox@{R\-S\-\_\-\-Overlay\-Box}}
+\subsubsection[{R\-S\-\_\-\-Overlay\-Box}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Overlay\-Box\-::\-R\-S\-\_\-\-Overlay\-Box (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} $\ast$}]{parent, }
+\item[{const {\bf R\-S\-\_\-\-Overlay\-Box\-Data} \&}]{d}
+\end{DoxyParamCaption}
+)}}\label{classRS__OverlayBox_aa26db5dc3b4c9f1103efea4483dd613d}
+Constructor. \hypertarget{classRS__OverlayBox_ac43a43655652c51870f25a017d7d8bc6}{\index{R\-S\-\_\-\-Overlay\-Box@{R\-S\-\_\-\-Overlay\-Box}!$\sim$\-R\-S\-\_\-\-Overlay\-Box@{$\sim$\-R\-S\-\_\-\-Overlay\-Box}}
+\index{$\sim$\-R\-S\-\_\-\-Overlay\-Box@{$\sim$\-R\-S\-\_\-\-Overlay\-Box}!RS_OverlayBox@{R\-S\-\_\-\-Overlay\-Box}}
+\subsubsection[{$\sim$\-R\-S\-\_\-\-Overlay\-Box}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Overlay\-Box\-::$\sim$\-R\-S\-\_\-\-Overlay\-Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__OverlayBox_ac43a43655652c51870f25a017d7d8bc6}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__OverlayBox_a0538bdfc2a834b39a5ea17b30ec78706}{\index{R\-S\-\_\-\-Overlay\-Box@{R\-S\-\_\-\-Overlay\-Box}!calculate\-Borders@{calculate\-Borders}}
+\index{calculate\-Borders@{calculate\-Borders}!RS_OverlayBox@{R\-S\-\_\-\-Overlay\-Box}}
+\subsubsection[{calculate\-Borders}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Overlay\-Box\-::calculate\-Borders (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__OverlayBox_a0538bdfc2a834b39a5ea17b30ec78706}
+Recalculates the borders of this entity. 
+
+Implements \hyperlink{classRS__Entity_a9544c0202aaf06d508068b20459f3df5}{R\-S\-\_\-\-Entity}.
+
+\hypertarget{classRS__OverlayBox_af6618d3f7cf36c5ec45514bbd9fb62a1}{\index{R\-S\-\_\-\-Overlay\-Box@{R\-S\-\_\-\-Overlay\-Box}!draw@{draw}}
+\index{draw@{draw}!RS_OverlayBox@{R\-S\-\_\-\-Overlay\-Box}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Overlay\-Box\-::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Painter} $\ast$}]{painter, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} $\ast$}]{view, }
+\item[{double \&}]{pattern\-Offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__OverlayBox_af6618d3f7cf36c5ec45514bbd9fb62a1}
+Implementations must draw the entity on the given device. 
+
+Implements \hyperlink{classRS__Entity_aa25c046c41fe29df1f65591e6cb54093}{R\-S\-\_\-\-Entity}.
+
+\hypertarget{classRS__OverlayBox_aee5554f95f3acbfe4751d693c1be4f0a}{\index{R\-S\-\_\-\-Overlay\-Box@{R\-S\-\_\-\-Overlay\-Box}!get\-Corner1@{get\-Corner1}}
+\index{get\-Corner1@{get\-Corner1}!RS_OverlayBox@{R\-S\-\_\-\-Overlay\-Box}}
+\subsubsection[{get\-Corner1}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Overlay\-Box\-::get\-Corner1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__OverlayBox_aee5554f95f3acbfe4751d693c1be4f0a}
+\begin{DoxyReturn}{Returns}
+Start point of the entity 
+\end{DoxyReturn}
+\hypertarget{classRS__OverlayBox_abd55e4d56775d92ebdb86a2d4c0571cd}{\index{R\-S\-\_\-\-Overlay\-Box@{R\-S\-\_\-\-Overlay\-Box}!get\-Corner2@{get\-Corner2}}
+\index{get\-Corner2@{get\-Corner2}!RS_OverlayBox@{R\-S\-\_\-\-Overlay\-Box}}
+\subsubsection[{get\-Corner2}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Overlay\-Box\-::get\-Corner2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__OverlayBox_abd55e4d56775d92ebdb86a2d4c0571cd}
+\begin{DoxyReturn}{Returns}
+End point of the entity 
+\end{DoxyReturn}
+\hypertarget{classRS__OverlayBox_a4cdf11d9a9bfec2aa93b34e526d190ae}{\index{R\-S\-\_\-\-Overlay\-Box@{R\-S\-\_\-\-Overlay\-Box}!get\-Data@{get\-Data}}
+\index{get\-Data@{get\-Data}!RS_OverlayBox@{R\-S\-\_\-\-Overlay\-Box}}
+\subsubsection[{get\-Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Overlay\-Box\-Data} R\-S\-\_\-\-Overlay\-Box\-::get\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__OverlayBox_a4cdf11d9a9bfec2aa93b34e526d190ae}
+\begin{DoxyReturn}{Returns}
+Copy of data that defines the line. 
+\end{DoxyReturn}
+\hypertarget{classRS__OverlayBox_a302f6e87dda11fb51fe059466cab26e7}{\index{R\-S\-\_\-\-Overlay\-Box@{R\-S\-\_\-\-Overlay\-Box}!get\-Nearest\-Center@{get\-Nearest\-Center}}
+\index{get\-Nearest\-Center@{get\-Nearest\-Center}!RS_OverlayBox@{R\-S\-\_\-\-Overlay\-Box}}
+\subsubsection[{get\-Nearest\-Center}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Overlay\-Box\-::get\-Nearest\-Center (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{, }
+\item[{double $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__OverlayBox_a302f6e87dda11fb51fe059466cab26e7}
+return the nearest center for snapping 
+\begin{DoxyParams}{Parameters}
+{\em coord} & Coordinate (typically a mouse coordinate) \\
+\hline
+{\em dist} & Pointer to a value which will contain the measured distance between 'coord' and the closest center point. The passed pointer can also be N\-U\-L\-L in which case the distance will be lost.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The closest center point. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classRS__AtomicEntity_ad3423fcd97d10a149d3f2e4b2a242302}{R\-S\-\_\-\-Atomic\-Entity}.
+
+\hypertarget{classRS__OverlayBox_adaa59ee4fc3fddc76340b91d3985dc4a}{\index{R\-S\-\_\-\-Overlay\-Box@{R\-S\-\_\-\-Overlay\-Box}!get\-Nearest\-Dist@{get\-Nearest\-Dist}}
+\index{get\-Nearest\-Dist@{get\-Nearest\-Dist}!RS_OverlayBox@{R\-S\-\_\-\-Overlay\-Box}}
+\subsubsection[{get\-Nearest\-Dist}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Overlay\-Box\-::get\-Nearest\-Dist (
+\begin{DoxyParamCaption}
+\item[{double}]{distance, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord, }
+\item[{double $\ast$}]{dist}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__OverlayBox_adaa59ee4fc3fddc76340b91d3985dc4a}
+Must be overwritten to get the nearest point with a given distance to the endpoint to the given coordinate for this entity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em distance} & Distance to endpoint. \\
+\hline
+{\em coord} & Coordinate (typically a mouse coordinate) \\
+\hline
+{\em dist} & Pointer to a value which will contain the measured distance between 'coord' and the closest point. The passed pointer can also be N\-U\-L\-L in which case the distance will be lost.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The closest point with the given distance to the endpoint. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__Entity_a73cedae7d3f54292d8be43e4d9f6fb4d}{R\-S\-\_\-\-Entity}.
+
+\hypertarget{classRS__OverlayBox_a6a17bf5ab2ee517f6909ec564094a384}{\index{R\-S\-\_\-\-Overlay\-Box@{R\-S\-\_\-\-Overlay\-Box}!get\-Nearest\-Endpoint@{get\-Nearest\-Endpoint}}
+\index{get\-Nearest\-Endpoint@{get\-Nearest\-Endpoint}!RS_OverlayBox@{R\-S\-\_\-\-Overlay\-Box}}
+\subsubsection[{get\-Nearest\-Endpoint}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Overlay\-Box\-::get\-Nearest\-Endpoint (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord, }
+\item[{double $\ast$}]{dist}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__OverlayBox_a6a17bf5ab2ee517f6909ec564094a384}
+Must be overwritten to get the closest endpoint to the given coordinate for this entity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & Coordinate (typically a mouse coordinate) \\
+\hline
+{\em dist} & Pointer to a value which will contain the measured distance between 'coord' and the closest endpoint. The passed pointer can also be N\-U\-L\-L in which case the distance will be lost.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The closest endpoint. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__Entity_a933672a9476a6b7a82193caefffecd85}{R\-S\-\_\-\-Entity}.
+
+\hypertarget{classRS__OverlayBox_aa53efc146262763081955d56e0c9ea54}{\index{R\-S\-\_\-\-Overlay\-Box@{R\-S\-\_\-\-Overlay\-Box}!get\-Nearest\-Point\-On\-Entity@{get\-Nearest\-Point\-On\-Entity}}
+\index{get\-Nearest\-Point\-On\-Entity@{get\-Nearest\-Point\-On\-Entity}!RS_OverlayBox@{R\-S\-\_\-\-Overlay\-Box}}
+\subsubsection[{get\-Nearest\-Point\-On\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Overlay\-Box\-::get\-Nearest\-Point\-On\-Entity (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{, }
+\item[{bool}]{on\-Entity, }
+\item[{double $\ast$}]{dist, }
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$$\ast$}]{entity}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__OverlayBox_aa53efc146262763081955d56e0c9ea54}
+Must be overwritten to get the closest coordinate to the given coordinate which is on this entity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & Coordinate (typically a mouse coordinate) \\
+\hline
+{\em dist} & Pointer to a value which will contain the measured distance between {\ttfamily coord} and the point. The passed pointer can also be {\ttfamily N\-U\-L\-L} in which case the distance will be lost.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The closest coordinate. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__Entity_a791d7868d1c8e1d6c02125e3441d5ce5}{R\-S\-\_\-\-Entity}.
+
+\hypertarget{classRS__OverlayBox_a8c21edee7fbc33c3954f96e1b120a4c3}{\index{R\-S\-\_\-\-Overlay\-Box@{R\-S\-\_\-\-Overlay\-Box}!mirror@{mirror}}
+\index{mirror@{mirror}!RS_OverlayBox@{R\-S\-\_\-\-Overlay\-Box}}
+\subsubsection[{mirror}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Overlay\-Box\-::mirror (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{axis\-Point1, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{axis\-Point2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__OverlayBox_a8c21edee7fbc33c3954f96e1b120a4c3}
+Implementations must mirror the entity by the given axis. 
+
+Implements \hyperlink{classRS__Entity_aacac9a2093cda79d19e72dfb854ae869}{R\-S\-\_\-\-Entity}.
+
+\hypertarget{classRS__OverlayBox_a9bf1ea7b789b6fbc596f4656764a6d03}{\index{R\-S\-\_\-\-Overlay\-Box@{R\-S\-\_\-\-Overlay\-Box}!move@{move}}
+\index{move@{move}!RS_OverlayBox@{R\-S\-\_\-\-Overlay\-Box}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Overlay\-Box\-::move (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__OverlayBox_a9bf1ea7b789b6fbc596f4656764a6d03}
+We should make a seperate drawing meganism for overlays and not use entities 
+
+Implements \hyperlink{classRS__Entity_a476ae29bd4069b351b4ec2aa196b6497}{R\-S\-\_\-\-Entity}.
+
+\hypertarget{classRS__OverlayBox_a833e4397044c49628c055129cef11686}{\index{R\-S\-\_\-\-Overlay\-Box@{R\-S\-\_\-\-Overlay\-Box}!rotate@{rotate}}
+\index{rotate@{rotate}!RS_OverlayBox@{R\-S\-\_\-\-Overlay\-Box}}
+\subsubsection[{rotate}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Overlay\-Box\-::rotate (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{center, }
+\item[{const double \&}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__OverlayBox_a833e4397044c49628c055129cef11686}
+Implementations must rotate the entity by the given angle around the given center. 
+
+Implements \hyperlink{classRS__Entity_a9e29d3ff157de1cc6152fe2c08161dae}{R\-S\-\_\-\-Entity}.
+
+\hypertarget{classRS__OverlayBox_ab3761e6331522235b5df36fe22ea8573}{\index{R\-S\-\_\-\-Overlay\-Box@{R\-S\-\_\-\-Overlay\-Box}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_OverlayBox@{R\-S\-\_\-\-Overlay\-Box}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S2\-::\-Entity\-Type} R\-S\-\_\-\-Overlay\-Box\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__OverlayBox_ab3761e6331522235b5df36fe22ea8573}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aac635def37fe336bb8366fc0adfe057cc}{R\-S2\-::\-Entity\-Line} 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classRS__Entity_a1d50dcc5016e016c0b944deb1b685cf1}{R\-S\-\_\-\-Entity}.
+
+\hypertarget{classRS__OverlayBox_a552f121fb6950e0f014b2fe96cc8fdf8}{\index{R\-S\-\_\-\-Overlay\-Box@{R\-S\-\_\-\-Overlay\-Box}!scale@{scale}}
+\index{scale@{scale}!RS_OverlayBox@{R\-S\-\_\-\-Overlay\-Box}}
+\subsubsection[{scale}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Overlay\-Box\-::scale (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{center, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{factor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__OverlayBox_a552f121fb6950e0f014b2fe96cc8fdf8}
+Implementations must scale the entity by the given factors. 
+
+Implements \hyperlink{classRS__Entity_af5e5a5aeb24c4aa36551a8ffd85f37c4}{R\-S\-\_\-\-Entity}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-overlaybox.\-h\item 
+librecad/src/lib/engine/rs\-\_\-overlaybox.\-cpp\end{DoxyCompactItemize}

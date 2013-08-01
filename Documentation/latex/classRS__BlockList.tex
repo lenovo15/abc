@@ -1,0 +1,295 @@
+\hypertarget{classRS__BlockList}{\section{R\-S\-\_\-\-Block\-List Class Reference}
+\label{classRS__BlockList}\index{R\-S\-\_\-\-Block\-List@{R\-S\-\_\-\-Block\-List}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-blocklist.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__BlockList_ab820bd427458a23917f631637e4670fb}{R\-S\-\_\-\-Block\-List} (bool owner=false)
+\item 
+void \hyperlink{classRS__BlockList_a6ed6a40c8ec3badeb075adc186cb8036}{clear} ()
+\item 
+int \hyperlink{classRS__BlockList_ababbe604bf7dadd9def61f3658dc1d45}{count} ()
+\item 
+\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$ \hyperlink{classRS__BlockList_a7e4f0ad8ca1a34b4d82197e6ce25a723}{at} (int i)
+\item 
+void \hyperlink{classRS__BlockList_a53d9528bf27b600657656971b08f6d51}{activate} (const Q\-String \&name)
+\item 
+void \hyperlink{classRS__BlockList_ab0b9431c8eabb2f49b1a262568c545a5}{activate} (\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$block)
+\item 
+\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$ \hyperlink{classRS__BlockList_aed3ffb4c59505c6e94f0f6de59412941}{get\-Active} ()
+\item 
+virtual bool \hyperlink{classRS__BlockList_a9b8e4ae0f1dbf0dc6cb952fcafc9249b}{add} (\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$block, bool notify=true)
+\item 
+virtual void \hyperlink{classRS__BlockList_af0b0197b2a3e15149669a0ba55d0e22f}{add\-Notification} ()
+\item 
+virtual void \hyperlink{classRS__BlockList_a9d2f808a681c5e4f47809993541062be}{remove} (\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$block)
+\item 
+virtual bool \hyperlink{classRS__BlockList_a67ced71811f4c5fdb723bad55c90f64f}{rename} (\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$block, const Q\-String \&name)
+\item 
+\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$ \hyperlink{classRS__BlockList_ad2e8328d1d98cab0b3810763d3f29c16}{find} (const Q\-String \&name)
+\item 
+Q\-String \hyperlink{classRS__BlockList_aab3a125ec6943faf692cfcc440fb59cb}{new\-Name} (const Q\-String \&suggestion=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{classRS__BlockList_a85052682ac90a22f7b4ddd74cbd8be7a}{toggle} (const Q\-String \&name)
+\item 
+void \hyperlink{classRS__BlockList_a29abf3cce1cd98d025c3572c9749e099}{toggle} (\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$block)
+\item 
+void \hyperlink{classRS__BlockList_ab118af27d09acd616fb1ff0db46db4f4}{freeze\-All} (bool freeze)
+\item 
+void \hyperlink{classRS__BlockList_ae0b4c3e327ffbbcee4c3ce7d406bf709}{add\-Listener} (\hyperlink{classRS__BlockListListener}{R\-S\-\_\-\-Block\-List\-Listener} $\ast$listener)
+\item 
+void \hyperlink{classRS__BlockList_a00d3cd8f78d72bdd84d3d76fee283ee7}{remove\-Listener} (\hyperlink{classRS__BlockListListener}{R\-S\-\_\-\-Block\-List\-Listener} $\ast$listener)
+\item 
+void \hyperlink{classRS__BlockList_aa1f59a04fba4d2d9f3b2800336bfb0e3}{set\-Modified} (bool m)
+\item 
+virtual bool \hyperlink{classRS__BlockList_a23a23481e31bf949ff5d4cd786c829d1}{is\-Modified} () const 
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{classRS__BlockList_ad1ee3a80b164ae697cfc805b790ebd5d}{operator$<$$<$} (std\-::ostream \&os, \hyperlink{classRS__BlockList}{R\-S\-\_\-\-Block\-List} \&b)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+List of blocks.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classRS__Block}{R\-S\-\_\-\-Block}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__BlockList_ab820bd427458a23917f631637e4670fb}{\index{R\-S\-\_\-\-Block\-List@{R\-S\-\_\-\-Block\-List}!R\-S\-\_\-\-Block\-List@{R\-S\-\_\-\-Block\-List}}
+\index{R\-S\-\_\-\-Block\-List@{R\-S\-\_\-\-Block\-List}!RS_BlockList@{R\-S\-\_\-\-Block\-List}}
+\subsubsection[{R\-S\-\_\-\-Block\-List}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Block\-List\-::\-R\-S\-\_\-\-Block\-List (
+\begin{DoxyParamCaption}
+\item[{bool}]{owner = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classRS__BlockList_ab820bd427458a23917f631637e4670fb}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em owner} & true if this is the owner of the blocks added. If so, the blocks will be deleted when the block list is deleted. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__BlockList_a53d9528bf27b600657656971b08f6d51}{\index{R\-S\-\_\-\-Block\-List@{R\-S\-\_\-\-Block\-List}!activate@{activate}}
+\index{activate@{activate}!RS_BlockList@{R\-S\-\_\-\-Block\-List}}
+\subsubsection[{activate}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Block\-List\-::activate (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{name}
+\end{DoxyParamCaption}
+)}}\label{classRS__BlockList_a53d9528bf27b600657656971b08f6d51}
+Activates the given block. Listeners are notified. \hypertarget{classRS__BlockList_ab0b9431c8eabb2f49b1a262568c545a5}{\index{R\-S\-\_\-\-Block\-List@{R\-S\-\_\-\-Block\-List}!activate@{activate}}
+\index{activate@{activate}!RS_BlockList@{R\-S\-\_\-\-Block\-List}}
+\subsubsection[{activate}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Block\-List\-::activate (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block} $\ast$}]{block}
+\end{DoxyParamCaption}
+)}}\label{classRS__BlockList_ab0b9431c8eabb2f49b1a262568c545a5}
+Activates the given block. Listeners are notified. \hypertarget{classRS__BlockList_a9b8e4ae0f1dbf0dc6cb952fcafc9249b}{\index{R\-S\-\_\-\-Block\-List@{R\-S\-\_\-\-Block\-List}!add@{add}}
+\index{add@{add}!RS_BlockList@{R\-S\-\_\-\-Block\-List}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Block\-List\-::add (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block} $\ast$}]{block, }
+\item[{bool}]{notify = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__BlockList_a9b8e4ae0f1dbf0dc6cb952fcafc9249b}
+Adds a block to the block list. If a block with the same name exists already, the given block will be deleted if the blocklist owns the blocks.
+
+
+\begin{DoxyParams}{Parameters}
+{\em notify} & true if you want listeners to be notified.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\-: block already existed and was deleted. 
+\end{DoxyReturn}
+\hypertarget{classRS__BlockList_ae0b4c3e327ffbbcee4c3ce7d406bf709}{\index{R\-S\-\_\-\-Block\-List@{R\-S\-\_\-\-Block\-List}!add\-Listener@{add\-Listener}}
+\index{add\-Listener@{add\-Listener}!RS_BlockList@{R\-S\-\_\-\-Block\-List}}
+\subsubsection[{add\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Block\-List\-::add\-Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block\-List\-Listener} $\ast$}]{listener}
+\end{DoxyParamCaption}
+)}}\label{classRS__BlockList_ae0b4c3e327ffbbcee4c3ce7d406bf709}
+\begin{DoxyReturn}{Returns}
+First block of the list. 
+
+Next block from the list after calling first\-Block() or next\-Block().
+\end{DoxyReturn}
+Switches on / off the given block. Listeners are notified. adds a Block\-List\-Listener to the list of listeners. Listeners are notified when the block list changes. \hypertarget{classRS__BlockList_af0b0197b2a3e15149669a0ba55d0e22f}{\index{R\-S\-\_\-\-Block\-List@{R\-S\-\_\-\-Block\-List}!add\-Notification@{add\-Notification}}
+\index{add\-Notification@{add\-Notification}!RS_BlockList@{R\-S\-\_\-\-Block\-List}}
+\subsubsection[{add\-Notification}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Block\-List\-::add\-Notification (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__BlockList_af0b0197b2a3e15149669a0ba55d0e22f}
+Notifies the listeners about blocks that were added. This can be used after adding a lot of blocks without auto-\/update or simply to force an update of G\-U\-I blocklists. \hypertarget{classRS__BlockList_a7e4f0ad8ca1a34b4d82197e6ce25a723}{\index{R\-S\-\_\-\-Block\-List@{R\-S\-\_\-\-Block\-List}!at@{at}}
+\index{at@{at}!RS_BlockList@{R\-S\-\_\-\-Block\-List}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Block}$\ast$ R\-S\-\_\-\-Block\-List\-::at (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__BlockList_a7e4f0ad8ca1a34b4d82197e6ce25a723}
+\begin{DoxyReturn}{Returns}
+Block at given position or N\-U\-L\-L if i is out of range. 
+\end{DoxyReturn}
+\hypertarget{classRS__BlockList_a6ed6a40c8ec3badeb075adc186cb8036}{\index{R\-S\-\_\-\-Block\-List@{R\-S\-\_\-\-Block\-List}!clear@{clear}}
+\index{clear@{clear}!RS_BlockList@{R\-S\-\_\-\-Block\-List}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Block\-List\-::clear (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classRS__BlockList_a6ed6a40c8ec3badeb075adc186cb8036}
+Removes all blocks in the blocklist. \hypertarget{classRS__BlockList_ababbe604bf7dadd9def61f3658dc1d45}{\index{R\-S\-\_\-\-Block\-List@{R\-S\-\_\-\-Block\-List}!count@{count}}
+\index{count@{count}!RS_BlockList@{R\-S\-\_\-\-Block\-List}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Block\-List\-::count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__BlockList_ababbe604bf7dadd9def61f3658dc1d45}
+\begin{DoxyReturn}{Returns}
+Number of blocks available. 
+\end{DoxyReturn}
+\hypertarget{classRS__BlockList_ad2e8328d1d98cab0b3810763d3f29c16}{\index{R\-S\-\_\-\-Block\-List@{R\-S\-\_\-\-Block\-List}!find@{find}}
+\index{find@{find}!RS_BlockList@{R\-S\-\_\-\-Block\-List}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Block} $\ast$ R\-S\-\_\-\-Block\-List\-::find (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{name}
+\end{DoxyParamCaption}
+)}}\label{classRS__BlockList_ad2e8328d1d98cab0b3810763d3f29c16}
+Changes a block's attributes. The attributes of block 'block' are copied from block 'source'. Listeners are notified. \begin{DoxyReturn}{Returns}
+Pointer to the block with the given name or {\ttfamily N\-U\-L\-L} if no such block was found. 
+\end{DoxyReturn}
+\hypertarget{classRS__BlockList_ab118af27d09acd616fb1ff0db46db4f4}{\index{R\-S\-\_\-\-Block\-List@{R\-S\-\_\-\-Block\-List}!freeze\-All@{freeze\-All}}
+\index{freeze\-All@{freeze\-All}!RS_BlockList@{R\-S\-\_\-\-Block\-List}}
+\subsubsection[{freeze\-All}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Block\-List\-::freeze\-All (
+\begin{DoxyParamCaption}
+\item[{bool}]{freeze}
+\end{DoxyParamCaption}
+)}}\label{classRS__BlockList_ab118af27d09acd616fb1ff0db46db4f4}
+Freezes or defreezes all blocks.
+
+
+\begin{DoxyParams}{Parameters}
+{\em freeze} & true\-: freeze, false\-: defreeze \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__BlockList_aed3ffb4c59505c6e94f0f6de59412941}{\index{R\-S\-\_\-\-Block\-List@{R\-S\-\_\-\-Block\-List}!get\-Active@{get\-Active}}
+\index{get\-Active@{get\-Active}!RS_BlockList@{R\-S\-\_\-\-Block\-List}}
+\subsubsection[{get\-Active}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Block}$\ast$ R\-S\-\_\-\-Block\-List\-::get\-Active (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__BlockList_aed3ffb4c59505c6e94f0f6de59412941}
+\begin{DoxyReturn}{Returns}
+The active block of N\-U\-L\-L if no block is activated. 
+\end{DoxyReturn}
+\hypertarget{classRS__BlockList_a23a23481e31bf949ff5d4cd786c829d1}{\index{R\-S\-\_\-\-Block\-List@{R\-S\-\_\-\-Block\-List}!is\-Modified@{is\-Modified}}
+\index{is\-Modified@{is\-Modified}!RS_BlockList@{R\-S\-\_\-\-Block\-List}}
+\subsubsection[{is\-Modified}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Block\-List\-::is\-Modified (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__BlockList_a23a23481e31bf949ff5d4cd786c829d1}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & The layer list has been modified. \\
+\hline
+{\em false} & The layer list has not been modified. \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{classRS__BlockList_aab3a125ec6943faf692cfcc440fb59cb}{\index{R\-S\-\_\-\-Block\-List@{R\-S\-\_\-\-Block\-List}!new\-Name@{new\-Name}}
+\index{new\-Name@{new\-Name}!RS_BlockList@{R\-S\-\_\-\-Block\-List}}
+\subsubsection[{new\-Name}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Block\-List\-::new\-Name (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{suggestion = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classRS__BlockList_aab3a125ec6943faf692cfcc440fb59cb}
+Finds a new unique block name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em suggestion} & Suggested name the new name will be based on. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__BlockList_a9d2f808a681c5e4f47809993541062be}{\index{R\-S\-\_\-\-Block\-List@{R\-S\-\_\-\-Block\-List}!remove@{remove}}
+\index{remove@{remove}!RS_BlockList@{R\-S\-\_\-\-Block\-List}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Block\-List\-::remove (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block} $\ast$}]{block}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__BlockList_a9d2f808a681c5e4f47809993541062be}
+Removes a block from the list. Listeners are notified after the block was removed from the list but before it gets deleted. \hypertarget{classRS__BlockList_a00d3cd8f78d72bdd84d3d76fee283ee7}{\index{R\-S\-\_\-\-Block\-List@{R\-S\-\_\-\-Block\-List}!remove\-Listener@{remove\-Listener}}
+\index{remove\-Listener@{remove\-Listener}!RS_BlockList@{R\-S\-\_\-\-Block\-List}}
+\subsubsection[{remove\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Block\-List\-::remove\-Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block\-List\-Listener} $\ast$}]{listener}
+\end{DoxyParamCaption}
+)}}\label{classRS__BlockList_a00d3cd8f78d72bdd84d3d76fee283ee7}
+removes a Block\-List\-Listener from the list of listeners. \hypertarget{classRS__BlockList_a67ced71811f4c5fdb723bad55c90f64f}{\index{R\-S\-\_\-\-Block\-List@{R\-S\-\_\-\-Block\-List}!rename@{rename}}
+\index{rename@{rename}!RS_BlockList@{R\-S\-\_\-\-Block\-List}}
+\subsubsection[{rename}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Block\-List\-::rename (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block} $\ast$}]{block, }
+\item[{const Q\-String \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__BlockList_a67ced71811f4c5fdb723bad55c90f64f}
+Tries to rename the given block to 'name'. Block names are unique in the block list.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & block was successfully renamed. \\
+\hline
+{\em false} & block couldn't be renamed. \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{classRS__BlockList_aa1f59a04fba4d2d9f3b2800336bfb0e3}{\index{R\-S\-\_\-\-Block\-List@{R\-S\-\_\-\-Block\-List}!set\-Modified@{set\-Modified}}
+\index{set\-Modified@{set\-Modified}!RS_BlockList@{R\-S\-\_\-\-Block\-List}}
+\subsubsection[{set\-Modified}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Block\-List\-::set\-Modified (
+\begin{DoxyParamCaption}
+\item[{bool}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__BlockList_aa1f59a04fba4d2d9f3b2800336bfb0e3}
+Sets the layer lists modified status to 'm'. \hypertarget{classRS__BlockList_a85052682ac90a22f7b4ddd74cbd8be7a}{\index{R\-S\-\_\-\-Block\-List@{R\-S\-\_\-\-Block\-List}!toggle@{toggle}}
+\index{toggle@{toggle}!RS_BlockList@{R\-S\-\_\-\-Block\-List}}
+\subsubsection[{toggle}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Block\-List\-::toggle (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{name}
+\end{DoxyParamCaption}
+)}}\label{classRS__BlockList_a85052682ac90a22f7b4ddd74cbd8be7a}
+Switches on / off the given block. Listeners are notified. \hypertarget{classRS__BlockList_a29abf3cce1cd98d025c3572c9749e099}{\index{R\-S\-\_\-\-Block\-List@{R\-S\-\_\-\-Block\-List}!toggle@{toggle}}
+\index{toggle@{toggle}!RS_BlockList@{R\-S\-\_\-\-Block\-List}}
+\subsubsection[{toggle}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Block\-List\-::toggle (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block} $\ast$}]{block}
+\end{DoxyParamCaption}
+)}}\label{classRS__BlockList_a29abf3cce1cd98d025c3572c9749e099}
+Switches on / off the given block. Listeners are notified. 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classRS__BlockList_ad1ee3a80b164ae697cfc805b790ebd5d}{\index{R\-S\-\_\-\-Block\-List@{R\-S\-\_\-\-Block\-List}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!RS_BlockList@{R\-S\-\_\-\-Block\-List}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os, }
+\item[{{\bf R\-S\-\_\-\-Block\-List} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classRS__BlockList_ad1ee3a80b164ae697cfc805b790ebd5d}
+Dumps the blocks to stdout. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-blocklist.\-h\item 
+librecad/src/lib/engine/rs\-\_\-blocklist.\-cpp\end{DoxyCompactItemize}

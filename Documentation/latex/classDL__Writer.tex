@@ -1,0 +1,689 @@
+\hypertarget{classDL__Writer}{\section{D\-L\-\_\-\-Writer Class Reference}
+\label{classDL__Writer}\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}}
+}
+
+
+{\ttfamily \#include $<$dl\-\_\-writer.\-h$>$}
+
+Inheritance diagram for D\-L\-\_\-\-Writer\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDL__Writer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDL__Writer_ad068a504f7bbeb205fb21088e4e2165c}{D\-L\-\_\-\-Writer} (\hyperlink{classDL__Codes_a5eba107e2d280c70b52ffab0292fb9dc}{D\-L\-\_\-\-Codes\-::version} \hyperlink{classDL__Writer_af82f15c96f8ddaa4ebfffdb5ea41fb8c}{version})
+\item 
+void \hyperlink{classDL__Writer_a3a632bc5156c4b670cc8c73ca0a8bff2}{section} (const char $\ast$name) const 
+\item 
+void \hyperlink{classDL__Writer_a564b261ddc36ae3f4bd30df9d48f2bca}{section\-Header} () const 
+\item 
+void \hyperlink{classDL__Writer_aad7efefcce3971adcb0859b4d695ac25}{section\-Tables} () const 
+\item 
+void \hyperlink{classDL__Writer_a796293623a246c67ff1992d1cb8e9ea1}{section\-Blocks} () const 
+\item 
+void \hyperlink{classDL__Writer_a881fee60d7e5225dd7807b5d301267fb}{section\-Entities} () const 
+\item 
+void \hyperlink{classDL__Writer_a67e83de1e774c7b25f844659f45355a1}{section\-Classes} () const 
+\item 
+void \hyperlink{classDL__Writer_af026dc176a1e27798b8532c68a7b7951}{section\-Objects} () const 
+\item 
+void \hyperlink{classDL__Writer_aea2a24f10850a01a5a47424e7a1a4617}{section\-End} () const 
+\item 
+void \hyperlink{classDL__Writer_af7484c0222d1596c1e3aace5242652c8}{table} (const char $\ast$name, int num, int \hyperlink{classDL__Writer_a17193a6cbff6d33d64690cd39c91cdcb}{handle}) const 
+\item 
+void \hyperlink{classDL__Writer_a9d7bbbb1b2c43894ddaf382b892d3060}{table\-Layers} (int num) const 
+\item 
+void \hyperlink{classDL__Writer_ab0f4dc0281c10c2f0d86bd3ec4ec499e}{table\-Line\-Types} (int num) const 
+\item 
+void \hyperlink{classDL__Writer_ad36122f06cc582cebf2d26fc135f1095}{table\-Appid} (int num) const 
+\item 
+void \hyperlink{classDL__Writer_af12e1dbf476e37102738b65d34a5f3ae}{table\-End} () const 
+\item 
+void \hyperlink{classDL__Writer_a0ab6961a30e8627e1e7dab3ef5fd8f28}{dxf\-E\-O\-F} () const 
+\item 
+void \hyperlink{classDL__Writer_a69dbad0d83a751d161e3718d071d5f24}{comment} (const char $\ast$text) const 
+\item 
+void \hyperlink{classDL__Writer_a55109d20ddd87ad72d817304f98f3cae}{entity} (const char $\ast$ent\-Type\-Name) const 
+\item 
+void \hyperlink{classDL__Writer_a4debd0a1443f3da3c88bf6f29a4a928d}{entity\-Attributes} (const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib) const 
+\item 
+void \hyperlink{classDL__Writer_aa91b4c49488401ea31ed0b8c369232f5}{sub\-Class} (const char $\ast$sub) const 
+\item 
+void \hyperlink{classDL__Writer_ac4fcc7e465b802c5f0f0eada3fe56af0}{table\-Layer\-Entry} (unsigned long int h=0) const 
+\item 
+void \hyperlink{classDL__Writer_a6603d8a37857c32f901f9b8fc5fb0f7a}{table\-Line\-Type\-Entry} (unsigned long int h=0) const 
+\item 
+void \hyperlink{classDL__Writer_a25a419e135b76606b03f4a97ec2fcf23}{table\-Appid\-Entry} (unsigned long int h=0) const 
+\item 
+void \hyperlink{classDL__Writer_a94e8d883b724d20f6b8b9895c67b89b6}{section\-Block\-Entry} (unsigned long int h=0) const 
+\item 
+void \hyperlink{classDL__Writer_a17615ab803fde8ddbea15f735f860b9c}{section\-Block\-Entry\-End} (unsigned long int h=0) const 
+\item 
+\hypertarget{classDL__Writer_a5906ad8025b82a1b43cfd8317517e374}{void {\bfseries color} (int col=256) const }\label{classDL__Writer_a5906ad8025b82a1b43cfd8317517e374}
+
+\item 
+\hypertarget{classDL__Writer_a33309657733b22fe7889065523bae1ba}{void {\bfseries line\-Type} (const char $\ast$lt) const }\label{classDL__Writer_a33309657733b22fe7889065523bae1ba}
+
+\item 
+\hypertarget{classDL__Writer_a84d470c94ad69c084df2ceb148e2206c}{void {\bfseries line\-Type\-Scale} (double scale) const }\label{classDL__Writer_a84d470c94ad69c084df2ceb148e2206c}
+
+\item 
+\hypertarget{classDL__Writer_a8f9c2b81e9659a6e3706ae58a3a67578}{void {\bfseries line\-Weight} (int lw) const }\label{classDL__Writer_a8f9c2b81e9659a6e3706ae58a3a67578}
+
+\item 
+\hypertarget{classDL__Writer_addb23e58611f3ff75cdaec798dab3a1c}{void {\bfseries coord} (int gc, double x, double y, double z=0) const }\label{classDL__Writer_addb23e58611f3ff75cdaec798dab3a1c}
+
+\item 
+\hypertarget{classDL__Writer_a14440aeb254928982e70d912c4948fcb}{void {\bfseries coord\-Triplet} (int gc, const double $\ast$value) const }\label{classDL__Writer_a14440aeb254928982e70d912c4948fcb}
+
+\item 
+\hypertarget{classDL__Writer_a7f76a8b5c30d3173643027b2e9f1f6af}{void {\bfseries reset\-Handle} () const }\label{classDL__Writer_a7f76a8b5c30d3173643027b2e9f1f6af}
+
+\item 
+unsigned long \hyperlink{classDL__Writer_a17193a6cbff6d33d64690cd39c91cdcb}{handle} (int gc=5) const 
+\item 
+unsigned long \hyperlink{classDL__Writer_a7adcf7edb2df6c065d07d44db7232e76}{get\-Next\-Handle} () const 
+\item 
+unsigned long \hyperlink{classDL__Writer_a1578d66c34ea3aa73858b9accfdc638c}{inc\-Handle} () const 
+\item 
+void \hyperlink{classDL__Writer_a1a302dd063f545d13f109bea9ad4736a}{set\-Model\-Space\-Handle} (unsigned long h)
+\item 
+\hypertarget{classDL__Writer_abfba18d04cdc612fb789e8d81fd7961d}{unsigned long {\bfseries get\-Model\-Space\-Handle} ()}\label{classDL__Writer_abfba18d04cdc612fb789e8d81fd7961d}
+
+\item 
+void \hyperlink{classDL__Writer_ae512e207d4f63a94f3cacd3604cf4cb5}{set\-Paper\-Space\-Handle} (unsigned long h)
+\item 
+\hypertarget{classDL__Writer_a4a189925ff5fbdb4698670a1d5d14ee4}{unsigned long {\bfseries get\-Paper\-Space\-Handle} ()}\label{classDL__Writer_a4a189925ff5fbdb4698670a1d5d14ee4}
+
+\item 
+void \hyperlink{classDL__Writer_a0da45195b1ee57fb5315e4d1ba20c8a2}{set\-Paper\-Space0\-Handle} (unsigned long h)
+\item 
+\hypertarget{classDL__Writer_a2a13f33078096e1d2de2520068f36fae}{unsigned long {\bfseries get\-Paper\-Space0\-Handle} ()}\label{classDL__Writer_a2a13f33078096e1d2de2520068f36fae}
+
+\item 
+virtual void \hyperlink{classDL__Writer_a36f163a34cb91e63dcc5ff412f7981d0}{dxf\-Real} (int gc, double value) const =0
+\item 
+virtual void \hyperlink{classDL__Writer_a038b715457b6c1b15183e14e1bca5ced}{dxf\-Int} (int gc, int value) const =0
+\item 
+virtual void \hyperlink{classDL__Writer_ab3efae31c835548d5266aa72cc8b25e4}{dxf\-Hex} (int gc, int value) const =0
+\item 
+virtual void \hyperlink{classDL__Writer_a06a4aa2b632a66800defb87794d13896}{dxf\-String} (int gc, const char $\ast$value) const =0
+\item 
+virtual void \hyperlink{classDL__Writer_a18e79d9a34b2c3680f07d9c7bdcbd6a1}{dxf\-String} (int gc, const string \&value) const =0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDL__Writer_a00ca26dfb43df1d331499ca6502ef166}{unsigned long {\bfseries m\-\_\-handle}}\label{classDL__Writer_a00ca26dfb43df1d331499ca6502ef166}
+
+\item 
+\hypertarget{classDL__Writer_af308265738b91fec32cf9a8577f1eaef}{unsigned long {\bfseries model\-Space\-Handle}}\label{classDL__Writer_af308265738b91fec32cf9a8577f1eaef}
+
+\item 
+\hypertarget{classDL__Writer_a39bd1958bb1fbe183df800d5da61846d}{unsigned long {\bfseries paper\-Space\-Handle}}\label{classDL__Writer_a39bd1958bb1fbe183df800d5da61846d}
+
+\item 
+\hypertarget{classDL__Writer_a868d48a5c4dd4bbd37e9261e801ded6f}{unsigned long {\bfseries paper\-Space0\-Handle}}\label{classDL__Writer_a868d48a5c4dd4bbd37e9261e801ded6f}
+
+\item 
+\hyperlink{classDL__Codes_a5eba107e2d280c70b52ffab0292fb9dc}{D\-L\-\_\-\-Codes\-::version} \hyperlink{classDL__Writer_af82f15c96f8ddaa4ebfffdb5ea41fb8c}{version}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines interface for writing low level D\-X\-F constructs to a file. Implementation is defined in derived classes that write to binary or A\-S\-C\-I\-I files.
+
+Implements functions that write higher level constructs in terms of the low level ones.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000004}{Todo}]Add error checking for string/entry length. \end{DoxyRefDesc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDL__Writer_ad068a504f7bbeb205fb21088e4e2165c}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}}
+\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{D\-L\-\_\-\-Writer}]{\setlength{\rightskip}{0pt plus 5cm}D\-L\-\_\-\-Writer\-::\-D\-L\-\_\-\-Writer (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Codes\-::version}}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_ad068a504f7bbeb205fb21088e4e2165c}
+version D\-X\-F version. Defaults to V\-E\-R\-\_\-2002. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classDL__Writer_a69dbad0d83a751d161e3718d071d5f24}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!comment@{comment}}
+\index{comment@{comment}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{comment}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::comment (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{text}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_a69dbad0d83a751d161e3718d071d5f24}
+Comment.
+
+
+\begin{DoxyPre}
+ 999
+ text
+\end{DoxyPre}
+ \hypertarget{classDL__Writer_a0ab6961a30e8627e1e7dab3ef5fd8f28}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!dxf\-E\-O\-F@{dxf\-E\-O\-F}}
+\index{dxf\-E\-O\-F@{dxf\-E\-O\-F}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{dxf\-E\-O\-F}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::dxf\-E\-O\-F (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_a0ab6961a30e8627e1e7dab3ef5fd8f28}
+End of the D\-X\-F file.
+
+
+\begin{DoxyPre}
+  0
+ EOF
+\end{DoxyPre}
+ \hypertarget{classDL__Writer_ab3efae31c835548d5266aa72cc8b25e4}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!dxf\-Hex@{dxf\-Hex}}
+\index{dxf\-Hex@{dxf\-Hex}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{dxf\-Hex}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-L\-\_\-\-Writer\-::dxf\-Hex (
+\begin{DoxyParamCaption}
+\item[{int}]{gc, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDL__Writer_ab3efae31c835548d5266aa72cc8b25e4}
+Must be overwritten by the implementing class to write an int value (hex) to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em gc} & Group code. \\
+\hline
+{\em value} & The int value. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classDL__WriterA_aa8edb47a42a6b8fc6dd2abb22b168b13}{D\-L\-\_\-\-Writer\-A}.
+
+\hypertarget{classDL__Writer_a038b715457b6c1b15183e14e1bca5ced}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!dxf\-Int@{dxf\-Int}}
+\index{dxf\-Int@{dxf\-Int}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{dxf\-Int}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-L\-\_\-\-Writer\-::dxf\-Int (
+\begin{DoxyParamCaption}
+\item[{int}]{gc, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDL__Writer_a038b715457b6c1b15183e14e1bca5ced}
+Must be overwritten by the implementing class to write an int value to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em gc} & Group code. \\
+\hline
+{\em value} & The int value. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classDL__WriterA_a51ba6db986c225e57f54d99ae9613dc8}{D\-L\-\_\-\-Writer\-A}.
+
+\hypertarget{classDL__Writer_a36f163a34cb91e63dcc5ff412f7981d0}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!dxf\-Real@{dxf\-Real}}
+\index{dxf\-Real@{dxf\-Real}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{dxf\-Real}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-L\-\_\-\-Writer\-::dxf\-Real (
+\begin{DoxyParamCaption}
+\item[{int}]{gc, }
+\item[{double}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDL__Writer_a36f163a34cb91e63dcc5ff412f7981d0}
+Must be overwritten by the implementing class to write a real value to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em gc} & Group code. \\
+\hline
+{\em value} & The real value. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classDL__WriterA_a312d2c162e82a838858e8acf512e5786}{D\-L\-\_\-\-Writer\-A}.
+
+\hypertarget{classDL__Writer_a06a4aa2b632a66800defb87794d13896}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!dxf\-String@{dxf\-String}}
+\index{dxf\-String@{dxf\-String}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{dxf\-String}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-L\-\_\-\-Writer\-::dxf\-String (
+\begin{DoxyParamCaption}
+\item[{int}]{gc, }
+\item[{const char $\ast$}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDL__Writer_a06a4aa2b632a66800defb87794d13896}
+Must be overwritten by the implementing class to write a string to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em gc} & Group code. \\
+\hline
+{\em value} & The string. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classDL__WriterA_a1ca52fde1bdce2c66c49c0c377e05e1a}{D\-L\-\_\-\-Writer\-A}.
+
+\hypertarget{classDL__Writer_a18e79d9a34b2c3680f07d9c7bdcbd6a1}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!dxf\-String@{dxf\-String}}
+\index{dxf\-String@{dxf\-String}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{dxf\-String}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-L\-\_\-\-Writer\-::dxf\-String (
+\begin{DoxyParamCaption}
+\item[{int}]{gc, }
+\item[{const string \&}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDL__Writer_a18e79d9a34b2c3680f07d9c7bdcbd6a1}
+Must be overwritten by the implementing class to write a string to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em gc} & Group code. \\
+\hline
+{\em value} & The string. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classDL__WriterA_a48438853c9ea284a6d750d7f5b4fa64b}{D\-L\-\_\-\-Writer\-A}.
+
+\hypertarget{classDL__Writer_a55109d20ddd87ad72d817304f98f3cae}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!entity@{entity}}
+\index{entity@{entity}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{entity}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::entity (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{ent\-Type\-Name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_a55109d20ddd87ad72d817304f98f3cae}
+Entity.
+
+
+\begin{DoxyPre}
+  0
+ entTypeName
+\end{DoxyPre}
+
+
+\begin{DoxyReturn}{Returns}
+Unique handle or 0. 
+\end{DoxyReturn}
+\hypertarget{classDL__Writer_a4debd0a1443f3da3c88bf6f29a4a928d}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!entity\-Attributes@{entity\-Attributes}}
+\index{entity\-Attributes@{entity\-Attributes}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{entity\-Attributes}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::entity\-Attributes (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_a4debd0a1443f3da3c88bf6f29a4a928d}
+Attributes of an entity.
+
+
+\begin{DoxyPre}
+  8
+ layer
+ 62
+ color
+ 39
+ width
+  6
+ linetype
+\end{DoxyPre}
+ \hypertarget{classDL__Writer_a7adcf7edb2df6c065d07d44db7232e76}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!get\-Next\-Handle@{get\-Next\-Handle}}
+\index{get\-Next\-Handle@{get\-Next\-Handle}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{get\-Next\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long D\-L\-\_\-\-Writer\-::get\-Next\-Handle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_a7adcf7edb2df6c065d07d44db7232e76}
+\begin{DoxyReturn}{Returns}
+Next handle that will be written. 
+\end{DoxyReturn}
+\hypertarget{classDL__Writer_a17193a6cbff6d33d64690cd39c91cdcb}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!handle@{handle}}
+\index{handle@{handle}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{handle}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long D\-L\-\_\-\-Writer\-::handle (
+\begin{DoxyParamCaption}
+\item[{int}]{gc = {\ttfamily 5}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_a17193a6cbff6d33d64690cd39c91cdcb}
+Writes a unique handle and returns it. \hypertarget{classDL__Writer_a1578d66c34ea3aa73858b9accfdc638c}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!inc\-Handle@{inc\-Handle}}
+\index{inc\-Handle@{inc\-Handle}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{inc\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long D\-L\-\_\-\-Writer\-::inc\-Handle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_a1578d66c34ea3aa73858b9accfdc638c}
+Increases handle, so that the handle returned remains available. \hypertarget{classDL__Writer_a3a632bc5156c4b670cc8c73ca0a8bff2}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!section@{section}}
+\index{section@{section}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{section}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::section (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_a3a632bc5156c4b670cc8c73ca0a8bff2}
+Generic section for section 'name'.
+
+
+\begin{DoxyPre}
+  0
+ SECTION
+  2
+ name
+\end{DoxyPre}
+ \hypertarget{classDL__Writer_a94e8d883b724d20f6b8b9895c67b89b6}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!section\-Block\-Entry@{section\-Block\-Entry}}
+\index{section\-Block\-Entry@{section\-Block\-Entry}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{section\-Block\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::section\-Block\-Entry (
+\begin{DoxyParamCaption}
+\item[{unsigned long int}]{h = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_a94e8d883b724d20f6b8b9895c67b89b6}
+Block (must be in the section B\-L\-O\-C\-K\-S).
+
+
+\begin{DoxyPre}
+  0
+ BLOCK
+\end{DoxyPre}
+ \hypertarget{classDL__Writer_a17615ab803fde8ddbea15f735f860b9c}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!section\-Block\-Entry\-End@{section\-Block\-Entry\-End}}
+\index{section\-Block\-Entry\-End@{section\-Block\-Entry\-End}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{section\-Block\-Entry\-End}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::section\-Block\-Entry\-End (
+\begin{DoxyParamCaption}
+\item[{unsigned long int}]{h = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_a17615ab803fde8ddbea15f735f860b9c}
+End of Block (must be in the section B\-L\-O\-C\-K\-S).
+
+
+\begin{DoxyPre}
+  0
+ ENDBLK
+\end{DoxyPre}
+ \hypertarget{classDL__Writer_a796293623a246c67ff1992d1cb8e9ea1}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!section\-Blocks@{section\-Blocks}}
+\index{section\-Blocks@{section\-Blocks}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{section\-Blocks}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::section\-Blocks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_a796293623a246c67ff1992d1cb8e9ea1}
+Section B\-L\-O\-C\-K\-S
+
+
+\begin{DoxyPre}
+  0
+ SECTION
+  2
+ BLOCKS
+\end{DoxyPre}
+ \hypertarget{classDL__Writer_a67e83de1e774c7b25f844659f45355a1}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!section\-Classes@{section\-Classes}}
+\index{section\-Classes@{section\-Classes}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{section\-Classes}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::section\-Classes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_a67e83de1e774c7b25f844659f45355a1}
+Section C\-L\-A\-S\-S\-E\-S
+
+
+\begin{DoxyPre}
+  0
+ SECTION
+  2
+ CLASSES
+\end{DoxyPre}
+ \hypertarget{classDL__Writer_aea2a24f10850a01a5a47424e7a1a4617}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!section\-End@{section\-End}}
+\index{section\-End@{section\-End}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{section\-End}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::section\-End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_aea2a24f10850a01a5a47424e7a1a4617}
+End of a section.
+
+
+\begin{DoxyPre}
+  0
+ ENDSEC
+\end{DoxyPre}
+ \hypertarget{classDL__Writer_a881fee60d7e5225dd7807b5d301267fb}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!section\-Entities@{section\-Entities}}
+\index{section\-Entities@{section\-Entities}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{section\-Entities}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::section\-Entities (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_a881fee60d7e5225dd7807b5d301267fb}
+Section E\-N\-T\-I\-T\-I\-E\-S
+
+
+\begin{DoxyPre}
+  0
+ SECTION
+  2
+ ENTITIES
+\end{DoxyPre}
+ \hypertarget{classDL__Writer_a564b261ddc36ae3f4bd30df9d48f2bca}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!section\-Header@{section\-Header}}
+\index{section\-Header@{section\-Header}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{section\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::section\-Header (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_a564b261ddc36ae3f4bd30df9d48f2bca}
+Section H\-E\-A\-D\-E\-R
+
+
+\begin{DoxyPre}
+  0
+ SECTION
+  2
+ HEADER
+\end{DoxyPre}
+ \hypertarget{classDL__Writer_af026dc176a1e27798b8532c68a7b7951}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!section\-Objects@{section\-Objects}}
+\index{section\-Objects@{section\-Objects}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{section\-Objects}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::section\-Objects (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_af026dc176a1e27798b8532c68a7b7951}
+Section O\-B\-J\-E\-C\-T\-S
+
+
+\begin{DoxyPre}
+  0
+ SECTION
+  2
+ OBJECTS
+\end{DoxyPre}
+ \hypertarget{classDL__Writer_aad7efefcce3971adcb0859b4d695ac25}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!section\-Tables@{section\-Tables}}
+\index{section\-Tables@{section\-Tables}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{section\-Tables}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::section\-Tables (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_aad7efefcce3971adcb0859b4d695ac25}
+Section T\-A\-B\-L\-E\-S
+
+
+\begin{DoxyPre}
+  0
+ SECTION
+  2
+ TABLES
+\end{DoxyPre}
+ \hypertarget{classDL__Writer_a1a302dd063f545d13f109bea9ad4736a}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!set\-Model\-Space\-Handle@{set\-Model\-Space\-Handle}}
+\index{set\-Model\-Space\-Handle@{set\-Model\-Space\-Handle}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{set\-Model\-Space\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::set\-Model\-Space\-Handle (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{h}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_a1a302dd063f545d13f109bea9ad4736a}
+Sets the handle of the model space. Entities refer to this handle. \hypertarget{classDL__Writer_a0da45195b1ee57fb5315e4d1ba20c8a2}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!set\-Paper\-Space0\-Handle@{set\-Paper\-Space0\-Handle}}
+\index{set\-Paper\-Space0\-Handle@{set\-Paper\-Space0\-Handle}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{set\-Paper\-Space0\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::set\-Paper\-Space0\-Handle (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{h}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_a0da45195b1ee57fb5315e4d1ba20c8a2}
+Sets the handle of the paper space 0. Some special blocks refer to this handle. \hypertarget{classDL__Writer_ae512e207d4f63a94f3cacd3604cf4cb5}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!set\-Paper\-Space\-Handle@{set\-Paper\-Space\-Handle}}
+\index{set\-Paper\-Space\-Handle@{set\-Paper\-Space\-Handle}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{set\-Paper\-Space\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::set\-Paper\-Space\-Handle (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{h}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_ae512e207d4f63a94f3cacd3604cf4cb5}
+Sets the handle of the paper space. Some special blocks refer to this handle. \hypertarget{classDL__Writer_aa91b4c49488401ea31ed0b8c369232f5}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!sub\-Class@{sub\-Class}}
+\index{sub\-Class@{sub\-Class}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{sub\-Class}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::sub\-Class (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sub}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_aa91b4c49488401ea31ed0b8c369232f5}
+Subclass. \hypertarget{classDL__Writer_af7484c0222d1596c1e3aace5242652c8}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!table@{table}}
+\index{table@{table}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{table}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::table (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{int}]{num, }
+\item[{int}]{handle}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_af7484c0222d1596c1e3aace5242652c8}
+Generic table for table 'name' with 'num' entries\-:
+
+
+\begin{DoxyPre}
+  0
+ TABLE
+  2
+ name
+ 70
+  num
+\end{DoxyPre}
+ \hypertarget{classDL__Writer_ad36122f06cc582cebf2d26fc135f1095}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!table\-Appid@{table\-Appid}}
+\index{table\-Appid@{table\-Appid}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{table\-Appid}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::table\-Appid (
+\begin{DoxyParamCaption}
+\item[{int}]{num}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_ad36122f06cc582cebf2d26fc135f1095}
+Table for application id.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Number of registered applications in total.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyPre}
+  0
+ TABLE
+  2
+ APPID
+  70
+     num
+\end{DoxyPre}
+ \hypertarget{classDL__Writer_a25a419e135b76606b03f4a97ec2fcf23}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!table\-Appid\-Entry@{table\-Appid\-Entry}}
+\index{table\-Appid\-Entry@{table\-Appid\-Entry}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{table\-Appid\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::table\-Appid\-Entry (
+\begin{DoxyParamCaption}
+\item[{unsigned long int}]{h = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_a25a419e135b76606b03f4a97ec2fcf23}
+Appid (must be in the T\-A\-B\-L\-E\-S section A\-P\-P\-I\-D).
+
+
+\begin{DoxyPre}
+  0
+ APPID
+\end{DoxyPre}
+ \hypertarget{classDL__Writer_af12e1dbf476e37102738b65d34a5f3ae}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!table\-End@{table\-End}}
+\index{table\-End@{table\-End}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{table\-End}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::table\-End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_af12e1dbf476e37102738b65d34a5f3ae}
+End of a table.
+
+
+\begin{DoxyPre}
+  0
+ ENDTAB
+\end{DoxyPre}
+ \hypertarget{classDL__Writer_ac4fcc7e465b802c5f0f0eada3fe56af0}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!table\-Layer\-Entry@{table\-Layer\-Entry}}
+\index{table\-Layer\-Entry@{table\-Layer\-Entry}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{table\-Layer\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::table\-Layer\-Entry (
+\begin{DoxyParamCaption}
+\item[{unsigned long int}]{h = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_ac4fcc7e465b802c5f0f0eada3fe56af0}
+Layer (must be in the T\-A\-B\-L\-E\-S section L\-A\-Y\-E\-R).
+
+
+\begin{DoxyPre}
+  0
+ LAYER
+\end{DoxyPre}
+ \hypertarget{classDL__Writer_a9d7bbbb1b2c43894ddaf382b892d3060}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!table\-Layers@{table\-Layers}}
+\index{table\-Layers@{table\-Layers}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{table\-Layers}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::table\-Layers (
+\begin{DoxyParamCaption}
+\item[{int}]{num}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_a9d7bbbb1b2c43894ddaf382b892d3060}
+Table for layers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Number of layers in total.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyPre}
+  0
+ TABLE
+  2
+ LAYER
+  70
+     num
+\end{DoxyPre}
+ \hypertarget{classDL__Writer_a6603d8a37857c32f901f9b8fc5fb0f7a}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!table\-Line\-Type\-Entry@{table\-Line\-Type\-Entry}}
+\index{table\-Line\-Type\-Entry@{table\-Line\-Type\-Entry}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{table\-Line\-Type\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::table\-Line\-Type\-Entry (
+\begin{DoxyParamCaption}
+\item[{unsigned long int}]{h = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_a6603d8a37857c32f901f9b8fc5fb0f7a}
+Line type (must be in the T\-A\-B\-L\-E\-S section L\-T\-Y\-P\-E).
+
+
+\begin{DoxyPre}
+  0
+ LTYPE
+\end{DoxyPre}
+ \hypertarget{classDL__Writer_ab0f4dc0281c10c2f0d86bd3ec4ec499e}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!table\-Line\-Types@{table\-Line\-Types}}
+\index{table\-Line\-Types@{table\-Line\-Types}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{table\-Line\-Types}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-::table\-Line\-Types (
+\begin{DoxyParamCaption}
+\item[{int}]{num}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Writer_ab0f4dc0281c10c2f0d86bd3ec4ec499e}
+Table for line types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Number of line types in total.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyPre}
+  0
+ TABLE
+  2
+ LTYPE
+  70
+     num
+\end{DoxyPre}
+ 
+
+\subsection{Member Data Documentation}
+\hypertarget{classDL__Writer_af82f15c96f8ddaa4ebfffdb5ea41fb8c}{\index{D\-L\-\_\-\-Writer@{D\-L\-\_\-\-Writer}!version@{version}}
+\index{version@{version}!DL_Writer@{D\-L\-\_\-\-Writer}}
+\subsubsection[{version}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-L\-\_\-\-Codes\-::version} D\-L\-\_\-\-Writer\-::version\hspace{0.3cm}{\ttfamily [protected]}}}\label{classDL__Writer_af82f15c96f8ddaa4ebfffdb5ea41fb8c}
+D\-X\-F version to be created. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+libraries/jwwlib/src/dl\-\_\-writer.\-h\end{DoxyCompactItemize}

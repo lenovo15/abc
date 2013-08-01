@@ -1,0 +1,223 @@
+\hypertarget{classRS__Grid}{\section{R\-S\-\_\-\-Grid Class Reference}
+\label{classRS__Grid}\index{R\-S\-\_\-\-Grid@{R\-S\-\_\-\-Grid}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-grid.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__Grid_a24bdfec46f770676c3bb0b6b837669e2}{R\-S\-\_\-\-Grid} (\hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} $\ast$\hyperlink{classRS__Grid_aaf666d44cca6b7efdaba71632e4823f7}{graphic\-View})
+\item 
+\hyperlink{classRS__Grid_ae660c4bc4cd66a4b24eb40d6acc9687c}{$\sim$\-R\-S\-\_\-\-Grid} ()
+\item 
+void \hyperlink{classRS__Grid_ab9bc75e8cdb45fcc2e6a0a912021de03}{update\-Point\-Array} ()
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} $\ast$ \hyperlink{classRS__Grid_af2f47b7e834388ee3955ff258f406e61}{get\-Points} ()
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Grid_a314100d3772b4c815eb82074a7ea68f1}{snap\-Grid} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord) const 
+\item 
+int \hyperlink{classRS__Grid_a8810cbe32e04eafd5d15cb2c7dcf7c5d}{count} ()
+\item 
+\hypertarget{classRS__Grid_ae7d9ef6014cd9b0fbe3d1d3968d78619}{void {\bfseries set\-Crosshair\-Type} (\hyperlink{classRS2_a6900d729544a78e6cda74f93df772acc}{R\-S2\-::\-Crosshair\-Type} ch\-Type)}\label{classRS__Grid_ae7d9ef6014cd9b0fbe3d1d3968d78619}
+
+\item 
+\hypertarget{classRS__Grid_a9929007b56bb3f1599a45cdd061cbad9}{\hyperlink{classRS2_a6900d729544a78e6cda74f93df772acc}{R\-S2\-::\-Crosshair\-Type} {\bfseries get\-Crosshair\-Type} ()}\label{classRS__Grid_a9929007b56bb3f1599a45cdd061cbad9}
+
+\item 
+Q\-String \hyperlink{classRS__Grid_ae99e808295c900295f4b58b59c4cb59c}{get\-Info} ()
+\item 
+double $\ast$ \hyperlink{classRS__Grid_a47d6a6c1219f8824811f9f6a695d1f71}{get\-Meta\-X} ()
+\item 
+int \hyperlink{classRS__Grid_a9f98ba071ec1be2ef749f242ebd106fe}{count\-Meta\-X} ()
+\item 
+double $\ast$ \hyperlink{classRS__Grid_adcf690d0f189301b656e12b5bc6e4602}{get\-Meta\-Y} ()
+\item 
+int \hyperlink{classRS__Grid_a38a3e3fc37647df7719faa84eac05d6a}{count\-Meta\-Y} ()
+\item 
+\hypertarget{classRS__Grid_ab54df94e5fc50f86bc89f35476670da8}{bool {\bfseries is\-Isometric} () const }\label{classRS__Grid_ab54df94e5fc50f86bc89f35476670da8}
+
+\item 
+\hypertarget{classRS__Grid_af5a503158de5e1fcd8b762350dffa6b6}{void {\bfseries set\-Isometric} (bool b)}\label{classRS__Grid_af5a503158de5e1fcd8b762350dffa6b6}
+
+\item 
+\hypertarget{classRS__Grid_a031f07b68bcce6cb5a9a5cb8d9870d51}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries get\-Meta\-Grid\-Width} () const }\label{classRS__Grid_a031f07b68bcce6cb5a9a5cb8d9870d51}
+
+\item 
+\hypertarget{classRS__Grid_a081a544af3c5c231fc66e5e08e2baf9c}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries get\-Cell\-Vector} ()}\label{classRS__Grid_a081a544af3c5c231fc66e5e08e2baf9c}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__Grid_aaf666d44cca6b7efdaba71632e4823f7}{\hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} $\ast$ \hyperlink{classRS__Grid_aaf666d44cca6b7efdaba71632e4823f7}{graphic\-View}}\label{classRS__Grid_aaf666d44cca6b7efdaba71632e4823f7}
+
+\begin{DoxyCompactList}\small\item\em Graphic view this grid is connected to. \end{DoxyCompactList}\item 
+\hypertarget{classRS__Grid_ad51345a9e6e9c900c3aa493751dae264}{double \hyperlink{classRS__Grid_ad51345a9e6e9c900c3aa493751dae264}{spacing}}\label{classRS__Grid_ad51345a9e6e9c900c3aa493751dae264}
+
+\begin{DoxyCompactList}\small\item\em Current grid spacing. \end{DoxyCompactList}\item 
+\hypertarget{classRS__Grid_a62b8893ade00d246a7f3a013895adb5b}{double \hyperlink{classRS__Grid_a62b8893ade00d246a7f3a013895adb5b}{meta\-Spacing}}\label{classRS__Grid_a62b8893ade00d246a7f3a013895adb5b}
+
+\begin{DoxyCompactList}\small\item\em Current meta grid spacing. \end{DoxyCompactList}\item 
+\hypertarget{classRS__Grid_afb0c86ce9a55a543252b81fad7a009af}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} $\ast$ \hyperlink{classRS__Grid_afb0c86ce9a55a543252b81fad7a009af}{pt}}\label{classRS__Grid_afb0c86ce9a55a543252b81fad7a009af}
+
+\begin{DoxyCompactList}\small\item\em Pointer to array of grid points. \end{DoxyCompactList}\item 
+\hypertarget{classRS__Grid_ac4ac9e36c217f0573b4613d7e9136b1f}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries base\-Grid}}\label{classRS__Grid_ac4ac9e36c217f0573b4613d7e9136b1f}
+
+\item 
+\hypertarget{classRS__Grid_aa7cd5305461d8db1e3280100c8ee303b}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries cell\-V}}\label{classRS__Grid_aa7cd5305461d8db1e3280100c8ee303b}
+
+\item 
+\hypertarget{classRS__Grid_a42f3c4275ca245b37ce93d39a0b1dc6e}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries meta\-Grid\-Width}}\label{classRS__Grid_a42f3c4275ca245b37ce93d39a0b1dc6e}
+
+\item 
+\hypertarget{classRS__Grid_aef87e3e2832225ef6d8c8a5c7ccdc315}{int \hyperlink{classRS__Grid_aef87e3e2832225ef6d8c8a5c7ccdc315}{number}}\label{classRS__Grid_aef87e3e2832225ef6d8c8a5c7ccdc315}
+
+\begin{DoxyCompactList}\small\item\em Number of points in the array. \end{DoxyCompactList}\item 
+\hypertarget{classRS__Grid_a7bb35daabdc32b12bb158817425a346c}{double $\ast$ \hyperlink{classRS__Grid_a7bb35daabdc32b12bb158817425a346c}{meta\-X}}\label{classRS__Grid_a7bb35daabdc32b12bb158817425a346c}
+
+\begin{DoxyCompactList}\small\item\em Meta grid positions in X. \end{DoxyCompactList}\item 
+\hypertarget{classRS__Grid_a9e903dc91617af66bf682c67958c8a6b}{int \hyperlink{classRS__Grid_a9e903dc91617af66bf682c67958c8a6b}{num\-Meta\-X}}\label{classRS__Grid_a9e903dc91617af66bf682c67958c8a6b}
+
+\begin{DoxyCompactList}\small\item\em Number of meta grid lines in X. \end{DoxyCompactList}\item 
+\hypertarget{classRS__Grid_a8a5aac400b783e0ac227c809bf69e9fe}{double $\ast$ \hyperlink{classRS__Grid_a8a5aac400b783e0ac227c809bf69e9fe}{meta\-Y}}\label{classRS__Grid_a8a5aac400b783e0ac227c809bf69e9fe}
+
+\begin{DoxyCompactList}\small\item\em Meta grid positions in Y. \end{DoxyCompactList}\item 
+\hypertarget{classRS__Grid_a9dcc722e9128d76d8d95a52747f69a6c}{int \hyperlink{classRS__Grid_a9dcc722e9128d76d8d95a52747f69a6c}{num\-Meta\-Y}}\label{classRS__Grid_a9dcc722e9128d76d8d95a52747f69a6c}
+
+\begin{DoxyCompactList}\small\item\em Number of meta grid lines in Y. \end{DoxyCompactList}\item 
+\hypertarget{classRS__Grid_a2f5f9376b581c9246c8fcb62cf8db72b}{bool {\bfseries isometric}}\label{classRS__Grid_a2f5f9376b581c9246c8fcb62cf8db72b}
+
+\item 
+\hypertarget{classRS__Grid_a98395a890b870f7d64abdcfb2e6bc0e7}{\hyperlink{classRS2_a6900d729544a78e6cda74f93df772acc}{R\-S2\-::\-Crosshair\-Type} {\bfseries crosshair\-Type}}\label{classRS__Grid_a98395a890b870f7d64abdcfb2e6bc0e7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class represents a grid. Grids can be drawn on graphic views and snappers can snap to the grid points.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__Grid_a24bdfec46f770676c3bb0b6b837669e2}{\index{R\-S\-\_\-\-Grid@{R\-S\-\_\-\-Grid}!R\-S\-\_\-\-Grid@{R\-S\-\_\-\-Grid}}
+\index{R\-S\-\_\-\-Grid@{R\-S\-\_\-\-Grid}!RS_Grid@{R\-S\-\_\-\-Grid}}
+\subsubsection[{R\-S\-\_\-\-Grid}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Grid\-::\-R\-S\-\_\-\-Grid (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} $\ast$}]{graphic\-View}
+\end{DoxyParamCaption}
+)}}\label{classRS__Grid_a24bdfec46f770676c3bb0b6b837669e2}
+Constructor. \hypertarget{classRS__Grid_ae660c4bc4cd66a4b24eb40d6acc9687c}{\index{R\-S\-\_\-\-Grid@{R\-S\-\_\-\-Grid}!$\sim$\-R\-S\-\_\-\-Grid@{$\sim$\-R\-S\-\_\-\-Grid}}
+\index{$\sim$\-R\-S\-\_\-\-Grid@{$\sim$\-R\-S\-\_\-\-Grid}!RS_Grid@{R\-S\-\_\-\-Grid}}
+\subsubsection[{$\sim$\-R\-S\-\_\-\-Grid}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Grid\-::$\sim$\-R\-S\-\_\-\-Grid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Grid_ae660c4bc4cd66a4b24eb40d6acc9687c}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Grid_a8810cbe32e04eafd5d15cb2c7dcf7c5d}{\index{R\-S\-\_\-\-Grid@{R\-S\-\_\-\-Grid}!count@{count}}
+\index{count@{count}!RS_Grid@{R\-S\-\_\-\-Grid}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Grid\-::count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Grid_a8810cbe32e04eafd5d15cb2c7dcf7c5d}
+\begin{DoxyReturn}{Returns}
+Number of visible grid points. 
+\end{DoxyReturn}
+\hypertarget{classRS__Grid_a9f98ba071ec1be2ef749f242ebd106fe}{\index{R\-S\-\_\-\-Grid@{R\-S\-\_\-\-Grid}!count\-Meta\-X@{count\-Meta\-X}}
+\index{count\-Meta\-X@{count\-Meta\-X}!RS_Grid@{R\-S\-\_\-\-Grid}}
+\subsubsection[{count\-Meta\-X}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Grid\-::count\-Meta\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Grid_a9f98ba071ec1be2ef749f242ebd106fe}
+\begin{DoxyReturn}{Returns}
+Number of visible meta grid lines in X. 
+\end{DoxyReturn}
+\hypertarget{classRS__Grid_a38a3e3fc37647df7719faa84eac05d6a}{\index{R\-S\-\_\-\-Grid@{R\-S\-\_\-\-Grid}!count\-Meta\-Y@{count\-Meta\-Y}}
+\index{count\-Meta\-Y@{count\-Meta\-Y}!RS_Grid@{R\-S\-\_\-\-Grid}}
+\subsubsection[{count\-Meta\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Grid\-::count\-Meta\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Grid_a38a3e3fc37647df7719faa84eac05d6a}
+\begin{DoxyReturn}{Returns}
+Number of visible meta grid lines in Y. 
+\end{DoxyReturn}
+\hypertarget{classRS__Grid_ae99e808295c900295f4b58b59c4cb59c}{\index{R\-S\-\_\-\-Grid@{R\-S\-\_\-\-Grid}!get\-Info@{get\-Info}}
+\index{get\-Info@{get\-Info}!RS_Grid@{R\-S\-\_\-\-Grid}}
+\subsubsection[{get\-Info}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Grid\-::get\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Grid_ae99e808295c900295f4b58b59c4cb59c}
+\begin{DoxyReturn}{Returns}
+Current grid spacing. 
+
+Current meta grid spacing. 
+
+Grid info for status widget. 
+\end{DoxyReturn}
+\hypertarget{classRS__Grid_a47d6a6c1219f8824811f9f6a695d1f71}{\index{R\-S\-\_\-\-Grid@{R\-S\-\_\-\-Grid}!get\-Meta\-X@{get\-Meta\-X}}
+\index{get\-Meta\-X@{get\-Meta\-X}!RS_Grid@{R\-S\-\_\-\-Grid}}
+\subsubsection[{get\-Meta\-X}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ R\-S\-\_\-\-Grid\-::get\-Meta\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Grid_a47d6a6c1219f8824811f9f6a695d1f71}
+\begin{DoxyReturn}{Returns}
+Meta grid positions in X. 
+\end{DoxyReturn}
+\hypertarget{classRS__Grid_adcf690d0f189301b656e12b5bc6e4602}{\index{R\-S\-\_\-\-Grid@{R\-S\-\_\-\-Grid}!get\-Meta\-Y@{get\-Meta\-Y}}
+\index{get\-Meta\-Y@{get\-Meta\-Y}!RS_Grid@{R\-S\-\_\-\-Grid}}
+\subsubsection[{get\-Meta\-Y}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ R\-S\-\_\-\-Grid\-::get\-Meta\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Grid_adcf690d0f189301b656e12b5bc6e4602}
+\begin{DoxyReturn}{Returns}
+Meta grid positions in Y. 
+\end{DoxyReturn}
+\hypertarget{classRS__Grid_af2f47b7e834388ee3955ff258f406e61}{\index{R\-S\-\_\-\-Grid@{R\-S\-\_\-\-Grid}!get\-Points@{get\-Points}}
+\index{get\-Points@{get\-Points}!RS_Grid@{R\-S\-\_\-\-Grid}}
+\subsubsection[{get\-Points}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector}$\ast$ R\-S\-\_\-\-Grid\-::get\-Points (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Grid_af2f47b7e834388ee3955ff258f406e61}
+\begin{DoxyReturn}{Returns}
+Array of all visible grid points. 
+\end{DoxyReturn}
+\hypertarget{classRS__Grid_a314100d3772b4c815eb82074a7ea68f1}{\index{R\-S\-\_\-\-Grid@{R\-S\-\_\-\-Grid}!snap\-Grid@{snap\-Grid}}
+\index{snap\-Grid@{snap\-Grid}!RS_Grid@{R\-S\-\_\-\-Grid}}
+\subsubsection[{snap\-Grid}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Grid\-::snap\-Grid (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord}
+\end{DoxyParamCaption}
+) const}}\label{classRS__Grid_a314100d3772b4c815eb82074a7ea68f1}
+\begin{DoxyReturn}{Returns}
+the closest grid point
+\end{DoxyReturn}
+find the closest grid point \begin{DoxyReturn}{Returns}
+the closest grid to given point \-: the given point 
+\end{DoxyReturn}
+\hypertarget{classRS__Grid_ab9bc75e8cdb45fcc2e6a0a912021de03}{\index{R\-S\-\_\-\-Grid@{R\-S\-\_\-\-Grid}!update\-Point\-Array@{update\-Point\-Array}}
+\index{update\-Point\-Array@{update\-Point\-Array}!RS_Grid@{R\-S\-\_\-\-Grid}}
+\subsubsection[{update\-Point\-Array}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Grid\-::update\-Point\-Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Grid_ab9bc75e8cdb45fcc2e6a0a912021de03}
+Updates the grid point array. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/gui/rs\-\_\-grid.\-h\item 
+librecad/src/lib/gui/rs\-\_\-grid.\-cpp\end{DoxyCompactItemize}

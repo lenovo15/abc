@@ -1,0 +1,95 @@
+\hypertarget{classQG__FileDialog}{\section{Q\-G\-\_\-\-File\-Dialog Class Reference}
+\label{classQG__FileDialog}\index{Q\-G\-\_\-\-File\-Dialog@{Q\-G\-\_\-\-File\-Dialog}}
+}
+
+
+{\ttfamily \#include $<$qg\-\_\-filedialog.\-h$>$}
+
+Inheritance diagram for Q\-G\-\_\-\-File\-Dialog\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classQG__FileDialog}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries File\-Type} \{ {\bfseries Drawing\-File} =0, 
+{\bfseries Block\-File} =1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQG__FileDialog_ac7f6faf8c61d4c03ebfab0252ee73649}{Q\-G\-\_\-\-File\-Dialog} (Q\-Widget $\ast$parent=0, Qt\-::\-Window\-Flags f=0, File\-Type type=Drawing\-File)
+\item 
+\hypertarget{classQG__FileDialog_a3323ae1b1b8e28c60e2e8612dee0447d}{Q\-String {\bfseries get\-Open\-File} (\hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} $\ast$type=N\-U\-L\-L)}\label{classQG__FileDialog_a3323ae1b1b8e28c60e2e8612dee0447d}
+
+\item 
+\hypertarget{classQG__FileDialog_aa153457ccb066283a9ed431248981339}{Q\-String {\bfseries get\-Save\-File} (\hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} $\ast$type=N\-U\-L\-L)}\label{classQG__FileDialog_aa153457ccb066283a9ed431248981339}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Q\-String \hyperlink{classQG__FileDialog_abb6b9c80d3991ee513f6c6c96016df7e}{get\-Open\-File\-Name} (Q\-Widget $\ast$parent, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} $\ast$type=N\-U\-L\-L)
+\item 
+static Q\-String \hyperlink{classQG__FileDialog_a5d4edb45544932f0644dbbade66639c3}{get\-Save\-File\-Name} (Q\-Widget $\ast$parent, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} $\ast$type=N\-U\-L\-L)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File Open / Save dialogs. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classQG__FileDialog_ac7f6faf8c61d4c03ebfab0252ee73649}{\index{Q\-G\-\_\-\-File\-Dialog@{Q\-G\-\_\-\-File\-Dialog}!Q\-G\-\_\-\-File\-Dialog@{Q\-G\-\_\-\-File\-Dialog}}
+\index{Q\-G\-\_\-\-File\-Dialog@{Q\-G\-\_\-\-File\-Dialog}!QG_FileDialog@{Q\-G\-\_\-\-File\-Dialog}}
+\subsubsection[{Q\-G\-\_\-\-File\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}Q\-G\-\_\-\-File\-Dialog\-::\-Q\-G\-\_\-\-File\-Dialog (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}, }
+\item[{Qt\-::\-Window\-Flags}]{f = {\ttfamily 0}, }
+\item[{File\-Type}]{type = {\ttfamily DrawingFile}}
+\end{DoxyParamCaption}
+)}}\label{classQG__FileDialog_ac7f6faf8c61d4c03ebfab0252ee73649}
+@ File\-Type, used to set dialog window title, currently, should be either \char`\"{}drawing\char`\"{} or \char`\"{}block\char`\"{} 
+
+\subsection{Member Function Documentation}
+\hypertarget{classQG__FileDialog_abb6b9c80d3991ee513f6c6c96016df7e}{\index{Q\-G\-\_\-\-File\-Dialog@{Q\-G\-\_\-\-File\-Dialog}!get\-Open\-File\-Name@{get\-Open\-File\-Name}}
+\index{get\-Open\-File\-Name@{get\-Open\-File\-Name}!QG_FileDialog@{Q\-G\-\_\-\-File\-Dialog}}
+\subsubsection[{get\-Open\-File\-Name}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Q\-G\-\_\-\-File\-Dialog\-::get\-Open\-File\-Name (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent, }
+\item[{{\bf R\-S2\-::\-Format\-Type} $\ast$}]{type = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classQG__FileDialog_abb6b9c80d3991ee513f6c6c96016df7e}
+Shows a dialog for choosing a file name. Opening the file is up to the caller.
+
+\begin{DoxyReturn}{Returns}
+File name with path and extension to determine the file type or an empty string if the dialog was cancelled. 
+\end{DoxyReturn}
+\begin{DoxyVerb}preview RVT PORT preview is currently not supported by QT4
+\end{DoxyVerb}
+ R\-S\-\_\-\-Graphic$\ast$ gr = new \hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic}; Q\-G\-\_\-\-Graphic\-View$\ast$ prev = new Q\-G\-\_\-\-Graphic\-View(parent); prev-\/$>$set\-Container(gr); prev-\/$>$set\-Borders(1, 1, 1, 1); file\-Dlg-\/$>$set\-Contents\-Preview\-Enabled(true); file\-Dlg-\/$>$set\-Contents\-Preview(prev, prev);\hypertarget{classQG__FileDialog_a5d4edb45544932f0644dbbade66639c3}{\index{Q\-G\-\_\-\-File\-Dialog@{Q\-G\-\_\-\-File\-Dialog}!get\-Save\-File\-Name@{get\-Save\-File\-Name}}
+\index{get\-Save\-File\-Name@{get\-Save\-File\-Name}!QG_FileDialog@{Q\-G\-\_\-\-File\-Dialog}}
+\subsubsection[{get\-Save\-File\-Name}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Q\-G\-\_\-\-File\-Dialog\-::get\-Save\-File\-Name (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent, }
+\item[{{\bf R\-S2\-::\-Format\-Type} $\ast$}]{type = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classQG__FileDialog_a5d4edb45544932f0644dbbade66639c3}
+Shows a dialog for choosing a file name. Saving the file is up to the caller.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Will contain the file type that was chosen by the user. Can be N\-U\-L\-L to be ignored.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+File name with path and extension to determine the file type or an empty string if the dialog was cancelled. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/ui/qg\-\_\-filedialog.\-h\item 
+librecad/src/ui/qg\-\_\-filedialog.\-cpp\end{DoxyCompactItemize}

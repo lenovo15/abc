@@ -1,0 +1,164 @@
+\hypertarget{classDL__Attributes}{\section{D\-L\-\_\-\-Attributes Class Reference}
+\label{classDL__Attributes}\index{D\-L\-\_\-\-Attributes@{D\-L\-\_\-\-Attributes}}
+}
+
+
+{\ttfamily \#include $<$dl\-\_\-attributes.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDL__Attributes_a55d9d4bc7d736b129692399d8b91ceaf}{D\-L\-\_\-\-Attributes} ()
+\item 
+\hyperlink{classDL__Attributes_a4fca7e096f467d900ab996b84edb7b68}{D\-L\-\_\-\-Attributes} (const string \&layer, int color, int width, const string \&line\-Type)
+\item 
+void \hyperlink{classDL__Attributes_a1fab57d381143857a2cf5b6b30c023a4}{set\-Layer} (const string \&layer)
+\item 
+string \hyperlink{classDL__Attributes_a43aa4d633eccc8513ec1a75661ea66f8}{get\-Layer} () const 
+\item 
+void \hyperlink{classDL__Attributes_aef3dc67d8b5695bac13dc2534c18c33b}{set\-Color} (int color)
+\item 
+int \hyperlink{classDL__Attributes_ae63755d1a24585eb32e6181cf1ce1031}{get\-Color} () const 
+\item 
+void \hyperlink{classDL__Attributes_adabd8731639a35915b6a79528d220535}{set\-Width} (int width)
+\item 
+int \hyperlink{classDL__Attributes_abdf2b49a5529f4c8c481bb47c8a7e368}{get\-Width} () const 
+\item 
+void \hyperlink{classDL__Attributes_a0b4f31805ec40b27df4ea2c0a1d74a7d}{set\-Line\-Type} (const string \&line\-Type)
+\item 
+string \hyperlink{classDL__Attributes_a70fbec6193f17ce3dcc65873d92d76ca}{get\-Line\-Type} () const 
+\item 
+\hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \hyperlink{classDL__Attributes_ac2b8dc39c0a8613a8b55cdafd44586c7}{operator=} (const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Storing and passing around attributes. Attributes are the layer name, color, width and line type.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDL__Attributes_a55d9d4bc7d736b129692399d8b91ceaf}{\index{D\-L\-\_\-\-Attributes@{D\-L\-\_\-\-Attributes}!D\-L\-\_\-\-Attributes@{D\-L\-\_\-\-Attributes}}
+\index{D\-L\-\_\-\-Attributes@{D\-L\-\_\-\-Attributes}!DL_Attributes@{D\-L\-\_\-\-Attributes}}
+\subsubsection[{D\-L\-\_\-\-Attributes}]{\setlength{\rightskip}{0pt plus 5cm}D\-L\-\_\-\-Attributes\-::\-D\-L\-\_\-\-Attributes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Attributes_a55d9d4bc7d736b129692399d8b91ceaf}
+Default constructor. \hypertarget{classDL__Attributes_a4fca7e096f467d900ab996b84edb7b68}{\index{D\-L\-\_\-\-Attributes@{D\-L\-\_\-\-Attributes}!D\-L\-\_\-\-Attributes@{D\-L\-\_\-\-Attributes}}
+\index{D\-L\-\_\-\-Attributes@{D\-L\-\_\-\-Attributes}!DL_Attributes@{D\-L\-\_\-\-Attributes}}
+\subsubsection[{D\-L\-\_\-\-Attributes}]{\setlength{\rightskip}{0pt plus 5cm}D\-L\-\_\-\-Attributes\-::\-D\-L\-\_\-\-Attributes (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{layer, }
+\item[{int}]{color, }
+\item[{int}]{width, }
+\item[{const string \&}]{line\-Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Attributes_a4fca7e096f467d900ab996b84edb7b68}
+Constructor for D\-X\-F attributes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer} & Layer name for this entity or N\-U\-L\-L for no layer (every entity should be on a named layer!). \\
+\hline
+{\em color} & Color number (0..256). 0 = B\-Y\-B\-L\-O\-C\-K, 256 = B\-Y\-L\-A\-Y\-E\-R. \\
+\hline
+{\em width} & Line thickness. Defaults to zero. -\/1 = B\-Y\-L\-A\-Y\-E\-R, -\/2 = B\-Y\-B\-L\-O\-C\-K, -\/3 = default width \\
+\hline
+{\em line\-Type} & Line type name or \char`\"{}\-B\-Y\-L\-A\-Y\-E\-R\char`\"{} or \char`\"{}\-B\-Y\-B\-L\-O\-C\-K\char`\"{}. Defaults to \char`\"{}\-B\-Y\-L\-A\-Y\-E\-R\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDL__Attributes_ae63755d1a24585eb32e6181cf1ce1031}{\index{D\-L\-\_\-\-Attributes@{D\-L\-\_\-\-Attributes}!get\-Color@{get\-Color}}
+\index{get\-Color@{get\-Color}!DL_Attributes@{D\-L\-\_\-\-Attributes}}
+\subsubsection[{get\-Color}]{\setlength{\rightskip}{0pt plus 5cm}int D\-L\-\_\-\-Attributes\-::get\-Color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Attributes_ae63755d1a24585eb32e6181cf1ce1031}
+\begin{DoxyReturn}{Returns}
+Color.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classDL__Codes}{D\-L\-\_\-\-Codes}, dxf\-Colors 
+\end{DoxySeeAlso}
+\hypertarget{classDL__Attributes_a43aa4d633eccc8513ec1a75661ea66f8}{\index{D\-L\-\_\-\-Attributes@{D\-L\-\_\-\-Attributes}!get\-Layer@{get\-Layer}}
+\index{get\-Layer@{get\-Layer}!DL_Attributes@{D\-L\-\_\-\-Attributes}}
+\subsubsection[{get\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}string D\-L\-\_\-\-Attributes\-::get\-Layer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Attributes_a43aa4d633eccc8513ec1a75661ea66f8}
+\begin{DoxyReturn}{Returns}
+Layer name. 
+\end{DoxyReturn}
+\hypertarget{classDL__Attributes_a70fbec6193f17ce3dcc65873d92d76ca}{\index{D\-L\-\_\-\-Attributes@{D\-L\-\_\-\-Attributes}!get\-Line\-Type@{get\-Line\-Type}}
+\index{get\-Line\-Type@{get\-Line\-Type}!DL_Attributes@{D\-L\-\_\-\-Attributes}}
+\subsubsection[{get\-Line\-Type}]{\setlength{\rightskip}{0pt plus 5cm}string D\-L\-\_\-\-Attributes\-::get\-Line\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Attributes_a70fbec6193f17ce3dcc65873d92d76ca}
+\begin{DoxyReturn}{Returns}
+Line type. 
+\end{DoxyReturn}
+\hypertarget{classDL__Attributes_abdf2b49a5529f4c8c481bb47c8a7e368}{\index{D\-L\-\_\-\-Attributes@{D\-L\-\_\-\-Attributes}!get\-Width@{get\-Width}}
+\index{get\-Width@{get\-Width}!DL_Attributes@{D\-L\-\_\-\-Attributes}}
+\subsubsection[{get\-Width}]{\setlength{\rightskip}{0pt plus 5cm}int D\-L\-\_\-\-Attributes\-::get\-Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Attributes_abdf2b49a5529f4c8c481bb47c8a7e368}
+\begin{DoxyReturn}{Returns}
+Width. 
+\end{DoxyReturn}
+\hypertarget{classDL__Attributes_ac2b8dc39c0a8613a8b55cdafd44586c7}{\index{D\-L\-\_\-\-Attributes@{D\-L\-\_\-\-Attributes}!operator=@{operator=}}
+\index{operator=@{operator=}!DL_Attributes@{D\-L\-\_\-\-Attributes}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-L\-\_\-\-Attributes} D\-L\-\_\-\-Attributes\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Attributes_ac2b8dc39c0a8613a8b55cdafd44586c7}
+Copies attributes (deep copies) from another attribute object. \hypertarget{classDL__Attributes_aef3dc67d8b5695bac13dc2534c18c33b}{\index{D\-L\-\_\-\-Attributes@{D\-L\-\_\-\-Attributes}!set\-Color@{set\-Color}}
+\index{set\-Color@{set\-Color}!DL_Attributes@{D\-L\-\_\-\-Attributes}}
+\subsubsection[{set\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Attributes\-::set\-Color (
+\begin{DoxyParamCaption}
+\item[{int}]{color}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Attributes_aef3dc67d8b5695bac13dc2534c18c33b}
+Sets the color.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classDL__Codes}{D\-L\-\_\-\-Codes}, dxf\-Colors 
+\end{DoxySeeAlso}
+\hypertarget{classDL__Attributes_a1fab57d381143857a2cf5b6b30c023a4}{\index{D\-L\-\_\-\-Attributes@{D\-L\-\_\-\-Attributes}!set\-Layer@{set\-Layer}}
+\index{set\-Layer@{set\-Layer}!DL_Attributes@{D\-L\-\_\-\-Attributes}}
+\subsubsection[{set\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Attributes\-::set\-Layer (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{layer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Attributes_a1fab57d381143857a2cf5b6b30c023a4}
+Sets the layer. If the given pointer points to N\-U\-L\-L, the new layer name will be an empty but valid string. \hypertarget{classDL__Attributes_a0b4f31805ec40b27df4ea2c0a1d74a7d}{\index{D\-L\-\_\-\-Attributes@{D\-L\-\_\-\-Attributes}!set\-Line\-Type@{set\-Line\-Type}}
+\index{set\-Line\-Type@{set\-Line\-Type}!DL_Attributes@{D\-L\-\_\-\-Attributes}}
+\subsubsection[{set\-Line\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Attributes\-::set\-Line\-Type (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{line\-Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Attributes_a0b4f31805ec40b27df4ea2c0a1d74a7d}
+Sets the line type. This can be any string and is not checked to be a valid line type. \hypertarget{classDL__Attributes_adabd8731639a35915b6a79528d220535}{\index{D\-L\-\_\-\-Attributes@{D\-L\-\_\-\-Attributes}!set\-Width@{set\-Width}}
+\index{set\-Width@{set\-Width}!DL_Attributes@{D\-L\-\_\-\-Attributes}}
+\subsubsection[{set\-Width}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Attributes\-::set\-Width (
+\begin{DoxyParamCaption}
+\item[{int}]{width}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Attributes_adabd8731639a35915b6a79528d220535}
+Sets the width. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+libraries/jwwlib/src/dl\-\_\-attributes.\-h\end{DoxyCompactItemize}

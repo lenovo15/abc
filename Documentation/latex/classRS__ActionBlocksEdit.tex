@@ -1,0 +1,76 @@
+\hypertarget{classRS__ActionBlocksEdit}{\section{R\-S\-\_\-\-Action\-Blocks\-Edit Class Reference}
+\label{classRS__ActionBlocksEdit}\index{R\-S\-\_\-\-Action\-Blocks\-Edit@{R\-S\-\_\-\-Action\-Blocks\-Edit}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionblocksedit.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Blocks\-Edit\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__ActionBlocksEdit}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionBlocksEdit_a3713e190d57b22b5d1689f25f1495293}{{\bfseries R\-S\-\_\-\-Action\-Blocks\-Edit} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionBlocksEdit_a3713e190d57b22b5d1689f25f1495293}
+
+\item 
+virtual void \hyperlink{classRS__ActionBlocksEdit_a806dca914db084aaf5fbaa73dae452df}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionBlocksEdit_a8e8bbf0f43e2324761d298ed1474dcc1}{trigger} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionBlocksEdit_a32a220d2c321216f4a6d1c34f6cb2a5d}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionBlocksEdit_a32a220d2c321216f4a6d1c34f6cb2a5d}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to edit blocks.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionBlocksEdit_a806dca914db084aaf5fbaa73dae452df}{\index{R\-S\-\_\-\-Action\-Blocks\-Edit@{R\-S\-\_\-\-Action\-Blocks\-Edit}!init@{init}}
+\index{init@{init}!RS_ActionBlocksEdit@{R\-S\-\_\-\-Action\-Blocks\-Edit}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Blocks\-Edit\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionBlocksEdit_a806dca914db084aaf5fbaa73dae452df}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a05b7dca5deeb371eb51edcb73facd45f}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionBlocksEdit_a8e8bbf0f43e2324761d298ed1474dcc1}{\index{R\-S\-\_\-\-Action\-Blocks\-Edit@{R\-S\-\_\-\-Action\-Blocks\-Edit}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionBlocksEdit@{R\-S\-\_\-\-Action\-Blocks\-Edit}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Blocks\-Edit\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionBlocksEdit_a8e8bbf0f43e2324761d298ed1474dcc1}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa2ba8f6f697f735eace4ec5449c0b8cd}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionblocksedit.\-h\item 
+librecad/src/actions/rs\-\_\-actionblocksedit.\-cpp\end{DoxyCompactItemize}

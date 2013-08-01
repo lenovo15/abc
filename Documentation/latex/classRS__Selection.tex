@@ -1,0 +1,178 @@
+\hypertarget{classRS__Selection}{\section{R\-S\-\_\-\-Selection Class Reference}
+\label{classRS__Selection}\index{R\-S\-\_\-\-Selection@{R\-S\-\_\-\-Selection}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-selection.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__Selection_a544f5446d1210169fdf8434db530635d}{R\-S\-\_\-\-Selection} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&entity\-Container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} $\ast$graphic\-View=N\-U\-L\-L)
+\item 
+void \hyperlink{classRS__Selection_a65929b5025aa61bfc676384d26bdb168}{select\-Single} (\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$e)
+\item 
+void \hyperlink{classRS__Selection_a2ad9aac95c28ce5c674cba470c063ee9}{select\-All} (bool select=true)
+\item 
+\hypertarget{classRS__Selection_a133c4a98039ac624fd1ac65c14fcad94}{void {\bfseries deselect\-All} ()}\label{classRS__Selection_a133c4a98039ac624fd1ac65c14fcad94}
+
+\item 
+void \hyperlink{classRS__Selection_a79059f9447af76e2d037d63350191aea}{invert\-Selection} ()
+\item 
+void \hyperlink{classRS__Selection_ae4a3b56e1cb756218a6f8490e36ab89a}{select\-Window} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v1, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v2, bool select=true, bool cross=false)
+\item 
+\hypertarget{classRS__Selection_ac185741ae654648375527f4e5fec3a15}{void {\bfseries deselect\-Window} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v1, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v2)}\label{classRS__Selection_ac185741ae654648375527f4e5fec3a15}
+
+\item 
+void \hyperlink{classRS__Selection_a9f20b94b8c7ba4f384a7fa421389e988}{select\-Intersected} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v1, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v2, bool select=true)
+\item 
+\hypertarget{classRS__Selection_a7a7d2513fa23561e2ffb200ce869d28b}{void {\bfseries deselect\-Intersected} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v1, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v2)}\label{classRS__Selection_a7a7d2513fa23561e2ffb200ce869d28b}
+
+\item 
+void \hyperlink{classRS__Selection_a0a9ca8b1acd423859d4ea456fad0529d}{select\-Contour} (\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$e)
+\item 
+void \hyperlink{classRS__Selection_a355b64f020d45e186e0809c3328d1d73}{select\-Layer} (\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$e)
+\item 
+void \hyperlink{classRS__Selection_acbe12b1795a448641415163ab0854771}{select\-Layer} (const Q\-String \&layer\-Name, bool select=true)
+\item 
+\hypertarget{classRS__Selection_ab8ebe7f49405dfdfcabee8f547ddea0f}{void {\bfseries deselect\-Layer} (Q\-String \&layer\-Name)}\label{classRS__Selection_ab8ebe7f49405dfdfcabee8f547ddea0f}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__Selection_acfd42e8489000fa8b8fb7eaf5e6031aa}{\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} $\ast$ {\bfseries container}}\label{classRS__Selection_acfd42e8489000fa8b8fb7eaf5e6031aa}
+
+\item 
+\hypertarget{classRS__Selection_a1de18b76d0672236577403698cdb4023}{\hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} $\ast$ {\bfseries graphic}}\label{classRS__Selection_a1de18b76d0672236577403698cdb4023}
+
+\item 
+\hypertarget{classRS__Selection_afe1b36bfc012da6ec41b9e7a8ce4c31a}{\hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} $\ast$ {\bfseries graphic\-View}}\label{classRS__Selection_afe1b36bfc012da6ec41b9e7a8ce4c31a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A\-P\-I Class for selecting entities. There's no interaction handled in this class. This class is connected to an entity container and can be connected to a graphic view.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__Selection_a544f5446d1210169fdf8434db530635d}{\index{R\-S\-\_\-\-Selection@{R\-S\-\_\-\-Selection}!R\-S\-\_\-\-Selection@{R\-S\-\_\-\-Selection}}
+\index{R\-S\-\_\-\-Selection@{R\-S\-\_\-\-Selection}!RS_Selection@{R\-S\-\_\-\-Selection}}
+\subsubsection[{R\-S\-\_\-\-Selection}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Selection\-::\-R\-S\-\_\-\-Selection (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} $\ast$}]{graphic\-View = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classRS__Selection_a544f5446d1210169fdf8434db530635d}
+Default constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container to which we will add entities. Usually that's an \hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} entity but it can also be a polyline, text, ... \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Selection_a79059f9447af76e2d037d63350191aea}{\index{R\-S\-\_\-\-Selection@{R\-S\-\_\-\-Selection}!invert\-Selection@{invert\-Selection}}
+\index{invert\-Selection@{invert\-Selection}!RS_Selection@{R\-S\-\_\-\-Selection}}
+\subsubsection[{invert\-Selection}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Selection\-::invert\-Selection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Selection_a79059f9447af76e2d037d63350191aea}
+Selects all entities on visible layers. \hypertarget{classRS__Selection_a2ad9aac95c28ce5c674cba470c063ee9}{\index{R\-S\-\_\-\-Selection@{R\-S\-\_\-\-Selection}!select\-All@{select\-All}}
+\index{select\-All@{select\-All}!RS_Selection@{R\-S\-\_\-\-Selection}}
+\subsubsection[{select\-All}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Selection\-::select\-All (
+\begin{DoxyParamCaption}
+\item[{bool}]{select = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classRS__Selection_a2ad9aac95c28ce5c674cba470c063ee9}
+Selects all entities on visible layers. \hypertarget{classRS__Selection_a0a9ca8b1acd423859d4ea456fad0529d}{\index{R\-S\-\_\-\-Selection@{R\-S\-\_\-\-Selection}!select\-Contour@{select\-Contour}}
+\index{select\-Contour@{select\-Contour}!RS_Selection@{R\-S\-\_\-\-Selection}}
+\subsubsection[{select\-Contour}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Selection\-::select\-Contour (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{classRS__Selection_a0a9ca8b1acd423859d4ea456fad0529d}
+Selects all entities that are connected to the given entity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The entity where the algorithm starts. Must be an atomic entity. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Selection_a9f20b94b8c7ba4f384a7fa421389e988}{\index{R\-S\-\_\-\-Selection@{R\-S\-\_\-\-Selection}!select\-Intersected@{select\-Intersected}}
+\index{select\-Intersected@{select\-Intersected}!RS_Selection@{R\-S\-\_\-\-Selection}}
+\subsubsection[{select\-Intersected}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Selection\-::select\-Intersected (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v1, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v2, }
+\item[{bool}]{select = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classRS__Selection_a9f20b94b8c7ba4f384a7fa421389e988}
+Selects all entities that are intersected by the given line.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & Startpoint of line. \\
+\hline
+{\em v2} & Endpoint of line. \\
+\hline
+{\em select} & true\-: select, false\-: deselect \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Selection_a355b64f020d45e186e0809c3328d1d73}{\index{R\-S\-\_\-\-Selection@{R\-S\-\_\-\-Selection}!select\-Layer@{select\-Layer}}
+\index{select\-Layer@{select\-Layer}!RS_Selection@{R\-S\-\_\-\-Selection}}
+\subsubsection[{select\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Selection\-::select\-Layer (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{classRS__Selection_a355b64f020d45e186e0809c3328d1d73}
+Selects all entities on the given layer. \hypertarget{classRS__Selection_acbe12b1795a448641415163ab0854771}{\index{R\-S\-\_\-\-Selection@{R\-S\-\_\-\-Selection}!select\-Layer@{select\-Layer}}
+\index{select\-Layer@{select\-Layer}!RS_Selection@{R\-S\-\_\-\-Selection}}
+\subsubsection[{select\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Selection\-::select\-Layer (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{layer\-Name, }
+\item[{bool}]{select = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classRS__Selection_acbe12b1795a448641415163ab0854771}
+Selects all entities on the given layer. \hypertarget{classRS__Selection_a65929b5025aa61bfc676384d26bdb168}{\index{R\-S\-\_\-\-Selection@{R\-S\-\_\-\-Selection}!select\-Single@{select\-Single}}
+\index{select\-Single@{select\-Single}!RS_Selection@{R\-S\-\_\-\-Selection}}
+\subsubsection[{select\-Single}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Selection\-::select\-Single (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{classRS__Selection_a65929b5025aa61bfc676384d26bdb168}
+Selects or deselects the given entitiy. \hypertarget{classRS__Selection_ae4a3b56e1cb756218a6f8490e36ab89a}{\index{R\-S\-\_\-\-Selection@{R\-S\-\_\-\-Selection}!select\-Window@{select\-Window}}
+\index{select\-Window@{select\-Window}!RS_Selection@{R\-S\-\_\-\-Selection}}
+\subsubsection[{select\-Window}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Selection\-::select\-Window (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v1, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v2, }
+\item[{bool}]{select = {\ttfamily true}, }
+\item[{bool}]{cross = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classRS__Selection_ae4a3b56e1cb756218a6f8490e36ab89a}
+Selects all entities that are completely in the given window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & First corner of the window to select. \\
+\hline
+{\em v2} & Second corner of the window to select. \\
+\hline
+{\em select} & true\-: select, false\-: deselect \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/modification/rs\-\_\-selection.\-h\item 
+librecad/src/lib/modification/rs\-\_\-selection.\-cpp\end{DoxyCompactItemize}

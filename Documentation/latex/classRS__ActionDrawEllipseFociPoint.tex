@@ -1,0 +1,220 @@
+\hypertarget{classRS__ActionDrawEllipseFociPoint}{\section{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point Class Reference}
+\label{classRS__ActionDrawEllipseFociPoint}\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actiondrawellipsefocipoint.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classRS__ActionDrawEllipseFociPoint}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionDrawEllipseFociPoint_adea60cafc84f0fc17eb11045d00ba6f1}{Status} \{ {\bfseries Set\-Focus1}, 
+{\bfseries Set\-Focus2}, 
+{\bfseries Set\-Point}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__ActionDrawEllipseFociPoint_a7e1f9986942572741a5436a3322387a0}{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)
+\item 
+\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__ActionDrawEllipseFociPoint_a61acc96ee48669a883205859a6d4e8aa}{rtti} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipseFociPoint_ae40d5109a4ed895d36463204c53b6b5b}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipseFociPoint_a71efc76a9e9eb3a520a9a50ef5a0915b}{trigger} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipseFociPoint_aea87cc96d2a4d4dab99dde5e65c80169}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipseFociPoint_a1b9e61b81ec13df06d23c5dcf57a7942}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipseFociPoint_af87b1cdc8f40d8c04ce4c87c4809aafd}{coordinate\-Event} (\hyperlink{classRS__CoordinateEvent}{R\-S\-\_\-\-Coordinate\-Event} $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipseFociPoint_a8204b5f78c624ded0ca22d877b4b4454}{command\-Event} (\hyperlink{classRS__CommandEvent}{R\-S\-\_\-\-Command\-Event} $\ast$e)
+\item 
+virtual Q\-String\-List \hyperlink{classRS__ActionDrawEllipseFociPoint_aa50e971642f10797d91e234318c9543d}{get\-Available\-Commands} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipseFociPoint_a94aa2c52b1a97febdfbbad209890105e}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipseFociPoint_aacda725cd5820afda757d247cb8236aa}{update\-Mouse\-Cursor} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionDrawEllipseFociPoint_a1b350f69864b37791c6314d42fdf9285}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} type, Q\-Object $\ast$)}\label{classRS__ActionDrawEllipseFociPoint_a1b350f69864b37791c6314d42fdf9285}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionDrawEllipseFociPoint_adf4ffa658fcbd7b3880bf632dca408a0}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries focus1}}\label{classRS__ActionDrawEllipseFociPoint_adf4ffa658fcbd7b3880bf632dca408a0}
+
+\item 
+\hypertarget{classRS__ActionDrawEllipseFociPoint_a93231da804ee2f82f54ce62ec4319574}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries focus2}}\label{classRS__ActionDrawEllipseFociPoint_a93231da804ee2f82f54ce62ec4319574}
+
+\item 
+\hypertarget{classRS__ActionDrawEllipseFociPoint_a30a84149d76b3a2d18aa90655d6412d4}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries point}}\label{classRS__ActionDrawEllipseFociPoint_a30a84149d76b3a2d18aa90655d6412d4}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Draw ellipse by foci and a point on ellipse
+
+\begin{DoxyAuthor}{Author}
+Dongxu Li 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionDrawEllipseFociPoint_adea60cafc84f0fc17eb11045d00ba6f1}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}!Status@{Status}}
+\index{Status@{Status}!RS_ActionDrawEllipseFociPoint@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point\-::\-Status}}}\label{classRS__ActionDrawEllipseFociPoint_adea60cafc84f0fc17eb11045d00ba6f1}
+Action States. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__ActionDrawEllipseFociPoint_a7e1f9986942572741a5436a3322387a0}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}!R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}}
+\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}!RS_ActionDrawEllipseFociPoint@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}}
+\subsubsection[{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point\-::\-R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} \&}]{graphic\-View}
+\end{DoxyParamCaption}
+)}}\label{classRS__ActionDrawEllipseFociPoint_a7e1f9986942572741a5436a3322387a0}
+Constructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionDrawEllipseFociPoint_a8204b5f78c624ded0ca22d877b4b4454}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}!command\-Event@{command\-Event}}
+\index{command\-Event@{command\-Event}!RS_ActionDrawEllipseFociPoint@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}}
+\subsubsection[{command\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point\-::command\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Command\-Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseFociPoint_a8204b5f78c624ded0ca22d877b4b4454}
+Called when a command from the command line is launched. and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a187365514bab9b2997c5fe7ff5274a22}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseFociPoint_af87b1cdc8f40d8c04ce4c87c4809aafd}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}!coordinate\-Event@{coordinate\-Event}}
+\index{coordinate\-Event@{coordinate\-Event}!RS_ActionDrawEllipseFociPoint@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}}
+\subsubsection[{coordinate\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point\-::coordinate\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Coordinate\-Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseFociPoint_af87b1cdc8f40d8c04ce4c87c4809aafd}
+Coordinate event. Triggered usually from a command line. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a9013e88769edd39b2a74af5add2986c9}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseFociPoint_aa50e971642f10797d91e234318c9543d}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}!get\-Available\-Commands@{get\-Available\-Commands}}
+\index{get\-Available\-Commands@{get\-Available\-Commands}!RS_ActionDrawEllipseFociPoint@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}}
+\subsubsection[{get\-Available\-Commands}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String\-List R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point\-::get\-Available\-Commands (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseFociPoint_aa50e971642f10797d91e234318c9543d}
+Must be implemented to return the currently available commands for the command line. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acafdac8d18d3f053eda872581fb3e27d}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseFociPoint_ae40d5109a4ed895d36463204c53b6b5b}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}!init@{init}}
+\index{init@{init}!RS_ActionDrawEllipseFociPoint@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseFociPoint_ae40d5109a4ed895d36463204c53b6b5b}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae5113b2aef5a10acd192786b99580e4a}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseFociPoint_aea87cc96d2a4d4dab99dde5e65c80169}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_ActionDrawEllipseFociPoint@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseFociPoint_aea87cc96d2a4d4dab99dde5e65c80169}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseFociPoint_a1b9e61b81ec13df06d23c5dcf57a7942}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionDrawEllipseFociPoint@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseFociPoint_a1b9e61b81ec13df06d23c5dcf57a7942}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseFociPoint_a61acc96ee48669a883205859a6d4e8aa}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_ActionDrawEllipseFociPoint@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseFociPoint_a61acc96ee48669a883205859a6d4e8aa}
+Must be implemented to return the I\-D of this action.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]no default implementation \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af877a66b5b4a7053f2b1f0519c57a6f5}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseFociPoint_a71efc76a9e9eb3a520a9a50ef5a0915b}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionDrawEllipseFociPoint@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseFociPoint_a71efc76a9e9eb3a520a9a50ef5a0915b}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseFociPoint_a94aa2c52b1a97febdfbbad209890105e}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionDrawEllipseFociPoint@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseFociPoint_a94aa2c52b1a97febdfbbad209890105e}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseFociPoint_aacda725cd5820afda757d247cb8236aa}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionDrawEllipseFociPoint@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseFociPoint_aacda725cd5820afda757d247cb8236aa}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actiondrawellipsefocipoint.\-h\item 
+librecad/src/actions/rs\-\_\-actiondrawellipsefocipoint.\-cpp\end{DoxyCompactItemize}

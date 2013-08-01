@@ -1,0 +1,466 @@
+\hypertarget{classRS__Creation}{\section{R\-S\-\_\-\-Creation Class Reference}
+\label{classRS__Creation}\index{R\-S\-\_\-\-Creation@{R\-S\-\_\-\-Creation}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-creation.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__Creation_a2b60879cec65b84a4c05d77954078b2f}{R\-S\-\_\-\-Creation} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} $\ast$container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} $\ast$graphic\-View=N\-U\-L\-L, bool handle\-Undo=true)
+\item 
+\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$ \hyperlink{classRS__Creation_a1f16b55bc8bac7d69e49ff8957f18078}{create\-Parallel\-Through} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord, int number, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$e)
+\item 
+\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$ \hyperlink{classRS__Creation_ad19bdd11f779a463d27b4d8ba4730685}{create\-Parallel} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord, double distance, int number, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$e)
+\item 
+\hyperlink{classRS__Line}{R\-S\-\_\-\-Line} $\ast$ \hyperlink{classRS__Creation_ac9c89ff92139704670f10a0059b5c356}{create\-Parallel\-Line} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord, double distance, int number, \hyperlink{classRS__Line}{R\-S\-\_\-\-Line} $\ast$e)
+\item 
+\hyperlink{classRS__Arc}{R\-S\-\_\-\-Arc} $\ast$ \hyperlink{classRS__Creation_a99e3754dd9fa25c021bf568ccdd9e902}{create\-Parallel\-Arc} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord, double distance, int number, \hyperlink{classRS__Arc}{R\-S\-\_\-\-Arc} $\ast$e)
+\item 
+\hyperlink{classRS__Circle}{R\-S\-\_\-\-Circle} $\ast$ \hyperlink{classRS__Creation_a5880201645fc6af26827fc89818e8fc0}{create\-Parallel\-Circle} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord, double distance, int number, \hyperlink{classRS__Circle}{R\-S\-\_\-\-Circle} $\ast$e)
+\item 
+\hyperlink{classRS__Line}{R\-S\-\_\-\-Line} $\ast$ \hyperlink{classRS__Creation_aa1e2420d40b0f5c9869218e717180182}{create\-Bisector} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord1, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord2, double length, int num, \hyperlink{classRS__Line}{R\-S\-\_\-\-Line} $\ast$l1, \hyperlink{classRS__Line}{R\-S\-\_\-\-Line} $\ast$l2)
+\item 
+\hyperlink{classRS__Line}{R\-S\-\_\-\-Line} $\ast$ \hyperlink{classRS__Creation_ad1caf86974150541cf1d5f22d9e4eb2a}{create\-Tangent1} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&point, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$circle)
+\item 
+\hyperlink{classRS__Line}{R\-S\-\_\-\-Line} $\ast$ \hyperlink{classRS__Creation_af1e854c02754a1e8df88947e035de315}{create\-Line\-Orth\-Tan} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord, \hyperlink{classRS__Line}{R\-S\-\_\-\-Line} $\ast$normal, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$circle)
+\item 
+\hyperlink{classRS__Line}{R\-S\-\_\-\-Line} $\ast$ \hyperlink{classRS__Creation_ac33d0f0c5ecfe42de57be2785029314a}{create\-Tangent2} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$circle1, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$circle2)
+\item 
+std\-::vector$<$ \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$ $>$ \hyperlink{classRS__Creation_aad1c80369fdc22d2411031aa8599c0f2}{create\-Circle\-Tangent2} (\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$circle1, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$circle2)
+\item 
+\hyperlink{classRS__Line}{R\-S\-\_\-\-Line} $\ast$ \hyperlink{classRS__Creation_ab31f1134d2c036510ef34f39921a8f8d}{create\-Line\-Rel\-Angle} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$entity, double angle, double length)
+\item 
+\hyperlink{classRS__Line}{R\-S\-\_\-\-Line} $\ast$ \hyperlink{classRS__Creation_a873a44aa2e3ef6ad7cb1ded40125f506}{create\-Polygon} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&center, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&corner, int number)
+\item 
+\hyperlink{classRS__Line}{R\-S\-\_\-\-Line} $\ast$ \hyperlink{classRS__Creation_a0fa86baf2022e59876a0454044c510c6}{create\-Polygon2} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&corner1, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&corner2, int number)
+\item 
+\hyperlink{classRS__Insert}{R\-S\-\_\-\-Insert} $\ast$ \hyperlink{classRS__Creation_a77c71a57182f5c358231eea5b6047696}{create\-Insert} (\hyperlink{classRS__InsertData}{R\-S\-\_\-\-Insert\-Data} \&data)
+\item 
+\hyperlink{classRS__Image}{R\-S\-\_\-\-Image} $\ast$ \hyperlink{classRS__Creation_a9afd196c29ca78661c8f29b0c940627c}{create\-Image} (\hyperlink{classRS__ImageData}{R\-S\-\_\-\-Image\-Data} \&data)
+\item 
+\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$ \hyperlink{classRS__Creation_a431d27aaa55028674325cab7931b6461}{create\-Block} (const \hyperlink{classRS__BlockData}{R\-S\-\_\-\-Block\-Data} \&data, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&reference\-Point, const bool remove)
+\item 
+\hyperlink{classRS__Insert}{R\-S\-\_\-\-Insert} $\ast$ \hyperlink{classRS__Creation_aa4f973e0dcab1a58e8647541e5753b6f}{create\-Library\-Insert} (\hyperlink{structRS__LibraryInsertData}{R\-S\-\_\-\-Library\-Insert\-Data} \&data)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__Creation_a96a94a53061a7a02c648fe3805a1208a}{\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} $\ast$ {\bfseries container}}\label{classRS__Creation_a96a94a53061a7a02c648fe3805a1208a}
+
+\item 
+\hypertarget{classRS__Creation_a3afefc9751c643eef7cd39780b78cf36}{\hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} $\ast$ {\bfseries graphic}}\label{classRS__Creation_a3afefc9751c643eef7cd39780b78cf36}
+
+\item 
+\hypertarget{classRS__Creation_a02e23c8f2c691e5bf8304591af502ee5}{\hyperlink{classRS__Document}{R\-S\-\_\-\-Document} $\ast$ {\bfseries document}}\label{classRS__Creation_a02e23c8f2c691e5bf8304591af502ee5}
+
+\item 
+\hypertarget{classRS__Creation_a0bd4baea331ebc59a653185b931deab5}{\hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} $\ast$ {\bfseries graphic\-View}}\label{classRS__Creation_a0bd4baea331ebc59a653185b931deab5}
+
+\item 
+\hypertarget{classRS__Creation_a511da1ee17f0580a7f6b3f522b59c988}{bool {\bfseries handle\-Undo}}\label{classRS__Creation_a511da1ee17f0580a7f6b3f522b59c988}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for the creation of new entities. This class is bound to an entity container in which the entities are stored.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__Creation_a2b60879cec65b84a4c05d77954078b2f}{\index{R\-S\-\_\-\-Creation@{R\-S\-\_\-\-Creation}!R\-S\-\_\-\-Creation@{R\-S\-\_\-\-Creation}}
+\index{R\-S\-\_\-\-Creation@{R\-S\-\_\-\-Creation}!RS_Creation@{R\-S\-\_\-\-Creation}}
+\subsubsection[{R\-S\-\_\-\-Creation}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Creation\-::\-R\-S\-\_\-\-Creation (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} $\ast$}]{container, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} $\ast$}]{graphic\-View = {\ttfamily NULL}, }
+\item[{bool}]{handle\-Undo = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classRS__Creation_a2b60879cec65b84a4c05d77954078b2f}
+Default constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container to which we will add entities. Usually that's an \hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} entity but it can also be a polyline, text, ... \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Creation_aa1e2420d40b0f5c9869218e717180182}{\index{R\-S\-\_\-\-Creation@{R\-S\-\_\-\-Creation}!create\-Bisector@{create\-Bisector}}
+\index{create\-Bisector@{create\-Bisector}!RS_Creation@{R\-S\-\_\-\-Creation}}
+\subsubsection[{create\-Bisector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Line} $\ast$ R\-S\-\_\-\-Creation\-::create\-Bisector (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord1, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord2, }
+\item[{double}]{length, }
+\item[{int}]{num, }
+\item[{{\bf R\-S\-\_\-\-Line} $\ast$}]{l1, }
+\item[{{\bf R\-S\-\_\-\-Line} $\ast$}]{l2}
+\end{DoxyParamCaption}
+)}}\label{classRS__Creation_aa1e2420d40b0f5c9869218e717180182}
+Creates a bisecting line of the angle between the entities e1 and e2. Out of the 4 possible bisectors, the one closest to the given coordinate is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & Coordinate to define which bisector we want (typically a mouse coordinate). \\
+\hline
+{\em length} & Length of the bisecting line. \\
+\hline
+{\em num} & Number of bisectors \\
+\hline
+{\em l1} & First line. \\
+\hline
+{\em l2} & Second line.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the first bisector created or N\-U\-L\-L if no bisectors were created. 
+\end{DoxyReturn}
+\hypertarget{classRS__Creation_a431d27aaa55028674325cab7931b6461}{\index{R\-S\-\_\-\-Creation@{R\-S\-\_\-\-Creation}!create\-Block@{create\-Block}}
+\index{create\-Block@{create\-Block}!RS_Creation@{R\-S\-\_\-\-Creation}}
+\subsubsection[{create\-Block}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Block} $\ast$ R\-S\-\_\-\-Creation\-::create\-Block (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Block\-Data} \&}]{data, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{reference\-Point, }
+\item[{const bool}]{remove}
+\end{DoxyParamCaption}
+)}}\label{classRS__Creation_a431d27aaa55028674325cab7931b6461}
+Creates a new block from the currently selected entitiies.
+
+
+\begin{DoxyParams}{Parameters}
+{\em reference\-Point} & Reference point for the block. \\
+\hline
+{\em name} & Block name \\
+\hline
+{\em remove} & true\-: remove existing entities, false\-: don't touch entities \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Creation_aad1c80369fdc22d2411031aa8599c0f2}{\index{R\-S\-\_\-\-Creation@{R\-S\-\_\-\-Creation}!create\-Circle\-Tangent2@{create\-Circle\-Tangent2}}
+\index{create\-Circle\-Tangent2@{create\-Circle\-Tangent2}!RS_Creation@{R\-S\-\_\-\-Creation}}
+\subsubsection[{create\-Circle\-Tangent2}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ {\bf R\-S\-\_\-\-Entity} $\ast$ $>$ R\-S\-\_\-\-Creation\-::create\-Circle\-Tangent2 (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{circle1, }
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{circle2}
+\end{DoxyParamCaption}
+)}}\label{classRS__Creation_aad1c80369fdc22d2411031aa8599c0f2}
+create the path of centers of common tangent circles of the two given circles @ return N\-U\-L\-L, if failed @ at success return either an ellipse or hyperbola \hypertarget{classRS__Creation_a9afd196c29ca78661c8f29b0c940627c}{\index{R\-S\-\_\-\-Creation@{R\-S\-\_\-\-Creation}!create\-Image@{create\-Image}}
+\index{create\-Image@{create\-Image}!RS_Creation@{R\-S\-\_\-\-Creation}}
+\subsubsection[{create\-Image}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Image} $\ast$ R\-S\-\_\-\-Creation\-::create\-Image (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Image\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classRS__Creation_a9afd196c29ca78661c8f29b0c940627c}
+Creates an image with the given data. \hypertarget{classRS__Creation_a77c71a57182f5c358231eea5b6047696}{\index{R\-S\-\_\-\-Creation@{R\-S\-\_\-\-Creation}!create\-Insert@{create\-Insert}}
+\index{create\-Insert@{create\-Insert}!RS_Creation@{R\-S\-\_\-\-Creation}}
+\subsubsection[{create\-Insert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Insert} $\ast$ R\-S\-\_\-\-Creation\-::create\-Insert (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Insert\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classRS__Creation_a77c71a57182f5c358231eea5b6047696}
+Creates an insert with the given data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Insert data (position, block name, ..) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Creation_aa4f973e0dcab1a58e8647541e5753b6f}{\index{R\-S\-\_\-\-Creation@{R\-S\-\_\-\-Creation}!create\-Library\-Insert@{create\-Library\-Insert}}
+\index{create\-Library\-Insert@{create\-Library\-Insert}!RS_Creation@{R\-S\-\_\-\-Creation}}
+\subsubsection[{create\-Library\-Insert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Insert} $\ast$ R\-S\-\_\-\-Creation\-::create\-Library\-Insert (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Library\-Insert\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classRS__Creation_aa4f973e0dcab1a58e8647541e5753b6f}
+Inserts a library item from the given path into the drawing. \hypertarget{classRS__Creation_af1e854c02754a1e8df88947e035de315}{\index{R\-S\-\_\-\-Creation@{R\-S\-\_\-\-Creation}!create\-Line\-Orth\-Tan@{create\-Line\-Orth\-Tan}}
+\index{create\-Line\-Orth\-Tan@{create\-Line\-Orth\-Tan}!RS_Creation@{R\-S\-\_\-\-Creation}}
+\subsubsection[{create\-Line\-Orth\-Tan}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Line} $\ast$ R\-S\-\_\-\-Creation\-::create\-Line\-Orth\-Tan (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord, }
+\item[{{\bf R\-S\-\_\-\-Line} $\ast$}]{normal, }
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{circle}
+\end{DoxyParamCaption}
+)}}\label{classRS__Creation_af1e854c02754a1e8df88947e035de315}
+create a tangent line which is orthogonal to the given R\-S\-\_\-\-Line(normal)
+
+create a tangent line which is orthogonal to the given R\-S\-\_\-\-Line(normal) , the tangent line closest to this point , the line orthogonal to the tangent line , arc/circle/ellipse for tangent line
+
+Author\-: Dongxu Li \hypertarget{classRS__Creation_ab31f1134d2c036510ef34f39921a8f8d}{\index{R\-S\-\_\-\-Creation@{R\-S\-\_\-\-Creation}!create\-Line\-Rel\-Angle@{create\-Line\-Rel\-Angle}}
+\index{create\-Line\-Rel\-Angle@{create\-Line\-Rel\-Angle}!RS_Creation@{R\-S\-\_\-\-Creation}}
+\subsubsection[{create\-Line\-Rel\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Line} $\ast$ R\-S\-\_\-\-Creation\-::create\-Line\-Rel\-Angle (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord, }
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{entity, }
+\item[{double}]{angle, }
+\item[{double}]{length}
+\end{DoxyParamCaption}
+)}}\label{classRS__Creation_ab31f1134d2c036510ef34f39921a8f8d}
+Creates a line with a relative angle to the given entity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & Coordinate to define the point where the line should end. (typically a mouse coordinate). \\
+\hline
+{\em entity} & Pointer to basis entity. The angle is relative to the angle of this entity. \\
+\hline
+{\em angle} & Angle of the line relative to the angle of the basis entity. \\
+\hline
+{\em length} & Length of the line we're creating. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Creation_ad19bdd11f779a463d27b4d8ba4730685}{\index{R\-S\-\_\-\-Creation@{R\-S\-\_\-\-Creation}!create\-Parallel@{create\-Parallel}}
+\index{create\-Parallel@{create\-Parallel}!RS_Creation@{R\-S\-\_\-\-Creation}}
+\subsubsection[{create\-Parallel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Entity} $\ast$ R\-S\-\_\-\-Creation\-::create\-Parallel (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord, }
+\item[{double}]{distance, }
+\item[{int}]{number, }
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{classRS__Creation_ad19bdd11f779a463d27b4d8ba4730685}
+Creates an entity parallel to the given entity e. Out of the 2 possible parallels, the one closest to the given coordinate is returned. Lines, Arcs and Circles can have parallels.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & Coordinate to define which parallel we want (typically a mouse coordinate). \\
+\hline
+{\em distance} & Distance of the parallel. \\
+\hline
+{\em number} & Number of parallels. \\
+\hline
+{\em e} & Original entity.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the first created parallel or N\-U\-L\-L if no parallel has been created. 
+\end{DoxyReturn}
+\hypertarget{classRS__Creation_a99e3754dd9fa25c021bf568ccdd9e902}{\index{R\-S\-\_\-\-Creation@{R\-S\-\_\-\-Creation}!create\-Parallel\-Arc@{create\-Parallel\-Arc}}
+\index{create\-Parallel\-Arc@{create\-Parallel\-Arc}!RS_Creation@{R\-S\-\_\-\-Creation}}
+\subsubsection[{create\-Parallel\-Arc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Arc} $\ast$ R\-S\-\_\-\-Creation\-::create\-Parallel\-Arc (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord, }
+\item[{double}]{distance, }
+\item[{int}]{number, }
+\item[{{\bf R\-S\-\_\-\-Arc} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{classRS__Creation_a99e3754dd9fa25c021bf568ccdd9e902}
+Creates a arc parallel to the given arc e. Out of the 2 possible parallels, the one closest to the given coordinate is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & Coordinate to define which parallel we want (typically a mouse coordinate). \\
+\hline
+{\em distance} & Distance of the parallel. \\
+\hline
+{\em number} & Number of parallels. \\
+\hline
+{\em e} & Original entity.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the first created parallel or N\-U\-L\-L if no parallel has been created. 
+\end{DoxyReturn}
+\hypertarget{classRS__Creation_a5880201645fc6af26827fc89818e8fc0}{\index{R\-S\-\_\-\-Creation@{R\-S\-\_\-\-Creation}!create\-Parallel\-Circle@{create\-Parallel\-Circle}}
+\index{create\-Parallel\-Circle@{create\-Parallel\-Circle}!RS_Creation@{R\-S\-\_\-\-Creation}}
+\subsubsection[{create\-Parallel\-Circle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Circle} $\ast$ R\-S\-\_\-\-Creation\-::create\-Parallel\-Circle (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord, }
+\item[{double}]{distance, }
+\item[{int}]{number, }
+\item[{{\bf R\-S\-\_\-\-Circle} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{classRS__Creation_a5880201645fc6af26827fc89818e8fc0}
+Creates a circle parallel to the given circle e. Out of the 2 possible parallels, the one closest to the given coordinate is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & Coordinate to define which parallel we want (typically a mouse coordinate). \\
+\hline
+{\em distance} & Distance of the parallel. \\
+\hline
+{\em number} & Number of parallels. \\
+\hline
+{\em e} & Original entity.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the first created parallel or N\-U\-L\-L if no parallel has been created. 
+\end{DoxyReturn}
+\hypertarget{classRS__Creation_ac9c89ff92139704670f10a0059b5c356}{\index{R\-S\-\_\-\-Creation@{R\-S\-\_\-\-Creation}!create\-Parallel\-Line@{create\-Parallel\-Line}}
+\index{create\-Parallel\-Line@{create\-Parallel\-Line}!RS_Creation@{R\-S\-\_\-\-Creation}}
+\subsubsection[{create\-Parallel\-Line}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Line} $\ast$ R\-S\-\_\-\-Creation\-::create\-Parallel\-Line (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord, }
+\item[{double}]{distance, }
+\item[{int}]{number, }
+\item[{{\bf R\-S\-\_\-\-Line} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{classRS__Creation_ac9c89ff92139704670f10a0059b5c356}
+Creates a line parallel to the given line e. Out of the 2 possible parallels, the one closest to the given coordinate is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & Coordinate to define which parallel we want (typically a mouse coordinate). \\
+\hline
+{\em distance} & Distance of the parallel. \\
+\hline
+{\em number} & Number of parallels. \\
+\hline
+{\em e} & Original entity.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the first created parallel or N\-U\-L\-L if no parallel has been created. 
+\end{DoxyReturn}
+\hypertarget{classRS__Creation_a1f16b55bc8bac7d69e49ff8957f18078}{\index{R\-S\-\_\-\-Creation@{R\-S\-\_\-\-Creation}!create\-Parallel\-Through@{create\-Parallel\-Through}}
+\index{create\-Parallel\-Through@{create\-Parallel\-Through}!RS_Creation@{R\-S\-\_\-\-Creation}}
+\subsubsection[{create\-Parallel\-Through}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Entity} $\ast$ R\-S\-\_\-\-Creation\-::create\-Parallel\-Through (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord, }
+\item[{int}]{number, }
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{classRS__Creation_a1f16b55bc8bac7d69e49ff8957f18078}
+Creates a point entity.
+
+E.\-g.\-:\par
+ {\ttfamily  creation.\-create\-Point(\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector}(10.\-0, 15.\-0)); }
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & position Creates a line with two points given.\\
+\hline
+\end{DoxyParams}
+E.\-g.\-:\par
+ {\ttfamily  creation.\-create\-Line2\-P(\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector}(10.\-0, 10.\-0), \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector}(100.\-0, 200.\-0)); }
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & start point \\
+\hline
+{\em p2} & end point Creates a rectangle with two edge points given.\\
+\hline
+\end{DoxyParams}
+E.\-g.\-:\par
+ {\ttfamily  creation.\-create\-Rectangle(\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector}(5.\-0, 2.\-0), \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector}(7.\-5, 3.\-0)); }
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & edge one \\
+\hline
+{\em p2} & edge two Creates a polyline from the given array of entities. No checking if the entities actually fit together. Currently this is like a group.\\
+\hline
+\end{DoxyParams}
+E.\-g.\-:\par
+ {\ttfamily  \hyperlink{classRS__Polyline}{R\-S\-\_\-\-Polyline} $\ast$pl = creation.\-create\-Polyline(\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector}(25.\-0, 55.\-0));\par
+ pl-\/$>$add\-Vertex(\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector}(50.\-0, 75.\-0));\par
+ }
+
+
+\begin{DoxyParams}{Parameters}
+{\em entities} & array of entities \\
+\hline
+{\em start\-Point} & Start point of the polyline Creates an entity parallel to the given entity e through the given 'coord'.\\
+\hline
+{\em coord} & Coordinate to define the distance / side (typically a mouse coordinate). \\
+\hline
+{\em number} & Number of parallels. \\
+\hline
+{\em e} & Original entity.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the first created parallel or N\-U\-L\-L if no parallel has been created. 
+\end{DoxyReturn}
+\hypertarget{classRS__Creation_a873a44aa2e3ef6ad7cb1ded40125f506}{\index{R\-S\-\_\-\-Creation@{R\-S\-\_\-\-Creation}!create\-Polygon@{create\-Polygon}}
+\index{create\-Polygon@{create\-Polygon}!RS_Creation@{R\-S\-\_\-\-Creation}}
+\subsubsection[{create\-Polygon}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Line} $\ast$ R\-S\-\_\-\-Creation\-::create\-Polygon (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{center, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{corner, }
+\item[{int}]{number}
+\end{DoxyParamCaption}
+)}}\label{classRS__Creation_a873a44aa2e3ef6ad7cb1ded40125f506}
+Creates a polygon with 'number' edges.
+
+
+\begin{DoxyParams}{Parameters}
+{\em center} & Center of the polygon. \\
+\hline
+{\em corner} & The first corner of the polygon \\
+\hline
+{\em number} & Number of edges / corners. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Creation_a0fa86baf2022e59876a0454044c510c6}{\index{R\-S\-\_\-\-Creation@{R\-S\-\_\-\-Creation}!create\-Polygon2@{create\-Polygon2}}
+\index{create\-Polygon2@{create\-Polygon2}!RS_Creation@{R\-S\-\_\-\-Creation}}
+\subsubsection[{create\-Polygon2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Line} $\ast$ R\-S\-\_\-\-Creation\-::create\-Polygon2 (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{corner1, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{corner2, }
+\item[{int}]{number}
+\end{DoxyParamCaption}
+)}}\label{classRS__Creation_a0fa86baf2022e59876a0454044c510c6}
+Creates a polygon with 'number' edges.
+
+
+\begin{DoxyParams}{Parameters}
+{\em corner1} & The first corner of the polygon. \\
+\hline
+{\em corner2} & The second corner of the polygon. \\
+\hline
+{\em number} & Number of edges / corners. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Creation_ad1caf86974150541cf1d5f22d9e4eb2a}{\index{R\-S\-\_\-\-Creation@{R\-S\-\_\-\-Creation}!create\-Tangent1@{create\-Tangent1}}
+\index{create\-Tangent1@{create\-Tangent1}!RS_Creation@{R\-S\-\_\-\-Creation}}
+\subsubsection[{create\-Tangent1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Line} $\ast$ R\-S\-\_\-\-Creation\-::create\-Tangent1 (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{point, }
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{circle}
+\end{DoxyParamCaption}
+)}}\label{classRS__Creation_ad1caf86974150541cf1d5f22d9e4eb2a}
+Creates a tangent between a given point and a circle or arc. Out of the 2 possible tangents, the one closest to the given coordinate is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & Coordinate to define which tangent we want (typically a mouse coordinate). \\
+\hline
+{\em point} & Point. \\
+\hline
+{\em circle} & Circle, arc or ellipse entity. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Creation_ac33d0f0c5ecfe42de57be2785029314a}{\index{R\-S\-\_\-\-Creation@{R\-S\-\_\-\-Creation}!create\-Tangent2@{create\-Tangent2}}
+\index{create\-Tangent2@{create\-Tangent2}!RS_Creation@{R\-S\-\_\-\-Creation}}
+\subsubsection[{create\-Tangent2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Line} $\ast$ R\-S\-\_\-\-Creation\-::create\-Tangent2 (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord, }
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{circle1, }
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{circle2}
+\end{DoxyParamCaption}
+)}}\label{classRS__Creation_ac33d0f0c5ecfe42de57be2785029314a}
+Creates a tangent between two circles or arcs. Out of the 4 possible tangents, the one closest to the given coordinate is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & Coordinate to define which tangent we want (typically a mouse coordinate). \\
+\hline
+{\em circle1} & 1st circle or arc entity. \\
+\hline
+{\em circle2} & 2nd circle or arc entity. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/creation/rs\-\_\-creation.\-h\item 
+librecad/src/lib/creation/rs\-\_\-creation.\-cpp\end{DoxyCompactItemize}

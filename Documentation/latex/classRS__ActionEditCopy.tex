@@ -1,0 +1,205 @@
+\hypertarget{classRS__ActionEditCopy}{\section{R\-S\-\_\-\-Action\-Edit\-Copy Class Reference}
+\label{classRS__ActionEditCopy}\index{R\-S\-\_\-\-Action\-Edit\-Copy@{R\-S\-\_\-\-Action\-Edit\-Copy}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actioneditcopy.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Edit\-Copy\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__ActionEditCopy}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionEditCopy_a620b5387f51d29b1b9b6d2481c6d1ff9}{Status} \{ \hyperlink{classRS__ActionEditCopy_a620b5387f51d29b1b9b6d2481c6d1ff9a350b075c66965d65ec9f877c22488ad8}{Set\-Reference\-Point}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__ActionEditCopy_a58dfa28e5cf4f72d3b501e40b2216dcf}{R\-S\-\_\-\-Action\-Edit\-Copy} (bool \hyperlink{classRS__ActionEditCopy_a7f5523b31820f2ed72a3570a5cedad98}{copy}, \hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)
+\item 
+virtual void \hyperlink{classRS__ActionEditCopy_a012de2fd440bfeb65c09717e75ddfa08}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionEditCopy_a0519d8cd50b43cf75140b66bba23c3b5}{trigger} ()
+\item 
+virtual void \hyperlink{classRS__ActionEditCopy_a1fea56ce10b501f38caf0d3dd9d4ad17}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionEditCopy_aaba216451732c0852426666d8a32e696}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionEditCopy_a821e0024f0adf9266784383120aee721}{coordinate\-Event} (\hyperlink{classRS__CoordinateEvent}{R\-S\-\_\-\-Coordinate\-Event} $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionEditCopy_a4282b7735295c7aef63f15601bba2d7e}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionEditCopy_a868f95ea25bb1339e8a19172c1b6b945}{update\-Mouse\-Cursor} ()
+\item 
+virtual void \hyperlink{classRS__ActionEditCopy_a18d4b6e044aa9949bba1c70132aa138d}{update\-Tool\-Bar} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionEditCopy_a7c712cc2af79d12b8e24d8988fe378a1}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} type, Q\-Object $\ast$parent)}\label{classRS__ActionEditCopy_a7c712cc2af79d12b8e24d8988fe378a1}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classRS__ActionEditCopy_a7f5523b31820f2ed72a3570a5cedad98}{copy}
+\item 
+\hypertarget{classRS__ActionEditCopy_a22e33fb4a2431b57aceb9ef348c4b843}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries reference\-Point}}\label{classRS__ActionEditCopy_a22e33fb4a2431b57aceb9ef348c4b843}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events for copying or cutting entities to the clipboard.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionEditCopy_a620b5387f51d29b1b9b6d2481c6d1ff9}{\index{R\-S\-\_\-\-Action\-Edit\-Copy@{R\-S\-\_\-\-Action\-Edit\-Copy}!Status@{Status}}
+\index{Status@{Status}!RS_ActionEditCopy@{R\-S\-\_\-\-Action\-Edit\-Copy}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Edit\-Copy\-::\-Status}}}\label{classRS__ActionEditCopy_a620b5387f51d29b1b9b6d2481c6d1ff9}
+Action States. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Set\-Reference\-Point@{Set\-Reference\-Point}!R\-S\-\_\-\-Action\-Edit\-Copy@{R\-S\-\_\-\-Action\-Edit\-Copy}}\index{R\-S\-\_\-\-Action\-Edit\-Copy@{R\-S\-\_\-\-Action\-Edit\-Copy}!Set\-Reference\-Point@{Set\-Reference\-Point}}\item[{\em 
+\hypertarget{classRS__ActionEditCopy_a620b5387f51d29b1b9b6d2481c6d1ff9a350b075c66965d65ec9f877c22488ad8}{Set\-Reference\-Point}\label{classRS__ActionEditCopy_a620b5387f51d29b1b9b6d2481c6d1ff9a350b075c66965d65ec9f877c22488ad8}
+}]Setting the reference point. \end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__ActionEditCopy_a58dfa28e5cf4f72d3b501e40b2216dcf}{\index{R\-S\-\_\-\-Action\-Edit\-Copy@{R\-S\-\_\-\-Action\-Edit\-Copy}!R\-S\-\_\-\-Action\-Edit\-Copy@{R\-S\-\_\-\-Action\-Edit\-Copy}}
+\index{R\-S\-\_\-\-Action\-Edit\-Copy@{R\-S\-\_\-\-Action\-Edit\-Copy}!RS_ActionEditCopy@{R\-S\-\_\-\-Action\-Edit\-Copy}}
+\subsubsection[{R\-S\-\_\-\-Action\-Edit\-Copy}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Action\-Edit\-Copy\-::\-R\-S\-\_\-\-Action\-Edit\-Copy (
+\begin{DoxyParamCaption}
+\item[{bool}]{copy, }
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} \&}]{graphic\-View}
+\end{DoxyParamCaption}
+)}}\label{classRS__ActionEditCopy_a58dfa28e5cf4f72d3b501e40b2216dcf}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em undo} & true for undo and false for redo. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionEditCopy_a821e0024f0adf9266784383120aee721}{\index{R\-S\-\_\-\-Action\-Edit\-Copy@{R\-S\-\_\-\-Action\-Edit\-Copy}!coordinate\-Event@{coordinate\-Event}}
+\index{coordinate\-Event@{coordinate\-Event}!RS_ActionEditCopy@{R\-S\-\_\-\-Action\-Edit\-Copy}}
+\subsubsection[{coordinate\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Edit\-Copy\-::coordinate\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Coordinate\-Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionEditCopy_a821e0024f0adf9266784383120aee721}
+Coordinate event. Triggered usually from a command line. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a9013e88769edd39b2a74af5add2986c9}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionEditCopy_a012de2fd440bfeb65c09717e75ddfa08}{\index{R\-S\-\_\-\-Action\-Edit\-Copy@{R\-S\-\_\-\-Action\-Edit\-Copy}!init@{init}}
+\index{init@{init}!RS_ActionEditCopy@{R\-S\-\_\-\-Action\-Edit\-Copy}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Edit\-Copy\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionEditCopy_a012de2fd440bfeb65c09717e75ddfa08}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a05b7dca5deeb371eb51edcb73facd45f}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionEditCopy_a1fea56ce10b501f38caf0d3dd9d4ad17}{\index{R\-S\-\_\-\-Action\-Edit\-Copy@{R\-S\-\_\-\-Action\-Edit\-Copy}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_ActionEditCopy@{R\-S\-\_\-\-Action\-Edit\-Copy}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Edit\-Copy\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionEditCopy_a1fea56ce10b501f38caf0d3dd9d4ad17}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionEditCopy_aaba216451732c0852426666d8a32e696}{\index{R\-S\-\_\-\-Action\-Edit\-Copy@{R\-S\-\_\-\-Action\-Edit\-Copy}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionEditCopy@{R\-S\-\_\-\-Action\-Edit\-Copy}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Edit\-Copy\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionEditCopy_aaba216451732c0852426666d8a32e696}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionEditCopy_a0519d8cd50b43cf75140b66bba23c3b5}{\index{R\-S\-\_\-\-Action\-Edit\-Copy@{R\-S\-\_\-\-Action\-Edit\-Copy}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionEditCopy@{R\-S\-\_\-\-Action\-Edit\-Copy}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Edit\-Copy\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionEditCopy_a0519d8cd50b43cf75140b66bba23c3b5}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa2ba8f6f697f735eace4ec5449c0b8cd}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionEditCopy_a4282b7735295c7aef63f15601bba2d7e}{\index{R\-S\-\_\-\-Action\-Edit\-Copy@{R\-S\-\_\-\-Action\-Edit\-Copy}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionEditCopy@{R\-S\-\_\-\-Action\-Edit\-Copy}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Edit\-Copy\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionEditCopy_a4282b7735295c7aef63f15601bba2d7e}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionEditCopy_a868f95ea25bb1339e8a19172c1b6b945}{\index{R\-S\-\_\-\-Action\-Edit\-Copy@{R\-S\-\_\-\-Action\-Edit\-Copy}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionEditCopy@{R\-S\-\_\-\-Action\-Edit\-Copy}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Edit\-Copy\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionEditCopy_a868f95ea25bb1339e8a19172c1b6b945}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionEditCopy_a18d4b6e044aa9949bba1c70132aa138d}{\index{R\-S\-\_\-\-Action\-Edit\-Copy@{R\-S\-\_\-\-Action\-Edit\-Copy}!update\-Tool\-Bar@{update\-Tool\-Bar}}
+\index{update\-Tool\-Bar@{update\-Tool\-Bar}!RS_ActionEditCopy@{R\-S\-\_\-\-Action\-Edit\-Copy}}
+\subsubsection[{update\-Tool\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Edit\-Copy\-::update\-Tool\-Bar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionEditCopy_a18d4b6e044aa9949bba1c70132aa138d}
+Should be overwritten to set the toolbar for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a25ec66468e5b09483afccd2358877361}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classRS__ActionEditCopy_a7f5523b31820f2ed72a3570a5cedad98}{\index{R\-S\-\_\-\-Action\-Edit\-Copy@{R\-S\-\_\-\-Action\-Edit\-Copy}!copy@{copy}}
+\index{copy@{copy}!RS_ActionEditCopy@{R\-S\-\_\-\-Action\-Edit\-Copy}}
+\subsubsection[{copy}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Action\-Edit\-Copy\-::copy\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionEditCopy_a7f5523b31820f2ed72a3570a5cedad98}
+Copy (true) or cut (false) 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actioneditcopy.\-h\item 
+librecad/src/actions/rs\-\_\-actioneditcopy.\-cpp\end{DoxyCompactItemize}

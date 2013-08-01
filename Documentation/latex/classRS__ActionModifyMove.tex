@@ -1,0 +1,163 @@
+\hypertarget{classRS__ActionModifyMove}{\section{R\-S\-\_\-\-Action\-Modify\-Move Class Reference}
+\label{classRS__ActionModifyMove}\index{R\-S\-\_\-\-Action\-Modify\-Move@{R\-S\-\_\-\-Action\-Modify\-Move}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionmodifymove.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Modify\-Move\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classRS__ActionModifyMove}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionModifyMove_a5e4281cd716ccea2929cd7122da8062a}{Status} \{ \hyperlink{classRS__ActionModifyMove_a5e4281cd716ccea2929cd7122da8062aaa1509242c1854d63830dbd3b56c8d961}{Set\-Reference\-Point}, 
+\hyperlink{classRS__ActionModifyMove_a5e4281cd716ccea2929cd7122da8062aa959e91bed48d13f7bd0df0a7ad7e9498}{Set\-Target\-Point}, 
+\hyperlink{classRS__ActionModifyMove_a5e4281cd716ccea2929cd7122da8062aa1fc53531494e76b82b4a64789a40983e}{Show\-Dialog}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionModifyMove_ac1197e049d7fb59e329de40c41d9c3fe}{{\bfseries R\-S\-\_\-\-Action\-Modify\-Move} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionModifyMove_ac1197e049d7fb59e329de40c41d9c3fe}
+
+\item 
+\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__ActionModifyMove_a8915375fbb5c6b6941034ff80c3c5c53}{rtti} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyMove_a0c3e5ff9dd29d49f11f599ca5d72b1f4}{trigger} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyMove_af0a4ec072d6b68438d4fbaa4ff58db11}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionModifyMove_aa13b8459e0c078a45a8181d5c564e1f8}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionModifyMove_a425b07099e02828a773581ec82ceb354}{coordinate\-Event} (\hyperlink{classRS__CoordinateEvent}{R\-S\-\_\-\-Coordinate\-Event} $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionModifyMove_a0b90daa3daf481c27d2e8e81b949bf01}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyMove_a8405d8454ca2bd96812adcfdf13d9e1f}{update\-Mouse\-Cursor} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionModifyMove_a783675185f24f3d2337d630644742fe2}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionModifyMove_a783675185f24f3d2337d630644742fe2}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to move entities.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionModifyMove_a5e4281cd716ccea2929cd7122da8062a}{\index{R\-S\-\_\-\-Action\-Modify\-Move@{R\-S\-\_\-\-Action\-Modify\-Move}!Status@{Status}}
+\index{Status@{Status}!RS_ActionModifyMove@{R\-S\-\_\-\-Action\-Modify\-Move}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Modify\-Move\-::\-Status}}}\label{classRS__ActionModifyMove_a5e4281cd716ccea2929cd7122da8062a}
+Action States. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Set\-Reference\-Point@{Set\-Reference\-Point}!R\-S\-\_\-\-Action\-Modify\-Move@{R\-S\-\_\-\-Action\-Modify\-Move}}\index{R\-S\-\_\-\-Action\-Modify\-Move@{R\-S\-\_\-\-Action\-Modify\-Move}!Set\-Reference\-Point@{Set\-Reference\-Point}}\item[{\em 
+\hypertarget{classRS__ActionModifyMove_a5e4281cd716ccea2929cd7122da8062aaa1509242c1854d63830dbd3b56c8d961}{Set\-Reference\-Point}\label{classRS__ActionModifyMove_a5e4281cd716ccea2929cd7122da8062aaa1509242c1854d63830dbd3b56c8d961}
+}]Setting the reference point. \index{Set\-Target\-Point@{Set\-Target\-Point}!R\-S\-\_\-\-Action\-Modify\-Move@{R\-S\-\_\-\-Action\-Modify\-Move}}\index{R\-S\-\_\-\-Action\-Modify\-Move@{R\-S\-\_\-\-Action\-Modify\-Move}!Set\-Target\-Point@{Set\-Target\-Point}}\item[{\em 
+\hypertarget{classRS__ActionModifyMove_a5e4281cd716ccea2929cd7122da8062aa959e91bed48d13f7bd0df0a7ad7e9498}{Set\-Target\-Point}\label{classRS__ActionModifyMove_a5e4281cd716ccea2929cd7122da8062aa959e91bed48d13f7bd0df0a7ad7e9498}
+}]Setting the target point. \index{Show\-Dialog@{Show\-Dialog}!R\-S\-\_\-\-Action\-Modify\-Move@{R\-S\-\_\-\-Action\-Modify\-Move}}\index{R\-S\-\_\-\-Action\-Modify\-Move@{R\-S\-\_\-\-Action\-Modify\-Move}!Show\-Dialog@{Show\-Dialog}}\item[{\em 
+\hypertarget{classRS__ActionModifyMove_a5e4281cd716ccea2929cd7122da8062aa1fc53531494e76b82b4a64789a40983e}{Show\-Dialog}\label{classRS__ActionModifyMove_a5e4281cd716ccea2929cd7122da8062aa1fc53531494e76b82b4a64789a40983e}
+}]Showing the options dialog. \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionModifyMove_a425b07099e02828a773581ec82ceb354}{\index{R\-S\-\_\-\-Action\-Modify\-Move@{R\-S\-\_\-\-Action\-Modify\-Move}!coordinate\-Event@{coordinate\-Event}}
+\index{coordinate\-Event@{coordinate\-Event}!RS_ActionModifyMove@{R\-S\-\_\-\-Action\-Modify\-Move}}
+\subsubsection[{coordinate\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Move\-::coordinate\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Coordinate\-Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyMove_a425b07099e02828a773581ec82ceb354}
+Coordinate event. Triggered usually from a command line. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a9013e88769edd39b2a74af5add2986c9}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyMove_af0a4ec072d6b68438d4fbaa4ff58db11}{\index{R\-S\-\_\-\-Action\-Modify\-Move@{R\-S\-\_\-\-Action\-Modify\-Move}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_ActionModifyMove@{R\-S\-\_\-\-Action\-Modify\-Move}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Move\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyMove_af0a4ec072d6b68438d4fbaa4ff58db11}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyMove_aa13b8459e0c078a45a8181d5c564e1f8}{\index{R\-S\-\_\-\-Action\-Modify\-Move@{R\-S\-\_\-\-Action\-Modify\-Move}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionModifyMove@{R\-S\-\_\-\-Action\-Modify\-Move}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Move\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyMove_aa13b8459e0c078a45a8181d5c564e1f8}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyMove_a8915375fbb5c6b6941034ff80c3c5c53}{\index{R\-S\-\_\-\-Action\-Modify\-Move@{R\-S\-\_\-\-Action\-Modify\-Move}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_ActionModifyMove@{R\-S\-\_\-\-Action\-Modify\-Move}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Action\-Modify\-Move\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__ActionModifyMove_a8915375fbb5c6b6941034ff80c3c5c53}
+Must be implemented to return the I\-D of this action.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]no default implementation \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af877a66b5b4a7053f2b1f0519c57a6f5}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyMove_a0c3e5ff9dd29d49f11f599ca5d72b1f4}{\index{R\-S\-\_\-\-Action\-Modify\-Move@{R\-S\-\_\-\-Action\-Modify\-Move}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionModifyMove@{R\-S\-\_\-\-Action\-Modify\-Move}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Move\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyMove_a0c3e5ff9dd29d49f11f599ca5d72b1f4}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyMove_a0b90daa3daf481c27d2e8e81b949bf01}{\index{R\-S\-\_\-\-Action\-Modify\-Move@{R\-S\-\_\-\-Action\-Modify\-Move}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionModifyMove@{R\-S\-\_\-\-Action\-Modify\-Move}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Move\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyMove_a0b90daa3daf481c27d2e8e81b949bf01}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyMove_a8405d8454ca2bd96812adcfdf13d9e1f}{\index{R\-S\-\_\-\-Action\-Modify\-Move@{R\-S\-\_\-\-Action\-Modify\-Move}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionModifyMove@{R\-S\-\_\-\-Action\-Modify\-Move}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Move\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyMove_a8405d8454ca2bd96812adcfdf13d9e1f}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionmodifymove.\-h\item 
+librecad/src/actions/rs\-\_\-actionmodifymove.\-cpp\end{DoxyCompactItemize}

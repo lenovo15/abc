@@ -1,0 +1,655 @@
+\hypertarget{classDoc__plugin__interface}{\section{Doc\-\_\-plugin\-\_\-interface Class Reference}
+\label{classDoc__plugin__interface}\index{Doc\-\_\-plugin\-\_\-interface@{Doc\-\_\-plugin\-\_\-interface}}
+}
+Inheritance diagram for Doc\-\_\-plugin\-\_\-interface\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDoc__plugin__interface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDoc__plugin__interface_a94a19d24c32c830bb8833c294f27eb01}{{\bfseries Doc\-\_\-plugin\-\_\-interface} (\hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} $\ast$d, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} $\ast$gv, Q\-Widget $\ast$parent)}\label{classDoc__plugin__interface_a94a19d24c32c830bb8833c294f27eb01}
+
+\item 
+void \hyperlink{classDoc__plugin__interface_ad8d0b33eb79c12bc3ff1bf9731052b4c}{update\-View} ()
+\item 
+void \hyperlink{classDoc__plugin__interface_ac852974e3aeab9b965c78b017ea429b1}{add\-Point} (Q\-Point\-F $\ast$start)
+\begin{DoxyCompactList}\small\item\em Add point entity to current document. \end{DoxyCompactList}\item 
+void \hyperlink{classDoc__plugin__interface_af4b152bcceadeaab6742888a15d5e0d3}{add\-Line} (Q\-Point\-F $\ast$start, Q\-Point\-F $\ast$end)
+\begin{DoxyCompactList}\small\item\em Add line entity to current document. \end{DoxyCompactList}\item 
+\hypertarget{classDoc__plugin__interface_a14559d3bcc52028e9fba7636aa743850}{void {\bfseries add\-M\-Text} (Q\-String txt, Q\-String sty, Q\-Point\-F $\ast$start, double height, double angle, D\-P\-I\-::\-H\-Align ha, D\-P\-I\-::\-V\-Align va)}\label{classDoc__plugin__interface_a14559d3bcc52028e9fba7636aa743850}
+
+\item 
+void \hyperlink{classDoc__plugin__interface_aa77a84d221543bed5b6ac267bd630132}{add\-Text} (Q\-String txt, Q\-String sty, Q\-Point\-F $\ast$start, double height, double angle, D\-P\-I\-::\-H\-Align ha, D\-P\-I\-::\-V\-Align va)
+\begin{DoxyCompactList}\small\item\em Add text entity to current document. \end{DoxyCompactList}\item 
+void \hyperlink{classDoc__plugin__interface_a408af40d5fa87c206cf45baeccf4dd61}{add\-Circle} (Q\-Point\-F $\ast$start, qreal radius)
+\begin{DoxyCompactList}\small\item\em Add circle entity to current document. \end{DoxyCompactList}\item 
+void \hyperlink{classDoc__plugin__interface_ac0fa12a9a618986941c753924b39c762}{add\-Arc} (Q\-Point\-F $\ast$start, qreal radius, qreal a1, qreal a2)
+\begin{DoxyCompactList}\small\item\em Add arc entity to current document. \end{DoxyCompactList}\item 
+void \hyperlink{classDoc__plugin__interface_a0c421b7399ac65260c034af6452105f7}{add\-Ellipse} (Q\-Point\-F $\ast$start, Q\-Point\-F $\ast$end, qreal ratio, qreal a1, qreal a2)
+\begin{DoxyCompactList}\small\item\em Add ellipse entity to current document. \end{DoxyCompactList}\item 
+void \hyperlink{classDoc__plugin__interface_ada8b3022eaeaf0d7481aa46267fec165}{add\-Image} (int handle, Q\-Point\-F $\ast$start, Q\-Point\-F $\ast$uvr, Q\-Point\-F $\ast$vvr, int w, int h, Q\-String name, int br, int con, int fade)
+\begin{DoxyCompactList}\small\item\em Add image entity to current document. \end{DoxyCompactList}\item 
+void \hyperlink{classDoc__plugin__interface_a3fd497543d79a27de42503b97a013839}{add\-Insert} (Q\-String name, Q\-Point\-F ins, Q\-Point\-F scale, qreal rot)
+\begin{DoxyCompactList}\small\item\em Add insert entity to current document. \end{DoxyCompactList}\item 
+Q\-String \hyperlink{classDoc__plugin__interface_ac12200c940042a7576bb49403ada5fe4}{add\-Blockfrom\-Fromdisk} (Q\-String full\-Name)
+\begin{DoxyCompactList}\small\item\em Add block definition from disk to current document. \end{DoxyCompactList}\item 
+void \hyperlink{classDoc__plugin__interface_a9a4fb2c9c66199b3de81e4b8b94ee424}{add\-Entity} (\hyperlink{classPlug__Entity}{Plug\-\_\-\-Entity} $\ast$handle)
+\begin{DoxyCompactList}\small\item\em Add a entity to current document. \end{DoxyCompactList}\item 
+\hyperlink{classPlug__Entity}{Plug\-\_\-\-Entity} $\ast$ \hyperlink{classDoc__plugin__interface_a73cf463855eaf206804b84ed12afaa5d}{new\-Entity} (enum D\-P\-I\-::\-E\-T\-Y\-P\-E type)
+\begin{DoxyCompactList}\small\item\em Create a new \hyperlink{classPlug__Entity}{Plug\-\_\-\-Entity}. \end{DoxyCompactList}\item 
+void \hyperlink{classDoc__plugin__interface_a4c274705905b68aac6975e488487243d}{remove\-Entity} (\hyperlink{classPlug__Entity}{Plug\-\_\-\-Entity} $\ast$ent)
+\begin{DoxyCompactList}\small\item\em Remove a Entity. \end{DoxyCompactList}\item 
+\hypertarget{classDoc__plugin__interface_a0b1fda6cb91579998125a697377b6f76}{void {\bfseries update\-Entity} (\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$org, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$newe)}\label{classDoc__plugin__interface_a0b1fda6cb91579998125a697377b6f76}
+
+\item 
+void \hyperlink{classDoc__plugin__interface_ac4626840b1a927457f36f9645ea31829}{set\-Layer} (Q\-String name)
+\begin{DoxyCompactList}\small\item\em Set the current layer in current document. \end{DoxyCompactList}\item 
+Q\-String \hyperlink{classDoc__plugin__interface_a0a04bd2de92ccb38293179b43e316fdb}{get\-Current\-Layer} ()
+\begin{DoxyCompactList}\small\item\em Get the current layer in current document. \end{DoxyCompactList}\item 
+Q\-String\-List \hyperlink{classDoc__plugin__interface_a456ed0725c131b032ad0985fbb0b1980}{get\-All\-Layer} ()
+\begin{DoxyCompactList}\small\item\em Gets the layers list in current document. \end{DoxyCompactList}\item 
+Q\-String\-List \hyperlink{classDoc__plugin__interface_a68d6b64a9680c21fc6aa2f1cc8f97e20}{get\-All\-Blocks} ()
+\begin{DoxyCompactList}\small\item\em Gets the blocks list in current document. \end{DoxyCompactList}\item 
+bool \hyperlink{classDoc__plugin__interface_a6c4d88e581089d7217172ec25640a05e}{delete\-Layer} (Q\-String name)
+\begin{DoxyCompactList}\small\item\em Delete a layer in current document. \end{DoxyCompactList}\item 
+\hypertarget{classDoc__plugin__interface_a22bd2b351a06da3a110b1c858ce2ff74}{void {\bfseries get\-Current\-Layer\-Properties} (Q\-Color $\ast$c, D\-P\-I\-::\-Line\-Width $\ast$w, D\-P\-I\-::\-Line\-Type $\ast$t)}\label{classDoc__plugin__interface_a22bd2b351a06da3a110b1c858ce2ff74}
+
+\item 
+\hypertarget{classDoc__plugin__interface_aa2b1300b51715acb4470e778f93529a7}{void {\bfseries get\-Current\-Layer\-Properties} (Q\-Color $\ast$c, Q\-String $\ast$w, Q\-String $\ast$t)}\label{classDoc__plugin__interface_aa2b1300b51715acb4470e778f93529a7}
+
+\item 
+\hypertarget{classDoc__plugin__interface_abe1db88e3f419910b452a9f3040f846e}{void {\bfseries set\-Current\-Layer\-Properties} (Q\-Color c, D\-P\-I\-::\-Line\-Width w, D\-P\-I\-::\-Line\-Type t)}\label{classDoc__plugin__interface_abe1db88e3f419910b452a9f3040f846e}
+
+\item 
+\hypertarget{classDoc__plugin__interface_a10aba2f5db7056454801cac38e7a0e67}{void {\bfseries set\-Current\-Layer\-Properties} (Q\-Color c, Q\-String w, Q\-String t)}\label{classDoc__plugin__interface_a10aba2f5db7056454801cac38e7a0e67}
+
+\item 
+bool \hyperlink{classDoc__plugin__interface_a3d9ea0ef32825e0030cf38e327140a1b}{get\-Point} (Q\-Point\-F $\ast$point, const Q\-String \&mesage, Q\-Point\-F $\ast$base)
+\begin{DoxyCompactList}\small\item\em Gets a point. \end{DoxyCompactList}\item 
+\hyperlink{classPlug__Entity}{Plug\-\_\-\-Entity} $\ast$ \hyperlink{classDoc__plugin__interface_a99b59fe345fa16466fa55183e0b32a04}{get\-Ent} (const Q\-String \&mesage)
+\begin{DoxyCompactList}\small\item\em Select a entity. \end{DoxyCompactList}\item 
+bool \hyperlink{classDoc__plugin__interface_a2bca94ce4385bf1ba8a16b4ae2a0f290}{get\-Select} (Q\-List$<$ \hyperlink{classPlug__Entity}{Plug\-\_\-\-Entity} $\ast$ $>$ $\ast$sel, const Q\-String \&mesage)
+\begin{DoxyCompactList}\small\item\em Gets a entities selection. \end{DoxyCompactList}\item 
+bool \hyperlink{classDoc__plugin__interface_a7982249790e43196c81f437f3ccc6081}{get\-All\-Entities} (Q\-List$<$ \hyperlink{classPlug__Entity}{Plug\-\_\-\-Entity} $\ast$ $>$ $\ast$sel, bool visible=false)
+\begin{DoxyCompactList}\small\item\em Gets all entities in document. \end{DoxyCompactList}\item 
+\hypertarget{classDoc__plugin__interface_a2dc73981f8cc16bf779dd825be63263d}{bool {\bfseries get\-Variable\-Int} (const Q\-String \&key, int $\ast$num)}\label{classDoc__plugin__interface_a2dc73981f8cc16bf779dd825be63263d}
+
+\item 
+\hypertarget{classDoc__plugin__interface_a91cc15c19d57d1194826df4385fb8463}{bool {\bfseries get\-Variable\-Double} (const Q\-String \&key, double $\ast$num)}\label{classDoc__plugin__interface_a91cc15c19d57d1194826df4385fb8463}
+
+\item 
+\hypertarget{classDoc__plugin__interface_a3e7760da8e431672a03ce5c3983b1536}{bool {\bfseries add\-Variable} (const Q\-String \&key, int value, int code=70)}\label{classDoc__plugin__interface_a3e7760da8e431672a03ce5c3983b1536}
+
+\item 
+\hypertarget{classDoc__plugin__interface_a42e7211f492ecceb4939989b92469968}{bool {\bfseries add\-Variable} (const Q\-String \&key, double value, int code=40)}\label{classDoc__plugin__interface_a42e7211f492ecceb4939989b92469968}
+
+\item 
+\hypertarget{classDoc__plugin__interface_a3f1cde8f4a11811a35968ba062ff0c4e}{bool {\bfseries get\-Int} (int $\ast$num, const Q\-String \&mesage, const Q\-String \&title)}\label{classDoc__plugin__interface_a3f1cde8f4a11811a35968ba062ff0c4e}
+
+\item 
+\hypertarget{classDoc__plugin__interface_a1ceb1c051acc3f35439e55abaafa436e}{bool {\bfseries get\-Real} (qreal $\ast$num, const Q\-String \&mesage, const Q\-String \&title)}\label{classDoc__plugin__interface_a1ceb1c051acc3f35439e55abaafa436e}
+
+\item 
+\hypertarget{classDoc__plugin__interface_acde0aca2217e5e907394d91c0d5f70af}{bool {\bfseries get\-String} (Q\-String $\ast$txt, const Q\-String \&mesage, const Q\-String \&title)}\label{classDoc__plugin__interface_acde0aca2217e5e907394d91c0d5f70af}
+
+\item 
+Q\-String \hyperlink{classDoc__plugin__interface_ad13aadf9a029d9db752cafb3ea4a1ab7}{real\-To\-Str} (const qreal num, const int units=0, const int prec=0)
+\begin{DoxyCompactList}\small\item\em Convert real to string. \end{DoxyCompactList}\item 
+\hypertarget{classDoc__plugin__interface_aacce0afeaff6c36c316c3a8e3bc99f0e}{bool {\bfseries add\-To\-Undo} (\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$current, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$modified)}\label{classDoc__plugin__interface_aacce0afeaff6c36c316c3a8e3bc99f0e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDoc__plugin__interface_ac0fa12a9a618986941c753924b39c762}{\index{Doc\-\_\-plugin\-\_\-interface@{Doc\-\_\-plugin\-\_\-interface}!add\-Arc@{add\-Arc}}
+\index{add\-Arc@{add\-Arc}!Doc_plugin_interface@{Doc\-\_\-plugin\-\_\-interface}}
+\subsubsection[{add\-Arc}]{\setlength{\rightskip}{0pt plus 5cm}void Doc\-\_\-plugin\-\_\-interface\-::add\-Arc (
+\begin{DoxyParamCaption}
+\item[{Q\-Point\-F $\ast$}]{start, }
+\item[{qreal}]{radius, }
+\item[{qreal}]{a1, }
+\item[{qreal}]{a2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoc__plugin__interface_ac0fa12a9a618986941c753924b39c762}
+
+
+Add arc entity to current document. 
+
+Add arc of circumference entity to current document with current attributes. 
+\begin{DoxyParams}{Parameters}
+{\em start} & center point coordinate. \\
+\hline
+{\em radius} & radius for circle. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classDocument__Interface_abfa80921b56456c873a0ece0c6c669eb}{Document\-\_\-\-Interface}.
+
+\hypertarget{classDoc__plugin__interface_ac12200c940042a7576bb49403ada5fe4}{\index{Doc\-\_\-plugin\-\_\-interface@{Doc\-\_\-plugin\-\_\-interface}!add\-Blockfrom\-Fromdisk@{add\-Blockfrom\-Fromdisk}}
+\index{add\-Blockfrom\-Fromdisk@{add\-Blockfrom\-Fromdisk}!Doc_plugin_interface@{Doc\-\_\-plugin\-\_\-interface}}
+\subsubsection[{add\-Blockfrom\-Fromdisk}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Doc\-\_\-plugin\-\_\-interface\-::add\-Blockfrom\-Fromdisk (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{full\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoc__plugin__interface_ac12200c940042a7576bb49403ada5fe4}
+
+
+Add block definition from disk to current document. 
+
+Add block definition from disk to current document. 
+\begin{DoxyParams}{Parameters}
+{\em full\-Name} & path+name of dxf file to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+name of created block or N\-U\-L\-L if fail. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classDocument__Interface_a93286c29f88075a355b306e10c9990c1}{Document\-\_\-\-Interface}.
+
+\hypertarget{classDoc__plugin__interface_a408af40d5fa87c206cf45baeccf4dd61}{\index{Doc\-\_\-plugin\-\_\-interface@{Doc\-\_\-plugin\-\_\-interface}!add\-Circle@{add\-Circle}}
+\index{add\-Circle@{add\-Circle}!Doc_plugin_interface@{Doc\-\_\-plugin\-\_\-interface}}
+\subsubsection[{add\-Circle}]{\setlength{\rightskip}{0pt plus 5cm}void Doc\-\_\-plugin\-\_\-interface\-::add\-Circle (
+\begin{DoxyParamCaption}
+\item[{Q\-Point\-F $\ast$}]{start, }
+\item[{qreal}]{radius}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoc__plugin__interface_a408af40d5fa87c206cf45baeccf4dd61}
+
+
+Add circle entity to current document. 
+
+Add circle entity to current document with current attributes. 
+\begin{DoxyParams}{Parameters}
+{\em start} & center point coordinate. \\
+\hline
+{\em radius} & radius for circle. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classDocument__Interface_af31a359c5bedace1bacfb62f4af8533e}{Document\-\_\-\-Interface}.
+
+\hypertarget{classDoc__plugin__interface_a0c421b7399ac65260c034af6452105f7}{\index{Doc\-\_\-plugin\-\_\-interface@{Doc\-\_\-plugin\-\_\-interface}!add\-Ellipse@{add\-Ellipse}}
+\index{add\-Ellipse@{add\-Ellipse}!Doc_plugin_interface@{Doc\-\_\-plugin\-\_\-interface}}
+\subsubsection[{add\-Ellipse}]{\setlength{\rightskip}{0pt plus 5cm}void Doc\-\_\-plugin\-\_\-interface\-::add\-Ellipse (
+\begin{DoxyParamCaption}
+\item[{Q\-Point\-F $\ast$}]{start, }
+\item[{Q\-Point\-F $\ast$}]{end, }
+\item[{qreal}]{ratio, }
+\item[{qreal}]{a1, }
+\item[{qreal}]{a2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoc__plugin__interface_a0c421b7399ac65260c034af6452105f7}
+
+
+Add ellipse entity to current document. 
+
+Add ellipse entity to current document with current attributes. 
+\begin{DoxyParams}{Parameters}
+{\em start} & center point coordinate. \\
+\hline
+{\em radius} & radius for arc. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classDocument__Interface_aa36fde1a3f631cda2e32bec91823d499}{Document\-\_\-\-Interface}.
+
+\hypertarget{classDoc__plugin__interface_a9a4fb2c9c66199b3de81e4b8b94ee424}{\index{Doc\-\_\-plugin\-\_\-interface@{Doc\-\_\-plugin\-\_\-interface}!add\-Entity@{add\-Entity}}
+\index{add\-Entity@{add\-Entity}!Doc_plugin_interface@{Doc\-\_\-plugin\-\_\-interface}}
+\subsubsection[{add\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}void Doc\-\_\-plugin\-\_\-interface\-::add\-Entity (
+\begin{DoxyParamCaption}
+\item[{{\bf Plug\-\_\-\-Entity} $\ast$}]{handle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoc__plugin__interface_a9a4fb2c9c66199b3de81e4b8b94ee424}
+
+
+Add a entity to current document. 
+
+Add a entity to current document with the data sets with \hyperlink{classPlug__Entity_a54501af73a74d97116cfac8b145049ca}{Plug\-\_\-\-Entity.\-update\-Data()}. 
+\begin{DoxyParams}{Parameters}
+{\em handle} & a pointer to \hyperlink{classPlug__Entity}{Plug\-\_\-\-Entity}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classDocument__Interface_a16cac3caee5861d7081ba71e30a1e4f6}{Document\-\_\-\-Interface}.
+
+\hypertarget{classDoc__plugin__interface_ada8b3022eaeaf0d7481aa46267fec165}{\index{Doc\-\_\-plugin\-\_\-interface@{Doc\-\_\-plugin\-\_\-interface}!add\-Image@{add\-Image}}
+\index{add\-Image@{add\-Image}!Doc_plugin_interface@{Doc\-\_\-plugin\-\_\-interface}}
+\subsubsection[{add\-Image}]{\setlength{\rightskip}{0pt plus 5cm}void Doc\-\_\-plugin\-\_\-interface\-::add\-Image (
+\begin{DoxyParamCaption}
+\item[{int}]{handle, }
+\item[{Q\-Point\-F $\ast$}]{start, }
+\item[{Q\-Point\-F $\ast$}]{uvr, }
+\item[{Q\-Point\-F $\ast$}]{vvr, }
+\item[{int}]{w, }
+\item[{int}]{h, }
+\item[{Q\-String}]{name, }
+\item[{int}]{br, }
+\item[{int}]{con, }
+\item[{int}]{fade}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoc__plugin__interface_ada8b3022eaeaf0d7481aa46267fec165}
+
+
+Add image entity to current document. 
+
+Add image entity to current document with current attributes. 
+\begin{DoxyParams}{Parameters}
+{\em start} & start point coordinate. \\
+\hline
+{\em end} & end point coordinate. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classDocument__Interface_ab532bc55dd8b33c2227d69ae8c894745}{Document\-\_\-\-Interface}.
+
+\hypertarget{classDoc__plugin__interface_a3fd497543d79a27de42503b97a013839}{\index{Doc\-\_\-plugin\-\_\-interface@{Doc\-\_\-plugin\-\_\-interface}!add\-Insert@{add\-Insert}}
+\index{add\-Insert@{add\-Insert}!Doc_plugin_interface@{Doc\-\_\-plugin\-\_\-interface}}
+\subsubsection[{add\-Insert}]{\setlength{\rightskip}{0pt plus 5cm}void Doc\-\_\-plugin\-\_\-interface\-::add\-Insert (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{name, }
+\item[{Q\-Point\-F}]{ins, }
+\item[{Q\-Point\-F}]{scale, }
+\item[{qreal}]{rot}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoc__plugin__interface_a3fd497543d79a27de42503b97a013839}
+
+
+Add insert entity to current document. 
+
+Add a block insert entity to current document with current attributes. 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of block to insert. \\
+\hline
+{\em ins} & insertion point coordinate. \\
+\hline
+{\em scale} & x,y scale factor. \\
+\hline
+{\em rot} & rotation angle. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classDocument__Interface_a8fc4d5baa0da4cc370d7eea9fc0bd4d0}{Document\-\_\-\-Interface}.
+
+\hypertarget{classDoc__plugin__interface_af4b152bcceadeaab6742888a15d5e0d3}{\index{Doc\-\_\-plugin\-\_\-interface@{Doc\-\_\-plugin\-\_\-interface}!add\-Line@{add\-Line}}
+\index{add\-Line@{add\-Line}!Doc_plugin_interface@{Doc\-\_\-plugin\-\_\-interface}}
+\subsubsection[{add\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void Doc\-\_\-plugin\-\_\-interface\-::add\-Line (
+\begin{DoxyParamCaption}
+\item[{Q\-Point\-F $\ast$}]{start, }
+\item[{Q\-Point\-F $\ast$}]{end}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoc__plugin__interface_af4b152bcceadeaab6742888a15d5e0d3}
+
+
+Add line entity to current document. 
+
+Add line entity to current document with current attributes. 
+\begin{DoxyParams}{Parameters}
+{\em start} & start point coordinate. \\
+\hline
+{\em end} & end point coordinate. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classDocument__Interface_a238743575832ff89cc55fa107251010c}{Document\-\_\-\-Interface}.
+
+\hypertarget{classDoc__plugin__interface_ac852974e3aeab9b965c78b017ea429b1}{\index{Doc\-\_\-plugin\-\_\-interface@{Doc\-\_\-plugin\-\_\-interface}!add\-Point@{add\-Point}}
+\index{add\-Point@{add\-Point}!Doc_plugin_interface@{Doc\-\_\-plugin\-\_\-interface}}
+\subsubsection[{add\-Point}]{\setlength{\rightskip}{0pt plus 5cm}void Doc\-\_\-plugin\-\_\-interface\-::add\-Point (
+\begin{DoxyParamCaption}
+\item[{Q\-Point\-F $\ast$}]{start}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoc__plugin__interface_ac852974e3aeab9b965c78b017ea429b1}
+
+
+Add point entity to current document. 
+
+Add point entity to current document with current attributes. 
+\begin{DoxyParams}{Parameters}
+{\em start} & point coordinate. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classDocument__Interface_a6bb098fc42f043f221dd572d52c921dd}{Document\-\_\-\-Interface}.
+
+\hypertarget{classDoc__plugin__interface_aa77a84d221543bed5b6ac267bd630132}{\index{Doc\-\_\-plugin\-\_\-interface@{Doc\-\_\-plugin\-\_\-interface}!add\-Text@{add\-Text}}
+\index{add\-Text@{add\-Text}!Doc_plugin_interface@{Doc\-\_\-plugin\-\_\-interface}}
+\subsubsection[{add\-Text}]{\setlength{\rightskip}{0pt plus 5cm}void Doc\-\_\-plugin\-\_\-interface\-::add\-Text (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{txt, }
+\item[{Q\-String}]{sty, }
+\item[{Q\-Point\-F $\ast$}]{start, }
+\item[{double}]{height, }
+\item[{double}]{angle, }
+\item[{D\-P\-I\-::\-H\-Align}]{ha, }
+\item[{D\-P\-I\-::\-V\-Align}]{va}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoc__plugin__interface_aa77a84d221543bed5b6ac267bd630132}
+
+
+Add text entity to current document. 
+
+Add text entity to current document with current attributes 
+\begin{DoxyParams}{Parameters}
+{\em txt} & a Q\-String with text content \\
+\hline
+{\em sty} & a Q\-String with text style name \\
+\hline
+{\em start} & insertion point coordinate \\
+\hline
+{\em height} & height of text \\
+\hline
+{\em angle} & rotation angle of text \\
+\hline
+{\em ha} & horizontal alignement of text \\
+\hline
+{\em va} & vertical alignement of text \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classDocument__Interface_acd46b66d8b4322106e37a1a370866d11}{Document\-\_\-\-Interface}.
+
+\hypertarget{classDoc__plugin__interface_a6c4d88e581089d7217172ec25640a05e}{\index{Doc\-\_\-plugin\-\_\-interface@{Doc\-\_\-plugin\-\_\-interface}!delete\-Layer@{delete\-Layer}}
+\index{delete\-Layer@{delete\-Layer}!Doc_plugin_interface@{Doc\-\_\-plugin\-\_\-interface}}
+\subsubsection[{delete\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}bool Doc\-\_\-plugin\-\_\-interface\-::delete\-Layer (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoc__plugin__interface_a6c4d88e581089d7217172ec25640a05e}
+
+
+Delete a layer in current document. 
+
+Delete the layer \char`\"{}name\char`\"{} in current document if it exist. \begin{DoxyReturn}{Returns}
+The name of the current layer. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classDocument__Interface_a0de3466ffbba2c504452ae242ba246b9}{Document\-\_\-\-Interface}.
+
+\hypertarget{classDoc__plugin__interface_a68d6b64a9680c21fc6aa2f1cc8f97e20}{\index{Doc\-\_\-plugin\-\_\-interface@{Doc\-\_\-plugin\-\_\-interface}!get\-All\-Blocks@{get\-All\-Blocks}}
+\index{get\-All\-Blocks@{get\-All\-Blocks}!Doc_plugin_interface@{Doc\-\_\-plugin\-\_\-interface}}
+\subsubsection[{get\-All\-Blocks}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String\-List Doc\-\_\-plugin\-\_\-interface\-::get\-All\-Blocks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoc__plugin__interface_a68d6b64a9680c21fc6aa2f1cc8f97e20}
+
+
+Gets the blocks list in current document. 
+
+Gets the list of names of all blocks in current document. \begin{DoxyReturn}{Returns}
+A list with the name of all blocks in document. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classDocument__Interface_a691612623f64ea900426c974ac3f53d2}{Document\-\_\-\-Interface}.
+
+\hypertarget{classDoc__plugin__interface_a7982249790e43196c81f437f3ccc6081}{\index{Doc\-\_\-plugin\-\_\-interface@{Doc\-\_\-plugin\-\_\-interface}!get\-All\-Entities@{get\-All\-Entities}}
+\index{get\-All\-Entities@{get\-All\-Entities}!Doc_plugin_interface@{Doc\-\_\-plugin\-\_\-interface}}
+\subsubsection[{get\-All\-Entities}]{\setlength{\rightskip}{0pt plus 5cm}bool Doc\-\_\-plugin\-\_\-interface\-::get\-All\-Entities (
+\begin{DoxyParamCaption}
+\item[{Q\-List$<$ {\bf Plug\-\_\-\-Entity} $\ast$ $>$ $\ast$}]{sel, }
+\item[{bool}]{visible = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoc__plugin__interface_a7982249790e43196c81f437f3ccc6081}
+
+
+Gets all entities in document. 
+
+You can delete all, the \hyperlink{classPlug__Entity}{Plug\-\_\-\-Entity} and the returned Q\-List wen no more needed. 
+\begin{DoxyParams}{Parameters}
+{\em sel} & a Q\-List of poiters to \hyperlink{classPlug__Entity}{Plug\-\_\-\-Entity} handled the selected entities. \\
+\hline
+{\em visible} & default fo false, do not select entities in hidden layers. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if succes. 
+
+false if fail, i.\-e. user cancel. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classDocument__Interface_a5c4f3065fa558ccfe8236b7192e3ac02}{Document\-\_\-\-Interface}.
+
+\hypertarget{classDoc__plugin__interface_a456ed0725c131b032ad0985fbb0b1980}{\index{Doc\-\_\-plugin\-\_\-interface@{Doc\-\_\-plugin\-\_\-interface}!get\-All\-Layer@{get\-All\-Layer}}
+\index{get\-All\-Layer@{get\-All\-Layer}!Doc_plugin_interface@{Doc\-\_\-plugin\-\_\-interface}}
+\subsubsection[{get\-All\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String\-List Doc\-\_\-plugin\-\_\-interface\-::get\-All\-Layer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoc__plugin__interface_a456ed0725c131b032ad0985fbb0b1980}
+
+
+Gets the layers list in current document. 
+
+Gets the list of names of all layers in current document. \begin{DoxyReturn}{Returns}
+A list with the name of all layers in document. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classDocument__Interface_af9c58f0a2b9fa6b751e74ebfdfbaea14}{Document\-\_\-\-Interface}.
+
+\hypertarget{classDoc__plugin__interface_a0a04bd2de92ccb38293179b43e316fdb}{\index{Doc\-\_\-plugin\-\_\-interface@{Doc\-\_\-plugin\-\_\-interface}!get\-Current\-Layer@{get\-Current\-Layer}}
+\index{get\-Current\-Layer@{get\-Current\-Layer}!Doc_plugin_interface@{Doc\-\_\-plugin\-\_\-interface}}
+\subsubsection[{get\-Current\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Doc\-\_\-plugin\-\_\-interface\-::get\-Current\-Layer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoc__plugin__interface_a0a04bd2de92ccb38293179b43e316fdb}
+
+
+Get the current layer in current document. 
+
+Get the current layer in current document. \begin{DoxyReturn}{Returns}
+The name of the current layer. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classDocument__Interface_a74ec266e1a3b9c354e0812d34d62ac99}{Document\-\_\-\-Interface}.
+
+\hypertarget{classDoc__plugin__interface_a99b59fe345fa16466fa55183e0b32a04}{\index{Doc\-\_\-plugin\-\_\-interface@{Doc\-\_\-plugin\-\_\-interface}!get\-Ent@{get\-Ent}}
+\index{get\-Ent@{get\-Ent}!Doc_plugin_interface@{Doc\-\_\-plugin\-\_\-interface}}
+\subsubsection[{get\-Ent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Plug\-\_\-\-Entity} $\ast$ Doc\-\_\-plugin\-\_\-interface\-::get\-Ent (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{mesage}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoc__plugin__interface_a99b59fe345fa16466fa55183e0b32a04}
+
+
+Select a entity. 
+
+Prompt message or a default message to the user asking for a sigle selection. You can delete the \hyperlink{classPlug__Entity}{Plug\-\_\-\-Entity} wen no more needed. 
+\begin{DoxyParams}{Parameters}
+{\em mesage} & an optional Q\-String with prompt message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \hyperlink{classPlug__Entity}{Plug\-\_\-\-Entity} handle the selected entity or N\-U\-L\-L. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classDocument__Interface_a7308de4c648f7d50f16b80409a96e219}{Document\-\_\-\-Interface}.
+
+\hypertarget{classDoc__plugin__interface_a3d9ea0ef32825e0030cf38e327140a1b}{\index{Doc\-\_\-plugin\-\_\-interface@{Doc\-\_\-plugin\-\_\-interface}!get\-Point@{get\-Point}}
+\index{get\-Point@{get\-Point}!Doc_plugin_interface@{Doc\-\_\-plugin\-\_\-interface}}
+\subsubsection[{get\-Point}]{\setlength{\rightskip}{0pt plus 5cm}bool Doc\-\_\-plugin\-\_\-interface\-::get\-Point (
+\begin{DoxyParamCaption}
+\item[{Q\-Point\-F $\ast$}]{point, }
+\item[{const Q\-String \&}]{mesage, }
+\item[{Q\-Point\-F $\ast$}]{base}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoc__plugin__interface_a3d9ea0ef32825e0030cf38e327140a1b}
+
+
+Gets a point. 
+
+Prompt message or an default message to the user asking for a point. If base is present draw a line from base to cursor position. 
+\begin{DoxyParams}{Parameters}
+{\em point} & a pointer to Q\-Point\-F to store the obtained point. \\
+\hline
+{\em mesage} & an optional Q\-String with prompt message. \\
+\hline
+{\em base} & visual helper point, if present. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if succes. 
+
+false if fail, i.\-e. user cancel. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classDocument__Interface_accafc3c2812bbe033a6b8d073ad4e08e}{Document\-\_\-\-Interface}.
+
+\hypertarget{classDoc__plugin__interface_a2bca94ce4385bf1ba8a16b4ae2a0f290}{\index{Doc\-\_\-plugin\-\_\-interface@{Doc\-\_\-plugin\-\_\-interface}!get\-Select@{get\-Select}}
+\index{get\-Select@{get\-Select}!Doc_plugin_interface@{Doc\-\_\-plugin\-\_\-interface}}
+\subsubsection[{get\-Select}]{\setlength{\rightskip}{0pt plus 5cm}bool Doc\-\_\-plugin\-\_\-interface\-::get\-Select (
+\begin{DoxyParamCaption}
+\item[{Q\-List$<$ {\bf Plug\-\_\-\-Entity} $\ast$ $>$ $\ast$}]{sel, }
+\item[{const Q\-String \&}]{mesage}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoc__plugin__interface_a2bca94ce4385bf1ba8a16b4ae2a0f290}
+
+
+Gets a entities selection. 
+
+Prompt message or an default message to the user asking for a selection. You can delete all, the \hyperlink{classPlug__Entity}{Plug\-\_\-\-Entity} and the returned Q\-List wen no more needed. 
+\begin{DoxyParams}{Parameters}
+{\em sel} & a Q\-List of poiters to \hyperlink{classPlug__Entity}{Plug\-\_\-\-Entity} handled the selected entities. \\
+\hline
+{\em mesage} & an optional Q\-String with prompt message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if succes. 
+
+false if fail, i.\-e. user cancel. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classDocument__Interface_a594499acd4061007467a9b1a266567ed}{Document\-\_\-\-Interface}.
+
+\hypertarget{classDoc__plugin__interface_a73cf463855eaf206804b84ed12afaa5d}{\index{Doc\-\_\-plugin\-\_\-interface@{Doc\-\_\-plugin\-\_\-interface}!new\-Entity@{new\-Entity}}
+\index{new\-Entity@{new\-Entity}!Doc_plugin_interface@{Doc\-\_\-plugin\-\_\-interface}}
+\subsubsection[{new\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Plug\-\_\-\-Entity} $\ast$ Doc\-\_\-plugin\-\_\-interface\-::new\-Entity (
+\begin{DoxyParamCaption}
+\item[{enum D\-P\-I\-::\-E\-T\-Y\-P\-E}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoc__plugin__interface_a73cf463855eaf206804b84ed12afaa5d}
+
+
+Create a new \hyperlink{classPlug__Entity}{Plug\-\_\-\-Entity}. 
+
+Create a new \hyperlink{classPlug__Entity}{Plug\-\_\-\-Entity} of type E\-T\-Y\-P\-E with default data. sets the data with \hyperlink{classPlug__Entity_a54501af73a74d97116cfac8b145049ca}{Plug\-\_\-\-Entity.\-update\-Data()}. if fail (unknoun or unhandled entity) return N\-U\-L\-L 
+\begin{DoxyParams}{Parameters}
+{\em type} & an D\-P\-I\-::\-E\-T\-Y\-P\-E type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+handle to pointer of \hyperlink{classPlug__Entity}{Plug\-\_\-\-Entity} with type D\-P\-I\-::\-E\-T\-Y\-P\-E or N\-U\-L\-L if fail. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classDocument__Interface_a0c9f39bc44101e4015473d3b0645607b}{Document\-\_\-\-Interface}.
+
+\hypertarget{classDoc__plugin__interface_ad13aadf9a029d9db752cafb3ea4a1ab7}{\index{Doc\-\_\-plugin\-\_\-interface@{Doc\-\_\-plugin\-\_\-interface}!real\-To\-Str@{real\-To\-Str}}
+\index{real\-To\-Str@{real\-To\-Str}!Doc_plugin_interface@{Doc\-\_\-plugin\-\_\-interface}}
+\subsubsection[{real\-To\-Str}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Doc\-\_\-plugin\-\_\-interface\-::real\-To\-Str (
+\begin{DoxyParamCaption}
+\item[{const qreal}]{num, }
+\item[{const int}]{units = {\ttfamily 0}, }
+\item[{const int}]{prec = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoc__plugin__interface_ad13aadf9a029d9db752cafb3ea4a1ab7}
+
+
+Convert real to string. 
+
+Convert a real number to string using indicated units format \& precision. If omitted are the current drawing units \& precision are used. 
+\begin{DoxyParams}{Parameters}
+{\em num} & Number to convert. \\
+\hline
+{\em units} & Units format to use. current configured=0, Scientific=1, Decimal=2, Engineering=3, Architectural=4, Fractional=5. \\
+\hline
+{\em prec} & number of decimals added in the string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string with the converted number. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classDocument__Interface_a102c168174f9a7f6634629dcfef761e1}{Document\-\_\-\-Interface}.
+
+\hypertarget{classDoc__plugin__interface_a4c274705905b68aac6975e488487243d}{\index{Doc\-\_\-plugin\-\_\-interface@{Doc\-\_\-plugin\-\_\-interface}!remove\-Entity@{remove\-Entity}}
+\index{remove\-Entity@{remove\-Entity}!Doc_plugin_interface@{Doc\-\_\-plugin\-\_\-interface}}
+\subsubsection[{remove\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}void Doc\-\_\-plugin\-\_\-interface\-::remove\-Entity (
+\begin{DoxyParamCaption}
+\item[{{\bf Plug\-\_\-\-Entity} $\ast$}]{ent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoc__plugin__interface_a4c274705905b68aac6975e488487243d}
+
+
+Remove a Entity. 
+
+Remove a entity from current drawing. 
+\begin{DoxyParams}{Parameters}
+{\em ent} & handle to pointer of \hyperlink{classPlug__Entity}{Plug\-\_\-\-Entity}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classDocument__Interface_a6613bc65057cb7f7daa18b91cf6850a6}{Document\-\_\-\-Interface}.
+
+\hypertarget{classDoc__plugin__interface_ac4626840b1a927457f36f9645ea31829}{\index{Doc\-\_\-plugin\-\_\-interface@{Doc\-\_\-plugin\-\_\-interface}!set\-Layer@{set\-Layer}}
+\index{set\-Layer@{set\-Layer}!Doc_plugin_interface@{Doc\-\_\-plugin\-\_\-interface}}
+\subsubsection[{set\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}void Doc\-\_\-plugin\-\_\-interface\-::set\-Layer (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoc__plugin__interface_ac4626840b1a927457f36f9645ea31829}
+
+
+Set the current layer in current document. 
+
+Set the current layer in current document, if not exist create it. 
+\begin{DoxyParams}{Parameters}
+{\em name} & a Q\-String with the name of the layer. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classDocument__Interface_a32cb7bf0798d060e3ed06dcfe470303c}{Document\-\_\-\-Interface}.
+
+\hypertarget{classDoc__plugin__interface_ad8d0b33eb79c12bc3ff1bf9731052b4c}{\index{Doc\-\_\-plugin\-\_\-interface@{Doc\-\_\-plugin\-\_\-interface}!update\-View@{update\-View}}
+\index{update\-View@{update\-View}!Doc_plugin_interface@{Doc\-\_\-plugin\-\_\-interface}}
+\subsubsection[{update\-View}]{\setlength{\rightskip}{0pt plus 5cm}void Doc\-\_\-plugin\-\_\-interface\-::update\-View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoc__plugin__interface_ad8d0b33eb79c12bc3ff1bf9731052b4c}
+Force to update the graphic view. 
+
+Implements \hyperlink{classDocument__Interface_a5b446eeb85d5adcf683f7a26647d0af6}{Document\-\_\-\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/main/doc\-\_\-plugin\-\_\-interface.\-h\item 
+librecad/src/main/doc\-\_\-plugin\-\_\-interface.\-cpp\end{DoxyCompactItemize}

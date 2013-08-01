@@ -1,0 +1,120 @@
+\hypertarget{classQG__LineTypeBox}{\section{Q\-G\-\_\-\-Line\-Type\-Box Class Reference}
+\label{classQG__LineTypeBox}\index{Q\-G\-\_\-\-Line\-Type\-Box@{Q\-G\-\_\-\-Line\-Type\-Box}}
+}
+
+
+{\ttfamily \#include $<$qg\-\_\-linetypebox.\-h$>$}
+
+Inheritance diagram for Q\-G\-\_\-\-Line\-Type\-Box\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classQG__LineTypeBox}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classQG__LineTypeBox_aef8dfbaeadcb614df756409118702d98}{void {\bfseries line\-Type\-Changed} (\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95f}{R\-S2\-::\-Line\-Type})}\label{classQG__LineTypeBox_aef8dfbaeadcb614df756409118702d98}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQG__LineTypeBox_a012d67e9fa36faa05d4701f79d5e0253}{Q\-G\-\_\-\-Line\-Type\-Box} (Q\-Widget $\ast$parent=0)
+\item 
+\hyperlink{classQG__LineTypeBox_a8135e7ee1e2172f935c22eb86fd68e79}{Q\-G\-\_\-\-Line\-Type\-Box} (bool show\-By\-Layer, bool show\-Unchanged, Q\-Widget $\ast$parent=0, const char $\ast$name=0)
+\item 
+virtual \hyperlink{classQG__LineTypeBox_a18b83dfe402ead2cd7448b1cb55650a9}{$\sim$\-Q\-G\-\_\-\-Line\-Type\-Box} ()
+\item 
+\hypertarget{classQG__LineTypeBox_a5fe687938cfc62a1e8a1d5dfa6e414f2}{\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95f}{R\-S2\-::\-Line\-Type} {\bfseries get\-Line\-Type} ()}\label{classQG__LineTypeBox_a5fe687938cfc62a1e8a1d5dfa6e414f2}
+
+\item 
+void \hyperlink{classQG__LineTypeBox_ab77b4f9585c4998c931cb0a348206494}{set\-Line\-Type} (\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95f}{R\-S2\-::\-Line\-Type} w)
+\item 
+void \hyperlink{classQG__LineTypeBox_ac3569be5207581a572548b91f3ac5bc6}{set\-Layer\-Line\-Type} (\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95f}{R\-S2\-::\-Line\-Type} w)
+\item 
+void \hyperlink{classQG__LineTypeBox_a82fe832ea6a2b5c2a415aa848162fe2c}{init} (bool show\-By\-Layer, bool show\-Unchanged)
+\item 
+\hypertarget{classQG__LineTypeBox_a8325e8676625eebac74ddd8d50fa48d7}{bool {\bfseries is\-Unchanged} ()}\label{classQG__LineTypeBox_a8325e8676625eebac74ddd8d50fa48d7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A combobox for choosing a line type. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classQG__LineTypeBox_a012d67e9fa36faa05d4701f79d5e0253}{\index{Q\-G\-\_\-\-Line\-Type\-Box@{Q\-G\-\_\-\-Line\-Type\-Box}!Q\-G\-\_\-\-Line\-Type\-Box@{Q\-G\-\_\-\-Line\-Type\-Box}}
+\index{Q\-G\-\_\-\-Line\-Type\-Box@{Q\-G\-\_\-\-Line\-Type\-Box}!QG_LineTypeBox@{Q\-G\-\_\-\-Line\-Type\-Box}}
+\subsubsection[{Q\-G\-\_\-\-Line\-Type\-Box}]{\setlength{\rightskip}{0pt plus 5cm}Q\-G\-\_\-\-Line\-Type\-Box\-::\-Q\-G\-\_\-\-Line\-Type\-Box (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classQG__LineTypeBox_a012d67e9fa36faa05d4701f79d5e0253}
+Default Constructor. You must call init manually if you choose to use this constructor. \hypertarget{classQG__LineTypeBox_a8135e7ee1e2172f935c22eb86fd68e79}{\index{Q\-G\-\_\-\-Line\-Type\-Box@{Q\-G\-\_\-\-Line\-Type\-Box}!Q\-G\-\_\-\-Line\-Type\-Box@{Q\-G\-\_\-\-Line\-Type\-Box}}
+\index{Q\-G\-\_\-\-Line\-Type\-Box@{Q\-G\-\_\-\-Line\-Type\-Box}!QG_LineTypeBox@{Q\-G\-\_\-\-Line\-Type\-Box}}
+\subsubsection[{Q\-G\-\_\-\-Line\-Type\-Box}]{\setlength{\rightskip}{0pt plus 5cm}Q\-G\-\_\-\-Line\-Type\-Box\-::\-Q\-G\-\_\-\-Line\-Type\-Box (
+\begin{DoxyParamCaption}
+\item[{bool}]{show\-By\-Layer, }
+\item[{bool}]{show\-Unchanged, }
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}, }
+\item[{const char $\ast$}]{name = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classQG__LineTypeBox_a8135e7ee1e2172f935c22eb86fd68e79}
+Constructor that calls init and provides a fully functional combobox for choosing linetypes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em show\-By\-Layer} & true\-: Show attribute By\-Layer, By\-Block. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classQG__LineTypeBox_a18b83dfe402ead2cd7448b1cb55650a9}{\index{Q\-G\-\_\-\-Line\-Type\-Box@{Q\-G\-\_\-\-Line\-Type\-Box}!$\sim$\-Q\-G\-\_\-\-Line\-Type\-Box@{$\sim$\-Q\-G\-\_\-\-Line\-Type\-Box}}
+\index{$\sim$\-Q\-G\-\_\-\-Line\-Type\-Box@{$\sim$\-Q\-G\-\_\-\-Line\-Type\-Box}!QG_LineTypeBox@{Q\-G\-\_\-\-Line\-Type\-Box}}
+\subsubsection[{$\sim$\-Q\-G\-\_\-\-Line\-Type\-Box}]{\setlength{\rightskip}{0pt plus 5cm}Q\-G\-\_\-\-Line\-Type\-Box\-::$\sim$\-Q\-G\-\_\-\-Line\-Type\-Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__LineTypeBox_a18b83dfe402ead2cd7448b1cb55650a9}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classQG__LineTypeBox_a82fe832ea6a2b5c2a415aa848162fe2c}{\index{Q\-G\-\_\-\-Line\-Type\-Box@{Q\-G\-\_\-\-Line\-Type\-Box}!init@{init}}
+\index{init@{init}!QG_LineTypeBox@{Q\-G\-\_\-\-Line\-Type\-Box}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Line\-Type\-Box\-::init (
+\begin{DoxyParamCaption}
+\item[{bool}]{show\-By\-Layer, }
+\item[{bool}]{show\-Unchanged}
+\end{DoxyParamCaption}
+)}}\label{classQG__LineTypeBox_a82fe832ea6a2b5c2a415aa848162fe2c}
+Initialisation (called from constructor or manually but only once).
+
+
+\begin{DoxyParams}{Parameters}
+{\em show\-By\-Layer} & true\-: Show attribute By\-Layer, By\-Block. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classQG__LineTypeBox_ac3569be5207581a572548b91f3ac5bc6}{\index{Q\-G\-\_\-\-Line\-Type\-Box@{Q\-G\-\_\-\-Line\-Type\-Box}!set\-Layer\-Line\-Type@{set\-Layer\-Line\-Type}}
+\index{set\-Layer\-Line\-Type@{set\-Layer\-Line\-Type}!QG_LineTypeBox@{Q\-G\-\_\-\-Line\-Type\-Box}}
+\subsubsection[{set\-Layer\-Line\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Line\-Type\-Box\-::set\-Layer\-Line\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Line\-Type}}]{t}
+\end{DoxyParamCaption}
+)}}\label{classQG__LineTypeBox_ac3569be5207581a572548b91f3ac5bc6}
+Sets the pixmap showing the linetype of the \char`\"{}\-By Layer\char`\"{} item.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000017}{Todo}]needs an update, but not used currently \end{DoxyRefDesc}
+\hypertarget{classQG__LineTypeBox_ab77b4f9585c4998c931cb0a348206494}{\index{Q\-G\-\_\-\-Line\-Type\-Box@{Q\-G\-\_\-\-Line\-Type\-Box}!set\-Line\-Type@{set\-Line\-Type}}
+\index{set\-Line\-Type@{set\-Line\-Type}!QG_LineTypeBox@{Q\-G\-\_\-\-Line\-Type\-Box}}
+\subsubsection[{set\-Line\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Line\-Type\-Box\-::set\-Line\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Line\-Type}}]{t}
+\end{DoxyParamCaption}
+)}}\label{classQG__LineTypeBox_ab77b4f9585c4998c931cb0a348206494}
+Sets the currently selected linetype item to the given linetype. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/ui/qg\-\_\-linetypebox.\-h\item 
+generated/librecad/moc/moc\-\_\-qg\-\_\-linetypebox.\-cpp\item 
+librecad/src/ui/qg\-\_\-linetypebox.\-cpp\end{DoxyCompactItemize}

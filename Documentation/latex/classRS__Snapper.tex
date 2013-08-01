@@ -1,0 +1,594 @@
+\hypertarget{classRS__Snapper}{\section{R\-S\-\_\-\-Snapper Class Reference}
+\label{classRS__Snapper}\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-snapper.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Snapper\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classRS__Snapper}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__Snapper_ac275c19d1cefc5a53a773a95d07f01af}{R\-S\-\_\-\-Snapper} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)
+\item 
+virtual \hyperlink{classRS__Snapper_a307aee7fe748dcfcba6936aa525684be}{$\sim$\-R\-S\-\_\-\-Snapper} ()
+\item 
+void \hyperlink{classRS__Snapper_a2f21686760e5b1ae63aa2311fdf39373}{init} ()
+\item 
+\hypertarget{classRS__Snapper_a2f56cecc866af84a048eb78a4b08a8bd}{void {\bfseries finish} ()}\label{classRS__Snapper_a2f56cecc866af84a048eb78a4b08a8bd}
+
+\item 
+\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$ \hyperlink{classRS__Snapper_a37a59d9aebd2f28036edc37902f565d4}{get\-Key\-Entity} ()
+\item 
+void \hyperlink{classRS__Snapper_ac84e3f9dba31b693ed4af172a3cc7bc6}{set\-Snap\-Mode} (const \hyperlink{structRS__SnapMode}{R\-S\-\_\-\-Snap\-Mode} \&snap\-Mode)
+\item 
+\hypertarget{classRS__Snapper_ab896aecc9b25f3eef96e99ac8c7b2553}{\hyperlink{structRS__SnapMode}{R\-S\-\_\-\-Snap\-Mode} $\ast$ {\bfseries get\-Snap\-Mode} (void)}\label{classRS__Snapper_ab896aecc9b25f3eef96e99ac8c7b2553}
+
+\item 
+void \hyperlink{classRS__Snapper_a34d92e55d3853f3f8d1c1deb5b6258fb}{set\-Snap\-Restriction} (\hyperlink{classRS2_aac67b6890a08cff619c0fbef48377bae}{R\-S2\-::\-Snap\-Restriction})
+\item 
+void \hyperlink{classRS__Snapper_a313377258db3afd787a42b41f5954f54}{set\-Snap\-Range} (int r)
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Snapper_a40203d72bb7b1a1e23ea52bc0a55ce06}{snap\-Point} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord, bool set\-Spot=false)
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Snapper_a263c1a6420458b6cf04a124104655929}{snap\-Point} (Q\-Mouse\-Event $\ast$e)
+\item 
+\hypertarget{classRS__Snapper_ade6229d2bccdfe5343b9e2eba0980eef}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries snap\-Free} (Q\-Mouse\-Event $\ast$e)}\label{classRS__Snapper_ade6229d2bccdfe5343b9e2eba0980eef}
+
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Snapper_a76b8755e51fc5a4f69580a745f00eb32}{snap\-Free} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord)
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Snapper_a1d226c6987a15806624238ce31421109}{snap\-Grid} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord)
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Snapper_a1ee916f188e5ad9d9858379e317f2224}{snap\-Endpoint} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord)
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Snapper_af8c91022716636213fca59d59da81c27}{snap\-On\-Entity} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord)
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Snapper_adcec796c8f3c476f15dc6bdfaef40ad4}{snap\-Center} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord)
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Snapper_a92164c13b467f4544be9184bd15643c8}{snap\-Middle} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord)
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Snapper_af5005c95c5c22c70240985f3eefd0d75}{snap\-Dist} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord)
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Snapper_a29cc6def6a25840e14a2a685c410239a}{snap\-Intersection} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord)
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Snapper_a9e43aa336439b308eaaa227beba79bd8}{restrict\-Orthogonal} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord)
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Snapper_a1094a5f20fe5cbe19d6484c5b7cf44de}{restrict\-Horizontal} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord)
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Snapper_a5d7af8520cb7b6e82995d4c35fe6ca25}{restrict\-Vertical} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord)
+\item 
+\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$ \hyperlink{classRS__Snapper_ac03c56bd45dfadc10260cf361004ee14}{catch\-Entity} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&pos, \hyperlink{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20}{R\-S2\-::\-Resolve\-Level} level=\hyperlink{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20aecb7396f39bc313ad8903c8a5fac5a50}{R\-S2\-::\-Resolve\-None})
+\item 
+\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$ \hyperlink{classRS__Snapper_a2d3d60d49a8e697e28b688a5074deac6}{catch\-Entity} (Q\-Mouse\-Event $\ast$e, \hyperlink{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20}{R\-S2\-::\-Resolve\-Level} level=\hyperlink{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20aecb7396f39bc313ad8903c8a5fac5a50}{R\-S2\-::\-Resolve\-None})
+\item 
+\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$ \hyperlink{classRS__Snapper_acf65047858a3a5f54d3bc8acb543f3ff}{catch\-Entity} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&pos, \hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6a}{R\-S2\-::\-Entity\-Type} en\-Type, \hyperlink{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20}{R\-S2\-::\-Resolve\-Level} level=\hyperlink{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20aecb7396f39bc313ad8903c8a5fac5a50}{R\-S2\-::\-Resolve\-None})
+\item 
+\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$ \hyperlink{classRS__Snapper_a1e867d5e0eaeea329be09c90a41e3c27}{catch\-Entity} (Q\-Mouse\-Event $\ast$e, \hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6a}{R\-S2\-::\-Entity\-Type} en\-Type, \hyperlink{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20}{R\-S2\-::\-Resolve\-Level} level=\hyperlink{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20aecb7396f39bc313ad8903c8a5fac5a50}{R\-S2\-::\-Resolve\-None})
+\item 
+\hypertarget{classRS__Snapper_a3e985e5dd02af0425b8dd91c5a251206}{\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$ {\bfseries catch\-Entity} (Q\-Mouse\-Event $\ast$e, const Q\-Vector$<$ \hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6a}{R\-S2\-::\-Entity\-Type} $>$ \&en\-Type\-List, \hyperlink{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20}{R\-S2\-::\-Resolve\-Level} level=\hyperlink{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20aecb7396f39bc313ad8903c8a5fac5a50}{R\-S2\-::\-Resolve\-None})}\label{classRS__Snapper_a3e985e5dd02af0425b8dd91c5a251206}
+
+\item 
+virtual void \hyperlink{classRS__Snapper_a81b56ba8c01f0ede10850bd4adc7e2df}{suspend} ()
+\item 
+virtual void \hyperlink{classRS__Snapper_a9c30a8b3f98d2850f1d6f54708fc2d21}{resume} ()
+\item 
+virtual void \hyperlink{classRS__Snapper_a0601c50cbd651fbb5a954247d19ee565}{hide\-Options} ()
+\item 
+virtual void \hyperlink{classRS__Snapper_a05f5b1802fd038ef012331607fc94f62}{show\-Options} ()
+\item 
+void \hyperlink{classRS__Snapper_a8974a8800a1837e2188d80c862e0ee1d}{draw\-Snapper} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned int \hyperlink{classRS__Snapper_a4b9ba65e135b58ce3cfd55b2f8057991}{snap\-Mode\-To\-Int} (const \hyperlink{structRS__SnapMode}{R\-S\-\_\-\-Snap\-Mode} \&s)
+\item 
+static \hyperlink{structRS__SnapMode}{R\-S\-\_\-\-Snap\-Mode} \hyperlink{classRS__Snapper_aa57b685ebc46a8a875486f3ac4e44f84}{int\-To\-Snap\-Mode} (unsigned int)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classRS__Snapper_a061036f697779d99cc0dcaf2ef9fbe3b}{delete\-Snapper} ()
+\item 
+\hypertarget{classRS__Snapper_a33d3d87790c96b83a16b420781b9315b}{double {\bfseries get\-Snap\-Range} () const }\label{classRS__Snapper_a33d3d87790c96b83a16b420781b9315b}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__Snapper_afe9a1c1536835a7843e442b9310c69b9}{\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} $\ast$ {\bfseries container}}\label{classRS__Snapper_afe9a1c1536835a7843e442b9310c69b9}
+
+\item 
+\hypertarget{classRS__Snapper_a44e18ea0dc16f32b6155dc9635d1cfb1}{\hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} $\ast$ {\bfseries graphic\-View}}\label{classRS__Snapper_a44e18ea0dc16f32b6155dc9635d1cfb1}
+
+\item 
+\hypertarget{classRS__Snapper_a641651ad5f1cb0060985c377273b3341}{\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$ {\bfseries key\-Entity}}\label{classRS__Snapper_a641651ad5f1cb0060985c377273b3341}
+
+\item 
+\hypertarget{classRS__Snapper_abf3b197c953b0bb1ec93bd0131301480}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries snap\-Coord}}\label{classRS__Snapper_abf3b197c953b0bb1ec93bd0131301480}
+
+\item 
+\hypertarget{classRS__Snapper_a442a6a7a2d79f790a3c07a394565d95b}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries snap\-Spot}}\label{classRS__Snapper_a442a6a7a2d79f790a3c07a394565d95b}
+
+\item 
+\hypertarget{classRS__Snapper_a8b3d2c4dc37f244e0185f48ed2d5d71c}{\hyperlink{structRS__SnapMode}{R\-S\-\_\-\-Snap\-Mode} {\bfseries snap\-Mode}}\label{classRS__Snapper_a8b3d2c4dc37f244e0185f48ed2d5d71c}
+
+\item 
+double \hyperlink{classRS__Snapper_a4eb01ef2a485e653319522fb96185147}{distance}
+\item 
+int \hyperlink{classRS__Snapper_aebc3dc03d9e59ae8a04eeee9c2709827}{middle\-Points}
+\item 
+int \hyperlink{classRS__Snapper_a5ed0cc04b5bb18a06bdbbd5900f22cce}{snap\-Range}
+\item 
+bool \hyperlink{classRS__Snapper_ac0ecee6e6a8357e359c2db6b41227bc9}{show\-Crosshairs}
+\item 
+\hypertarget{classRS__Snapper_a7b36757e36408bc7d46b1f46a70a32f6}{bool {\bfseries finished}}\label{classRS__Snapper_a7b36757e36408bc7d46b1f46a70a32f6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used for snapping functions in a graphic view. Actions are usually derrived from this base class if they need to catch entities or snap to coordinates. Use the methods to retrieve a graphic coordinate from a mouse coordinate.
+
+Possible snapping functions are described in \hyperlink{structRS__SnapMode}{R\-S\-\_\-\-Snap\-Mode}.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__Snapper_ac275c19d1cefc5a53a773a95d07f01af}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}}
+\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{R\-S\-\_\-\-Snapper}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Snapper\-::\-R\-S\-\_\-\-Snapper (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} \&}]{graphic\-View}
+\end{DoxyParamCaption}
+)}}\label{classRS__Snapper_ac275c19d1cefc5a53a773a95d07f01af}
+Constructor. \hypertarget{classRS__Snapper_a307aee7fe748dcfcba6936aa525684be}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!$\sim$\-R\-S\-\_\-\-Snapper@{$\sim$\-R\-S\-\_\-\-Snapper}}
+\index{$\sim$\-R\-S\-\_\-\-Snapper@{$\sim$\-R\-S\-\_\-\-Snapper}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{$\sim$\-R\-S\-\_\-\-Snapper}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Snapper\-::$\sim$\-R\-S\-\_\-\-Snapper (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Snapper_a307aee7fe748dcfcba6936aa525684be}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Snapper_ac03c56bd45dfadc10260cf361004ee14}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!catch\-Entity@{catch\-Entity}}
+\index{catch\-Entity@{catch\-Entity}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{catch\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Entity} $\ast$ R\-S\-\_\-\-Snapper\-::catch\-Entity (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{pos, }
+\item[{{\bf R\-S2\-::\-Resolve\-Level}}]{level = {\ttfamily {\bf R\-S2\-::\-Resolve\-None}}}
+\end{DoxyParamCaption}
+)}}\label{classRS__Snapper_ac03c56bd45dfadc10260cf361004ee14}
+Catches an entity which is close to the given position 'pos'.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & A graphic coordinate. \\
+\hline
+{\em level} & The level of resolving for iterating through the entity container \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the entity or N\-U\-L\-L. 
+\end{DoxyReturn}
+\hypertarget{classRS__Snapper_a2d3d60d49a8e697e28b688a5074deac6}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!catch\-Entity@{catch\-Entity}}
+\index{catch\-Entity@{catch\-Entity}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{catch\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Entity} $\ast$ R\-S\-\_\-\-Snapper\-::catch\-Entity (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{e, }
+\item[{{\bf R\-S2\-::\-Resolve\-Level}}]{level = {\ttfamily {\bf R\-S2\-::\-Resolve\-None}}}
+\end{DoxyParamCaption}
+)}}\label{classRS__Snapper_a2d3d60d49a8e697e28b688a5074deac6}
+Catches an entity which is close to the mouse cursor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & A mouse event. \\
+\hline
+{\em level} & The level of resolving for iterating through the entity container \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the entity or N\-U\-L\-L. 
+\end{DoxyReturn}
+\hypertarget{classRS__Snapper_acf65047858a3a5f54d3bc8acb543f3ff}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!catch\-Entity@{catch\-Entity}}
+\index{catch\-Entity@{catch\-Entity}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{catch\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Entity} $\ast$ R\-S\-\_\-\-Snapper\-::catch\-Entity (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{pos, }
+\item[{{\bf R\-S2\-::\-Entity\-Type}}]{en\-Type, }
+\item[{{\bf R\-S2\-::\-Resolve\-Level}}]{level = {\ttfamily {\bf R\-S2\-::\-Resolve\-None}}}
+\end{DoxyParamCaption}
+)}}\label{classRS__Snapper_acf65047858a3a5f54d3bc8acb543f3ff}
+Catches an entity which is close to the given position 'pos'.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & A graphic coordinate. \\
+\hline
+{\em level} & The level of resolving for iterating through the entity container , only search for a particular entity type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the entity or N\-U\-L\-L. 
+\end{DoxyReturn}
+\hypertarget{classRS__Snapper_a1e867d5e0eaeea329be09c90a41e3c27}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!catch\-Entity@{catch\-Entity}}
+\index{catch\-Entity@{catch\-Entity}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{catch\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Entity} $\ast$ R\-S\-\_\-\-Snapper\-::catch\-Entity (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{e, }
+\item[{{\bf R\-S2\-::\-Entity\-Type}}]{en\-Type, }
+\item[{{\bf R\-S2\-::\-Resolve\-Level}}]{level = {\ttfamily {\bf R\-S2\-::\-Resolve\-None}}}
+\end{DoxyParamCaption}
+)}}\label{classRS__Snapper_a1e867d5e0eaeea329be09c90a41e3c27}
+Catches an entity which is close to the mouse cursor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & A mouse event. \\
+\hline
+{\em level} & The level of resolving for iterating through the entity container , only search for a particular entity type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the entity or N\-U\-L\-L. 
+\end{DoxyReturn}
+\hypertarget{classRS__Snapper_a061036f697779d99cc0dcaf2ef9fbe3b}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!delete\-Snapper@{delete\-Snapper}}
+\index{delete\-Snapper@{delete\-Snapper}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{delete\-Snapper}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Snapper\-::delete\-Snapper (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__Snapper_a061036f697779d99cc0dcaf2ef9fbe3b}
+Deletes the snapper from the screen. \hypertarget{classRS__Snapper_a8974a8800a1837e2188d80c862e0ee1d}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!draw\-Snapper@{draw\-Snapper}}
+\index{draw\-Snapper@{draw\-Snapper}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{draw\-Snapper}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Snapper\-::draw\-Snapper (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Snapper_a8974a8800a1837e2188d80c862e0ee1d}
+We could properly speed this up by calling the draw function of this snapper within the paint event this will avoid creating/deletion of the lines \hypertarget{classRS__Snapper_a37a59d9aebd2f28036edc37902f565d4}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!get\-Key\-Entity@{get\-Key\-Entity}}
+\index{get\-Key\-Entity@{get\-Key\-Entity}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{get\-Key\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Entity}$\ast$ R\-S\-\_\-\-Snapper\-::get\-Key\-Entity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Snapper_a37a59d9aebd2f28036edc37902f565d4}
+\begin{DoxyReturn}{Returns}
+Pointer to the entity which was the key entity for the last successful snapping action. If the snap mode is \char`\"{}end point\char`\"{} the key entity is the entity whos end point was caught. If the snap mode didn't require an entity (e.\-g. free, grid) this method will return N\-U\-L\-L. 
+\end{DoxyReturn}
+\hypertarget{classRS__Snapper_a0601c50cbd651fbb5a954247d19ee565}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!hide\-Options@{hide\-Options}}
+\index{hide\-Options@{hide\-Options}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{hide\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Snapper\-::hide\-Options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Snapper_a0601c50cbd651fbb5a954247d19ee565}
+Hides the snapper options. Default implementation does nothing. 
+
+Reimplemented in \hyperlink{classRS__ActionDrawPolyline_a0c2a10cb1e641f23f8678680874c95d8}{R\-S\-\_\-\-Action\-Draw\-Polyline}, \hyperlink{classRS__ActionInterface_adca8d2f958d687e08f6d4477ef0fa43a}{R\-S\-\_\-\-Action\-Interface}, \hyperlink{classRS__ActionDimLinear_aaa11df2e4885e08e3e320815e2591a2d}{R\-S\-\_\-\-Action\-Dim\-Linear}, \hyperlink{classRS__ActionDrawImage_a96c34937f019415189bd55c7332089e2}{R\-S\-\_\-\-Action\-Draw\-Image}, \hyperlink{classRS__ActionLibraryInsert_a7eef739a490874d6997338a5bed7f938}{R\-S\-\_\-\-Action\-Library\-Insert}, \hyperlink{classRS__ActionBlocksInsert_a42e9044b5601395223cd93467133b243}{R\-S\-\_\-\-Action\-Blocks\-Insert}, \hyperlink{classRS__ActionDrawLineAngle_a13ca8c59398e43aaf03563052d830860}{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}, \hyperlink{classRS__ActionDrawArc_a92c8af13459b744477458b842f8ab331}{R\-S\-\_\-\-Action\-Draw\-Arc}, \hyperlink{classRS__ActionDrawText_a480142e9a2d1b6ff04e2f7f1f47b9076}{R\-S\-\_\-\-Action\-Draw\-Text}, \hyperlink{classRS__ActionDimLeader_ae905f9b059be54a8f45adae1ac45cf05}{R\-S\-\_\-\-Action\-Dim\-Leader}, \hyperlink{classRS__ActionDrawMText_a82ac44cf5a61a99ea59426bd5c3691d3}{R\-S\-\_\-\-Action\-Draw\-M\-Text}, \hyperlink{classRS__ActionDimAligned_a2f806401a7f3a61cf9127563f26635df}{R\-S\-\_\-\-Action\-Dim\-Aligned}, \hyperlink{classRS__ActionDrawArcTangential_afd569179499138cfb4a54fd63c93b837}{R\-S\-\_\-\-Action\-Draw\-Arc\-Tangential}, \hyperlink{classRS__ActionDrawCircleTan2_ac74d79fa7a49549a54b3056d44e1b991}{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan2}, \hyperlink{classRS__ActionModifyMoveRotate_a0e7c92ddce8a260d65b8e048189683dc}{R\-S\-\_\-\-Action\-Modify\-Move\-Rotate}, \hyperlink{classRS__ActionDrawCircle_aa15d6079f59c50d149e07197df939b8d}{R\-S\-\_\-\-Action\-Draw\-Circle}, \hyperlink{classRS__ActionDrawCircleCR_acfbb1d0a411a070c33d8ff6c51363b86}{R\-S\-\_\-\-Action\-Draw\-Circle\-C\-R}, \hyperlink{classRS__ActionDrawLine_a85f343abdac027db4526811312732d2b}{R\-S\-\_\-\-Action\-Draw\-Line}, \hyperlink{classRS__ActionDrawLineRelAngle_a03860d34a18e8081ad07509ab19a277f}{R\-S\-\_\-\-Action\-Draw\-Line\-Rel\-Angle}, \hyperlink{classRS__ActionDrawSpline_ae10723e6e8e1fad1fe76f828f2fc7344}{R\-S\-\_\-\-Action\-Draw\-Spline}, \hyperlink{classRS__ActionModifyBevel_a13fa7d1f146ea314db804112f32a0edf}{R\-S\-\_\-\-Action\-Modify\-Bevel}, \hyperlink{classRS__ActionModifyOffset_a7d33727c1f90dff0d73a23d2c8bb7edd}{R\-S\-\_\-\-Action\-Modify\-Offset}, \hyperlink{classRS__ActionPrintPreview_a4142b19097897d53a020d7a8c04d750a}{R\-S\-\_\-\-Action\-Print\-Preview}, \hyperlink{classRS__ActionModifyRound_a35a85c6cbb9498dd4c1736fc3647e0d6}{R\-S\-\_\-\-Action\-Modify\-Round}, \hyperlink{classRS__ActionDimAngular_a8e3211cbe99d3ef0d84c3b88be9fe237}{R\-S\-\_\-\-Action\-Dim\-Angular}, \hyperlink{classRS__ActionDimDiametric_a2bfc4d3a20dc6b716fb88a3302a987c7}{R\-S\-\_\-\-Action\-Dim\-Diametric}, \hyperlink{classRS__ActionDimRadial_a8349cd1e86fb30e56ba89cb09a140537}{R\-S\-\_\-\-Action\-Dim\-Radial}, \hyperlink{classRS__ActionModifyTrimAmount_ae8fa10852fd5d06e747fc63884020e6c}{R\-S\-\_\-\-Action\-Modify\-Trim\-Amount}, \hyperlink{classRS__ActionDrawLineParallel_aad898d9734120d3fe57740b4956eff66}{R\-S\-\_\-\-Action\-Draw\-Line\-Parallel}, \hyperlink{classRS__ActionDrawLineParallelThrough_a833ad79ee2d0526c65267e2c0a5f98f5}{R\-S\-\_\-\-Action\-Draw\-Line\-Parallel\-Through}, \hyperlink{classRS__ActionDrawLinePolygonCenCor_a2c183ff33ac4d22df1c28dc0e84014e7}{R\-S\-\_\-\-Action\-Draw\-Line\-Polygon\-Cen\-Cor}, \hyperlink{classRS__ActionDrawLinePolygonCorCor_a9d4d9aff3728fe73b09d418e3d051a89}{R\-S\-\_\-\-Action\-Draw\-Line\-Polygon\-Cor\-Cor}, \hyperlink{classRS__ActionPolylineEquidistant_a316e403050ae14b4ad1fe01bf0b660d0}{R\-S\-\_\-\-Action\-Polyline\-Equidistant}, \hyperlink{classRS__ActionDrawLineBisector_a9c9b5dfcfd5a1f90d3b9e175614bb853}{R\-S\-\_\-\-Action\-Draw\-Line\-Bisector}, and \hyperlink{classRS__ActionDimension_a5d87779fd13b576ac7b9cf74151c2fb6}{R\-S\-\_\-\-Action\-Dimension}.
+
+\hypertarget{classRS__Snapper_a2f21686760e5b1ae63aa2311fdf39373}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!init@{init}}
+\index{init@{init}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Snapper\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Snapper_a2f21686760e5b1ae63aa2311fdf39373}
+Initialize (called by all constructors) \hypertarget{classRS__Snapper_aa57b685ebc46a8a875486f3ac4e44f84}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!int\-To\-Snap\-Mode@{int\-To\-Snap\-Mode}}
+\index{int\-To\-Snap\-Mode@{int\-To\-Snap\-Mode}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{int\-To\-Snap\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Snap\-Mode} R\-S\-\_\-\-Snapper\-::int\-To\-Snap\-Mode (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{ret}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Snapper_aa57b685ebc46a8a875486f3ac4e44f84}
+integer flag to snap\-Mode \hypertarget{classRS__Snapper_a1094a5f20fe5cbe19d6484c5b7cf44de}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!restrict\-Horizontal@{restrict\-Horizontal}}
+\index{restrict\-Horizontal@{restrict\-Horizontal}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{restrict\-Horizontal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Snapper\-::restrict\-Horizontal (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord}
+\end{DoxyParamCaption}
+)}}\label{classRS__Snapper_a1094a5f20fe5cbe19d6484c5b7cf44de}
+'Corrects' the given coordinates to 0, 180 degrees relative to the current relative zero point.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & The uncorrected coordinates. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corrected coordinates. 
+\end{DoxyReturn}
+\hypertarget{classRS__Snapper_a9e43aa336439b308eaaa227beba79bd8}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!restrict\-Orthogonal@{restrict\-Orthogonal}}
+\index{restrict\-Orthogonal@{restrict\-Orthogonal}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{restrict\-Orthogonal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Snapper\-::restrict\-Orthogonal (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord}
+\end{DoxyParamCaption}
+)}}\label{classRS__Snapper_a9e43aa336439b308eaaa227beba79bd8}
+'Corrects' the given coordinates to 0, 90, 180, 270 degrees relative to the current relative zero point.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & The uncorrected coordinates. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corrected coordinates. 
+\end{DoxyReturn}
+\hypertarget{classRS__Snapper_a5d7af8520cb7b6e82995d4c35fe6ca25}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!restrict\-Vertical@{restrict\-Vertical}}
+\index{restrict\-Vertical@{restrict\-Vertical}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{restrict\-Vertical}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Snapper\-::restrict\-Vertical (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord}
+\end{DoxyParamCaption}
+)}}\label{classRS__Snapper_a5d7af8520cb7b6e82995d4c35fe6ca25}
+'Corrects' the given coordinates to 90, 270 degrees relative to the current relative zero point.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & The uncorrected coordinates. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corrected coordinates. 
+\end{DoxyReturn}
+\hypertarget{classRS__Snapper_a9c30a8b3f98d2850f1d6f54708fc2d21}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!resume@{resume}}
+\index{resume@{resume}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{resume}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Snapper\-::resume (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__Snapper_a9c30a8b3f98d2850f1d6f54708fc2d21}
+Resumes this snapper after it has been suspended. 
+
+Reimplemented in \hyperlink{classRS__ActionInterface_ae82ff598b25d54f624325553f8b680a7}{R\-S\-\_\-\-Action\-Interface}, \hyperlink{classRS__ActionPrintPreview_ae628c6a81a3d2929bbf736790fb1ecb4}{R\-S\-\_\-\-Action\-Print\-Preview}, \hyperlink{classRS__ActionSelect_af856db4089ce4a9690fce96910317621}{R\-S\-\_\-\-Action\-Select}, and \hyperlink{classRS__PreviewActionInterface_a796e15a324f4334437e6b17db55e6c77}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__Snapper_ac84e3f9dba31b693ed4af172a3cc7bc6}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!set\-Snap\-Mode@{set\-Snap\-Mode}}
+\index{set\-Snap\-Mode@{set\-Snap\-Mode}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{set\-Snap\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Snapper\-::set\-Snap\-Mode (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Snap\-Mode} \&}]{snap\-Mode}
+\end{DoxyParamCaption}
+)}}\label{classRS__Snapper_ac84e3f9dba31b693ed4af172a3cc7bc6}
+Sets a new snap mode. \hypertarget{classRS__Snapper_a313377258db3afd787a42b41f5954f54}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!set\-Snap\-Range@{set\-Snap\-Range}}
+\index{set\-Snap\-Range@{set\-Snap\-Range}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{set\-Snap\-Range}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Snapper\-::set\-Snap\-Range (
+\begin{DoxyParamCaption}
+\item[{int}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Snapper_a313377258db3afd787a42b41f5954f54}
+Sets the snap range in pixels for \hyperlink{classRS__Snapper_ac03c56bd45dfadc10260cf361004ee14}{catch\-Entity()}.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classRS__Snapper_ac03c56bd45dfadc10260cf361004ee14}{catch\-Entity()} 
+\end{DoxySeeAlso}
+\hypertarget{classRS__Snapper_a34d92e55d3853f3f8d1c1deb5b6258fb}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!set\-Snap\-Restriction@{set\-Snap\-Restriction}}
+\index{set\-Snap\-Restriction@{set\-Snap\-Restriction}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{set\-Snap\-Restriction}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Snapper\-::set\-Snap\-Restriction (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Snap\-Restriction}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Snapper_a34d92e55d3853f3f8d1c1deb5b6258fb}
+Sets a new snap restriction. \hypertarget{classRS__Snapper_a05f5b1802fd038ef012331607fc94f62}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!show\-Options@{show\-Options}}
+\index{show\-Options@{show\-Options}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{show\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Snapper\-::show\-Options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Snapper_a05f5b1802fd038ef012331607fc94f62}
+Shows the snapper options. Default implementation does nothing. 
+
+Reimplemented in \hyperlink{classRS__ActionInterface_add4bb135e4be51bd0dc169e0e7b9e695}{R\-S\-\_\-\-Action\-Interface}, \hyperlink{classRS__ActionDimLinear_a8f67a1d2810b51e966bc1ea51c23b639}{R\-S\-\_\-\-Action\-Dim\-Linear}, \hyperlink{classRS__ActionDrawPolyline_a52dd80d2285b91981822fc7bb599f911}{R\-S\-\_\-\-Action\-Draw\-Polyline}, \hyperlink{classRS__ActionDrawImage_a618381c10c600ceca48fb87c5aa412a8}{R\-S\-\_\-\-Action\-Draw\-Image}, \hyperlink{classRS__ActionLibraryInsert_acd529fad2ebe0116750f6cedf7833bc0}{R\-S\-\_\-\-Action\-Library\-Insert}, \hyperlink{classRS__ActionBlocksInsert_a0574cac7910a4f377de60a3b672cc84c}{R\-S\-\_\-\-Action\-Blocks\-Insert}, \hyperlink{classRS__ActionDrawLineAngle_a8c93a374583dd7c49600bb40b1d65ec4}{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}, \hyperlink{classRS__ActionDrawArc_ae7f5d1d5ce4faead0d9d8466041c5cd7}{R\-S\-\_\-\-Action\-Draw\-Arc}, \hyperlink{classRS__ActionDrawText_a6c66cbf305d037fd50e410c8f3d49b79}{R\-S\-\_\-\-Action\-Draw\-Text}, \hyperlink{classRS__ActionDrawMText_a61c5075973a889b546526c59f0e65651}{R\-S\-\_\-\-Action\-Draw\-M\-Text}, \hyperlink{classRS__ActionDimAligned_adc53e3cabf298d21b273c88d2204fd74}{R\-S\-\_\-\-Action\-Dim\-Aligned}, \hyperlink{classRS__ActionDrawArcTangential_a4788e952e5a383cf93a999d80bd8e1f3}{R\-S\-\_\-\-Action\-Draw\-Arc\-Tangential}, \hyperlink{classRS__ActionModifyMoveRotate_abfc0797b916914a83c18897eb13816a9}{R\-S\-\_\-\-Action\-Modify\-Move\-Rotate}, \hyperlink{classRS__ActionDimLeader_a33cfe2b1dd78f2bfcbc53c8ba9450306}{R\-S\-\_\-\-Action\-Dim\-Leader}, \hyperlink{classRS__ActionDrawCircle_ab1bea710de7d0a49068c7fafc015062b}{R\-S\-\_\-\-Action\-Draw\-Circle}, \hyperlink{classRS__ActionDrawCircleCR_a42432b8ee30c3785e18682c5b2b08bcf}{R\-S\-\_\-\-Action\-Draw\-Circle\-C\-R}, \hyperlink{classRS__ActionDrawLineRelAngle_a657dcce7548b0a76ab70f4bb8c0d39b0}{R\-S\-\_\-\-Action\-Draw\-Line\-Rel\-Angle}, \hyperlink{classRS__ActionDrawCircleTan2_add5a44d8b9f532dfda715a37b5a0a1f1}{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan2}, \hyperlink{classRS__ActionModifyBevel_a887d9143d78e84f9065c214497577ed4}{R\-S\-\_\-\-Action\-Modify\-Bevel}, \hyperlink{classRS__ActionModifyOffset_a9062e2fe23ff3ca70f6f5dcd629753c8}{R\-S\-\_\-\-Action\-Modify\-Offset}, \hyperlink{classRS__ActionDrawLine_ac467ba50bf704bcaa25fefb54bd29f65}{R\-S\-\_\-\-Action\-Draw\-Line}, \hyperlink{classRS__ActionDrawSpline_a66eb3d20128aed029534722dacfef71d}{R\-S\-\_\-\-Action\-Draw\-Spline}, \hyperlink{classRS__ActionModifyRound_a8083b45e324b06d410514b9658f2db6f}{R\-S\-\_\-\-Action\-Modify\-Round}, \hyperlink{classRS__ActionDimAngular_a23f1129a2faae789052e504deaa804e3}{R\-S\-\_\-\-Action\-Dim\-Angular}, \hyperlink{classRS__ActionDimDiametric_a4ab26e852ee05cfef60171ae255cfb2a}{R\-S\-\_\-\-Action\-Dim\-Diametric}, \hyperlink{classRS__ActionDimRadial_a6c48c5e71f1765d6c1391339f3115ebe}{R\-S\-\_\-\-Action\-Dim\-Radial}, \hyperlink{classRS__ActionPrintPreview_a38327a232b06c134e042f977758d8779}{R\-S\-\_\-\-Action\-Print\-Preview}, \hyperlink{classRS__ActionModifyTrimAmount_a7167281fa299ed74d5276970c150af69}{R\-S\-\_\-\-Action\-Modify\-Trim\-Amount}, \hyperlink{classRS__ActionDrawLineParallel_ab8003b3639948033eb5ee04077478a94}{R\-S\-\_\-\-Action\-Draw\-Line\-Parallel}, \hyperlink{classRS__ActionDrawLineParallelThrough_aee1319be8e0a4ec69efcf53e49bbff2c}{R\-S\-\_\-\-Action\-Draw\-Line\-Parallel\-Through}, \hyperlink{classRS__ActionDrawLinePolygonCenCor_a5a69b3de9501647372e02bf9ac425d0d}{R\-S\-\_\-\-Action\-Draw\-Line\-Polygon\-Cen\-Cor}, \hyperlink{classRS__ActionDrawLinePolygonCorCor_aa1b94014dce486f163a6fecac7bb2f73}{R\-S\-\_\-\-Action\-Draw\-Line\-Polygon\-Cor\-Cor}, \hyperlink{classRS__ActionDrawLineBisector_a9909d450e5d99c0d5b8aed1d8d41e332}{R\-S\-\_\-\-Action\-Draw\-Line\-Bisector}, \hyperlink{classRS__ActionPolylineEquidistant_ab6f008df26c544dcf0e9fff7c3e41eec}{R\-S\-\_\-\-Action\-Polyline\-Equidistant}, and \hyperlink{classRS__ActionDimension_a994e9ee7793e6043c13e8278231f50b3}{R\-S\-\_\-\-Action\-Dimension}.
+
+\hypertarget{classRS__Snapper_adcec796c8f3c476f15dc6bdfaef40ad4}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!snap\-Center@{snap\-Center}}
+\index{snap\-Center@{snap\-Center}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{snap\-Center}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Snapper\-::snap\-Center (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord}
+\end{DoxyParamCaption}
+)}}\label{classRS__Snapper_adcec796c8f3c476f15dc6bdfaef40ad4}
+Snaps to the closest center.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & The mouse coordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coordinates of the point or an invalid vector. 
+\end{DoxyReturn}
+\hypertarget{classRS__Snapper_af5005c95c5c22c70240985f3eefd0d75}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!snap\-Dist@{snap\-Dist}}
+\index{snap\-Dist@{snap\-Dist}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{snap\-Dist}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Snapper\-::snap\-Dist (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord}
+\end{DoxyParamCaption}
+)}}\label{classRS__Snapper_af5005c95c5c22c70240985f3eefd0d75}
+Snaps to the closest point with a given distance to the endpoint.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & The mouse coordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coordinates of the point or an invalid vector. 
+\end{DoxyReturn}
+\hypertarget{classRS__Snapper_a1ee916f188e5ad9d9858379e317f2224}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!snap\-Endpoint@{snap\-Endpoint}}
+\index{snap\-Endpoint@{snap\-Endpoint}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{snap\-Endpoint}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Snapper\-::snap\-Endpoint (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord}
+\end{DoxyParamCaption}
+)}}\label{classRS__Snapper_a1ee916f188e5ad9d9858379e317f2224}
+Snaps to the closest endpoint.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & The mouse coordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coordinates of the point or an invalid vector. 
+\end{DoxyReturn}
+\hypertarget{classRS__Snapper_a76b8755e51fc5a4f69580a745f00eb32}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!snap\-Free@{snap\-Free}}
+\index{snap\-Free@{snap\-Free}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{snap\-Free}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Snapper\-::snap\-Free (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord}
+\end{DoxyParamCaption}
+)}}\label{classRS__Snapper_a76b8755e51fc5a4f69580a745f00eb32}
+Snaps to a free coordinate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & The mouse coordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coordinates of the point or an invalid vector. 
+\end{DoxyReturn}
+\hypertarget{classRS__Snapper_a1d226c6987a15806624238ce31421109}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!snap\-Grid@{snap\-Grid}}
+\index{snap\-Grid@{snap\-Grid}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{snap\-Grid}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Snapper\-::snap\-Grid (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord}
+\end{DoxyParamCaption}
+)}}\label{classRS__Snapper_a1d226c6987a15806624238ce31421109}
+Snaps to a grid point.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & The mouse coordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coordinates of the point or an invalid vector. 
+\end{DoxyReturn}
+\hypertarget{classRS__Snapper_a29cc6def6a25840e14a2a685c410239a}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!snap\-Intersection@{snap\-Intersection}}
+\index{snap\-Intersection@{snap\-Intersection}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{snap\-Intersection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Snapper\-::snap\-Intersection (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord}
+\end{DoxyParamCaption}
+)}}\label{classRS__Snapper_a29cc6def6a25840e14a2a685c410239a}
+Snaps to the closest intersection point.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & The mouse coordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coordinates of the point or an invalid vector. 
+\end{DoxyReturn}
+\hypertarget{classRS__Snapper_a92164c13b467f4544be9184bd15643c8}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!snap\-Middle@{snap\-Middle}}
+\index{snap\-Middle@{snap\-Middle}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{snap\-Middle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Snapper\-::snap\-Middle (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord}
+\end{DoxyParamCaption}
+)}}\label{classRS__Snapper_a92164c13b467f4544be9184bd15643c8}
+Snaps to the closest middle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & The mouse coordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coordinates of the point or an invalid vector. 
+\end{DoxyReturn}
+\hypertarget{classRS__Snapper_a4b9ba65e135b58ce3cfd55b2f8057991}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!snap\-Mode\-To\-Int@{snap\-Mode\-To\-Int}}
+\index{snap\-Mode\-To\-Int@{snap\-Mode\-To\-Int}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{snap\-Mode\-To\-Int}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int R\-S\-\_\-\-Snapper\-::snap\-Mode\-To\-Int (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Snap\-Mode} \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Snapper_a4b9ba65e135b58ce3cfd55b2f8057991}
+snap mode to a flag integer \hypertarget{classRS__Snapper_af8c91022716636213fca59d59da81c27}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!snap\-On\-Entity@{snap\-On\-Entity}}
+\index{snap\-On\-Entity@{snap\-On\-Entity}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{snap\-On\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Snapper\-::snap\-On\-Entity (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord}
+\end{DoxyParamCaption}
+)}}\label{classRS__Snapper_af8c91022716636213fca59d59da81c27}
+Snaps to a point on an entity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & The mouse coordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coordinates of the point or an invalid vector. 
+\end{DoxyReturn}
+\hypertarget{classRS__Snapper_a40203d72bb7b1a1e23ea52bc0a55ce06}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!snap\-Point@{snap\-Point}}
+\index{snap\-Point@{snap\-Point}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{snap\-Point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Snapper\-::snap\-Point (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord, }
+\item[{bool}]{set\-Spot = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classRS__Snapper_a40203d72bb7b1a1e23ea52bc0a55ce06}
+manually set snap\-Point \hypertarget{classRS__Snapper_a263c1a6420458b6cf04a124104655929}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!snap\-Point@{snap\-Point}}
+\index{snap\-Point@{snap\-Point}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{snap\-Point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Snapper\-::snap\-Point (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{classRS__Snapper_a263c1a6420458b6cf04a124104655929}
+Snap to a coordinate in the drawing using the current snap mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & A mouse event. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coordinates of the point or an invalid vector. 
+\end{DoxyReturn}
+\hypertarget{classRS__Snapper_a81b56ba8c01f0ede10850bd4adc7e2df}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!suspend@{suspend}}
+\index{suspend@{suspend}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{suspend}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Snapper\-::suspend (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__Snapper_a81b56ba8c01f0ede10850bd4adc7e2df}
+Suspends this snapper while another action takes place. 
+
+Reimplemented in \hyperlink{classRS__ActionInterface_a7f4a0d32f846b52728b10c9dbaab6c78}{R\-S\-\_\-\-Action\-Interface}, and \hyperlink{classRS__PreviewActionInterface_a9f3b0c21f2b7b05ee53da53e197bda1b}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classRS__Snapper_a4eb01ef2a485e653319522fb96185147}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!distance@{distance}}
+\index{distance@{distance}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{distance}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Snapper\-::distance\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__Snapper_a4eb01ef2a485e653319522fb96185147}
+Snap distance for snaping to points with a given distance from endpoints. \hypertarget{classRS__Snapper_aebc3dc03d9e59ae8a04eeee9c2709827}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!middle\-Points@{middle\-Points}}
+\index{middle\-Points@{middle\-Points}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{middle\-Points}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Snapper\-::middle\-Points\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__Snapper_aebc3dc03d9e59ae8a04eeee9c2709827}
+Snap to equidistant middle points default to 1, i.\-e., equidistant to start/end points \hypertarget{classRS__Snapper_ac0ecee6e6a8357e359c2db6b41227bc9}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!show\-Crosshairs@{show\-Crosshairs}}
+\index{show\-Crosshairs@{show\-Crosshairs}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{show\-Crosshairs}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Snapper\-::show\-Crosshairs\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__Snapper_ac0ecee6e6a8357e359c2db6b41227bc9}
+Show large cross hairs. \hypertarget{classRS__Snapper_a5ed0cc04b5bb18a06bdbbd5900f22cce}{\index{R\-S\-\_\-\-Snapper@{R\-S\-\_\-\-Snapper}!snap\-Range@{snap\-Range}}
+\index{snap\-Range@{snap\-Range}!RS_Snapper@{R\-S\-\_\-\-Snapper}}
+\subsubsection[{snap\-Range}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Snapper\-::snap\-Range\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__Snapper_a5ed0cc04b5bb18a06bdbbd5900f22cce}
+Snap range for catching entities. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/actions/rs\-\_\-snapper.\-h\item 
+librecad/src/lib/actions/rs\-\_\-snapper.\-cpp\end{DoxyCompactItemize}

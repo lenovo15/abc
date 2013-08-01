@@ -1,0 +1,62 @@
+\hypertarget{classRS__OverlayLine}{\section{R\-S\-\_\-\-Overlay\-Line Class Reference}
+\label{classRS__OverlayLine}\index{R\-S\-\_\-\-Overlay\-Line@{R\-S\-\_\-\-Overlay\-Line}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-overlayline.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Overlay\-Line\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classRS__OverlayLine}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__OverlayLine_a8539a7f5465edd05c6a84e3f10d585fc}{R\-S\-\_\-\-Overlay\-Line} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} $\ast$\hyperlink{classRS__Entity_a80358a8d2fc6739a516a278dc500b49f}{parent}, const \hyperlink{classRS__LineData}{R\-S\-\_\-\-Line\-Data} \&d)
+\item 
+virtual void \hyperlink{classRS__OverlayLine_a5c075fcd0ff5eaf35d480ccc0873ced1}{draw} (\hyperlink{classRS__Painter}{R\-S\-\_\-\-Painter} $\ast$painter, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} $\ast$view, double \&pattern\-Offset)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for a overlay line entity. It's used to draw lines on the overlay paint event The main difference is that the coordinates are actual screen coordinates and not real world coordinates
+
+\begin{DoxyAuthor}{Author}
+R. van Twisk 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__OverlayLine_a8539a7f5465edd05c6a84e3f10d585fc}{\index{R\-S\-\_\-\-Overlay\-Line@{R\-S\-\_\-\-Overlay\-Line}!R\-S\-\_\-\-Overlay\-Line@{R\-S\-\_\-\-Overlay\-Line}}
+\index{R\-S\-\_\-\-Overlay\-Line@{R\-S\-\_\-\-Overlay\-Line}!RS_OverlayLine@{R\-S\-\_\-\-Overlay\-Line}}
+\subsubsection[{R\-S\-\_\-\-Overlay\-Line}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Overlay\-Line\-::\-R\-S\-\_\-\-Overlay\-Line (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} $\ast$}]{parent, }
+\item[{const {\bf R\-S\-\_\-\-Line\-Data} \&}]{d}
+\end{DoxyParamCaption}
+)}}\label{classRS__OverlayLine_a8539a7f5465edd05c6a84e3f10d585fc}
+Constructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__OverlayLine_a5c075fcd0ff5eaf35d480ccc0873ced1}{\index{R\-S\-\_\-\-Overlay\-Line@{R\-S\-\_\-\-Overlay\-Line}!draw@{draw}}
+\index{draw@{draw}!RS_OverlayLine@{R\-S\-\_\-\-Overlay\-Line}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Overlay\-Line\-::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Painter} $\ast$}]{painter, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} $\ast$}]{view, }
+\item[{double \&}]{pattern\-Offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__OverlayLine_a5c075fcd0ff5eaf35d480ccc0873ced1}
+whether the entity's bounding box intersects with visible portion of graphic view 
+
+Reimplemented from \hyperlink{classRS__Line_abbf35036555e09aa10ac2606aafab1b6}{R\-S\-\_\-\-Line}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-overlayline.\-h\item 
+librecad/src/lib/engine/rs\-\_\-overlayline.\-cpp\end{DoxyCompactItemize}

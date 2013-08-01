@@ -1,0 +1,686 @@
+\hypertarget{classRS__DialogFactoryAdapter}{\section{R\-S\-\_\-\-Dialog\-Factory\-Adapter Class Reference}
+\label{classRS__DialogFactoryAdapter}\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-dialogfactoryadapter.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Dialog\-Factory\-Adapter\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRS__DialogFactoryAdapter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classRS__DialogFactoryAdapter_a533678d4205865acb1463913d2a71351}{request\-Previous\-Menu} ()
+\item 
+virtual void \hyperlink{classRS__DialogFactoryAdapter_a94cd2980e95cbdc2d458075b6a895192}{request\-Warning\-Dialog} (const Q\-String \&)
+\item 
+virtual \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} $\ast$ \hyperlink{classRS__DialogFactoryAdapter_a66fc861e1d0b4bc627ead407df82043a}{request\-New\-Document} (const Q\-String \&=Q\-String\-::null, \hyperlink{classRS__Document}{R\-S\-\_\-\-Document} $\ast$=N\-U\-L\-L)
+\item 
+virtual \hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$ \hyperlink{classRS__DialogFactoryAdapter_ad6fa5594675e787303c4f090a1615f76}{request\-New\-Layer\-Dialog} (\hyperlink{classRS__LayerList}{R\-S\-\_\-\-Layer\-List} $\ast$=N\-U\-L\-L)
+\item 
+virtual \hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$ \hyperlink{classRS__DialogFactoryAdapter_a1565c347c48901be2b8b47201d091f3c}{request\-Layer\-Removal\-Dialog} (\hyperlink{classRS__LayerList}{R\-S\-\_\-\-Layer\-List} $\ast$=N\-U\-L\-L)
+\item 
+virtual \hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$ \hyperlink{classRS__DialogFactoryAdapter_af82a6f492bb12dd5d5dab9702adc20e5}{request\-Edit\-Layer\-Dialog} (\hyperlink{classRS__LayerList}{R\-S\-\_\-\-Layer\-List} $\ast$=N\-U\-L\-L)
+\item 
+virtual \hyperlink{classRS__BlockData}{R\-S\-\_\-\-Block\-Data} \hyperlink{classRS__DialogFactoryAdapter_ad90c38137424badb571cd325e8742486}{request\-New\-Block\-Dialog} (\hyperlink{classRS__BlockList}{R\-S\-\_\-\-Block\-List} $\ast$)
+\item 
+virtual \hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$ \hyperlink{classRS__DialogFactoryAdapter_a7d03fe55254410b4c2f629925d14fd76}{request\-Block\-Removal\-Dialog} (\hyperlink{classRS__BlockList}{R\-S\-\_\-\-Block\-List} $\ast$)
+\item 
+virtual \hyperlink{classRS__BlockData}{R\-S\-\_\-\-Block\-Data} \hyperlink{classRS__DialogFactoryAdapter_a002eea58808a416ed39fcfe89e47c05b}{request\-Block\-Attributes\-Dialog} (\hyperlink{classRS__BlockList}{R\-S\-\_\-\-Block\-List} $\ast$)
+\item 
+virtual void \hyperlink{classRS__DialogFactoryAdapter_a75419fc35f524fdce175419b485d3cfe}{request\-Edit\-Block\-Window} (\hyperlink{classRS__BlockList}{R\-S\-\_\-\-Block\-List} $\ast$)
+\item 
+\hypertarget{classRS__DialogFactoryAdapter_a17bbdf6e2c58a2ea67e477e01e09c8a1}{virtual void {\bfseries close\-Edit\-Block\-Window} (\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$)}\label{classRS__DialogFactoryAdapter_a17bbdf6e2c58a2ea67e477e01e09c8a1}
+
+\item 
+virtual Q\-String \hyperlink{classRS__DialogFactoryAdapter_a6a8b801ae386148a8334aadc9cd93bf0}{request\-Image\-Open\-Dialog} ()
+\item 
+virtual void \hyperlink{classRS__DialogFactoryAdapter_a333c5316e39ba598f785b0fdbf70a197}{request\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$, bool, bool=false)
+\item 
+virtual void \hyperlink{classRS__DialogFactoryAdapter_aa3eecd7f929f194fb0e21535dc71bb51}{request\-Snap\-Dist\-Options} (double \&, bool)
+\item 
+\hypertarget{classRS__DialogFactoryAdapter_a27040b164fe50a9e721c60d72700ab45}{virtual void {\bfseries request\-Snap\-Middle\-Options} (int \&, bool)}\label{classRS__DialogFactoryAdapter_a27040b164fe50a9e721c60d72700ab45}
+
+\item 
+virtual void \hyperlink{classRS__DialogFactoryAdapter_a3c1e41b03b44e5410959e96f7e086082}{request\-Modify\-Offset\-Options} (double \&, bool)
+\item 
+virtual bool \hyperlink{classRS__DialogFactoryAdapter_a01a1b0cdc86c5d5fa55be2a6632fb212}{request\-Attributes\-Dialog} (\hyperlink{classRS__AttributesData}{R\-S\-\_\-\-Attributes\-Data} \&, \hyperlink{classRS__LayerList}{R\-S\-\_\-\-Layer\-List} \&)
+\item 
+virtual bool \hyperlink{classRS__DialogFactoryAdapter_a419586ba96c245353b3a3565fbfe61b8}{request\-Move\-Dialog} (\hyperlink{classRS__MoveData}{R\-S\-\_\-\-Move\-Data} \&)
+\item 
+virtual bool \hyperlink{classRS__DialogFactoryAdapter_ae0ccbc43e73e2b1b5a9b69d8b492ba4f}{request\-Rotate\-Dialog} (\hyperlink{classRS__RotateData}{R\-S\-\_\-\-Rotate\-Data} \&)
+\item 
+virtual bool \hyperlink{classRS__DialogFactoryAdapter_a61768f6e1ccde00c2fd5d0c6e619dd45}{request\-Scale\-Dialog} (\hyperlink{classRS__ScaleData}{R\-S\-\_\-\-Scale\-Data} \&)
+\item 
+virtual bool \hyperlink{classRS__DialogFactoryAdapter_a16fbe8521795782f82a6ae63e402d041}{request\-Mirror\-Dialog} (\hyperlink{classRS__MirrorData}{R\-S\-\_\-\-Mirror\-Data} \&)
+\item 
+virtual bool \hyperlink{classRS__DialogFactoryAdapter_a6b907a204669dcdeb1225991d13d13a4}{request\-Move\-Rotate\-Dialog} (\hyperlink{classRS__MoveRotateData}{R\-S\-\_\-\-Move\-Rotate\-Data} \&)
+\item 
+virtual bool \hyperlink{classRS__DialogFactoryAdapter_ada3b55e971198b38bd4b18b9e6b5917d}{request\-Rotate2\-Dialog} (\hyperlink{classRS__Rotate2Data}{R\-S\-\_\-\-Rotate2\-Data} \&)
+\item 
+\hypertarget{classRS__DialogFactoryAdapter_a01706d6da74283e4e1b2a98b19ac1985}{virtual void {\bfseries request\-Previous\-Tool\-Bar} ()}\label{classRS__DialogFactoryAdapter_a01706d6da74283e4e1b2a98b19ac1985}
+
+\item 
+virtual void \hyperlink{classRS__DialogFactoryAdapter_acc8be1beb1d13bec9e224884aeca1329}{request\-Tool\-Bar} (\hyperlink{classRS2_a53db3c150d1d8d501b236d537de53793}{R\-S2\-::\-Tool\-Bar\-Id})
+\item 
+\hypertarget{classRS__DialogFactoryAdapter_ab8beeb8c08241bd6492ef8b7993aa242}{virtual void {\bfseries reset\-Tool\-Bar} ()}\label{classRS__DialogFactoryAdapter_ab8beeb8c08241bd6492ef8b7993aa242}
+
+\item 
+virtual void \hyperlink{classRS__DialogFactoryAdapter_ad2a16728849c02e064355fce2c37acde}{request\-Tool\-Bar\-Select} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$, \hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type})
+\item 
+\hypertarget{classRS__DialogFactoryAdapter_a61e0c40e5f0cc94d1f5a9a146184dc46}{virtual void {\bfseries show\-Cad\-Tool\-Bar} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type})}\label{classRS__DialogFactoryAdapter_a61e0c40e5f0cc94d1f5a9a146184dc46}
+
+\item 
+virtual bool \hyperlink{classRS__DialogFactoryAdapter_a631d4544515662a2043b42663530b184}{request\-Modify\-Entity\-Dialog} (\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$)
+\item 
+virtual bool \hyperlink{classRS__DialogFactoryAdapter_a20cf63f417b161b73f31b59f74e03c79}{request\-M\-Text\-Dialog} (\hyperlink{classRS__MText}{R\-S\-\_\-\-M\-Text} $\ast$)
+\item 
+virtual bool \hyperlink{classRS__DialogFactoryAdapter_ab98dd62d8c2d0b64282c7d075bd09f2a}{request\-Text\-Dialog} (\hyperlink{classRS__Text}{R\-S\-\_\-\-Text} $\ast$)
+\item 
+virtual bool \hyperlink{classRS__DialogFactoryAdapter_a871708bf09cf63f5d15a0530582e72cb}{request\-Hatch\-Dialog} (\hyperlink{classRS__Hatch}{R\-S\-\_\-\-Hatch} $\ast$)
+\item 
+virtual void \hyperlink{classRS__DialogFactoryAdapter_a5791aef555cc797155bae9f91689004f}{request\-Options\-General\-Dialog} ()
+\item 
+virtual void \hyperlink{classRS__DialogFactoryAdapter_a3966708a65dcb5b0345f83d765ba8c68}{request\-Options\-Drawing\-Dialog} (\hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} \&)
+\item 
+virtual void \hyperlink{classRS__DialogFactoryAdapter_a6ec328960a41f3695cc95087364cb11e}{update\-Coordinate\-Widget} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&, bool=false)
+\item 
+virtual void \hyperlink{classRS__DialogFactoryAdapter_ae3a357e880ccf8b33a18b24ece06fea3}{update\-Mouse\-Widget} (const Q\-String \&, const Q\-String \&, bool)
+\item 
+\hypertarget{classRS__DialogFactoryAdapter_adc278fa679d78eb0b1649e10c526370a}{virtual void {\bfseries restore\-Mouse\-Widget} (void)}\label{classRS__DialogFactoryAdapter_adc278fa679d78eb0b1649e10c526370a}
+
+\item 
+virtual void \hyperlink{classRS__DialogFactoryAdapter_a8eb496577456595c6376d5153ab8bd09}{update\-Selection\-Widget} (int, double)
+\item 
+\hypertarget{classRS__DialogFactoryAdapter_ac97188b9f64d6f5735f1fabf7e831865}{virtual void {\bfseries update\-Arc\-Tangential\-Options} (const double \&, bool)}\label{classRS__DialogFactoryAdapter_ac97188b9f64d6f5735f1fabf7e831865}
+
+\item 
+virtual void \hyperlink{classRS__DialogFactoryAdapter_a862a533c3fa0013d6fa311424bff9918}{command\-Message} (const Q\-String \&)
+\item 
+\hypertarget{classRS__DialogFactoryAdapter_aedaf9cc0c924fc3e61960310663473a0}{virtual bool {\bfseries is\-Adapter} ()}\label{classRS__DialogFactoryAdapter_aedaf9cc0c924fc3e61960310663473a0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Adapter for dialog factory interface. Used when no factory object was set. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__DialogFactoryAdapter_a862a533c3fa0013d6fa311424bff9918}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!command\-Message@{command\-Message}}
+\index{command\-Message@{command\-Message}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{command\-Message}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::command\-Message (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_a862a533c3fa0013d6fa311424bff9918}
+This virtual method must be overwritten if the graphic view has a component that is interested in command messages (such as a command line history). The implementation will be called typically by actions to inform the user about current events and errors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message for the user. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_ace72f446ab2ba5eaa38bfaecc4c7b801}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_a01a1b0cdc86c5d5fa55be2a6632fb212}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Attributes\-Dialog@{request\-Attributes\-Dialog}}
+\index{request\-Attributes\-Dialog@{request\-Attributes\-Dialog}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Attributes\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Attributes\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Attributes\-Data} \&}]{data, }
+\item[{{\bf R\-S\-\_\-\-Layer\-List} \&}]{layer\-List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_a01a1b0cdc86c5d5fa55be2a6632fb212}
+This virtual method must be overwritten and must present a widget for entity attributes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Attribute data which can be directly changed by the presented widget. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a7294139615bde9a052971083ef808ee7}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_a002eea58808a416ed39fcfe89e47c05b}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Block\-Attributes\-Dialog@{request\-Block\-Attributes\-Dialog}}
+\index{request\-Block\-Attributes\-Dialog@{request\-Block\-Attributes\-Dialog}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Block\-Attributes\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S\-\_\-\-Block\-Data} R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Block\-Attributes\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block\-List} $\ast$}]{block\-List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_a002eea58808a416ed39fcfe89e47c05b}
+This virtual method must be overwritten and must provide a dialog that allows to change blocks attributes of the currently active block.
+
+\begin{DoxyReturn}{Returns}
+The implementation is expected to return a pointer to the block which was changed or N\-U\-L\-L if the user cancels the dialog. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a28c6bbcf943257ac6bbfc9f347e16a72}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_a7d03fe55254410b4c2f629925d14fd76}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Block\-Removal\-Dialog@{request\-Block\-Removal\-Dialog}}
+\index{request\-Block\-Removal\-Dialog@{request\-Block\-Removal\-Dialog}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Block\-Removal\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S\-\_\-\-Block}$\ast$ R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Block\-Removal\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block\-List} $\ast$}]{block\-List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_a7d03fe55254410b4c2f629925d14fd76}
+This virtual method must be overwritten and must provide a dialog that asks for permission for removing the selected block from the block list. The method must not actually remove the block. This is up to the caller.
+
+\begin{DoxyReturn}{Returns}
+The implementation is expected to return a pointer to the block which can be removed or N\-U\-L\-L if the user cancels the dialog. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a7027f9ee4a7f8c5cb85bd390a0a5235c}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_a75419fc35f524fdce175419b485d3cfe}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Edit\-Block\-Window@{request\-Edit\-Block\-Window}}
+\index{request\-Edit\-Block\-Window@{request\-Edit\-Block\-Window}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Edit\-Block\-Window}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Edit\-Block\-Window (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block\-List} $\ast$}]{block\-List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_a75419fc35f524fdce175419b485d3cfe}
+This virtual method must be overwritten and should provide a way to edit a block. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_ad9897be7951513acd0dddc536a9c8619}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_af82a6f492bb12dd5d5dab9702adc20e5}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Edit\-Layer\-Dialog@{request\-Edit\-Layer\-Dialog}}
+\index{request\-Edit\-Layer\-Dialog@{request\-Edit\-Layer\-Dialog}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Edit\-Layer\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S\-\_\-\-Layer}$\ast$ R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Edit\-Layer\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer\-List} $\ast$}]{layer\-List = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_af82a6f492bb12dd5d5dab9702adc20e5}
+This virtual method must be overwritten and must provide a dialog to edit the layers attributes. The method must not actually edit the layer. This is up to the caller.
+
+\begin{DoxyReturn}{Returns}
+The implementation is expected to return a pointer to the modified layer or N\-U\-L\-L if the user cancels the dialog. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_adb533740ea219696d9ecbdcd34ae4df4}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_a871708bf09cf63f5d15a0530582e72cb}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Hatch\-Dialog@{request\-Hatch\-Dialog}}
+\index{request\-Hatch\-Dialog@{request\-Hatch\-Dialog}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Hatch\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Hatch\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Hatch} $\ast$}]{hatch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_a871708bf09cf63f5d15a0530582e72cb}
+This virtual method must be overwritten and must present a dialog to select pattern attributes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & Pointer to the hatch entity. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a5edf0344de81ea6585ef8e4dc4f4a7c2}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_a6a8b801ae386148a8334aadc9cd93bf0}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Image\-Open\-Dialog@{request\-Image\-Open\-Dialog}}
+\index{request\-Image\-Open\-Dialog@{request\-Image\-Open\-Dialog}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Image\-Open\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}virtual Q\-String R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Image\-Open\-Dialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_a6a8b801ae386148a8334aadc9cd93bf0}
+This virtual method must be overwritten and must provide a dialog to get a filename for saving a file. The method must not actually save the file. This is up to the caller.
+
+\begin{DoxyReturn}{Returns}
+The implementation is expected to return a string which contains the file name or an empty string if the user cancels the dialog. This virtual method must be overwritten and must provide a dialog to get a filename for opening a file. The method must not actually open the file. This is up to the caller.
+
+The implementation is expected to return a string which contains the file name or an empty string if the user cancels the dialog. This virtual method must be overwritten and must provide a dialog to get a filename for opening an image file. The method must not actually open the file. This is up to the caller.
+
+The implementation is expected to return a string which contains the file name or an empty string if the user cancels the dialog. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_ac9593d3c8e0c2d28ee95972106a92074}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_a1565c347c48901be2b8b47201d091f3c}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Layer\-Removal\-Dialog@{request\-Layer\-Removal\-Dialog}}
+\index{request\-Layer\-Removal\-Dialog@{request\-Layer\-Removal\-Dialog}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Layer\-Removal\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S\-\_\-\-Layer}$\ast$ R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Layer\-Removal\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer\-List} $\ast$}]{layer\-List = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_a1565c347c48901be2b8b47201d091f3c}
+This virtual method must be overwritten and must provide a dialog that asks for permission for removing the selected layer from the layer list. The method must not actually remove the layer. This is up to the caller.
+
+\begin{DoxyReturn}{Returns}
+The implementation is expected to return a pointer to the layer which can ne removed or N\-U\-L\-L if the user cancels the dialog. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_ad07c7382124a0b0e423d11d9bfbb8cf7}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_a16fbe8521795782f82a6ae63e402d041}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Mirror\-Dialog@{request\-Mirror\-Dialog}}
+\index{request\-Mirror\-Dialog@{request\-Mirror\-Dialog}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Mirror\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Mirror\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Mirror\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_a16fbe8521795782f82a6ae63e402d041}
+This virtual method must be overwritten and must present a widget for mirror options (number of copies).
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Mirror data which can be directly changed by the presented widget. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a9051595c6f23c2c4efaf2900a4f282dd}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_a631d4544515662a2043b42663530b184}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Modify\-Entity\-Dialog@{request\-Modify\-Entity\-Dialog}}
+\index{request\-Modify\-Entity\-Dialog@{request\-Modify\-Entity\-Dialog}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Modify\-Entity\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Modify\-Entity\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{entity}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_a631d4544515662a2043b42663530b184}
+This virtual method must be overwritten and must present a dialog to edit the given entity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & Pointer to the entity. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a8dad4c0a48e3299f758ebd7c20cee05a}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_a3c1e41b03b44e5410959e96f7e086082}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Modify\-Offset\-Options@{request\-Modify\-Offset\-Options}}
+\index{request\-Modify\-Offset\-Options@{request\-Modify\-Offset\-Options}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Modify\-Offset\-Options}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Modify\-Offset\-Options (
+\begin{DoxyParamCaption}
+\item[{double \&}]{dist, }
+\item[{bool}]{on}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_a3c1e41b03b44e5410959e96f7e086082}
+$\ast$\-This virtual method must overwritten and must present a widget for actionmodifyoffset distance , distance of offset , to create the widget if true, and to delete the widget if false 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_aca9548ff503740edd2473b5e9732b98a}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_a419586ba96c245353b3a3565fbfe61b8}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Move\-Dialog@{request\-Move\-Dialog}}
+\index{request\-Move\-Dialog@{request\-Move\-Dialog}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Move\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Move\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Move\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_a419586ba96c245353b3a3565fbfe61b8}
+This virtual method must be overwritten and must present a widget for move options (number of copies).
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Move data which can be directly changed by the presented widget. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a84809c4af458f1ec63bdf8e7cfde8a02}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_a6b907a204669dcdeb1225991d13d13a4}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Move\-Rotate\-Dialog@{request\-Move\-Rotate\-Dialog}}
+\index{request\-Move\-Rotate\-Dialog@{request\-Move\-Rotate\-Dialog}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Move\-Rotate\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Move\-Rotate\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Move\-Rotate\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_a6b907a204669dcdeb1225991d13d13a4}
+This virtual method must be overwritten and must present a widget for move/rotate options (number of copies, angle).
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Move/rotate data which can be directly changed by the presented widget. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_acc71995e7165cc9c7eb4ef215e7b68c2}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_a20cf63f417b161b73f31b59f74e03c79}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-M\-Text\-Dialog@{request\-M\-Text\-Dialog}}
+\index{request\-M\-Text\-Dialog@{request\-M\-Text\-Dialog}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-M\-Text\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-M\-Text\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-M\-Text} $\ast$}]{text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_a20cf63f417b161b73f31b59f74e03c79}
+This virtual method must be overwritten and must present a dialog to edit multi-\/line text entity attributes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & Pointer to the mtext entity. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_ae1618dacc9e6c8c969be486b22ff8617}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_ad90c38137424badb571cd325e8742486}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-New\-Block\-Dialog@{request\-New\-Block\-Dialog}}
+\index{request\-New\-Block\-Dialog@{request\-New\-Block\-Dialog}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-New\-Block\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S\-\_\-\-Block\-Data} R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-New\-Block\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block\-List} $\ast$}]{block\-List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_ad90c38137424badb571cd325e8742486}
+This virtual method must be overwritten and must provide a dialog for choosing the properties of a new block to be created. The method must create the new block but not add it to the block list. The latter is up to the caller.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & Pointer to the newly created block with default attributes.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The implementation is expected to return a pointer to the newly created block or N\-U\-L\-L if the user cancels the dialog. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a804b0b5dd9eac9f02660a6a38303800b}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_a66fc861e1d0b4bc627ead407df82043a}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-New\-Document@{request\-New\-Document}}
+\index{request\-New\-Document@{request\-New\-Document}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-New\-Document}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S\-\_\-\-Graphic\-View}$\ast$ R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-New\-Document (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{file\-Name = {\ttfamily QString\-:\-:null}, }
+\item[{{\bf R\-S\-\_\-\-Document} $\ast$}]{doc = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_a66fc861e1d0b4bc627ead407df82043a}
+This virtual method must be overwritten and must create a new window for the given document or for a new document isf no document is given. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a40deafb82c660a6a14a4a3d08a1cca4c}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_ad6fa5594675e787303c4f090a1615f76}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-New\-Layer\-Dialog@{request\-New\-Layer\-Dialog}}
+\index{request\-New\-Layer\-Dialog@{request\-New\-Layer\-Dialog}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-New\-Layer\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S\-\_\-\-Layer}$\ast$ R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-New\-Layer\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer\-List} $\ast$}]{layer\-List = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_ad6fa5594675e787303c4f090a1615f76}
+This virtual method must be overwritten and must provide a dialog for choosing the properties of a new layer to be created. The method must create the new layer but not add it to the layer list. The latter is up to the caller.
+
+\begin{DoxyReturn}{Returns}
+The implementation is expected to return a pointer to the newly created layer or N\-U\-L\-L if the user cancels the dialog. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a743781e36b98bc37ed22de05b04acaab}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_a333c5316e39ba598f785b0fdbf70a197}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Options@{request\-Options}}
+\index{request\-Options@{request\-Options}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Options}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_a333c5316e39ba598f785b0fdbf70a197}
+This virtual method must be overwritten and must present a widget for options for the given action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & Pointer to the action which needs the options. \\
+\hline
+{\em on} & true\-: switch widget on, false\-: off \\
+\hline
+{\em update} & true\-: widget gets data from the action, false\-: widget gets data from config file. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a7007dbb4c883dda6cf63939d0eebb341}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_a3966708a65dcb5b0345f83d765ba8c68}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Options\-Drawing\-Dialog@{request\-Options\-Drawing\-Dialog}}
+\index{request\-Options\-Drawing\-Dialog@{request\-Options\-Drawing\-Dialog}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Options\-Drawing\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Options\-Drawing\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Graphic} \&}]{graphic}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_a3966708a65dcb5b0345f83d765ba8c68}
+This virtual method must be overwritten and must present a dialog for drawing options.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphic} & Graphic document. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a115e1f29d6419c20d02c185b13dfea37}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_a5791aef555cc797155bae9f91689004f}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Options\-General\-Dialog@{request\-Options\-General\-Dialog}}
+\index{request\-Options\-General\-Dialog@{request\-Options\-General\-Dialog}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Options\-General\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Options\-General\-Dialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_a5791aef555cc797155bae9f91689004f}
+This virtual method must be overwritten and must present a dialog for general application options. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a494de4c323d61be319f88b7a37026e6b}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_a533678d4205865acb1463913d2a71351}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Previous\-Menu@{request\-Previous\-Menu}}
+\index{request\-Previous\-Menu@{request\-Previous\-Menu}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Previous\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Previous\-Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_a533678d4205865acb1463913d2a71351}
+This virtual method must be overwritten and must show the previously shown menu in the cad toolbar. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_ad524d6d4c69cca7e5f69c1cff6b89130}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_ada3b55e971198b38bd4b18b9e6b5917d}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Rotate2\-Dialog@{request\-Rotate2\-Dialog}}
+\index{request\-Rotate2\-Dialog@{request\-Rotate2\-Dialog}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Rotate2\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Rotate2\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Rotate2\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_ada3b55e971198b38bd4b18b9e6b5917d}
+This virtual method must be overwritten and must present a widget for rotate around two centers options (number of copies, angles).
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Rotate data which can be directly changed by the presented widget. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_aec13bccf53c82ce95bc4f619c4e45501}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_ae0ccbc43e73e2b1b5a9b69d8b492ba4f}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Rotate\-Dialog@{request\-Rotate\-Dialog}}
+\index{request\-Rotate\-Dialog@{request\-Rotate\-Dialog}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Rotate\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Rotate\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Rotate\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_ae0ccbc43e73e2b1b5a9b69d8b492ba4f}
+This virtual method must be overwritten and must present a widget for rotate options (number of copies, angle).
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Rotation data which can be directly changed by the presented widget. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a4196686ece4a4a0a0c813b47daa43cc5}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_a61768f6e1ccde00c2fd5d0c6e619dd45}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Scale\-Dialog@{request\-Scale\-Dialog}}
+\index{request\-Scale\-Dialog@{request\-Scale\-Dialog}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Scale\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Scale\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Scale\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_a61768f6e1ccde00c2fd5d0c6e619dd45}
+This virtual method must be overwritten and must present a widget for rotate options (number of copies, angle).
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Scaling data which can be directly changed by the presented widget. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_ab2170e70be6fc9846a5d0628600b7e2c}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_aa3eecd7f929f194fb0e21535dc71bb51}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Snap\-Dist\-Options@{request\-Snap\-Dist\-Options}}
+\index{request\-Snap\-Dist\-Options@{request\-Snap\-Dist\-Options}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Snap\-Dist\-Options}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Snap\-Dist\-Options (
+\begin{DoxyParamCaption}
+\item[{double \&}]{dist, }
+\item[{bool}]{on}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_aa3eecd7f929f194fb0e21535dc71bb51}
+This virtual method must be overwritten and must present a widget for snap point with distance options.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dist} & Distance which can be directly changed by the presented widget. \\
+\hline
+{\em on} & true\-: switch widget on, false\-: off \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_ac9fcb3ea665066b9d70af8360d0e136f}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_ab98dd62d8c2d0b64282c7d075bd09f2a}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Text\-Dialog@{request\-Text\-Dialog}}
+\index{request\-Text\-Dialog@{request\-Text\-Dialog}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Text\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Text\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Text} $\ast$}]{text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_ab98dd62d8c2d0b64282c7d075bd09f2a}
+This virtual method must be overwritten and must present a dialog to edit text entity attributes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & Pointer to the text entity. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a906e43ced9e640964115a9e58e277ff4}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_acc8be1beb1d13bec9e224884aeca1329}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Tool\-Bar@{request\-Tool\-Bar}}
+\index{request\-Tool\-Bar@{request\-Tool\-Bar}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Tool\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Tool\-Bar (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Tool\-Bar\-Id}}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_acc8be1beb1d13bec9e224884aeca1329}
+This virtual method must be overwritten and must show the given toolbar.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Tool bar I\-D. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a7528e6a77554fcd2873d6eb9e03402ab}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_ad2a16728849c02e064355fce2c37acde}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Tool\-Bar\-Select@{request\-Tool\-Bar\-Select}}
+\index{request\-Tool\-Bar\-Select@{request\-Tool\-Bar\-Select}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Tool\-Bar\-Select}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Tool\-Bar\-Select (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{select\-Action, }
+\item[{{\bf R\-S2\-::\-Action\-Type}}]{next\-Action}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_ad2a16728849c02e064355fce2c37acde}
+This virtual method must be overwritten and must show the tag toolbar with a button for launching the given action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em next\-Action} & I\-D of next action to create after selecting was done. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a50be8fdda1e8a2060b70adf8972a2857}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_a94cd2980e95cbdc2d458075b6a895192}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!request\-Warning\-Dialog@{request\-Warning\-Dialog}}
+\index{request\-Warning\-Dialog@{request\-Warning\-Dialog}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{request\-Warning\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::request\-Warning\-Dialog (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{warning}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_a94cd2980e95cbdc2d458075b6a895192}
+This virtual method must be overwritten and must provide a message dialog. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a1fc58550b66870c2c5a48e566463310f}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_a6ec328960a41f3695cc95087364cb11e}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!update\-Coordinate\-Widget@{update\-Coordinate\-Widget}}
+\index{update\-Coordinate\-Widget@{update\-Coordinate\-Widget}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{update\-Coordinate\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::update\-Coordinate\-Widget (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{abs, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{rel, }
+\item[{bool}]{update\-Format = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_a6ec328960a41f3695cc95087364cb11e}
+This virtual method must be overwritten if the graphic view has a component that is interested in the current mouse position. The implementation will be called every time the mouse position changes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em abs} & Absolute coordiante of the mouse cursor or the point it snaps to. \\
+\hline
+{\em rel} & Relative coordiante. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_ac5b510d50ec73019bc67683b163f5840}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_ae3a357e880ccf8b33a18b24ece06fea3}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!update\-Mouse\-Widget@{update\-Mouse\-Widget}}
+\index{update\-Mouse\-Widget@{update\-Mouse\-Widget}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{update\-Mouse\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::update\-Mouse\-Widget (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{left, }
+\item[{const Q\-String \&}]{right, }
+\item[{bool}]{keeping}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_ae3a357e880ccf8b33a18b24ece06fea3}
+This virtual method must be overwritten if the graphic view has a component that is interested in the current mouse button hints. The implementation will be called typically by actions to inform the user about the current functionalty of the mouse buttons.
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & Help text for the left mouse button. \\
+\hline
+{\em right} & Help text for the right mouse button. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_ab94aa4be2d7e656ff2092b96dcada744}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classRS__DialogFactoryAdapter_a8eb496577456595c6376d5153ab8bd09}{\index{R\-S\-\_\-\-Dialog\-Factory\-Adapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}!update\-Selection\-Widget@{update\-Selection\-Widget}}
+\index{update\-Selection\-Widget@{update\-Selection\-Widget}!RS_DialogFactoryAdapter@{R\-S\-\_\-\-Dialog\-Factory\-Adapter}}
+\subsubsection[{update\-Selection\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Dialog\-Factory\-Adapter\-::update\-Selection\-Widget (
+\begin{DoxyParamCaption}
+\item[{int}]{num, }
+\item[{double}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DialogFactoryAdapter_a8eb496577456595c6376d5153ab8bd09}
+This virtual method must be overwritten if the graphic view has a component that is interested in the current number of selected entities. The implementation will be called every time the selection changes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Number of selected entities \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a8c7c8945b1a3f01d8fc377bc1a8699ed}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/gui/rs\-\_\-dialogfactoryadapter.\-h\end{DoxyCompactItemize}

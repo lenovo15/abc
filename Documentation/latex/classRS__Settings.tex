@@ -1,0 +1,128 @@
+\hypertarget{classRS__Settings}{\section{R\-S\-\_\-\-Settings Class Reference}
+\label{classRS__Settings}\index{R\-S\-\_\-\-Settings@{R\-S\-\_\-\-Settings}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-settings.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classRS__Settings_a825b0f1d45c581232e009c261c5060e5}{init} (const Q\-String \&company\-Key, const Q\-String \&app\-Key)
+\item 
+\hypertarget{classRS__Settings_ae77f751f8aa5b4a94fc511102569395b}{void {\bfseries begin\-Group} (const Q\-String \&group)}\label{classRS__Settings_ae77f751f8aa5b4a94fc511102569395b}
+
+\item 
+\hypertarget{classRS__Settings_a3d70cb2192c0cc3b810cf2f963fe7f7f}{void {\bfseries end\-Group} ()}\label{classRS__Settings_a3d70cb2192c0cc3b810cf2f963fe7f7f}
+
+\item 
+\hypertarget{classRS__Settings_ae64bba2346f0207b92760200e63ff95a}{bool {\bfseries write\-Entry} (const Q\-String \&key, int value)}\label{classRS__Settings_ae64bba2346f0207b92760200e63ff95a}
+
+\item 
+\hypertarget{classRS__Settings_a3b9e9e302dc97de4734d8f46f4db4d35}{bool {\bfseries write\-Entry} (const Q\-String \&key, double value)}\label{classRS__Settings_a3b9e9e302dc97de4734d8f46f4db4d35}
+
+\item 
+\hypertarget{classRS__Settings_a5a2d47244610be26e2fa6934d03d9e89}{bool {\bfseries write\-Entry} (const Q\-String \&key, const Q\-Variant \&value)}\label{classRS__Settings_a5a2d47244610be26e2fa6934d03d9e89}
+
+\item 
+\hypertarget{classRS__Settings_ad8594fd48fad3e8c346d2a29e5b80a57}{bool {\bfseries write\-Entry} (const Q\-String \&key, const Q\-String \&value)}\label{classRS__Settings_ad8594fd48fad3e8c346d2a29e5b80a57}
+
+\item 
+\hypertarget{classRS__Settings_ae55f5d0beac3db3b618197c94745b0e9}{Q\-String {\bfseries read\-Entry} (const Q\-String \&key, const Q\-String \&def=Q\-String\-::null, bool $\ast$ok=0)}\label{classRS__Settings_ae55f5d0beac3db3b618197c94745b0e9}
+
+\item 
+\hypertarget{classRS__Settings_a94112549cf62631dc0c76857117d6d72}{Q\-Byte\-Array {\bfseries read\-Byte\-Array\-Entry} (const Q\-String \&key, const Q\-String \&def=Q\-String\-::null, bool $\ast$ok=0)}\label{classRS__Settings_a94112549cf62631dc0c76857117d6d72}
+
+\item 
+\hypertarget{classRS__Settings_a149e7a47a4950c097e301efadaefa1bf}{int {\bfseries read\-Num\-Entry} (const Q\-String \&key, int def=0, bool $\ast$ok=0)}\label{classRS__Settings_a149e7a47a4950c097e301efadaefa1bf}
+
+\item 
+\hyperlink{classRS__Settings_a11cd6bd58e182e5685c8739e1f41a6e9}{$\sim$\-R\-S\-\_\-\-Settings} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classRS__Settings}{R\-S\-\_\-\-Settings} $\ast$ \hyperlink{classRS__Settings_a33152d43aa57de0e981f4eac75c74a0c}{instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__Settings_ae5f85d30330e26c7bfe3b29e6629bf1c}{Q\-Hash$<$ Q\-String, Q\-Variant $\ast$ $>$ {\bfseries cache}}\label{classRS__Settings_ae5f85d30330e26c7bfe3b29e6629bf1c}
+
+\item 
+\hypertarget{classRS__Settings_ac2592ba4227e364c3334a34de2f20419}{Q\-String {\bfseries company\-Key}}\label{classRS__Settings_ac2592ba4227e364c3334a34de2f20419}
+
+\item 
+\hypertarget{classRS__Settings_a05d5015e404c8438e3eaaa55adeaf470}{Q\-String {\bfseries app\-Key}}\label{classRS__Settings_a05d5015e404c8438e3eaaa55adeaf470}
+
+\item 
+\hypertarget{classRS__Settings_a4f88763bb8a72acad954077164c23fb2}{Q\-String {\bfseries group}}\label{classRS__Settings_a4f88763bb8a72acad954077164c23fb2}
+
+\item 
+\hypertarget{classRS__Settings_acc05a9689ed044ee5adefcddd18f2476}{bool {\bfseries initialized}}\label{classRS__Settings_acc05a9689ed044ee5adefcddd18f2476}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__Settings_a8c4ec3ecc0d68de59a49400f03fb2e0a}{static \hyperlink{classRS__Settings}{R\-S\-\_\-\-Settings} $\ast$ {\bfseries unique\-Instance} = N\-U\-L\-L}\label{classRS__Settings_a8c4ec3ecc0d68de59a49400f03fb2e0a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class can store and reload settings from a configuration file or the windoze registry. Please note that the Qt default implementation doesn't work as one would expect. That's why this class overwrites most of the default behaviour. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__Settings_a11cd6bd58e182e5685c8739e1f41a6e9}{\index{R\-S\-\_\-\-Settings@{R\-S\-\_\-\-Settings}!$\sim$\-R\-S\-\_\-\-Settings@{$\sim$\-R\-S\-\_\-\-Settings}}
+\index{$\sim$\-R\-S\-\_\-\-Settings@{$\sim$\-R\-S\-\_\-\-Settings}!RS_Settings@{R\-S\-\_\-\-Settings}}
+\subsubsection[{$\sim$\-R\-S\-\_\-\-Settings}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Settings\-::$\sim$\-R\-S\-\_\-\-Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Settings_a11cd6bd58e182e5685c8739e1f41a6e9}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Settings_a825b0f1d45c581232e009c261c5060e5}{\index{R\-S\-\_\-\-Settings@{R\-S\-\_\-\-Settings}!init@{init}}
+\index{init@{init}!RS_Settings@{R\-S\-\_\-\-Settings}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Settings\-::init (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{company\-Key, }
+\item[{const Q\-String \&}]{app\-Key}
+\end{DoxyParamCaption}
+)}}\label{classRS__Settings_a825b0f1d45c581232e009c261c5060e5}
+Initialize the system.
+
+
+\begin{DoxyParams}{Parameters}
+{\em company\-Key} & Company Key \\
+\hline
+{\em app\-Key} & Application key\\
+\hline
+\end{DoxyParams}
+Initialisation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em company\-Key} & String that identifies the company. Must start with a \char`\"{}/\char`\"{}. E.\-g. \char`\"{}/\-Ribbon\-Soft\char`\"{} \\
+\hline
+{\em app\-Key} & String that identifies the application. Must start with a \char`\"{}/\char`\"{}. E.\-g. \char`\"{}/\-Libre\-C\-A\-D\char`\"{} \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Settings_a33152d43aa57de0e981f4eac75c74a0c}{\index{R\-S\-\_\-\-Settings@{R\-S\-\_\-\-Settings}!instance@{instance}}
+\index{instance@{instance}!RS_Settings@{R\-S\-\_\-\-Settings}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf R\-S\-\_\-\-Settings}$\ast$ R\-S\-\_\-\-Settings\-::instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classRS__Settings_a33152d43aa57de0e981f4eac75c74a0c}
+\begin{DoxyReturn}{Returns}
+Instance to the unique settings object. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-settings.\-h\item 
+librecad/src/lib/engine/rs\-\_\-settings.\-cpp\end{DoxyCompactItemize}

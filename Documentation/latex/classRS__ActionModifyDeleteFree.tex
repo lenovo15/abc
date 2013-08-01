@@ -1,0 +1,102 @@
+\hypertarget{classRS__ActionModifyDeleteFree}{\section{R\-S\-\_\-\-Action\-Modify\-Delete\-Free Class Reference}
+\label{classRS__ActionModifyDeleteFree}\index{R\-S\-\_\-\-Action\-Modify\-Delete\-Free@{R\-S\-\_\-\-Action\-Modify\-Delete\-Free}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionmodifydeletefree.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Modify\-Delete\-Free\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__ActionModifyDeleteFree}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionModifyDeleteFree_a2555322700ccc5d8707c2dcff87e27f3}{{\bfseries R\-S\-\_\-\-Action\-Modify\-Delete\-Free} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionModifyDeleteFree_a2555322700ccc5d8707c2dcff87e27f3}
+
+\item 
+virtual void \hyperlink{classRS__ActionModifyDeleteFree_a71d68fe1a251bbb45d8e4256ebf0d21c}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionModifyDeleteFree_a3b09bc934ba7431dab18f4598395d973}{trigger} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyDeleteFree_a5effa8e73e190ff1e91ba2644cd8f81e}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionModifyDeleteFree_a3cb1761253e514b65b2697efd17c70cb}{update\-Mouse\-Button\-Hints} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionModifyDeleteFree_a8cb2e05438f33c255bae7f1451cd0740}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionModifyDeleteFree_a8cb2e05438f33c255bae7f1451cd0740}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to delete entities.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionModifyDeleteFree_a71d68fe1a251bbb45d8e4256ebf0d21c}{\index{R\-S\-\_\-\-Action\-Modify\-Delete\-Free@{R\-S\-\_\-\-Action\-Modify\-Delete\-Free}!init@{init}}
+\index{init@{init}!RS_ActionModifyDeleteFree@{R\-S\-\_\-\-Action\-Modify\-Delete\-Free}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Delete\-Free\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyDeleteFree_a71d68fe1a251bbb45d8e4256ebf0d21c}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a05b7dca5deeb371eb51edcb73facd45f}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyDeleteFree_a5effa8e73e190ff1e91ba2644cd8f81e}{\index{R\-S\-\_\-\-Action\-Modify\-Delete\-Free@{R\-S\-\_\-\-Action\-Modify\-Delete\-Free}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionModifyDeleteFree@{R\-S\-\_\-\-Action\-Modify\-Delete\-Free}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Delete\-Free\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyDeleteFree_a5effa8e73e190ff1e91ba2644cd8f81e}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyDeleteFree_a3b09bc934ba7431dab18f4598395d973}{\index{R\-S\-\_\-\-Action\-Modify\-Delete\-Free@{R\-S\-\_\-\-Action\-Modify\-Delete\-Free}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionModifyDeleteFree@{R\-S\-\_\-\-Action\-Modify\-Delete\-Free}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Delete\-Free\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyDeleteFree_a3b09bc934ba7431dab18f4598395d973}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa2ba8f6f697f735eace4ec5449c0b8cd}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyDeleteFree_a3cb1761253e514b65b2697efd17c70cb}{\index{R\-S\-\_\-\-Action\-Modify\-Delete\-Free@{R\-S\-\_\-\-Action\-Modify\-Delete\-Free}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionModifyDeleteFree@{R\-S\-\_\-\-Action\-Modify\-Delete\-Free}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Delete\-Free\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyDeleteFree_a3cb1761253e514b65b2697efd17c70cb}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionmodifydeletefree.\-h\item 
+librecad/src/actions/rs\-\_\-actionmodifydeletefree.\-cpp\end{DoxyCompactItemize}

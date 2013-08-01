@@ -1,0 +1,1092 @@
+\hypertarget{classRS__FilterDXF}{\section{R\-S\-\_\-\-Filter\-D\-X\-F Class Reference}
+\label{classRS__FilterDXF}\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-filterdxf.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Filter\-D\-X\-F\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRS__FilterDXF}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__FilterDXF_acffa87085a4a0efd349af8df71be9602}{R\-S\-\_\-\-Filter\-D\-X\-F} ()
+\item 
+\hyperlink{classRS__FilterDXF_a2aa19c87c956869a91f8f2a5ae6ee27d}{$\sim$\-R\-S\-\_\-\-Filter\-D\-X\-F} ()
+\item 
+virtual bool \hyperlink{classRS__FilterDXF_add335948d3bca1dd68b84f432f8e7628}{can\-Import} (const Q\-String \&, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} t) const 
+\item 
+virtual bool \hyperlink{classRS__FilterDXF_a0d69c493c3416af868a1c16f864a3b71}{can\-Export} (const Q\-String \&file\-Name, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} t) const 
+\item 
+virtual bool \hyperlink{classRS__FilterDXF_afa9715a120bca739600ff0fbeb913e65}{file\-Import} (\hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} \&g, const Q\-String \&file, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type})
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a798b20591819f2e0b85344443a4b9ebd}{add\-Layer} (const \hyperlink{structDL__LayerData}{D\-L\-\_\-\-Layer\-Data} \&data)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_ac4f4aa3c6f02af2bc14e908d2d1a4c82}{add\-Block} (const \hyperlink{structDL__BlockData}{D\-L\-\_\-\-Block\-Data} \&data)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a72cf64dcc0bc4f8ee4cae964534d15f1}{end\-Block} ()
+\item 
+virtual void \hyperlink{classRS__FilterDXF_aee7bbcebddf3c5667f2fe0bc854f3d23}{add\-Point} (const \hyperlink{structDL__PointData}{D\-L\-\_\-\-Point\-Data} \&data)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a576c3d5f4fbaadde5ad2fc3af713d2df}{add\-Line} (const \hyperlink{structDL__LineData}{D\-L\-\_\-\-Line\-Data} \&data)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a8bc60141110bcb885b2a7a98ebe4eae1}{add\-Arc} (const \hyperlink{structDL__ArcData}{D\-L\-\_\-\-Arc\-Data} \&data)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a6256a85dcd658c094fe99467be324c9e}{add\-Ellipse} (const \hyperlink{structDL__EllipseData}{D\-L\-\_\-\-Ellipse\-Data} \&data)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a67f9544453e79404c568b20038c6e86f}{add\-Circle} (const \hyperlink{structDL__CircleData}{D\-L\-\_\-\-Circle\-Data} \&data)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a185c8165ee0b6b7142c062b068f5e28a}{add\-Polyline} (const \hyperlink{structDL__PolylineData}{D\-L\-\_\-\-Polyline\-Data} \&data)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_ad2bf9ff679bfa0c3a667ae25299ef9ad}{add\-Vertex} (const \hyperlink{structDL__VertexData}{D\-L\-\_\-\-Vertex\-Data} \&data)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a41207e3cfd5e59e0be5bb25b477ce108}{add\-Spline} (const \hyperlink{structDL__SplineData}{D\-L\-\_\-\-Spline\-Data} \&data)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_adf68ce2900c525f14354537bce5cc688}{add\-Knot} (const \hyperlink{structDL__KnotData}{D\-L\-\_\-\-Knot\-Data} \&)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a7d741bc81ca6763b64815e4abf43ee84}{add\-Control\-Point} (const \hyperlink{structDL__ControlPointData}{D\-L\-\_\-\-Control\-Point\-Data} \&data)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_adc983b8fb0d98007b6143a3f3d0fc9e4}{add\-Insert} (const \hyperlink{structDL__InsertData}{D\-L\-\_\-\-Insert\-Data} \&data)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_af2b3b0293fb68318ef74dbf8040cd57a}{add\-Trace} (const \hyperlink{structDL__TraceData}{D\-L\-\_\-\-Trace\-Data} \&)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_ab260dabe9013d5f0df9a4ae2f07cd8da}{add\-Solid} (const \hyperlink{structDL__TraceData}{D\-L\-\_\-\-Solid\-Data} \&)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a3fa43b97143634ea09ee221c734a1fd2}{add\-M\-Text\-Chunk} (const char $\ast$text)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a817fbb2f1610803b0332f26b8f93b1ad}{add\-M\-Text} (const \hyperlink{structDL__MTextData}{D\-L\-\_\-\-M\-Text\-Data} \&data)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_ae11dc853065daddace03fba9c20212e9}{add\-Text} (const \hyperlink{structDL__TextData}{D\-L\-\_\-\-Text\-Data} \&data)
+\item 
+\hyperlink{classRS__DimensionData}{R\-S\-\_\-\-Dimension\-Data} \hyperlink{classRS__FilterDXF_a5fec3f68a7a604783265650bf50f42a9}{conv\-Dimension\-Data} (const \hyperlink{structDL__DimensionData}{D\-L\-\_\-\-Dimension\-Data} \&data)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a347f327191d4159fa9d2eacb2c460cea}{add\-Dim\-Align} (const \hyperlink{structDL__DimensionData}{D\-L\-\_\-\-Dimension\-Data} \&data, const \hyperlink{structDL__DimAlignedData}{D\-L\-\_\-\-Dim\-Aligned\-Data} \&edata)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_acdbc5a560ca667a28b4d084eece7b06a}{add\-Dim\-Linear} (const \hyperlink{structDL__DimensionData}{D\-L\-\_\-\-Dimension\-Data} \&data, const \hyperlink{structDL__DimLinearData}{D\-L\-\_\-\-Dim\-Linear\-Data} \&edata)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a99e65dc9c7d7e431ff02f013bb2c3e88}{add\-Dim\-Radial} (const \hyperlink{structDL__DimensionData}{D\-L\-\_\-\-Dimension\-Data} \&data, const \hyperlink{structDL__DimRadialData}{D\-L\-\_\-\-Dim\-Radial\-Data} \&edata)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a3cf10c55981e83bca0dde1ff2b657bb9}{add\-Dim\-Diametric} (const \hyperlink{structDL__DimensionData}{D\-L\-\_\-\-Dimension\-Data} \&data, const \hyperlink{structDL__DimDiametricData}{D\-L\-\_\-\-Dim\-Diametric\-Data} \&edata)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_ab0479c8b2a86c2eef82cd228e036792a}{add\-Dim\-Angular} (const \hyperlink{structDL__DimensionData}{D\-L\-\_\-\-Dimension\-Data} \&data, const \hyperlink{structDL__DimAngularData}{D\-L\-\_\-\-Dim\-Angular\-Data} \&edata)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a12d47d646e77c99047d5366fc5bfd221}{add\-Dim\-Angular3\-P} (const \hyperlink{structDL__DimensionData}{D\-L\-\_\-\-Dimension\-Data} \&data, const \hyperlink{structDL__DimAngular3PData}{D\-L\-\_\-\-Dim\-Angular3\-P\-Data} \&edata)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_aa5e0dfe59c8804672193f5d0c9f6a4ea}{add\-Leader} (const \hyperlink{structDL__LeaderData}{D\-L\-\_\-\-Leader\-Data} \&data)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a466c1a7eeb8c856b471470f28293f627}{add\-Leader\-Vertex} (const \hyperlink{structDL__LeaderVertexData}{D\-L\-\_\-\-Leader\-Vertex\-Data} \&data)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a3097436b4e4c6014cb886385875e66a9}{add\-Hatch} (const \hyperlink{structDL__HatchData}{D\-L\-\_\-\-Hatch\-Data} \&data)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a5ab49680d35a4fa79bc64dd754e72fe9}{add\-Hatch\-Loop} (const \hyperlink{structDL__HatchLoopData}{D\-L\-\_\-\-Hatch\-Loop\-Data} \&data)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a099b5af7877dd3c248011683f6be0a47}{add\-Hatch\-Edge} (const \hyperlink{structDL__HatchEdgeData}{D\-L\-\_\-\-Hatch\-Edge\-Data} \&data)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a5e5209a571542f3bb4c62366d2190c06}{add\-Image} (const \hyperlink{structDL__ImageData}{D\-L\-\_\-\-Image\-Data} \&data)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a5625281f73cf5c1ba06786b0b743adbb}{link\-Image} (const \hyperlink{structDL__ImageDefData}{D\-L\-\_\-\-Image\-Def\-Data} \&data)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a76fda94ba8e5992b01a3d04bcf0596c9}{end\-Entity} ()
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a782f9a0f595213b12339612da549b870}{end\-Sequence} ()
+\item 
+virtual void \hyperlink{classRS__FilterDXF_ab3be1461298a0a133a507a2df3553fd7}{add3d\-Face} (const \hyperlink{structDL__TraceData}{D\-L\-\_\-3d\-Face\-Data} \&data)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_ab015cacfefde7b9dfc45f16fa2e5cd17}{add\-Dim\-Ordinate} (const \hyperlink{structDL__DimensionData}{D\-L\-\_\-\-Dimension\-Data} \&, const \hyperlink{structDL__DimOrdinateData}{D\-L\-\_\-\-Dim\-Ordinate\-Data} \&)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_af350ce43905a83f0278ae8bdf0d9f32a}{add\-Comment} (const char $\ast$)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_aa15ef5accc8540ab6f3bb77332e1a36b}{set\-Variable\-Vector} (const char $\ast$key, double v1, double v2, double v3, int code)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a80a149bd1e1bba2df3f2a9245f83f467}{set\-Variable\-String} (const char $\ast$key, const char $\ast$value, int code)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a84feb7c6a1839ead1ed6740b39397085}{set\-Variable\-Int} (const char $\ast$key, int value, int code)
+\item 
+virtual void \hyperlink{classRS__FilterDXF_a95f9096b80146c6a0cf13f42fcb30e3b}{set\-Variable\-Double} (const char $\ast$key, double value, int code)
+\item 
+virtual bool \hyperlink{classRS__FilterDXF_a55df0d99d7b7c67b94975b91cb85d191}{file\-Export} (\hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} \&g, const Q\-String \&file, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} type)
+\item 
+void \hyperlink{classRS__FilterDXF_ac44af4b7ba5b7caaa231e0acf2bc25c7}{write\-Variables} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw)
+\item 
+void \hyperlink{classRS__FilterDXF_a372bc14125237315791f2cee18d8ac22}{write\-Layer} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, \hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$l)
+\item 
+void \hyperlink{classRS__FilterDXF_ab801150163193b0868ae9c9ec78f63a6}{write\-Line\-Type} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, \hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95f}{R\-S2\-::\-Line\-Type} t)
+\item 
+void \hyperlink{classRS__FilterDXF_a6f22dbdf3f22dfd0f40566f61f7ac283}{write\-Appid} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const char $\ast$appid)
+\item 
+void \hyperlink{classRS__FilterDXF_a0475ec1f9b6abc613da33b7d2bbac059}{write\-Block} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, \hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$blk)
+\item 
+void \hyperlink{classRS__FilterDXF_a2ee821d5428cafd5abe57b8e0de3540d}{write\-Entity} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$e)
+\item 
+void \hyperlink{classRS__FilterDXF_a03df1dd8a2fcc0f96e98116a714d40f2}{write\-Entity} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$e, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classRS__FilterDXF_a3eec6502518f39184b9b2f390d999e02}{write\-Point} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, \hyperlink{classRS__Point}{R\-S\-\_\-\-Point} $\ast$p, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classRS__FilterDXF_a433971ffa409fd54eb92261f0739840d}{write\-Line} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, \hyperlink{classRS__Line}{R\-S\-\_\-\-Line} $\ast$l, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classRS__FilterDXF_a398f55aec6237940cb79e2c54c5d0edf}{write\-Polyline} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, \hyperlink{classRS__Polyline}{R\-S\-\_\-\-Polyline} $\ast$l, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classRS__FilterDXF_ae627cb3b3af25ed8996d5e8a665bd314}{write\-Spline} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, \hyperlink{classRS__Spline}{R\-S\-\_\-\-Spline} $\ast$s, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classRS__FilterDXF_a4d0453bb64d10ca54cf8db71c56eb032}{write\-Circle} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, \hyperlink{classRS__Circle}{R\-S\-\_\-\-Circle} $\ast$c, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+\hypertarget{classRS__FilterDXF_ab090cf521e68404f6b790b7c777a0d0f}{void {\bfseries write\-Arc} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, \hyperlink{classRS__Arc}{R\-S\-\_\-\-Arc} $\ast$a, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)}\label{classRS__FilterDXF_ab090cf521e68404f6b790b7c777a0d0f}
+
+\item 
+\hypertarget{classRS__FilterDXF_a46744668ae9bd2b7b693a9c23f63eedd}{void {\bfseries write\-Ellipse} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, \hyperlink{classRS__Ellipse}{R\-S\-\_\-\-Ellipse} $\ast$s, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)}\label{classRS__FilterDXF_a46744668ae9bd2b7b693a9c23f63eedd}
+
+\item 
+\hypertarget{classRS__FilterDXF_a4d54731718eaadbbbb41553ed2f1d090}{void {\bfseries write\-Insert} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, \hyperlink{classRS__Insert}{R\-S\-\_\-\-Insert} $\ast$i, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)}\label{classRS__FilterDXF_a4d54731718eaadbbbb41553ed2f1d090}
+
+\item 
+\hypertarget{classRS__FilterDXF_a63a4dd38e437a19b47510201eada2fdf}{void {\bfseries write\-Text} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, \hyperlink{classRS__Text}{R\-S\-\_\-\-Text} $\ast$t, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)}\label{classRS__FilterDXF_a63a4dd38e437a19b47510201eada2fdf}
+
+\item 
+\hypertarget{classRS__FilterDXF_a52b8b95a76ca48a03b21a05055937482}{void {\bfseries write\-Dimension} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, \hyperlink{classRS__Dimension}{R\-S\-\_\-\-Dimension} $\ast$d, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)}\label{classRS__FilterDXF_a52b8b95a76ca48a03b21a05055937482}
+
+\item 
+\hypertarget{classRS__FilterDXF_aba00b2d925673e18647bf8a974a90512}{void {\bfseries write\-Leader} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, \hyperlink{classRS__Leader}{R\-S\-\_\-\-Leader} $\ast$l, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)}\label{classRS__FilterDXF_aba00b2d925673e18647bf8a974a90512}
+
+\item 
+\hypertarget{classRS__FilterDXF_a9de82861d406069c5d6b77e01c28abe3}{void {\bfseries write\-Hatch} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, \hyperlink{classRS__Hatch}{R\-S\-\_\-\-Hatch} $\ast$h, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)}\label{classRS__FilterDXF_a9de82861d406069c5d6b77e01c28abe3}
+
+\item 
+\hypertarget{classRS__FilterDXF_a6c538b7b1aa24d2afd07f9f473044ff8}{void {\bfseries write\-Solid} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, \hyperlink{classRS__Solid}{R\-S\-\_\-\-Solid} $\ast$s, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)}\label{classRS__FilterDXF_a6c538b7b1aa24d2afd07f9f473044ff8}
+
+\item 
+\hypertarget{classRS__FilterDXF_a50d8bde873d8a3640955fa49b53037c4}{void {\bfseries write\-Image} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, \hyperlink{classRS__Image}{R\-S\-\_\-\-Image} $\ast$i, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)}\label{classRS__FilterDXF_a50d8bde873d8a3640955fa49b53037c4}
+
+\item 
+\hypertarget{classRS__FilterDXF_ae1fb3118303ba07c269597a7e3f84c1e}{void {\bfseries write\-Entity\-Container} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, \hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} $\ast$con, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)}\label{classRS__FilterDXF_ae1fb3118303ba07c269597a7e3f84c1e}
+
+\item 
+void \hyperlink{classRS__FilterDXF_a6705058dfed48ed15cae029df0c6476e}{write\-Atomic\-Entities} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, \hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} $\ast$c, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib, \hyperlink{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20}{R\-S2\-::\-Resolve\-Level} level)
+\item 
+void \hyperlink{classRS__FilterDXF_a079cc277d50333301438fc86de2cce6f}{write\-Image\-Def} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, \hyperlink{classRS__Image}{R\-S\-\_\-\-Image} $\ast$i)
+\item 
+void \hyperlink{classRS__FilterDXF_a497c03353f14e3593d38cc8d4aad8d22}{set\-Entity\-Attributes} (\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$entity, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+\hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \hyperlink{classRS__FilterDXF_a9567bfd3bf0beb49149b37829be9002e}{get\-Entity\-Attributes} (\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$entity)
+\item 
+\hypertarget{classRS__FilterDXF_a2f4b83e87685118afd5a4959e622680e}{Q\-String {\bfseries get\-D\-X\-F\-Encoding} ()}\label{classRS__FilterDXF_a2f4b83e87685118afd5a4959e622680e}
+
+\item 
+\hyperlink{classRS__Pen}{R\-S\-\_\-\-Pen} \hyperlink{classRS__FilterDXF_a9aff2ab9d499ec9a5d239f4dbe602e95}{attributes\-To\-Pen} (const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Q\-String \hyperlink{classRS__FilterDXF_a0f993f9a3e6c7ea7c9d428759eb1ca6f}{to\-Dxf\-String} (const Q\-String \&string)
+\item 
+static Q\-String \hyperlink{classRS__FilterDXF_a6f6a6d4486c1933b43a144beb87f0bc5}{to\-Native\-String} (const char $\ast$data, const Q\-String \&encoding)
+\item 
+static \hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \hyperlink{classRS__FilterDXF_a193e3412c428ae7c514ddc33d8d76c90}{number\-To\-Color} (int num, bool comp=false)
+\item 
+static int \hyperlink{classRS__FilterDXF_afc1dba9a5af52005984da5cfe64177a6}{color\-To\-Number} (const \hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \&col)
+\item 
+static \hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95f}{R\-S2\-::\-Line\-Type} \hyperlink{classRS__FilterDXF_abc5d789e59f1b97767f2e3c12de66e25}{name\-To\-Line\-Type} (const Q\-String \&name)
+\item 
+static Q\-String \hyperlink{classRS__FilterDXF_af6758fade47b20a72c82f1b93dc68b9b}{line\-Type\-To\-Name} (\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95f}{R\-S2\-::\-Line\-Type} line\-Type)
+\item 
+static \hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29}{R\-S2\-::\-Line\-Width} \hyperlink{classRS__FilterDXF_a8854df00388046f8547058a8f346a6b7}{number\-To\-Width} (int num)
+\item 
+static int \hyperlink{classRS__FilterDXF_a19102ec33971271740ae198241abef0b}{width\-To\-Number} (\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29}{R\-S2\-::\-Line\-Width} width)
+\item 
+static \hyperlink{classRS2_a9c7a07b03f910b04154536a28c151277}{R\-S2\-::\-Angle\-Format} \hyperlink{classRS__FilterDXF_a3107d89edacf212f3817277e7cfe3d50}{number\-To\-Angle\-Format} (int num)
+\item 
+static int \hyperlink{classRS__FilterDXF_aed6b20b1427a3379d72c3e2a29d726b2}{angle\-Format\-To\-Number} (\hyperlink{classRS2_a9c7a07b03f910b04154536a28c151277}{R\-S2\-::\-Angle\-Format} af)
+\item 
+static \hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828}{R\-S2\-::\-Unit} \hyperlink{classRS__FilterDXF_aab439645c4219f35e470d9888137365e}{number\-To\-Unit} (int num)
+\item 
+static int \hyperlink{classRS__FilterDXF_af8b0db65f3b0754fb4db88e89d83b51b}{unit\-To\-Number} (\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828}{R\-S2\-::\-Unit} unit)
+\item 
+static bool \hyperlink{classRS__FilterDXF_a7acfbb252a0d692061c049097c812a6e}{is\-Variable\-Two\-Dimensional} (const Q\-String \&var)
+\item 
+\hypertarget{classRS__FilterDXF_a248e18d7dd983bd7fa6d220c2b1054c6}{static \hyperlink{classRS__FilterInterface}{R\-S\-\_\-\-Filter\-Interface} $\ast$ {\bfseries create\-Filter} ()}\label{classRS__FilterDXF_a248e18d7dd983bd7fa6d220c2b1054c6}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This format filter class can import and export D\-X\-F files. It depends on the dxflib library.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__FilterDXF_acffa87085a4a0efd349af8df71be9602}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{R\-S\-\_\-\-Filter\-D\-X\-F}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Filter\-D\-X\-F\-::\-R\-S\-\_\-\-Filter\-D\-X\-F (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF_acffa87085a4a0efd349af8df71be9602}
+Default constructor. \hypertarget{classRS__FilterDXF_a2aa19c87c956869a91f8f2a5ae6ee27d}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!$\sim$\-R\-S\-\_\-\-Filter\-D\-X\-F@{$\sim$\-R\-S\-\_\-\-Filter\-D\-X\-F}}
+\index{$\sim$\-R\-S\-\_\-\-Filter\-D\-X\-F@{$\sim$\-R\-S\-\_\-\-Filter\-D\-X\-F}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{$\sim$\-R\-S\-\_\-\-Filter\-D\-X\-F}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Filter\-D\-X\-F\-::$\sim$\-R\-S\-\_\-\-Filter\-D\-X\-F (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF_a2aa19c87c956869a91f8f2a5ae6ee27d}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__FilterDXF_ab3be1461298a0a133a507a2df3553fd7}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add3d\-Face@{add3d\-Face}}
+\index{add3d\-Face@{add3d\-Face}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add3d\-Face}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add3d\-Face (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-3d\-Face\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_ab3be1461298a0a133a507a2df3553fd7}
+Called for every 3dface start 
+
+Implements \hyperlink{classDL__CreationInterface_a12cd3603b6bd5373c414788ae73191c9}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a8bc60141110bcb885b2a7a98ebe4eae1}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Arc@{add\-Arc}}
+\index{add\-Arc@{add\-Arc}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Arc}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Arc (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Arc\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a8bc60141110bcb885b2a7a98ebe4eae1}
+Implementation of the method which handles arc entities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle1} & Start angle in deg (!) \\
+\hline
+{\em angle2} & End angle in deg (!) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classDL__CreationInterface_a67f4f086b530c93ece8d5c2591213517}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_ac4f4aa3c6f02af2bc14e908d2d1a4c82}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Block@{add\-Block}}
+\index{add\-Block@{add\-Block}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Block}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Block (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Block\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_ac4f4aa3c6f02af2bc14e908d2d1a4c82}
+Implementation of the method which handles blocks.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000010}{Todo}]Adding blocks to blocks (stack for current\-Container) \end{DoxyRefDesc}
+
+
+Implements \hyperlink{classDL__CreationInterface_a058791e7dccf4511e09ea2d292ea728d}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a67f9544453e79404c568b20038c6e86f}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Circle@{add\-Circle}}
+\index{add\-Circle@{add\-Circle}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Circle}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Circle (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Circle\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a67f9544453e79404c568b20038c6e86f}
+Implementation of the method which handles circle entities. 
+
+Implements \hyperlink{classDL__CreationInterface_ada8ad9e8697df6411defb4b5d2130bd6}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_af350ce43905a83f0278ae8bdf0d9f32a}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Comment@{add\-Comment}}
+\index{add\-Comment@{add\-Comment}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Comment}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Comment (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{comment}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_af350ce43905a83f0278ae8bdf0d9f32a}
+Called for every comment in the D\-X\-F file (code 999). 
+
+Implements \hyperlink{classDL__CreationInterface_a7dc5362faf3264e11304000c0950093b}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a7d741bc81ca6763b64815e4abf43ee84}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Control\-Point@{add\-Control\-Point}}
+\index{add\-Control\-Point@{add\-Control\-Point}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Control\-Point}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Control\-Point (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Control\-Point\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a7d741bc81ca6763b64815e4abf43ee84}
+Implementation of the method which handles spline control points. 
+
+Implements \hyperlink{classDL__CreationInterface_ae96c9c9f9443600dc8fa9c4e06fe1580}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a347f327191d4159fa9d2eacb2c460cea}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Dim\-Align@{add\-Dim\-Align}}
+\index{add\-Dim\-Align@{add\-Dim\-Align}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Dim\-Align}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Dim\-Align (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Dimension\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Dim\-Aligned\-Data} \&}]{edata}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a347f327191d4159fa9d2eacb2c460cea}
+Implementation of the method which handles aligned dimensions (D\-I\-M\-E\-N\-S\-I\-O\-N). 
+
+Implements \hyperlink{classDL__CreationInterface_a3250c8f044343c42040c805d26f75593}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_ab0479c8b2a86c2eef82cd228e036792a}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Dim\-Angular@{add\-Dim\-Angular}}
+\index{add\-Dim\-Angular@{add\-Dim\-Angular}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Dim\-Angular}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Dim\-Angular (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Dimension\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Dim\-Angular\-Data} \&}]{edata}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_ab0479c8b2a86c2eef82cd228e036792a}
+Implementation of the method which handles angular dimensions (D\-I\-M\-E\-N\-S\-I\-O\-N). 
+
+Implements \hyperlink{classDL__CreationInterface_a46f41a545c46040b6a368d415a8a73da}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a12d47d646e77c99047d5366fc5bfd221}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Dim\-Angular3\-P@{add\-Dim\-Angular3\-P}}
+\index{add\-Dim\-Angular3\-P@{add\-Dim\-Angular3\-P}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Dim\-Angular3\-P}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Dim\-Angular3\-P (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Dimension\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Dim\-Angular3\-P\-Data} \&}]{edata}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a12d47d646e77c99047d5366fc5bfd221}
+Implementation of the method which handles angular dimensions (D\-I\-M\-E\-N\-S\-I\-O\-N). 
+
+Implements \hyperlink{classDL__CreationInterface_a0c3c8c60323edf457d99df5472e1c39b}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a3cf10c55981e83bca0dde1ff2b657bb9}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Dim\-Diametric@{add\-Dim\-Diametric}}
+\index{add\-Dim\-Diametric@{add\-Dim\-Diametric}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Dim\-Diametric}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Dim\-Diametric (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Dimension\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Dim\-Diametric\-Data} \&}]{edata}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a3cf10c55981e83bca0dde1ff2b657bb9}
+Implementation of the method which handles diametric dimensions (D\-I\-M\-E\-N\-S\-I\-O\-N). 
+
+Implements \hyperlink{classDL__CreationInterface_a9796f030d0158a5451dc08f20631efd9}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_acdbc5a560ca667a28b4d084eece7b06a}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Dim\-Linear@{add\-Dim\-Linear}}
+\index{add\-Dim\-Linear@{add\-Dim\-Linear}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Dim\-Linear}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Dim\-Linear (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Dimension\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Dim\-Linear\-Data} \&}]{edata}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_acdbc5a560ca667a28b4d084eece7b06a}
+Implementation of the method which handles linear dimensions (D\-I\-M\-E\-N\-S\-I\-O\-N). 
+
+Implements \hyperlink{classDL__CreationInterface_a95ad1a05beacc28f43096792db4a2278}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_ab015cacfefde7b9dfc45f16fa2e5cd17}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Dim\-Ordinate@{add\-Dim\-Ordinate}}
+\index{add\-Dim\-Ordinate@{add\-Dim\-Ordinate}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Dim\-Ordinate}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Dim\-Ordinate (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Dimension\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Dim\-Ordinate\-Data} \&}]{edata}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_ab015cacfefde7b9dfc45f16fa2e5cd17}
+Called for every ordinate dimension entity. 
+
+Implements \hyperlink{classDL__CreationInterface_a72d83659564e2e55fc6d20d6eb11cb00}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a99e65dc9c7d7e431ff02f013bb2c3e88}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Dim\-Radial@{add\-Dim\-Radial}}
+\index{add\-Dim\-Radial@{add\-Dim\-Radial}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Dim\-Radial}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Dim\-Radial (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Dimension\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Dim\-Radial\-Data} \&}]{edata}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a99e65dc9c7d7e431ff02f013bb2c3e88}
+Implementation of the method which handles radial dimensions (D\-I\-M\-E\-N\-S\-I\-O\-N). 
+
+Implements \hyperlink{classDL__CreationInterface_a2fd855b792f7b7ff2ea9d9d009607cd0}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a6256a85dcd658c094fe99467be324c9e}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Ellipse@{add\-Ellipse}}
+\index{add\-Ellipse@{add\-Ellipse}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Ellipse}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Ellipse (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Ellipse\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a6256a85dcd658c094fe99467be324c9e}
+Implementation of the method which handles ellipse entities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle1} & Start angle in rad (!) \\
+\hline
+{\em angle2} & End angle in rad (!) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classDL__CreationInterface_a0e3c23fe83bf6a0dbbf61d41f850f595}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a3097436b4e4c6014cb886385875e66a9}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Hatch@{add\-Hatch}}
+\index{add\-Hatch@{add\-Hatch}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Hatch}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Hatch (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Hatch\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a3097436b4e4c6014cb886385875e66a9}
+Implementation of the method which handles hatch entities. 
+
+Implements \hyperlink{classDL__CreationInterface_ab1020b5a6ed2805304dd0d9ab1ca6125}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a099b5af7877dd3c248011683f6be0a47}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Hatch\-Edge@{add\-Hatch\-Edge}}
+\index{add\-Hatch\-Edge@{add\-Hatch\-Edge}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Hatch\-Edge}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Hatch\-Edge (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Hatch\-Edge\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a099b5af7877dd3c248011683f6be0a47}
+Implementation of the method which handles hatch edge entities. 
+
+Implements \hyperlink{classDL__CreationInterface_a07395d439b319d1ee9dcc933205d5095}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a5ab49680d35a4fa79bc64dd754e72fe9}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Hatch\-Loop@{add\-Hatch\-Loop}}
+\index{add\-Hatch\-Loop@{add\-Hatch\-Loop}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Hatch\-Loop}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Hatch\-Loop (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Hatch\-Loop\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a5ab49680d35a4fa79bc64dd754e72fe9}
+Implementation of the method which handles hatch loops. 
+
+Implements \hyperlink{classDL__CreationInterface_a8fadafd0dbb1c139a58b7d053af37de0}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a5e5209a571542f3bb4c62366d2190c06}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Image@{add\-Image}}
+\index{add\-Image@{add\-Image}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Image}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Image (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Image\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a5e5209a571542f3bb4c62366d2190c06}
+Implementation of the method which handles image entities. 
+
+Implements \hyperlink{classDL__CreationInterface_a95ba240d97f9d2b450362fa999ad5878}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_adc983b8fb0d98007b6143a3f3d0fc9e4}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Insert@{add\-Insert}}
+\index{add\-Insert@{add\-Insert}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Insert}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Insert (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Insert\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_adc983b8fb0d98007b6143a3f3d0fc9e4}
+Implementation of the method which handles inserts. 
+
+Implements \hyperlink{classDL__CreationInterface_a2b4be5fe52dc83159c12ff468f176504}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_adf68ce2900c525f14354537bce5cc688}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Knot@{add\-Knot}}
+\index{add\-Knot@{add\-Knot}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Knot}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Knot (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Knot\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__FilterDXF_adf68ce2900c525f14354537bce5cc688}
+Called for every spline knot value 
+
+Implements \hyperlink{classDL__CreationInterface_aee48f189d80ce699ccea05766fe12f46}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a798b20591819f2e0b85344443a4b9ebd}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Layer@{add\-Layer}}
+\index{add\-Layer@{add\-Layer}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Layer (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Layer\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a798b20591819f2e0b85344443a4b9ebd}
+Implementation of the method which handles layers. 
+
+Implements \hyperlink{classDL__CreationInterface_a97e5706d9dde3cdbc06e34971828172b}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_aa5e0dfe59c8804672193f5d0c9f6a4ea}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Leader@{add\-Leader}}
+\index{add\-Leader@{add\-Leader}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Leader}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Leader (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Leader\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_aa5e0dfe59c8804672193f5d0c9f6a4ea}
+Implementation of the method which handles leader entities. 
+
+Implements \hyperlink{classDL__CreationInterface_acf6249ec717919ab3afcbeaa726c6271}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a466c1a7eeb8c856b471470f28293f627}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Leader\-Vertex@{add\-Leader\-Vertex}}
+\index{add\-Leader\-Vertex@{add\-Leader\-Vertex}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Leader\-Vertex}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Leader\-Vertex (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Leader\-Vertex\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a466c1a7eeb8c856b471470f28293f627}
+Implementation of the method which handles leader vertices. 
+
+Implements \hyperlink{classDL__CreationInterface_a76c5860a6488955d1031f64d4f9ba692}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a576c3d5f4fbaadde5ad2fc3af713d2df}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Line@{add\-Line}}
+\index{add\-Line@{add\-Line}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Line (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Line\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a576c3d5f4fbaadde5ad2fc3af713d2df}
+Implementation of the method which handles line entities. 
+
+Implements \hyperlink{classDL__CreationInterface_a810493ceadcf1a1f58d297da9b94bbcd}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a817fbb2f1610803b0332f26b8f93b1ad}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-M\-Text@{add\-M\-Text}}
+\index{add\-M\-Text@{add\-M\-Text}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-M\-Text}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-M\-Text (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-M\-Text\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a817fbb2f1610803b0332f26b8f93b1ad}
+Implementation of the method which handles multi texts (M\-T\-E\-X\-T). 
+
+Implements \hyperlink{classDL__CreationInterface_aa2ec7bd71757de16657f04de9084961b}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a3fa43b97143634ea09ee221c734a1fd2}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-M\-Text\-Chunk@{add\-M\-Text\-Chunk}}
+\index{add\-M\-Text\-Chunk@{add\-M\-Text\-Chunk}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-M\-Text\-Chunk}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-M\-Text\-Chunk (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a3fa43b97143634ea09ee221c734a1fd2}
+Implementation of the method which handles text chunks for M\-Text entities. 
+
+Implements \hyperlink{classDL__CreationInterface_a3066271e07e5d63aca7fa23698e5bb49}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_aee7bbcebddf3c5667f2fe0bc854f3d23}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Point@{add\-Point}}
+\index{add\-Point@{add\-Point}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Point}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Point (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Point\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_aee7bbcebddf3c5667f2fe0bc854f3d23}
+Implementation of the method which handles point entities. 
+
+Implements \hyperlink{classDL__CreationInterface_a446f8a07c16455bd13313e256ae10fe9}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a185c8165ee0b6b7142c062b068f5e28a}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Polyline@{add\-Polyline}}
+\index{add\-Polyline@{add\-Polyline}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Polyline}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Polyline (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Polyline\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a185c8165ee0b6b7142c062b068f5e28a}
+Implementation of the method which handles polyline entities. 
+
+Implements \hyperlink{classDL__CreationInterface_af7798457fb69284ab8fe6f2036030a8b}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_ab260dabe9013d5f0df9a4ae2f07cd8da}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Solid@{add\-Solid}}
+\index{add\-Solid@{add\-Solid}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Solid}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Solid (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Solid\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__FilterDXF_ab260dabe9013d5f0df9a4ae2f07cd8da}
+Called for every solid start 
+
+Implements \hyperlink{classDL__CreationInterface_a16e06e659acbfb4e3647690b01b9e308}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a41207e3cfd5e59e0be5bb25b477ce108}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Spline@{add\-Spline}}
+\index{add\-Spline@{add\-Spline}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Spline}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Spline (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Spline\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a41207e3cfd5e59e0be5bb25b477ce108}
+Implementation of the method which handles splines. 
+
+Implements \hyperlink{classDL__CreationInterface_ae1b7d461b9b3a474570b2251a89a4461}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_ae11dc853065daddace03fba9c20212e9}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Text@{add\-Text}}
+\index{add\-Text@{add\-Text}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Text}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Text (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Text\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_ae11dc853065daddace03fba9c20212e9}
+Implementation of the method which handles texts (T\-E\-X\-T). 
+
+Implements \hyperlink{classDL__CreationInterface_a7278cb1ca5256f9dde83b2e19ffd294a}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_af2b3b0293fb68318ef74dbf8040cd57a}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Trace@{add\-Trace}}
+\index{add\-Trace@{add\-Trace}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Trace}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Trace (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Trace\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__FilterDXF_af2b3b0293fb68318ef74dbf8040cd57a}
+Called for every trace start 
+
+Implements \hyperlink{classDL__CreationInterface_a8ebdc2a6b50d0d10ee1d9bfbdc45ee9d}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_ad2bf9ff679bfa0c3a667ae25299ef9ad}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!add\-Vertex@{add\-Vertex}}
+\index{add\-Vertex@{add\-Vertex}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{add\-Vertex}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::add\-Vertex (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Vertex\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_ad2bf9ff679bfa0c3a667ae25299ef9ad}
+Implementation of the method which handles polyline vertices. 
+
+Implements \hyperlink{classDL__CreationInterface_a27ff9e33de99ac82ed93f0dba38cd496}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_aed6b20b1427a3379d72c3e2a29d726b2}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!angle\-Format\-To\-Number@{angle\-Format\-To\-Number}}
+\index{angle\-Format\-To\-Number@{angle\-Format\-To\-Number}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{angle\-Format\-To\-Number}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Filter\-D\-X\-F\-::angle\-Format\-To\-Number (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Angle\-Format}}]{af}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__FilterDXF_aed6b20b1427a3379d72c3e2a29d726b2}
+Converts Angle\-Format enum to D\-X\-F number. \hypertarget{classRS__FilterDXF_a9aff2ab9d499ec9a5d239f4dbe602e95}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!attributes\-To\-Pen@{attributes\-To\-Pen}}
+\index{attributes\-To\-Pen@{attributes\-To\-Pen}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{attributes\-To\-Pen}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Pen} R\-S\-\_\-\-Filter\-D\-X\-F\-::attributes\-To\-Pen (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+) const}}\label{classRS__FilterDXF_a9aff2ab9d499ec9a5d239f4dbe602e95}
+\begin{DoxyReturn}{Returns}
+Pen with the same attributes as 'attrib'. 
+\end{DoxyReturn}
+\hypertarget{classRS__FilterDXF_a0d69c493c3416af868a1c16f864a3b71}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!can\-Export@{can\-Export}}
+\index{can\-Export@{can\-Export}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{can\-Export}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Filter\-D\-X\-F\-::can\-Export (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{file\-Name, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{t}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__FilterDXF_a0d69c493c3416af868a1c16f864a3b71}
+Checks if this filter can export the given file type.
+
+\begin{DoxyReturn}{Returns}
+true if the filter can export the file type, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__FilterInterface_af96c8b390ee351e7b7112a974a52828c}{R\-S\-\_\-\-Filter\-Interface}.
+
+\hypertarget{classRS__FilterDXF_add335948d3bca1dd68b84f432f8e7628}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!can\-Import@{can\-Import}}
+\index{can\-Import@{can\-Import}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{can\-Import}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Filter\-D\-X\-F\-::can\-Import (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{file\-Name, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{t}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__FilterDXF_add335948d3bca1dd68b84f432f8e7628}
+Checks if this filter can import the given file type.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & if the filter can import the file type \\
+\hline
+{\em false} & otherwise. \\
+\hline
+\end{DoxyRetVals}
+
+
+Implements \hyperlink{classRS__FilterInterface_a62540c02649ca2040be61e5ce9e56742}{R\-S\-\_\-\-Filter\-Interface}.
+
+\hypertarget{classRS__FilterDXF_afc1dba9a5af52005984da5cfe64177a6}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!color\-To\-Number@{color\-To\-Number}}
+\index{color\-To\-Number@{color\-To\-Number}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{color\-To\-Number}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Filter\-D\-X\-F\-::color\-To\-Number (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Color} \&}]{col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__FilterDXF_afc1dba9a5af52005984da5cfe64177a6}
+Converts a color into a color number in the D\-X\-F palette. The color that fits best is chosen. \hypertarget{classRS__FilterDXF_a5fec3f68a7a604783265650bf50f42a9}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!conv\-Dimension\-Data@{conv\-Dimension\-Data}}
+\index{conv\-Dimension\-Data@{conv\-Dimension\-Data}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{conv\-Dimension\-Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Dimension\-Data} R\-S\-\_\-\-Filter\-D\-X\-F\-::conv\-Dimension\-Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Dimension\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF_a5fec3f68a7a604783265650bf50f42a9}
+Implementation of the method which handles dimensions (D\-I\-M\-E\-N\-S\-I\-O\-N). \hypertarget{classRS__FilterDXF_a72cf64dcc0bc4f8ee4cae964534d15f1}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!end\-Block@{end\-Block}}
+\index{end\-Block@{end\-Block}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{end\-Block}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::end\-Block (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a72cf64dcc0bc4f8ee4cae964534d15f1}
+Implementation of the method which closes blocks. 
+
+Implements \hyperlink{classDL__CreationInterface_a9dfba582bfa5bfb1de7664740a54ff11}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a76fda94ba8e5992b01a3d04bcf0596c9}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!end\-Entity@{end\-Entity}}
+\index{end\-Entity@{end\-Entity}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{end\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::end\-Entity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a76fda94ba8e5992b01a3d04bcf0596c9}
+Finishes a hatch entity. 
+
+Implements \hyperlink{classDL__CreationInterface_ae338a37fc044654e77080dcb13f93c9a}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a782f9a0f595213b12339612da549b870}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!end\-Sequence@{end\-Sequence}}
+\index{end\-Sequence@{end\-Sequence}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{end\-Sequence}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Filter\-D\-X\-F\-::end\-Sequence (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__FilterDXF_a782f9a0f595213b12339612da549b870}
+Called when a S\-E\-Q\-E\-N\-D occurs (when a P\-O\-L\-Y\-L\-I\-N\-E or A\-T\-T\-R\-I\-B is done) 
+
+Implements \hyperlink{classDL__CreationInterface_a8b7558ec21f8e93c5ff12aadcdbc72e1}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a55df0d99d7b7c67b94975b91cb85d191}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!file\-Export@{file\-Export}}
+\index{file\-Export@{file\-Export}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{file\-Export}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Filter\-D\-X\-F\-::file\-Export (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Graphic} \&}]{g, }
+\item[{const Q\-String \&}]{file, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a55df0d99d7b7c67b94975b91cb85d191}
+Implementation of the method used for R\-S\-\_\-\-Export to communicate with this filter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & Full path to the D\-X\-F file that will be written. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__FilterInterface_a85601a186a66bbf6bedaed7b79cd034f}{R\-S\-\_\-\-Filter\-Interface}.
+
+\hypertarget{classRS__FilterDXF_afa9715a120bca739600ff0fbeb913e65}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!file\-Import@{file\-Import}}
+\index{file\-Import@{file\-Import}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{file\-Import}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Filter\-D\-X\-F\-::file\-Import (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Graphic} \&}]{g, }
+\item[{const Q\-String \&}]{file, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_afa9715a120bca739600ff0fbeb913e65}
+Implementation of the method used for R\-S\-\_\-\-Import to communicate with this filter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & The graphic in which the entities from the file will be created or the graphics from which the entities are taken to be stored in a file. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__FilterInterface_a6d4bf32c02a4c61f8465acc78b10e090}{R\-S\-\_\-\-Filter\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a9567bfd3bf0beb49149b37829be9002e}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!get\-Entity\-Attributes@{get\-Entity\-Attributes}}
+\index{get\-Entity\-Attributes@{get\-Entity\-Attributes}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{get\-Entity\-Attributes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-L\-\_\-\-Attributes} R\-S\-\_\-\-Filter\-D\-X\-F\-::get\-Entity\-Attributes (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{entity}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF_a9567bfd3bf0beb49149b37829be9002e}
+Gets the entities attributes as a \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} object. \hypertarget{classRS__FilterDXF_a7acfbb252a0d692061c049097c812a6e}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!is\-Variable\-Two\-Dimensional@{is\-Variable\-Two\-Dimensional}}
+\index{is\-Variable\-Two\-Dimensional@{is\-Variable\-Two\-Dimensional}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{is\-Variable\-Two\-Dimensional}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Filter\-D\-X\-F\-::is\-Variable\-Two\-Dimensional (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__FilterDXF_a7acfbb252a0d692061c049097c812a6e}
+Checks if the given variable is two-\/dimensional (e.\-g. \$\-L\-I\-M\-M\-I\-N). \hypertarget{classRS__FilterDXF_af6758fade47b20a72c82f1b93dc68b9b}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!line\-Type\-To\-Name@{line\-Type\-To\-Name}}
+\index{line\-Type\-To\-Name@{line\-Type\-To\-Name}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{line\-Type\-To\-Name}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Filter\-D\-X\-F\-::line\-Type\-To\-Name (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Line\-Type}}]{line\-Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__FilterDXF_af6758fade47b20a72c82f1b93dc68b9b}
+Converts a R\-S\-\_\-\-Line\-Type into a name for a line type. \hypertarget{classRS__FilterDXF_a5625281f73cf5c1ba06786b0b743adbb}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!link\-Image@{link\-Image}}
+\index{link\-Image@{link\-Image}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{link\-Image}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::link\-Image (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Image\-Def\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a5625281f73cf5c1ba06786b0b743adbb}
+Implementation of the method which links image entities to image files. 
+
+Implements \hyperlink{classDL__CreationInterface_a519f3aba4d7dcd917d800c1aa3eeba49}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_abc5d789e59f1b97767f2e3c12de66e25}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!name\-To\-Line\-Type@{name\-To\-Line\-Type}}
+\index{name\-To\-Line\-Type@{name\-To\-Line\-Type}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{name\-To\-Line\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Line\-Type} R\-S\-\_\-\-Filter\-D\-X\-F\-::name\-To\-Line\-Type (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__FilterDXF_abc5d789e59f1b97767f2e3c12de66e25}
+Converts a line type name (e.\-g. \char`\"{}\-C\-O\-N\-T\-I\-N\-U\-O\-U\-S\char`\"{}) into a \hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95f}{R\-S2\-::\-Line\-Type} object. \hypertarget{classRS__FilterDXF_a3107d89edacf212f3817277e7cfe3d50}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!number\-To\-Angle\-Format@{number\-To\-Angle\-Format}}
+\index{number\-To\-Angle\-Format@{number\-To\-Angle\-Format}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{number\-To\-Angle\-Format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Angle\-Format} R\-S\-\_\-\-Filter\-D\-X\-F\-::number\-To\-Angle\-Format (
+\begin{DoxyParamCaption}
+\item[{int}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__FilterDXF_a3107d89edacf212f3817277e7cfe3d50}
+Converts the given number from a D\-X\-F file into an Angle\-Format enum.
+
+
+\begin{DoxyParams}[1]{Parameters}
+num & {\em \$\-D\-I\-M\-A\-U\-N\-I\-T} & from D\-X\-F (0\-: decimal deg, 1\-: deg/min/sec, 2\-: gradians, 3\-: radians, 4\-: surveyor's units)\\
+\hline
+\end{DoxyParams}
+Matching Angle\-Format enum value. \hypertarget{classRS__FilterDXF_a193e3412c428ae7c514ddc33d8d76c90}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!number\-To\-Color@{number\-To\-Color}}
+\index{number\-To\-Color@{number\-To\-Color}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{number\-To\-Color}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Color} R\-S\-\_\-\-Filter\-D\-X\-F\-::number\-To\-Color (
+\begin{DoxyParamCaption}
+\item[{int}]{num, }
+\item[{bool}]{comp = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__FilterDXF_a193e3412c428ae7c514ddc33d8d76c90}
+Converts a color index (num) into a \hyperlink{classRS__Color}{R\-S\-\_\-\-Color} object. Please refer to the dxflib documentation for details.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Color number. \\
+\hline
+{\em comp} & Compatibility with older Q\-Cad versions (1.\-5.\-3 and older) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__FilterDXF_aab439645c4219f35e470d9888137365e}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!number\-To\-Unit@{number\-To\-Unit}}
+\index{number\-To\-Unit@{number\-To\-Unit}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{number\-To\-Unit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Unit} R\-S\-\_\-\-Filter\-D\-X\-F\-::number\-To\-Unit (
+\begin{DoxyParamCaption}
+\item[{int}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__FilterDXF_aab439645c4219f35e470d9888137365e}
+converts a D\-X\-F unit setting (e.\-g. I\-N\-S\-U\-N\-I\-T\-S) to a unit enum. \hypertarget{classRS__FilterDXF_a8854df00388046f8547058a8f346a6b7}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!number\-To\-Width@{number\-To\-Width}}
+\index{number\-To\-Width@{number\-To\-Width}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{number\-To\-Width}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Line\-Width} R\-S\-\_\-\-Filter\-D\-X\-F\-::number\-To\-Width (
+\begin{DoxyParamCaption}
+\item[{int}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__FilterDXF_a8854df00388046f8547058a8f346a6b7}
+Converts a R\-S\-\_\-\-Line\-Type into a name for a line type. Converts a line width number (e.\-g. 1) into a \hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29}{R\-S2\-::\-Line\-Width}. \hypertarget{classRS__FilterDXF_a497c03353f14e3593d38cc8d4aad8d22}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!set\-Entity\-Attributes@{set\-Entity\-Attributes}}
+\index{set\-Entity\-Attributes@{set\-Entity\-Attributes}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{set\-Entity\-Attributes}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::set\-Entity\-Attributes (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{entity, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF_a497c03353f14e3593d38cc8d4aad8d22}
+Sets the entities attributes according to the attributes that come from a D\-X\-F file. \hypertarget{classRS__FilterDXF_a95f9096b80146c6a0cf13f42fcb30e3b}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!set\-Variable\-Double@{set\-Variable\-Double}}
+\index{set\-Variable\-Double@{set\-Variable\-Double}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{set\-Variable\-Double}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::set\-Variable\-Double (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{key, }
+\item[{double}]{value, }
+\item[{int}]{code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a95f9096b80146c6a0cf13f42fcb30e3b}
+Sets a double variable from the D\-X\-F file. 
+
+Implements \hyperlink{classDL__CreationInterface_a34e63296b695068188cb4ff6d0d17d89}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a84feb7c6a1839ead1ed6740b39397085}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!set\-Variable\-Int@{set\-Variable\-Int}}
+\index{set\-Variable\-Int@{set\-Variable\-Int}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{set\-Variable\-Int}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::set\-Variable\-Int (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{key, }
+\item[{int}]{value, }
+\item[{int}]{code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a84feb7c6a1839ead1ed6740b39397085}
+Sets an int variable from the D\-X\-F file. 
+
+Implements \hyperlink{classDL__CreationInterface_a024464f71744e2fd0d9f639f53f138c2}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a80a149bd1e1bba2df3f2a9245f83f467}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!set\-Variable\-String@{set\-Variable\-String}}
+\index{set\-Variable\-String@{set\-Variable\-String}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{set\-Variable\-String}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::set\-Variable\-String (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{key, }
+\item[{const char $\ast$}]{value, }
+\item[{int}]{code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_a80a149bd1e1bba2df3f2a9245f83f467}
+Sets a string variable from the D\-X\-F file. 
+
+Implements \hyperlink{classDL__CreationInterface_a904841c6cdf0b5fcf4c41ff417c51510}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_aa15ef5accc8540ab6f3bb77332e1a36b}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!set\-Variable\-Vector@{set\-Variable\-Vector}}
+\index{set\-Variable\-Vector@{set\-Variable\-Vector}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{set\-Variable\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::set\-Variable\-Vector (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{key, }
+\item[{double}]{v1, }
+\item[{double}]{v2, }
+\item[{double}]{v3, }
+\item[{int}]{code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF_aa15ef5accc8540ab6f3bb77332e1a36b}
+Sets a vector variable from the D\-X\-F file. 
+
+Implements \hyperlink{classDL__CreationInterface_aabafdd33ec77857b2f0d0ec50d9d545d}{D\-L\-\_\-\-Creation\-Interface}.
+
+\hypertarget{classRS__FilterDXF_a0f993f9a3e6c7ea7c9d428759eb1ca6f}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!to\-Dxf\-String@{to\-Dxf\-String}}
+\index{to\-Dxf\-String@{to\-Dxf\-String}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{to\-Dxf\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Filter\-D\-X\-F\-::to\-Dxf\-String (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{string}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__FilterDXF_a0f993f9a3e6c7ea7c9d428759eb1ca6f}
+Converts a native unicode string into a D\-X\-F encoded string.
+
+D\-X\-F endoding includes the following special sequences\-:
+\begin{DoxyItemize}
+\item \%\%c for a diameter sign
+\item \%\%d for a degree sign
+\item \%\%p for a plus/minus sign 
+\end{DoxyItemize}\hypertarget{classRS__FilterDXF_a6f6a6d4486c1933b43a144beb87f0bc5}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!to\-Native\-String@{to\-Native\-String}}
+\index{to\-Native\-String@{to\-Native\-String}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{to\-Native\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Filter\-D\-X\-F\-::to\-Native\-String (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{data, }
+\item[{const Q\-String \&}]{encoding}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__FilterDXF_a6f6a6d4486c1933b43a144beb87f0bc5}
+Converts a D\-X\-F encoded string into a native Unicode string. \hypertarget{classRS__FilterDXF_af8b0db65f3b0754fb4db88e89d83b51b}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!unit\-To\-Number@{unit\-To\-Number}}
+\index{unit\-To\-Number@{unit\-To\-Number}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{unit\-To\-Number}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Filter\-D\-X\-F\-::unit\-To\-Number (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Unit}}]{unit}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__FilterDXF_af8b0db65f3b0754fb4db88e89d83b51b}
+Converst a unit enum into a D\-X\-F unit number e.\-g. for I\-N\-S\-U\-N\-I\-T\-S. \hypertarget{classRS__FilterDXF_a19102ec33971271740ae198241abef0b}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!width\-To\-Number@{width\-To\-Number}}
+\index{width\-To\-Number@{width\-To\-Number}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{width\-To\-Number}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Filter\-D\-X\-F\-::width\-To\-Number (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Line\-Width}}]{width}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__FilterDXF_a19102ec33971271740ae198241abef0b}
+Converts a \hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29}{R\-S2\-::\-Line\-Width} into an int width. \hypertarget{classRS__FilterDXF_a6f22dbdf3f22dfd0f40566f61f7ac283}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!write\-Appid@{write\-Appid}}
+\index{write\-Appid@{write\-Appid}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{write\-Appid}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::write\-Appid (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const char $\ast$}]{appid}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF_a6f22dbdf3f22dfd0f40566f61f7ac283}
+Writes an application id to the D\-X\-F file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em appid} & Application I\-D (e.\-g. \char`\"{}\-Libre\-C\-A\-D\char`\"{}). \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__FilterDXF_a6705058dfed48ed15cae029df0c6476e}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!write\-Atomic\-Entities@{write\-Atomic\-Entities}}
+\index{write\-Atomic\-Entities@{write\-Atomic\-Entities}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{write\-Atomic\-Entities}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::write\-Atomic\-Entities (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} $\ast$}]{c, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib, }
+\item[{{\bf R\-S2\-::\-Resolve\-Level}}]{level}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF_a6705058dfed48ed15cae029df0c6476e}
+Writes the atomic entities of the given cotnainer to the file. \hypertarget{classRS__FilterDXF_a0475ec1f9b6abc613da33b7d2bbac059}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!write\-Block@{write\-Block}}
+\index{write\-Block@{write\-Block}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{write\-Block}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::write\-Block (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{{\bf R\-S\-\_\-\-Block} $\ast$}]{blk}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF_a0475ec1f9b6abc613da33b7d2bbac059}
+Writes a block (just the definition, not the entities in it). \hypertarget{classRS__FilterDXF_a4d0453bb64d10ca54cf8db71c56eb032}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!write\-Circle@{write\-Circle}}
+\index{write\-Circle@{write\-Circle}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{write\-Circle}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::write\-Circle (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{{\bf R\-S\-\_\-\-Circle} $\ast$}]{c, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF_a4d0453bb64d10ca54cf8db71c56eb032}
+Writes the given circle entity to the file. \hypertarget{classRS__FilterDXF_a2ee821d5428cafd5abe57b8e0de3540d}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!write\-Entity@{write\-Entity}}
+\index{write\-Entity@{write\-Entity}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{write\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::write\-Entity (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF_a2ee821d5428cafd5abe57b8e0de3540d}
+Writes the given entity to the D\-X\-F file. \hypertarget{classRS__FilterDXF_a03df1dd8a2fcc0f96e98116a714d40f2}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!write\-Entity@{write\-Entity}}
+\index{write\-Entity@{write\-Entity}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{write\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::write\-Entity (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{e, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF_a03df1dd8a2fcc0f96e98116a714d40f2}
+Writes the given entity to the D\-X\-F file. \hypertarget{classRS__FilterDXF_a079cc277d50333301438fc86de2cce6f}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!write\-Image\-Def@{write\-Image\-Def}}
+\index{write\-Image\-Def@{write\-Image\-Def}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{write\-Image\-Def}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::write\-Image\-Def (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{{\bf R\-S\-\_\-\-Image} $\ast$}]{i}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF_a079cc277d50333301438fc86de2cce6f}
+Writes an I\-M\-A\-G\-E\-D\-E\-F object into an O\-B\-J\-E\-C\-T section. \hypertarget{classRS__FilterDXF_a372bc14125237315791f2cee18d8ac22}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!write\-Layer@{write\-Layer}}
+\index{write\-Layer@{write\-Layer}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{write\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::write\-Layer (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{{\bf R\-S\-\_\-\-Layer} $\ast$}]{l}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF_a372bc14125237315791f2cee18d8ac22}
+Writes one layer to the D\-X\-F file.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000011}{Todo}]Add support for unicode layer names \end{DoxyRefDesc}
+\hypertarget{classRS__FilterDXF_a433971ffa409fd54eb92261f0739840d}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!write\-Line@{write\-Line}}
+\index{write\-Line@{write\-Line}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{write\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::write\-Line (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{{\bf R\-S\-\_\-\-Line} $\ast$}]{l, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF_a433971ffa409fd54eb92261f0739840d}
+Writes the given Line( entity to the file. \hypertarget{classRS__FilterDXF_ab801150163193b0868ae9c9ec78f63a6}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!write\-Line\-Type@{write\-Line\-Type}}
+\index{write\-Line\-Type@{write\-Line\-Type}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{write\-Line\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::write\-Line\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{{\bf R\-S2\-::\-Line\-Type}}]{t}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF_ab801150163193b0868ae9c9ec78f63a6}
+Writes a line type to the D\-X\-F file. \hypertarget{classRS__FilterDXF_a3eec6502518f39184b9b2f390d999e02}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!write\-Point@{write\-Point}}
+\index{write\-Point@{write\-Point}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{write\-Point}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::write\-Point (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{{\bf R\-S\-\_\-\-Point} $\ast$}]{p, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF_a3eec6502518f39184b9b2f390d999e02}
+Writes the given Point entity to the file. \hypertarget{classRS__FilterDXF_a398f55aec6237940cb79e2c54c5d0edf}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!write\-Polyline@{write\-Polyline}}
+\index{write\-Polyline@{write\-Polyline}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{write\-Polyline}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::write\-Polyline (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{{\bf R\-S\-\_\-\-Polyline} $\ast$}]{l, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF_a398f55aec6237940cb79e2c54c5d0edf}
+Writes the given polyline entity to the file. \hypertarget{classRS__FilterDXF_ae627cb3b3af25ed8996d5e8a665bd314}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!write\-Spline@{write\-Spline}}
+\index{write\-Spline@{write\-Spline}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{write\-Spline}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::write\-Spline (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{{\bf R\-S\-\_\-\-Spline} $\ast$}]{s, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF_ae627cb3b3af25ed8996d5e8a665bd314}
+Writes the given spline entity to the file. \hypertarget{classRS__FilterDXF_ac44af4b7ba5b7caaa231e0acf2bc25c7}{\index{R\-S\-\_\-\-Filter\-D\-X\-F@{R\-S\-\_\-\-Filter\-D\-X\-F}!write\-Variables@{write\-Variables}}
+\index{write\-Variables@{write\-Variables}!RS_FilterDXF@{R\-S\-\_\-\-Filter\-D\-X\-F}}
+\subsubsection[{write\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F\-::write\-Variables (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF_ac44af4b7ba5b7caaa231e0acf2bc25c7}
+Writes all known variable settings to the D\-X\-F file. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/filters/rs\-\_\-filterdxf.\-h\item 
+librecad/src/lib/filters/rs\-\_\-filterdxf.\-cpp\end{DoxyCompactItemize}

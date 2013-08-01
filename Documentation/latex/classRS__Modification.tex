@@ -1,0 +1,499 @@
+\hypertarget{classRS__Modification}{\section{R\-S\-\_\-\-Modification Class Reference}
+\label{classRS__Modification}\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-modification.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__Modification_a13046c17a073d8c80f756ffc13cb40b9}{R\-S\-\_\-\-Modification} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&entity\-Container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} $\ast$graphic\-View=N\-U\-L\-L, bool handle\-Undo=true)
+\item 
+void \hyperlink{classRS__Modification_af3c77f3e93dcd26d0b690a2d66eff8c4}{remove} ()
+\item 
+bool \hyperlink{classRS__Modification_a388b62deb8cc23c077b611e6d13499df}{change\-Attributes} (\hyperlink{classRS__AttributesData}{R\-S\-\_\-\-Attributes\-Data} \&data)
+\item 
+void \hyperlink{classRS__Modification_a9adf4fb32db186e32e4e22ea53cf7498}{copy} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&ref, const bool \hyperlink{classRS__Modification_a00801a57ee3f9f1c1b85e478ba5ae3dd}{cut})
+\item 
+void \hyperlink{classRS__Modification_a1ac4ab2d33d54cd3a30846dc4bb80095}{copy\-Layers} (\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$e)
+\item 
+void \hyperlink{classRS__Modification_af317e64cb6f378757caba8e927e1134d}{copy\-Blocks} (\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$e)
+\item 
+void \hyperlink{classRS__Modification_ac4fdb2b086f46afbdc2a9fe8cf645c8f}{paste} (const \hyperlink{classRS__PasteData}{R\-S\-\_\-\-Paste\-Data} \&data, \hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} $\ast$source=N\-U\-L\-L)
+\item 
+bool \hyperlink{classRS__Modification_a945f39993bdca439b83ca74b33f4506e}{move} (\hyperlink{classRS__MoveData}{R\-S\-\_\-\-Move\-Data} \&data)
+\item 
+bool \hyperlink{classRS__Modification_a59d6a9005815927ec6895425f154c30d}{rotate} (\hyperlink{classRS__RotateData}{R\-S\-\_\-\-Rotate\-Data} \&data)
+\item 
+bool \hyperlink{classRS__Modification_a1dfb44befce0ebef87a325ae9b6de72c}{scale} (\hyperlink{classRS__ScaleData}{R\-S\-\_\-\-Scale\-Data} \&data)
+\item 
+bool \hyperlink{classRS__Modification_adc8c5e6267d9e967a0f5b37c9b8c6d42}{mirror} (\hyperlink{classRS__MirrorData}{R\-S\-\_\-\-Mirror\-Data} \&data)
+\item 
+bool \hyperlink{classRS__Modification_a7453009dea7bbf6d71aea8615d19f33f}{move\-Rotate} (\hyperlink{classRS__MoveRotateData}{R\-S\-\_\-\-Move\-Rotate\-Data} \&data)
+\item 
+bool \hyperlink{classRS__Modification_a174b48e2855f55c3c12be93f58f170b0}{rotate2} (\hyperlink{classRS__Rotate2Data}{R\-S\-\_\-\-Rotate2\-Data} \&data)
+\item 
+bool \hyperlink{classRS__Modification_a7f794c7e3371b30d06ef17b17d6d453e}{trim} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&trim\-Coord, \hyperlink{classRS__AtomicEntity}{R\-S\-\_\-\-Atomic\-Entity} $\ast$trim\-Entity, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&limit\-Coord, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$limit\-Entity, bool both)
+\item 
+bool \hyperlink{classRS__Modification_a7340fadf888f8dfc606df0d6f38c6343}{trim\-Amount} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&trim\-Coord, \hyperlink{classRS__AtomicEntity}{R\-S\-\_\-\-Atomic\-Entity} $\ast$trim\-Entity, double dist)
+\item 
+bool \hyperlink{classRS__Modification_ada921c817299b5907b7e0c56c0110a3a}{offset} (const \hyperlink{classRS__OffsetData}{R\-S\-\_\-\-Offset\-Data} \&data)
+\item 
+bool \hyperlink{classRS__Modification_a00801a57ee3f9f1c1b85e478ba5ae3dd}{cut} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&cut\-Coord, \hyperlink{classRS__AtomicEntity}{R\-S\-\_\-\-Atomic\-Entity} $\ast$cut\-Entity)
+\item 
+bool \hyperlink{classRS__Modification_abc425fd3fbd8ccb60160d90688b1d4f6}{stretch} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&first\-Corner, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&second\-Corner, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&\hyperlink{classRS__Modification_ada921c817299b5907b7e0c56c0110a3a}{offset})
+\item 
+bool \hyperlink{classRS__Modification_a71047a1dcd7a49f051b4d6b13f7afa57}{bevel} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord1, \hyperlink{classRS__AtomicEntity}{R\-S\-\_\-\-Atomic\-Entity} $\ast$entity1, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord2, \hyperlink{classRS__AtomicEntity}{R\-S\-\_\-\-Atomic\-Entity} $\ast$entity2, \hyperlink{classRS__BevelData}{R\-S\-\_\-\-Bevel\-Data} \&data)
+\item 
+bool \hyperlink{classRS__Modification_a0b2f149d7ceb46815f771f559560d655}{round} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord1, \hyperlink{classRS__AtomicEntity}{R\-S\-\_\-\-Atomic\-Entity} $\ast$entity1, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord2, \hyperlink{classRS__AtomicEntity}{R\-S\-\_\-\-Atomic\-Entity} $\ast$entity2, \hyperlink{classRS__RoundData}{R\-S\-\_\-\-Round\-Data} \&data)
+\item 
+bool \hyperlink{classRS__Modification_a7e3b8a8fe808ceeaac680d29b85c3d79}{explode} ()
+\item 
+\hypertarget{classRS__Modification_a9588ff796bf2583f81d46ac34bc2071e}{bool {\bfseries explode\-Text\-Into\-Letters} ()}\label{classRS__Modification_a9588ff796bf2583f81d46ac34bc2071e}
+
+\item 
+\hypertarget{classRS__Modification_ac34dd8ffa95febf9210e09695cfd43b7}{bool {\bfseries explode\-Text\-Into\-Letters} (\hyperlink{classRS__MText}{R\-S\-\_\-\-M\-Text} $\ast$text, Q\-List$<$ \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$ $>$ \&add\-List)}\label{classRS__Modification_ac34dd8ffa95febf9210e09695cfd43b7}
+
+\item 
+\hypertarget{classRS__Modification_ad8bc75fb7be8dfd3115a733fd0851645}{bool {\bfseries explode\-Text\-Into\-Letters} (\hyperlink{classRS__Text}{R\-S\-\_\-\-Text} $\ast$text, Q\-List$<$ \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$ $>$ \&add\-List)}\label{classRS__Modification_ad8bc75fb7be8dfd3115a733fd0851645}
+
+\item 
+bool \hyperlink{classRS__Modification_ab6313d556f996f512e66e344bf447b53}{move\-Ref} (\hyperlink{classRS__MoveRefData}{R\-S\-\_\-\-Move\-Ref\-Data} \&data)
+\item 
+bool \hyperlink{classRS__Modification_a28169c495d09ed3f094b79fed44165f2}{split\-Polyline} (\hyperlink{classRS__Polyline}{R\-S\-\_\-\-Polyline} \&polyline, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} \&e1, \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} v1, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} \&e2, \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} v2, \hyperlink{classRS__Polyline}{R\-S\-\_\-\-Polyline} $\ast$$\ast$polyline1, \hyperlink{classRS__Polyline}{R\-S\-\_\-\-Polyline} $\ast$$\ast$polyline2) const 
+\item 
+\hyperlink{classRS__Polyline}{R\-S\-\_\-\-Polyline} $\ast$ \hyperlink{classRS__Modification_a7cab6428651d5ddc4120d167e9cd3686}{add\-Polyline\-Node} (\hyperlink{classRS__Polyline}{R\-S\-\_\-\-Polyline} \&polyline, const \hyperlink{classRS__AtomicEntity}{R\-S\-\_\-\-Atomic\-Entity} \&segment, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&node)
+\item 
+\hyperlink{classRS__Polyline}{R\-S\-\_\-\-Polyline} $\ast$ \hyperlink{classRS__Modification_a92983dd2cc5ead78668074e7fd345d18}{delete\-Polyline\-Node} (\hyperlink{classRS__Polyline}{R\-S\-\_\-\-Polyline} \&polyline, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&node)
+\item 
+\hyperlink{classRS__Polyline}{R\-S\-\_\-\-Polyline} $\ast$ \hyperlink{classRS__Modification_a40b1a6f42ae239399d64007092bcd971}{delete\-Polyline\-Nodes\-Between} (\hyperlink{classRS__Polyline}{R\-S\-\_\-\-Polyline} \&polyline, \hyperlink{classRS__AtomicEntity}{R\-S\-\_\-\-Atomic\-Entity} \&segment, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&node1, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&node2)
+\item 
+\hyperlink{classRS__Polyline}{R\-S\-\_\-\-Polyline} $\ast$ \hyperlink{classRS__Modification_af0a7bdecda52ef51395a1d7c8ee6ad32}{polyline\-Trim} (\hyperlink{classRS__Polyline}{R\-S\-\_\-\-Polyline} \&polyline, \hyperlink{classRS__AtomicEntity}{R\-S\-\_\-\-Atomic\-Entity} \&segment1, \hyperlink{classRS__AtomicEntity}{R\-S\-\_\-\-Atomic\-Entity} \&segment2)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__Modification_a2f200d9ec9e23a4730781f162d5a8ea0}{\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} $\ast$ {\bfseries container}}\label{classRS__Modification_a2f200d9ec9e23a4730781f162d5a8ea0}
+
+\item 
+\hypertarget{classRS__Modification_aaf68d376410943be614018c8a5937a98}{\hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} $\ast$ {\bfseries graphic}}\label{classRS__Modification_aaf68d376410943be614018c8a5937a98}
+
+\item 
+\hypertarget{classRS__Modification_a194c1925378b75e17d89ed1d2c7f9122}{\hyperlink{classRS__Document}{R\-S\-\_\-\-Document} $\ast$ {\bfseries document}}\label{classRS__Modification_a194c1925378b75e17d89ed1d2c7f9122}
+
+\item 
+\hypertarget{classRS__Modification_a5bd9091df47db2c54615fbd3816048bf}{\hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} $\ast$ {\bfseries graphic\-View}}\label{classRS__Modification_a5bd9091df47db2c54615fbd3816048bf}
+
+\item 
+\hypertarget{classRS__Modification_ab44677f658a572078d79deaa11fa9327}{bool {\bfseries handle\-Undo}}\label{classRS__Modification_ab44677f658a572078d79deaa11fa9327}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A\-P\-I Class for manipulating entities. There's no interaction handled in this class.
+
+All modifications can be undone / redone if the container is a \hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic}.
+
+This class is connected to an entity container and can be connected to a graphic view.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__Modification_a13046c17a073d8c80f756ffc13cb40b9}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}}
+\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{R\-S\-\_\-\-Modification}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Modification\-::\-R\-S\-\_\-\-Modification (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} $\ast$}]{graphic\-View = {\ttfamily NULL}, }
+\item[{bool}]{handle\-Undo = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_a13046c17a073d8c80f756ffc13cb40b9}
+Default constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container to which we will add entities. Usually that's an \hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} entity but it can also be a polyline, text, ... \\
+\hline
+{\em graphic\-View} & Pointer to graphic view or N\-U\-L\-L if you don't want the any views to be updated. \\
+\hline
+{\em handle\-Undo} & true\-: Handle undo functionalitiy. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Modification_a7cab6428651d5ddc4120d167e9cd3686}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!add\-Polyline\-Node@{add\-Polyline\-Node}}
+\index{add\-Polyline\-Node@{add\-Polyline\-Node}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{add\-Polyline\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Polyline} $\ast$ R\-S\-\_\-\-Modification\-::add\-Polyline\-Node (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Polyline} \&}]{polyline, }
+\item[{const {\bf R\-S\-\_\-\-Atomic\-Entity} \&}]{segment, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{node}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_a7cab6428651d5ddc4120d167e9cd3686}
+Adds a node to the given polyline. The new node is placed between the start and end point of the given segment.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The position of the new node.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the new polyline or N\-U\-L\-L. 
+\end{DoxyReturn}
+\hypertarget{classRS__Modification_a71047a1dcd7a49f051b4d6b13f7afa57}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!bevel@{bevel}}
+\index{bevel@{bevel}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{bevel}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Modification\-::bevel (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord1, }
+\item[{{\bf R\-S\-\_\-\-Atomic\-Entity} $\ast$}]{entity1, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord2, }
+\item[{{\bf R\-S\-\_\-\-Atomic\-Entity} $\ast$}]{entity2, }
+\item[{{\bf R\-S\-\_\-\-Bevel\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_a71047a1dcd7a49f051b4d6b13f7afa57}
+Bevels a corner.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord1} & Mouse coordinate to specify direction from intersection. \\
+\hline
+{\em entity1} & First entity of the corner. \\
+\hline
+{\em coord2} & Mouse coordinate to specify direction from intersection. \\
+\hline
+{\em entity2} & Second entity of the corner. \\
+\hline
+{\em data} & Lengths and trim flag. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Modification_a388b62deb8cc23c077b611e6d13499df}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!change\-Attributes@{change\-Attributes}}
+\index{change\-Attributes@{change\-Attributes}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{change\-Attributes}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Modification\-::change\-Attributes (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Attributes\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_a388b62deb8cc23c077b611e6d13499df}
+Changes the attributes of all selected \hypertarget{classRS__Modification_a9adf4fb32db186e32e4e22ea53cf7498}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!copy@{copy}}
+\index{copy@{copy}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{copy}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Modification\-::copy (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{ref, }
+\item[{const bool}]{cut}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_a9adf4fb32db186e32e4e22ea53cf7498}
+Copies all selected entities from the given container to the clipboard. Layers and blocks that are needed are also copied if the container is or is part of an \hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The entity container. \\
+\hline
+{\em ref} & Reference point. The entities will be moved by -\/ref. \\
+\hline
+{\em cut} & true\-: cut instead of copying, false\-: copy \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Modification_af317e64cb6f378757caba8e927e1134d}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!copy\-Blocks@{copy\-Blocks}}
+\index{copy\-Blocks@{copy\-Blocks}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{copy\-Blocks}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Modification\-::copy\-Blocks (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_af317e64cb6f378757caba8e927e1134d}
+Copies all blocks of the given entity to the clipboard. \hypertarget{classRS__Modification_a1ac4ab2d33d54cd3a30846dc4bb80095}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!copy\-Layers@{copy\-Layers}}
+\index{copy\-Layers@{copy\-Layers}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{copy\-Layers}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Modification\-::copy\-Layers (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_a1ac4ab2d33d54cd3a30846dc4bb80095}
+Copies all layers of the given entity to the clipboard. \hypertarget{classRS__Modification_a00801a57ee3f9f1c1b85e478ba5ae3dd}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!cut@{cut}}
+\index{cut@{cut}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{cut}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Modification\-::cut (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{cut\-Coord, }
+\item[{{\bf R\-S\-\_\-\-Atomic\-Entity} $\ast$}]{cut\-Entity}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_a00801a57ee3f9f1c1b85e478ba5ae3dd}
+Cuts the given entity at the given point. \hypertarget{classRS__Modification_a92983dd2cc5ead78668074e7fd345d18}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!delete\-Polyline\-Node@{delete\-Polyline\-Node}}
+\index{delete\-Polyline\-Node@{delete\-Polyline\-Node}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{delete\-Polyline\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Polyline} $\ast$ R\-S\-\_\-\-Modification\-::delete\-Polyline\-Node (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Polyline} \&}]{polyline, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{node}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_a92983dd2cc5ead78668074e7fd345d18}
+Deletes a node from a polyline.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The node to delete.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the new polyline or N\-U\-L\-L. 
+\end{DoxyReturn}
+\hypertarget{classRS__Modification_a40b1a6f42ae239399d64007092bcd971}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!delete\-Polyline\-Nodes\-Between@{delete\-Polyline\-Nodes\-Between}}
+\index{delete\-Polyline\-Nodes\-Between@{delete\-Polyline\-Nodes\-Between}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{delete\-Polyline\-Nodes\-Between}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Polyline} $\ast$ R\-S\-\_\-\-Modification\-::delete\-Polyline\-Nodes\-Between (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Polyline} \&}]{polyline, }
+\item[{{\bf R\-S\-\_\-\-Atomic\-Entity} \&}]{segment, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{node1, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{node2}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_a40b1a6f42ae239399d64007092bcd971}
+Deletes all nodes between the two given nodes (exclusive).
+
+
+\begin{DoxyParams}{Parameters}
+{\em node1} & First limiting node. \\
+\hline
+{\em node2} & Second limiting node.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the new polyline or N\-U\-L\-L. 
+\end{DoxyReturn}
+\hypertarget{classRS__Modification_a7e3b8a8fe808ceeaac680d29b85c3d79}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!explode@{explode}}
+\index{explode@{explode}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{explode}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Modification\-::explode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_a7e3b8a8fe808ceeaac680d29b85c3d79}
+Removes the selected entity containers and adds the entities in them as new single entities. \hypertarget{classRS__Modification_adc8c5e6267d9e967a0f5b37c9b8c6d42}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!mirror@{mirror}}
+\index{mirror@{mirror}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{mirror}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Modification\-::mirror (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Mirror\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_adc8c5e6267d9e967a0f5b37c9b8c6d42}
+Mirror all selected entities with the given data for the mirror modification. \hypertarget{classRS__Modification_a945f39993bdca439b83ca74b33f4506e}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!move@{move}}
+\index{move@{move}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Modification\-::move (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Move\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_a945f39993bdca439b83ca74b33f4506e}
+Moves all selected entities with the given data for the move modification. \hypertarget{classRS__Modification_ab6313d556f996f512e66e344bf447b53}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!move\-Ref@{move\-Ref}}
+\index{move\-Ref@{move\-Ref}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{move\-Ref}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Modification\-::move\-Ref (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Move\-Ref\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_ab6313d556f996f512e66e344bf447b53}
+Moves all reference points of selected entities with the given data. \hypertarget{classRS__Modification_a7453009dea7bbf6d71aea8615d19f33f}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!move\-Rotate@{move\-Rotate}}
+\index{move\-Rotate@{move\-Rotate}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{move\-Rotate}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Modification\-::move\-Rotate (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Move\-Rotate\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_a7453009dea7bbf6d71aea8615d19f33f}
+Moves and rotates entities with the given parameters. \hypertarget{classRS__Modification_ada921c817299b5907b7e0c56c0110a3a}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!offset@{offset}}
+\index{offset@{offset}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{offset}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Modification\-::offset (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Offset\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_ada921c817299b5907b7e0c56c0110a3a}
+Offset all selected entities with the given mouse position and distance
+
+\-: Dongxu Li \hypertarget{classRS__Modification_ac4fdb2b086f46afbdc2a9fe8cf645c8f}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!paste@{paste}}
+\index{paste@{paste}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{paste}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Modification\-::paste (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Paste\-Data} \&}]{data, }
+\item[{{\bf R\-S\-\_\-\-Graphic} $\ast$}]{source = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_ac4fdb2b086f46afbdc2a9fe8cf645c8f}
+Pastes all entities from the clipboard into the container. Layers and blocks that are needed are also copied if the container is or is part of an \hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Paste data. \\
+\hline
+{\em source} & The source from where to paste. N\-U\-L\-L means the source is the clipboard. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Modification_af0a7bdecda52ef51395a1d7c8ee6ad32}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!polyline\-Trim@{polyline\-Trim}}
+\index{polyline\-Trim@{polyline\-Trim}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{polyline\-Trim}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Polyline} $\ast$ R\-S\-\_\-\-Modification\-::polyline\-Trim (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Polyline} \&}]{polyline, }
+\item[{{\bf R\-S\-\_\-\-Atomic\-Entity} \&}]{segment1, }
+\item[{{\bf R\-S\-\_\-\-Atomic\-Entity} \&}]{segment2}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_af0a7bdecda52ef51395a1d7c8ee6ad32}
+Trims two segments of a polyline all nodes between the two trim segments are removed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em polyline} & The polyline entity. \\
+\hline
+{\em segment1} & First segment to trim. \\
+\hline
+{\em segment2} & Second segment to trim.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the new polyline or N\-U\-L\-L. 
+\end{DoxyReturn}
+\hypertarget{classRS__Modification_af3c77f3e93dcd26d0b690a2d66eff8c4}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!remove@{remove}}
+\index{remove@{remove}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Modification\-::remove (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_af3c77f3e93dcd26d0b690a2d66eff8c4}
+Deletes all selected entities. \hypertarget{classRS__Modification_a59d6a9005815927ec6895425f154c30d}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!rotate@{rotate}}
+\index{rotate@{rotate}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{rotate}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Modification\-::rotate (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Rotate\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_a59d6a9005815927ec6895425f154c30d}
+Rotates all selected entities with the given data for the rotation. \hypertarget{classRS__Modification_a174b48e2855f55c3c12be93f58f170b0}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!rotate2@{rotate2}}
+\index{rotate2@{rotate2}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{rotate2}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Modification\-::rotate2 (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Rotate2\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_a174b48e2855f55c3c12be93f58f170b0}
+Rotates entities around two centers with the given parameters. \hypertarget{classRS__Modification_a0b2f149d7ceb46815f771f559560d655}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!round@{round}}
+\index{round@{round}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{round}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Modification\-::round (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord1, }
+\item[{{\bf R\-S\-\_\-\-Atomic\-Entity} $\ast$}]{entity1, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord2, }
+\item[{{\bf R\-S\-\_\-\-Atomic\-Entity} $\ast$}]{entity2, }
+\item[{{\bf R\-S\-\_\-\-Round\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_a0b2f149d7ceb46815f771f559560d655}
+Rounds a corner.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & Mouse coordinate to specify the rounding. \\
+\hline
+{\em entity1} & First entity of the corner. \\
+\hline
+{\em entity2} & Second entity of the corner. \\
+\hline
+{\em data} & Radius and trim flag. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Modification_a1dfb44befce0ebef87a325ae9b6de72c}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!scale@{scale}}
+\index{scale@{scale}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{scale}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Modification\-::scale (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Scale\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_a1dfb44befce0ebef87a325ae9b6de72c}
+Moves all selected entities with the given data for the scale modification. \hypertarget{classRS__Modification_a28169c495d09ed3f094b79fed44165f2}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!split\-Polyline@{split\-Polyline}}
+\index{split\-Polyline@{split\-Polyline}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{split\-Polyline}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Modification\-::split\-Polyline (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Polyline} \&}]{polyline, }
+\item[{{\bf R\-S\-\_\-\-Entity} \&}]{e1, }
+\item[{{\bf R\-S\-\_\-\-Vector}}]{v1, }
+\item[{{\bf R\-S\-\_\-\-Entity} \&}]{e2, }
+\item[{{\bf R\-S\-\_\-\-Vector}}]{v2, }
+\item[{{\bf R\-S\-\_\-\-Polyline} $\ast$$\ast$}]{polyline1, }
+\item[{{\bf R\-S\-\_\-\-Polyline} $\ast$$\ast$}]{polyline2}
+\end{DoxyParamCaption}
+) const}}\label{classRS__Modification_a28169c495d09ed3f094b79fed44165f2}
+Splits a polyline into two leaving out a gap.
+
+
+\begin{DoxyParams}{Parameters}
+{\em polyline} & The original polyline \\
+\hline
+{\em e1} & 1st entity on which the first cutting point is. \\
+\hline
+{\em v1} & 1st cutting point. \\
+\hline
+{\em e2} & 2nd entity on which the first cutting point is. \\
+\hline
+{\em v2} & 2nd cutting point. \\
+\hline
+{\em polyline1} & Pointer to a polyline pointer which will hold the 1st resulting new polyline. Pass N\-U\-L\-L if you don't need those pointers. \\
+\hline
+{\em polyline2} & Pointer to a polyline pointer which will hold the 2nd resulting new polyline. Pass N\-U\-L\-L if you don't need those pointers.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000016}{Todo}]Support arcs in polylines, check for wrong parameters\end{DoxyRefDesc}
+
+
+\begin{DoxyReturn}{Returns}
+true 
+\end{DoxyReturn}
+\hypertarget{classRS__Modification_abc425fd3fbd8ccb60160d90688b1d4f6}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!stretch@{stretch}}
+\index{stretch@{stretch}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{stretch}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Modification\-::stretch (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{first\-Corner, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{second\-Corner, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{offset}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_abc425fd3fbd8ccb60160d90688b1d4f6}
+Stretching. \hypertarget{classRS__Modification_a7f794c7e3371b30d06ef17b17d6d453e}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!trim@{trim}}
+\index{trim@{trim}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{trim}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Modification\-::trim (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{trim\-Coord, }
+\item[{{\bf R\-S\-\_\-\-Atomic\-Entity} $\ast$}]{trim\-Entity, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{limit\-Coord, }
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{limit\-Entity, }
+\item[{bool}]{both}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_a7f794c7e3371b30d06ef17b17d6d453e}
+Trims or extends the given trim\-Entity to the intersection point of the trim\-Entity and the limit\-Entity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em trim\-Coord} & Coordinate which defines which endpoint of the trim entity to trim. \\
+\hline
+{\em trim\-Entity} & Entity which will be trimmed. \\
+\hline
+{\em limit\-Coord} & Coordinate which defines the intersection to which the trim entity will be trimmed. \\
+\hline
+{\em limit\-Entity} & Entity to which the trim entity will be trimmed. \\
+\hline
+{\em both} & true\-: Trim both entities. false\-: trim trim\-Entity only. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Modification_a7340fadf888f8dfc606df0d6f38c6343}{\index{R\-S\-\_\-\-Modification@{R\-S\-\_\-\-Modification}!trim\-Amount@{trim\-Amount}}
+\index{trim\-Amount@{trim\-Amount}!RS_Modification@{R\-S\-\_\-\-Modification}}
+\subsubsection[{trim\-Amount}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Modification\-::trim\-Amount (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{trim\-Coord, }
+\item[{{\bf R\-S\-\_\-\-Atomic\-Entity} $\ast$}]{trim\-Entity, }
+\item[{double}]{dist}
+\end{DoxyParamCaption}
+)}}\label{classRS__Modification_a7340fadf888f8dfc606df0d6f38c6343}
+Trims or extends the given trim\-Entity by the given amount.
+
+
+\begin{DoxyParams}{Parameters}
+{\em trim\-Coord} & Coordinate which defines which endpoint of the trim entity to trim. \\
+\hline
+{\em trim\-Entity} & Entity which will be trimmed. \\
+\hline
+{\em dist} & Amount to trim by. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/modification/rs\-\_\-modification.\-h\item 
+librecad/src/lib/modification/rs\-\_\-modification.\-cpp\end{DoxyCompactItemize}

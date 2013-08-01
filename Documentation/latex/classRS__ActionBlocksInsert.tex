@@ -1,0 +1,328 @@
+\hypertarget{classRS__ActionBlocksInsert}{\section{R\-S\-\_\-\-Action\-Blocks\-Insert Class Reference}
+\label{classRS__ActionBlocksInsert}\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionblocksinsert.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Blocks\-Insert\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classRS__ActionBlocksInsert}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4a}{Status} \{ \\*
+\hyperlink{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4aa47bc37ce301d1ad7d9d31cea2267d17b}{Set\-Target\-Point}, 
+\hyperlink{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4aa5267c179bc6a46cf64a651e7fbbad4f6}{Set\-Angle}, 
+\hyperlink{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4aa1bcd1450bd26fb9040c1b389701bd25d}{Set\-Factor}, 
+\hyperlink{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4aa27c5deac211157c92bf06c44d69a5f5e}{Set\-Columns}, 
+\\*
+\hyperlink{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4aad002223978fbdd790142e75d03ed791c}{Set\-Rows}, 
+\hyperlink{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4aa112f6faf4cbf9e7226676b091563315b}{Set\-Column\-Spacing}, 
+\hyperlink{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4aabcfbdfadec19817978554798f63e6550}{Set\-Row\-Spacing}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__ActionBlocksInsert_a788d1de9d41c1f6e33b92ae182101644}{R\-S\-\_\-\-Action\-Blocks\-Insert} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)
+\item 
+virtual \hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__ActionBlocksInsert_a28572d8f5f8a2048e774e7ff73232183}{rtti} ()
+\item 
+virtual void \hyperlink{classRS__ActionBlocksInsert_afbf7e8fbc47cafd8e2b53d08ad9fca8d}{init} (int status=0)
+\item 
+\hypertarget{classRS__ActionBlocksInsert_aaf2238465a1c1ec038831ff8ac717d73}{void {\bfseries reset} ()}\label{classRS__ActionBlocksInsert_aaf2238465a1c1ec038831ff8ac717d73}
+
+\item 
+virtual void \hyperlink{classRS__ActionBlocksInsert_a63797c853cfc6266d3defe4688002dad}{trigger} ()
+\item 
+virtual void \hyperlink{classRS__ActionBlocksInsert_a3c23e3aa65103bfb6c7837f32bdb35fd}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionBlocksInsert_abbecdc07cdf9e89cf4315811715f0a24}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionBlocksInsert_a18dd89c17accfbbc0f5baf9987f59bd9}{coordinate\-Event} (\hyperlink{classRS__CoordinateEvent}{R\-S\-\_\-\-Coordinate\-Event} $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionBlocksInsert_a87c2b21582f52ddc683e101d85648815}{command\-Event} (\hyperlink{classRS__CommandEvent}{R\-S\-\_\-\-Command\-Event} $\ast$e)
+\item 
+virtual Q\-String\-List \hyperlink{classRS__ActionBlocksInsert_a6316c84ccd449fe541ffcfffa0fcc139}{get\-Available\-Commands} ()
+\item 
+virtual void \hyperlink{classRS__ActionBlocksInsert_a0574cac7910a4f377de60a3b672cc84c}{show\-Options} ()
+\item 
+virtual void \hyperlink{classRS__ActionBlocksInsert_a42e9044b5601395223cd93467133b243}{hide\-Options} ()
+\item 
+virtual void \hyperlink{classRS__ActionBlocksInsert_ab42dd5b53327f9cb3a26b1f59f4b745c}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionBlocksInsert_a05e81acf2d01ea24c82fc5c795c8e391}{update\-Mouse\-Cursor} ()
+\item 
+virtual void \hyperlink{classRS__ActionBlocksInsert_a62e2e80458d5958b329af3d8d8871537}{update\-Tool\-Bar} ()
+\item 
+\hypertarget{classRS__ActionBlocksInsert_a53881535b66c66e2ca5fc404e4649e06}{double {\bfseries get\-Angle} ()}\label{classRS__ActionBlocksInsert_a53881535b66c66e2ca5fc404e4649e06}
+
+\item 
+\hypertarget{classRS__ActionBlocksInsert_af2f9661edaf0d6e1dcf6f0ebb30215fb}{void {\bfseries set\-Angle} (double a)}\label{classRS__ActionBlocksInsert_af2f9661edaf0d6e1dcf6f0ebb30215fb}
+
+\item 
+\hypertarget{classRS__ActionBlocksInsert_ab2f016ad21f89169e399d32ed5be8073}{double {\bfseries get\-Factor} ()}\label{classRS__ActionBlocksInsert_ab2f016ad21f89169e399d32ed5be8073}
+
+\item 
+\hypertarget{classRS__ActionBlocksInsert_a3693b272115647b2dbc1f636e5c489a4}{void {\bfseries set\-Factor} (double f)}\label{classRS__ActionBlocksInsert_a3693b272115647b2dbc1f636e5c489a4}
+
+\item 
+\hypertarget{classRS__ActionBlocksInsert_a9f0d6c3768d1877d9c708125015f8a0b}{int {\bfseries get\-Columns} ()}\label{classRS__ActionBlocksInsert_a9f0d6c3768d1877d9c708125015f8a0b}
+
+\item 
+\hypertarget{classRS__ActionBlocksInsert_a2157c7a025f3ff4f706540475f4efc95}{void {\bfseries set\-Columns} (int c)}\label{classRS__ActionBlocksInsert_a2157c7a025f3ff4f706540475f4efc95}
+
+\item 
+\hypertarget{classRS__ActionBlocksInsert_a21d7ae048011cb7f5dcff2613a3c0389}{int {\bfseries get\-Rows} ()}\label{classRS__ActionBlocksInsert_a21d7ae048011cb7f5dcff2613a3c0389}
+
+\item 
+\hypertarget{classRS__ActionBlocksInsert_a70ace1ad4ee289bde8881ad8ed9a58db}{void {\bfseries set\-Rows} (int r)}\label{classRS__ActionBlocksInsert_a70ace1ad4ee289bde8881ad8ed9a58db}
+
+\item 
+\hypertarget{classRS__ActionBlocksInsert_ad225e82819b73ba518367f841b1dcc97}{double {\bfseries get\-Column\-Spacing} ()}\label{classRS__ActionBlocksInsert_ad225e82819b73ba518367f841b1dcc97}
+
+\item 
+\hypertarget{classRS__ActionBlocksInsert_aaf69d9459156a1470579b943ceba2ce1}{void {\bfseries set\-Column\-Spacing} (double cs)}\label{classRS__ActionBlocksInsert_aaf69d9459156a1470579b943ceba2ce1}
+
+\item 
+\hypertarget{classRS__ActionBlocksInsert_ae78ff42878b6df8a8ecc5c0e75b837ce}{double {\bfseries get\-Row\-Spacing} ()}\label{classRS__ActionBlocksInsert_ae78ff42878b6df8a8ecc5c0e75b837ce}
+
+\item 
+\hypertarget{classRS__ActionBlocksInsert_aae1c288f51ee62ab152faa0d9d3811f3}{void {\bfseries set\-Row\-Spacing} (double rs)}\label{classRS__ActionBlocksInsert_aae1c288f51ee62ab152faa0d9d3811f3}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionBlocksInsert_a57aa672ac6a2354fd90b373213c91d07}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionBlocksInsert_a57aa672ac6a2354fd90b373213c91d07}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionBlocksInsert_ad95c23f83966dd927d4a9e2f07f60eb1}{\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$ {\bfseries block}}\label{classRS__ActionBlocksInsert_ad95c23f83966dd927d4a9e2f07f60eb1}
+
+\item 
+\hypertarget{classRS__ActionBlocksInsert_a8eca90791fedf4424ded9fddcb26b19f}{\hyperlink{classRS__InsertData}{R\-S\-\_\-\-Insert\-Data} {\bfseries data}}\label{classRS__ActionBlocksInsert_a8eca90791fedf4424ded9fddcb26b19f}
+
+\item 
+\hyperlink{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4a}{Status} \hyperlink{classRS__ActionBlocksInsert_a1024e7457ded5c9a529c33f40a373bed}{last\-Status}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events for inserting blocks into the current drawing.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4a}{\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}!Status@{Status}}
+\index{Status@{Status}!RS_ActionBlocksInsert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Blocks\-Insert\-::\-Status}}}\label{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4a}
+Action States. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Set\-Target\-Point@{Set\-Target\-Point}!R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}!Set\-Target\-Point@{Set\-Target\-Point}}\item[{\em 
+\hypertarget{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4aa47bc37ce301d1ad7d9d31cea2267d17b}{Set\-Target\-Point}\label{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4aa47bc37ce301d1ad7d9d31cea2267d17b}
+}]Setting the reference point. \index{Set\-Angle@{Set\-Angle}!R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}!Set\-Angle@{Set\-Angle}}\item[{\em 
+\hypertarget{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4aa5267c179bc6a46cf64a651e7fbbad4f6}{Set\-Angle}\label{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4aa5267c179bc6a46cf64a651e7fbbad4f6}
+}]Setting angle in the command line. \index{Set\-Factor@{Set\-Factor}!R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}!Set\-Factor@{Set\-Factor}}\item[{\em 
+\hypertarget{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4aa1bcd1450bd26fb9040c1b389701bd25d}{Set\-Factor}\label{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4aa1bcd1450bd26fb9040c1b389701bd25d}
+}]Setting factor in the command line. \index{Set\-Columns@{Set\-Columns}!R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}!Set\-Columns@{Set\-Columns}}\item[{\em 
+\hypertarget{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4aa27c5deac211157c92bf06c44d69a5f5e}{Set\-Columns}\label{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4aa27c5deac211157c92bf06c44d69a5f5e}
+}]Setting columns in the command line. \index{Set\-Rows@{Set\-Rows}!R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}!Set\-Rows@{Set\-Rows}}\item[{\em 
+\hypertarget{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4aad002223978fbdd790142e75d03ed791c}{Set\-Rows}\label{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4aad002223978fbdd790142e75d03ed791c}
+}]Setting rows in the command line. \index{Set\-Column\-Spacing@{Set\-Column\-Spacing}!R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}!Set\-Column\-Spacing@{Set\-Column\-Spacing}}\item[{\em 
+\hypertarget{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4aa112f6faf4cbf9e7226676b091563315b}{Set\-Column\-Spacing}\label{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4aa112f6faf4cbf9e7226676b091563315b}
+}]Setting column spacing in the command line. \index{Set\-Row\-Spacing@{Set\-Row\-Spacing}!R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}!Set\-Row\-Spacing@{Set\-Row\-Spacing}}\item[{\em 
+\hypertarget{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4aabcfbdfadec19817978554798f63e6550}{Set\-Row\-Spacing}\label{classRS__ActionBlocksInsert_ab26cc8e619eca4fac8c57f59d9698b4aabcfbdfadec19817978554798f63e6550}
+}]Setting row spacing in the command line. \end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__ActionBlocksInsert_a788d1de9d41c1f6e33b92ae182101644}{\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}!R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}
+\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}!RS_ActionBlocksInsert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}
+\subsubsection[{R\-S\-\_\-\-Action\-Blocks\-Insert}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Action\-Blocks\-Insert\-::\-R\-S\-\_\-\-Action\-Blocks\-Insert (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} \&}]{graphic\-View}
+\end{DoxyParamCaption}
+)}}\label{classRS__ActionBlocksInsert_a788d1de9d41c1f6e33b92ae182101644}
+Constructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionBlocksInsert_a87c2b21582f52ddc683e101d85648815}{\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}!command\-Event@{command\-Event}}
+\index{command\-Event@{command\-Event}!RS_ActionBlocksInsert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}
+\subsubsection[{command\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Blocks\-Insert\-::command\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Command\-Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionBlocksInsert_a87c2b21582f52ddc683e101d85648815}
+Called when a command from the command line is launched. and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a187365514bab9b2997c5fe7ff5274a22}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionBlocksInsert_a18dd89c17accfbbc0f5baf9987f59bd9}{\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}!coordinate\-Event@{coordinate\-Event}}
+\index{coordinate\-Event@{coordinate\-Event}!RS_ActionBlocksInsert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}
+\subsubsection[{coordinate\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Blocks\-Insert\-::coordinate\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Coordinate\-Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionBlocksInsert_a18dd89c17accfbbc0f5baf9987f59bd9}
+Coordinate event. Triggered usually from a command line. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a9013e88769edd39b2a74af5add2986c9}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionBlocksInsert_a6316c84ccd449fe541ffcfffa0fcc139}{\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}!get\-Available\-Commands@{get\-Available\-Commands}}
+\index{get\-Available\-Commands@{get\-Available\-Commands}!RS_ActionBlocksInsert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}
+\subsubsection[{get\-Available\-Commands}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String\-List R\-S\-\_\-\-Action\-Blocks\-Insert\-::get\-Available\-Commands (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionBlocksInsert_a6316c84ccd449fe541ffcfffa0fcc139}
+Must be implemented to return the currently available commands for the command line. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acafdac8d18d3f053eda872581fb3e27d}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionBlocksInsert_a42e9044b5601395223cd93467133b243}{\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}!hide\-Options@{hide\-Options}}
+\index{hide\-Options@{hide\-Options}!RS_ActionBlocksInsert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}
+\subsubsection[{hide\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Blocks\-Insert\-::hide\-Options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionBlocksInsert_a42e9044b5601395223cd93467133b243}
+Hides the tool options. Default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_adca8d2f958d687e08f6d4477ef0fa43a}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionBlocksInsert_afbf7e8fbc47cafd8e2b53d08ad9fca8d}{\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}!init@{init}}
+\index{init@{init}!RS_ActionBlocksInsert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Blocks\-Insert\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionBlocksInsert_afbf7e8fbc47cafd8e2b53d08ad9fca8d}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae5113b2aef5a10acd192786b99580e4a}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionBlocksInsert_a3c23e3aa65103bfb6c7837f32bdb35fd}{\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_ActionBlocksInsert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Blocks\-Insert\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionBlocksInsert_a3c23e3aa65103bfb6c7837f32bdb35fd}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionBlocksInsert_abbecdc07cdf9e89cf4315811715f0a24}{\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionBlocksInsert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Blocks\-Insert\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionBlocksInsert_abbecdc07cdf9e89cf4315811715f0a24}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionBlocksInsert_a28572d8f5f8a2048e774e7ff73232183}{\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_ActionBlocksInsert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Action\-Blocks\-Insert\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__ActionBlocksInsert_a28572d8f5f8a2048e774e7ff73232183}
+Must be implemented to return the I\-D of this action.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]no default implementation \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af877a66b5b4a7053f2b1f0519c57a6f5}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionBlocksInsert_a0574cac7910a4f377de60a3b672cc84c}{\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}!show\-Options@{show\-Options}}
+\index{show\-Options@{show\-Options}!RS_ActionBlocksInsert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}
+\subsubsection[{show\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Blocks\-Insert\-::show\-Options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionBlocksInsert_a0574cac7910a4f377de60a3b672cc84c}
+Shows the tool options. Default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_add4bb135e4be51bd0dc169e0e7b9e695}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionBlocksInsert_a63797c853cfc6266d3defe4688002dad}{\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionBlocksInsert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Blocks\-Insert\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionBlocksInsert_a63797c853cfc6266d3defe4688002dad}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionBlocksInsert_ab42dd5b53327f9cb3a26b1f59f4b745c}{\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionBlocksInsert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Blocks\-Insert\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionBlocksInsert_ab42dd5b53327f9cb3a26b1f59f4b745c}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionBlocksInsert_a05e81acf2d01ea24c82fc5c795c8e391}{\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionBlocksInsert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Blocks\-Insert\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionBlocksInsert_a05e81acf2d01ea24c82fc5c795c8e391}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionBlocksInsert_a62e2e80458d5958b329af3d8d8871537}{\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}!update\-Tool\-Bar@{update\-Tool\-Bar}}
+\index{update\-Tool\-Bar@{update\-Tool\-Bar}!RS_ActionBlocksInsert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}
+\subsubsection[{update\-Tool\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Blocks\-Insert\-::update\-Tool\-Bar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionBlocksInsert_a62e2e80458d5958b329af3d8d8871537}
+Should be overwritten to set the toolbar for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a25ec66468e5b09483afccd2358877361}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classRS__ActionBlocksInsert_a1024e7457ded5c9a529c33f40a373bed}{\index{R\-S\-\_\-\-Action\-Blocks\-Insert@{R\-S\-\_\-\-Action\-Blocks\-Insert}!last\-Status@{last\-Status}}
+\index{last\-Status@{last\-Status}!RS_ActionBlocksInsert@{R\-S\-\_\-\-Action\-Blocks\-Insert}}
+\subsubsection[{last\-Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Status} R\-S\-\_\-\-Action\-Blocks\-Insert\-::last\-Status\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionBlocksInsert_a1024e7457ded5c9a529c33f40a373bed}
+Last status before entering option. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionblocksinsert.\-h\item 
+librecad/src/actions/rs\-\_\-actionblocksinsert.\-cpp\end{DoxyCompactItemize}

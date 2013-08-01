@@ -1,0 +1,99 @@
+\hypertarget{classRS__ActionModifyEntity}{\section{R\-S\-\_\-\-Action\-Modify\-Entity Class Reference}
+\label{classRS__ActionModifyEntity}\index{R\-S\-\_\-\-Action\-Modify\-Entity@{R\-S\-\_\-\-Action\-Modify\-Entity}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionmodifyentity.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Modify\-Entity\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__ActionModifyEntity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionModifyEntity_a49a7152bae4306510cfcb2543f3a0f0e}{{\bfseries R\-S\-\_\-\-Action\-Modify\-Entity} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionModifyEntity_a49a7152bae4306510cfcb2543f3a0f0e}
+
+\item 
+\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__ActionModifyEntity_a83ab35137b63bf47a679bfb46059d504}{rtti} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyEntity_ae6fef66b49ddce3176748406ac584dea}{trigger} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyEntity_a408dab968f324f29db066785c7ed8c9a}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionModifyEntity_a2db8a78884e9a50f606ef898c9311b80}{update\-Mouse\-Cursor} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionModifyEntity_ab173a7ae63374b64cbfdbea93cf5a4a8}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionModifyEntity_ab173a7ae63374b64cbfdbea93cf5a4a8}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to select entities.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionModifyEntity_a408dab968f324f29db066785c7ed8c9a}{\index{R\-S\-\_\-\-Action\-Modify\-Entity@{R\-S\-\_\-\-Action\-Modify\-Entity}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionModifyEntity@{R\-S\-\_\-\-Action\-Modify\-Entity}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Entity\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyEntity_a408dab968f324f29db066785c7ed8c9a}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyEntity_a83ab35137b63bf47a679bfb46059d504}{\index{R\-S\-\_\-\-Action\-Modify\-Entity@{R\-S\-\_\-\-Action\-Modify\-Entity}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_ActionModifyEntity@{R\-S\-\_\-\-Action\-Modify\-Entity}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Action\-Modify\-Entity\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__ActionModifyEntity_a83ab35137b63bf47a679bfb46059d504}
+Must be implemented to return the I\-D of this action.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]no default implementation \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af877a66b5b4a7053f2b1f0519c57a6f5}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyEntity_ae6fef66b49ddce3176748406ac584dea}{\index{R\-S\-\_\-\-Action\-Modify\-Entity@{R\-S\-\_\-\-Action\-Modify\-Entity}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionModifyEntity@{R\-S\-\_\-\-Action\-Modify\-Entity}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Entity\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyEntity_ae6fef66b49ddce3176748406ac584dea}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa2ba8f6f697f735eace4ec5449c0b8cd}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyEntity_a2db8a78884e9a50f606ef898c9311b80}{\index{R\-S\-\_\-\-Action\-Modify\-Entity@{R\-S\-\_\-\-Action\-Modify\-Entity}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionModifyEntity@{R\-S\-\_\-\-Action\-Modify\-Entity}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Entity\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyEntity_a2db8a78884e9a50f606ef898c9311b80}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionmodifyentity.\-h\item 
+librecad/src/actions/rs\-\_\-actionmodifyentity.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,101 @@
+\hypertarget{classDRW__LType}{\section{D\-R\-W\-\_\-\-L\-Type Class Reference}
+\label{classDRW__LType}\index{D\-R\-W\-\_\-\-L\-Type@{D\-R\-W\-\_\-\-L\-Type}}
+}
+
+
+Class to handle line type entries.  
+
+
+
+
+{\ttfamily \#include $<$drw\-\_\-objects.\-h$>$}
+
+Inheritance diagram for D\-R\-W\-\_\-\-L\-Type\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDRW__LType}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDRW__LType_a04278a37e58c3ee13a1a4392cc675d28}{void {\bfseries reset} ()}\label{classDRW__LType_a04278a37e58c3ee13a1a4392cc675d28}
+
+\item 
+void \hyperlink{classDRW__LType_a7c1bcdc02c5aa43262221ad55dfac6ff}{parse\-Code} (int code, \hyperlink{classdxfReader}{dxf\-Reader} $\ast$reader)
+\begin{DoxyCompactList}\small\item\em Class to handle line type entries. \end{DoxyCompactList}\item 
+void \hyperlink{classDRW__LType_a9cebdfa5d1ae14720c4fcd50f45dab5a}{update} ()
+\begin{DoxyCompactList}\small\item\em Update line type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+U\-T\-F8\-S\-T\-R\-I\-N\-G \hyperlink{classDRW__LType_ae6f6458c8c9ac100908259558c7e22d2}{desc}
+\item 
+int \hyperlink{classDRW__LType_acb78cd0a105ac8b44e19313a4bf90f50}{size}
+\item 
+double \hyperlink{classDRW__LType_a438510524566f0deaf77ea694f171762}{length}
+\item 
+std\-::vector$<$ double $>$ \hyperlink{classDRW__LType_afb0702d3edab2948fdba2fb861fd3a4b}{path}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class to handle line type entries. 
+
+Class to handle line type symbol table entries \begin{DoxyAuthor}{Author}
+Rallaz 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDRW__LType_a7c1bcdc02c5aa43262221ad55dfac6ff}{\index{D\-R\-W\-\_\-\-L\-Type@{D\-R\-W\-\_\-\-L\-Type}!parse\-Code@{parse\-Code}}
+\index{parse\-Code@{parse\-Code}!DRW_LType@{D\-R\-W\-\_\-\-L\-Type}}
+\subsubsection[{parse\-Code}]{\setlength{\rightskip}{0pt plus 5cm}void D\-R\-W\-\_\-\-L\-Type\-::parse\-Code (
+\begin{DoxyParamCaption}
+\item[{int}]{code, }
+\item[{{\bf dxf\-Reader} $\ast$}]{reader}
+\end{DoxyParamCaption}
+)}}\label{classDRW__LType_a7c1bcdc02c5aa43262221ad55dfac6ff}
+
+
+Class to handle line type entries. 
+
+Class to handle line type symbol table entries \begin{DoxyAuthor}{Author}
+Rallaz 
+\end{DoxyAuthor}
+\hypertarget{classDRW__LType_a9cebdfa5d1ae14720c4fcd50f45dab5a}{\index{D\-R\-W\-\_\-\-L\-Type@{D\-R\-W\-\_\-\-L\-Type}!update@{update}}
+\index{update@{update}!DRW_LType@{D\-R\-W\-\_\-\-L\-Type}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void D\-R\-W\-\_\-\-L\-Type\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDRW__LType_a9cebdfa5d1ae14720c4fcd50f45dab5a}
+
+
+Update line type. 
+
+Update the size and length of line type acording to the path \begin{DoxyAuthor}{Author}
+Rallaz 
+\end{DoxyAuthor}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classDRW__LType_ae6f6458c8c9ac100908259558c7e22d2}{\index{D\-R\-W\-\_\-\-L\-Type@{D\-R\-W\-\_\-\-L\-Type}!desc@{desc}}
+\index{desc@{desc}!DRW_LType@{D\-R\-W\-\_\-\-L\-Type}}
+\subsubsection[{desc}]{\setlength{\rightskip}{0pt plus 5cm}U\-T\-F8\-S\-T\-R\-I\-N\-G D\-R\-W\-\_\-\-L\-Type\-::desc}}\label{classDRW__LType_ae6f6458c8c9ac100908259558c7e22d2}
+descriptive string, code 3 \hypertarget{classDRW__LType_a438510524566f0deaf77ea694f171762}{\index{D\-R\-W\-\_\-\-L\-Type@{D\-R\-W\-\_\-\-L\-Type}!length@{length}}
+\index{length@{length}!DRW_LType@{D\-R\-W\-\_\-\-L\-Type}}
+\subsubsection[{length}]{\setlength{\rightskip}{0pt plus 5cm}double D\-R\-W\-\_\-\-L\-Type\-::length}}\label{classDRW__LType_a438510524566f0deaf77ea694f171762}
+total length of pattern, code 40 \hypertarget{classDRW__LType_afb0702d3edab2948fdba2fb861fd3a4b}{\index{D\-R\-W\-\_\-\-L\-Type@{D\-R\-W\-\_\-\-L\-Type}!path@{path}}
+\index{path@{path}!DRW_LType@{D\-R\-W\-\_\-\-L\-Type}}
+\subsubsection[{path}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$double$>$ D\-R\-W\-\_\-\-L\-Type\-::path}}\label{classDRW__LType_afb0702d3edab2948fdba2fb861fd3a4b}
+trace, point or space length sequence, code 49 \hypertarget{classDRW__LType_acb78cd0a105ac8b44e19313a4bf90f50}{\index{D\-R\-W\-\_\-\-L\-Type@{D\-R\-W\-\_\-\-L\-Type}!size@{size}}
+\index{size@{size}!DRW_LType@{D\-R\-W\-\_\-\-L\-Type}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-L\-Type\-::size}}\label{classDRW__LType_acb78cd0a105ac8b44e19313a4bf90f50}
+element number, code 73 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+libraries/libdxfrw/src/drw\-\_\-objects.\-h\item 
+libraries/libdxfrw/src/drw\-\_\-objects.\-cpp\end{DoxyCompactItemize}

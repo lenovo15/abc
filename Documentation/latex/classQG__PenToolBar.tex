@@ -1,0 +1,116 @@
+\hypertarget{classQG__PenToolBar}{\section{Q\-G\-\_\-\-Pen\-Tool\-Bar Class Reference}
+\label{classQG__PenToolBar}\index{Q\-G\-\_\-\-Pen\-Tool\-Bar@{Q\-G\-\_\-\-Pen\-Tool\-Bar}}
+}
+
+
+{\ttfamily \#include $<$qg\-\_\-pentoolbar.\-h$>$}
+
+Inheritance diagram for Q\-G\-\_\-\-Pen\-Tool\-Bar\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classQG__PenToolBar}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classQG__PenToolBar_ad34dd0ca0b53de923a4749cab640484d}{slot\-Color\-Changed} (const \hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \&color)
+\item 
+void \hyperlink{classQG__PenToolBar_a05f7f3141b40091dfc747832dc478536}{slot\-Width\-Changed} (\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29}{R\-S2\-::\-Line\-Width} w)
+\item 
+void \hyperlink{classQG__PenToolBar_a1de1a8167a592161d9409d3ff7edc309}{slot\-Line\-Type\-Changed} (\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95f}{R\-S2\-::\-Line\-Type} w)
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classQG__PenToolBar_ac3cb48e5780287504c59d5d2247c6777}{void {\bfseries pen\-Changed} (\hyperlink{classRS__Pen}{R\-S\-\_\-\-Pen})}\label{classQG__PenToolBar_ac3cb48e5780287504c59d5d2247c6777}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQG__PenToolBar_a5695405295a3e1d715f1d1caf3953d30}{Q\-G\-\_\-\-Pen\-Tool\-Bar} (const Q\-String \&title, Q\-Widget $\ast$parent=0)
+\item 
+virtual \hyperlink{classQG__PenToolBar_ac56a8e1998cad84325599a3d3e6fc0dd}{$\sim$\-Q\-G\-\_\-\-Pen\-Tool\-Bar} ()
+\item 
+\hypertarget{classQG__PenToolBar_a271d6ae5920beb2771b8d9154ddf3a4e}{\hyperlink{classRS__Pen}{R\-S\-\_\-\-Pen} {\bfseries get\-Pen} ()}\label{classQG__PenToolBar_a271d6ae5920beb2771b8d9154ddf3a4e}
+
+\item 
+virtual void \hyperlink{classQG__PenToolBar_abff89708b0d26081464a27c8f38b56c8}{layer\-Activated} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$)
+\item 
+virtual void \hyperlink{classQG__PenToolBar_a588144d019d5967f447ff1cdf0b38bec}{layer\-Edited} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A toolbar that offers all widgets for choosing a pen. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classQG__PenToolBar_a5695405295a3e1d715f1d1caf3953d30}{\index{Q\-G\-\_\-\-Pen\-Tool\-Bar@{Q\-G\-\_\-\-Pen\-Tool\-Bar}!Q\-G\-\_\-\-Pen\-Tool\-Bar@{Q\-G\-\_\-\-Pen\-Tool\-Bar}}
+\index{Q\-G\-\_\-\-Pen\-Tool\-Bar@{Q\-G\-\_\-\-Pen\-Tool\-Bar}!QG_PenToolBar@{Q\-G\-\_\-\-Pen\-Tool\-Bar}}
+\subsubsection[{Q\-G\-\_\-\-Pen\-Tool\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}Q\-G\-\_\-\-Pen\-Tool\-Bar\-::\-Q\-G\-\_\-\-Pen\-Tool\-Bar (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{title, }
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classQG__PenToolBar_a5695405295a3e1d715f1d1caf3953d30}
+Constructor. \hypertarget{classQG__PenToolBar_ac56a8e1998cad84325599a3d3e6fc0dd}{\index{Q\-G\-\_\-\-Pen\-Tool\-Bar@{Q\-G\-\_\-\-Pen\-Tool\-Bar}!$\sim$\-Q\-G\-\_\-\-Pen\-Tool\-Bar@{$\sim$\-Q\-G\-\_\-\-Pen\-Tool\-Bar}}
+\index{$\sim$\-Q\-G\-\_\-\-Pen\-Tool\-Bar@{$\sim$\-Q\-G\-\_\-\-Pen\-Tool\-Bar}!QG_PenToolBar@{Q\-G\-\_\-\-Pen\-Tool\-Bar}}
+\subsubsection[{$\sim$\-Q\-G\-\_\-\-Pen\-Tool\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}Q\-G\-\_\-\-Pen\-Tool\-Bar\-::$\sim$\-Q\-G\-\_\-\-Pen\-Tool\-Bar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__PenToolBar_ac56a8e1998cad84325599a3d3e6fc0dd}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classQG__PenToolBar_abff89708b0d26081464a27c8f38b56c8}{\index{Q\-G\-\_\-\-Pen\-Tool\-Bar@{Q\-G\-\_\-\-Pen\-Tool\-Bar}!layer\-Activated@{layer\-Activated}}
+\index{layer\-Activated@{layer\-Activated}!QG_PenToolBar@{Q\-G\-\_\-\-Pen\-Tool\-Bar}}
+\subsubsection[{layer\-Activated}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Pen\-Tool\-Bar\-::layer\-Activated (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer} $\ast$}]{l}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__PenToolBar_abff89708b0d26081464a27c8f38b56c8}
+Called by the layer list if this object was added as a listener to a layer list. 
+
+Reimplemented from \hyperlink{classRS__LayerListListener_a09ebd52346c417fe0e82876cc0abc59e}{R\-S\-\_\-\-Layer\-List\-Listener}.
+
+\hypertarget{classQG__PenToolBar_a588144d019d5967f447ff1cdf0b38bec}{\index{Q\-G\-\_\-\-Pen\-Tool\-Bar@{Q\-G\-\_\-\-Pen\-Tool\-Bar}!layer\-Edited@{layer\-Edited}}
+\index{layer\-Edited@{layer\-Edited}!QG_PenToolBar@{Q\-G\-\_\-\-Pen\-Tool\-Bar}}
+\subsubsection[{layer\-Edited}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Pen\-Tool\-Bar\-::layer\-Edited (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__PenToolBar_a588144d019d5967f447ff1cdf0b38bec}
+Called by the layer list (if this object was previously added as a listener to a layer list). 
+
+Reimplemented from \hyperlink{classRS__LayerListListener_a6953aab6245c88b0bed2f25493522791}{R\-S\-\_\-\-Layer\-List\-Listener}.
+
+\hypertarget{classQG__PenToolBar_ad34dd0ca0b53de923a4749cab640484d}{\index{Q\-G\-\_\-\-Pen\-Tool\-Bar@{Q\-G\-\_\-\-Pen\-Tool\-Bar}!slot\-Color\-Changed@{slot\-Color\-Changed}}
+\index{slot\-Color\-Changed@{slot\-Color\-Changed}!QG_PenToolBar@{Q\-G\-\_\-\-Pen\-Tool\-Bar}}
+\subsubsection[{slot\-Color\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Pen\-Tool\-Bar\-::slot\-Color\-Changed (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Color} \&}]{color}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classQG__PenToolBar_ad34dd0ca0b53de923a4749cab640484d}
+Called when the color was changed by the user. \hypertarget{classQG__PenToolBar_a1de1a8167a592161d9409d3ff7edc309}{\index{Q\-G\-\_\-\-Pen\-Tool\-Bar@{Q\-G\-\_\-\-Pen\-Tool\-Bar}!slot\-Line\-Type\-Changed@{slot\-Line\-Type\-Changed}}
+\index{slot\-Line\-Type\-Changed@{slot\-Line\-Type\-Changed}!QG_PenToolBar@{Q\-G\-\_\-\-Pen\-Tool\-Bar}}
+\subsubsection[{slot\-Line\-Type\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Pen\-Tool\-Bar\-::slot\-Line\-Type\-Changed (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Line\-Type}}]{w}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classQG__PenToolBar_a1de1a8167a592161d9409d3ff7edc309}
+Called when the linetype was changed by the user. \hypertarget{classQG__PenToolBar_a05f7f3141b40091dfc747832dc478536}{\index{Q\-G\-\_\-\-Pen\-Tool\-Bar@{Q\-G\-\_\-\-Pen\-Tool\-Bar}!slot\-Width\-Changed@{slot\-Width\-Changed}}
+\index{slot\-Width\-Changed@{slot\-Width\-Changed}!QG_PenToolBar@{Q\-G\-\_\-\-Pen\-Tool\-Bar}}
+\subsubsection[{slot\-Width\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Pen\-Tool\-Bar\-::slot\-Width\-Changed (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Line\-Width}}]{w}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classQG__PenToolBar_a05f7f3141b40091dfc747832dc478536}
+Called when the width was changed by the user. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/ui/qg\-\_\-pentoolbar.\-h\item 
+generated/librecad/moc/moc\-\_\-qg\-\_\-pentoolbar.\-cpp\item 
+librecad/src/ui/qg\-\_\-pentoolbar.\-cpp\end{DoxyCompactItemize}

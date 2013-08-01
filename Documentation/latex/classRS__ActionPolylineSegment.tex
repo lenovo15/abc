@@ -1,0 +1,185 @@
+\hypertarget{classRS__ActionPolylineSegment}{\section{R\-S\-\_\-\-Action\-Polyline\-Segment Class Reference}
+\label{classRS__ActionPolylineSegment}\index{R\-S\-\_\-\-Action\-Polyline\-Segment@{R\-S\-\_\-\-Action\-Polyline\-Segment}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionpolylinesegment.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Polyline\-Segment\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classRS__ActionPolylineSegment}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionPolylineSegment_ad062c8f4755909fb12148923b853aba3}{Status} \{ \hyperlink{classRS__ActionPolylineSegment_ad062c8f4755909fb12148923b853aba3a302aed8269f18ad65325528cfed0437c}{Choose\-Entity}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionPolylineSegment_a9ef1232972c0900ef075ad2e4f25bd20}{{\bfseries R\-S\-\_\-\-Action\-Polyline\-Segment} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionPolylineSegment_a9ef1232972c0900ef075ad2e4f25bd20}
+
+\item 
+virtual \hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__ActionPolylineSegment_a80d6aa800da578df95de1a2a73df1079}{rtti} ()
+\item 
+virtual void \hyperlink{classRS__ActionPolylineSegment_a02e276ef724f8018231c27663a949643}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionPolylineSegment_a48bc30353f471b2fbab78b7a19329382}{trigger} ()
+\item 
+virtual void \hyperlink{classRS__ActionPolylineSegment_a5c9f526c9eeb7fddea975d2623ef8952}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionPolylineSegment_ad1effaf3818ea933b79b743847f8e2f0}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionPolylineSegment_a45f69cc5b184d17c32378711d71a3d34}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionPolylineSegment_a0768eabacf825c11c6205db2a7a13973}{update\-Mouse\-Cursor} ()
+\item 
+virtual bool \hyperlink{classRS__ActionPolylineSegment_af9c066d7b16f50d4dd8a71d8c30f2629}{convert\-Polyline} (\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$selected\-Entity)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionPolylineSegment_a23b6642590340b8c51730edb0be796b4}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionPolylineSegment_a23b6642590340b8c51730edb0be796b4}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to move entities.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionPolylineSegment_ad062c8f4755909fb12148923b853aba3}{\index{R\-S\-\_\-\-Action\-Polyline\-Segment@{R\-S\-\_\-\-Action\-Polyline\-Segment}!Status@{Status}}
+\index{Status@{Status}!RS_ActionPolylineSegment@{R\-S\-\_\-\-Action\-Polyline\-Segment}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Polyline\-Segment\-::\-Status}}}\label{classRS__ActionPolylineSegment_ad062c8f4755909fb12148923b853aba3}
+Action States. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Choose\-Entity@{Choose\-Entity}!R\-S\-\_\-\-Action\-Polyline\-Segment@{R\-S\-\_\-\-Action\-Polyline\-Segment}}\index{R\-S\-\_\-\-Action\-Polyline\-Segment@{R\-S\-\_\-\-Action\-Polyline\-Segment}!Choose\-Entity@{Choose\-Entity}}\item[{\em 
+\hypertarget{classRS__ActionPolylineSegment_ad062c8f4755909fb12148923b853aba3a302aed8269f18ad65325528cfed0437c}{Choose\-Entity}\label{classRS__ActionPolylineSegment_ad062c8f4755909fb12148923b853aba3a302aed8269f18ad65325528cfed0437c}
+}]Choosing one of the polyline segments. \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionPolylineSegment_af9c066d7b16f50d4dd8a71d8c30f2629}{\index{R\-S\-\_\-\-Action\-Polyline\-Segment@{R\-S\-\_\-\-Action\-Polyline\-Segment}!convert\-Polyline@{convert\-Polyline}}
+\index{convert\-Polyline@{convert\-Polyline}!RS_ActionPolylineSegment@{R\-S\-\_\-\-Action\-Polyline\-Segment}}
+\subsubsection[{convert\-Polyline}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Action\-Polyline\-Segment\-::convert\-Polyline (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{selected\-Entity}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionPolylineSegment_af9c066d7b16f50d4dd8a71d8c30f2629}
+Rearranges the lines, arcs or opened polylines entities in this container, non-\/recoursive. document can not be null
+
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & contour are closed \\
+\hline
+{\em false} & if the contour is not closed\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyAuthor}{Author}
+Rallaz 
+\end{DoxyAuthor}
+\hypertarget{classRS__ActionPolylineSegment_a02e276ef724f8018231c27663a949643}{\index{R\-S\-\_\-\-Action\-Polyline\-Segment@{R\-S\-\_\-\-Action\-Polyline\-Segment}!init@{init}}
+\index{init@{init}!RS_ActionPolylineSegment@{R\-S\-\_\-\-Action\-Polyline\-Segment}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Polyline\-Segment\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionPolylineSegment_a02e276ef724f8018231c27663a949643}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae5113b2aef5a10acd192786b99580e4a}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionPolylineSegment_a5c9f526c9eeb7fddea975d2623ef8952}{\index{R\-S\-\_\-\-Action\-Polyline\-Segment@{R\-S\-\_\-\-Action\-Polyline\-Segment}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_ActionPolylineSegment@{R\-S\-\_\-\-Action\-Polyline\-Segment}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Polyline\-Segment\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionPolylineSegment_a5c9f526c9eeb7fddea975d2623ef8952}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionPolylineSegment_ad1effaf3818ea933b79b743847f8e2f0}{\index{R\-S\-\_\-\-Action\-Polyline\-Segment@{R\-S\-\_\-\-Action\-Polyline\-Segment}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionPolylineSegment@{R\-S\-\_\-\-Action\-Polyline\-Segment}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Polyline\-Segment\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionPolylineSegment_ad1effaf3818ea933b79b743847f8e2f0}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionPolylineSegment_a80d6aa800da578df95de1a2a73df1079}{\index{R\-S\-\_\-\-Action\-Polyline\-Segment@{R\-S\-\_\-\-Action\-Polyline\-Segment}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_ActionPolylineSegment@{R\-S\-\_\-\-Action\-Polyline\-Segment}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Action\-Polyline\-Segment\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__ActionPolylineSegment_a80d6aa800da578df95de1a2a73df1079}
+Must be implemented to return the I\-D of this action.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]no default implementation \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af877a66b5b4a7053f2b1f0519c57a6f5}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionPolylineSegment_a48bc30353f471b2fbab78b7a19329382}{\index{R\-S\-\_\-\-Action\-Polyline\-Segment@{R\-S\-\_\-\-Action\-Polyline\-Segment}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionPolylineSegment@{R\-S\-\_\-\-Action\-Polyline\-Segment}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Polyline\-Segment\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionPolylineSegment_a48bc30353f471b2fbab78b7a19329382}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionPolylineSegment_a45f69cc5b184d17c32378711d71a3d34}{\index{R\-S\-\_\-\-Action\-Polyline\-Segment@{R\-S\-\_\-\-Action\-Polyline\-Segment}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionPolylineSegment@{R\-S\-\_\-\-Action\-Polyline\-Segment}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Polyline\-Segment\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionPolylineSegment_a45f69cc5b184d17c32378711d71a3d34}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionPolylineSegment_a0768eabacf825c11c6205db2a7a13973}{\index{R\-S\-\_\-\-Action\-Polyline\-Segment@{R\-S\-\_\-\-Action\-Polyline\-Segment}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionPolylineSegment@{R\-S\-\_\-\-Action\-Polyline\-Segment}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Polyline\-Segment\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionPolylineSegment_a0768eabacf825c11c6205db2a7a13973}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionpolylinesegment.\-h\item 
+librecad/src/actions/rs\-\_\-actionpolylinesegment.\-cpp\end{DoxyCompactItemize}

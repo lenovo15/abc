@@ -1,0 +1,76 @@
+\hypertarget{classRS__ActionLayersToggleLock}{\section{R\-S\-\_\-\-Action\-Layers\-Toggle\-Lock Class Reference}
+\label{classRS__ActionLayersToggleLock}\index{R\-S\-\_\-\-Action\-Layers\-Toggle\-Lock@{R\-S\-\_\-\-Action\-Layers\-Toggle\-Lock}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionlayerstogglelock.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Layers\-Toggle\-Lock\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__ActionLayersToggleLock}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionLayersToggleLock_afe60c70fd12005edf3b033d959e58890}{{\bfseries R\-S\-\_\-\-Action\-Layers\-Toggle\-Lock} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionLayersToggleLock_afe60c70fd12005edf3b033d959e58890}
+
+\item 
+virtual void \hyperlink{classRS__ActionLayersToggleLock_a7cb30814b69d89be2439490ae0616e6a}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionLayersToggleLock_a0d8ec083e82c8b43d4cf5e807243b442}{trigger} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionLayersToggleLock_a9e0ef4053c3e65be416a06e493c1cf68}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionLayersToggleLock_a9e0ef4053c3e65be416a06e493c1cf68}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to edit layers.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionLayersToggleLock_a7cb30814b69d89be2439490ae0616e6a}{\index{R\-S\-\_\-\-Action\-Layers\-Toggle\-Lock@{R\-S\-\_\-\-Action\-Layers\-Toggle\-Lock}!init@{init}}
+\index{init@{init}!RS_ActionLayersToggleLock@{R\-S\-\_\-\-Action\-Layers\-Toggle\-Lock}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Layers\-Toggle\-Lock\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionLayersToggleLock_a7cb30814b69d89be2439490ae0616e6a}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a05b7dca5deeb371eb51edcb73facd45f}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionLayersToggleLock_a0d8ec083e82c8b43d4cf5e807243b442}{\index{R\-S\-\_\-\-Action\-Layers\-Toggle\-Lock@{R\-S\-\_\-\-Action\-Layers\-Toggle\-Lock}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionLayersToggleLock@{R\-S\-\_\-\-Action\-Layers\-Toggle\-Lock}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Layers\-Toggle\-Lock\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionLayersToggleLock_a0d8ec083e82c8b43d4cf5e807243b442}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa2ba8f6f697f735eace4ec5449c0b8cd}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionlayerstogglelock.\-h\item 
+librecad/src/actions/rs\-\_\-actionlayerstogglelock.\-cpp\end{DoxyCompactItemize}

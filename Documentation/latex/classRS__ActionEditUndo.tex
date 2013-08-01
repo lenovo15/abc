@@ -1,0 +1,105 @@
+\hypertarget{classRS__ActionEditUndo}{\section{R\-S\-\_\-\-Action\-Edit\-Undo Class Reference}
+\label{classRS__ActionEditUndo}\index{R\-S\-\_\-\-Action\-Edit\-Undo@{R\-S\-\_\-\-Action\-Edit\-Undo}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actioneditundo.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Edit\-Undo\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__ActionEditUndo}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__ActionEditUndo_a6d2c96a013233ad96fbada3dd6adb4d4}{R\-S\-\_\-\-Action\-Edit\-Undo} (bool \hyperlink{classRS__ActionEditUndo_a0c6bc1f9d62c298e08880c2764e0e73f}{undo}, \hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)
+\item 
+virtual void \hyperlink{classRS__ActionEditUndo_ac16d63e9cb73749e348a28e08674095e}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionEditUndo_af9128469b322f20bbee3423cbfcac178}{trigger} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionEditUndo_acae2228aa70a6aaab30edf61d1ebe2d8}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} type, Q\-Object $\ast$parent)}\label{classRS__ActionEditUndo_acae2228aa70a6aaab30edf61d1ebe2d8}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classRS__ActionEditUndo_a0c6bc1f9d62c298e08880c2764e0e73f}{undo}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events for undo / redo.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__ActionEditUndo_a6d2c96a013233ad96fbada3dd6adb4d4}{\index{R\-S\-\_\-\-Action\-Edit\-Undo@{R\-S\-\_\-\-Action\-Edit\-Undo}!R\-S\-\_\-\-Action\-Edit\-Undo@{R\-S\-\_\-\-Action\-Edit\-Undo}}
+\index{R\-S\-\_\-\-Action\-Edit\-Undo@{R\-S\-\_\-\-Action\-Edit\-Undo}!RS_ActionEditUndo@{R\-S\-\_\-\-Action\-Edit\-Undo}}
+\subsubsection[{R\-S\-\_\-\-Action\-Edit\-Undo}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Action\-Edit\-Undo\-::\-R\-S\-\_\-\-Action\-Edit\-Undo (
+\begin{DoxyParamCaption}
+\item[{bool}]{undo, }
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} \&}]{graphic\-View}
+\end{DoxyParamCaption}
+)}}\label{classRS__ActionEditUndo_a6d2c96a013233ad96fbada3dd6adb4d4}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em undo} & true for undo and false for redo. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionEditUndo_ac16d63e9cb73749e348a28e08674095e}{\index{R\-S\-\_\-\-Action\-Edit\-Undo@{R\-S\-\_\-\-Action\-Edit\-Undo}!init@{init}}
+\index{init@{init}!RS_ActionEditUndo@{R\-S\-\_\-\-Action\-Edit\-Undo}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Edit\-Undo\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionEditUndo_ac16d63e9cb73749e348a28e08674095e}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a05b7dca5deeb371eb51edcb73facd45f}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionEditUndo_af9128469b322f20bbee3423cbfcac178}{\index{R\-S\-\_\-\-Action\-Edit\-Undo@{R\-S\-\_\-\-Action\-Edit\-Undo}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionEditUndo@{R\-S\-\_\-\-Action\-Edit\-Undo}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Edit\-Undo\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionEditUndo_af9128469b322f20bbee3423cbfcac178}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa2ba8f6f697f735eace4ec5449c0b8cd}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classRS__ActionEditUndo_a0c6bc1f9d62c298e08880c2764e0e73f}{\index{R\-S\-\_\-\-Action\-Edit\-Undo@{R\-S\-\_\-\-Action\-Edit\-Undo}!undo@{undo}}
+\index{undo@{undo}!RS_ActionEditUndo@{R\-S\-\_\-\-Action\-Edit\-Undo}}
+\subsubsection[{undo}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Action\-Edit\-Undo\-::undo\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionEditUndo_a0c6bc1f9d62c298e08880c2764e0e73f}
+Undo (true) or redo (false) 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actioneditundo.\-h\item 
+librecad/src/actions/rs\-\_\-actioneditundo.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,61 @@
+\hypertarget{classRS__DialogFactory}{\section{R\-S\-\_\-\-Dialog\-Factory Class Reference}
+\label{classRS__DialogFactory}\index{R\-S\-\_\-\-Dialog\-Factory@{R\-S\-\_\-\-Dialog\-Factory}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-dialogfactory.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classRS__DialogFactory_a8f7de6e59ceffc14c6fc5b950d5b5701}{set\-Factory\-Object} (\hyperlink{classRS__DialogFactoryInterface}{R\-S\-\_\-\-Dialog\-Factory\-Interface} $\ast$fo)
+\item 
+\hyperlink{classRS__DialogFactoryInterface}{R\-S\-\_\-\-Dialog\-Factory\-Interface} $\ast$ \hyperlink{classRS__DialogFactory_a22f4191bb22dfff30268ef1cccac6d35}{get\-Factory\-Object} ()
+\item 
+\hypertarget{classRS__DialogFactory_acb5597e63a3ae2d3bd0bf4b69770e3bf}{void {\bfseries command\-Message} (const Q\-String \&m)}\label{classRS__DialogFactory_acb5597e63a3ae2d3bd0bf4b69770e3bf}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classRS__DialogFactory}{R\-S\-\_\-\-Dialog\-Factory} $\ast$ \hyperlink{classRS__DialogFactory_a0031da41dea72c65098f0e83358793d4}{instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for objects that can create and show dialogs. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__DialogFactory_a22f4191bb22dfff30268ef1cccac6d35}{\index{R\-S\-\_\-\-Dialog\-Factory@{R\-S\-\_\-\-Dialog\-Factory}!get\-Factory\-Object@{get\-Factory\-Object}}
+\index{get\-Factory\-Object@{get\-Factory\-Object}!RS_DialogFactory@{R\-S\-\_\-\-Dialog\-Factory}}
+\subsubsection[{get\-Factory\-Object}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Dialog\-Factory\-Interface} $\ast$ R\-S\-\_\-\-Dialog\-Factory\-::get\-Factory\-Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__DialogFactory_a22f4191bb22dfff30268ef1cccac6d35}
+\begin{DoxyReturn}{Returns}
+Factory object. This is never N\-U\-L\-L. If no factory object was set, the default adapter will be returned. 
+\end{DoxyReturn}
+\hypertarget{classRS__DialogFactory_a0031da41dea72c65098f0e83358793d4}{\index{R\-S\-\_\-\-Dialog\-Factory@{R\-S\-\_\-\-Dialog\-Factory}!instance@{instance}}
+\index{instance@{instance}!RS_DialogFactory@{R\-S\-\_\-\-Dialog\-Factory}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Dialog\-Factory} $\ast$ R\-S\-\_\-\-Dialog\-Factory\-::instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__DialogFactory_a0031da41dea72c65098f0e83358793d4}
+\begin{DoxyReturn}{Returns}
+Instance to the unique font list. 
+\end{DoxyReturn}
+\hypertarget{classRS__DialogFactory_a8f7de6e59ceffc14c6fc5b950d5b5701}{\index{R\-S\-\_\-\-Dialog\-Factory@{R\-S\-\_\-\-Dialog\-Factory}!set\-Factory\-Object@{set\-Factory\-Object}}
+\index{set\-Factory\-Object@{set\-Factory\-Object}!RS_DialogFactory@{R\-S\-\_\-\-Dialog\-Factory}}
+\subsubsection[{set\-Factory\-Object}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Dialog\-Factory\-::set\-Factory\-Object (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Dialog\-Factory\-Interface} $\ast$}]{fo}
+\end{DoxyParamCaption}
+)}}\label{classRS__DialogFactory_a8f7de6e59ceffc14c6fc5b950d5b5701}
+Sets the real factory object that can create and show dialogs. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/gui/rs\-\_\-dialogfactory.\-h\item 
+librecad/src/lib/gui/rs\-\_\-dialogfactory.\-cpp\end{DoxyCompactItemize}

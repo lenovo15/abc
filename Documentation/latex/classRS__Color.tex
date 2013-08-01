@@ -1,0 +1,105 @@
+\hypertarget{classRS__Color}{\section{R\-S\-\_\-\-Color Class Reference}
+\label{classRS__Color}\index{R\-S\-\_\-\-Color@{R\-S\-\_\-\-Color}}
+}
+
+
+Color defined by layer not entity.  
+
+
+
+
+{\ttfamily \#include $<$rs\-\_\-color.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Color\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRS__Color}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__Color_a67cb642947852508b764fe24faf6941f}{{\bfseries R\-S\-\_\-\-Color} (int r, int g, int b)}\label{classRS__Color_a67cb642947852508b764fe24faf6941f}
+
+\item 
+\hypertarget{classRS__Color_a30852ca17622d4b1956a2c196ab03a12}{{\bfseries R\-S\-\_\-\-Color} (int r, int g, int b, int a)}\label{classRS__Color_a30852ca17622d4b1956a2c196ab03a12}
+
+\item 
+\hypertarget{classRS__Color_abbc6313f7a0ff964d2b026556492e96d}{{\bfseries R\-S\-\_\-\-Color} (const Q\-Color \&c)}\label{classRS__Color_abbc6313f7a0ff964d2b026556492e96d}
+
+\item 
+\hypertarget{classRS__Color_a3448d6fba8759e355de76c5c826e85d5}{{\bfseries R\-S\-\_\-\-Color} (const \hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \&c)}\label{classRS__Color_a3448d6fba8759e355de76c5c826e85d5}
+
+\item 
+\hypertarget{classRS__Color_afca132bc479e49fb149ee0c7fa4684f5}{{\bfseries R\-S\-\_\-\-Color} (unsigned int f)}\label{classRS__Color_afca132bc479e49fb149ee0c7fa4684f5}
+
+\item 
+\hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \hyperlink{classRS__Color_af1afbe8fa974d959fc761e9050104775}{strip\-Flags} () const 
+\item 
+bool \hyperlink{classRS__Color_a9ff19dd4aa42140e32801cf386fe16a6}{is\-By\-Layer} () const 
+\item 
+bool \hyperlink{classRS__Color_a849e4525af328ac882e38d3e209bc1da}{is\-By\-Block} () const 
+\item 
+\hypertarget{classRS__Color_a0c6964d3edaf0b8fedab38f5780ba2fb}{Q\-Color {\bfseries to\-Q\-Color} (void) const }\label{classRS__Color_a0c6964d3edaf0b8fedab38f5780ba2fb}
+
+\item 
+\hypertarget{classRS__Color_a23177e6321dabb0cbe5931d78b5a5542}{\hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \& {\bfseries operator=} (const \hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \&c)}\label{classRS__Color_a23177e6321dabb0cbe5931d78b5a5542}
+
+\item 
+\hypertarget{classRS__Color_a3b1f23149671afcdeb41dbd1e351ab36}{bool {\bfseries operator==} (const \hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \&c) const }\label{classRS__Color_a3b1f23149671afcdeb41dbd1e351ab36}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__Color_ac3c08dc2baed981d9a8316a00336b5a7}{std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&os, const \hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \&c)}\label{classRS__Color_ac3c08dc2baed981d9a8316a00336b5a7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Color defined by layer not entity. 
+
+Color defined by block not entity Color class.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Color_a849e4525af328ac882e38d3e209bc1da}{\index{R\-S\-\_\-\-Color@{R\-S\-\_\-\-Color}!is\-By\-Block@{is\-By\-Block}}
+\index{is\-By\-Block@{is\-By\-Block}!RS_Color@{R\-S\-\_\-\-Color}}
+\subsubsection[{is\-By\-Block}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Color\-::is\-By\-Block (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Color_a849e4525af328ac882e38d3e209bc1da}
+\begin{DoxyReturn}{Returns}
+true if the color is defined by block. 
+\end{DoxyReturn}
+\hypertarget{classRS__Color_a9ff19dd4aa42140e32801cf386fe16a6}{\index{R\-S\-\_\-\-Color@{R\-S\-\_\-\-Color}!is\-By\-Layer@{is\-By\-Layer}}
+\index{is\-By\-Layer@{is\-By\-Layer}!RS_Color@{R\-S\-\_\-\-Color}}
+\subsubsection[{is\-By\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Color\-::is\-By\-Layer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Color_a9ff19dd4aa42140e32801cf386fe16a6}
+\begin{DoxyReturn}{Returns}
+true if the color is defined by layer. 
+\end{DoxyReturn}
+\hypertarget{classRS__Color_af1afbe8fa974d959fc761e9050104775}{\index{R\-S\-\_\-\-Color@{R\-S\-\_\-\-Color}!strip\-Flags@{strip\-Flags}}
+\index{strip\-Flags@{strip\-Flags}!RS_Color@{R\-S\-\_\-\-Color}}
+\subsubsection[{strip\-Flags}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Color} R\-S\-\_\-\-Color\-::strip\-Flags (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Color_af1afbe8fa974d959fc761e9050104775}
+\begin{DoxyReturn}{Returns}
+A copy of this color without flags. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-color.\-h\end{DoxyCompactItemize}

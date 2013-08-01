@@ -1,0 +1,95 @@
+\hypertarget{classQG__CommandEdit}{\section{Q\-G\-\_\-\-Command\-Edit Class Reference}
+\label{classQG__CommandEdit}\index{Q\-G\-\_\-\-Command\-Edit@{Q\-G\-\_\-\-Command\-Edit}}
+}
+
+
+{\ttfamily \#include $<$qg\-\_\-commandedit.\-h$>$}
+
+Inheritance diagram for Q\-G\-\_\-\-Command\-Edit\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classQG__CommandEdit}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classQG__CommandEdit_adf2fb4787b9d8c24262c89d5b12d26ea}{void {\bfseries tab\-Pressed} ()}\label{classQG__CommandEdit_adf2fb4787b9d8c24262c89d5b12d26ea}
+
+\item 
+\hypertarget{classQG__CommandEdit_ad8600208f232b1191af0992725dabeda}{void {\bfseries escape} ()}\label{classQG__CommandEdit_ad8600208f232b1191af0992725dabeda}
+
+\item 
+\hypertarget{classQG__CommandEdit_a12aca8621e971e58eece5131f9840b83}{void {\bfseries focus\-In} ()}\label{classQG__CommandEdit_a12aca8621e971e58eece5131f9840b83}
+
+\item 
+\hypertarget{classQG__CommandEdit_a86f603e8641e27785db0ad81ca7588ec}{void {\bfseries focus\-Out} ()}\label{classQG__CommandEdit_a86f603e8641e27785db0ad81ca7588ec}
+
+\item 
+\hypertarget{classQG__CommandEdit_a88009b4756579a604efabcd6ab4695f3}{void {\bfseries clear\-Commands\-History} ()}\label{classQG__CommandEdit_a88009b4756579a604efabcd6ab4695f3}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQG__CommandEdit_a94a6a627062e5e74a4daf3e1d7f4c99d}{Q\-G\-\_\-\-Command\-Edit} (Q\-Widget $\ast$parent=0)
+\item 
+virtual \hyperlink{classQG__CommandEdit_a3f71053eaa4d45b930ae911440717edb}{$\sim$\-Q\-G\-\_\-\-Command\-Edit} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classQG__CommandEdit_ad2407dee3f143dbaea18b6474476459b}{event} (Q\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classQG__CommandEdit_abdc01474b1573f1e1868cc0c27428ac3}{key\-Press\-Event} (Q\-Key\-Event $\ast$e)
+\item 
+\hypertarget{classQG__CommandEdit_a2c237dc1dc27bfdd7665767fc7cb32d9}{virtual void {\bfseries focus\-In\-Event} (Q\-Focus\-Event $\ast$e)}\label{classQG__CommandEdit_a2c237dc1dc27bfdd7665767fc7cb32d9}
+
+\item 
+\hypertarget{classQG__CommandEdit_a423d018df5d4c77ebc1fd435f3f3f357}{virtual void {\bfseries focus\-Out\-Event} (Q\-Focus\-Event $\ast$e)}\label{classQG__CommandEdit_a423d018df5d4c77ebc1fd435f3f3f357}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A command line edit with some typical console features (uparrow for the history, tab, ..). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classQG__CommandEdit_a94a6a627062e5e74a4daf3e1d7f4c99d}{\index{Q\-G\-\_\-\-Command\-Edit@{Q\-G\-\_\-\-Command\-Edit}!Q\-G\-\_\-\-Command\-Edit@{Q\-G\-\_\-\-Command\-Edit}}
+\index{Q\-G\-\_\-\-Command\-Edit@{Q\-G\-\_\-\-Command\-Edit}!QG_CommandEdit@{Q\-G\-\_\-\-Command\-Edit}}
+\subsubsection[{Q\-G\-\_\-\-Command\-Edit}]{\setlength{\rightskip}{0pt plus 5cm}Q\-G\-\_\-\-Command\-Edit\-::\-Q\-G\-\_\-\-Command\-Edit (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classQG__CommandEdit_a94a6a627062e5e74a4daf3e1d7f4c99d}
+Default Constructor. You must call init manually if you choose to use this constructor. \hypertarget{classQG__CommandEdit_a3f71053eaa4d45b930ae911440717edb}{\index{Q\-G\-\_\-\-Command\-Edit@{Q\-G\-\_\-\-Command\-Edit}!$\sim$\-Q\-G\-\_\-\-Command\-Edit@{$\sim$\-Q\-G\-\_\-\-Command\-Edit}}
+\index{$\sim$\-Q\-G\-\_\-\-Command\-Edit@{$\sim$\-Q\-G\-\_\-\-Command\-Edit}!QG_CommandEdit@{Q\-G\-\_\-\-Command\-Edit}}
+\subsubsection[{$\sim$\-Q\-G\-\_\-\-Command\-Edit}]{\setlength{\rightskip}{0pt plus 5cm}Q\-G\-\_\-\-Command\-Edit\-::$\sim$\-Q\-G\-\_\-\-Command\-Edit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__CommandEdit_a3f71053eaa4d45b930ae911440717edb}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classQG__CommandEdit_ad2407dee3f143dbaea18b6474476459b}{\index{Q\-G\-\_\-\-Command\-Edit@{Q\-G\-\_\-\-Command\-Edit}!event@{event}}
+\index{event@{event}!QG_CommandEdit@{Q\-G\-\_\-\-Command\-Edit}}
+\subsubsection[{event}]{\setlength{\rightskip}{0pt plus 5cm}bool Q\-G\-\_\-\-Command\-Edit\-::event (
+\begin{DoxyParamCaption}
+\item[{Q\-Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__CommandEdit_ad2407dee3f143dbaea18b6474476459b}
+Bypass for key press events from the tab key. \hypertarget{classQG__CommandEdit_abdc01474b1573f1e1868cc0c27428ac3}{\index{Q\-G\-\_\-\-Command\-Edit@{Q\-G\-\_\-\-Command\-Edit}!key\-Press\-Event@{key\-Press\-Event}}
+\index{key\-Press\-Event@{key\-Press\-Event}!QG_CommandEdit@{Q\-G\-\_\-\-Command\-Edit}}
+\subsubsection[{key\-Press\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Command\-Edit\-::key\-Press\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Key\-Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__CommandEdit_abdc01474b1573f1e1868cc0c27428ac3}
+History (arrow key up/down) support, tab. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/ui/qg\-\_\-commandedit.\-h\item 
+generated/librecad/moc/moc\-\_\-qg\-\_\-commandedit.\-cpp\item 
+librecad/src/ui/qg\-\_\-commandedit.\-cpp\end{DoxyCompactItemize}

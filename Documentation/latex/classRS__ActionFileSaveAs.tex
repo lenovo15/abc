@@ -1,0 +1,76 @@
+\hypertarget{classRS__ActionFileSaveAs}{\section{R\-S\-\_\-\-Action\-File\-Save\-As Class Reference}
+\label{classRS__ActionFileSaveAs}\index{R\-S\-\_\-\-Action\-File\-Save\-As@{R\-S\-\_\-\-Action\-File\-Save\-As}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionfilesaveas.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-File\-Save\-As\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__ActionFileSaveAs}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionFileSaveAs_a4b60761287aa562a8ce78dee40829fe4}{{\bfseries R\-S\-\_\-\-Action\-File\-Save\-As} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionFileSaveAs_a4b60761287aa562a8ce78dee40829fe4}
+
+\item 
+virtual void \hyperlink{classRS__ActionFileSaveAs_a5a4e874d362e87ebc1612bdc3af99f67}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionFileSaveAs_ac68fb93ea55c8763dc4fe8e491d48224}{trigger} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionFileSaveAs_abcdbd81dd08f871b1a999e707e7a5a5b}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionFileSaveAs_abcdbd81dd08f871b1a999e707e7a5a5b}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to export files in various formats.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionFileSaveAs_a5a4e874d362e87ebc1612bdc3af99f67}{\index{R\-S\-\_\-\-Action\-File\-Save\-As@{R\-S\-\_\-\-Action\-File\-Save\-As}!init@{init}}
+\index{init@{init}!RS_ActionFileSaveAs@{R\-S\-\_\-\-Action\-File\-Save\-As}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-File\-Save\-As\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionFileSaveAs_a5a4e874d362e87ebc1612bdc3af99f67}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a05b7dca5deeb371eb51edcb73facd45f}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionFileSaveAs_ac68fb93ea55c8763dc4fe8e491d48224}{\index{R\-S\-\_\-\-Action\-File\-Save\-As@{R\-S\-\_\-\-Action\-File\-Save\-As}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionFileSaveAs@{R\-S\-\_\-\-Action\-File\-Save\-As}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-File\-Save\-As\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionFileSaveAs_ac68fb93ea55c8763dc4fe8e491d48224}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa2ba8f6f697f735eace4ec5449c0b8cd}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionfilesaveas.\-h\item 
+librecad/src/actions/rs\-\_\-actionfilesaveas.\-cpp\end{DoxyCompactItemize}

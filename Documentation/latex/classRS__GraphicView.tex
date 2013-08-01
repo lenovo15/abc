@@ -1,0 +1,1265 @@
+\hypertarget{classRS__GraphicView}{\section{R\-S\-\_\-\-Graphic\-View Class Reference}
+\label{classRS__GraphicView}\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-graphicview.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Graphic\-View\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__GraphicView}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__GraphicView_a04d05a8525c1a2e66e2feb7ddbeed944}{R\-S\-\_\-\-Graphic\-View} ()
+\item 
+virtual \hyperlink{classRS__GraphicView_aaf1ec577df37cfcf7c785a7ffbef2e21}{$\sim$\-R\-S\-\_\-\-Graphic\-View} ()
+\item 
+void \hyperlink{classRS__GraphicView_a09377d39a5f76790ef640f0c03664c44}{clean\-Up} ()
+\item 
+\hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} $\ast$ \hyperlink{classRS__GraphicView_ac4a2671eca4f7f6ca215c891bc04f17c}{get\-Graphic} ()
+\item 
+void \hyperlink{classRS__GraphicView_a94e8aa56a10fe55892e84855e849326f}{set\-Drawing\-Mode} (\hyperlink{classRS2_a67196f135592d0f8eff894bd126685b2}{R\-S2\-::\-Drawing\-Mode} m)
+\item 
+\hyperlink{classRS2_a67196f135592d0f8eff894bd126685b2}{R\-S2\-::\-Drawing\-Mode} \hyperlink{classRS__GraphicView_adaf7968fe59f2f435e4dddd88c25114d}{get\-Drawing\-Mode} ()
+\item 
+void \hyperlink{classRS__GraphicView_a674734e6889123a0aa1822cf4f3ac195}{set\-Delete\-Mode} (bool m)
+\item 
+bool \hyperlink{classRS__GraphicView_a7c412fcd99f4bc962a38774285e1ec6a}{get\-Delete\-Mode} ()
+\item 
+virtual int \hyperlink{classRS__GraphicView_a99858a9507de483858071fd209a53e89}{get\-Width} ()=0
+\item 
+virtual int \hyperlink{classRS__GraphicView_af354fd031dfc0c8e6d8bfb83f415bea5}{get\-Height} ()=0
+\item 
+virtual void \hyperlink{classRS__GraphicView_a5ea54ec2dfcc2bb1553dfa867986fe31}{redraw} (R\-S2\-::\-Redraw\-Method method=R\-S2\-::\-Redraw\-All)=0
+\item 
+virtual void \hyperlink{classRS__GraphicView_a87478365dda45fc26c349874d9b92ca0}{adjust\-Offset\-Controls} ()
+\item 
+virtual void \hyperlink{classRS__GraphicView_aa26f3d00ce72bde330808acd064737ea}{adjust\-Zoom\-Controls} ()
+\item 
+virtual void \hyperlink{classRS__GraphicView_a05efd0c10a77534f6fb8ef228ba9c23b}{set\-Background} (const \hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \&bg)
+\item 
+\hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \hyperlink{classRS__GraphicView_ad0daeef68a2d232110b15595a05ce88b}{get\-Background} ()
+\item 
+\hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \hyperlink{classRS__GraphicView_a84ad946a9e3220c4f8420ba60be1cdb9}{get\-Foreground} ()
+\item 
+void \hyperlink{classRS__GraphicView_a9c918282d444c1fa7e8d82d995ec4fc0}{set\-Grid\-Color} (const \hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \&c)
+\item 
+void \hyperlink{classRS__GraphicView_ada125f43b30829898f5bb0a4e9599816}{set\-Meta\-Grid\-Color} (const \hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \&c)
+\item 
+void \hyperlink{classRS__GraphicView_a77da01e72e2c9dc5c9d191967a20203f}{set\-Selected\-Color} (const \hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \&c)
+\item 
+void \hyperlink{classRS__GraphicView_a94b7c597e74d76d4d95ee3f0a204c557}{set\-Highlighted\-Color} (const \hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \&c)
+\item 
+virtual void \hyperlink{classRS__GraphicView_a94f6771b47ea77eb63170100365bfed7}{set\-Mouse\-Cursor} (\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548d}{R\-S2\-::\-Cursor\-Type})
+\item 
+void \hyperlink{classRS__GraphicView_a7ca74d4cb56fbd13a0172f6bca61f018}{set\-Container} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} $\ast$container)
+\item 
+\hypertarget{classRS__GraphicView_adc433841bbafa1b84a8fb34fde3f99d1}{\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} $\ast$ {\bfseries get\-Container} ()}\label{classRS__GraphicView_adc433841bbafa1b84a8fb34fde3f99d1}
+
+\item 
+\hypertarget{classRS__GraphicView_a7c69badd067776f46077309a76bbd98a}{void {\bfseries set\-Factor} (double f)}\label{classRS__GraphicView_a7c69badd067776f46077309a76bbd98a}
+
+\item 
+void \hyperlink{classRS__GraphicView_a3335bd949a5d10f0725f08c810fc4f09}{set\-Factor\-X} (double f)
+\item 
+void \hyperlink{classRS__GraphicView_af309a695c17fc2b5eda690cc68370be4}{set\-Factor\-Y} (double f)
+\item 
+\hypertarget{classRS__GraphicView_a19f6b9a251b30ed6440db935e7912850}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries get\-Factor} ()}\label{classRS__GraphicView_a19f6b9a251b30ed6440db935e7912850}
+
+\item 
+void \hyperlink{classRS__GraphicView_a362433ecd461c38c07180adf364ecdcf}{set\-Offset} (int ox, int oy)
+\item 
+\hypertarget{classRS__GraphicView_a06af3523b59e5faf39bc5bb75a59d0bb}{void {\bfseries set\-Offset\-X} (int ox)}\label{classRS__GraphicView_a06af3523b59e5faf39bc5bb75a59d0bb}
+
+\item 
+\hypertarget{classRS__GraphicView_a40c4447acf325be91952c872b260d5e6}{void {\bfseries set\-Offset\-Y} (int oy)}\label{classRS__GraphicView_a40c4447acf325be91952c872b260d5e6}
+
+\item 
+\hypertarget{classRS__GraphicView_a06fb32648ec8d9dd05ba4292164767e9}{int {\bfseries get\-Offset\-X} ()}\label{classRS__GraphicView_a06fb32648ec8d9dd05ba4292164767e9}
+
+\item 
+\hypertarget{classRS__GraphicView_a8de371998ab49c3c537b1ffa342331c5}{int {\bfseries get\-Offset\-Y} ()}\label{classRS__GraphicView_a8de371998ab49c3c537b1ffa342331c5}
+
+\item 
+void \hyperlink{classRS__GraphicView_ab7f859e43fa6cab6cca99b1232669a5d}{center\-Offset\-X} ()
+\item 
+void \hyperlink{classRS__GraphicView_a1138774f79663135c2e09bfee42e4bcd}{center\-Offset\-Y} ()
+\item 
+void \hyperlink{classRS__GraphicView_a7c3865a1cd7540559dfa7159e1d44ab7}{center\-X} (double x)
+\item 
+void \hyperlink{classRS__GraphicView_a07d099a8f25687d9490c624d5e41037e}{center\-Y} (double y)
+\item 
+void \hyperlink{classRS__GraphicView_ae918f7b5fbfa52437fbe1a36adc0e37b}{set\-Borders} (int left, int top, int right, int bottom)
+\item 
+\hypertarget{classRS__GraphicView_aa8f379e89d05d0ee728916221ee75ee3}{int {\bfseries get\-Border\-Left} ()}\label{classRS__GraphicView_aa8f379e89d05d0ee728916221ee75ee3}
+
+\item 
+\hypertarget{classRS__GraphicView_ab7a80b615000f126eaa54c4c080c2aaf}{int {\bfseries get\-Border\-Top} ()}\label{classRS__GraphicView_ab7a80b615000f126eaa54c4c080c2aaf}
+
+\item 
+\hypertarget{classRS__GraphicView_ad150331c9cbd23a70b531061d9367595}{int {\bfseries get\-Border\-Right} ()}\label{classRS__GraphicView_ad150331c9cbd23a70b531061d9367595}
+
+\item 
+\hypertarget{classRS__GraphicView_a5f8302d5f3dfafbf830deb9f3db54255}{int {\bfseries get\-Border\-Bottom} ()}\label{classRS__GraphicView_a5f8302d5f3dfafbf830deb9f3db54255}
+
+\item 
+\hypertarget{classRS__GraphicView_abfbe46cb2a39e3319dc7eaaddbae8dfa}{void {\bfseries freeze\-Zoom} (bool freeze)}\label{classRS__GraphicView_abfbe46cb2a39e3319dc7eaaddbae8dfa}
+
+\item 
+\hypertarget{classRS__GraphicView_af7da787c1a3d5ec76e6cdcec533fc46f}{bool {\bfseries is\-Zoom\-Frozen} ()}\label{classRS__GraphicView_af7da787c1a3d5ec76e6cdcec533fc46f}
+
+\item 
+void \hyperlink{classRS__GraphicView_ab19855f3a0440cd126c9418d620b5daa}{set\-Default\-Action} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action)
+\item 
+\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$ \hyperlink{classRS__GraphicView_af3873abfd15d17abf90b599642fadeae}{get\-Default\-Action} ()
+\item 
+void \hyperlink{classRS__GraphicView_a65251a45d7f7da8700dcd1dd410d4e80}{set\-Current\-Action} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action)
+\item 
+\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$ \hyperlink{classRS__GraphicView_a1cd6ed60d8b4df412d537c1c1f1186af}{get\-Current\-Action} ()
+\item 
+void \hyperlink{classRS__GraphicView_ac60b852edb1441711d57fb757cadc39b}{kill\-Select\-Actions} ()
+\item 
+void \hyperlink{classRS__GraphicView_a44c3d2fc309d302c8c212b0b8ae89bf0}{kill\-All\-Actions} ()
+\item 
+virtual void \hyperlink{classRS__GraphicView_a5d4cb4b6bb21358a6c959ca30d67e22d}{emulate\-Mouse\-Move\-Event} ()=0
+\item 
+void \hyperlink{classRS__GraphicView_a99b34125429caa61996a79471a310b64}{back} ()
+\item 
+void \hyperlink{classRS__GraphicView_a9989594f1e6714929bbac3c909135a06}{enter} ()
+\item 
+void \hyperlink{classRS__GraphicView_a746fcad635f1b9687b41165e26a0033f}{mouse\-Press\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+void \hyperlink{classRS__GraphicView_a7e4027a0cd61f4de9494a7a134982426}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+\hypertarget{classRS__GraphicView_ada84995af465506ef0491b4fa549bf0b}{void {\bfseries mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)}\label{classRS__GraphicView_ada84995af465506ef0491b4fa549bf0b}
+
+\item 
+void \hyperlink{classRS__GraphicView_a66ac902166fe3823622dd6c2eb226d7c}{mouse\-Leave\-Event} ()
+\item 
+void \hyperlink{classRS__GraphicView_ad7f33080610e836e1f82368e491b9704}{mouse\-Enter\-Event} ()
+\item 
+void \hyperlink{classRS__GraphicView_a5cfbfe85b12ef28597109e7b8b23503a}{key\-Press\-Event} (Q\-Key\-Event $\ast$e)
+\item 
+void \hyperlink{classRS__GraphicView_a34de85c07720f9d3fb1fc825e31a28db}{key\-Release\-Event} (Q\-Key\-Event $\ast$e)
+\item 
+void \hyperlink{classRS__GraphicView_ab9f5865faadd21180286c643631fc9c3}{command\-Event} (\hyperlink{classRS__CommandEvent}{R\-S\-\_\-\-Command\-Event} $\ast$e)
+\item 
+void \hyperlink{classRS__GraphicView_a6e6978abfdc6e3fc47d0c862dcafe854}{enable\-Coordinate\-Input} ()
+\item 
+void \hyperlink{classRS__GraphicView_a283b0e4706e30b4b1c1645f74552e9af}{disable\-Coordinate\-Input} ()
+\item 
+virtual void \hyperlink{classRS__GraphicView_a0cd13dfb56671d262a0c7c73abee0283}{zoom\-In} (double f=1.\-5, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&center=\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector}(false))
+\item 
+virtual void \hyperlink{classRS__GraphicView_ad0aea27438b47700f4fc242fc0e764eb}{zoom\-In\-X} (double f=1.\-5)
+\item 
+virtual void \hyperlink{classRS__GraphicView_afdcaa3c792eca9e25dbcbda7b762e2ae}{zoom\-In\-Y} (double f=1.\-5)
+\item 
+virtual void \hyperlink{classRS__GraphicView_a49ec55150d1dec6c61261a51dd422972}{zoom\-Out} (double f=1.\-5, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&center=\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector}(false))
+\item 
+virtual void \hyperlink{classRS__GraphicView_a9539826899c38ff7f20bbfe034f5562c}{zoom\-Out\-X} (double f=1.\-5)
+\item 
+virtual void \hyperlink{classRS__GraphicView_a2d70a33d9b86ccfe065bcca5c0d3e814}{zoom\-Out\-Y} (double f=1.\-5)
+\item 
+virtual void \hyperlink{classRS__GraphicView_ad938b6866368bc4615887ace3e464040}{zoom\-Auto} (bool axis=true, bool keep\-Aspect\-Ratio=true)
+\item 
+\hypertarget{classRS__GraphicView_a57d3dd0b99100c111ef025ca6f876ae8}{virtual void {\bfseries zoom\-Auto\-Y} (bool axis=true)}\label{classRS__GraphicView_a57d3dd0b99100c111ef025ca6f876ae8}
+
+\item 
+virtual void \hyperlink{classRS__GraphicView_acdd3a4e854454a38fb543b076cb356ef}{zoom\-Previous} ()
+\item 
+virtual void \hyperlink{classRS__GraphicView_a976312ee30b110f2ee08af4cf74484b2}{save\-View} ()
+\item 
+virtual void \hyperlink{classRS__GraphicView_a1946bd7459d40ef47183f8d42f39c87f}{restore\-View} ()
+\item 
+virtual void \hyperlink{classRS__GraphicView_a4726f4b18f36529c9dcbc802bdb4640c}{zoom\-Window} (\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} v1, \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} v2, bool keep\-Aspect\-Ratio=true)
+\item 
+virtual void \hyperlink{classRS__GraphicView_af86581c53c7c9377e84310df22ed93a0}{zoom\-Pan} (int dx, int dy)
+\item 
+virtual void \hyperlink{classRS__GraphicView_a2ba37b0e8c6e322fc2a420c9589a4bae}{zoom\-Scroll} (\hyperlink{classRS2_a6b01552307ddf2599503c2e2f6ae7066}{R\-S2\-::\-Direction} direction)
+\item 
+virtual void \hyperlink{classRS__GraphicView_a18ab12a02cb250eab2369ea8db016525}{zoom\-Page} ()
+\item 
+virtual void \hyperlink{classRS__GraphicView_a0ac9a280b3b288bf866c54f1053ff066}{draw\-Window\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D} (\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} v1, \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} v2)
+\item 
+virtual void \hyperlink{classRS__GraphicView_a435f574511a0ad56c604585c2a9d63df}{draw\-Layer1} (\hyperlink{classRS__Painter}{R\-S\-\_\-\-Painter} $\ast$painter)
+\item 
+\hypertarget{classRS__GraphicView_a4e081d7ba65a970c4dcc8281a01b035c}{virtual void {\bfseries draw\-Layer2} (\hyperlink{classRS__Painter}{R\-S\-\_\-\-Painter} $\ast$painter)}\label{classRS__GraphicView_a4e081d7ba65a970c4dcc8281a01b035c}
+
+\item 
+\hypertarget{classRS__GraphicView_aeb49db46c148fc0a682a1034b8963953}{virtual void {\bfseries draw\-Layer3} (\hyperlink{classRS__Painter}{R\-S\-\_\-\-Painter} $\ast$painter)}\label{classRS__GraphicView_aeb49db46c148fc0a682a1034b8963953}
+
+\item 
+virtual void \hyperlink{classRS__GraphicView_ad167e9a2983c936cde0a1fc45c20dde2}{delete\-Entity} (\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$e)
+\item 
+\hypertarget{classRS__GraphicView_a23fd4600a87782e836949bdab4b57507}{virtual void {\bfseries draw\-Entity} (\hyperlink{classRS__Painter}{R\-S\-\_\-\-Painter} $\ast$painter, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$e, double \&pattern\-Offset)}\label{classRS__GraphicView_a23fd4600a87782e836949bdab4b57507}
+
+\item 
+\hypertarget{classRS__GraphicView_af990c780d472b88d8696f1b59b0674ca}{virtual void {\bfseries draw\-Entity} (\hyperlink{classRS__Painter}{R\-S\-\_\-\-Painter} $\ast$painter, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$e)}\label{classRS__GraphicView_af990c780d472b88d8696f1b59b0674ca}
+
+\item 
+virtual void \hyperlink{classRS__GraphicView_a73fbdbd9a478ccf6266771555567d8e3}{draw\-Entity} (\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$e, double \&pattern\-Offset)
+\item 
+\hypertarget{classRS__GraphicView_a661cc72b65087c7698205a6e5e44b014}{virtual void {\bfseries draw\-Entity} (\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$e)}\label{classRS__GraphicView_a661cc72b65087c7698205a6e5e44b014}
+
+\item 
+\hypertarget{classRS__GraphicView_a39a547f51b644dff6c1add157b10059c}{virtual void {\bfseries draw\-Entity\-Plain} (\hyperlink{classRS__Painter}{R\-S\-\_\-\-Painter} $\ast$painter, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$e)}\label{classRS__GraphicView_a39a547f51b644dff6c1add157b10059c}
+
+\item 
+virtual void \hyperlink{classRS__GraphicView_a679c51436dffa806e4ddc42feb160ff4}{draw\-Entity\-Plain} (\hyperlink{classRS__Painter}{R\-S\-\_\-\-Painter} $\ast$painter, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$e, double \&pattern\-Offset)
+\item 
+\hypertarget{classRS__GraphicView_a79b9691535ae8069f09d009520280d06}{virtual void {\bfseries set\-Pen\-For\-Entity} (\hyperlink{classRS__Painter}{R\-S\-\_\-\-Painter} $\ast$painter, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$e)}\label{classRS__GraphicView_a79b9691535ae8069f09d009520280d06}
+
+\item 
+virtual \hyperlink{classRS__LineTypePattern}{R\-S\-\_\-\-Line\-Type\-Pattern} $\ast$ \hyperlink{classRS__GraphicView_a75c25e51066e7b87d43b60f98e44ed13}{get\-Pattern} (\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95f}{R\-S2\-::\-Line\-Type} t)
+\item 
+virtual void \hyperlink{classRS__GraphicView_ab405b9c7ed73bcd849747ee8e8d5d924}{draw\-Absolute\-Zero} (\hyperlink{classRS__Painter}{R\-S\-\_\-\-Painter} $\ast$painter)
+\item 
+virtual void \hyperlink{classRS__GraphicView_a091a2986911f98c4adceee14ae7867df}{draw\-Relative\-Zero} (\hyperlink{classRS__Painter}{R\-S\-\_\-\-Painter} $\ast$painter)
+\item 
+virtual void \hyperlink{classRS__GraphicView_aaa5538c390accf5e46a31a0c8facbafd}{draw\-Paper} (\hyperlink{classRS__Painter}{R\-S\-\_\-\-Painter} $\ast$painter)
+\item 
+virtual void \hyperlink{classRS__GraphicView_a7846ccb301bca583ec23428ec2187f53}{draw\-Grid} (\hyperlink{classRS__Painter}{R\-S\-\_\-\-Painter} $\ast$painter)
+\item 
+virtual void \hyperlink{classRS__GraphicView_a6eb5daa3d2114f30ef67631dc4f8580c}{draw\-Meta\-Grid} (\hyperlink{classRS__Painter}{R\-S\-\_\-\-Painter} $\ast$painter)
+\item 
+\hypertarget{classRS__GraphicView_ace0fdf9d18ce9af9c25807d58f5841fa}{virtual void {\bfseries draw\-Overlay} (\hyperlink{classRS__Painter}{R\-S\-\_\-\-Painter} $\ast$painter)}\label{classRS__GraphicView_ace0fdf9d18ce9af9c25807d58f5841fa}
+
+\item 
+\hypertarget{classRS__GraphicView_a09032f5b3d9300727f04abd3cc5e2074}{\hyperlink{classRS__Grid}{R\-S\-\_\-\-Grid} $\ast$ {\bfseries get\-Grid} ()}\label{classRS__GraphicView_a09032f5b3d9300727f04abd3cc5e2074}
+
+\item 
+\hypertarget{classRS__GraphicView_aa3d519067ecf29a42b32a86c1700e02f}{virtual void {\bfseries update\-Grid\-Status\-Widget} (const Q\-String \&)}\label{classRS__GraphicView_aa3d519067ecf29a42b32a86c1700e02f}
+
+\item 
+void \hyperlink{classRS__GraphicView_a9aa81c654960c6f3c6842d163af9fa9d}{set\-Default\-Snap\-Mode} (\hyperlink{structRS__SnapMode}{R\-S\-\_\-\-Snap\-Mode} sm)
+\item 
+\hypertarget{classRS__GraphicView_a4ff6971a07df5a73543242f33b0536e3}{\hyperlink{structRS__SnapMode}{R\-S\-\_\-\-Snap\-Mode} {\bfseries get\-Default\-Snap\-Mode} ()}\label{classRS__GraphicView_a4ff6971a07df5a73543242f33b0536e3}
+
+\item 
+void \hyperlink{classRS__GraphicView_a329a89b5d28af0c1b62c62fee469cc9b}{set\-Snap\-Restriction} (\hyperlink{classRS2_aac67b6890a08cff619c0fbef48377bae}{R\-S2\-::\-Snap\-Restriction} sr)
+\item 
+\hypertarget{classRS__GraphicView_afe2387cea74def223dabd7e1c20eb6e1}{\hyperlink{classRS2_aac67b6890a08cff619c0fbef48377bae}{R\-S2\-::\-Snap\-Restriction} {\bfseries get\-Snap\-Restriction} ()}\label{classRS__GraphicView_afe2387cea74def223dabd7e1c20eb6e1}
+
+\item 
+bool \hyperlink{classRS__GraphicView_a9534cdc415ffe121e5324c8c2101b7dc}{is\-Grid\-On} ()
+\item 
+bool \hyperlink{classRS__GraphicView_a412f59054fb3383d3a98efec75af1e16}{is\-Grid\-Isometric} ()
+\item 
+\hypertarget{classRS__GraphicView_aaa4a8d5eb903146dbb61105f49b9f382}{void {\bfseries set\-Crosshair\-Type} (\hyperlink{classRS2_a6900d729544a78e6cda74f93df772acc}{R\-S2\-::\-Crosshair\-Type} ch\-Type)}\label{classRS__GraphicView_aaa4a8d5eb903146dbb61105f49b9f382}
+
+\item 
+\hypertarget{classRS__GraphicView_a221e6cdf801e6220eb97f801e48e3969}{\hyperlink{classRS2_a6900d729544a78e6cda74f93df772acc}{R\-S2\-::\-Crosshair\-Type} {\bfseries get\-Crosshair\-Type} ()}\label{classRS__GraphicView_a221e6cdf801e6220eb97f801e48e3969}
+
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__GraphicView_a6e213479314ef93667e757fa3223ee18}{to\-Gui} (\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} v)
+\item 
+double \hyperlink{classRS__GraphicView_ad5aaa0d28de23d84775e2ceb44dc6ccb}{to\-Gui\-X} (double x)
+\item 
+double \hyperlink{classRS__GraphicView_aa3a2948c59ed17711b4e404c4c538ca2}{to\-Gui\-Y} (double y)
+\item 
+double \hyperlink{classRS__GraphicView_a7abc7f543e66d20b9510e0618215c4e3}{to\-Gui\-D\-X} (double d)
+\item 
+double \hyperlink{classRS__GraphicView_af653db7ecbc79b143a0a5c365ab34fcd}{to\-Gui\-D\-Y} (double d)
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__GraphicView_af2d22f87b620d4d3693c3711ba8fa416}{to\-Graph} (\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} v)
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__GraphicView_a8333b5366b60e6b0044f22756463aecb}{to\-Graph} (int x, int y)
+\item 
+double \hyperlink{classRS__GraphicView_a075ac6bc53bb8db737c9d1f682278c9f}{to\-Graph\-X} (int x)
+\item 
+double \hyperlink{classRS__GraphicView_a1fc38b392630cc1e81951aeb360bfa2b}{to\-Graph\-Y} (int y)
+\item 
+double \hyperlink{classRS__GraphicView_a17d534219f89bf68ceaadec7acccd74a}{to\-Graph\-D\-X} (int d)
+\item 
+double \hyperlink{classRS__GraphicView_a36d298435d8f3e1ee3109c3b15f9fb38}{to\-Graph\-D\-Y} (int d)
+\item 
+void \hyperlink{classRS__GraphicView_ab8d7caac7287cde6aa1c78fa7e0ece16}{lock\-Relative\-Zero} (bool lock)
+\item 
+bool \hyperlink{classRS__GraphicView_aa03e4e2fdef56884424d660f32dd9462}{is\-Relative\-Zero\-Locked} ()
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__GraphicView_a8450070ec5d7900e5a75dd4f41a82e59}{get\-Relative\-Zero} ()
+\item 
+void \hyperlink{classRS__GraphicView_ac1ca0a162ed21b698d76ec51d6c59a73}{set\-Relative\-Zero} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&pos)
+\item 
+void \hyperlink{classRS__GraphicView_a9d5dc1f5a3cee80ed4cc40aa57434ef1}{move\-Relative\-Zero} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&pos)
+\item 
+\hypertarget{classRS__GraphicView_a740c78b1d5991fd03ec370b2bfdf4d41}{\hyperlink{classRS__EventHandler}{R\-S\-\_\-\-Event\-Handler} $\ast$ {\bfseries get\-Event\-Handler} ()}\label{classRS__GraphicView_a740c78b1d5991fd03ec370b2bfdf4d41}
+
+\item 
+void \hyperlink{classRS__GraphicView_a6990f8945d861d021a3eadd94a435e5c}{set\-Print\-Preview} (bool pv)
+\item 
+bool \hyperlink{classRS__GraphicView_a0d67880260eed41bff1d9cbfa3d6d3e0}{is\-Print\-Preview} ()
+\item 
+void \hyperlink{classRS__GraphicView_a607eeca01ea83dd27cc8fd127bce32da}{set\-Printing} (bool p)
+\item 
+bool \hyperlink{classRS__GraphicView_aa8deb3b1d1f1798d4bc1e4e89dc1e473}{is\-Printing} ()
+\item 
+bool \hyperlink{classRS__GraphicView_a47a7947d66f1afe5f1830069aa2c2f3b}{is\-Draft\-Mode} ()
+\item 
+\hypertarget{classRS__GraphicView_a49ec69f7d88da462295c093cfdb9096c}{void {\bfseries set\-Draft\-Mode} (bool dm)}\label{classRS__GraphicView_a49ec69f7d88da462295c093cfdb9096c}
+
+\item 
+\hypertarget{classRS__GraphicView_a30ab7a53f413f9f0e7cf48a775c886ea}{virtual bool {\bfseries is\-Clean\-Up} (void) const }\label{classRS__GraphicView_a30ab7a53f413f9f0e7cf48a775c886ea}
+
+\item 
+virtual \hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} $\ast$ \hyperlink{classRS__GraphicView_a1482df8b755d79647e969fd7df09c682}{get\-Overlay\-Container} (\hyperlink{classRS2_ad08097f2c67307c83fbea0439830f56c}{R\-S2\-::\-Overlay\-Graphics} position)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__GraphicView_a60646d146eba04c679fb90112ee846af}{\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} $\ast$ {\bfseries container}}\label{classRS__GraphicView_a60646d146eba04c679fb90112ee846af}
+
+\item 
+\hypertarget{classRS__GraphicView_a57fbd9561067b33ec739e53154fa5e21}{\hyperlink{classRS__EventHandler}{R\-S\-\_\-\-Event\-Handler} $\ast$ {\bfseries event\-Handler}}\label{classRS__GraphicView_a57fbd9561067b33ec739e53154fa5e21}
+
+\item 
+\hypertarget{classRS__GraphicView_afd91d0e74c3f78f1346b80badca435d4}{int \hyperlink{classRS__GraphicView_afd91d0e74c3f78f1346b80badca435d4}{mx}}\label{classRS__GraphicView_afd91d0e74c3f78f1346b80badca435d4}
+
+\begin{DoxyCompactList}\small\item\em Last known mouse cursor position. \end{DoxyCompactList}\item 
+\hypertarget{classRS__GraphicView_a152e04094253c01279069ab3d82802bf}{int \hyperlink{classRS__GraphicView_a152e04094253c01279069ab3d82802bf}{my}}\label{classRS__GraphicView_a152e04094253c01279069ab3d82802bf}
+
+\begin{DoxyCompactList}\small\item\em Last known mouse cursor position. \end{DoxyCompactList}\item 
+\hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \hyperlink{classRS__GraphicView_a13f323ad576fa42d5c1003d025ea9f9a}{background}
+\item 
+\hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \hyperlink{classRS__GraphicView_a9fdb72ef87525be0a3f1fe665d6025d8}{foreground}
+\item 
+\hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \hyperlink{classRS__GraphicView_af566f6066c667e51e37112e13cedc3b2}{grid\-Color}
+\item 
+\hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \hyperlink{classRS__GraphicView_a50193620c821e86e68a7b914bff7afd1}{meta\-Grid\-Color}
+\item 
+\hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \hyperlink{classRS__GraphicView_a7c3c832cd4ed3ea5c7ab5af2a07eeee9}{selected\-Color}
+\item 
+\hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \hyperlink{classRS__GraphicView_adf461ce844a72d1b839d5925775d5c99}{highlighted\-Color}
+\item 
+\hyperlink{classRS__Grid}{R\-S\-\_\-\-Grid} $\ast$ \hyperlink{classRS__GraphicView_a6396487e060f415b8447c81d73c4e3c1}{grid}
+\item 
+\hyperlink{structRS__SnapMode}{R\-S\-\_\-\-Snap\-Mode} \hyperlink{classRS__GraphicView_aa018f550964aa34a859d0fbe36ddfd1d}{default\-Snap\-Mode}
+\item 
+\hyperlink{classRS2_aac67b6890a08cff619c0fbef48377bae}{R\-S2\-::\-Snap\-Restriction} \hyperlink{classRS__GraphicView_a3d48dce5acf1be807ecc8cb22416eb84}{default\-Snap\-Res}
+\item 
+\hypertarget{classRS__GraphicView_abf4123c4c3445c95bd680922898302bd}{\hyperlink{classRS2_a67196f135592d0f8eff894bd126685b2}{R\-S2\-::\-Drawing\-Mode} {\bfseries drawing\-Mode}}\label{classRS__GraphicView_abf4123c4c3445c95bd680922898302bd}
+
+\item 
+bool \hyperlink{classRS__GraphicView_a2b1b20553b1fa0a2ae02d807a25a9ff2}{delete\-Mode}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is a common G\-U\-I interface for the graphic viewer widget which has to be implementet by real G\-U\-I classes such as the Qt graphical view.
+
+Note that this is just an interface used as a slot to communicate with the Libre\-C\-A\-D from a G\-U\-I level. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__GraphicView_a04d05a8525c1a2e66e2feb7ddbeed944}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}}
+\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{R\-S\-\_\-\-Graphic\-View}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Graphic\-View\-::\-R\-S\-\_\-\-Graphic\-View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a04d05a8525c1a2e66e2feb7ddbeed944}
+Constructor. \hypertarget{classRS__GraphicView_aaf1ec577df37cfcf7c785a7ffbef2e21}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!$\sim$\-R\-S\-\_\-\-Graphic\-View@{$\sim$\-R\-S\-\_\-\-Graphic\-View}}
+\index{$\sim$\-R\-S\-\_\-\-Graphic\-View@{$\sim$\-R\-S\-\_\-\-Graphic\-View}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{$\sim$\-R\-S\-\_\-\-Graphic\-View}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Graphic\-View\-::$\sim$\-R\-S\-\_\-\-Graphic\-View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_aaf1ec577df37cfcf7c785a7ffbef2e21}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__GraphicView_a87478365dda45fc26c349874d9b92ca0}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!adjust\-Offset\-Controls@{adjust\-Offset\-Controls}}
+\index{adjust\-Offset\-Controls@{adjust\-Offset\-Controls}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{adjust\-Offset\-Controls}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Graphic\-View\-::adjust\-Offset\-Controls (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__GraphicView_a87478365dda45fc26c349874d9b92ca0}
+This virtual method must be overwritten and is then called whenever the view changed 
+
+Reimplemented in \hyperlink{classQG__GraphicView_af5daff2a755bb12153aaf81c4758915b}{Q\-G\-\_\-\-Graphic\-View}, and \hyperlink{classRS__StaticGraphicView_af43aea5e7f21072089f223b6ef227533}{R\-S\-\_\-\-Static\-Graphic\-View}.
+
+\hypertarget{classRS__GraphicView_aa26f3d00ce72bde330808acd064737ea}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!adjust\-Zoom\-Controls@{adjust\-Zoom\-Controls}}
+\index{adjust\-Zoom\-Controls@{adjust\-Zoom\-Controls}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{adjust\-Zoom\-Controls}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Graphic\-View\-::adjust\-Zoom\-Controls (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__GraphicView_aa26f3d00ce72bde330808acd064737ea}
+This virtual method must be overwritten and is then called whenever the view changed 
+
+Reimplemented in \hyperlink{classQG__GraphicView_a2693ff4efac620095283911f70eb4c1f}{Q\-G\-\_\-\-Graphic\-View}, and \hyperlink{classRS__StaticGraphicView_aadc4f5560267cd7e4c9ea51c7faea576}{R\-S\-\_\-\-Static\-Graphic\-View}.
+
+\hypertarget{classRS__GraphicView_a99b34125429caa61996a79471a310b64}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!back@{back}}
+\index{back@{back}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{back}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a99b34125429caa61996a79471a310b64}
+Go back in menu or current action. \hypertarget{classRS__GraphicView_ab7f859e43fa6cab6cca99b1232669a5d}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!center\-Offset\-X@{center\-Offset\-X}}
+\index{center\-Offset\-X@{center\-Offset\-X}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{center\-Offset\-X}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::center\-Offset\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_ab7f859e43fa6cab6cca99b1232669a5d}
+Centers the drawing in x-\/direction. \hypertarget{classRS__GraphicView_a1138774f79663135c2e09bfee42e4bcd}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!center\-Offset\-Y@{center\-Offset\-Y}}
+\index{center\-Offset\-Y@{center\-Offset\-Y}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{center\-Offset\-Y}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::center\-Offset\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a1138774f79663135c2e09bfee42e4bcd}
+Centers the drawing in y-\/direction. \hypertarget{classRS__GraphicView_a7c3865a1cd7540559dfa7159e1d44ab7}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!center\-X@{center\-X}}
+\index{center\-X@{center\-X}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{center\-X}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::center\-X (
+\begin{DoxyParamCaption}
+\item[{double}]{v}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a7c3865a1cd7540559dfa7159e1d44ab7}
+Centers the given coordinate in the view in x-\/direction. \hypertarget{classRS__GraphicView_a07d099a8f25687d9490c624d5e41037e}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!center\-Y@{center\-Y}}
+\index{center\-Y@{center\-Y}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{center\-Y}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::center\-Y (
+\begin{DoxyParamCaption}
+\item[{double}]{v}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a07d099a8f25687d9490c624d5e41037e}
+Centers the given coordinate in the view in y-\/direction. \hypertarget{classRS__GraphicView_a09377d39a5f76790ef640f0c03664c44}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!clean\-Up@{clean\-Up}}
+\index{clean\-Up@{clean\-Up}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{clean\-Up}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::clean\-Up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a09377d39a5f76790ef640f0c03664c44}
+Must be called by any derrived class in the destructor. \hypertarget{classRS__GraphicView_ab9f5865faadd21180286c643631fc9c3}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!command\-Event@{command\-Event}}
+\index{command\-Event@{command\-Event}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{command\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::command\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Command\-Event} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_ab9f5865faadd21180286c643631fc9c3}
+Called by the actual G\-U\-I class which implements a command line. \hypertarget{classRS__GraphicView_ad167e9a2983c936cde0a1fc45c20dde2}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!delete\-Entity@{delete\-Entity}}
+\index{delete\-Entity@{delete\-Entity}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{delete\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::delete\-Entity (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_ad167e9a2983c936cde0a1fc45c20dde2}
+Deletes an entity with the background color. Might be recusively called e.\-g. for polylines. \hypertarget{classRS__GraphicView_a283b0e4706e30b4b1c1645f74552e9af}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!disable\-Coordinate\-Input@{disable\-Coordinate\-Input}}
+\index{disable\-Coordinate\-Input@{disable\-Coordinate\-Input}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{disable\-Coordinate\-Input}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::disable\-Coordinate\-Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a283b0e4706e30b4b1c1645f74552e9af}
+Disables coordinate input in the command line. \hypertarget{classRS__GraphicView_ab405b9c7ed73bcd849747ee8e8d5d924}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!draw\-Absolute\-Zero@{draw\-Absolute\-Zero}}
+\index{draw\-Absolute\-Zero@{draw\-Absolute\-Zero}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{draw\-Absolute\-Zero}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::draw\-Absolute\-Zero (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Painter} $\ast$}]{painter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_ab405b9c7ed73bcd849747ee8e8d5d924}
+This virtual method can be overwritten to draw the absolute zero. It's called from within draw\-It(). The default implemetation draws a simple red cross on the zero of thge sheet T\-His function can O\-N\-L\-Y be called from within a paint\-Event because it will use the painter
+
+\begin{DoxySeeAlso}{See Also}
+draw\-It() 
+\end{DoxySeeAlso}
+\hypertarget{classRS__GraphicView_a73fbdbd9a478ccf6266771555567d8e3}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!draw\-Entity@{draw\-Entity}}
+\index{draw\-Entity@{draw\-Entity}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{draw\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::draw\-Entity (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{e, }
+\item[{double \&}]{pattern\-Offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_a73fbdbd9a478ccf6266771555567d8e3}
+Draws an entity. Might be recusively called e.\-g. for polylines. If the class wide painter is N\-U\-L\-L a new painter will be created and destroyed afterwards.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pattern\-Offset} & Offset of line pattern (used for connected lines e.\-g. in splines). \\
+\hline
+{\em db} & Double buffering on (recommended) / off \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__GraphicView_a679c51436dffa806e4ddc42feb160ff4}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!draw\-Entity\-Plain@{draw\-Entity\-Plain}}
+\index{draw\-Entity\-Plain@{draw\-Entity\-Plain}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{draw\-Entity\-Plain}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::draw\-Entity\-Plain (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Painter} $\ast$}]{painter, }
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{e, }
+\item[{double \&}]{pattern\-Offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_a679c51436dffa806e4ddc42feb160ff4}
+Draws an entity. The painter must be initialized and all the attributes (pen) must be set. \hypertarget{classRS__GraphicView_a7846ccb301bca583ec23428ec2187f53}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!draw\-Grid@{draw\-Grid}}
+\index{draw\-Grid@{draw\-Grid}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{draw\-Grid}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::draw\-Grid (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Painter} $\ast$}]{painter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_a7846ccb301bca583ec23428ec2187f53}
+Draws the grid.
+
+\begin{DoxySeeAlso}{See Also}
+draw\-It() 
+\end{DoxySeeAlso}
+\hypertarget{classRS__GraphicView_a435f574511a0ad56c604585c2a9d63df}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!draw\-Layer1@{draw\-Layer1}}
+\index{draw\-Layer1@{draw\-Layer1}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{draw\-Layer1}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::draw\-Layer1 (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Painter} $\ast$}]{painter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_a435f574511a0ad56c604585c2a9d63df}
+Draws the entities. This function can only be called from within the paint event \hypertarget{classRS__GraphicView_a6eb5daa3d2114f30ef67631dc4f8580c}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!draw\-Meta\-Grid@{draw\-Meta\-Grid}}
+\index{draw\-Meta\-Grid@{draw\-Meta\-Grid}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{draw\-Meta\-Grid}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::draw\-Meta\-Grid (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Painter} $\ast$}]{painter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_a6eb5daa3d2114f30ef67631dc4f8580c}
+Draws the meta grid.
+
+\begin{DoxySeeAlso}{See Also}
+draw\-It() 
+\end{DoxySeeAlso}
+\hypertarget{classRS__GraphicView_aaa5538c390accf5e46a31a0c8facbafd}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!draw\-Paper@{draw\-Paper}}
+\index{draw\-Paper@{draw\-Paper}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{draw\-Paper}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::draw\-Paper (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Painter} $\ast$}]{painter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_aaa5538c390accf5e46a31a0c8facbafd}
+Draws the paper border (for print previews). This function can O\-N\-L\-Y be called from within a paint\-Event because it will use the painter
+
+\begin{DoxySeeAlso}{See Also}
+draw\-It() 
+\end{DoxySeeAlso}
+\hypertarget{classRS__GraphicView_a091a2986911f98c4adceee14ae7867df}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!draw\-Relative\-Zero@{draw\-Relative\-Zero}}
+\index{draw\-Relative\-Zero@{draw\-Relative\-Zero}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{draw\-Relative\-Zero}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::draw\-Relative\-Zero (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Painter} $\ast$}]{painter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_a091a2986911f98c4adceee14ae7867df}
+This virtual method can be overwritten to draw the relative zero point. It's called from within draw\-It(). The default implemetation draws a simple red round zero point. This is the point that was last created by the user, end of a line for example T\-His function can O\-N\-L\-Y be called from within a paint\-Event because it will use the painter
+
+\begin{DoxySeeAlso}{See Also}
+draw\-It() 
+\end{DoxySeeAlso}
+\hypertarget{classRS__GraphicView_a0ac9a280b3b288bf866c54f1053ff066}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!draw\-Window\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D@{draw\-Window\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D}}
+\index{draw\-Window\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D@{draw\-Window\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{draw\-Window\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::draw\-Window\-\_\-\-D\-E\-P\-R\-E\-C\-A\-T\-E\-D (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Vector}}]{v1, }
+\item[{{\bf R\-S\-\_\-\-Vector}}]{v2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_a0ac9a280b3b288bf866c54f1053ff066}
+Draws the entities within the given range. \hypertarget{classRS__GraphicView_a5d4cb4b6bb21358a6c959ca30d67e22d}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!emulate\-Mouse\-Move\-Event@{emulate\-Mouse\-Move\-Event}}
+\index{emulate\-Mouse\-Move\-Event@{emulate\-Mouse\-Move\-Event}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{emulate\-Mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Graphic\-View\-::emulate\-Mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classRS__GraphicView_a5d4cb4b6bb21358a6c959ca30d67e22d}
+Must be overwritten to emulate a mouse move event with the last known mouse position.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classRS__GraphicView_afd91d0e74c3f78f1346b80badca435d4}{mx}, \hyperlink{classRS__GraphicView_a152e04094253c01279069ab3d82802bf}{my} 
+\end{DoxySeeAlso}
+
+
+Implemented in \hyperlink{classQG__GraphicView_aeec937f6605c1894d57b9d2839fe1f76}{Q\-G\-\_\-\-Graphic\-View}, and \hyperlink{classRS__StaticGraphicView_a3bc6dc81ab671205635625df45a2bd2a}{R\-S\-\_\-\-Static\-Graphic\-View}.
+
+\hypertarget{classRS__GraphicView_a6e6978abfdc6e3fc47d0c862dcafe854}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!enable\-Coordinate\-Input@{enable\-Coordinate\-Input}}
+\index{enable\-Coordinate\-Input@{enable\-Coordinate\-Input}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{enable\-Coordinate\-Input}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::enable\-Coordinate\-Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a6e6978abfdc6e3fc47d0c862dcafe854}
+Enables coordinate input in the command line. \hypertarget{classRS__GraphicView_a9989594f1e6714929bbac3c909135a06}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!enter@{enter}}
+\index{enter@{enter}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{enter}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::enter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a9989594f1e6714929bbac3c909135a06}
+Go forward with the current action. \hypertarget{classRS__GraphicView_ad0daeef68a2d232110b15595a05ce88b}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!get\-Background@{get\-Background}}
+\index{get\-Background@{get\-Background}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{get\-Background}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Color} R\-S\-\_\-\-Graphic\-View\-::get\-Background (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__GraphicView_ad0daeef68a2d232110b15595a05ce88b}
+\begin{DoxyReturn}{Returns}
+Current background color. 
+\end{DoxyReturn}
+\hypertarget{classRS__GraphicView_a1cd6ed60d8b4df412d537c1c1f1186af}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!get\-Current\-Action@{get\-Current\-Action}}
+\index{get\-Current\-Action@{get\-Current\-Action}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{get\-Current\-Action}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Action\-Interface} $\ast$ R\-S\-\_\-\-Graphic\-View\-::get\-Current\-Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a1cd6ed60d8b4df412d537c1c1f1186af}
+\begin{DoxyReturn}{Returns}
+Current action or N\-U\-L\-L. 
+\end{DoxyReturn}
+\hypertarget{classRS__GraphicView_af3873abfd15d17abf90b599642fadeae}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!get\-Default\-Action@{get\-Default\-Action}}
+\index{get\-Default\-Action@{get\-Default\-Action}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{get\-Default\-Action}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Action\-Interface} $\ast$ R\-S\-\_\-\-Graphic\-View\-::get\-Default\-Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_af3873abfd15d17abf90b599642fadeae}
+\begin{DoxyReturn}{Returns}
+Current action or N\-U\-L\-L. 
+\end{DoxyReturn}
+\hypertarget{classRS__GraphicView_a7c412fcd99f4bc962a38774285e1ec6a}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!get\-Delete\-Mode@{get\-Delete\-Mode}}
+\index{get\-Delete\-Mode@{get\-Delete\-Mode}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{get\-Delete\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Graphic\-View\-::get\-Delete\-Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__GraphicView_a7c412fcd99f4bc962a38774285e1ec6a}
+true Deleting instead of drawing. false Normal drawing mode. \hypertarget{classRS__GraphicView_adaf7968fe59f2f435e4dddd88c25114d}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!get\-Drawing\-Mode@{get\-Drawing\-Mode}}
+\index{get\-Drawing\-Mode@{get\-Drawing\-Mode}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{get\-Drawing\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Drawing\-Mode} R\-S\-\_\-\-Graphic\-View\-::get\-Drawing\-Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__GraphicView_adaf7968fe59f2f435e4dddd88c25114d}
+\begin{DoxyReturn}{Returns}
+Current drawing mode. 
+\end{DoxyReturn}
+\hypertarget{classRS__GraphicView_a84ad946a9e3220c4f8420ba60be1cdb9}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!get\-Foreground@{get\-Foreground}}
+\index{get\-Foreground@{get\-Foreground}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{get\-Foreground}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Color} R\-S\-\_\-\-Graphic\-View\-::get\-Foreground (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__GraphicView_a84ad946a9e3220c4f8420ba60be1cdb9}
+\begin{DoxyReturn}{Returns}
+Current foreground color. 
+\end{DoxyReturn}
+\hypertarget{classRS__GraphicView_ac4a2671eca4f7f6ca215c891bc04f17c}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!get\-Graphic@{get\-Graphic}}
+\index{get\-Graphic@{get\-Graphic}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{get\-Graphic}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Graphic}$\ast$ R\-S\-\_\-\-Graphic\-View\-::get\-Graphic (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__GraphicView_ac4a2671eca4f7f6ca215c891bc04f17c}
+\begin{DoxyReturn}{Returns}
+Pointer to the graphic entity if the entity container connected to this view is a graphic and valid. N\-U\-L\-L otherwise. 
+\end{DoxyReturn}
+\hypertarget{classRS__GraphicView_af354fd031dfc0c8e6d8bfb83f415bea5}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!get\-Height@{get\-Height}}
+\index{get\-Height@{get\-Height}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{get\-Height}]{\setlength{\rightskip}{0pt plus 5cm}virtual int R\-S\-\_\-\-Graphic\-View\-::get\-Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classRS__GraphicView_af354fd031dfc0c8e6d8bfb83f415bea5}
+This virtual method must be overwritten to return the height of the widget the graphic is shown in 
+
+Implemented in \hyperlink{classQG__GraphicView_a846f60b49fabe8d3e22663ce2619d9ff}{Q\-G\-\_\-\-Graphic\-View}, and \hyperlink{classRS__StaticGraphicView_ae07f0d96c25dffb695dfb1647a684cb3}{R\-S\-\_\-\-Static\-Graphic\-View}.
+
+\hypertarget{classRS__GraphicView_a1482df8b755d79647e969fd7df09c682}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!get\-Overlay\-Container@{get\-Overlay\-Container}}
+\index{get\-Overlay\-Container@{get\-Overlay\-Container}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{get\-Overlay\-Container}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Entity\-Container} $\ast$ R\-S\-\_\-\-Graphic\-View\-::get\-Overlay\-Container (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Overlay\-Graphics}}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_a1482df8b755d79647e969fd7df09c682}
+Remove all overlay entities \hypertarget{classRS__GraphicView_a75c25e51066e7b87d43b60f98e44ed13}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!get\-Pattern@{get\-Pattern}}
+\index{get\-Pattern@{get\-Pattern}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{get\-Pattern}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Line\-Type\-Pattern} $\ast$ R\-S\-\_\-\-Graphic\-View\-::get\-Pattern (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Line\-Type}}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_a75c25e51066e7b87d43b60f98e44ed13}
+\begin{DoxyReturn}{Returns}
+Pointer to the static pattern struct that belongs to the given pattern type or N\-U\-L\-L. 
+\end{DoxyReturn}
+\hypertarget{classRS__GraphicView_a8450070ec5d7900e5a75dd4f41a82e59}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!get\-Relative\-Zero@{get\-Relative\-Zero}}
+\index{get\-Relative\-Zero@{get\-Relative\-Zero}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{get\-Relative\-Zero}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Graphic\-View\-::get\-Relative\-Zero (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__GraphicView_a8450070ec5d7900e5a75dd4f41a82e59}
+\begin{DoxyReturn}{Returns}
+Relative zero coordinate. 
+\end{DoxyReturn}
+\hypertarget{classRS__GraphicView_a99858a9507de483858071fd209a53e89}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!get\-Width@{get\-Width}}
+\index{get\-Width@{get\-Width}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{get\-Width}]{\setlength{\rightskip}{0pt plus 5cm}virtual int R\-S\-\_\-\-Graphic\-View\-::get\-Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classRS__GraphicView_a99858a9507de483858071fd209a53e89}
+This virtual method must be overwritten to return the width of the widget the graphic is shown in 
+
+Implemented in \hyperlink{classQG__GraphicView_a7763c2274da1cc4c964a064f6595df53}{Q\-G\-\_\-\-Graphic\-View}, and \hyperlink{classRS__StaticGraphicView_ae4aa91a2b40c4bbd5575da0dd37d39a8}{R\-S\-\_\-\-Static\-Graphic\-View}.
+
+\hypertarget{classRS__GraphicView_a47a7947d66f1afe5f1830069aa2c2f3b}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!is\-Draft\-Mode@{is\-Draft\-Mode}}
+\index{is\-Draft\-Mode@{is\-Draft\-Mode}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{is\-Draft\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Graphic\-View\-::is\-Draft\-Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__GraphicView_a47a7947d66f1afe5f1830069aa2c2f3b}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & Draft mode is on for this view (all lines with 1 pixel / no style scaling). \\
+\hline
+{\em false} & Otherwise. \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{classRS__GraphicView_a412f59054fb3383d3a98efec75af1e16}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!is\-Grid\-Isometric@{is\-Grid\-Isometric}}
+\index{is\-Grid\-Isometric@{is\-Grid\-Isometric}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{is\-Grid\-Isometric}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Graphic\-View\-::is\-Grid\-Isometric (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a412f59054fb3383d3a98efec75af1e16}
+\begin{DoxyReturn}{Returns}
+true if the grid is isometric
+\end{DoxyReturn}
+\-: Dongxu Li \hypertarget{classRS__GraphicView_a9534cdc415ffe121e5324c8c2101b7dc}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!is\-Grid\-On@{is\-Grid\-On}}
+\index{is\-Grid\-On@{is\-Grid\-On}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{is\-Grid\-On}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Graphic\-View\-::is\-Grid\-On (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a9534cdc415ffe121e5324c8c2101b7dc}
+\begin{DoxyReturn}{Returns}
+true if the grid is switched on. 
+\end{DoxyReturn}
+\hypertarget{classRS__GraphicView_aa8deb3b1d1f1798d4bc1e4e89dc1e473}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!is\-Printing@{is\-Printing}}
+\index{is\-Printing@{is\-Printing}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{is\-Printing}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Graphic\-View\-::is\-Printing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__GraphicView_aa8deb3b1d1f1798d4bc1e4e89dc1e473}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & This is a a graphic view for printing. \\
+\hline
+{\em false} & set\-Snap\-Otherwise. \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{classRS__GraphicView_a0d67880260eed41bff1d9cbfa3d6d3e0}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!is\-Print\-Preview@{is\-Print\-Preview}}
+\index{is\-Print\-Preview@{is\-Print\-Preview}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{is\-Print\-Preview}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Graphic\-View\-::is\-Print\-Preview (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__GraphicView_a0d67880260eed41bff1d9cbfa3d6d3e0}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & This is a print preview graphic view. \\
+\hline
+{\em false} & Otherwise. \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{classRS__GraphicView_aa03e4e2fdef56884424d660f32dd9462}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!is\-Relative\-Zero\-Locked@{is\-Relative\-Zero\-Locked}}
+\index{is\-Relative\-Zero\-Locked@{is\-Relative\-Zero\-Locked}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{is\-Relative\-Zero\-Locked}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Graphic\-View\-::is\-Relative\-Zero\-Locked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__GraphicView_aa03e4e2fdef56884424d660f32dd9462}
+\begin{DoxyReturn}{Returns}
+true if the position of the realtive zero point is locked. 
+\end{DoxyReturn}
+\hypertarget{classRS__GraphicView_a5cfbfe85b12ef28597109e7b8b23503a}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!key\-Press\-Event@{key\-Press\-Event}}
+\index{key\-Press\-Event@{key\-Press\-Event}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{key\-Press\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::key\-Press\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Key\-Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a5cfbfe85b12ef28597109e7b8b23503a}
+Called by the actual G\-U\-I class which implements the \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} interface to notify Libre\-C\-A\-D about key events. \hypertarget{classRS__GraphicView_a34de85c07720f9d3fb1fc825e31a28db}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!key\-Release\-Event@{key\-Release\-Event}}
+\index{key\-Release\-Event@{key\-Release\-Event}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{key\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::key\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Key\-Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a34de85c07720f9d3fb1fc825e31a28db}
+Called by the actual G\-U\-I class which implements the \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} interface to notify Libre\-C\-A\-D about key events. \hypertarget{classRS__GraphicView_a44c3d2fc309d302c8c212b0b8ae89bf0}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!kill\-All\-Actions@{kill\-All\-Actions}}
+\index{kill\-All\-Actions@{kill\-All\-Actions}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{kill\-All\-Actions}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::kill\-All\-Actions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a44c3d2fc309d302c8c212b0b8ae89bf0}
+Kills all running actions. \hypertarget{classRS__GraphicView_ac60b852edb1441711d57fb757cadc39b}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!kill\-Select\-Actions@{kill\-Select\-Actions}}
+\index{kill\-Select\-Actions@{kill\-Select\-Actions}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{kill\-Select\-Actions}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::kill\-Select\-Actions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_ac60b852edb1441711d57fb757cadc39b}
+Kills all running selection actions. Called when a selection action is launched to reduce confusion. \hypertarget{classRS__GraphicView_ab8d7caac7287cde6aa1c78fa7e0ece16}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!lock\-Relative\-Zero@{lock\-Relative\-Zero}}
+\index{lock\-Relative\-Zero@{lock\-Relative\-Zero}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{lock\-Relative\-Zero}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::lock\-Relative\-Zero (
+\begin{DoxyParamCaption}
+\item[{bool}]{lock}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__GraphicView_ab8d7caac7287cde6aa1c78fa7e0ece16}
+(Un-\/)Locks the position of the relative zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lock} & true\-: lock, false\-: unlock \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__GraphicView_ad7f33080610e836e1f82368e491b9704}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!mouse\-Enter\-Event@{mouse\-Enter\-Event}}
+\index{mouse\-Enter\-Event@{mouse\-Enter\-Event}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{mouse\-Enter\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::mouse\-Enter\-Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_ad7f33080610e836e1f82368e491b9704}
+Called by the actual G\-U\-I class which implements the \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} interface to notify Libre\-C\-A\-D about mouse events. \hypertarget{classRS__GraphicView_a66ac902166fe3823622dd6c2eb226d7c}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!mouse\-Leave\-Event@{mouse\-Leave\-Event}}
+\index{mouse\-Leave\-Event@{mouse\-Leave\-Event}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{mouse\-Leave\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::mouse\-Leave\-Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a66ac902166fe3823622dd6c2eb226d7c}
+Called by the actual G\-U\-I class which implements the \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} interface to notify Libre\-C\-A\-D about mouse events. \hypertarget{classRS__GraphicView_a746fcad635f1b9687b41165e26a0033f}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!mouse\-Press\-Event@{mouse\-Press\-Event}}
+\index{mouse\-Press\-Event@{mouse\-Press\-Event}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{mouse\-Press\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::mouse\-Press\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a746fcad635f1b9687b41165e26a0033f}
+Called by the actual G\-U\-I class which implements the \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} interface to notify Libre\-C\-A\-D about mouse events. \hypertarget{classRS__GraphicView_a7e4027a0cd61f4de9494a7a134982426}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a7e4027a0cd61f4de9494a7a134982426}
+Called by the actual G\-U\-I class which implements the \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} interface to notify Libre\-C\-A\-D about mouse events. \hypertarget{classRS__GraphicView_a9d5dc1f5a3cee80ed4cc40aa57434ef1}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!move\-Relative\-Zero@{move\-Relative\-Zero}}
+\index{move\-Relative\-Zero@{move\-Relative\-Zero}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{move\-Relative\-Zero}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::move\-Relative\-Zero (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{pos}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a9d5dc1f5a3cee80ed4cc40aa57434ef1}
+Sets the relative zero coordinate, deletes the old position on the screen and draws the new one. \hypertarget{classRS__GraphicView_a5ea54ec2dfcc2bb1553dfa867986fe31}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!redraw@{redraw}}
+\index{redraw@{redraw}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{redraw}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Graphic\-View\-::redraw (
+\begin{DoxyParamCaption}
+\item[{R\-S2\-::\-Redraw\-Method}]{method = {\ttfamily RS2\-:\-:RedrawAll}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classRS__GraphicView_a5ea54ec2dfcc2bb1553dfa867986fe31}
+This virtual method must be overwritten to redraw the widget. 
+
+Implemented in \hyperlink{classQG__GraphicView_a8a9673c2f8fab64ba6a46a7cd25d01a6}{Q\-G\-\_\-\-Graphic\-View}, and \hyperlink{classRS__StaticGraphicView_af9d0538d36ae04d02eea24486d99b636}{R\-S\-\_\-\-Static\-Graphic\-View}.
+
+\hypertarget{classRS__GraphicView_a1946bd7459d40ef47183f8d42f39c87f}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!restore\-View@{restore\-View}}
+\index{restore\-View@{restore\-View}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{restore\-View}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::restore\-View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_a1946bd7459d40ef47183f8d42f39c87f}
+Restores the view previously saved with \begin{DoxySeeAlso}{See Also}
+\hyperlink{classRS__GraphicView_a976312ee30b110f2ee08af4cf74484b2}{save\-View()}. 
+\end{DoxySeeAlso}
+\hypertarget{classRS__GraphicView_a976312ee30b110f2ee08af4cf74484b2}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!save\-View@{save\-View}}
+\index{save\-View@{save\-View}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{save\-View}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::save\-View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_a976312ee30b110f2ee08af4cf74484b2}
+Saves the current view as previous view to which we can switch back later with\begin{DoxySeeAlso}{See Also}
+\hyperlink{classRS__GraphicView_a1946bd7459d40ef47183f8d42f39c87f}{restore\-View()}. 
+\end{DoxySeeAlso}
+\hypertarget{classRS__GraphicView_a05efd0c10a77534f6fb8ef228ba9c23b}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!set\-Background@{set\-Background}}
+\index{set\-Background@{set\-Background}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{set\-Background}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Graphic\-View\-::set\-Background (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Color} \&}]{bg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__GraphicView_a05efd0c10a77534f6fb8ef228ba9c23b}
+Sets the background color. Note that applying the background color for the widget is up to the implementing class. 
+
+Reimplemented in \hyperlink{classQG__GraphicView_add6e514c83ef1e6a331bbeb0b471a113}{Q\-G\-\_\-\-Graphic\-View}.
+
+\hypertarget{classRS__GraphicView_ae918f7b5fbfa52437fbe1a36adc0e37b}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!set\-Borders@{set\-Borders}}
+\index{set\-Borders@{set\-Borders}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{set\-Borders}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::set\-Borders (
+\begin{DoxyParamCaption}
+\item[{int}]{left, }
+\item[{int}]{top, }
+\item[{int}]{right, }
+\item[{int}]{bottom}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__GraphicView_ae918f7b5fbfa52437fbe1a36adc0e37b}
+Sets a fixed border in pixel around the graphic. This border specifies how far the user can scroll outside the graphic area. \hypertarget{classRS__GraphicView_a7ca74d4cb56fbd13a0172f6bca61f018}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!set\-Container@{set\-Container}}
+\index{set\-Container@{set\-Container}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{set\-Container}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::set\-Container (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} $\ast$}]{container}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a7ca74d4cb56fbd13a0172f6bca61f018}
+Sets the pointer to the graphic which contains the entities which are visualized by this widget. \hypertarget{classRS__GraphicView_a65251a45d7f7da8700dcd1dd410d4e80}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!set\-Current\-Action@{set\-Current\-Action}}
+\index{set\-Current\-Action@{set\-Current\-Action}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{set\-Current\-Action}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::set\-Current\-Action (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a65251a45d7f7da8700dcd1dd410d4e80}
+Sets the current action of the event handler. \hypertarget{classRS__GraphicView_ab19855f3a0440cd126c9418d620b5daa}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!set\-Default\-Action@{set\-Default\-Action}}
+\index{set\-Default\-Action@{set\-Default\-Action}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{set\-Default\-Action}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::set\-Default\-Action (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_ab19855f3a0440cd126c9418d620b5daa}
+Sets the default action of the event handler. \hypertarget{classRS__GraphicView_a9aa81c654960c6f3c6842d163af9fa9d}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!set\-Default\-Snap\-Mode@{set\-Default\-Snap\-Mode}}
+\index{set\-Default\-Snap\-Mode@{set\-Default\-Snap\-Mode}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{set\-Default\-Snap\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::set\-Default\-Snap\-Mode (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Snap\-Mode}}]{sm}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a9aa81c654960c6f3c6842d163af9fa9d}
+Sets the default snap mode used by newly created actions. \hypertarget{classRS__GraphicView_a674734e6889123a0aa1822cf4f3ac195}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!set\-Delete\-Mode@{set\-Delete\-Mode}}
+\index{set\-Delete\-Mode@{set\-Delete\-Mode}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{set\-Delete\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::set\-Delete\-Mode (
+\begin{DoxyParamCaption}
+\item[{bool}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__GraphicView_a674734e6889123a0aa1822cf4f3ac195}
+Activates or deactivates the delete mode. \hypertarget{classRS__GraphicView_a94e8aa56a10fe55892e84855e849326f}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!set\-Drawing\-Mode@{set\-Drawing\-Mode}}
+\index{set\-Drawing\-Mode@{set\-Drawing\-Mode}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{set\-Drawing\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::set\-Drawing\-Mode (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Drawing\-Mode}}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__GraphicView_a94e8aa56a10fe55892e84855e849326f}
+Sets the drawing mode. \hypertarget{classRS__GraphicView_a3335bd949a5d10f0725f08c810fc4f09}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!set\-Factor\-X@{set\-Factor\-X}}
+\index{set\-Factor\-X@{set\-Factor\-X}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{set\-Factor\-X}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::set\-Factor\-X (
+\begin{DoxyParamCaption}
+\item[{double}]{f}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a3335bd949a5d10f0725f08c810fc4f09}
+Sets the zoom factor in X for this visualization of the graphic. \hypertarget{classRS__GraphicView_af309a695c17fc2b5eda690cc68370be4}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!set\-Factor\-Y@{set\-Factor\-Y}}
+\index{set\-Factor\-Y@{set\-Factor\-Y}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{set\-Factor\-Y}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::set\-Factor\-Y (
+\begin{DoxyParamCaption}
+\item[{double}]{f}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_af309a695c17fc2b5eda690cc68370be4}
+Sets the zoom factor in Y for this visualization of the graphic. \hypertarget{classRS__GraphicView_a9c918282d444c1fa7e8d82d995ec4fc0}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!set\-Grid\-Color@{set\-Grid\-Color}}
+\index{set\-Grid\-Color@{set\-Grid\-Color}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{set\-Grid\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::set\-Grid\-Color (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Color} \&}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__GraphicView_a9c918282d444c1fa7e8d82d995ec4fc0}
+Sets the grid color. \hypertarget{classRS__GraphicView_a94b7c597e74d76d4d95ee3f0a204c557}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!set\-Highlighted\-Color@{set\-Highlighted\-Color}}
+\index{set\-Highlighted\-Color@{set\-Highlighted\-Color}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{set\-Highlighted\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::set\-Highlighted\-Color (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Color} \&}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__GraphicView_a94b7c597e74d76d4d95ee3f0a204c557}
+Sets the highlight color. \hypertarget{classRS__GraphicView_ada125f43b30829898f5bb0a4e9599816}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!set\-Meta\-Grid\-Color@{set\-Meta\-Grid\-Color}}
+\index{set\-Meta\-Grid\-Color@{set\-Meta\-Grid\-Color}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{set\-Meta\-Grid\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::set\-Meta\-Grid\-Color (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Color} \&}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__GraphicView_ada125f43b30829898f5bb0a4e9599816}
+Sets the meta grid color. \hypertarget{classRS__GraphicView_a94f6771b47ea77eb63170100365bfed7}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!set\-Mouse\-Cursor@{set\-Mouse\-Cursor}}
+\index{set\-Mouse\-Cursor@{set\-Mouse\-Cursor}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{set\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Graphic\-View\-::set\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Cursor\-Type}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__GraphicView_a94f6771b47ea77eb63170100365bfed7}
+This virtual method can be overwritten to set the mouse cursor to the given type. 
+
+Reimplemented in \hyperlink{classQG__GraphicView_a92777e4afa5a4a9b8e2bf7164ae5183c}{Q\-G\-\_\-\-Graphic\-View}, and \hyperlink{classRS__StaticGraphicView_a752ef5e5313de1e9c4f6f1f4ceaea9d9}{R\-S\-\_\-\-Static\-Graphic\-View}.
+
+\hypertarget{classRS__GraphicView_a362433ecd461c38c07180adf364ecdcf}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!set\-Offset@{set\-Offset}}
+\index{set\-Offset@{set\-Offset}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{set\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::set\-Offset (
+\begin{DoxyParamCaption}
+\item[{int}]{ox, }
+\item[{int}]{oy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__GraphicView_a362433ecd461c38c07180adf364ecdcf}
+Sets the offset of the graphic. \hypertarget{classRS__GraphicView_a607eeca01ea83dd27cc8fd127bce32da}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!set\-Printing@{set\-Printing}}
+\index{set\-Printing@{set\-Printing}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{set\-Printing}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::set\-Printing (
+\begin{DoxyParamCaption}
+\item[{bool}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__GraphicView_a607eeca01ea83dd27cc8fd127bce32da}
+Enables or disables printing. \hypertarget{classRS__GraphicView_a6990f8945d861d021a3eadd94a435e5c}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!set\-Print\-Preview@{set\-Print\-Preview}}
+\index{set\-Print\-Preview@{set\-Print\-Preview}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{set\-Print\-Preview}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::set\-Print\-Preview (
+\begin{DoxyParamCaption}
+\item[{bool}]{pv}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__GraphicView_a6990f8945d861d021a3eadd94a435e5c}
+Enables or disables print preview. \hypertarget{classRS__GraphicView_ac1ca0a162ed21b698d76ec51d6c59a73}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!set\-Relative\-Zero@{set\-Relative\-Zero}}
+\index{set\-Relative\-Zero@{set\-Relative\-Zero}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{set\-Relative\-Zero}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::set\-Relative\-Zero (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{pos}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_ac1ca0a162ed21b698d76ec51d6c59a73}
+Sets the relative zero coordinate (if not locked) without deleting / drawing the point. \hypertarget{classRS__GraphicView_a77da01e72e2c9dc5c9d191967a20203f}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!set\-Selected\-Color@{set\-Selected\-Color}}
+\index{set\-Selected\-Color@{set\-Selected\-Color}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{set\-Selected\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::set\-Selected\-Color (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Color} \&}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__GraphicView_a77da01e72e2c9dc5c9d191967a20203f}
+Sets the selection color. \hypertarget{classRS__GraphicView_a329a89b5d28af0c1b62c62fee469cc9b}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!set\-Snap\-Restriction@{set\-Snap\-Restriction}}
+\index{set\-Snap\-Restriction@{set\-Snap\-Restriction}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{set\-Snap\-Restriction}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::set\-Snap\-Restriction (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Snap\-Restriction}}]{sr}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a329a89b5d28af0c1b62c62fee469cc9b}
+Sets a snap restriction (e.\-g. orthogonal). \hypertarget{classRS__GraphicView_af2d22f87b620d4d3693c3711ba8fa416}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!to\-Graph@{to\-Graph}}
+\index{to\-Graph@{to\-Graph}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{to\-Graph}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Graphic\-View\-::to\-Graph (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Vector}}]{v}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_af2d22f87b620d4d3693c3711ba8fa416}
+Translates a vector in screen coordinates to a vector in real coordinates. \hypertarget{classRS__GraphicView_a8333b5366b60e6b0044f22756463aecb}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!to\-Graph@{to\-Graph}}
+\index{to\-Graph@{to\-Graph}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{to\-Graph}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Graphic\-View\-::to\-Graph (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a8333b5366b60e6b0044f22756463aecb}
+Translates two screen coordinates to a vector in real coordinates. \hypertarget{classRS__GraphicView_a17d534219f89bf68ceaadec7acccd74a}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!to\-Graph\-D\-X@{to\-Graph\-D\-X}}
+\index{to\-Graph\-D\-X@{to\-Graph\-D\-X}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{to\-Graph\-D\-X}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Graphic\-View\-::to\-Graph\-D\-X (
+\begin{DoxyParamCaption}
+\item[{int}]{d}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a17d534219f89bf68ceaadec7acccd74a}
+Translates a screen coordinate distance to a real coordinate distance. \hypertarget{classRS__GraphicView_a36d298435d8f3e1ee3109c3b15f9fb38}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!to\-Graph\-D\-Y@{to\-Graph\-D\-Y}}
+\index{to\-Graph\-D\-Y@{to\-Graph\-D\-Y}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{to\-Graph\-D\-Y}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Graphic\-View\-::to\-Graph\-D\-Y (
+\begin{DoxyParamCaption}
+\item[{int}]{d}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a36d298435d8f3e1ee3109c3b15f9fb38}
+Translates a screen coordinate distance to a real coordinate distance. \hypertarget{classRS__GraphicView_a075ac6bc53bb8db737c9d1f682278c9f}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!to\-Graph\-X@{to\-Graph\-X}}
+\index{to\-Graph\-X@{to\-Graph\-X}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{to\-Graph\-X}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Graphic\-View\-::to\-Graph\-X (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a075ac6bc53bb8db737c9d1f682278c9f}
+Translates a screen coordinate in X to a real coordinate X. \hypertarget{classRS__GraphicView_a1fc38b392630cc1e81951aeb360bfa2b}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!to\-Graph\-Y@{to\-Graph\-Y}}
+\index{to\-Graph\-Y@{to\-Graph\-Y}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{to\-Graph\-Y}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Graphic\-View\-::to\-Graph\-Y (
+\begin{DoxyParamCaption}
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a1fc38b392630cc1e81951aeb360bfa2b}
+Translates a screen coordinate in Y to a real coordinate Y. \hypertarget{classRS__GraphicView_a6e213479314ef93667e757fa3223ee18}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!to\-Gui@{to\-Gui}}
+\index{to\-Gui@{to\-Gui}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{to\-Gui}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Graphic\-View\-::to\-Gui (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Vector}}]{v}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a6e213479314ef93667e757fa3223ee18}
+Translates a vector in real coordinates to a vector in screen coordinates. \hypertarget{classRS__GraphicView_a7abc7f543e66d20b9510e0618215c4e3}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!to\-Gui\-D\-X@{to\-Gui\-D\-X}}
+\index{to\-Gui\-D\-X@{to\-Gui\-D\-X}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{to\-Gui\-D\-X}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Graphic\-View\-::to\-Gui\-D\-X (
+\begin{DoxyParamCaption}
+\item[{double}]{d}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_a7abc7f543e66d20b9510e0618215c4e3}
+Translates a real coordinate distance to a screen coordinate distance. \hypertarget{classRS__GraphicView_af653db7ecbc79b143a0a5c365ab34fcd}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!to\-Gui\-D\-Y@{to\-Gui\-D\-Y}}
+\index{to\-Gui\-D\-Y@{to\-Gui\-D\-Y}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{to\-Gui\-D\-Y}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Graphic\-View\-::to\-Gui\-D\-Y (
+\begin{DoxyParamCaption}
+\item[{double}]{d}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_af653db7ecbc79b143a0a5c365ab34fcd}
+Translates a real coordinate distance to a screen coordinate distance. \hypertarget{classRS__GraphicView_ad5aaa0d28de23d84775e2ceb44dc6ccb}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!to\-Gui\-X@{to\-Gui\-X}}
+\index{to\-Gui\-X@{to\-Gui\-X}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{to\-Gui\-X}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Graphic\-View\-::to\-Gui\-X (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_ad5aaa0d28de23d84775e2ceb44dc6ccb}
+Translates a real coordinate in X to a screen coordinate X. 
+\begin{DoxyParams}{Parameters}
+{\em visible} & Pointer to a boolean which will contain true after the call if the coordinate is within the visible range. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__GraphicView_aa3a2948c59ed17711b4e404c4c538ca2}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!to\-Gui\-Y@{to\-Gui\-Y}}
+\index{to\-Gui\-Y@{to\-Gui\-Y}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{to\-Gui\-Y}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Graphic\-View\-::to\-Gui\-Y (
+\begin{DoxyParamCaption}
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)}}\label{classRS__GraphicView_aa3a2948c59ed17711b4e404c4c538ca2}
+Translates a real coordinate in Y to a screen coordinate Y. \hypertarget{classRS__GraphicView_ad938b6866368bc4615887ace3e464040}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!zoom\-Auto@{zoom\-Auto}}
+\index{zoom\-Auto@{zoom\-Auto}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{zoom\-Auto}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::zoom\-Auto (
+\begin{DoxyParamCaption}
+\item[{bool}]{axis = {\ttfamily true}, }
+\item[{bool}]{keep\-Aspect\-Ratio = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_ad938b6866368bc4615887ace3e464040}
+performs autozoom
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & include axis in zoom \\
+\hline
+{\em keep\-Aspect\-Ratio} & true\-: keep aspect ratio 1\-:1 false\-: factors in x and y are stretched to the max \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__GraphicView_a0cd13dfb56671d262a0c7c73abee0283}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!zoom\-In@{zoom\-In}}
+\index{zoom\-In@{zoom\-In}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{zoom\-In}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::zoom\-In (
+\begin{DoxyParamCaption}
+\item[{double}]{f = {\ttfamily 1.5}, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{center = {\ttfamily {\bf R\-S\-\_\-\-Vector}(false)}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_a0cd13dfb56671d262a0c7c73abee0283}
+zooms in by factor f \hypertarget{classRS__GraphicView_ad0aea27438b47700f4fc242fc0e764eb}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!zoom\-In\-X@{zoom\-In\-X}}
+\index{zoom\-In\-X@{zoom\-In\-X}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{zoom\-In\-X}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::zoom\-In\-X (
+\begin{DoxyParamCaption}
+\item[{double}]{f = {\ttfamily 1.5}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_ad0aea27438b47700f4fc242fc0e764eb}
+zooms in by factor f in x \hypertarget{classRS__GraphicView_afdcaa3c792eca9e25dbcbda7b762e2ae}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!zoom\-In\-Y@{zoom\-In\-Y}}
+\index{zoom\-In\-Y@{zoom\-In\-Y}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{zoom\-In\-Y}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::zoom\-In\-Y (
+\begin{DoxyParamCaption}
+\item[{double}]{f = {\ttfamily 1.5}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_afdcaa3c792eca9e25dbcbda7b762e2ae}
+zooms in by factor f in y \hypertarget{classRS__GraphicView_a49ec55150d1dec6c61261a51dd422972}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!zoom\-Out@{zoom\-Out}}
+\index{zoom\-Out@{zoom\-Out}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{zoom\-Out}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::zoom\-Out (
+\begin{DoxyParamCaption}
+\item[{double}]{f = {\ttfamily 1.5}, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{center = {\ttfamily {\bf R\-S\-\_\-\-Vector}(false)}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_a49ec55150d1dec6c61261a51dd422972}
+zooms out by factor f \hypertarget{classRS__GraphicView_a9539826899c38ff7f20bbfe034f5562c}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!zoom\-Out\-X@{zoom\-Out\-X}}
+\index{zoom\-Out\-X@{zoom\-Out\-X}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{zoom\-Out\-X}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::zoom\-Out\-X (
+\begin{DoxyParamCaption}
+\item[{double}]{f = {\ttfamily 1.5}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_a9539826899c38ff7f20bbfe034f5562c}
+zooms out by factor f in x \hypertarget{classRS__GraphicView_a2d70a33d9b86ccfe065bcca5c0d3e814}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!zoom\-Out\-Y@{zoom\-Out\-Y}}
+\index{zoom\-Out\-Y@{zoom\-Out\-Y}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{zoom\-Out\-Y}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::zoom\-Out\-Y (
+\begin{DoxyParamCaption}
+\item[{double}]{f = {\ttfamily 1.5}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_a2d70a33d9b86ccfe065bcca5c0d3e814}
+zooms out by factor f y \hypertarget{classRS__GraphicView_a18ab12a02cb250eab2369ea8db016525}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!zoom\-Page@{zoom\-Page}}
+\index{zoom\-Page@{zoom\-Page}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{zoom\-Page}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::zoom\-Page (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_a18ab12a02cb250eab2369ea8db016525}
+Zooms to page extends. \hypertarget{classRS__GraphicView_af86581c53c7c9377e84310df22ed93a0}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!zoom\-Pan@{zoom\-Pan}}
+\index{zoom\-Pan@{zoom\-Pan}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{zoom\-Pan}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::zoom\-Pan (
+\begin{DoxyParamCaption}
+\item[{int}]{dx, }
+\item[{int}]{dy}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_af86581c53c7c9377e84310df22ed93a0}
+Centers the point v1. \hypertarget{classRS__GraphicView_acdd3a4e854454a38fb543b076cb356ef}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!zoom\-Previous@{zoom\-Previous}}
+\index{zoom\-Previous@{zoom\-Previous}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{zoom\-Previous}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::zoom\-Previous (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_acdd3a4e854454a38fb543b076cb356ef}
+Shows previous view. \hypertarget{classRS__GraphicView_a2ba37b0e8c6e322fc2a420c9589a4bae}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!zoom\-Scroll@{zoom\-Scroll}}
+\index{zoom\-Scroll@{zoom\-Scroll}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{zoom\-Scroll}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::zoom\-Scroll (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Direction}}]{direction}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_a2ba37b0e8c6e322fc2a420c9589a4bae}
+Scrolls in the given direction. \hypertarget{classRS__GraphicView_a4726f4b18f36529c9dcbc802bdb4640c}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!zoom\-Window@{zoom\-Window}}
+\index{zoom\-Window@{zoom\-Window}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{zoom\-Window}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Graphic\-View\-::zoom\-Window (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Vector}}]{v1, }
+\item[{{\bf R\-S\-\_\-\-Vector}}]{v2, }
+\item[{bool}]{keep\-Aspect\-Ratio = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__GraphicView_a4726f4b18f36529c9dcbc802bdb4640c}
+Zooms the area given by v1 and v2.
+
+
+\begin{DoxyParams}{Parameters}
+{\em keep\-Aspect\-Ratio} & true\-: keeps the aspect ratio 1\-:1 false\-: zooms exactly the selected range to the current graphic view \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classRS__GraphicView_a13f323ad576fa42d5c1003d025ea9f9a}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!background@{background}}
+\index{background@{background}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{background}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Color} R\-S\-\_\-\-Graphic\-View\-::background\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__GraphicView_a13f323ad576fa42d5c1003d025ea9f9a}
+background color (any color) \hypertarget{classRS__GraphicView_aa018f550964aa34a859d0fbe36ddfd1d}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!default\-Snap\-Mode@{default\-Snap\-Mode}}
+\index{default\-Snap\-Mode@{default\-Snap\-Mode}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{default\-Snap\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Snap\-Mode} R\-S\-\_\-\-Graphic\-View\-::default\-Snap\-Mode\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__GraphicView_aa018f550964aa34a859d0fbe36ddfd1d}
+Current default snap mode for this graphic view. Used for new actions. \hypertarget{classRS__GraphicView_a3d48dce5acf1be807ecc8cb22416eb84}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!default\-Snap\-Res@{default\-Snap\-Res}}
+\index{default\-Snap\-Res@{default\-Snap\-Res}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{default\-Snap\-Res}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Snap\-Restriction} R\-S\-\_\-\-Graphic\-View\-::default\-Snap\-Res\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__GraphicView_a3d48dce5acf1be807ecc8cb22416eb84}
+Current default snap restriction for this graphic view. Used for new actions. \hypertarget{classRS__GraphicView_a2b1b20553b1fa0a2ae02d807a25a9ff2}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!delete\-Mode@{delete\-Mode}}
+\index{delete\-Mode@{delete\-Mode}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{delete\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Graphic\-View\-::delete\-Mode\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__GraphicView_a2b1b20553b1fa0a2ae02d807a25a9ff2}
+Delete mode. If true, all drawing actions will delete in background color instead. \hypertarget{classRS__GraphicView_a9fdb72ef87525be0a3f1fe665d6025d8}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!foreground@{foreground}}
+\index{foreground@{foreground}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{foreground}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Color} R\-S\-\_\-\-Graphic\-View\-::foreground\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__GraphicView_a9fdb72ef87525be0a3f1fe665d6025d8}
+foreground color (black or white) \hypertarget{classRS__GraphicView_a6396487e060f415b8447c81d73c4e3c1}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!grid@{grid}}
+\index{grid@{grid}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{grid}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Grid}$\ast$ R\-S\-\_\-\-Graphic\-View\-::grid\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__GraphicView_a6396487e060f415b8447c81d73c4e3c1}
+Grid \hypertarget{classRS__GraphicView_af566f6066c667e51e37112e13cedc3b2}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!grid\-Color@{grid\-Color}}
+\index{grid\-Color@{grid\-Color}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{grid\-Color}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Color} R\-S\-\_\-\-Graphic\-View\-::grid\-Color\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__GraphicView_af566f6066c667e51e37112e13cedc3b2}
+grid color \hypertarget{classRS__GraphicView_adf461ce844a72d1b839d5925775d5c99}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!highlighted\-Color@{highlighted\-Color}}
+\index{highlighted\-Color@{highlighted\-Color}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{highlighted\-Color}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Color} R\-S\-\_\-\-Graphic\-View\-::highlighted\-Color\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__GraphicView_adf461ce844a72d1b839d5925775d5c99}
+highlighted color \hypertarget{classRS__GraphicView_a50193620c821e86e68a7b914bff7afd1}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!meta\-Grid\-Color@{meta\-Grid\-Color}}
+\index{meta\-Grid\-Color@{meta\-Grid\-Color}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{meta\-Grid\-Color}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Color} R\-S\-\_\-\-Graphic\-View\-::meta\-Grid\-Color\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__GraphicView_a50193620c821e86e68a7b914bff7afd1}
+meta grid color \hypertarget{classRS__GraphicView_a7c3c832cd4ed3ea5c7ab5af2a07eeee9}{\index{R\-S\-\_\-\-Graphic\-View@{R\-S\-\_\-\-Graphic\-View}!selected\-Color@{selected\-Color}}
+\index{selected\-Color@{selected\-Color}!RS_GraphicView@{R\-S\-\_\-\-Graphic\-View}}
+\subsubsection[{selected\-Color}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Color} R\-S\-\_\-\-Graphic\-View\-::selected\-Color\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__GraphicView_a7c3c832cd4ed3ea5c7ab5af2a07eeee9}
+selected color 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/gui/rs\-\_\-graphicview.\-h\item 
+librecad/src/lib/gui/rs\-\_\-graphicview.\-cpp\end{DoxyCompactItemize}

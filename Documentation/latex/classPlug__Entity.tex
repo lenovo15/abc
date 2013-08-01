@@ -1,0 +1,167 @@
+\hypertarget{classPlug__Entity}{\section{Plug\-\_\-\-Entity Class Reference}
+\label{classPlug__Entity}\index{Plug\-\_\-\-Entity@{Plug\-\_\-\-Entity}}
+}
+
+
+Wrapper for acces entities from plugins.  
+
+
+
+
+{\ttfamily \#include $<$document\-\_\-interface.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classPlug__Entity_a3e2acf80beecc81e0e7596bf782b869a}{get\-Data} (Q\-Hash$<$ int, Q\-Variant $>$ $\ast$data)=0
+\begin{DoxyCompactList}\small\item\em Obtain the entity data. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classPlug__Entity_a54501af73a74d97116cfac8b145049ca}{update\-Data} (Q\-Hash$<$ int, Q\-Variant $>$ $\ast$data)=0
+\begin{DoxyCompactList}\small\item\em Update the entity data. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classPlug__Entity_a35882191753a8945aba9034265dd4a37}{get\-Polyline\-Data} (Q\-List$<$ \hyperlink{classPlug__VertexData}{Plug\-\_\-\-Vertex\-Data} $>$ $\ast$data)=0
+\begin{DoxyCompactList}\small\item\em Obtain the polyline list of vertex. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classPlug__Entity_a2b427ad5ac34d6a9d408d5e9e48ac93c}{update\-Polyline\-Data} (Q\-List$<$ \hyperlink{classPlug__VertexData}{Plug\-\_\-\-Vertex\-Data} $>$ $\ast$data)=0
+\begin{DoxyCompactList}\small\item\em Update the polyline list of vertex. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classPlug__Entity_a83b1ec84b81854d4fb8099d95930397b}{move} (Q\-Point\-F offset)=0
+\begin{DoxyCompactList}\small\item\em Move the entity. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classPlug__Entity_a2a4a27a59029c7c43f6ee7750db1d4af}{rotate} (Q\-Point\-F center, double angle)=0
+\begin{DoxyCompactList}\small\item\em rotate the entity. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classPlug__Entity_a93f8d76ad98f7f5b0f24f111681c31a4}{scale} (Q\-Point\-F center, Q\-Point\-F factor)=0
+\begin{DoxyCompactList}\small\item\em Scale the entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wrapper for acces entities from plugins. 
+
+Wrapper class for create, acces and modify entities from plugins. T\-O\-D\-O\-: terminate acces function -\/$>$ \hyperlink{classPlug__Entity_a3e2acf80beecc81e0e7596bf782b869a}{get\-Data()} terminate implementation of modify function -\/$>$ \hyperlink{classPlug__Entity_a54501af73a74d97116cfac8b145049ca}{update\-Data()} terminate implementation of create function (ctor called from document) can't create entities\-:
+\begin{DoxyItemize}
+\item atomic = C\-O\-N\-S\-T\-R\-U\-C\-T\-I\-O\-N\-L\-I\-N\-E, O\-V\-E\-R\-L\-A\-Y\-B\-O\-X, S\-O\-L\-I\-D,
+\item container = I\-N\-S\-E\-R\-T, P\-O\-L\-Y\-L\-I\-N\-E, S\-P\-L\-I\-N\-E, H\-A\-T\-C\-H, D\-I\-M\-L\-E\-A\-D\-E\-R, D\-I\-M\-A\-L\-I\-G\-N\-E\-D, D\-I\-M\-L\-I\-N\-E\-A\-R, D\-I\-M\-R\-A\-D\-I\-A\-L, D\-I\-M\-D\-I\-A\-M\-E\-T\-R\-I\-C, D\-I\-M\-A\-N\-G\-U\-L\-A\-R, verify destructor if needed or not to delete entity \begin{DoxyAuthor}{Author}
+Rallaz 
+\end{DoxyAuthor}
+
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{classPlug__Entity_a3e2acf80beecc81e0e7596bf782b869a}{\index{Plug\-\_\-\-Entity@{Plug\-\_\-\-Entity}!get\-Data@{get\-Data}}
+\index{get\-Data@{get\-Data}!Plug_Entity@{Plug\-\_\-\-Entity}}
+\subsubsection[{get\-Data}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Plug\-\_\-\-Entity\-::get\-Data (
+\begin{DoxyParamCaption}
+\item[{Q\-Hash$<$ int, Q\-Variant $>$ $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classPlug__Entity_a3e2acf80beecc81e0e7596bf782b869a}
+
+
+Obtain the entity data. 
+
+The data is a Q\-Hash with the E\-D\-A\-T\-A keys relevant to the type of entity 
+\begin{DoxyParams}{Parameters}
+{\em data} & pointer to a Q\-Hash$<$int, Q\-Variant$>$ to store the entity data. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPlug__Entity_a35882191753a8945aba9034265dd4a37}{\index{Plug\-\_\-\-Entity@{Plug\-\_\-\-Entity}!get\-Polyline\-Data@{get\-Polyline\-Data}}
+\index{get\-Polyline\-Data@{get\-Polyline\-Data}!Plug_Entity@{Plug\-\_\-\-Entity}}
+\subsubsection[{get\-Polyline\-Data}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Plug\-\_\-\-Entity\-::get\-Polyline\-Data (
+\begin{DoxyParamCaption}
+\item[{Q\-List$<$ {\bf Plug\-\_\-\-Vertex\-Data} $>$ $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classPlug__Entity_a35882191753a8945aba9034265dd4a37}
+
+
+Obtain the polyline list of vertex. 
+
+The data is a Q\-List to store a \hyperlink{classPlug__VertexData}{Plug\-\_\-\-Vertex\-Data} for heach vertex form the polyline 
+\begin{DoxyParams}{Parameters}
+{\em data} & pointer to a Q\-List$<$\-Plug\-\_\-\-Vertex\-Data$>$ to store the vertex list. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPlug__Entity_a83b1ec84b81854d4fb8099d95930397b}{\index{Plug\-\_\-\-Entity@{Plug\-\_\-\-Entity}!move@{move}}
+\index{move@{move}!Plug_Entity@{Plug\-\_\-\-Entity}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Plug\-\_\-\-Entity\-::move (
+\begin{DoxyParamCaption}
+\item[{Q\-Point\-F}]{offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classPlug__Entity_a83b1ec84b81854d4fb8099d95930397b}
+
+
+Move the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & move the entity by the given Q\-Point\-F. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPlug__Entity_a2a4a27a59029c7c43f6ee7750db1d4af}{\index{Plug\-\_\-\-Entity@{Plug\-\_\-\-Entity}!rotate@{rotate}}
+\index{rotate@{rotate}!Plug_Entity@{Plug\-\_\-\-Entity}}
+\subsubsection[{rotate}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Plug\-\_\-\-Entity\-::rotate (
+\begin{DoxyParamCaption}
+\item[{Q\-Point\-F}]{center, }
+\item[{double}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classPlug__Entity_a2a4a27a59029c7c43f6ee7750db1d4af}
+
+
+rotate the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center} & center of rotation. \\
+\hline
+{\em angle} & angle to rotate. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPlug__Entity_a93f8d76ad98f7f5b0f24f111681c31a4}{\index{Plug\-\_\-\-Entity@{Plug\-\_\-\-Entity}!scale@{scale}}
+\index{scale@{scale}!Plug_Entity@{Plug\-\_\-\-Entity}}
+\subsubsection[{scale}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Plug\-\_\-\-Entity\-::scale (
+\begin{DoxyParamCaption}
+\item[{Q\-Point\-F}]{center, }
+\item[{Q\-Point\-F}]{factor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classPlug__Entity_a93f8d76ad98f7f5b0f24f111681c31a4}
+
+
+Scale the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center} & base point for scale. \\
+\hline
+{\em factor} & scale factor. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPlug__Entity_a54501af73a74d97116cfac8b145049ca}{\index{Plug\-\_\-\-Entity@{Plug\-\_\-\-Entity}!update\-Data@{update\-Data}}
+\index{update\-Data@{update\-Data}!Plug_Entity@{Plug\-\_\-\-Entity}}
+\subsubsection[{update\-Data}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Plug\-\_\-\-Entity\-::update\-Data (
+\begin{DoxyParamCaption}
+\item[{Q\-Hash$<$ int, Q\-Variant $>$ $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classPlug__Entity_a54501af73a74d97116cfac8b145049ca}
+
+
+Update the entity data. 
+
+The data is a Q\-Hash with the E\-D\-A\-T\-A keys relevant to the type of entity 
+\begin{DoxyParams}{Parameters}
+{\em data} & pointer to a Q\-Hash$<$int, Q\-Variant$>$ with the entity data. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPlug__Entity_a2b427ad5ac34d6a9d408d5e9e48ac93c}{\index{Plug\-\_\-\-Entity@{Plug\-\_\-\-Entity}!update\-Polyline\-Data@{update\-Polyline\-Data}}
+\index{update\-Polyline\-Data@{update\-Polyline\-Data}!Plug_Entity@{Plug\-\_\-\-Entity}}
+\subsubsection[{update\-Polyline\-Data}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Plug\-\_\-\-Entity\-::update\-Polyline\-Data (
+\begin{DoxyParamCaption}
+\item[{Q\-List$<$ {\bf Plug\-\_\-\-Vertex\-Data} $>$ $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classPlug__Entity_a2b427ad5ac34d6a9d408d5e9e48ac93c}
+
+
+Update the polyline list of vertex. 
+
+The data is a Q\-List of \hyperlink{classPlug__VertexData}{Plug\-\_\-\-Vertex\-Data} with the coordinates of each vertex to the polyline the cuurent vertex are removed and replaced for the new list. 
+\begin{DoxyParams}{Parameters}
+{\em data} & pointer to a Q\-List$<$\-Plug\-\_\-\-Vertex\-Data$>$ with the coordinates vertex's. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/plugins/document\-\_\-interface.\-h\end{DoxyCompactItemize}

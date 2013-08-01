@@ -1,0 +1,414 @@
+\hypertarget{classRS__AtomicEntity}{\section{R\-S\-\_\-\-Atomic\-Entity Class Reference}
+\label{classRS__AtomicEntity}\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-atomicentity.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Atomic\-Entity\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classRS__AtomicEntity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__AtomicEntity_abaf0dc8a9de97897ad33fad955101e74}{R\-S\-\_\-\-Atomic\-Entity} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} $\ast$\hyperlink{classRS__Entity_a80358a8d2fc6739a516a278dc500b49f}{parent}=N\-U\-L\-L)
+\item 
+virtual \hyperlink{classRS__AtomicEntity_a78ca30fac2c4a595f4165b90f5ee84b1}{$\sim$\-R\-S\-\_\-\-Atomic\-Entity} ()
+\item 
+virtual bool \hyperlink{classRS__AtomicEntity_acfd7cb0e64ab13c51185a0a019355d2e}{is\-Container} () const 
+\item 
+virtual bool \hyperlink{classRS__AtomicEntity_a6cdc2a83438fb51b13fec598f73da6a3}{is\-Atomic} () const 
+\item 
+virtual unsigned int \hyperlink{classRS__AtomicEntity_a9127e621b6bca6671250b02dcdd65013}{count} ()
+\item 
+virtual unsigned int \hyperlink{classRS__AtomicEntity_ac7f202f015827f03d86dd67a5f5d93e9}{count\-Deep} ()
+\item 
+virtual \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__AtomicEntity_a7c65ecfa3124659ad667ea20d7e42607}{get\-Endpoint} () const 
+\item 
+virtual \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__AtomicEntity_a5e2f2744b91283e110b98e1359c006cf}{get\-Startpoint} () const 
+\item 
+virtual double \hyperlink{classRS__AtomicEntity_af830be013d3492aab78525660e2721e8}{get\-Direction1} () const 
+\item 
+virtual double \hyperlink{classRS__AtomicEntity_a4b83b0f0d31b35914f2e86a67cac3a6c}{get\-Direction2} () const 
+\item 
+virtual \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__AtomicEntity_a66560af73a3de78729d9f0df1a3f0f96}{get\-Center} () const 
+\item 
+\hypertarget{classRS__AtomicEntity_afe54991823e511ac27c1002ec1e2f3b7}{virtual double {\bfseries get\-Radius} () const }\label{classRS__AtomicEntity_afe54991823e511ac27c1002ec1e2f3b7}
+
+\item 
+virtual \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__AtomicEntity_ad3423fcd97d10a149d3f2e4b2a242302}{get\-Nearest\-Center} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&, double $\ast$)
+\item 
+virtual void \hyperlink{classRS__AtomicEntity_a3de4b75e6f1eb4bf419c3535db682654}{set\-Startpoint\-Selected} (bool select)
+\item 
+virtual void \hyperlink{classRS__AtomicEntity_aca8cf2ec2643782c68cc9700417fec31}{set\-Endpoint\-Selected} (bool select)
+\item 
+\hypertarget{classRS__AtomicEntity_a6e3e1abe7023466dcb6bf02dc2a696de}{virtual bool {\bfseries is\-Tangent} (const \hyperlink{classRS__CircleData}{R\-S\-\_\-\-Circle\-Data} \&)}\label{classRS__AtomicEntity_a6e3e1abe7023466dcb6bf02dc2a696de}
+
+\item 
+bool \hyperlink{classRS__AtomicEntity_a473df8be63625c778525c1f368adbeb0}{is\-Startpoint\-Selected} () const 
+\item 
+bool \hyperlink{classRS__AtomicEntity_a444007e91f942f6ae174744b67294b01}{is\-Endpoint\-Selected} () const 
+\item 
+virtual void \hyperlink{classRS__AtomicEntity_afe0370ebde92e7417e4adac09d9a1d52}{revert\-Direction} ()
+\item 
+virtual bool \hyperlink{classRS__AtomicEntity_ab708a0d05c11fd7eff646243db60464a}{offset} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&, const double \&)
+\item 
+virtual void \hyperlink{classRS__AtomicEntity_ae09eb376e84a70a3bcf2367ed9397cca}{move\-Startpoint} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&)
+\item 
+virtual void \hyperlink{classRS__AtomicEntity_a7e35f48ae53da907f698e0e73887a1ca}{move\-Endpoint} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&)
+\item 
+virtual void \hyperlink{classRS__AtomicEntity_a33af8cca51e643cffbac55f3dbf9f670}{trim\-Startpoint} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&pos)
+\item 
+virtual void \hyperlink{classRS__AtomicEntity_a021db5f1757de41b2fe385d22bf2aaea}{trim\-Endpoint} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&pos)
+\item 
+virtual \hyperlink{classRS2_a30e80df2ef4bb36f4e89ea500eb212ab}{R\-S2\-::\-Ending} \hyperlink{classRS__AtomicEntity_a7bb9189a26b1cd6e17d6b6283190d05c}{get\-Trim\-Point} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&)
+\item 
+virtual \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__AtomicEntity_a18a73c3316ee38b6798d41d18fb6c093}{prepare\-Trim} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&, const \hyperlink{classRS__VectorSolutions}{R\-S\-\_\-\-Vector\-Solutions} \&)
+\item 
+\hypertarget{classRS__AtomicEntity_a70264ad0d8a6ffac2af46e6be94e8f69}{virtual void {\bfseries reverse} ()}\label{classRS__AtomicEntity_a70264ad0d8a6ffac2af46e6be94e8f69}
+
+\item 
+virtual void \hyperlink{classRS__AtomicEntity_ae25b3ef890c15bc0fcd8a9fa4308bdbc}{move\-Selected\-Ref} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&ref, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&\hyperlink{classRS__AtomicEntity_ab708a0d05c11fd7eff646243db60464a}{offset})
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class representing an atomic entity Typical atomic entities\-: \hyperlink{classRS__Line}{R\-S\-\_\-\-Line}, \hyperlink{classRS__Arc}{R\-S\-\_\-\-Arc}, \hyperlink{classRS__Circle}{R\-S\-\_\-\-Circle}, \hyperlink{classRS__Ellipse}{R\-S\-\_\-\-Ellipse}
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__AtomicEntity_abaf0dc8a9de97897ad33fad955101e74}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}}
+\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{R\-S\-\_\-\-Atomic\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Atomic\-Entity\-::\-R\-S\-\_\-\-Atomic\-Entity (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} $\ast$}]{parent = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__AtomicEntity_abaf0dc8a9de97897ad33fad955101e74}
+Construtor. \hypertarget{classRS__AtomicEntity_a78ca30fac2c4a595f4165b90f5ee84b1}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!$\sim$\-R\-S\-\_\-\-Atomic\-Entity@{$\sim$\-R\-S\-\_\-\-Atomic\-Entity}}
+\index{$\sim$\-R\-S\-\_\-\-Atomic\-Entity@{$\sim$\-R\-S\-\_\-\-Atomic\-Entity}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{$\sim$\-R\-S\-\_\-\-Atomic\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}virtual R\-S\-\_\-\-Atomic\-Entity\-::$\sim$\-R\-S\-\_\-\-Atomic\-Entity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__AtomicEntity_a78ca30fac2c4a595f4165b90f5ee84b1}
+Destrutor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__AtomicEntity_a9127e621b6bca6671250b02dcdd65013}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!count@{count}}
+\index{count@{count}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned int R\-S\-\_\-\-Atomic\-Entity\-::count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__AtomicEntity_a9127e621b6bca6671250b02dcdd65013}
+\begin{DoxyReturn}{Returns}
+Always 1 for atomic entities. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__Entity_af25ca6944707617f04fc92086d413595}{R\-S\-\_\-\-Entity}.
+
+\hypertarget{classRS__AtomicEntity_ac7f202f015827f03d86dd67a5f5d93e9}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!count\-Deep@{count\-Deep}}
+\index{count\-Deep@{count\-Deep}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{count\-Deep}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned int R\-S\-\_\-\-Atomic\-Entity\-::count\-Deep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__AtomicEntity_ac7f202f015827f03d86dd67a5f5d93e9}
+\begin{DoxyReturn}{Returns}
+Always 1 for atomic entities. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__Entity_a6f6f5cd0299eba32062af0fd5851f9e4}{R\-S\-\_\-\-Entity}.
+
+\hypertarget{classRS__AtomicEntity_a66560af73a3de78729d9f0df1a3f0f96}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!get\-Center@{get\-Center}}
+\index{get\-Center@{get\-Center}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{get\-Center}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Atomic\-Entity\-::get\-Center (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__AtomicEntity_a66560af73a3de78729d9f0df1a3f0f96}
+\begin{DoxyReturn}{Returns}
+The center point (x) of this arc 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classRS__Entity_a93d5bc7202acc04ed5d785e1ed883f2d}{R\-S\-\_\-\-Entity}.
+
+
+
+Reimplemented in \hyperlink{classRS__Ellipse_a4c1bbbc6ee2ad27c35ac1c932169a077}{R\-S\-\_\-\-Ellipse}, \hyperlink{classLC__Hyperbola_aae9e7188ad4fa98018a0fc5bda9bd7fa}{L\-C\-\_\-\-Hyperbola}, \hyperlink{classRS__Circle_abb000208d06d392e963f2af9dd45dcb0}{R\-S\-\_\-\-Circle}, and \hyperlink{classRS__Arc_a770ca9b629fbcb00c9ff5793319368d2}{R\-S\-\_\-\-Arc}.
+
+\hypertarget{classRS__AtomicEntity_af830be013d3492aab78525660e2721e8}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!get\-Direction1@{get\-Direction1}}
+\index{get\-Direction1@{get\-Direction1}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{get\-Direction1}]{\setlength{\rightskip}{0pt plus 5cm}virtual double R\-S\-\_\-\-Atomic\-Entity\-::get\-Direction1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__AtomicEntity_af830be013d3492aab78525660e2721e8}
+Implementation must return the angle in which direction the entity starts. 
+
+Reimplemented from \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity}.
+
+
+
+Reimplemented in \hyperlink{classRS__Ellipse_a185c1db1b6fe6599c4a75f7b00d29c20}{R\-S\-\_\-\-Ellipse}, \hyperlink{classLC__Hyperbola_a4f608b3a55ffebd6575220837c36d3a7}{L\-C\-\_\-\-Hyperbola}, \hyperlink{classRS__Arc_abf264d31301a3cf67d6fe10353d63a1c}{R\-S\-\_\-\-Arc}, \hyperlink{classRS__Line_aaaa6ab5a8de8ddc3506e46fb8bbbc7ce}{R\-S\-\_\-\-Line}, and \hyperlink{classRS__Circle_af8b02d75a9f364f1c6ad8d19fcb70b41}{R\-S\-\_\-\-Circle}.
+
+\hypertarget{classRS__AtomicEntity_a4b83b0f0d31b35914f2e86a67cac3a6c}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!get\-Direction2@{get\-Direction2}}
+\index{get\-Direction2@{get\-Direction2}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{get\-Direction2}]{\setlength{\rightskip}{0pt plus 5cm}virtual double R\-S\-\_\-\-Atomic\-Entity\-::get\-Direction2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__AtomicEntity_a4b83b0f0d31b35914f2e86a67cac3a6c}
+Implementation must return the angle in which direction the entity starts the opposite way. 
+
+Reimplemented from \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity}.
+
+
+
+Reimplemented in \hyperlink{classRS__Ellipse_ae13876b4677d42d91e21fbb30d3fe5e5}{R\-S\-\_\-\-Ellipse}, \hyperlink{classLC__Hyperbola_ac492b53db964741abe9750f0b1966803}{L\-C\-\_\-\-Hyperbola}, \hyperlink{classRS__Arc_a0f98a3571be25d6c2d645191528c4f1f}{R\-S\-\_\-\-Arc}, \hyperlink{classRS__Line_a7a886cac6188862bb4b2be3ea013c5c4}{R\-S\-\_\-\-Line}, and \hyperlink{classRS__Circle_aafd4a1d6639ba33dfe3194c0a1963cf0}{R\-S\-\_\-\-Circle}.
+
+\hypertarget{classRS__AtomicEntity_a7c65ecfa3124659ad667ea20d7e42607}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!get\-Endpoint@{get\-Endpoint}}
+\index{get\-Endpoint@{get\-Endpoint}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{get\-Endpoint}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Atomic\-Entity\-::get\-Endpoint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__AtomicEntity_a7c65ecfa3124659ad667ea20d7e42607}
+Implementation must return the endpoint of the entity or an invalid vector if the entity has no endpoint. 
+
+Reimplemented from \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity}.
+
+
+
+Reimplemented in \hyperlink{classRS__Arc_a2acc6b78b335cd7f6da72c92c50bd7d7}{R\-S\-\_\-\-Arc}, \hyperlink{classRS__Solid_a45c5a57ce9579707a12378862dd2ce00}{R\-S\-\_\-\-Solid}, \hyperlink{classRS__Ellipse_a044205913e3af376ab4754246e42f257}{R\-S\-\_\-\-Ellipse}, \hyperlink{classRS__Line_a91191443f65a565aaf841dd4a5b25b36}{R\-S\-\_\-\-Line}, \hyperlink{classRS__ConstructionLine_aab074571db2a8f7f3acbec8f8b22e2ce}{R\-S\-\_\-\-Construction\-Line}, and \hyperlink{classRS__Point_ad67165979895eb23399aa453e0ab5a3b}{R\-S\-\_\-\-Point}.
+
+\hypertarget{classRS__AtomicEntity_ad3423fcd97d10a149d3f2e4b2a242302}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!get\-Nearest\-Center@{get\-Nearest\-Center}}
+\index{get\-Nearest\-Center@{get\-Nearest\-Center}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{get\-Nearest\-Center}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Atomic\-Entity\-::get\-Nearest\-Center (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{, }
+\item[{double $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__AtomicEntity_ad3423fcd97d10a149d3f2e4b2a242302}
+return the nearest center for snapping 
+\begin{DoxyParams}{Parameters}
+{\em coord} & Coordinate (typically a mouse coordinate) \\
+\hline
+{\em dist} & Pointer to a value which will contain the measured distance between 'coord' and the closest center point. The passed pointer can also be N\-U\-L\-L in which case the distance will be lost.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The closest center point. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__Entity_af9d394411665478aa2f6aca1ac67ba86}{R\-S\-\_\-\-Entity}.
+
+
+
+Reimplemented in \hyperlink{classRS__Ellipse_ab7c5311f36cf6378a6df87613b18f31b}{R\-S\-\_\-\-Ellipse}, \hyperlink{classRS__Arc_a1339bfcb014fef3b802dae286e18ab6e}{R\-S\-\_\-\-Arc}, \hyperlink{classLC__Hyperbola_ab9a1d8ffb643ab8e0f4f1516b4beafb5}{L\-C\-\_\-\-Hyperbola}, \hyperlink{classRS__Image_aa6cee58a4b698fe918193abd1ca1e7d9}{R\-S\-\_\-\-Image}, \hyperlink{classRS__Circle_a362cb5d5a1ffd76226f19e4826bee96c}{R\-S\-\_\-\-Circle}, \hyperlink{classRS__Solid_a18a276c399290fd60ae8c5c732496f7d}{R\-S\-\_\-\-Solid}, \hyperlink{classRS__ConstructionLine_a86dc72b937c3c49fdf29b8f9bf670bb4}{R\-S\-\_\-\-Construction\-Line}, \hyperlink{classRS__Point_a5dfb203abfd78b2dccc026ff17679180}{R\-S\-\_\-\-Point}, and \hyperlink{classRS__OverlayBox_a302f6e87dda11fb51fe059466cab26e7}{R\-S\-\_\-\-Overlay\-Box}.
+
+\hypertarget{classRS__AtomicEntity_a5e2f2744b91283e110b98e1359c006cf}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!get\-Startpoint@{get\-Startpoint}}
+\index{get\-Startpoint@{get\-Startpoint}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{get\-Startpoint}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Atomic\-Entity\-::get\-Startpoint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__AtomicEntity_a5e2f2744b91283e110b98e1359c006cf}
+Implementation must return the startpoint of the entity or an invalid vector if the entity has no startpoint. 
+
+Reimplemented from \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity}.
+
+
+
+Reimplemented in \hyperlink{classRS__Arc_a164e42bf8304b00504314566ec090ca6}{R\-S\-\_\-\-Arc}, \hyperlink{classRS__Solid_ab27cc65d8510d9a100ebc48d39908aa5}{R\-S\-\_\-\-Solid}, \hyperlink{classRS__Ellipse_a094960cd14c0cc7a341517a1417a5671}{R\-S\-\_\-\-Ellipse}, \hyperlink{classRS__Line_a5d53d135911c6dcf94f6c50775743780}{R\-S\-\_\-\-Line}, \hyperlink{classRS__ConstructionLine_a43a9cab90975063683e955f96bcddfb2}{R\-S\-\_\-\-Construction\-Line}, and \hyperlink{classRS__Point_a81a945a2d3f7e0bb331f277a2983dac4}{R\-S\-\_\-\-Point}.
+
+\hypertarget{classRS__AtomicEntity_a7bb9189a26b1cd6e17d6b6283190d05c}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!get\-Trim\-Point@{get\-Trim\-Point}}
+\index{get\-Trim\-Point@{get\-Trim\-Point}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{get\-Trim\-Point}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S2\-::\-Ending} R\-S\-\_\-\-Atomic\-Entity\-::get\-Trim\-Point (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__AtomicEntity_a7bb9189a26b1cd6e17d6b6283190d05c}
+Implementation must return which ending of the entity will be trimmed if 'coord' is the coordinate chosen to indicate the trim entity and 'trim\-Point' is the point to which the entity will be trimmed. 
+
+Reimplemented in \hyperlink{classRS__Arc_a072620b15c20afc2f828839a4c4273e9}{R\-S\-\_\-\-Arc}, \hyperlink{classRS__Line_a6fd8c941653787a7962bb40a066dd7db}{R\-S\-\_\-\-Line}, and \hyperlink{classRS__Ellipse_acfb023a7e60667df5e96a930b3b3b478}{R\-S\-\_\-\-Ellipse}.
+
+\hypertarget{classRS__AtomicEntity_a6cdc2a83438fb51b13fec598f73da6a3}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!is\-Atomic@{is\-Atomic}}
+\index{is\-Atomic@{is\-Atomic}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{is\-Atomic}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Atomic\-Entity\-::is\-Atomic (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__AtomicEntity_a6cdc2a83438fb51b13fec598f73da6a3}
+\begin{DoxyReturn}{Returns}
+true because entities made from subclasses are atomic entities. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__Entity_a3918893713669c92ed54ba327d31bfef}{R\-S\-\_\-\-Entity}.
+
+\hypertarget{classRS__AtomicEntity_acfd7cb0e64ab13c51185a0a019355d2e}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!is\-Container@{is\-Container}}
+\index{is\-Container@{is\-Container}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{is\-Container}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Atomic\-Entity\-::is\-Container (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__AtomicEntity_acfd7cb0e64ab13c51185a0a019355d2e}
+\begin{DoxyReturn}{Returns}
+false because entities made from subclasses are atomic entities. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__Entity_a9e00b0b633e5146544498ad9a3e66add}{R\-S\-\_\-\-Entity}.
+
+\hypertarget{classRS__AtomicEntity_a444007e91f942f6ae174744b67294b01}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!is\-Endpoint\-Selected@{is\-Endpoint\-Selected}}
+\index{is\-Endpoint\-Selected@{is\-Endpoint\-Selected}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{is\-Endpoint\-Selected}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Atomic\-Entity\-::is\-Endpoint\-Selected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__AtomicEntity_a444007e91f942f6ae174744b67294b01}
+\begin{DoxyReturn}{Returns}
+True if the entities endpoint is selected. 
+\end{DoxyReturn}
+\hypertarget{classRS__AtomicEntity_a473df8be63625c778525c1f368adbeb0}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!is\-Startpoint\-Selected@{is\-Startpoint\-Selected}}
+\index{is\-Startpoint\-Selected@{is\-Startpoint\-Selected}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{is\-Startpoint\-Selected}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Atomic\-Entity\-::is\-Startpoint\-Selected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__AtomicEntity_a473df8be63625c778525c1f368adbeb0}
+\begin{DoxyReturn}{Returns}
+True if the entities startpoint is selected. 
+\end{DoxyReturn}
+\hypertarget{classRS__AtomicEntity_a7e35f48ae53da907f698e0e73887a1ca}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!move\-Endpoint@{move\-Endpoint}}
+\index{move\-Endpoint@{move\-Endpoint}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{move\-Endpoint}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Atomic\-Entity\-::move\-Endpoint (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__AtomicEntity_a7e35f48ae53da907f698e0e73887a1ca}
+Implementation must move the endpoint of the entity to the given position. 
+
+Reimplemented in \hyperlink{classRS__Arc_a5a22322551fed295cddc0c0291ddc981}{R\-S\-\_\-\-Arc}, \hyperlink{classRS__Line_a7d8c2c02356f25540a5bed6acb7e0159}{R\-S\-\_\-\-Line}, and \hyperlink{classRS__Ellipse_adb3b389777fff8d898d6b6c803fbd505}{R\-S\-\_\-\-Ellipse}.
+
+\hypertarget{classRS__AtomicEntity_ae25b3ef890c15bc0fcd8a9fa4308bdbc}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!move\-Selected\-Ref@{move\-Selected\-Ref}}
+\index{move\-Selected\-Ref@{move\-Selected\-Ref}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{move\-Selected\-Ref}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Atomic\-Entity\-::move\-Selected\-Ref (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__AtomicEntity_ae25b3ef890c15bc0fcd8a9fa4308bdbc}
+Implementations must drag the reference point(s) of selected (sub-\/)entities that are very close to ref by offset. 
+
+Reimplemented from \hyperlink{classRS__Entity_a972766e18d187f3c6bd28fc69290a19f}{R\-S\-\_\-\-Entity}.
+
+\hypertarget{classRS__AtomicEntity_ae09eb376e84a70a3bcf2367ed9397cca}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!move\-Startpoint@{move\-Startpoint}}
+\index{move\-Startpoint@{move\-Startpoint}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{move\-Startpoint}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Atomic\-Entity\-::move\-Startpoint (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__AtomicEntity_ae09eb376e84a70a3bcf2367ed9397cca}
+Implementation must move the startpoint of the entity to the given position. 
+
+Reimplemented in \hyperlink{classRS__Arc_ab4968fb761a2cac0f8080e2daf7e245c}{R\-S\-\_\-\-Arc}, \hyperlink{classRS__Line_a27b3c007264d52ad929a1c12cc3a7d4f}{R\-S\-\_\-\-Line}, \hyperlink{classRS__Ellipse_a0fe4b0d647e20f97b4ece7a52eda3aa6}{R\-S\-\_\-\-Ellipse}, and \hyperlink{classRS__Point_add44dca9ada6e53fb53e3293f6770f50}{R\-S\-\_\-\-Point}.
+
+\hypertarget{classRS__AtomicEntity_ab708a0d05c11fd7eff646243db60464a}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!offset@{offset}}
+\index{offset@{offset}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{offset}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Atomic\-Entity\-::offset (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{, }
+\item[{const double \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__AtomicEntity_ab708a0d05c11fd7eff646243db60464a}
+Implementation must create offset of the entity to the given direction and distance 
+
+Reimplemented from \hyperlink{classRS__Entity_aa296d21b9aac99161d386ce2f60f0fea}{R\-S\-\_\-\-Entity}.
+
+
+
+Reimplemented in \hyperlink{classRS__Line_a159f62094d2f2cbcbe56b38c60e8b96f}{R\-S\-\_\-\-Line}, \hyperlink{classRS__Arc_aa7da3f3ea0ece264776e3f7cb25e669e}{R\-S\-\_\-\-Arc}, and \hyperlink{classRS__Circle_a0dec1d2723496184c23c56a4069f71bd}{R\-S\-\_\-\-Circle}.
+
+\hypertarget{classRS__AtomicEntity_a18a73c3316ee38b6798d41d18fb6c093}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!prepare\-Trim@{prepare\-Trim}}
+\index{prepare\-Trim@{prepare\-Trim}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{prepare\-Trim}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Atomic\-Entity\-::prepare\-Trim (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{, }
+\item[{const {\bf R\-S\-\_\-\-Vector\-Solutions} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__AtomicEntity_a18a73c3316ee38b6798d41d18fb6c093}
+Implementation must trim the entity in the case of multiple intersections and return the trim\-Point trim\-Coord indicts the trigger trim position trim\-Sol contains intersections 
+
+Reimplemented in \hyperlink{classRS__Arc_ae252c5cc0dbe83656c155d53088d12fa}{R\-S\-\_\-\-Arc}, \hyperlink{classRS__Line_aafdbed4b3551d313c01b20d8da8ccca0}{R\-S\-\_\-\-Line}, and \hyperlink{classRS__Ellipse_acb94ce93f1125c91d29919a5c4d4016f}{R\-S\-\_\-\-Ellipse}.
+
+\hypertarget{classRS__AtomicEntity_afe0370ebde92e7417e4adac09d9a1d52}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!revert\-Direction@{revert\-Direction}}
+\index{revert\-Direction@{revert\-Direction}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{revert\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Atomic\-Entity\-::revert\-Direction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__AtomicEntity_afe0370ebde92e7417e4adac09d9a1d52}
+implementations must revert the direction of an atomic entity 
+
+Reimplemented from \hyperlink{classRS__Entity_aca203ede0d82969f193e98521263a645}{R\-S\-\_\-\-Entity}.
+
+
+
+Reimplemented in \hyperlink{classRS__Line_abf3cac30d7756f59f57c7164e4c585e8}{R\-S\-\_\-\-Line}, and \hyperlink{classRS__Arc_a1dfb864e7391da9de1c8fdc67cad097f}{R\-S\-\_\-\-Arc}.
+
+\hypertarget{classRS__AtomicEntity_aca8cf2ec2643782c68cc9700417fec31}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!set\-Endpoint\-Selected@{set\-Endpoint\-Selected}}
+\index{set\-Endpoint\-Selected@{set\-Endpoint\-Selected}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{set\-Endpoint\-Selected}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Atomic\-Entity\-::set\-Endpoint\-Selected (
+\begin{DoxyParamCaption}
+\item[{bool}]{select}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__AtomicEntity_aca8cf2ec2643782c68cc9700417fec31}
+(De-\/)selects endpoint. \hypertarget{classRS__AtomicEntity_a3de4b75e6f1eb4bf419c3535db682654}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!set\-Startpoint\-Selected@{set\-Startpoint\-Selected}}
+\index{set\-Startpoint\-Selected@{set\-Startpoint\-Selected}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{set\-Startpoint\-Selected}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Atomic\-Entity\-::set\-Startpoint\-Selected (
+\begin{DoxyParamCaption}
+\item[{bool}]{select}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__AtomicEntity_a3de4b75e6f1eb4bf419c3535db682654}
+(De-\/)selects startpoint. \hypertarget{classRS__AtomicEntity_a021db5f1757de41b2fe385d22bf2aaea}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!trim\-Endpoint@{trim\-Endpoint}}
+\index{trim\-Endpoint@{trim\-Endpoint}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{trim\-Endpoint}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Atomic\-Entity\-::trim\-Endpoint (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__AtomicEntity_a021db5f1757de41b2fe385d22bf2aaea}
+Implementation must trim the endpoint of the entity to the given position. 
+
+Reimplemented in \hyperlink{classRS__Arc_a76b1aa831a29680073d19c3c30376ba2}{R\-S\-\_\-\-Arc}.
+
+\hypertarget{classRS__AtomicEntity_a33af8cca51e643cffbac55f3dbf9f670}{\index{R\-S\-\_\-\-Atomic\-Entity@{R\-S\-\_\-\-Atomic\-Entity}!trim\-Startpoint@{trim\-Startpoint}}
+\index{trim\-Startpoint@{trim\-Startpoint}!RS_AtomicEntity@{R\-S\-\_\-\-Atomic\-Entity}}
+\subsubsection[{trim\-Startpoint}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Atomic\-Entity\-::trim\-Startpoint (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__AtomicEntity_a33af8cca51e643cffbac55f3dbf9f670}
+Implementation must trim the startpoint of the entity to the given position. 
+
+Reimplemented in \hyperlink{classRS__Arc_a39e504c46aa4d170f1eaa7003a717d97}{R\-S\-\_\-\-Arc}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-atomicentity.\-h\end{DoxyCompactItemize}

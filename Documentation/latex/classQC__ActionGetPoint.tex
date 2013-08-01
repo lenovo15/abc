@@ -1,0 +1,127 @@
+\hypertarget{classQC__ActionGetPoint}{\section{Q\-C\-\_\-\-Action\-Get\-Point Class Reference}
+\label{classQC__ActionGetPoint}\index{Q\-C\-\_\-\-Action\-Get\-Point@{Q\-C\-\_\-\-Action\-Get\-Point}}
+}
+
+
+{\ttfamily \#include $<$qc\-\_\-actiongetpoint.\-h$>$}
+
+Inheritance diagram for Q\-C\-\_\-\-Action\-Get\-Point\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classQC__ActionGetPoint}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classQC__ActionGetPoint_a3ec2135f4b5ccef4f82af9400d2bbf5b}{{\bfseries Q\-C\-\_\-\-Action\-Get\-Point} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classQC__ActionGetPoint_a3ec2135f4b5ccef4f82af9400d2bbf5b}
+
+\item 
+virtual void \hyperlink{classQC__ActionGetPoint_afa25202f83e6408d6208ea6fc14fd2ad}{trigger} ()
+\item 
+virtual void \hyperlink{classQC__ActionGetPoint_aed17294a275014dfb70bfa13d8123ff7}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classQC__ActionGetPoint_aa1599d7b6a01bdddf8b960756994827d}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classQC__ActionGetPoint_a33a3e8be68bf82f9d24a37a1989b8ce1}{coordinate\-Event} (\hyperlink{classRS__CoordinateEvent}{R\-S\-\_\-\-Coordinate\-Event} $\ast$e)
+\item 
+virtual void \hyperlink{classQC__ActionGetPoint_a89bc086567fa3d2376df07b54f178682}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classQC__ActionGetPoint_a3429c8cbe9ff676f76fc23f55d9a0759}{update\-Mouse\-Cursor} ()
+\item 
+\hypertarget{classQC__ActionGetPoint_aac3bbb554e948ead62ec586c0fa7c3f7}{void {\bfseries get\-Point} (Q\-Point\-F $\ast$point)}\label{classQC__ActionGetPoint_aac3bbb554e948ead62ec586c0fa7c3f7}
+
+\item 
+\hypertarget{classQC__ActionGetPoint_a109a92fe9e7f521b45637a959a1004ad}{void {\bfseries set\-Basepoint} (Q\-Point\-F $\ast$basepoint)}\label{classQC__ActionGetPoint_a109a92fe9e7f521b45637a959a1004ad}
+
+\item 
+\hypertarget{classQC__ActionGetPoint_a7b143e4927c3a88d18bb2280a125cfef}{void {\bfseries set\-Mesage} (Q\-String msg)}\label{classQC__ActionGetPoint_a7b143e4927c3a88d18bb2280a125cfef}
+
+\item 
+\hypertarget{classQC__ActionGetPoint_aa39e63a9e190998095378620b815f8eb}{bool {\bfseries is\-Completed} ()}\label{classQC__ActionGetPoint_aa39e63a9e190998095378620b815f8eb}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to get a point from plugin.
+
+\begin{DoxyAuthor}{Author}
+Rallaz 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classQC__ActionGetPoint_a33a3e8be68bf82f9d24a37a1989b8ce1}{\index{Q\-C\-\_\-\-Action\-Get\-Point@{Q\-C\-\_\-\-Action\-Get\-Point}!coordinate\-Event@{coordinate\-Event}}
+\index{coordinate\-Event@{coordinate\-Event}!QC_ActionGetPoint@{Q\-C\-\_\-\-Action\-Get\-Point}}
+\subsubsection[{coordinate\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-C\-\_\-\-Action\-Get\-Point\-::coordinate\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Coordinate\-Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQC__ActionGetPoint_a33a3e8be68bf82f9d24a37a1989b8ce1}
+Coordinate event. Triggered usually from a command line. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a9013e88769edd39b2a74af5add2986c9}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classQC__ActionGetPoint_aed17294a275014dfb70bfa13d8123ff7}{\index{Q\-C\-\_\-\-Action\-Get\-Point@{Q\-C\-\_\-\-Action\-Get\-Point}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!QC_ActionGetPoint@{Q\-C\-\_\-\-Action\-Get\-Point}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-C\-\_\-\-Action\-Get\-Point\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQC__ActionGetPoint_aed17294a275014dfb70bfa13d8123ff7}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classQC__ActionGetPoint_aa1599d7b6a01bdddf8b960756994827d}{\index{Q\-C\-\_\-\-Action\-Get\-Point@{Q\-C\-\_\-\-Action\-Get\-Point}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!QC_ActionGetPoint@{Q\-C\-\_\-\-Action\-Get\-Point}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-C\-\_\-\-Action\-Get\-Point\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQC__ActionGetPoint_aa1599d7b6a01bdddf8b960756994827d}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classQC__ActionGetPoint_afa25202f83e6408d6208ea6fc14fd2ad}{\index{Q\-C\-\_\-\-Action\-Get\-Point@{Q\-C\-\_\-\-Action\-Get\-Point}!trigger@{trigger}}
+\index{trigger@{trigger}!QC_ActionGetPoint@{Q\-C\-\_\-\-Action\-Get\-Point}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-C\-\_\-\-Action\-Get\-Point\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQC__ActionGetPoint_afa25202f83e6408d6208ea6fc14fd2ad}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classQC__ActionGetPoint_a89bc086567fa3d2376df07b54f178682}{\index{Q\-C\-\_\-\-Action\-Get\-Point@{Q\-C\-\_\-\-Action\-Get\-Point}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!QC_ActionGetPoint@{Q\-C\-\_\-\-Action\-Get\-Point}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-C\-\_\-\-Action\-Get\-Point\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQC__ActionGetPoint_a89bc086567fa3d2376df07b54f178682}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classQC__ActionGetPoint_a3429c8cbe9ff676f76fc23f55d9a0759}{\index{Q\-C\-\_\-\-Action\-Get\-Point@{Q\-C\-\_\-\-Action\-Get\-Point}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!QC_ActionGetPoint@{Q\-C\-\_\-\-Action\-Get\-Point}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-C\-\_\-\-Action\-Get\-Point\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQC__ActionGetPoint_a3429c8cbe9ff676f76fc23f55d9a0759}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/plugins/intern/qc\-\_\-actiongetpoint.\-h\item 
+librecad/src/plugins/intern/qc\-\_\-actiongetpoint.\-cpp\end{DoxyCompactItemize}

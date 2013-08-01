@@ -1,0 +1,82 @@
+\hypertarget{classRS__CommandEvent}{\section{R\-S\-\_\-\-Command\-Event Class Reference}
+\label{classRS__CommandEvent}\index{R\-S\-\_\-\-Command\-Event@{R\-S\-\_\-\-Command\-Event}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-commandevent.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__CommandEvent_a309760c4dd4d7dbbf94d0f0ef2a1ca3c}{R\-S\-\_\-\-Command\-Event} (const Q\-String \&cmd)
+\item 
+Q\-String \hyperlink{classRS__CommandEvent_afa8ad6505cfbea279c98981f0f3c09f9}{get\-Command} ()
+\item 
+void \hyperlink{classRS__CommandEvent_a6d0a262a4aba7055d82a1bd391a1881c}{accept} ()
+\item 
+bool \hyperlink{classRS__CommandEvent_a0d7038b579a6751da25eb85a0931f283}{is\-Accepted} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__CommandEvent_ab6526df8c70589a61f4f3c52d073a887}{Q\-String {\bfseries cmd}}\label{classRS__CommandEvent_ab6526df8c70589a61f4f3c52d073a887}
+
+\item 
+\hypertarget{classRS__CommandEvent_a7d620d0cff3427b0f72a1c4b08959264}{bool {\bfseries accepted}}\label{classRS__CommandEvent_a7d620d0cff3427b0f72a1c4b08959264}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Command Events. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__CommandEvent_a309760c4dd4d7dbbf94d0f0ef2a1ca3c}{\index{R\-S\-\_\-\-Command\-Event@{R\-S\-\_\-\-Command\-Event}!R\-S\-\_\-\-Command\-Event@{R\-S\-\_\-\-Command\-Event}}
+\index{R\-S\-\_\-\-Command\-Event@{R\-S\-\_\-\-Command\-Event}!RS_CommandEvent@{R\-S\-\_\-\-Command\-Event}}
+\subsubsection[{R\-S\-\_\-\-Command\-Event}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Command\-Event\-::\-R\-S\-\_\-\-Command\-Event (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{cmd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__CommandEvent_a309760c4dd4d7dbbf94d0f0ef2a1ca3c}
+Creates a new command event that is not yet accepted.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & the command that was triggered. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__CommandEvent_a6d0a262a4aba7055d82a1bd391a1881c}{\index{R\-S\-\_\-\-Command\-Event@{R\-S\-\_\-\-Command\-Event}!accept@{accept}}
+\index{accept@{accept}!RS_CommandEvent@{R\-S\-\_\-\-Command\-Event}}
+\subsubsection[{accept}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Command\-Event\-::accept (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__CommandEvent_a6d0a262a4aba7055d82a1bd391a1881c}
+Sets the event state to accepted. \hypertarget{classRS__CommandEvent_afa8ad6505cfbea279c98981f0f3c09f9}{\index{R\-S\-\_\-\-Command\-Event@{R\-S\-\_\-\-Command\-Event}!get\-Command@{get\-Command}}
+\index{get\-Command@{get\-Command}!RS_CommandEvent@{R\-S\-\_\-\-Command\-Event}}
+\subsubsection[{get\-Command}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Command\-Event\-::get\-Command (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__CommandEvent_afa8ad6505cfbea279c98981f0f3c09f9}
+\begin{DoxyReturn}{Returns}
+the command that was triggered, usually by the user. 
+\end{DoxyReturn}
+\hypertarget{classRS__CommandEvent_a0d7038b579a6751da25eb85a0931f283}{\index{R\-S\-\_\-\-Command\-Event@{R\-S\-\_\-\-Command\-Event}!is\-Accepted@{is\-Accepted}}
+\index{is\-Accepted@{is\-Accepted}!RS_CommandEvent@{R\-S\-\_\-\-Command\-Event}}
+\subsubsection[{is\-Accepted}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Command\-Event\-::is\-Accepted (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__CommandEvent_a0d7038b579a6751da25eb85a0931f283}
+\begin{DoxyReturn}{Returns}
+Whether the event was already accepted or not. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/gui/rs\-\_\-commandevent.\-h\end{DoxyCompactItemize}

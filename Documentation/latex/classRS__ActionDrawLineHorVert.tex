@@ -1,0 +1,185 @@
+\hypertarget{classRS__ActionDrawLineHorVert}{\section{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert Class Reference}
+\label{classRS__ActionDrawLineHorVert}\index{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actiondrawlinehorvert.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classRS__ActionDrawLineHorVert}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionDrawLineHorVert_aaadc1eb5957aadbc2698b0c74e820d20}{Status} \{ \hyperlink{classRS__ActionDrawLineHorVert_aaadc1eb5957aadbc2698b0c74e820d20ac260a554819a32f419ec69728e5108e6}{Set\-Startpoint}, 
+\hyperlink{classRS__ActionDrawLineHorVert_aaadc1eb5957aadbc2698b0c74e820d20a6a0a6753b88d92a3d668917f10840bf2}{Set\-Endpoint}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionDrawLineHorVert_a39eb926c06e8657e3473c227494352a7}{{\bfseries R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionDrawLineHorVert_a39eb926c06e8657e3473c227494352a7}
+
+\item 
+\hypertarget{classRS__ActionDrawLineHorVert_afcb732c1834e622ddd667be0320425a7}{void {\bfseries reset} ()}\label{classRS__ActionDrawLineHorVert_afcb732c1834e622ddd667be0320425a7}
+
+\item 
+virtual void \hyperlink{classRS__ActionDrawLineHorVert_aa50fd84da48303b578bd3673aa33ddec}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionDrawLineHorVert_ac552544d3a1a2d0f5211d6ea9d4f1918}{trigger} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawLineHorVert_a6420c1283f68ad327640148affb8ec20}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDrawLineHorVert_a8c27aa8c80b5e6c57301dd9dd94453a4}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDrawLineHorVert_af8df0d9d18e1032ad0376eb53b92f562}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawLineHorVert_a53e237c713920e1afd29ea83d5bda4d9}{update\-Mouse\-Cursor} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawLineHorVert_a0473b50e59c51684846d2d814c537d60}{update\-Tool\-Bar} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionDrawLineHorVert_add5f2acb6465550fbc8e30a28ebd2580}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionDrawLineHorVert_add5f2acb6465550fbc8e30a28ebd2580}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__LineData}{R\-S\-\_\-\-Line\-Data} \hyperlink{classRS__ActionDrawLineHorVert_a538689d942230a9deefa6515810a2741}{data}
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__ActionDrawLineHorVert_addc14b0ec8af070cb8586360bb8decc9}{p1}
+\item 
+\hypertarget{classRS__ActionDrawLineHorVert_af3347397cc9344567281883c77d7d40d}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries p2}}\label{classRS__ActionDrawLineHorVert_af3347397cc9344567281883c77d7d40d}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to draw horizontal/vertical lines from a given startpoint to an endpoint closest to a second given point. O\-B\-S\-O\-L\-E\-T\-E
+
+\begin{DoxyAuthor}{Author}
+Ulf Lehnert 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionDrawLineHorVert_aaadc1eb5957aadbc2698b0c74e820d20}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}!Status@{Status}}
+\index{Status@{Status}!RS_ActionDrawLineHorVert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert\-::\-Status}}}\label{classRS__ActionDrawLineHorVert_aaadc1eb5957aadbc2698b0c74e820d20}
+Action States. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Set\-Startpoint@{Set\-Startpoint}!R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}}\index{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}!Set\-Startpoint@{Set\-Startpoint}}\item[{\em 
+\hypertarget{classRS__ActionDrawLineHorVert_aaadc1eb5957aadbc2698b0c74e820d20ac260a554819a32f419ec69728e5108e6}{Set\-Startpoint}\label{classRS__ActionDrawLineHorVert_aaadc1eb5957aadbc2698b0c74e820d20ac260a554819a32f419ec69728e5108e6}
+}]Setting the 1st point. \index{Set\-Endpoint@{Set\-Endpoint}!R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}}\index{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}!Set\-Endpoint@{Set\-Endpoint}}\item[{\em 
+\hypertarget{classRS__ActionDrawLineHorVert_aaadc1eb5957aadbc2698b0c74e820d20a6a0a6753b88d92a3d668917f10840bf2}{Set\-Endpoint}\label{classRS__ActionDrawLineHorVert_aaadc1eb5957aadbc2698b0c74e820d20a6a0a6753b88d92a3d668917f10840bf2}
+}]Setting the 2nd point. \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionDrawLineHorVert_aa50fd84da48303b578bd3673aa33ddec}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}!init@{init}}
+\index{init@{init}!RS_ActionDrawLineHorVert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawLineHorVert_aa50fd84da48303b578bd3673aa33ddec}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae5113b2aef5a10acd192786b99580e4a}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawLineHorVert_a6420c1283f68ad327640148affb8ec20}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_ActionDrawLineHorVert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawLineHorVert_a6420c1283f68ad327640148affb8ec20}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawLineHorVert_a8c27aa8c80b5e6c57301dd9dd94453a4}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionDrawLineHorVert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawLineHorVert_a8c27aa8c80b5e6c57301dd9dd94453a4}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawLineHorVert_ac552544d3a1a2d0f5211d6ea9d4f1918}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionDrawLineHorVert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawLineHorVert_ac552544d3a1a2d0f5211d6ea9d4f1918}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawLineHorVert_af8df0d9d18e1032ad0376eb53b92f562}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionDrawLineHorVert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawLineHorVert_af8df0d9d18e1032ad0376eb53b92f562}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawLineHorVert_a53e237c713920e1afd29ea83d5bda4d9}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionDrawLineHorVert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawLineHorVert_a53e237c713920e1afd29ea83d5bda4d9}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawLineHorVert_a0473b50e59c51684846d2d814c537d60}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}!update\-Tool\-Bar@{update\-Tool\-Bar}}
+\index{update\-Tool\-Bar@{update\-Tool\-Bar}!RS_ActionDrawLineHorVert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}}
+\subsubsection[{update\-Tool\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert\-::update\-Tool\-Bar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawLineHorVert_a0473b50e59c51684846d2d814c537d60}
+Should be overwritten to set the toolbar for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a25ec66468e5b09483afccd2358877361}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classRS__ActionDrawLineHorVert_a538689d942230a9deefa6515810a2741}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}!data@{data}}
+\index{data@{data}!RS_ActionDrawLineHorVert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Line\-Data} R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert\-::data\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDrawLineHorVert_a538689d942230a9deefa6515810a2741}
+Line data. \hypertarget{classRS__ActionDrawLineHorVert_addc14b0ec8af070cb8586360bb8decc9}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}!p1@{p1}}
+\index{p1@{p1}!RS_ActionDrawLineHorVert@{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}}
+\subsubsection[{p1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert\-::p1\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDrawLineHorVert_addc14b0ec8af070cb8586360bb8decc9}
+2 points 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actiondrawlinehorvert.\-h\item 
+librecad/src/actions/rs\-\_\-actiondrawlinehorvert.\-cpp\end{DoxyCompactItemize}

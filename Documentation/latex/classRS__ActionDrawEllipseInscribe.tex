@@ -1,0 +1,237 @@
+\hypertarget{classRS__ActionDrawEllipseInscribe}{\section{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe Class Reference}
+\label{classRS__ActionDrawEllipseInscribe}\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actiondrawellipseinscribe.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classRS__ActionDrawEllipseInscribe}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionDrawEllipseInscribe_a471a669b31ac8ffc7482c6c9990a304a}{Status} \{ {\bfseries Set\-Line1}, 
+{\bfseries Set\-Line2}, 
+{\bfseries Set\-Line3}, 
+{\bfseries Set\-Line4}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__ActionDrawEllipseInscribe_a9febdf31ec8bb9ea05c69f30a6b54559}{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)
+\item 
+\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__ActionDrawEllipseInscribe_a850ddc89b0f729fbe21b5614a1781ead}{rtti} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipseInscribe_a6113e039be9efceae6b81036611fa04b}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipseInscribe_a70ba2860b8adaa9f97ec86a634e929e6}{trigger} ()
+\item 
+\hypertarget{classRS__ActionDrawEllipseInscribe_a6e89f8c73894891da140fcf02ee7fc71}{virtual bool {\bfseries prepare\-Preview} ()}\label{classRS__ActionDrawEllipseInscribe_a6e89f8c73894891da140fcf02ee7fc71}
+
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipseInscribe_a5867997cf5173e2a414926e0772dd1cb}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipseInscribe_a1ee77570195c4ce2ea0bc09023b50a6d}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual Q\-String\-List \hyperlink{classRS__ActionDrawEllipseInscribe_aa300bce6065f077c0e40653bb32920ba}{get\-Available\-Commands} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipseInscribe_a082db97ba5e66a469f6bffe8b1b024d3}{finish} (bool update\-T\-B=true)
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipseInscribe_a955f9952e5e5c2a8519e63f3a45069f9}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipseInscribe_a848d9dbe16b5f17444299702b4aa3806}{update\-Mouse\-Cursor} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionDrawEllipseInscribe_a34cd29bf904e55bef4e3232f543e5b8d}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} type, Q\-Object $\ast$)}\label{classRS__ActionDrawEllipseInscribe_a34cd29bf904e55bef4e3232f543e5b8d}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionDrawEllipseInscribe_ab94e9da8e3b917f3827365be1c4d0007}{Q\-Vector$<$ \hyperlink{classRS__Line}{R\-S\-\_\-\-Line} $\ast$ $>$ {\bfseries lines}}\label{classRS__ActionDrawEllipseInscribe_ab94e9da8e3b917f3827365be1c4d0007}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Draw ellipse by foci and a point on ellipse
+
+\begin{DoxyAuthor}{Author}
+Dongxu Li 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionDrawEllipseInscribe_a471a669b31ac8ffc7482c6c9990a304a}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}!Status@{Status}}
+\index{Status@{Status}!RS_ActionDrawEllipseInscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe\-::\-Status}}}\label{classRS__ActionDrawEllipseInscribe_a471a669b31ac8ffc7482c6c9990a304a}
+Action States. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__ActionDrawEllipseInscribe_a9febdf31ec8bb9ea05c69f30a6b54559}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}!R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}}
+\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}!RS_ActionDrawEllipseInscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}}
+\subsubsection[{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe\-::\-R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} \&}]{graphic\-View}
+\end{DoxyParamCaption}
+)}}\label{classRS__ActionDrawEllipseInscribe_a9febdf31ec8bb9ea05c69f30a6b54559}
+Constructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionDrawEllipseInscribe_a082db97ba5e66a469f6bffe8b1b024d3}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}!finish@{finish}}
+\index{finish@{finish}!RS_ActionDrawEllipseInscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}}
+\subsubsection[{finish}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe\-::finish (
+\begin{DoxyParamCaption}
+\item[{bool}]{update\-T\-B = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseInscribe_a082db97ba5e66a469f6bffe8b1b024d3}
+Finishes this action. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_af382ba093466b3acd8213e684529edc6}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseInscribe_aa300bce6065f077c0e40653bb32920ba}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}!get\-Available\-Commands@{get\-Available\-Commands}}
+\index{get\-Available\-Commands@{get\-Available\-Commands}!RS_ActionDrawEllipseInscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}}
+\subsubsection[{get\-Available\-Commands}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String\-List R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe\-::get\-Available\-Commands (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseInscribe_aa300bce6065f077c0e40653bb32920ba}
+Must be implemented to return the currently available commands for the command line. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acafdac8d18d3f053eda872581fb3e27d}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseInscribe_a6113e039be9efceae6b81036611fa04b}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}!init@{init}}
+\index{init@{init}!RS_ActionDrawEllipseInscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseInscribe_a6113e039be9efceae6b81036611fa04b}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae5113b2aef5a10acd192786b99580e4a}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseInscribe_a5867997cf5173e2a414926e0772dd1cb}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_ActionDrawEllipseInscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseInscribe_a5867997cf5173e2a414926e0772dd1cb}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. Insert
+
+$<$ Text 15
+
+$<$ Text 15
+
+$<$ Aligned Dimension
+
+$<$ Linear Dimension
+
+$<$ Radial Dimension
+
+$<$ Diametric Dimension
+
+$<$ Angular Dimension
+
+$<$ Leader Dimension 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseInscribe_a1ee77570195c4ce2ea0bc09023b50a6d}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionDrawEllipseInscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseInscribe_a1ee77570195c4ce2ea0bc09023b50a6d}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. Insert
+
+$<$ Text 15
+
+$<$ Text 15
+
+$<$ Aligned Dimension
+
+$<$ Linear Dimension
+
+$<$ Radial Dimension
+
+$<$ Diametric Dimension
+
+$<$ Angular Dimension
+
+$<$ Leader Dimension 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseInscribe_a850ddc89b0f729fbe21b5614a1781ead}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_ActionDrawEllipseInscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseInscribe_a850ddc89b0f729fbe21b5614a1781ead}
+Must be implemented to return the I\-D of this action.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]no default implementation \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af877a66b5b4a7053f2b1f0519c57a6f5}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseInscribe_a70ba2860b8adaa9f97ec86a634e929e6}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionDrawEllipseInscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseInscribe_a70ba2860b8adaa9f97ec86a634e929e6}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseInscribe_a955f9952e5e5c2a8519e63f3a45069f9}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionDrawEllipseInscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseInscribe_a955f9952e5e5c2a8519e63f3a45069f9}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseInscribe_a848d9dbe16b5f17444299702b4aa3806}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionDrawEllipseInscribe@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseInscribe_a848d9dbe16b5f17444299702b4aa3806}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actiondrawellipseinscribe.\-h\item 
+librecad/src/actions/rs\-\_\-actiondrawellipseinscribe.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,147 @@
+\hypertarget{classRS__Debug}{\section{R\-S\-\_\-\-Debug Class Reference}
+\label{classRS__Debug}\index{R\-S\-\_\-\-Debug@{R\-S\-\_\-\-Debug}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-debug.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__Debug_af13c679a07ad1548ce7624cb9a38d347}{R\-S\-\_\-\-Debug\-Level} \{ \\*
+{\bfseries D\-\_\-\-N\-O\-T\-H\-I\-N\-G}, 
+{\bfseries D\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L}, 
+{\bfseries D\-\_\-\-E\-R\-R\-O\-R}, 
+{\bfseries D\-\_\-\-W\-A\-R\-N\-I\-N\-G}, 
+\\*
+{\bfseries D\-\_\-\-N\-O\-T\-I\-C\-E}, 
+{\bfseries D\-\_\-\-I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N\-A\-L}, 
+{\bfseries D\-\_\-\-D\-E\-B\-U\-G\-G\-I\-N\-G}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classRS__Debug_a8d5d605324b74d682c9b16762602e298}{set\-Level} (\hyperlink{classRS__Debug_af13c679a07ad1548ce7624cb9a38d347}{R\-S\-\_\-\-Debug\-Level} level)
+\item 
+\hyperlink{classRS__Debug_af13c679a07ad1548ce7624cb9a38d347}{R\-S\-\_\-\-Debug\-Level} \hyperlink{classRS__Debug_ad1977719a820d5a391ffde470d44633a}{get\-Level} ()
+\item 
+void \hyperlink{classRS__Debug_a9d6aedf221a9c547e9014474c2da0642}{print} (\hyperlink{classRS__Debug_af13c679a07ad1548ce7624cb9a38d347}{R\-S\-\_\-\-Debug\-Level} level, const char $\ast$format...)
+\item 
+void \hyperlink{classRS__Debug_ab054d6d7d8788673617d271aeaf188e4}{print} (const char $\ast$format...)
+\item 
+void \hyperlink{classRS__Debug_a6cf56345a447281a41d27be4d1ae634c}{print\-Unicode} (const Q\-String \&text)
+\item 
+void \hyperlink{classRS__Debug_adfcd4dad164fdfa0c9c856d0d8750b51}{timestamp} ()
+\item 
+\hypertarget{classRS__Debug_a0fa3d650a561123e9df648861286c9cb}{void {\bfseries set\-Stream} (F\-I\-L\-E $\ast$s)}\label{classRS__Debug_a0fa3d650a561123e9df648861286c9cb}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classRS__Debug}{R\-S\-\_\-\-Debug} $\ast$ \hyperlink{classRS__Debug_a1e1b40ef1d1ea5debef90d3a4082a1cd}{instance} ()
+\item 
+static void \hyperlink{classRS__Debug_a2681400f1d6af6f854aa46d8f83bc48a}{delete\-Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Debugging facilities.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__Debug_af13c679a07ad1548ce7624cb9a38d347}{\index{R\-S\-\_\-\-Debug@{R\-S\-\_\-\-Debug}!R\-S\-\_\-\-Debug\-Level@{R\-S\-\_\-\-Debug\-Level}}
+\index{R\-S\-\_\-\-Debug\-Level@{R\-S\-\_\-\-Debug\-Level}!RS_Debug@{R\-S\-\_\-\-Debug}}
+\subsubsection[{R\-S\-\_\-\-Debug\-Level}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Debug\-::\-R\-S\-\_\-\-Debug\-Level}}}\label{classRS__Debug_af13c679a07ad1548ce7624cb9a38d347}
+Enum for debug levels. Only messages of the current or a higher level are printed. 
+\begin{DoxyItemize}
+\item D\-\_\-\-N\-O\-T\-H\-I\-N\-G\-: nothing 
+\item D\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-: critical messages 
+\item D\-\_\-\-E\-R\-R\-O\-R\-: errors 
+\item D\-\_\-\-W\-A\-R\-N\-I\-N\-G\-: warnings 
+\item D\-\_\-\-N\-O\-T\-I\-C\-E\-: notes 
+\item D\-\_\-\-I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N\-A\-L\-: infos 
+\item D\-\_\-\-D\-E\-B\-U\-G\-G\-I\-N\-G\-: very verbose 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Debug_a2681400f1d6af6f854aa46d8f83bc48a}{\index{R\-S\-\_\-\-Debug@{R\-S\-\_\-\-Debug}!delete\-Instance@{delete\-Instance}}
+\index{delete\-Instance@{delete\-Instance}!RS_Debug@{R\-S\-\_\-\-Debug}}
+\subsubsection[{delete\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Debug\-::delete\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Debug_a2681400f1d6af6f854aa46d8f83bc48a}
+Deletes the one and only \hyperlink{classRS__Debug}{R\-S\-\_\-\-Debug} instance. \hypertarget{classRS__Debug_ad1977719a820d5a391ffde470d44633a}{\index{R\-S\-\_\-\-Debug@{R\-S\-\_\-\-Debug}!get\-Level@{get\-Level}}
+\index{get\-Level@{get\-Level}!RS_Debug@{R\-S\-\_\-\-Debug}}
+\subsubsection[{get\-Level}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Debug\-::\-R\-S\-\_\-\-Debug\-Level} R\-S\-\_\-\-Debug\-::get\-Level (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Debug_ad1977719a820d5a391ffde470d44633a}
+Gets the current debugging level. \hypertarget{classRS__Debug_a1e1b40ef1d1ea5debef90d3a4082a1cd}{\index{R\-S\-\_\-\-Debug@{R\-S\-\_\-\-Debug}!instance@{instance}}
+\index{instance@{instance}!RS_Debug@{R\-S\-\_\-\-Debug}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Debug} $\ast$ R\-S\-\_\-\-Debug\-::instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Debug_a1e1b40ef1d1ea5debef90d3a4082a1cd}
+Gets the one and only \hyperlink{classRS__Debug}{R\-S\-\_\-\-Debug} instance (creates a new one on first call only)
+
+\begin{DoxyReturn}{Returns}
+Pointer to the single instance of this singleton class 
+\end{DoxyReturn}
+\hypertarget{classRS__Debug_a9d6aedf221a9c547e9014474c2da0642}{\index{R\-S\-\_\-\-Debug@{R\-S\-\_\-\-Debug}!print@{print}}
+\index{print@{print}!RS_Debug@{R\-S\-\_\-\-Debug}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Debug\-::print (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Debug\-Level}}]{level, }
+\item[{const char $\ast$}]{format...}
+\end{DoxyParamCaption}
+)}}\label{classRS__Debug_a9d6aedf221a9c547e9014474c2da0642}
+Prints the given message to stdout if the current debug level is lower then the given level
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Debug level. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Debug_ab054d6d7d8788673617d271aeaf188e4}{\index{R\-S\-\_\-\-Debug@{R\-S\-\_\-\-Debug}!print@{print}}
+\index{print@{print}!RS_Debug@{R\-S\-\_\-\-Debug}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Debug\-::print (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{format...}
+\end{DoxyParamCaption}
+)}}\label{classRS__Debug_ab054d6d7d8788673617d271aeaf188e4}
+Prints the given message to stdout. \hypertarget{classRS__Debug_a6cf56345a447281a41d27be4d1ae634c}{\index{R\-S\-\_\-\-Debug@{R\-S\-\_\-\-Debug}!print\-Unicode@{print\-Unicode}}
+\index{print\-Unicode@{print\-Unicode}!RS_Debug@{R\-S\-\_\-\-Debug}}
+\subsubsection[{print\-Unicode}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Debug\-::print\-Unicode (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{text}
+\end{DoxyParamCaption}
+)}}\label{classRS__Debug_a6cf56345a447281a41d27be4d1ae634c}
+Prints the unicode for every character in the given string. \hypertarget{classRS__Debug_a8d5d605324b74d682c9b16762602e298}{\index{R\-S\-\_\-\-Debug@{R\-S\-\_\-\-Debug}!set\-Level@{set\-Level}}
+\index{set\-Level@{set\-Level}!RS_Debug@{R\-S\-\_\-\-Debug}}
+\subsubsection[{set\-Level}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Debug\-::set\-Level (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Debug\-Level}}]{level}
+\end{DoxyParamCaption}
+)}}\label{classRS__Debug_a8d5d605324b74d682c9b16762602e298}
+Sets the debugging level. \hypertarget{classRS__Debug_adfcd4dad164fdfa0c9c856d0d8750b51}{\index{R\-S\-\_\-\-Debug@{R\-S\-\_\-\-Debug}!timestamp@{timestamp}}
+\index{timestamp@{timestamp}!RS_Debug@{R\-S\-\_\-\-Debug}}
+\subsubsection[{timestamp}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Debug\-::timestamp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Debug_adfcd4dad164fdfa0c9c856d0d8750b51}
+Prints a time stamp in the format yyyy\-M\-Mdd\-\_\-hhmmss. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/debug/rs\-\_\-debug.\-h\item 
+librecad/src/lib/debug/rs\-\_\-debug.\-cpp\end{DoxyCompactItemize}

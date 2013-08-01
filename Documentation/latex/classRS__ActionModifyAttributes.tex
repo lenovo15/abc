@@ -1,0 +1,138 @@
+\hypertarget{classRS__ActionModifyAttributes}{\section{R\-S\-\_\-\-Action\-Modify\-Attributes Class Reference}
+\label{classRS__ActionModifyAttributes}\index{R\-S\-\_\-\-Action\-Modify\-Attributes@{R\-S\-\_\-\-Action\-Modify\-Attributes}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionmodifyattributes.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Modify\-Attributes\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__ActionModifyAttributes}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionModifyAttributes_a43906273bc466b948a3026a84bcddce6}{Status} \{ \hyperlink{classRS__ActionModifyAttributes_a43906273bc466b948a3026a84bcddce6a143d441c8e4570733842593b0fe8d0b8}{Acknowledge}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionModifyAttributes_ae01e3706ea77296c3a19bce56514e522}{{\bfseries R\-S\-\_\-\-Action\-Modify\-Attributes} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionModifyAttributes_ae01e3706ea77296c3a19bce56514e522}
+
+\item 
+\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__ActionModifyAttributes_a4617be4ad775927001036ac659ca6d6a}{rtti} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyAttributes_af9dfbcc44a5abf745e97cb56413363cd}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionModifyAttributes_a88c6aaf17fda9941a59b4de0b68d38b1}{trigger} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyAttributes_abff195984a8ef529a788d3621d75c90b}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyAttributes_afc2e0ce5b03f81c5b8400303c6540419}{update\-Mouse\-Cursor} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionModifyAttributes_a5fee67401e61687174c9e311048c0af3}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionModifyAttributes_a5fee67401e61687174c9e311048c0af3}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to change the attributes of entities.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionModifyAttributes_a43906273bc466b948a3026a84bcddce6}{\index{R\-S\-\_\-\-Action\-Modify\-Attributes@{R\-S\-\_\-\-Action\-Modify\-Attributes}!Status@{Status}}
+\index{Status@{Status}!RS_ActionModifyAttributes@{R\-S\-\_\-\-Action\-Modify\-Attributes}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Modify\-Attributes\-::\-Status}}}\label{classRS__ActionModifyAttributes_a43906273bc466b948a3026a84bcddce6}
+Action States. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Acknowledge@{Acknowledge}!R\-S\-\_\-\-Action\-Modify\-Attributes@{R\-S\-\_\-\-Action\-Modify\-Attributes}}\index{R\-S\-\_\-\-Action\-Modify\-Attributes@{R\-S\-\_\-\-Action\-Modify\-Attributes}!Acknowledge@{Acknowledge}}\item[{\em 
+\hypertarget{classRS__ActionModifyAttributes_a43906273bc466b948a3026a84bcddce6a143d441c8e4570733842593b0fe8d0b8}{Acknowledge}\label{classRS__ActionModifyAttributes_a43906273bc466b948a3026a84bcddce6a143d441c8e4570733842593b0fe8d0b8}
+}]Acknowledge or cancel. \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionModifyAttributes_af9dfbcc44a5abf745e97cb56413363cd}{\index{R\-S\-\_\-\-Action\-Modify\-Attributes@{R\-S\-\_\-\-Action\-Modify\-Attributes}!init@{init}}
+\index{init@{init}!RS_ActionModifyAttributes@{R\-S\-\_\-\-Action\-Modify\-Attributes}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Attributes\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyAttributes_af9dfbcc44a5abf745e97cb56413363cd}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a05b7dca5deeb371eb51edcb73facd45f}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyAttributes_a4617be4ad775927001036ac659ca6d6a}{\index{R\-S\-\_\-\-Action\-Modify\-Attributes@{R\-S\-\_\-\-Action\-Modify\-Attributes}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_ActionModifyAttributes@{R\-S\-\_\-\-Action\-Modify\-Attributes}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Action\-Modify\-Attributes\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__ActionModifyAttributes_a4617be4ad775927001036ac659ca6d6a}
+Must be implemented to return the I\-D of this action.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]no default implementation \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af877a66b5b4a7053f2b1f0519c57a6f5}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyAttributes_a88c6aaf17fda9941a59b4de0b68d38b1}{\index{R\-S\-\_\-\-Action\-Modify\-Attributes@{R\-S\-\_\-\-Action\-Modify\-Attributes}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionModifyAttributes@{R\-S\-\_\-\-Action\-Modify\-Attributes}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Attributes\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyAttributes_a88c6aaf17fda9941a59b4de0b68d38b1}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa2ba8f6f697f735eace4ec5449c0b8cd}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyAttributes_abff195984a8ef529a788d3621d75c90b}{\index{R\-S\-\_\-\-Action\-Modify\-Attributes@{R\-S\-\_\-\-Action\-Modify\-Attributes}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionModifyAttributes@{R\-S\-\_\-\-Action\-Modify\-Attributes}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Attributes\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyAttributes_abff195984a8ef529a788d3621d75c90b}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyAttributes_afc2e0ce5b03f81c5b8400303c6540419}{\index{R\-S\-\_\-\-Action\-Modify\-Attributes@{R\-S\-\_\-\-Action\-Modify\-Attributes}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionModifyAttributes@{R\-S\-\_\-\-Action\-Modify\-Attributes}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Attributes\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyAttributes_afc2e0ce5b03f81c5b8400303c6540419}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionmodifyattributes.\-h\item 
+librecad/src/actions/rs\-\_\-actionmodifyattributes.\-cpp\end{DoxyCompactItemize}

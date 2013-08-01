@@ -1,0 +1,586 @@
+\hypertarget{classDRW__Interface}{\section{D\-R\-W\-\_\-\-Interface Class Reference}
+\label{classDRW__Interface}\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}}
+}
+
+
+{\ttfamily \#include $<$drw\-\_\-interface.\-h$>$}
+
+Inheritance diagram for D\-R\-W\-\_\-\-Interface\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDRW__Interface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classDRW__Interface_a36ca28f76ddb6df58c683f29fc09e5db}{add\-Header} (const \hyperlink{classDRW__Header}{D\-R\-W\-\_\-\-Header} $\ast$data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_af0b179fdf1f4717b4ecf7570396ab17c}{add\-L\-Type} (const \hyperlink{classDRW__LType}{D\-R\-W\-\_\-\-L\-Type} \&data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a14d5af0530b9d15c70e06695571f15a7}{add\-Layer} (const \hyperlink{classDRW__Layer}{D\-R\-W\-\_\-\-Layer} \&data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_ad9237d153a134b8e41a4e53b8e86dde5}{add\-Dim\-Style} (const \hyperlink{classDRW__Dimstyle}{D\-R\-W\-\_\-\-Dimstyle} \&data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a62940fa7414131514a4eafcc7bb53af7}{add\-Vport} (const \hyperlink{classDRW__Vport}{D\-R\-W\-\_\-\-Vport} \&data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a22da4ebff8bc7c1a426a27803a31b677}{add\-Text\-Style} (const \hyperlink{classDRW__Textstyle}{D\-R\-W\-\_\-\-Textstyle} \&data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_ac4e0727bb5223a4974052e20363b6f42}{add\-Block} (const \hyperlink{classDRW__Block}{D\-R\-W\-\_\-\-Block} \&data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a31ea3946aa9e9042e7dc6d1cb37cf60b}{set\-Block} (const int handle)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_aec16f6683828dbdb703b4b8db640d7a0}{end\-Block} ()=0
+\item 
+virtual void \hyperlink{classDRW__Interface_af1b9e163c87a3f84a5c06dbc2a6bd18b}{add\-Point} (const \hyperlink{classDRW__Point}{D\-R\-W\-\_\-\-Point} \&data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a6422d075d59ed28408394bc5d68033e1}{add\-Line} (const \hyperlink{classDRW__Line}{D\-R\-W\-\_\-\-Line} \&data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a4718019d01569f13a50a29fcb9ba583f}{add\-Ray} (const \hyperlink{classDRW__Ray}{D\-R\-W\-\_\-\-Ray} \&data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a5cb4ece224c8006de498eb60e354ee9a}{add\-Xline} (const \hyperlink{classDRW__Xline}{D\-R\-W\-\_\-\-Xline} \&data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a7abe9b6b69b8239fbad804eb68b0463e}{add\-Arc} (const \hyperlink{classDRW__Arc}{D\-R\-W\-\_\-\-Arc} \&data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a921046eb1a06ad4753b9aaae9518af73}{add\-Circle} (const \hyperlink{classDRW__Circle}{D\-R\-W\-\_\-\-Circle} \&data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a8a4d9d0ded98a7fa9ba5dd6d0005a491}{add\-Ellipse} (const \hyperlink{classDRW__Ellipse}{D\-R\-W\-\_\-\-Ellipse} \&data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a14ec6d00f6f34857b91543497d9d4e09}{add\-L\-W\-Polyline} (const \hyperlink{classDRW__LWPolyline}{D\-R\-W\-\_\-\-L\-W\-Polyline} \&data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a9e2c6ab12b71e73ab443765a5a42d171}{add\-Polyline} (const \hyperlink{classDRW__Polyline}{D\-R\-W\-\_\-\-Polyline} \&data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a72d1cd0692fb061ea34ea246c54156ad}{add\-Spline} (const \hyperlink{classDRW__Spline}{D\-R\-W\-\_\-\-Spline} $\ast$data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a6e19d01637ff9336bcd513511ba1177c}{add\-Knot} (const \hyperlink{classDRW__Entity}{D\-R\-W\-\_\-\-Entity} \&data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a2aae96a5a0f5305d2e1f3254c871d2fc}{add\-Insert} (const \hyperlink{classDRW__Insert}{D\-R\-W\-\_\-\-Insert} \&data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a3e09cf10863708e1ca74b2f723dc98a2}{add\-Trace} (const \hyperlink{classDRW__Trace}{D\-R\-W\-\_\-\-Trace} \&data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a1664ed6d78dda11cf323776f594413fb}{add3d\-Face} (const \hyperlink{classDRW__3Dface}{D\-R\-W\-\_\-3\-Dface} \&data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a1d50d3aae16fb70d997b82f1bf2cbb4f}{add\-Solid} (const \hyperlink{classDRW__Solid}{D\-R\-W\-\_\-\-Solid} \&data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a2a9e71a0794a3f8f5191bd9bc9e51bad}{add\-M\-Text} (const \hyperlink{classDRW__MText}{D\-R\-W\-\_\-\-M\-Text} \&data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a13be257d7e54629f3173fad53448c0a7}{add\-Text} (const \hyperlink{classDRW__Text}{D\-R\-W\-\_\-\-Text} \&data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a6f351237a9d4f10c3f9651c68966a3fb}{add\-Dim\-Align} (const \hyperlink{classDRW__DimAligned}{D\-R\-W\-\_\-\-Dim\-Aligned} $\ast$data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a81d63111186b65e662fd0fecfa09da2e}{add\-Dim\-Linear} (const \hyperlink{classDRW__DimLinear}{D\-R\-W\-\_\-\-Dim\-Linear} $\ast$data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a50307476a7aa8065ee5462cd7fdce3c6}{add\-Dim\-Radial} (const \hyperlink{classDRW__DimRadial}{D\-R\-W\-\_\-\-Dim\-Radial} $\ast$data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a63948977f0a34dd29697f0db7e24a6ed}{add\-Dim\-Diametric} (const \hyperlink{classDRW__DimDiametric}{D\-R\-W\-\_\-\-Dim\-Diametric} $\ast$data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_af53ce2878a9327464897aa1cb8e7a333}{add\-Dim\-Angular} (const \hyperlink{classDRW__DimAngular}{D\-R\-W\-\_\-\-Dim\-Angular} $\ast$data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_abdeea17ef54bd623e569f492943f1e9d}{add\-Dim\-Angular3\-P} (const \hyperlink{classDRW__DimAngular3p}{D\-R\-W\-\_\-\-Dim\-Angular3p} $\ast$data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_ab3e89843322248d2a0e87dedb9cb9aec}{add\-Dim\-Ordinate} (const \hyperlink{classDRW__DimOrdinate}{D\-R\-W\-\_\-\-Dim\-Ordinate} $\ast$data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a10b2f081689b5a89e3cced928e60369a}{add\-Leader} (const \hyperlink{classDRW__Leader}{D\-R\-W\-\_\-\-Leader} $\ast$data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a486e160f61c3e86e53bb8b801b9bbbab}{add\-Hatch} (const \hyperlink{classDRW__Hatch}{D\-R\-W\-\_\-\-Hatch} $\ast$data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a6127b0330b671d2cb1be73478ff24945}{add\-Viewport} (const \hyperlink{classDRW__Viewport}{D\-R\-W\-\_\-\-Viewport} \&data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a90f17ffeb31d7b41c0ff23eb396c60e2}{add\-Image} (const \hyperlink{classDRW__Image}{D\-R\-W\-\_\-\-Image} $\ast$data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a8f7969f1639e6544e82446bc21e71446}{link\-Image} (const \hyperlink{classDRW__ImageDef}{D\-R\-W\-\_\-\-Image\-Def} $\ast$data)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_a4b9bb278a16a1ceaa53ebe05dab93b42}{add\-Comment} (const char $\ast$comment)=0
+\item 
+virtual void \hyperlink{classDRW__Interface_ad3f7609afebe0aee604395f580262cf7}{write\-Header} (\hyperlink{classDRW__Header}{D\-R\-W\-\_\-\-Header} \&data)=0
+\item 
+\hypertarget{classDRW__Interface_ab033679b8fb632b12299c6b28e7d59c0}{virtual void {\bfseries write\-Blocks} ()=0}\label{classDRW__Interface_ab033679b8fb632b12299c6b28e7d59c0}
+
+\item 
+\hypertarget{classDRW__Interface_a935e2ac6db3d901741a9950e8d019c3d}{virtual void {\bfseries write\-Block\-Records} ()=0}\label{classDRW__Interface_a935e2ac6db3d901741a9950e8d019c3d}
+
+\item 
+\hypertarget{classDRW__Interface_a251679e5078dd1148b30db47afb5562b}{virtual void {\bfseries write\-Entities} ()=0}\label{classDRW__Interface_a251679e5078dd1148b30db47afb5562b}
+
+\item 
+\hypertarget{classDRW__Interface_a5861b516697eec90dff9a9691fd8260b}{virtual void {\bfseries write\-L\-Types} ()=0}\label{classDRW__Interface_a5861b516697eec90dff9a9691fd8260b}
+
+\item 
+\hypertarget{classDRW__Interface_ae9365ca59260b160fe9a3450fae5a953}{virtual void {\bfseries write\-Layers} ()=0}\label{classDRW__Interface_ae9365ca59260b160fe9a3450fae5a953}
+
+\item 
+\hypertarget{classDRW__Interface_a883e96a714611a55b07eff817066660a}{virtual void {\bfseries write\-Textstyles} ()=0}\label{classDRW__Interface_a883e96a714611a55b07eff817066660a}
+
+\item 
+\hypertarget{classDRW__Interface_a52db31c4037c43b42e3d8813853a62f4}{virtual void {\bfseries write\-Vports} ()=0}\label{classDRW__Interface_a52db31c4037c43b42e3d8813853a62f4}
+
+\item 
+\hypertarget{classDRW__Interface_a4b191d404ca1b98173856727d62113ce}{virtual void {\bfseries write\-Dimstyles} ()=0}\label{classDRW__Interface_a4b191d404ca1b98173856727d62113ce}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class (interface) for comunicate \hyperlink{classdxfReader}{dxf\-Reader} with the application. Inherit your class which takes care of the entities in the processed D\-X\-F file from this interface.
+
+\begin{DoxyAuthor}{Author}
+Rallaz 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDRW__Interface_a1664ed6d78dda11cf323776f594413fb}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add3d\-Face@{add3d\-Face}}
+\index{add3d\-Face@{add3d\-Face}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add3d\-Face}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add3d\-Face (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-3\-Dface} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a1664ed6d78dda11cf323776f594413fb}
+Called for every 3dface start 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_af80e98bbf60f7824e063a87ff4f1e65d}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a7abe9b6b69b8239fbad804eb68b0463e}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Arc@{add\-Arc}}
+\index{add\-Arc@{add\-Arc}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Arc}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Arc (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Arc} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a7abe9b6b69b8239fbad804eb68b0463e}
+Called for every arc 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_acf5c7763ee60a92025968af9d97dd9cf}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_ac4e0727bb5223a4974052e20363b6f42}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Block@{add\-Block}}
+\index{add\-Block@{add\-Block}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Block}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Block (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Block} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_ac4e0727bb5223a4974052e20363b6f42}
+Called for every block. Note\-: all entities added after this command go into this block until \hyperlink{classDRW__Interface_aec16f6683828dbdb703b4b8db640d7a0}{end\-Block()} is called.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classDRW__Interface_aec16f6683828dbdb703b4b8db640d7a0}{end\-Block()} 
+\end{DoxySeeAlso}
+
+
+Implemented in \hyperlink{classRS__FilterDXFRW_ac6d96347537b15a9b9956a0835f106ea}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a921046eb1a06ad4753b9aaae9518af73}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Circle@{add\-Circle}}
+\index{add\-Circle@{add\-Circle}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Circle}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Circle (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Circle} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a921046eb1a06ad4753b9aaae9518af73}
+Called for every circle 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_ac2f5b87c5a83e41262565dcbd85315ea}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a4b9bb278a16a1ceaa53ebe05dab93b42}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Comment@{add\-Comment}}
+\index{add\-Comment@{add\-Comment}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Comment}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Comment (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{comment}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a4b9bb278a16a1ceaa53ebe05dab93b42}
+Called for every comment in the D\-X\-F file (code 999). 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a4cb3ee051fe7bf69239e12342efe0d18}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a6f351237a9d4f10c3f9651c68966a3fb}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Dim\-Align@{add\-Dim\-Align}}
+\index{add\-Dim\-Align@{add\-Dim\-Align}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Dim\-Align}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Dim\-Align (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Dim\-Aligned} $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a6f351237a9d4f10c3f9651c68966a3fb}
+Called for every aligned dimension entity. 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a10d7b9906ec9cf5b3267e060244020d9}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_af53ce2878a9327464897aa1cb8e7a333}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Dim\-Angular@{add\-Dim\-Angular}}
+\index{add\-Dim\-Angular@{add\-Dim\-Angular}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Dim\-Angular}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Dim\-Angular (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Dim\-Angular} $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_af53ce2878a9327464897aa1cb8e7a333}
+Called for every angular dimension (2 lines version) entity. 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a573fd385cd9279bbb883f780336d6600}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_abdeea17ef54bd623e569f492943f1e9d}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Dim\-Angular3\-P@{add\-Dim\-Angular3\-P}}
+\index{add\-Dim\-Angular3\-P@{add\-Dim\-Angular3\-P}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Dim\-Angular3\-P}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Dim\-Angular3\-P (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Dim\-Angular3p} $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_abdeea17ef54bd623e569f492943f1e9d}
+Called for every angular dimension (3 points version) entity. 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_af0227a89edea79079d998e4cd2887fea}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a63948977f0a34dd29697f0db7e24a6ed}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Dim\-Diametric@{add\-Dim\-Diametric}}
+\index{add\-Dim\-Diametric@{add\-Dim\-Diametric}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Dim\-Diametric}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Dim\-Diametric (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Dim\-Diametric} $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a63948977f0a34dd29697f0db7e24a6ed}
+Called for every diametric dimension entity. 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a2656280adee1453695c15798f0e1c7d8}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a81d63111186b65e662fd0fecfa09da2e}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Dim\-Linear@{add\-Dim\-Linear}}
+\index{add\-Dim\-Linear@{add\-Dim\-Linear}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Dim\-Linear}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Dim\-Linear (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Dim\-Linear} $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a81d63111186b65e662fd0fecfa09da2e}
+Called for every linear or rotated dimension entity. 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a133f4262b19476895f9353cf950f6055}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_ab3e89843322248d2a0e87dedb9cb9aec}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Dim\-Ordinate@{add\-Dim\-Ordinate}}
+\index{add\-Dim\-Ordinate@{add\-Dim\-Ordinate}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Dim\-Ordinate}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Dim\-Ordinate (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Dim\-Ordinate} $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_ab3e89843322248d2a0e87dedb9cb9aec}
+Called for every ordinate dimension entity. 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a8db3ffff95edbce4dd2849937ed5e7ab}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a50307476a7aa8065ee5462cd7fdce3c6}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Dim\-Radial@{add\-Dim\-Radial}}
+\index{add\-Dim\-Radial@{add\-Dim\-Radial}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Dim\-Radial}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Dim\-Radial (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Dim\-Radial} $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a50307476a7aa8065ee5462cd7fdce3c6}
+Called for every radial dimension entity. 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a527740cdcf9f07687df0598340ac18b0}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_ad9237d153a134b8e41a4e53b8e86dde5}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Dim\-Style@{add\-Dim\-Style}}
+\index{add\-Dim\-Style@{add\-Dim\-Style}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Dim\-Style}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Dim\-Style (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Dimstyle} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_ad9237d153a134b8e41a4e53b8e86dde5}
+Called for every dim style. 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a0367a709c29c7349e4e49cc91750cc56}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a8a4d9d0ded98a7fa9ba5dd6d0005a491}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Ellipse@{add\-Ellipse}}
+\index{add\-Ellipse@{add\-Ellipse}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Ellipse}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Ellipse (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Ellipse} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a8a4d9d0ded98a7fa9ba5dd6d0005a491}
+Called for every ellipse 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a19075f161d0842325b62da5e3971458f}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a486e160f61c3e86e53bb8b801b9bbbab}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Hatch@{add\-Hatch}}
+\index{add\-Hatch@{add\-Hatch}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Hatch}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Hatch (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Hatch} $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a486e160f61c3e86e53bb8b801b9bbbab}
+Called for every hatch entity. 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_ad36b05f6c1562ffaaf8a0071c7173364}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a36ca28f76ddb6df58c683f29fc09e5db}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Header@{add\-Header}}
+\index{add\-Header@{add\-Header}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Header}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Header (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Header} $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a36ca28f76ddb6df58c683f29fc09e5db}
+Called when header is parsed. 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_acd70f03c3b63221893ed1a9c9f805650}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a90f17ffeb31d7b41c0ff23eb396c60e2}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Image@{add\-Image}}
+\index{add\-Image@{add\-Image}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Image}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Image (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Image} $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a90f17ffeb31d7b41c0ff23eb396c60e2}
+Called for every image entity. 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_ad45c93da31b073e7a1726b03a8274800}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a2aae96a5a0f5305d2e1f3254c871d2fc}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Insert@{add\-Insert}}
+\index{add\-Insert@{add\-Insert}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Insert}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Insert (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Insert} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a2aae96a5a0f5305d2e1f3254c871d2fc}
+Called for every insert. 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a777d6d48017df24833b35600d5e17e13}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a6e19d01637ff9336bcd513511ba1177c}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Knot@{add\-Knot}}
+\index{add\-Knot@{add\-Knot}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Knot}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Knot (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Entity} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a6e19d01637ff9336bcd513511ba1177c}
+Called for every spline knot value 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a383331cf8aa84246271eff85b8ff698a}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a14d5af0530b9d15c70e06695571f15a7}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Layer@{add\-Layer}}
+\index{add\-Layer@{add\-Layer}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Layer (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Layer} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a14d5af0530b9d15c70e06695571f15a7}
+Called for every layer. 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_ad275f9aa0aa43a38931fe942c0eac492}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a10b2f081689b5a89e3cced928e60369a}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Leader@{add\-Leader}}
+\index{add\-Leader@{add\-Leader}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Leader}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Leader (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Leader} $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a10b2f081689b5a89e3cced928e60369a}
+Called for every leader start. 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a0cecf17b58ada0ee9f8e30ef412c4cdd}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a6422d075d59ed28408394bc5d68033e1}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Line@{add\-Line}}
+\index{add\-Line@{add\-Line}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Line}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Line (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Line} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a6422d075d59ed28408394bc5d68033e1}
+Called for every line 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a1a43390e6d753aa3460024be11994c91}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_af0b179fdf1f4717b4ecf7570396ab17c}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-L\-Type@{add\-L\-Type}}
+\index{add\-L\-Type@{add\-L\-Type}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-L\-Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-L\-Type (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-L\-Type} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_af0b179fdf1f4717b4ecf7570396ab17c}
+Called for every line Type. 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a722df9b9b3bf4d8f7e38e3ac1328a74d}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a14ec6d00f6f34857b91543497d9d4e09}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-L\-W\-Polyline@{add\-L\-W\-Polyline}}
+\index{add\-L\-W\-Polyline@{add\-L\-W\-Polyline}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-L\-W\-Polyline}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-L\-W\-Polyline (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-L\-W\-Polyline} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a14ec6d00f6f34857b91543497d9d4e09}
+Called for every lwpolyline 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a5959562c50fff784f93db03eba88f5fc}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a2a9e71a0794a3f8f5191bd9bc9e51bad}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-M\-Text@{add\-M\-Text}}
+\index{add\-M\-Text@{add\-M\-Text}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-M\-Text}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-M\-Text (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-M\-Text} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a2a9e71a0794a3f8f5191bd9bc9e51bad}
+Called for every Multi Text entity. 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a6ce81647206b2c4a88c8367adff0333f}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_af1b9e163c87a3f84a5c06dbc2a6bd18b}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Point@{add\-Point}}
+\index{add\-Point@{add\-Point}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Point}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Point (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Point} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_af1b9e163c87a3f84a5c06dbc2a6bd18b}
+Called for every point 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_aa0d447fd70b661fde371a0f1df959c57}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a9e2c6ab12b71e73ab443765a5a42d171}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Polyline@{add\-Polyline}}
+\index{add\-Polyline@{add\-Polyline}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Polyline}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Polyline (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Polyline} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a9e2c6ab12b71e73ab443765a5a42d171}
+Called for every polyline start 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a46508004c72a25bab4c05f75e0372df1}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a4718019d01569f13a50a29fcb9ba583f}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Ray@{add\-Ray}}
+\index{add\-Ray@{add\-Ray}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Ray}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Ray (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Ray} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a4718019d01569f13a50a29fcb9ba583f}
+Called for every ray 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a9f2cc36d3f3d864a8051d846b585532e}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a1d50d3aae16fb70d997b82f1bf2cbb4f}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Solid@{add\-Solid}}
+\index{add\-Solid@{add\-Solid}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Solid}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Solid (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Solid} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a1d50d3aae16fb70d997b82f1bf2cbb4f}
+Called for every solid start 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a63b5c6d925dd7b170f2356abb78fa51a}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a72d1cd0692fb061ea34ea246c54156ad}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Spline@{add\-Spline}}
+\index{add\-Spline@{add\-Spline}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Spline}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Spline (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Spline} $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a72d1cd0692fb061ea34ea246c54156ad}
+Called for every spline 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a9d8a8b0492b8741ec12e4bae32206c5a}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a13be257d7e54629f3173fad53448c0a7}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Text@{add\-Text}}
+\index{add\-Text@{add\-Text}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Text}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Text (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Text} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a13be257d7e54629f3173fad53448c0a7}
+Called for every Text entity. 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_af0040cc52f9f9688a0afe43952be2086}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a22da4ebff8bc7c1a426a27803a31b677}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Text\-Style@{add\-Text\-Style}}
+\index{add\-Text\-Style@{add\-Text\-Style}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Text\-Style}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Text\-Style (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Textstyle} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a22da4ebff8bc7c1a426a27803a31b677}
+Called for every text style. 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a1f7ed4acf00c005f57620fea3b23f718}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a3e09cf10863708e1ca74b2f723dc98a2}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Trace@{add\-Trace}}
+\index{add\-Trace@{add\-Trace}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Trace}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Trace (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Trace} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a3e09cf10863708e1ca74b2f723dc98a2}
+Called for every trace start 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_add8e481c7ef136d7dadd985fbe983dba}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a6127b0330b671d2cb1be73478ff24945}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Viewport@{add\-Viewport}}
+\index{add\-Viewport@{add\-Viewport}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Viewport}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Viewport (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Viewport} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a6127b0330b671d2cb1be73478ff24945}
+Called for every viewport entity. 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a3d98a3d45715307a82dd3f63c38d0f6d}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a62940fa7414131514a4eafcc7bb53af7}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Vport@{add\-Vport}}
+\index{add\-Vport@{add\-Vport}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Vport}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Vport (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Vport} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a62940fa7414131514a4eafcc7bb53af7}
+Called for every V\-P\-O\-R\-T table. 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a53ed18a5e44b4691a229051f41a6abf2}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a5cb4ece224c8006de498eb60e354ee9a}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!add\-Xline@{add\-Xline}}
+\index{add\-Xline@{add\-Xline}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{add\-Xline}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::add\-Xline (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Xline} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a5cb4ece224c8006de498eb60e354ee9a}
+Called for every xline 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a301661751967a4add4151e3243c3ff5a}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_aec16f6683828dbdb703b4b8db640d7a0}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!end\-Block@{end\-Block}}
+\index{end\-Block@{end\-Block}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{end\-Block}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::end\-Block (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_aec16f6683828dbdb703b4b8db640d7a0}
+Called to end the current block 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_aabe2e2511566dedb786ab8ecf13212cf}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a8f7969f1639e6544e82446bc21e71446}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!link\-Image@{link\-Image}}
+\index{link\-Image@{link\-Image}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{link\-Image}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::link\-Image (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-R\-W\-\_\-\-Image\-Def} $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a8f7969f1639e6544e82446bc21e71446}
+Called for every image definition. 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a69f922f17fbea3d80401a08a0b72d5bb}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_a31ea3946aa9e9042e7dc6d1cb37cf60b}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!set\-Block@{set\-Block}}
+\index{set\-Block@{set\-Block}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{set\-Block}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::set\-Block (
+\begin{DoxyParamCaption}
+\item[{const int}]{handle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_a31ea3946aa9e9042e7dc6d1cb37cf60b}
+In D\-W\-G called when the following entities corresponding to a block different from the current. Note\-: all entities added after this command go into this block until \hyperlink{classDRW__Interface_a31ea3946aa9e9042e7dc6d1cb37cf60b}{set\-Block()} is called already.
+
+int handle are the value of \hyperlink{classDRW__Entity_a8be4a86f2b846ecc0723e2b9b5b33f0f}{D\-R\-W\-\_\-\-Block\-::handle\-Block} added with \hyperlink{classDRW__Interface_ac4e0727bb5223a4974052e20363b6f42}{add\-Block()} 
+
+Implemented in \hyperlink{classRS__FilterDXFRW_a661e481f1ae165fe48a9259bc9bb999e}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+\hypertarget{classDRW__Interface_ad3f7609afebe0aee604395f580262cf7}{\index{D\-R\-W\-\_\-\-Interface@{D\-R\-W\-\_\-\-Interface}!write\-Header@{write\-Header}}
+\index{write\-Header@{write\-Header}!DRW_Interface@{D\-R\-W\-\_\-\-Interface}}
+\subsubsection[{write\-Header}]{\setlength{\rightskip}{0pt plus 5cm}virtual void D\-R\-W\-\_\-\-Interface\-::write\-Header (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-R\-W\-\_\-\-Header} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classDRW__Interface_ad3f7609afebe0aee604395f580262cf7}
+Sets the current attributes for entities. \begin{DoxyReturn}{Returns}
+the current attributes used for new entities. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classRS__FilterDXFRW_afe661322997c0aafc7b7b3d60fd8f72f}{R\-S\-\_\-\-Filter\-D\-X\-F\-R\-W}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+libraries/libdxfrw/src/drw\-\_\-interface.\-h\end{DoxyCompactItemize}

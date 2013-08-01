@@ -1,0 +1,150 @@
+\hypertarget{classRS__Commands}{\section{R\-S\-\_\-\-Commands Class Reference}
+\label{classRS__Commands}\index{R\-S\-\_\-\-Commands@{R\-S\-\_\-\-Commands}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-commands.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Commands\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRS__Commands}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Q\-String\-List \hyperlink{classRS__Commands_a5a299eea4f7330fdbb6746398377ef02}{complete} (const Q\-String \&cmd)
+\item 
+\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__Commands_a53a2c04019169606e1c8030a9be9dd61}{cmd\-To\-Action} (const Q\-String \&cmd, bool verbose=true)
+\item 
+\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__Commands_a96790431ed4ded14c5a783f43214d3e5}{keycode\-To\-Action} (const Q\-String \&code)
+\item 
+void \hyperlink{classRS__Commands_ad16464838ba8096dd2a77e9fd44f80fd}{update\-Alias} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classRS__Commands}{R\-S\-\_\-\-Commands} $\ast$ \hyperlink{classRS__Commands_afdf816013e3041ec2972004d7dce79e5}{instance} ()
+\item 
+static Q\-String \hyperlink{classRS__Commands_ac083f1f4be60d2b768162c396bc7390d}{command} (const Q\-String \&cmd)
+\item 
+static bool \hyperlink{classRS__Commands_a589797b22309d8ac6ddacafb89617fd3}{check\-Command} (const Q\-String \&cmd, const Q\-String \&str, \hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} action=\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7a87399b91b144b6e5d53f649422fc00c6}{R\-S2\-::\-Action\-None})
+\item 
+static Q\-String \hyperlink{classRS__Commands_a1e935067cb021c4b2c4127b83d4246e4}{msg\-Available\-Commands} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__Commands_abb6d6b767a6fc5d0b031fe73e68eafe7}{static \hyperlink{classRS__Commands}{R\-S\-\_\-\-Commands} $\ast$ {\bfseries unique\-Instance} = N\-U\-L\-L}\label{classRS__Commands_abb6d6b767a6fc5d0b031fe73e68eafe7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class which holds all commands for the command line. This is separated in this module to alow the use of different languages for the gui and the command interface. Implemented as singleton.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Commands_a589797b22309d8ac6ddacafb89617fd3}{\index{R\-S\-\_\-\-Commands@{R\-S\-\_\-\-Commands}!check\-Command@{check\-Command}}
+\index{check\-Command@{check\-Command}!RS_Commands@{R\-S\-\_\-\-Commands}}
+\subsubsection[{check\-Command}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Commands\-::check\-Command (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{cmd, }
+\item[{const Q\-String \&}]{str, }
+\item[{{\bf R\-S2\-::\-Action\-Type}}]{action = {\ttfamily {\bf R\-S2\-::\-Action\-None}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Commands_a589797b22309d8ac6ddacafb89617fd3}
+Checks if the given string 'str' matches the given command 'cmd' for action 'action'.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & The command we want to check for (e.\-g. 'angle'). \\
+\hline
+{\em action} & The action which wants to know. \\
+\hline
+{\em str} & The string typically entered by the user. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Commands_a53a2c04019169606e1c8030a9be9dd61}{\index{R\-S\-\_\-\-Commands@{R\-S\-\_\-\-Commands}!cmd\-To\-Action@{cmd\-To\-Action}}
+\index{cmd\-To\-Action@{cmd\-To\-Action}!RS_Commands@{R\-S\-\_\-\-Commands}}
+\subsubsection[{cmd\-To\-Action}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Commands\-::cmd\-To\-Action (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{cmd, }
+\item[{bool}]{verbose = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classRS__Commands_a53a2c04019169606e1c8030a9be9dd61}
+\begin{DoxyReturn}{Returns}
+Command for triggering the given action in the currently chosen language for commands.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em action} & I\-D of the action who's command will be returned. \\
+\hline
+{\em num} & Number of the command. There might be multiple commands for the same action (e.\-g. 'line' and 'l')\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The translated command. 
+\end{DoxyReturn}
+\hypertarget{classRS__Commands_ac083f1f4be60d2b768162c396bc7390d}{\index{R\-S\-\_\-\-Commands@{R\-S\-\_\-\-Commands}!command@{command}}
+\index{command@{command}!RS_Commands@{R\-S\-\_\-\-Commands}}
+\subsubsection[{command}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Commands\-::command (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{cmd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Commands_ac083f1f4be60d2b768162c396bc7390d}
+\begin{DoxyReturn}{Returns}
+translated command for the given English command. 
+\end{DoxyReturn}
+\hypertarget{classRS__Commands_a5a299eea4f7330fdbb6746398377ef02}{\index{R\-S\-\_\-\-Commands@{R\-S\-\_\-\-Commands}!complete@{complete}}
+\index{complete@{complete}!RS_Commands@{R\-S\-\_\-\-Commands}}
+\subsubsection[{complete}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String\-List R\-S\-\_\-\-Commands\-::complete (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{cmd}
+\end{DoxyParamCaption}
+)}}\label{classRS__Commands_a5a299eea4f7330fdbb6746398377ef02}
+Tries to complete the given command (e.\-g. when tab is pressed). \hypertarget{classRS__Commands_afdf816013e3041ec2972004d7dce79e5}{\index{R\-S\-\_\-\-Commands@{R\-S\-\_\-\-Commands}!instance@{instance}}
+\index{instance@{instance}!RS_Commands@{R\-S\-\_\-\-Commands}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf R\-S\-\_\-\-Commands}$\ast$ R\-S\-\_\-\-Commands\-::instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classRS__Commands_afdf816013e3041ec2972004d7dce79e5}
+\begin{DoxyReturn}{Returns}
+Instance to the unique commands object. 
+\end{DoxyReturn}
+\hypertarget{classRS__Commands_a96790431ed4ded14c5a783f43214d3e5}{\index{R\-S\-\_\-\-Commands@{R\-S\-\_\-\-Commands}!keycode\-To\-Action@{keycode\-To\-Action}}
+\index{keycode\-To\-Action@{keycode\-To\-Action}!RS_Commands@{R\-S\-\_\-\-Commands}}
+\subsubsection[{keycode\-To\-Action}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Commands\-::keycode\-To\-Action (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{code}
+\end{DoxyParamCaption}
+)}}\label{classRS__Commands_a96790431ed4ded14c5a783f43214d3e5}
+Gets the action for the given keycode. A keycode is a sequence of key-\/strokes that is entered like hotkeys. \hypertarget{classRS__Commands_a1e935067cb021c4b2c4127b83d4246e4}{\index{R\-S\-\_\-\-Commands@{R\-S\-\_\-\-Commands}!msg\-Available\-Commands@{msg\-Available\-Commands}}
+\index{msg\-Available\-Commands@{msg\-Available\-Commands}!RS_Commands@{R\-S\-\_\-\-Commands}}
+\subsubsection[{msg\-Available\-Commands}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Commands\-::msg\-Available\-Commands (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Commands_a1e935067cb021c4b2c4127b83d4246e4}
+\begin{DoxyReturn}{Returns}
+the local translation for \char`\"{}\-Commands available\-:\char`\"{}. 
+\end{DoxyReturn}
+\hypertarget{classRS__Commands_ad16464838ba8096dd2a77e9fd44f80fd}{\index{R\-S\-\_\-\-Commands@{R\-S\-\_\-\-Commands}!update\-Alias@{update\-Alias}}
+\index{update\-Alias@{update\-Alias}!RS_Commands@{R\-S\-\_\-\-Commands}}
+\subsubsection[{update\-Alias}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Commands\-::update\-Alias (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Commands_ad16464838ba8096dd2a77e9fd44f80fd}
+Read existing alias file or create one new. In O\-S\-\_\-\-W\-I\-N32 \char`\"{}c\-:\textbackslash{}documents\&settings$<$user$>$\textbackslash{}local configuration\textbackslash{}application data\textbackslash{}\-Libre\-C\-A\-D\textbackslash{}librecad.\-alias\char`\"{} In O\-S\-\_\-\-M\-A\-C \char`\"{}??? /librecad.\-alias\char`\"{} In O\-S\-\_\-\-L\-I\-N\-U\-X \char`\"{}/home/$<$user$>$/.\-local/share/data/\-Libre\-C\-A\-D/librecad.\-alias\char`\"{} 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/cmd/rs\-\_\-commands.\-h\item 
+librecad/src/cmd/rs\-\_\-commands.\-cpp\end{DoxyCompactItemize}

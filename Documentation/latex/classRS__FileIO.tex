@@ -1,0 +1,135 @@
+\hypertarget{classRS__FileIO}{\section{R\-S\-\_\-\-File\-I\-O Class Reference}
+\label{classRS__FileIO}\index{R\-S\-\_\-\-File\-I\-O@{R\-S\-\_\-\-File\-I\-O}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-fileio.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classRS__FileIO_a4be16cddaf87130f1c05bb9ba77e30e0}{register\-Filter} (create\-Filter f)
+\item 
+\hyperlink{classRS__FilterInterface}{R\-S\-\_\-\-Filter\-Interface} $\ast$ \hyperlink{classRS__FileIO_a540df4bdf4630f7b125e417e0d2fd274}{get\-Import\-Filter} (const Q\-String \&file\-Name, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} t)
+\item 
+\hyperlink{classRS__FilterInterface}{R\-S\-\_\-\-Filter\-Interface} $\ast$ \hyperlink{classRS__FileIO_a564db5a8d9347df7bdf300ae35ed7044}{get\-Export\-Filter} (const Q\-String \&file\-Name, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} t)
+\item 
+bool \hyperlink{classRS__FileIO_a1b193d836d3251acce0372f9bc5d0037}{file\-Import} (\hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} \&graphic, const Q\-String \&file, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} type=\hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189babbd9ecffa4b1eb72a46357317ef44a43}{R\-S2\-::\-Format\-Unknown})
+\item 
+bool \hyperlink{classRS__FileIO_a2d7aaa953402523c1942536d23f001c4}{file\-Export} (\hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} \&graphic, const Q\-String \&file, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} type=\hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189babbd9ecffa4b1eb72a46357317ef44a43}{R\-S2\-::\-Format\-Unknown})
+\item 
+\hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} \hyperlink{classRS__FileIO_a2474f9254d85a287e35420d0a6c3f35e}{detect\-Format} (const Q\-String \&file)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classRS__FileIO}{R\-S\-\_\-\-File\-I\-O} $\ast$ \hyperlink{classRS__FileIO_a6a9bac656c5dbb8107760bb7a0fe3430}{instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-List$<$ create\-Filter $>$ \hyperlink{classRS__FileIO_ad32f7db696de4ab4bf85b01528e96235}{filters}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A\-P\-I Class for importing files.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__FileIO_a2474f9254d85a287e35420d0a6c3f35e}{\index{R\-S\-\_\-\-File\-I\-O@{R\-S\-\_\-\-File\-I\-O}!detect\-Format@{detect\-Format}}
+\index{detect\-Format@{detect\-Format}!RS_FileIO@{R\-S\-\_\-\-File\-I\-O}}
+\subsubsection[{detect\-Format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Format\-Type} R\-S\-\_\-\-File\-I\-O\-::detect\-Format (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{file}
+\end{DoxyParamCaption}
+)}}\label{classRS__FileIO_a2474f9254d85a287e35420d0a6c3f35e}
+Detects and returns the file format of the given file. \hypertarget{classRS__FileIO_a2d7aaa953402523c1942536d23f001c4}{\index{R\-S\-\_\-\-File\-I\-O@{R\-S\-\_\-\-File\-I\-O}!file\-Export@{file\-Export}}
+\index{file\-Export@{file\-Export}!RS_FileIO@{R\-S\-\_\-\-File\-I\-O}}
+\subsubsection[{file\-Export}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-File\-I\-O\-::file\-Export (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Graphic} \&}]{graphic, }
+\item[{const Q\-String \&}]{file, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{type = {\ttfamily {\bf R\-S2\-::\-Format\-Unknown}}}
+\end{DoxyParamCaption}
+)}}\label{classRS__FileIO_a2d7aaa953402523c1942536d23f001c4}
+Calls the export method of the object responsible for the format of the given file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & Path and name of the file to import. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__FileIO_a1b193d836d3251acce0372f9bc5d0037}{\index{R\-S\-\_\-\-File\-I\-O@{R\-S\-\_\-\-File\-I\-O}!file\-Import@{file\-Import}}
+\index{file\-Import@{file\-Import}!RS_FileIO@{R\-S\-\_\-\-File\-I\-O}}
+\subsubsection[{file\-Import}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-File\-I\-O\-::file\-Import (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Graphic} \&}]{graphic, }
+\item[{const Q\-String \&}]{file, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{type = {\ttfamily {\bf R\-S2\-::\-Format\-Unknown}}}
+\end{DoxyParamCaption}
+)}}\label{classRS__FileIO_a1b193d836d3251acce0372f9bc5d0037}
+Calls the import method of the filter responsible for the format of the given file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphic} & The container to which we will add entities. Usually that's an \hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} entity but it can also be a polyline, text, ... \\
+\hline
+{\em file} & Path and name of the file to import. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__FileIO_a564db5a8d9347df7bdf300ae35ed7044}{\index{R\-S\-\_\-\-File\-I\-O@{R\-S\-\_\-\-File\-I\-O}!get\-Export\-Filter@{get\-Export\-Filter}}
+\index{get\-Export\-Filter@{get\-Export\-Filter}!RS_FileIO@{R\-S\-\_\-\-File\-I\-O}}
+\subsubsection[{get\-Export\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Filter\-Interface}$\ast$ R\-S\-\_\-\-File\-I\-O\-::get\-Export\-Filter (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{file\-Name, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__FileIO_a564db5a8d9347df7bdf300ae35ed7044}
+\begin{DoxyReturn}{Returns}
+Filter which can export the given file type. 
+\end{DoxyReturn}
+\hypertarget{classRS__FileIO_a540df4bdf4630f7b125e417e0d2fd274}{\index{R\-S\-\_\-\-File\-I\-O@{R\-S\-\_\-\-File\-I\-O}!get\-Import\-Filter@{get\-Import\-Filter}}
+\index{get\-Import\-Filter@{get\-Import\-Filter}!RS_FileIO@{R\-S\-\_\-\-File\-I\-O}}
+\subsubsection[{get\-Import\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Filter\-Interface}$\ast$ R\-S\-\_\-\-File\-I\-O\-::get\-Import\-Filter (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{file\-Name, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__FileIO_a540df4bdf4630f7b125e417e0d2fd274}
+\begin{DoxyReturn}{Returns}
+Filter which can import the given file type. 
+\end{DoxyReturn}
+\hypertarget{classRS__FileIO_a6a9bac656c5dbb8107760bb7a0fe3430}{\index{R\-S\-\_\-\-File\-I\-O@{R\-S\-\_\-\-File\-I\-O}!instance@{instance}}
+\index{instance@{instance}!RS_FileIO@{R\-S\-\_\-\-File\-I\-O}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf R\-S\-\_\-\-File\-I\-O}$\ast$ R\-S\-\_\-\-File\-I\-O\-::instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classRS__FileIO_a6a9bac656c5dbb8107760bb7a0fe3430}
+\begin{DoxyReturn}{Returns}
+Instance to the unique import object. 
+\end{DoxyReturn}
+\hypertarget{classRS__FileIO_a4be16cddaf87130f1c05bb9ba77e30e0}{\index{R\-S\-\_\-\-File\-I\-O@{R\-S\-\_\-\-File\-I\-O}!register\-Filter@{register\-Filter}}
+\index{register\-Filter@{register\-Filter}!RS_FileIO@{R\-S\-\_\-\-File\-I\-O}}
+\subsubsection[{register\-Filter}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-File\-I\-O\-::register\-Filter (
+\begin{DoxyParamCaption}
+\item[{create\-Filter}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__FileIO_a4be16cddaf87130f1c05bb9ba77e30e0}
+Registers a new import filter. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classRS__FileIO_ad32f7db696de4ab4bf85b01528e96235}{\index{R\-S\-\_\-\-File\-I\-O@{R\-S\-\_\-\-File\-I\-O}!filters@{filters}}
+\index{filters@{filters}!RS_FileIO@{R\-S\-\_\-\-File\-I\-O}}
+\subsubsection[{filters}]{\setlength{\rightskip}{0pt plus 5cm}Q\-List$<$create\-Filter$>$ R\-S\-\_\-\-File\-I\-O\-::filters\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__FileIO_ad32f7db696de4ab4bf85b01528e96235}
+a list of pointers to static functions to create file filters 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/fileio/rs\-\_\-fileio.\-h\item 
+librecad/src/lib/fileio/rs\-\_\-fileio.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,352 @@
+\hypertarget{classQC__MDIWindow}{\section{Q\-C\-\_\-\-M\-D\-I\-Window Class Reference}
+\label{classQC__MDIWindow}\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+}
+
+
+{\ttfamily \#include $<$qc\-\_\-mdiwindow.\-h$>$}
+
+Inheritance diagram for Q\-C\-\_\-\-M\-D\-I\-Window\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classQC__MDIWindow}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classQC__MDIWindow_aa8e7c2b765b1f9bab8d42d580d5c6ef4}{slot\-Pen\-Changed} (\hyperlink{classRS__Pen}{R\-S\-\_\-\-Pen} p)
+\item 
+void \hyperlink{classQC__MDIWindow_a8ecccfc5421e809442d15ecc60445bb1}{slot\-File\-New} ()
+\item 
+bool \hyperlink{classQC__MDIWindow_a03e590dfb43c6d55198f97d2c0ceaad5}{slot\-File\-New\-Template} (const Q\-String \&file\-Name, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} type)
+\item 
+bool \hyperlink{classQC__MDIWindow_aee3af356fecb710cea57c7d93a785c56}{slot\-File\-Open} (const Q\-String \&file\-Name, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} type)
+\item 
+bool \hyperlink{classQC__MDIWindow_a0cfdc03ff8ab24e00c38ff2f6d11e4d8}{slot\-File\-Save} (bool \&cancelled, bool is\-Auto\-Save=false)
+\item 
+bool \hyperlink{classQC__MDIWindow_a3c765fcb82391e999aed1f17717574ca}{slot\-File\-Save\-As} (bool \&cancelled)
+\item 
+bool \hyperlink{classQC__MDIWindow_ac8baaf1598774f059867d306cd8c5a8d}{slot\-File\-Close} (bool force)
+\item 
+\hypertarget{classQC__MDIWindow_a4c198fb552595f7b6cdb18d11bfad40b}{void {\bfseries slot\-File\-Print} ()}\label{classQC__MDIWindow_a4c198fb552595f7b6cdb18d11bfad40b}
+
+\item 
+\hypertarget{classQC__MDIWindow_a78fbf254693f3ede83de29de0576fa11}{void {\bfseries slot\-Zoom\-Auto} ()}\label{classQC__MDIWindow_a78fbf254693f3ede83de29de0576fa11}
+
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classQC__MDIWindow_a94ea74358aab224adbbfc0fa588d5dd3}{void {\bfseries signal\-Closing} ()}\label{classQC__MDIWindow_a94ea74358aab224adbbfc0fa588d5dd3}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQC__MDIWindow_af87ec3c807d776644b484708f188e8a6}{Q\-C\-\_\-\-M\-D\-I\-Window} (\hyperlink{classRS__Document}{R\-S\-\_\-\-Document} $\ast$doc, Q\-Widget $\ast$parent, Qt\-::\-Window\-Flags wflags=0)
+\item 
+\hyperlink{classQC__MDIWindow_adb751d37eea090036dac54b2e3396fb6}{$\sim$\-Q\-C\-\_\-\-M\-D\-I\-Window} ()
+\item 
+void \hyperlink{classQC__MDIWindow_a3099f9159be08a24998f4fe2ed745ea6}{init\-Doc} (\hyperlink{classRS__Document}{R\-S\-\_\-\-Document} $\ast$doc=N\-U\-L\-L)
+\item 
+void \hyperlink{classQC__MDIWindow_ae34ffe4aa76932d2c5fd87e913975b41}{init\-View} ()
+\item 
+\hyperlink{classQC__GraphicView}{Q\-C\-\_\-\-Graphic\-View} $\ast$ \hyperlink{classQC__MDIWindow_ab4d194d114f9dc69a7302e2722909f71}{get\-Graphic\-View} ()
+\item 
+\hyperlink{classRS__Document}{R\-S\-\_\-\-Document} $\ast$ \hyperlink{classQC__MDIWindow_ae03f04b19c6c1f8c87c724b4f542f244}{get\-Document} ()
+\item 
+\hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} $\ast$ \hyperlink{classQC__MDIWindow_a93b0102a08df9aadf8913b36d818c5b7}{get\-Graphic} ()
+\item 
+\hyperlink{classRS__EventHandler}{R\-S\-\_\-\-Event\-Handler} $\ast$ \hyperlink{classQC__MDIWindow_a9da08d467cbdcefe6808e4850e9afa94}{get\-Event\-Handler} ()
+\item 
+void \hyperlink{classQC__MDIWindow_a3324dcc1350dd4cd7797945cd365f2f5}{add\-Child\-Window} (\hyperlink{classQC__MDIWindow}{Q\-C\-\_\-\-M\-D\-I\-Window} $\ast$w)
+\item 
+void \hyperlink{classQC__MDIWindow_a262f2a2bbb0e3614d4dcf3a6c1b097fd}{remove\-Child\-Window} (\hyperlink{classQC__MDIWindow}{Q\-C\-\_\-\-M\-D\-I\-Window} $\ast$w)
+\item 
+\hyperlink{classQC__MDIWindow}{Q\-C\-\_\-\-M\-D\-I\-Window} $\ast$ \hyperlink{classQC__MDIWindow_ace3f26e808c4238af24118f733ac2844}{get\-Print\-Preview} ()
+\item 
+void \hyperlink{classQC__MDIWindow_a5519064274ba3ffeda4e498b314d2ad5}{set\-Parent\-Window} (\hyperlink{classQC__MDIWindow}{Q\-C\-\_\-\-M\-D\-I\-Window} $\ast$p)
+\item 
+int \hyperlink{classQC__MDIWindow_a4d6098bf524cbad43e2908921c296b9b}{get\-Id} ()
+\item 
+bool \hyperlink{classQC__MDIWindow_ac70defb958de6274026046978ead826a}{close\-M\-D\-I} (bool force, bool ask=true)
+\item 
+\hypertarget{classQC__MDIWindow_aeab5b869401173964556c9c2d0a10262}{void {\bfseries set\-Force\-Closing} (bool on)}\label{classQC__MDIWindow_aeab5b869401173964556c9c2d0a10262}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classQC__MDIWindow_a6ed9db29181ad41ec3c81e086379a5fa}{close\-Event} (Q\-Close\-Event $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{classQC__MDIWindow_a5cca2f4504cf601790068d4a1f6a6cf0}{operator$<$$<$} (std\-::ostream \&os, \hyperlink{classQC__MDIWindow}{Q\-C\-\_\-\-M\-D\-I\-Window} \&w)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+M\-D\-I document window. Contains a document and a view (window).
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classQC__MDIWindow_af87ec3c807d776644b484708f188e8a6}{\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}!Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}!QC_MDIWindow@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+\subsubsection[{Q\-C\-\_\-\-M\-D\-I\-Window}]{\setlength{\rightskip}{0pt plus 5cm}Q\-C\-\_\-\-M\-D\-I\-Window\-::\-Q\-C\-\_\-\-M\-D\-I\-Window (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Document} $\ast$}]{doc, }
+\item[{Q\-Widget $\ast$}]{parent, }
+\item[{Qt\-::\-Window\-Flags}]{wflags = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classQC__MDIWindow_af87ec3c807d776644b484708f188e8a6}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em doc} & Pointer to an existing document of N\-U\-L\-L if a new document shall be created for this window. \\
+\hline
+{\em parent} & Parent widget. Usually a workspace. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classQC__MDIWindow_adb751d37eea090036dac54b2e3396fb6}{\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}!$\sim$\-Q\-C\-\_\-\-M\-D\-I\-Window@{$\sim$\-Q\-C\-\_\-\-M\-D\-I\-Window}}
+\index{$\sim$\-Q\-C\-\_\-\-M\-D\-I\-Window@{$\sim$\-Q\-C\-\_\-\-M\-D\-I\-Window}!QC_MDIWindow@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+\subsubsection[{$\sim$\-Q\-C\-\_\-\-M\-D\-I\-Window}]{\setlength{\rightskip}{0pt plus 5cm}Q\-C\-\_\-\-M\-D\-I\-Window\-::$\sim$\-Q\-C\-\_\-\-M\-D\-I\-Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQC__MDIWindow_adb751d37eea090036dac54b2e3396fb6}
+Destructor.
+
+Deletes the document associated with this window. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classQC__MDIWindow_a3324dcc1350dd4cd7797945cd365f2f5}{\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}!add\-Child\-Window@{add\-Child\-Window}}
+\index{add\-Child\-Window@{add\-Child\-Window}!QC_MDIWindow@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+\subsubsection[{add\-Child\-Window}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-C\-\_\-\-M\-D\-I\-Window\-::add\-Child\-Window (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-C\-\_\-\-M\-D\-I\-Window} $\ast$}]{w}
+\end{DoxyParamCaption}
+)}}\label{classQC__MDIWindow_a3324dcc1350dd4cd7797945cd365f2f5}
+Adds another M\-D\-I window to the list of known windows that depend on this one. This can be another view or a view for a particular block. \hypertarget{classQC__MDIWindow_a6ed9db29181ad41ec3c81e086379a5fa}{\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}!close\-Event@{close\-Event}}
+\index{close\-Event@{close\-Event}!QC_MDIWindow@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+\subsubsection[{close\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-C\-\_\-\-M\-D\-I\-Window\-::close\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Close\-Event $\ast$}]{ce}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classQC__MDIWindow_a6ed9db29181ad41ec3c81e086379a5fa}
+Called by Qt when the user closes this M\-D\-I window. \hypertarget{classQC__MDIWindow_ac70defb958de6274026046978ead826a}{\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}!close\-M\-D\-I@{close\-M\-D\-I}}
+\index{close\-M\-D\-I@{close\-M\-D\-I}!QC_MDIWindow@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+\subsubsection[{close\-M\-D\-I}]{\setlength{\rightskip}{0pt plus 5cm}bool Q\-C\-\_\-\-M\-D\-I\-Window\-::close\-M\-D\-I (
+\begin{DoxyParamCaption}
+\item[{bool}]{force, }
+\item[{bool}]{ask = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classQC__MDIWindow_ac70defb958de6274026046978ead826a}
+closes this M\-D\-I window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em force} & Disable cancel button (demo versions) \\
+\hline
+{\em ask} & Ask user before closing. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classQC__MDIWindow_ae03f04b19c6c1f8c87c724b4f542f244}{\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}!get\-Document@{get\-Document}}
+\index{get\-Document@{get\-Document}!QC_MDIWindow@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+\subsubsection[{get\-Document}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Document}$\ast$ Q\-C\-\_\-\-M\-D\-I\-Window\-::get\-Document (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classQC__MDIWindow_ae03f04b19c6c1f8c87c724b4f542f244}
+\begin{DoxyReturn}{Returns}
+Pointer to document 
+\end{DoxyReturn}
+\hypertarget{classQC__MDIWindow_a9da08d467cbdcefe6808e4850e9afa94}{\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}!get\-Event\-Handler@{get\-Event\-Handler}}
+\index{get\-Event\-Handler@{get\-Event\-Handler}!QC_MDIWindow@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+\subsubsection[{get\-Event\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Event\-Handler}$\ast$ Q\-C\-\_\-\-M\-D\-I\-Window\-::get\-Event\-Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classQC__MDIWindow_a9da08d467cbdcefe6808e4850e9afa94}
+\begin{DoxyReturn}{Returns}
+Pointer to current event handler 
+\end{DoxyReturn}
+\hypertarget{classQC__MDIWindow_a93b0102a08df9aadf8913b36d818c5b7}{\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}!get\-Graphic@{get\-Graphic}}
+\index{get\-Graphic@{get\-Graphic}!QC_MDIWindow@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+\subsubsection[{get\-Graphic}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Graphic}$\ast$ Q\-C\-\_\-\-M\-D\-I\-Window\-::get\-Graphic (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classQC__MDIWindow_a93b0102a08df9aadf8913b36d818c5b7}
+\begin{DoxyReturn}{Returns}
+Pointer to graphic or N\-U\-L\-L 
+\end{DoxyReturn}
+\hypertarget{classQC__MDIWindow_ab4d194d114f9dc69a7302e2722909f71}{\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}!get\-Graphic\-View@{get\-Graphic\-View}}
+\index{get\-Graphic\-View@{get\-Graphic\-View}!QC_MDIWindow@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+\subsubsection[{get\-Graphic\-View}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-\_\-\-Graphic\-View}$\ast$ Q\-C\-\_\-\-M\-D\-I\-Window\-::get\-Graphic\-View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classQC__MDIWindow_ab4d194d114f9dc69a7302e2722909f71}
+\begin{DoxyReturn}{Returns}
+Pointer to graphic view 
+\end{DoxyReturn}
+\hypertarget{classQC__MDIWindow_a4d6098bf524cbad43e2908921c296b9b}{\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}!get\-Id@{get\-Id}}
+\index{get\-Id@{get\-Id}!QC_MDIWindow@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+\subsubsection[{get\-Id}]{\setlength{\rightskip}{0pt plus 5cm}int Q\-C\-\_\-\-M\-D\-I\-Window\-::get\-Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classQC__MDIWindow_a4d6098bf524cbad43e2908921c296b9b}
+\begin{DoxyReturn}{Returns}
+The M\-D\-I window id. 
+\end{DoxyReturn}
+\hypertarget{classQC__MDIWindow_ace3f26e808c4238af24118f733ac2844}{\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}!get\-Print\-Preview@{get\-Print\-Preview}}
+\index{get\-Print\-Preview@{get\-Print\-Preview}!QC_MDIWindow@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+\subsubsection[{get\-Print\-Preview}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-C\-\_\-\-M\-D\-I\-Window} $\ast$ Q\-C\-\_\-\-M\-D\-I\-Window\-::get\-Print\-Preview (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQC__MDIWindow_ace3f26e808c4238af24118f733ac2844}
+\begin{DoxyReturn}{Returns}
+pointer to the print preview of this drawing or N\-U\-L\-L. 
+\end{DoxyReturn}
+\hypertarget{classQC__MDIWindow_a3099f9159be08a24998f4fe2ed745ea6}{\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}!init\-Doc@{init\-Doc}}
+\index{init\-Doc@{init\-Doc}!QC_MDIWindow@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+\subsubsection[{init\-Doc}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-C\-\_\-\-M\-D\-I\-Window\-::init\-Doc (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Document} $\ast$}]{doc = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classQC__MDIWindow_a3099f9159be08a24998f4fe2ed745ea6}
+Init the document.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Document type. R\-S\-:Entity\-Graphic or \hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aafe09aeef2edbe05d4e555adba34d9d36}{R\-S2\-::\-Entity\-Block} \\
+\hline
+{\em container} & Entity container to be used as document or N\-U\-L\-L if a new document should be created. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classQC__MDIWindow_ae34ffe4aa76932d2c5fd87e913975b41}{\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}!init\-View@{init\-View}}
+\index{init\-View@{init\-View}!QC_MDIWindow@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+\subsubsection[{init\-View}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-C\-\_\-\-M\-D\-I\-Window\-::init\-View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQC__MDIWindow_ae34ffe4aa76932d2c5fd87e913975b41}
+Init the view. \hypertarget{classQC__MDIWindow_a262f2a2bbb0e3614d4dcf3a6c1b097fd}{\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}!remove\-Child\-Window@{remove\-Child\-Window}}
+\index{remove\-Child\-Window@{remove\-Child\-Window}!QC_MDIWindow@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+\subsubsection[{remove\-Child\-Window}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-C\-\_\-\-M\-D\-I\-Window\-::remove\-Child\-Window (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-C\-\_\-\-M\-D\-I\-Window} $\ast$}]{w}
+\end{DoxyParamCaption}
+)}}\label{classQC__MDIWindow_a262f2a2bbb0e3614d4dcf3a6c1b097fd}
+Removes a child window.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classQC__MDIWindow_a3324dcc1350dd4cd7797945cd365f2f5}{add\-Child\-Window} 
+\end{DoxySeeAlso}
+\hypertarget{classQC__MDIWindow_a5519064274ba3ffeda4e498b314d2ad5}{\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}!set\-Parent\-Window@{set\-Parent\-Window}}
+\index{set\-Parent\-Window@{set\-Parent\-Window}!QC_MDIWindow@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+\subsubsection[{set\-Parent\-Window}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-C\-\_\-\-M\-D\-I\-Window\-::set\-Parent\-Window (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-C\-\_\-\-M\-D\-I\-Window} $\ast$}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classQC__MDIWindow_a5519064274ba3ffeda4e498b314d2ad5}
+Sets the parent window that will be notified if this \hypertarget{classQC__MDIWindow_ac8baaf1598774f059867d306cd8c5a8d}{\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}!slot\-File\-Close@{slot\-File\-Close}}
+\index{slot\-File\-Close@{slot\-File\-Close}!QC_MDIWindow@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+\subsubsection[{slot\-File\-Close}]{\setlength{\rightskip}{0pt plus 5cm}bool Q\-C\-\_\-\-M\-D\-I\-Window\-::slot\-File\-Close (
+\begin{DoxyParamCaption}
+\item[{bool}]{force}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classQC__MDIWindow_ac8baaf1598774f059867d306cd8c5a8d}
+Requests the closing of this M\-D\-I window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em force} & Force closing by disabling the cancel button (for demo versions). \\
+\hline
+\end{DoxyParams}
+\hypertarget{classQC__MDIWindow_a8ecccfc5421e809442d15ecc60445bb1}{\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}!slot\-File\-New@{slot\-File\-New}}
+\index{slot\-File\-New@{slot\-File\-New}!QC_MDIWindow@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+\subsubsection[{slot\-File\-New}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-C\-\_\-\-M\-D\-I\-Window\-::slot\-File\-New (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classQC__MDIWindow_a8ecccfc5421e809442d15ecc60445bb1}
+Creates a new empty document in this M\-D\-I window. \hypertarget{classQC__MDIWindow_a03e590dfb43c6d55198f97d2c0ceaad5}{\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}!slot\-File\-New\-Template@{slot\-File\-New\-Template}}
+\index{slot\-File\-New\-Template@{slot\-File\-New\-Template}!QC_MDIWindow@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+\subsubsection[{slot\-File\-New\-Template}]{\setlength{\rightskip}{0pt plus 5cm}bool Q\-C\-\_\-\-M\-D\-I\-Window\-::slot\-File\-New\-Template (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{file\-Name, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classQC__MDIWindow_a03e590dfb43c6d55198f97d2c0ceaad5}
+Creates a new document, loading template, in this M\-D\-I window. \hypertarget{classQC__MDIWindow_aee3af356fecb710cea57c7d93a785c56}{\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}!slot\-File\-Open@{slot\-File\-Open}}
+\index{slot\-File\-Open@{slot\-File\-Open}!QC_MDIWindow@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+\subsubsection[{slot\-File\-Open}]{\setlength{\rightskip}{0pt plus 5cm}bool Q\-C\-\_\-\-M\-D\-I\-Window\-::slot\-File\-Open (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{file\-Name, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classQC__MDIWindow_aee3af356fecb710cea57c7d93a785c56}
+Opens the given file in this M\-D\-I window. \hypertarget{classQC__MDIWindow_a0cfdc03ff8ab24e00c38ff2f6d11e4d8}{\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}!slot\-File\-Save@{slot\-File\-Save}}
+\index{slot\-File\-Save@{slot\-File\-Save}!QC_MDIWindow@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+\subsubsection[{slot\-File\-Save}]{\setlength{\rightskip}{0pt plus 5cm}bool Q\-C\-\_\-\-M\-D\-I\-Window\-::slot\-File\-Save (
+\begin{DoxyParamCaption}
+\item[{bool \&}]{cancelled, }
+\item[{bool}]{is\-Auto\-Save = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classQC__MDIWindow_a0cfdc03ff8ab24e00c38ff2f6d11e4d8}
+Saves the current file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\-Auto\-Save} & true if this is an \char`\"{}autosave\char`\"{} operation. false if this is \char`\"{}\-Save\char`\"{} operation requested by the user. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the file was saved successfully. false if the file could not be saved or the document is invalid. 
+\end{DoxyReturn}
+\hypertarget{classQC__MDIWindow_a3c765fcb82391e999aed1f17717574ca}{\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}!slot\-File\-Save\-As@{slot\-File\-Save\-As}}
+\index{slot\-File\-Save\-As@{slot\-File\-Save\-As}!QC_MDIWindow@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+\subsubsection[{slot\-File\-Save\-As}]{\setlength{\rightskip}{0pt plus 5cm}bool Q\-C\-\_\-\-M\-D\-I\-Window\-::slot\-File\-Save\-As (
+\begin{DoxyParamCaption}
+\item[{bool \&}]{cancelled}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classQC__MDIWindow_a3c765fcb82391e999aed1f17717574ca}
+Saves the current file. The user is asked for a new filename and format.
+
+\begin{DoxyReturn}{Returns}
+true if the file was saved successfully or the user cancelled. false if the file could not be saved or the document is invalid. 
+\end{DoxyReturn}
+\hypertarget{classQC__MDIWindow_aa8e7c2b765b1f9bab8d42d580d5c6ef4}{\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}!slot\-Pen\-Changed@{slot\-Pen\-Changed}}
+\index{slot\-Pen\-Changed@{slot\-Pen\-Changed}!QC_MDIWindow@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+\subsubsection[{slot\-Pen\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-C\-\_\-\-M\-D\-I\-Window\-::slot\-Pen\-Changed (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Pen}}]{pen}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classQC__MDIWindow_aa8e7c2b765b1f9bab8d42d580d5c6ef4}
+Called when the current pen (color, style, width) has changed. Sets the active pen for the document in this M\-D\-I window. 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classQC__MDIWindow_a5cca2f4504cf601790068d4a1f6a6cf0}{\index{Q\-C\-\_\-\-M\-D\-I\-Window@{Q\-C\-\_\-\-M\-D\-I\-Window}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!QC_MDIWindow@{Q\-C\-\_\-\-M\-D\-I\-Window}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os, }
+\item[{{\bf Q\-C\-\_\-\-M\-D\-I\-Window} \&}]{w}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classQC__MDIWindow_a5cca2f4504cf601790068d4a1f6a6cf0}
+Streams some info about an M\-D\-I window to stdout. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/main/qc\-\_\-mdiwindow.\-h\item 
+generated/librecad/moc/moc\-\_\-qc\-\_\-mdiwindow.\-cpp\item 
+librecad/src/main/qc\-\_\-mdiwindow.\-cpp\end{DoxyCompactItemize}

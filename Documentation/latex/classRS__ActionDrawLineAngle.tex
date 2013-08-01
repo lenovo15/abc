@@ -1,0 +1,301 @@
+\hypertarget{classRS__ActionDrawLineAngle}{\section{R\-S\-\_\-\-Action\-Draw\-Line\-Angle Class Reference}
+\label{classRS__ActionDrawLineAngle}\index{R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actiondrawlineangle.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Draw\-Line\-Angle\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classRS__ActionDrawLineAngle}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionDrawLineAngle_a1824ce19ecc1ba7c0cb5e1dc78010f1c}{Status} \{ \hyperlink{classRS__ActionDrawLineAngle_a1824ce19ecc1ba7c0cb5e1dc78010f1ca11f9dd52f2c6b33a2bbc1f65e2ed85d4}{Set\-Pos}, 
+\hyperlink{classRS__ActionDrawLineAngle_a1824ce19ecc1ba7c0cb5e1dc78010f1ca7b20cd1ea0ace7e450ac7170271fd843}{Set\-Angle}, 
+\hyperlink{classRS__ActionDrawLineAngle_a1824ce19ecc1ba7c0cb5e1dc78010f1caaee69513cb55ff56861de44d32ffb5c4}{Set\-Length}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionDrawLineAngle_af6e5a2b624f5172f8ba390f64bce0211}{{\bfseries R\-S\-\_\-\-Action\-Draw\-Line\-Angle} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View, double \hyperlink{classRS__ActionDrawLineAngle_a52b9926296010039d78a056e4c3408cc}{angle}=0.\-0, bool \hyperlink{classRS__ActionDrawLineAngle_a55aac1522eca70558ac4136f06dc3a82}{fixed\-Angle}=false, \hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} action\-Type=R\-S2\-::\-Action\-Draw\-Line\-Angle)}\label{classRS__ActionDrawLineAngle_af6e5a2b624f5172f8ba390f64bce0211}
+
+\item 
+virtual \hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__ActionDrawLineAngle_a6d4b4a536c1e56f80b5ce495ee10d63b}{rtti} ()
+\item 
+\hypertarget{classRS__ActionDrawLineAngle_add623fea086dd3acb1897519ec35032f}{void {\bfseries reset} ()}\label{classRS__ActionDrawLineAngle_add623fea086dd3acb1897519ec35032f}
+
+\item 
+virtual void \hyperlink{classRS__ActionDrawLineAngle_ac3b42dca18f8ca55990ab4a88e4fe4d2}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionDrawLineAngle_a2e2cd55786d5b50058a28ec545493b5c}{trigger} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawLineAngle_a644f5734d0fb4b8f690d69af5b5fb049}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDrawLineAngle_ae111c461d8ffa79e6c1170791b775d0e}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+\hypertarget{classRS__ActionDrawLineAngle_a807dbdb5f110c0c9d399d48cda99b222}{void {\bfseries prepare\-Preview} ()}\label{classRS__ActionDrawLineAngle_a807dbdb5f110c0c9d399d48cda99b222}
+
+\item 
+virtual void \hyperlink{classRS__ActionDrawLineAngle_aca3d88ad3c0763b47cc5e0a046687fa3}{coordinate\-Event} (\hyperlink{classRS__CoordinateEvent}{R\-S\-\_\-\-Coordinate\-Event} $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDrawLineAngle_a58b122116d96df3ad717568bdf15094d}{command\-Event} (\hyperlink{classRS__CommandEvent}{R\-S\-\_\-\-Command\-Event} $\ast$e)
+\item 
+virtual Q\-String\-List \hyperlink{classRS__ActionDrawLineAngle_ad75d1ac973fb22f9f824fcc080bbd62b}{get\-Available\-Commands} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawLineAngle_a13ca8c59398e43aaf03563052d830860}{hide\-Options} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawLineAngle_a8c93a374583dd7c49600bb40b1d65ec4}{show\-Options} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawLineAngle_a62d41faab77e27e9e01cea449e5f8b89}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawLineAngle_a12811bbee32329d74e143fc92aa07dfb}{update\-Mouse\-Cursor} ()
+\item 
+\hypertarget{classRS__ActionDrawLineAngle_add144c0d56309cd10a425bb4fda3bbd1}{void {\bfseries set\-Snap\-Point} (int sp)}\label{classRS__ActionDrawLineAngle_add144c0d56309cd10a425bb4fda3bbd1}
+
+\item 
+\hypertarget{classRS__ActionDrawLineAngle_ae5d0beac82fdac81cebb9ca19fedd8f4}{int {\bfseries get\-Snap\-Point} ()}\label{classRS__ActionDrawLineAngle_ae5d0beac82fdac81cebb9ca19fedd8f4}
+
+\item 
+\hypertarget{classRS__ActionDrawLineAngle_a6569cf56045679cc12999d743f675182}{void {\bfseries set\-Angle} (double a)}\label{classRS__ActionDrawLineAngle_a6569cf56045679cc12999d743f675182}
+
+\item 
+\hypertarget{classRS__ActionDrawLineAngle_aa803b347fb9cd1f6d64be54524d0afe3}{double {\bfseries get\-Angle} ()}\label{classRS__ActionDrawLineAngle_aa803b347fb9cd1f6d64be54524d0afe3}
+
+\item 
+\hypertarget{classRS__ActionDrawLineAngle_a3eec8c75b73978e1ffc49f345d56c568}{void {\bfseries set\-Length} (double l)}\label{classRS__ActionDrawLineAngle_a3eec8c75b73978e1ffc49f345d56c568}
+
+\item 
+\hypertarget{classRS__ActionDrawLineAngle_aaf69cd9605fe897b5920b4b66ec227a3}{double {\bfseries get\-Length} ()}\label{classRS__ActionDrawLineAngle_aaf69cd9605fe897b5920b4b66ec227a3}
+
+\item 
+\hypertarget{classRS__ActionDrawLineAngle_a29060b5a2a28fe00ae00d36aecf9ede0}{bool {\bfseries has\-Fixed\-Angle} ()}\label{classRS__ActionDrawLineAngle_a29060b5a2a28fe00ae00d36aecf9ede0}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionDrawLineAngle_aac5c093cb04f32836f2e867f9f6ec55e}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} type, Q\-Object $\ast$)}\label{classRS__ActionDrawLineAngle_aac5c093cb04f32836f2e867f9f6ec55e}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__LineData}{R\-S\-\_\-\-Line\-Data} \hyperlink{classRS__ActionDrawLineAngle_a3b25308dde7f93c13e5a1a5b19219440}{data}
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__ActionDrawLineAngle_a46ffce9f47c6772dfaa1230cfb10561c}{pos}
+\item 
+double \hyperlink{classRS__ActionDrawLineAngle_a52b9926296010039d78a056e4c3408cc}{angle}
+\item 
+double \hyperlink{classRS__ActionDrawLineAngle_a35c40febb8773592c14b649bd666769e}{length}
+\item 
+bool \hyperlink{classRS__ActionDrawLineAngle_a55aac1522eca70558ac4136f06dc3a82}{fixed\-Angle}
+\item 
+int \hyperlink{classRS__ActionDrawLineAngle_a5e65648db0c571ea70c8afb58e7ddef5}{snp\-Point}
+\item 
+\hypertarget{classRS__ActionDrawLineAngle_af7184026e4e37fbc4b1e006aa85e4ebf}{\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} {\bfseries action\-Type}}\label{classRS__ActionDrawLineAngle_af7184026e4e37fbc4b1e006aa85e4ebf}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to draw simple lines at a gien angle.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionDrawLineAngle_a1824ce19ecc1ba7c0cb5e1dc78010f1c}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}!Status@{Status}}
+\index{Status@{Status}!RS_ActionDrawLineAngle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Draw\-Line\-Angle\-::\-Status}}}\label{classRS__ActionDrawLineAngle_a1824ce19ecc1ba7c0cb5e1dc78010f1c}
+Action States. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Set\-Pos@{Set\-Pos}!R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}}\index{R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}!Set\-Pos@{Set\-Pos}}\item[{\em 
+\hypertarget{classRS__ActionDrawLineAngle_a1824ce19ecc1ba7c0cb5e1dc78010f1ca11f9dd52f2c6b33a2bbc1f65e2ed85d4}{Set\-Pos}\label{classRS__ActionDrawLineAngle_a1824ce19ecc1ba7c0cb5e1dc78010f1ca11f9dd52f2c6b33a2bbc1f65e2ed85d4}
+}]Setting the position. \index{Set\-Angle@{Set\-Angle}!R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}}\index{R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}!Set\-Angle@{Set\-Angle}}\item[{\em 
+\hypertarget{classRS__ActionDrawLineAngle_a1824ce19ecc1ba7c0cb5e1dc78010f1ca7b20cd1ea0ace7e450ac7170271fd843}{Set\-Angle}\label{classRS__ActionDrawLineAngle_a1824ce19ecc1ba7c0cb5e1dc78010f1ca7b20cd1ea0ace7e450ac7170271fd843}
+}]Setting angle in the command line. \index{Set\-Length@{Set\-Length}!R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}}\index{R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}!Set\-Length@{Set\-Length}}\item[{\em 
+\hypertarget{classRS__ActionDrawLineAngle_a1824ce19ecc1ba7c0cb5e1dc78010f1caaee69513cb55ff56861de44d32ffb5c4}{Set\-Length}\label{classRS__ActionDrawLineAngle_a1824ce19ecc1ba7c0cb5e1dc78010f1caaee69513cb55ff56861de44d32ffb5c4}
+}]Setting length in the command line. \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionDrawLineAngle_a58b122116d96df3ad717568bdf15094d}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}!command\-Event@{command\-Event}}
+\index{command\-Event@{command\-Event}!RS_ActionDrawLineAngle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}}
+\subsubsection[{command\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Line\-Angle\-::command\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Command\-Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawLineAngle_a58b122116d96df3ad717568bdf15094d}
+Called when a command from the command line is launched. and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a187365514bab9b2997c5fe7ff5274a22}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawLineAngle_aca3d88ad3c0763b47cc5e0a046687fa3}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}!coordinate\-Event@{coordinate\-Event}}
+\index{coordinate\-Event@{coordinate\-Event}!RS_ActionDrawLineAngle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}}
+\subsubsection[{coordinate\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Line\-Angle\-::coordinate\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Coordinate\-Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawLineAngle_aca3d88ad3c0763b47cc5e0a046687fa3}
+Coordinate event. Triggered usually from a command line. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a9013e88769edd39b2a74af5add2986c9}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawLineAngle_ad75d1ac973fb22f9f824fcc080bbd62b}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}!get\-Available\-Commands@{get\-Available\-Commands}}
+\index{get\-Available\-Commands@{get\-Available\-Commands}!RS_ActionDrawLineAngle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}}
+\subsubsection[{get\-Available\-Commands}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String\-List R\-S\-\_\-\-Action\-Draw\-Line\-Angle\-::get\-Available\-Commands (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawLineAngle_ad75d1ac973fb22f9f824fcc080bbd62b}
+Must be implemented to return the currently available commands for the command line. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acafdac8d18d3f053eda872581fb3e27d}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawLineAngle_a13ca8c59398e43aaf03563052d830860}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}!hide\-Options@{hide\-Options}}
+\index{hide\-Options@{hide\-Options}!RS_ActionDrawLineAngle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}}
+\subsubsection[{hide\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Line\-Angle\-::hide\-Options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawLineAngle_a13ca8c59398e43aaf03563052d830860}
+Hides the tool options. Default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_adca8d2f958d687e08f6d4477ef0fa43a}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawLineAngle_ac3b42dca18f8ca55990ab4a88e4fe4d2}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}!init@{init}}
+\index{init@{init}!RS_ActionDrawLineAngle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Line\-Angle\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawLineAngle_ac3b42dca18f8ca55990ab4a88e4fe4d2}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae5113b2aef5a10acd192786b99580e4a}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawLineAngle_a644f5734d0fb4b8f690d69af5b5fb049}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_ActionDrawLineAngle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Line\-Angle\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawLineAngle_a644f5734d0fb4b8f690d69af5b5fb049}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawLineAngle_ae111c461d8ffa79e6c1170791b775d0e}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionDrawLineAngle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Line\-Angle\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawLineAngle_ae111c461d8ffa79e6c1170791b775d0e}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawLineAngle_a6d4b4a536c1e56f80b5ce495ee10d63b}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_ActionDrawLineAngle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Action\-Draw\-Line\-Angle\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__ActionDrawLineAngle_a6d4b4a536c1e56f80b5ce495ee10d63b}
+Must be implemented to return the I\-D of this action.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]no default implementation \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af877a66b5b4a7053f2b1f0519c57a6f5}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawLineAngle_a8c93a374583dd7c49600bb40b1d65ec4}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}!show\-Options@{show\-Options}}
+\index{show\-Options@{show\-Options}!RS_ActionDrawLineAngle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}}
+\subsubsection[{show\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Line\-Angle\-::show\-Options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawLineAngle_a8c93a374583dd7c49600bb40b1d65ec4}
+Shows the tool options. Default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_add4bb135e4be51bd0dc169e0e7b9e695}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawLineAngle_a2e2cd55786d5b50058a28ec545493b5c}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionDrawLineAngle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Line\-Angle\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawLineAngle_a2e2cd55786d5b50058a28ec545493b5c}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawLineAngle_a62d41faab77e27e9e01cea449e5f8b89}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionDrawLineAngle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Line\-Angle\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawLineAngle_a62d41faab77e27e9e01cea449e5f8b89}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawLineAngle_a12811bbee32329d74e143fc92aa07dfb}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionDrawLineAngle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Line\-Angle\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawLineAngle_a12811bbee32329d74e143fc92aa07dfb}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classRS__ActionDrawLineAngle_a52b9926296010039d78a056e4c3408cc}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}!angle@{angle}}
+\index{angle@{angle}!RS_ActionDrawLineAngle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}}
+\subsubsection[{angle}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Action\-Draw\-Line\-Angle\-::angle\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDrawLineAngle_a52b9926296010039d78a056e4c3408cc}
+Line angle. \hypertarget{classRS__ActionDrawLineAngle_a3b25308dde7f93c13e5a1a5b19219440}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}!data@{data}}
+\index{data@{data}!RS_ActionDrawLineAngle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Line\-Data} R\-S\-\_\-\-Action\-Draw\-Line\-Angle\-::data\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDrawLineAngle_a3b25308dde7f93c13e5a1a5b19219440}
+Line data defined so far. \hypertarget{classRS__ActionDrawLineAngle_a55aac1522eca70558ac4136f06dc3a82}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}!fixed\-Angle@{fixed\-Angle}}
+\index{fixed\-Angle@{fixed\-Angle}!RS_ActionDrawLineAngle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}}
+\subsubsection[{fixed\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Action\-Draw\-Line\-Angle\-::fixed\-Angle\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDrawLineAngle_a55aac1522eca70558ac4136f06dc3a82}
+Is the angle fixed? \hypertarget{classRS__ActionDrawLineAngle_a35c40febb8773592c14b649bd666769e}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}!length@{length}}
+\index{length@{length}!RS_ActionDrawLineAngle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}}
+\subsubsection[{length}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Action\-Draw\-Line\-Angle\-::length\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDrawLineAngle_a35c40febb8773592c14b649bd666769e}
+Line length. \hypertarget{classRS__ActionDrawLineAngle_a46ffce9f47c6772dfaa1230cfb10561c}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}!pos@{pos}}
+\index{pos@{pos}!RS_ActionDrawLineAngle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}}
+\subsubsection[{pos}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Action\-Draw\-Line\-Angle\-::pos\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDrawLineAngle_a46ffce9f47c6772dfaa1230cfb10561c}
+Position. \hypertarget{classRS__ActionDrawLineAngle_a5e65648db0c571ea70c8afb58e7ddef5}{\index{R\-S\-\_\-\-Action\-Draw\-Line\-Angle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}!snp\-Point@{snp\-Point}}
+\index{snp\-Point@{snp\-Point}!RS_ActionDrawLineAngle@{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}}
+\subsubsection[{snp\-Point}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Action\-Draw\-Line\-Angle\-::snp\-Point\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDrawLineAngle_a5e65648db0c571ea70c8afb58e7ddef5}
+Snap point (start, middle, end). 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actiondrawlineangle.\-h\item 
+librecad/src/actions/rs\-\_\-actiondrawlineangle.\-cpp\end{DoxyCompactItemize}

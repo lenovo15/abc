@@ -1,0 +1,271 @@
+\hypertarget{classRS__ActionDrawEllipseAxis}{\section{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis Class Reference}
+\label{classRS__ActionDrawEllipseAxis}\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actiondrawellipseaxis.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classRS__ActionDrawEllipseAxis}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionDrawEllipseAxis_a54be2d78c868f94327e671fee6690604}{Status} \{ \\*
+\hyperlink{classRS__ActionDrawEllipseAxis_a54be2d78c868f94327e671fee6690604a1f67dbe82711df44c375083c4d1e2d91}{Set\-Center}, 
+\hyperlink{classRS__ActionDrawEllipseAxis_a54be2d78c868f94327e671fee6690604a8f081e27f8e352afa35c9adc651adf88}{Set\-Major}, 
+\hyperlink{classRS__ActionDrawEllipseAxis_a54be2d78c868f94327e671fee6690604a6c91967a4272459e5b4b5ab7baead1e2}{Set\-Minor}, 
+\hyperlink{classRS__ActionDrawEllipseAxis_a54be2d78c868f94327e671fee6690604a2424448c561eac0fd64b0abd7f83cb7e}{Set\-Angle1}, 
+\\*
+\hyperlink{classRS__ActionDrawEllipseAxis_a54be2d78c868f94327e671fee6690604adf503e2a1cb6c730744cf3563d5847de}{Set\-Angle2}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__ActionDrawEllipseAxis_a6bb9e71dd417dcf4499a90a1c4e3ac13}{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View, bool \hyperlink{classRS__ActionDrawEllipseAxis_a325339ed6e8fad3e25930f0bc80b8264}{is\-Arc})
+\item 
+\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__ActionDrawEllipseAxis_a03cf3c76f4578f5d8167d79a3f914d0e}{rtti} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipseAxis_abab81e44a6873bb54407ab49ef2a17e7}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipseAxis_aba40cbf6a7cb35b72511ff276bd17f05}{trigger} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipseAxis_a09c68f71b091490adb876d69b20639b6}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipseAxis_a3e5c104916c927a89c38556bc85a8e01}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipseAxis_a4bc53ed7ad07dcdd481d767f1a884dc1}{coordinate\-Event} (\hyperlink{classRS__CoordinateEvent}{R\-S\-\_\-\-Coordinate\-Event} $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipseAxis_a6219a47e51ac622f331cc691eb20c561}{command\-Event} (\hyperlink{classRS__CommandEvent}{R\-S\-\_\-\-Command\-Event} $\ast$e)
+\item 
+virtual Q\-String\-List \hyperlink{classRS__ActionDrawEllipseAxis_a18f6ea55740b444d075776221d6a6825}{get\-Available\-Commands} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipseAxis_a543d858cd75ec452f2dce0ce6ba1f555}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipseAxis_a263f795fe622e59e457d1272c793fb8d}{update\-Mouse\-Cursor} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionDrawEllipseAxis_aceba50e8e3dd37e242fa716aa4cee22c}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} type, Q\-Object $\ast$)}\label{classRS__ActionDrawEllipseAxis_aceba50e8e3dd37e242fa716aa4cee22c}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__ActionDrawEllipseAxis_a2bdbf23b41a18e11bb86588aedf3135d}{center}
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__ActionDrawEllipseAxis_ae736862026b1e6a4b8441967c99ee33c}{major}
+\item 
+double \hyperlink{classRS__ActionDrawEllipseAxis_a96b61e75a170b49e54442e24edd71b49}{ratio}
+\item 
+double \hyperlink{classRS__ActionDrawEllipseAxis_a9d154b2c662efb24c3957fcdcf28dc46}{angle1}
+\item 
+double \hyperlink{classRS__ActionDrawEllipseAxis_a55342fe33bf057f5542ebad5ecfdb74b}{angle2}
+\item 
+bool \hyperlink{classRS__ActionDrawEllipseAxis_a325339ed6e8fad3e25930f0bc80b8264}{is\-Arc}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to draw ellipses with a center point and the endpoints of minor and major axis.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionDrawEllipseAxis_a54be2d78c868f94327e671fee6690604}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}!Status@{Status}}
+\index{Status@{Status}!RS_ActionDrawEllipseAxis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis\-::\-Status}}}\label{classRS__ActionDrawEllipseAxis_a54be2d78c868f94327e671fee6690604}
+Action States. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Set\-Center@{Set\-Center}!R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}!Set\-Center@{Set\-Center}}\item[{\em 
+\hypertarget{classRS__ActionDrawEllipseAxis_a54be2d78c868f94327e671fee6690604a1f67dbe82711df44c375083c4d1e2d91}{Set\-Center}\label{classRS__ActionDrawEllipseAxis_a54be2d78c868f94327e671fee6690604a1f67dbe82711df44c375083c4d1e2d91}
+}]Settinge the center. \index{Set\-Major@{Set\-Major}!R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}!Set\-Major@{Set\-Major}}\item[{\em 
+\hypertarget{classRS__ActionDrawEllipseAxis_a54be2d78c868f94327e671fee6690604a8f081e27f8e352afa35c9adc651adf88}{Set\-Major}\label{classRS__ActionDrawEllipseAxis_a54be2d78c868f94327e671fee6690604a8f081e27f8e352afa35c9adc651adf88}
+}]Setting endpoint of major axis. \index{Set\-Minor@{Set\-Minor}!R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}!Set\-Minor@{Set\-Minor}}\item[{\em 
+\hypertarget{classRS__ActionDrawEllipseAxis_a54be2d78c868f94327e671fee6690604a6c91967a4272459e5b4b5ab7baead1e2}{Set\-Minor}\label{classRS__ActionDrawEllipseAxis_a54be2d78c868f94327e671fee6690604a6c91967a4272459e5b4b5ab7baead1e2}
+}]Setting minor/major ratio. \index{Set\-Angle1@{Set\-Angle1}!R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}!Set\-Angle1@{Set\-Angle1}}\item[{\em 
+\hypertarget{classRS__ActionDrawEllipseAxis_a54be2d78c868f94327e671fee6690604a2424448c561eac0fd64b0abd7f83cb7e}{Set\-Angle1}\label{classRS__ActionDrawEllipseAxis_a54be2d78c868f94327e671fee6690604a2424448c561eac0fd64b0abd7f83cb7e}
+}]Setting start angle. \index{Set\-Angle2@{Set\-Angle2}!R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}!Set\-Angle2@{Set\-Angle2}}\item[{\em 
+\hypertarget{classRS__ActionDrawEllipseAxis_a54be2d78c868f94327e671fee6690604adf503e2a1cb6c730744cf3563d5847de}{Set\-Angle2}\label{classRS__ActionDrawEllipseAxis_a54be2d78c868f94327e671fee6690604adf503e2a1cb6c730744cf3563d5847de}
+}]Setting end angle. \end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__ActionDrawEllipseAxis_a6bb9e71dd417dcf4499a90a1c4e3ac13}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}!R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}
+\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}!RS_ActionDrawEllipseAxis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}
+\subsubsection[{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis\-::\-R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} \&}]{graphic\-View, }
+\item[{bool}]{is\-Arc}
+\end{DoxyParamCaption}
+)}}\label{classRS__ActionDrawEllipseAxis_a6bb9e71dd417dcf4499a90a1c4e3ac13}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\-Arc} & true if this action will produce an ellipse arc. false if it will produce a full ellipse. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionDrawEllipseAxis_a6219a47e51ac622f331cc691eb20c561}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}!command\-Event@{command\-Event}}
+\index{command\-Event@{command\-Event}!RS_ActionDrawEllipseAxis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}
+\subsubsection[{command\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis\-::command\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Command\-Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseAxis_a6219a47e51ac622f331cc691eb20c561}
+Called when a command from the command line is launched. and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a187365514bab9b2997c5fe7ff5274a22}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseAxis_a4bc53ed7ad07dcdd481d767f1a884dc1}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}!coordinate\-Event@{coordinate\-Event}}
+\index{coordinate\-Event@{coordinate\-Event}!RS_ActionDrawEllipseAxis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}
+\subsubsection[{coordinate\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis\-::coordinate\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Coordinate\-Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseAxis_a4bc53ed7ad07dcdd481d767f1a884dc1}
+Coordinate event. Triggered usually from a command line. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a9013e88769edd39b2a74af5add2986c9}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseAxis_a18f6ea55740b444d075776221d6a6825}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}!get\-Available\-Commands@{get\-Available\-Commands}}
+\index{get\-Available\-Commands@{get\-Available\-Commands}!RS_ActionDrawEllipseAxis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}
+\subsubsection[{get\-Available\-Commands}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String\-List R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis\-::get\-Available\-Commands (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseAxis_a18f6ea55740b444d075776221d6a6825}
+Must be implemented to return the currently available commands for the command line. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acafdac8d18d3f053eda872581fb3e27d}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseAxis_abab81e44a6873bb54407ab49ef2a17e7}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}!init@{init}}
+\index{init@{init}!RS_ActionDrawEllipseAxis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseAxis_abab81e44a6873bb54407ab49ef2a17e7}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae5113b2aef5a10acd192786b99580e4a}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseAxis_a09c68f71b091490adb876d69b20639b6}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_ActionDrawEllipseAxis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseAxis_a09c68f71b091490adb876d69b20639b6}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseAxis_a3e5c104916c927a89c38556bc85a8e01}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionDrawEllipseAxis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseAxis_a3e5c104916c927a89c38556bc85a8e01}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseAxis_a03cf3c76f4578f5d8167d79a3f914d0e}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_ActionDrawEllipseAxis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseAxis_a03cf3c76f4578f5d8167d79a3f914d0e}
+Must be implemented to return the I\-D of this action.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]no default implementation \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af877a66b5b4a7053f2b1f0519c57a6f5}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseAxis_aba40cbf6a7cb35b72511ff276bd17f05}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionDrawEllipseAxis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseAxis_aba40cbf6a7cb35b72511ff276bd17f05}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseAxis_a543d858cd75ec452f2dce0ce6ba1f555}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionDrawEllipseAxis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseAxis_a543d858cd75ec452f2dce0ce6ba1f555}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipseAxis_a263f795fe622e59e457d1272c793fb8d}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionDrawEllipseAxis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipseAxis_a263f795fe622e59e457d1272c793fb8d}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classRS__ActionDrawEllipseAxis_a9d154b2c662efb24c3957fcdcf28dc46}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}!angle1@{angle1}}
+\index{angle1@{angle1}!RS_ActionDrawEllipseAxis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}
+\subsubsection[{angle1}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis\-::angle1\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDrawEllipseAxis_a9d154b2c662efb24c3957fcdcf28dc46}
+Start angle \hypertarget{classRS__ActionDrawEllipseAxis_a55342fe33bf057f5542ebad5ecfdb74b}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}!angle2@{angle2}}
+\index{angle2@{angle2}!RS_ActionDrawEllipseAxis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}
+\subsubsection[{angle2}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis\-::angle2\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDrawEllipseAxis_a55342fe33bf057f5542ebad5ecfdb74b}
+End angle \hypertarget{classRS__ActionDrawEllipseAxis_a2bdbf23b41a18e11bb86588aedf3135d}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}!center@{center}}
+\index{center@{center}!RS_ActionDrawEllipseAxis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}
+\subsubsection[{center}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis\-::center\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDrawEllipseAxis_a2bdbf23b41a18e11bb86588aedf3135d}
+Center of ellipse \hypertarget{classRS__ActionDrawEllipseAxis_a325339ed6e8fad3e25930f0bc80b8264}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}!is\-Arc@{is\-Arc}}
+\index{is\-Arc@{is\-Arc}!RS_ActionDrawEllipseAxis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}
+\subsubsection[{is\-Arc}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis\-::is\-Arc\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDrawEllipseAxis_a325339ed6e8fad3e25930f0bc80b8264}
+Do we produce an arc (true) or full ellipse (false) \hypertarget{classRS__ActionDrawEllipseAxis_ae736862026b1e6a4b8441967c99ee33c}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}!major@{major}}
+\index{major@{major}!RS_ActionDrawEllipseAxis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}
+\subsubsection[{major}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis\-::major\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDrawEllipseAxis_ae736862026b1e6a4b8441967c99ee33c}
+Endpoint of major axis \hypertarget{classRS__ActionDrawEllipseAxis_a96b61e75a170b49e54442e24edd71b49}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}!ratio@{ratio}}
+\index{ratio@{ratio}!RS_ActionDrawEllipseAxis@{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}}
+\subsubsection[{ratio}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis\-::ratio\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDrawEllipseAxis_a96b61e75a170b49e54442e24edd71b49}
+Ratio major / minor 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actiondrawellipseaxis.\-h\item 
+librecad/src/actions/rs\-\_\-actiondrawellipseaxis.\-cpp\end{DoxyCompactItemize}

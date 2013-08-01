@@ -1,0 +1,1048 @@
+\hypertarget{classQG__DialogFactory}{\section{Q\-G\-\_\-\-Dialog\-Factory Class Reference}
+\label{classQG__DialogFactory}\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}}
+}
+
+
+{\ttfamily \#include $<$qg\-\_\-dialogfactory.\-h$>$}
+
+Inheritance diagram for Q\-G\-\_\-\-Dialog\-Factory\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classQG__DialogFactory}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQG__DialogFactory_ad1878de3d60e9eb73a4955b43125a0c0}{Q\-G\-\_\-\-Dialog\-Factory} (Q\-Widget $\ast$\hyperlink{classQG__DialogFactory_a3f4a0e132723a8da0aaac5c1f8bab7dd}{parent}, Q\-Tool\-Bar $\ast$ow)
+\item 
+virtual \hyperlink{classQG__DialogFactory_a326c57055d3acedf93ecac55f5e2a275}{$\sim$\-Q\-G\-\_\-\-Dialog\-Factory} ()
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a0f64a01c628a7717211ccd6ae7949427}{set\-Coordinate\-Widget} (\hyperlink{classQG__CoordinateWidget}{Q\-G\-\_\-\-Coordinate\-Widget} $\ast$cw)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a0943e749492fa2c6fa36d3f3548cf2be}{set\-Mouse\-Widget} (\hyperlink{classQG__MouseWidget}{Q\-G\-\_\-\-Mouse\-Widget} $\ast$mw)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a8eebb9437e6b87018dc6f600aed2270e}{set\-Selection\-Widget} (\hyperlink{classQG__SelectionWidget}{Q\-G\-\_\-\-Selection\-Widget} $\ast$sw)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_adf91ee7e5942cefa4f6b780c5b3c4e1e}{set\-Cad\-Tool\-Bar} (\hyperlink{classQG__CadToolBar}{Q\-G\-\_\-\-Cad\-Tool\-Bar} $\ast$ctb)
+\item 
+\hyperlink{classQG__CadToolBar}{Q\-G\-\_\-\-Cad\-Tool\-Bar} $\ast$ \hyperlink{classQG__DialogFactory_afbe3a76d1327337d920808380017977c}{get\-Cad\-Tool\-Bar} ()
+\item 
+virtual void \hyperlink{classQG__DialogFactory_af5808e6d8f3d67c33528604df9ad022c}{show\-Cad\-Tool\-Bar} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} action\-Type)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a157dfecdc6de1d72da66e607227626ca}{set\-Command\-Widget} (\hyperlink{classQG__CommandWidget}{Q\-G\-\_\-\-Command\-Widget} $\ast$cw)
+\item 
+\hyperlink{classQG__CommandWidget}{Q\-G\-\_\-\-Command\-Widget} $\ast$ \hyperlink{classQG__DialogFactory_a5ecabbaf7b06eed8c08d9e230fdb3198}{get\-Command\-Widget} ()
+\item 
+virtual void \hyperlink{classQG__DialogFactory_aa8ea27fb932e1a8279a5ecc670c759cb}{set\-Main\-Window} (\hyperlink{classQG__MainWindowInterface}{Q\-G\-\_\-\-Main\-Window\-Interface} $\ast$mw)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a8b4d537e5d43184c28eab362e048702f}{request\-Warning\-Dialog} (const Q\-String \&warning)
+\item 
+virtual \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} $\ast$ \hyperlink{classQG__DialogFactory_a61ef4d64473b7e2a493e3d4b3f5d9100}{request\-New\-Document} (const Q\-String \&file\-Name=Q\-String\-::null, \hyperlink{classRS__Document}{R\-S\-\_\-\-Document} $\ast$doc=N\-U\-L\-L)
+\item 
+virtual \hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$ \hyperlink{classQG__DialogFactory_a11680139d112e8497805942896bc31f7}{request\-New\-Layer\-Dialog} (\hyperlink{classRS__LayerList}{R\-S\-\_\-\-Layer\-List} $\ast$layer\-List=N\-U\-L\-L)
+\item 
+virtual \hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$ \hyperlink{classQG__DialogFactory_a75e710298b1640d41f39dc1ec9975c09}{request\-Layer\-Removal\-Dialog} (\hyperlink{classRS__LayerList}{R\-S\-\_\-\-Layer\-List} $\ast$layer\-List=N\-U\-L\-L)
+\item 
+virtual \hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$ \hyperlink{classQG__DialogFactory_a790defe44d4869053a4485dd6059fa4f}{request\-Edit\-Layer\-Dialog} (\hyperlink{classRS__LayerList}{R\-S\-\_\-\-Layer\-List} $\ast$layer\-List=N\-U\-L\-L)
+\item 
+virtual \hyperlink{classRS__BlockData}{R\-S\-\_\-\-Block\-Data} \hyperlink{classQG__DialogFactory_a0f880d3a5e43fdb3ff333ca98974bc30}{request\-New\-Block\-Dialog} (\hyperlink{classRS__BlockList}{R\-S\-\_\-\-Block\-List} $\ast$block\-List)
+\item 
+virtual \hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$ \hyperlink{classQG__DialogFactory_a0035330ffbe7b0b3dfa763494abfaed1}{request\-Block\-Removal\-Dialog} (\hyperlink{classRS__BlockList}{R\-S\-\_\-\-Block\-List} $\ast$block\-List)
+\item 
+virtual \hyperlink{classRS__BlockData}{R\-S\-\_\-\-Block\-Data} \hyperlink{classQG__DialogFactory_ad40e34b75eae32264a6822b5a4f21b0a}{request\-Block\-Attributes\-Dialog} (\hyperlink{classRS__BlockList}{R\-S\-\_\-\-Block\-List} $\ast$block\-List)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a083de978c17fbf8e802e6ae828fa9117}{request\-Edit\-Block\-Window} (\hyperlink{classRS__BlockList}{R\-S\-\_\-\-Block\-List} $\ast$)
+\item 
+\hypertarget{classQG__DialogFactory_aff301ce3ee9a3732850c568bf9f7966c}{virtual void {\bfseries close\-Edit\-Block\-Window} (\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$)}\label{classQG__DialogFactory_aff301ce3ee9a3732850c568bf9f7966c}
+
+\item 
+virtual Q\-String \hyperlink{classQG__DialogFactory_a0983a4605afae0ae1fd63cde95ff7cc1}{request\-Image\-Open\-Dialog} ()
+\item 
+virtual void \hyperlink{classQG__DialogFactory_afe7ca8f0ffa8bd42b6d6cfdf471c6e29}{request\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update=false)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a15f383752323fd2a3ade29caa86f9ce3}{request\-Snap\-Dist\-Options} (double \&dist, bool on)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a99165c89ff93eea3edc32d50e1e26373}{request\-Snap\-Middle\-Options} (int \&middle\-Points, bool on)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_acf1c9337a3f682472071e2b450c92169}{request\-Tool\-Bar} (\hyperlink{classRS2_a53db3c150d1d8d501b236d537de53793}{R\-S2\-::\-Tool\-Bar\-Id} id)
+\item 
+\hypertarget{classQG__DialogFactory_aa0f095be2d1b9925843d4efddcb25a53}{virtual void {\bfseries request\-Previous\-Tool\-Bar} ()}\label{classQG__DialogFactory_aa0f095be2d1b9925843d4efddcb25a53}
+
+\item 
+\hypertarget{classQG__DialogFactory_a1a6f1d3b899a1246e51bdb6800f4f8be}{virtual void {\bfseries reset\-Tool\-Bar} ()}\label{classQG__DialogFactory_a1a6f1d3b899a1246e51bdb6800f4f8be}
+
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a01f401e22a5cc5fe559cd8fbf772c51c}{request\-Tool\-Bar\-Select} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$select\-Action, \hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} next\-Action)
+\item 
+virtual bool \hyperlink{classQG__DialogFactory_a6709cc2b2c62cf35db600f97252eef13}{request\-Attributes\-Dialog} (\hyperlink{classRS__AttributesData}{R\-S\-\_\-\-Attributes\-Data} \&data, \hyperlink{classRS__LayerList}{R\-S\-\_\-\-Layer\-List} \&layer\-List)
+\item 
+virtual bool \hyperlink{classQG__DialogFactory_afe7b2af979b5a155adab7bfafd41390f}{request\-Move\-Dialog} (\hyperlink{classRS__MoveData}{R\-S\-\_\-\-Move\-Data} \&data)
+\item 
+virtual bool \hyperlink{classQG__DialogFactory_ab534c8807a9f2f82811832d280ba6927}{request\-Rotate\-Dialog} (\hyperlink{classRS__RotateData}{R\-S\-\_\-\-Rotate\-Data} \&data)
+\item 
+virtual bool \hyperlink{classQG__DialogFactory_a886a98670acf89fd734f39ff44bdab6e}{request\-Scale\-Dialog} (\hyperlink{classRS__ScaleData}{R\-S\-\_\-\-Scale\-Data} \&data)
+\item 
+virtual bool \hyperlink{classQG__DialogFactory_aa2bac95a4d80dfba617788e1b775d5af}{request\-Mirror\-Dialog} (\hyperlink{classRS__MirrorData}{R\-S\-\_\-\-Mirror\-Data} \&data)
+\item 
+virtual bool \hyperlink{classQG__DialogFactory_a327e089f562a4fd187191236600564c4}{request\-Move\-Rotate\-Dialog} (\hyperlink{classRS__MoveRotateData}{R\-S\-\_\-\-Move\-Rotate\-Data} \&data)
+\item 
+virtual bool \hyperlink{classQG__DialogFactory_a7b13c118c028aece6176fd74aa2e2320}{request\-Rotate2\-Dialog} (\hyperlink{classRS__Rotate2Data}{R\-S\-\_\-\-Rotate2\-Data} \&data)
+\item 
+virtual bool \hyperlink{classQG__DialogFactory_a44fcd4ccad686822b13f5bc651ed259d}{request\-Modify\-Entity\-Dialog} (\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$entity)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a93a679f2ff125a739fa20df8e21d1b9a}{request\-Modify\-Offset\-Options} (double \&dist, bool on)
+\item 
+virtual bool \hyperlink{classQG__DialogFactory_a3a0175cfb336f456310ef67ddd5e8cb6}{request\-M\-Text\-Dialog} (\hyperlink{classRS__MText}{R\-S\-\_\-\-M\-Text} $\ast$text)
+\item 
+virtual bool \hyperlink{classQG__DialogFactory_a068b97637497d03011ae6f578fcea1d2}{request\-Text\-Dialog} (\hyperlink{classRS__Text}{R\-S\-\_\-\-Text} $\ast$text)
+\item 
+virtual bool \hyperlink{classQG__DialogFactory_a91129b4c9d5f5c58d1daab7df4bbfbf9}{request\-Hatch\-Dialog} (\hyperlink{classRS__Hatch}{R\-S\-\_\-\-Hatch} $\ast$hatch)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a3102c5d9bf99a2fb9f16acf89f9ac20c}{request\-Options\-General\-Dialog} ()
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a928828a3aabb386e5640a3a50e4ff67a}{request\-Options\-Drawing\-Dialog} (\hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} \&graphic)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_ad948cc42909706407dcad08988c852ab}{request\-Previous\-Menu} ()
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a7a749662d27c896adc5e4c225db83a8b}{update\-Coordinate\-Widget} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&abs, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&rel, bool update\-Format=false)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a48cc8fb5248274676560af0f9e1edae0}{update\-Mouse\-Widget} (const Q\-String \&left, const Q\-String \&right, bool keeping=true)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_ae1b3cb950123d66076fe228fb8dfb169}{restore\-Mouse\-Widget} (void)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_af53709995af55dab2eca8b5ee653aebc}{update\-Selection\-Widget} (int num, double length)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a38c31d87d1e9f8e9d5228d6810c8394c}{command\-Message} (const Q\-String \&message)
+\item 
+\hypertarget{classQG__DialogFactory_a434fd630a491fb45d5b38e7688b1a6c3}{virtual bool {\bfseries is\-Adapter} ()}\label{classQG__DialogFactory_a434fd630a491fb45d5b38e7688b1a6c3}
+
+\item 
+\hypertarget{classQG__DialogFactory_a4e696cbb61ed6768ad146e19053502fc}{virtual void {\bfseries update\-Arc\-Tangential\-Options} (const double \&d, bool by\-Radius)}\label{classQG__DialogFactory_a4e696cbb61ed6768ad146e19053502fc}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Q\-String \hyperlink{classQG__DialogFactory_a85ac1b84781c6fbfc0ac37a82c73da32}{ext\-To\-Format} (const Q\-String \&ext)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a3c0d330d9f30231cddc5f193d8368672}{set\-Option\-Widget} (Q\-Tool\-Bar $\ast$ow)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a8b2cab8df61e3c1cc4e96ecae0753bd9}{request\-Print\-Preview\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a0cc6ddb15ec42740f3f38e41770df284}{request\-Line\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a5bbf45df7a6eb0032b9a7960cd09f1e9}{request\-Polyline\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_ac714ac286131d71810b706abe4d8b261}{request\-Polyline\-Equidistant\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update=false)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a2b3108d43ca7db6b3901a30ab8c89d61}{request\-Line\-Angle\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a9bc8c8fc5e565acd9302639a7694976e}{request\-Line\-Rel\-Angle\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a76d0a18b0ce569ba69794aef0482c991}{request\-Line\-Parallel\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a695044f186e3e3c16edf19a7d65b9dd1}{request\-Line\-Parallel\-Through\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a4673b0777cf18f7e1874fcc65b82ac26}{request\-Line\-Bisector\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a6673fc58e31d5f5f9f1ae333c75d4540}{request\-Line\-Polygon\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a7107fcfcd53c78f8f2d87a3be97842aa}{request\-Line\-Polygon2\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_ae7011bf05c42acaf91fead0e37e29bf3}{request\-Arc\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a5fdeb7adb818efb524fe5b1b4e1851c7}{request\-Arc\-Tangential\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a6ac9c0bdefb56a90285281ac4d64b92f}{request\-Circle\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a84ca281d5618758e10839874221a11a3}{request\-Circle\-Tan2\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_adbeae0efba2bde77f8f0047023125867}{request\-Spline\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a3f912db3392a223e2012d68b359d7287}{request\-M\-Text\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a1df1a6e52715fbffd283ae1dcf8da949}{request\-Text\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_ade7d5b7a8cc3e060b47bf66a68b5e7c2}{request\-Dimension\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_aab49816d5cf7c57010f3d1d43fe26ca0}{request\-Dim\-Linear\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_ad7e03c83b644d7483e08a3d2a9ea2bd6}{request\-Insert\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a61db07e5e28c6d89cd4337098cf7936f}{request\-Image\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a9f4d6563bbb71f2872760328253323e3}{request\-Trim\-Amount\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a2479baa7f8734b3da3fc67daa06a6e68}{request\-Move\-Rotate\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_a322230d7fd4f1860bc1f3f6a4aed5020}{request\-Bevel\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_ab031fb1f853b2c1448b5aca3303d085c}{request\-Round\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\item 
+virtual void \hyperlink{classQG__DialogFactory_ae9b65826d020aa6c03f51c0da65d1f5f}{request\-Library\-Insert\-Options} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action, bool on, bool update)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classQG__DialogFactory_a3f4a0e132723a8da0aaac5c1f8bab7dd}{Q\-Widget $\ast$ \hyperlink{classQG__DialogFactory_a3f4a0e132723a8da0aaac5c1f8bab7dd}{parent}}\label{classQG__DialogFactory_a3f4a0e132723a8da0aaac5c1f8bab7dd}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the widget which can host dialogs. \end{DoxyCompactList}\item 
+\hypertarget{classQG__DialogFactory_a7850e8ea2aef2336e99e234bb88920a3}{Q\-Tool\-Bar $\ast$ \hyperlink{classQG__DialogFactory_a7850e8ea2aef2336e99e234bb88920a3}{option\-Widget}}\label{classQG__DialogFactory_a7850e8ea2aef2336e99e234bb88920a3}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the widget which can host individual tool options. \end{DoxyCompactList}\item 
+\hypertarget{classQG__DialogFactory_a3b5f0235594b099a9c88c908f76e54ce}{\hyperlink{classQG__CoordinateWidget}{Q\-G\-\_\-\-Coordinate\-Widget} $\ast$ \hyperlink{classQG__DialogFactory_a3b5f0235594b099a9c88c908f76e54ce}{coordinate\-Widget}}\label{classQG__DialogFactory_a3b5f0235594b099a9c88c908f76e54ce}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the coordinate widget. \end{DoxyCompactList}\item 
+\hypertarget{classQG__DialogFactory_a143dbad01a134583bf41b825bb59d636}{\hyperlink{classQG__MouseWidget}{Q\-G\-\_\-\-Mouse\-Widget} $\ast$ \hyperlink{classQG__DialogFactory_a143dbad01a134583bf41b825bb59d636}{mouse\-Widget}}\label{classQG__DialogFactory_a143dbad01a134583bf41b825bb59d636}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the mouse widget. \end{DoxyCompactList}\item 
+\hypertarget{classQG__DialogFactory_ae21a410c7b9b948a94714f1716a15e48}{\hyperlink{classQG__SelectionWidget}{Q\-G\-\_\-\-Selection\-Widget} $\ast$ \hyperlink{classQG__DialogFactory_ae21a410c7b9b948a94714f1716a15e48}{selection\-Widget}}\label{classQG__DialogFactory_ae21a410c7b9b948a94714f1716a15e48}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the selection widget. \end{DoxyCompactList}\item 
+\hypertarget{classQG__DialogFactory_aa3a89aa8d97a5d61a069077803476930}{\hyperlink{classQG__CadToolBar}{Q\-G\-\_\-\-Cad\-Tool\-Bar} $\ast$ \hyperlink{classQG__DialogFactory_aa3a89aa8d97a5d61a069077803476930}{cad\-Tool\-Bar}}\label{classQG__DialogFactory_aa3a89aa8d97a5d61a069077803476930}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the C\-A\-D tool bar. \end{DoxyCompactList}\item 
+\hypertarget{classQG__DialogFactory_a83697cd33ad1a754d432f41fc325ae3e}{\hyperlink{classQG__CommandWidget}{Q\-G\-\_\-\-Command\-Widget} $\ast$ \hyperlink{classQG__DialogFactory_a83697cd33ad1a754d432f41fc325ae3e}{command\-Widget}}\label{classQG__DialogFactory_a83697cd33ad1a754d432f41fc325ae3e}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the command line widget. \end{DoxyCompactList}\item 
+\hypertarget{classQG__DialogFactory_a847bc663dbcfcdabee605eeb51d49402}{\hyperlink{classQG__ArcTangentialOptions}{Q\-G\-\_\-\-Arc\-Tangential\-Options} $\ast$ \hyperlink{classQG__DialogFactory_a847bc663dbcfcdabee605eeb51d49402}{arc\-Tangential\-Options}}\label{classQG__DialogFactory_a847bc663dbcfcdabee605eeb51d49402}
+
+\begin{DoxyCompactList}\small\item\em Pointer to arc\-Tangential Option widge. \end{DoxyCompactList}\item 
+\hypertarget{classQG__DialogFactory_a8777bab1c52be73d5e674dca86d8ce9f}{\hyperlink{classQG__PolylineEquidistantOptions}{Q\-G\-\_\-\-Polyline\-Equidistant\-Options} $\ast$ {\bfseries polyline\-Equidistant\-Options}}\label{classQG__DialogFactory_a8777bab1c52be73d5e674dca86d8ce9f}
+
+\item 
+\hypertarget{classQG__DialogFactory_a8c737a45c27d094c920bf3f1f687f499}{\hyperlink{classQG__MainWindowInterface}{Q\-G\-\_\-\-Main\-Window\-Interface} $\ast$ \hyperlink{classQG__DialogFactory_a8c737a45c27d094c920bf3f1f687f499}{main\-Window}}\label{classQG__DialogFactory_a8c737a45c27d094c920bf3f1f687f499}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the main app window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the Qt implementation of a widget which can create and show dialogs. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classQG__DialogFactory_ad1878de3d60e9eb73a4955b43125a0c0}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{Q\-G\-\_\-\-Dialog\-Factory}]{\setlength{\rightskip}{0pt plus 5cm}Q\-G\-\_\-\-Dialog\-Factory\-::\-Q\-G\-\_\-\-Dialog\-Factory (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent, }
+\item[{Q\-Tool\-Bar $\ast$}]{ow}
+\end{DoxyParamCaption}
+)}}\label{classQG__DialogFactory_ad1878de3d60e9eb73a4955b43125a0c0}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Pointer to parent widget which can host dialogs. \\
+\hline
+{\em ow} & Pointer to widget that can host option widgets. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classQG__DialogFactory_a326c57055d3acedf93ecac55f5e2a275}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!$\sim$\-Q\-G\-\_\-\-Dialog\-Factory@{$\sim$\-Q\-G\-\_\-\-Dialog\-Factory}}
+\index{$\sim$\-Q\-G\-\_\-\-Dialog\-Factory@{$\sim$\-Q\-G\-\_\-\-Dialog\-Factory}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{$\sim$\-Q\-G\-\_\-\-Dialog\-Factory}]{\setlength{\rightskip}{0pt plus 5cm}Q\-G\-\_\-\-Dialog\-Factory\-::$\sim$\-Q\-G\-\_\-\-Dialog\-Factory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a326c57055d3acedf93ecac55f5e2a275}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classQG__DialogFactory_a38c31d87d1e9f8e9d5228d6810c8394c}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!command\-Message@{command\-Message}}
+\index{command\-Message@{command\-Message}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{command\-Message}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::command\-Message (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a38c31d87d1e9f8e9d5228d6810c8394c}
+Called when an action needs to communicate 'message' to the user. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_ace72f446ab2ba5eaa38bfaecc4c7b801}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_a85ac1b84781c6fbfc0ac37a82c73da32}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!ext\-To\-Format@{ext\-To\-Format}}
+\index{ext\-To\-Format@{ext\-To\-Format}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{ext\-To\-Format}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Q\-G\-\_\-\-Dialog\-Factory\-::ext\-To\-Format (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{ext}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classQG__DialogFactory_a85ac1b84781c6fbfc0ac37a82c73da32}
+Converts an extension to a format description. e.\-g. \char`\"{}\-P\-N\-G\char`\"{} to \char`\"{}\-Portable Network Graphic\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Extension} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Format description 
+\end{DoxyReturn}
+\hypertarget{classQG__DialogFactory_afbe3a76d1327337d920808380017977c}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!get\-Cad\-Tool\-Bar@{get\-Cad\-Tool\-Bar}}
+\index{get\-Cad\-Tool\-Bar@{get\-Cad\-Tool\-Bar}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{get\-Cad\-Tool\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-G\-\_\-\-Cad\-Tool\-Bar}$\ast$ Q\-G\-\_\-\-Dialog\-Factory\-::get\-Cad\-Tool\-Bar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classQG__DialogFactory_afbe3a76d1327337d920808380017977c}
+\begin{DoxyReturn}{Returns}
+cad tool bar or N\-U\-L\-L. 
+\end{DoxyReturn}
+\hypertarget{classQG__DialogFactory_a5ecabbaf7b06eed8c08d9e230fdb3198}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!get\-Command\-Widget@{get\-Command\-Widget}}
+\index{get\-Command\-Widget@{get\-Command\-Widget}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{get\-Command\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-G\-\_\-\-Command\-Widget}$\ast$ Q\-G\-\_\-\-Dialog\-Factory\-::get\-Command\-Widget (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classQG__DialogFactory_a5ecabbaf7b06eed8c08d9e230fdb3198}
+\begin{DoxyReturn}{Returns}
+command widget or N\-U\-L\-L. 
+\end{DoxyReturn}
+\hypertarget{classQG__DialogFactory_ae7011bf05c42acaf91fead0e37e29bf3}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Arc\-Options@{request\-Arc\-Options}}
+\index{request\-Arc\-Options@{request\-Arc\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Arc\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Arc\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_ae7011bf05c42acaf91fead0e37e29bf3}
+Shows a widget for arc options. \hypertarget{classQG__DialogFactory_a5fdeb7adb818efb524fe5b1b4e1851c7}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Arc\-Tangential\-Options@{request\-Arc\-Tangential\-Options}}
+\index{request\-Arc\-Tangential\-Options@{request\-Arc\-Tangential\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Arc\-Tangential\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Arc\-Tangential\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a5fdeb7adb818efb524fe5b1b4e1851c7}
+Shows a widget for tangential arc options. \hypertarget{classQG__DialogFactory_a6709cc2b2c62cf35db600f97252eef13}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Attributes\-Dialog@{request\-Attributes\-Dialog}}
+\index{request\-Attributes\-Dialog@{request\-Attributes\-Dialog}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Attributes\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}bool Q\-G\-\_\-\-Dialog\-Factory\-::request\-Attributes\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Attributes\-Data} \&}]{data, }
+\item[{{\bf R\-S\-\_\-\-Layer\-List} \&}]{layer\-List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a6709cc2b2c62cf35db600f97252eef13}
+Shows attributes options dialog presenting the given data. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a7294139615bde9a052971083ef808ee7}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_a322230d7fd4f1860bc1f3f6a4aed5020}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Bevel\-Options@{request\-Bevel\-Options}}
+\index{request\-Bevel\-Options@{request\-Bevel\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Bevel\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Bevel\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a322230d7fd4f1860bc1f3f6a4aed5020}
+Shows a widget for beveling options. \hypertarget{classQG__DialogFactory_ad40e34b75eae32264a6822b5a4f21b0a}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Block\-Attributes\-Dialog@{request\-Block\-Attributes\-Dialog}}
+\index{request\-Block\-Attributes\-Dialog@{request\-Block\-Attributes\-Dialog}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Block\-Attributes\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Block\-Data} Q\-G\-\_\-\-Dialog\-Factory\-::request\-Block\-Attributes\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block\-List} $\ast$}]{block\-List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_ad40e34b75eae32264a6822b5a4f21b0a}
+Shows a dialog for renaming the currently active block.
+
+\begin{DoxyReturn}{Returns}
+a pointer to the modified block or N\-U\-L\-L on cancellation. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a28c6bbcf943257ac6bbfc9f347e16a72}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_a0035330ffbe7b0b3dfa763494abfaed1}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Block\-Removal\-Dialog@{request\-Block\-Removal\-Dialog}}
+\index{request\-Block\-Removal\-Dialog@{request\-Block\-Removal\-Dialog}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Block\-Removal\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Block} $\ast$ Q\-G\-\_\-\-Dialog\-Factory\-::request\-Block\-Removal\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block\-List} $\ast$}]{block\-List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a0035330ffbe7b0b3dfa763494abfaed1}
+Shows a dialog that asks the user if the selected block can be removed. Doesn't remove the block. This is up to the caller.
+
+\begin{DoxyReturn}{Returns}
+a pointer to the block that should be removed. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a7027f9ee4a7f8c5cb85bd390a0a5235c}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_a6ac9c0bdefb56a90285281ac4d64b92f}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Circle\-Options@{request\-Circle\-Options}}
+\index{request\-Circle\-Options@{request\-Circle\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Circle\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Circle\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a6ac9c0bdefb56a90285281ac4d64b92f}
+Shows a widget for arc options. \hypertarget{classQG__DialogFactory_a84ca281d5618758e10839874221a11a3}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Circle\-Tan2\-Options@{request\-Circle\-Tan2\-Options}}
+\index{request\-Circle\-Tan2\-Options@{request\-Circle\-Tan2\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Circle\-Tan2\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Circle\-Tan2\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a84ca281d5618758e10839874221a11a3}
+Shows a widget for arc options. \hypertarget{classQG__DialogFactory_ade7d5b7a8cc3e060b47bf66a68b5e7c2}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Dimension\-Options@{request\-Dimension\-Options}}
+\index{request\-Dimension\-Options@{request\-Dimension\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Dimension\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Dimension\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_ade7d5b7a8cc3e060b47bf66a68b5e7c2}
+Shows a widget for dimension options. \hypertarget{classQG__DialogFactory_aab49816d5cf7c57010f3d1d43fe26ca0}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Dim\-Linear\-Options@{request\-Dim\-Linear\-Options}}
+\index{request\-Dim\-Linear\-Options@{request\-Dim\-Linear\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Dim\-Linear\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Dim\-Linear\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_aab49816d5cf7c57010f3d1d43fe26ca0}
+Shows a widget for linear dimension options. \hypertarget{classQG__DialogFactory_a083de978c17fbf8e802e6ae828fa9117}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Edit\-Block\-Window@{request\-Edit\-Block\-Window}}
+\index{request\-Edit\-Block\-Window@{request\-Edit\-Block\-Window}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Edit\-Block\-Window}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Edit\-Block\-Window (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block\-List} $\ast$}]{block\-List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a083de978c17fbf8e802e6ae828fa9117}
+This virtual method must be overwritten and should provide a way to edit a block. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_ad9897be7951513acd0dddc536a9c8619}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+
+
+Reimplemented in \hyperlink{classQC__DialogFactory_a8e29de8d89f21be4baa06d6d3417484f}{Q\-C\-\_\-\-Dialog\-Factory}.
+
+\hypertarget{classQG__DialogFactory_a790defe44d4869053a4485dd6059fa4f}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Edit\-Layer\-Dialog@{request\-Edit\-Layer\-Dialog}}
+\index{request\-Edit\-Layer\-Dialog@{request\-Edit\-Layer\-Dialog}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Edit\-Layer\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Layer} $\ast$ Q\-G\-\_\-\-Dialog\-Factory\-::request\-Edit\-Layer\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer\-List} $\ast$}]{layer\-List = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a790defe44d4869053a4485dd6059fa4f}
+Shows a dialog for editing a layer. A new layer is created and returned. Modifying the layer is up to the caller.
+
+\begin{DoxyReturn}{Returns}
+A pointer to a new layer with the changed attributes or N\-U\-L\-L if the dialog was cancelled. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_adb533740ea219696d9ecbdcd34ae4df4}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_a91129b4c9d5f5c58d1daab7df4bbfbf9}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Hatch\-Dialog@{request\-Hatch\-Dialog}}
+\index{request\-Hatch\-Dialog@{request\-Hatch\-Dialog}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Hatch\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}bool Q\-G\-\_\-\-Dialog\-Factory\-::request\-Hatch\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Hatch} $\ast$}]{hatch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a91129b4c9d5f5c58d1daab7df4bbfbf9}
+Shows a dialog to edit pattern / hatch attributes of the given entity. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a5edf0344de81ea6585ef8e4dc4f4a7c2}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_a0983a4605afae0ae1fd63cde95ff7cc1}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Image\-Open\-Dialog@{request\-Image\-Open\-Dialog}}
+\index{request\-Image\-Open\-Dialog@{request\-Image\-Open\-Dialog}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Image\-Open\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Q\-G\-\_\-\-Dialog\-Factory\-::request\-Image\-Open\-Dialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a0983a4605afae0ae1fd63cde95ff7cc1}
+Shows a dialog for choosing a file name. Saving the file is up to the caller.
+
+\begin{DoxyReturn}{Returns}
+File name with path and extension to determine the file type or an empty string if the dialog was cancelled. Shows a dialog for choosing a file name. Opening the file is up to the caller.
+
+File name with path and extension to determine the file type or an empty string if the dialog was cancelled. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_ac9593d3c8e0c2d28ee95972106a92074}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_a61db07e5e28c6d89cd4337098cf7936f}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Image\-Options@{request\-Image\-Options}}
+\index{request\-Image\-Options@{request\-Image\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Image\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Image\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a61db07e5e28c6d89cd4337098cf7936f}
+Shows a widget for image options. \hypertarget{classQG__DialogFactory_ad7e03c83b644d7483e08a3d2a9ea2bd6}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Insert\-Options@{request\-Insert\-Options}}
+\index{request\-Insert\-Options@{request\-Insert\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Insert\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Insert\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_ad7e03c83b644d7483e08a3d2a9ea2bd6}
+Shows a widget for insert options. \hypertarget{classQG__DialogFactory_a75e710298b1640d41f39dc1ec9975c09}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Layer\-Removal\-Dialog@{request\-Layer\-Removal\-Dialog}}
+\index{request\-Layer\-Removal\-Dialog@{request\-Layer\-Removal\-Dialog}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Layer\-Removal\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Layer} $\ast$ Q\-G\-\_\-\-Dialog\-Factory\-::request\-Layer\-Removal\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer\-List} $\ast$}]{layer\-List = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a75e710298b1640d41f39dc1ec9975c09}
+Shows a dialog that asks the user if the selected layer can be removed. Doesn't remove the layer. This is up to the caller.
+
+\begin{DoxyReturn}{Returns}
+a pointer to the layer that should be removed. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_ad07c7382124a0b0e423d11d9bfbb8cf7}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_ae9b65826d020aa6c03f51c0da65d1f5f}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Library\-Insert\-Options@{request\-Library\-Insert\-Options}}
+\index{request\-Library\-Insert\-Options@{request\-Library\-Insert\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Library\-Insert\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Library\-Insert\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_ae9b65826d020aa6c03f51c0da65d1f5f}
+Shows a widget for library insert options. \hypertarget{classQG__DialogFactory_a2b3108d43ca7db6b3901a30ab8c89d61}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Line\-Angle\-Options@{request\-Line\-Angle\-Options}}
+\index{request\-Line\-Angle\-Options@{request\-Line\-Angle\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Line\-Angle\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Line\-Angle\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a2b3108d43ca7db6b3901a30ab8c89d61}
+Shows a widget for options for the action\-: \char`\"{}line angle\char`\"{} \hypertarget{classQG__DialogFactory_a4673b0777cf18f7e1874fcc65b82ac26}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Line\-Bisector\-Options@{request\-Line\-Bisector\-Options}}
+\index{request\-Line\-Bisector\-Options@{request\-Line\-Bisector\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Line\-Bisector\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Line\-Bisector\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a4673b0777cf18f7e1874fcc65b82ac26}
+Shows a widget for options for the action\-: \char`\"{}line angle\char`\"{} \hypertarget{classQG__DialogFactory_a0cc6ddb15ec42740f3f38e41770df284}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Line\-Options@{request\-Line\-Options}}
+\index{request\-Line\-Options@{request\-Line\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Line\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Line\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a0cc6ddb15ec42740f3f38e41770df284}
+Shows a widget for options for the action\-: \char`\"{}draw line\char`\"{} \hypertarget{classQG__DialogFactory_a76d0a18b0ce569ba69794aef0482c991}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Line\-Parallel\-Options@{request\-Line\-Parallel\-Options}}
+\index{request\-Line\-Parallel\-Options@{request\-Line\-Parallel\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Line\-Parallel\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Line\-Parallel\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a76d0a18b0ce569ba69794aef0482c991}
+Shows a widget for options for the action\-: \char`\"{}draw line parallel\char`\"{} \hypertarget{classQG__DialogFactory_a695044f186e3e3c16edf19a7d65b9dd1}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Line\-Parallel\-Through\-Options@{request\-Line\-Parallel\-Through\-Options}}
+\index{request\-Line\-Parallel\-Through\-Options@{request\-Line\-Parallel\-Through\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Line\-Parallel\-Through\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Line\-Parallel\-Through\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a695044f186e3e3c16edf19a7d65b9dd1}
+Shows a widget for options for the action\-: \char`\"{}draw line parallel through\char`\"{} \hypertarget{classQG__DialogFactory_a7107fcfcd53c78f8f2d87a3be97842aa}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Line\-Polygon2\-Options@{request\-Line\-Polygon2\-Options}}
+\index{request\-Line\-Polygon2\-Options@{request\-Line\-Polygon2\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Line\-Polygon2\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Line\-Polygon2\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a7107fcfcd53c78f8f2d87a3be97842aa}
+Shows a widget for options for the action\-: \char`\"{}draw polygon2\char`\"{} \hypertarget{classQG__DialogFactory_a6673fc58e31d5f5f9f1ae333c75d4540}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Line\-Polygon\-Options@{request\-Line\-Polygon\-Options}}
+\index{request\-Line\-Polygon\-Options@{request\-Line\-Polygon\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Line\-Polygon\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Line\-Polygon\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a6673fc58e31d5f5f9f1ae333c75d4540}
+Shows a widget for options for the action\-: \char`\"{}draw polygon\char`\"{} \hypertarget{classQG__DialogFactory_a9bc8c8fc5e565acd9302639a7694976e}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Line\-Rel\-Angle\-Options@{request\-Line\-Rel\-Angle\-Options}}
+\index{request\-Line\-Rel\-Angle\-Options@{request\-Line\-Rel\-Angle\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Line\-Rel\-Angle\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Line\-Rel\-Angle\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a9bc8c8fc5e565acd9302639a7694976e}
+Shows a widget for options for the action\-: \char`\"{}line relative angle\char`\"{} \hypertarget{classQG__DialogFactory_aa2bac95a4d80dfba617788e1b775d5af}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Mirror\-Dialog@{request\-Mirror\-Dialog}}
+\index{request\-Mirror\-Dialog@{request\-Mirror\-Dialog}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Mirror\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}bool Q\-G\-\_\-\-Dialog\-Factory\-::request\-Mirror\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Mirror\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_aa2bac95a4d80dfba617788e1b775d5af}
+Shows mirror options dialog presenting the given data. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a9051595c6f23c2c4efaf2900a4f282dd}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_a44fcd4ccad686822b13f5bc651ed259d}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Modify\-Entity\-Dialog@{request\-Modify\-Entity\-Dialog}}
+\index{request\-Modify\-Entity\-Dialog@{request\-Modify\-Entity\-Dialog}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Modify\-Entity\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}bool Q\-G\-\_\-\-Dialog\-Factory\-::request\-Modify\-Entity\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{entity}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a44fcd4ccad686822b13f5bc651ed259d}
+Shows a dialog to edit the given entity. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a8dad4c0a48e3299f758ebd7c20cee05a}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_a93a679f2ff125a739fa20df8e21d1b9a}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Modify\-Offset\-Options@{request\-Modify\-Offset\-Options}}
+\index{request\-Modify\-Offset\-Options@{request\-Modify\-Offset\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Modify\-Offset\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Modify\-Offset\-Options (
+\begin{DoxyParamCaption}
+\item[{double \&}]{dist, }
+\item[{bool}]{on}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a93a679f2ff125a739fa20df8e21d1b9a}
+Shows a widget for offset options. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_aca9548ff503740edd2473b5e9732b98a}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_afe7b2af979b5a155adab7bfafd41390f}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Move\-Dialog@{request\-Move\-Dialog}}
+\index{request\-Move\-Dialog@{request\-Move\-Dialog}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Move\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}bool Q\-G\-\_\-\-Dialog\-Factory\-::request\-Move\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Move\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_afe7b2af979b5a155adab7bfafd41390f}
+Shows move options dialog presenting the given data. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a84809c4af458f1ec63bdf8e7cfde8a02}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_a327e089f562a4fd187191236600564c4}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Move\-Rotate\-Dialog@{request\-Move\-Rotate\-Dialog}}
+\index{request\-Move\-Rotate\-Dialog@{request\-Move\-Rotate\-Dialog}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Move\-Rotate\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}bool Q\-G\-\_\-\-Dialog\-Factory\-::request\-Move\-Rotate\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Move\-Rotate\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a327e089f562a4fd187191236600564c4}
+Shows move/rotate options dialog presenting the given data. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_acc71995e7165cc9c7eb4ef215e7b68c2}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_a2479baa7f8734b3da3fc67daa06a6e68}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Move\-Rotate\-Options@{request\-Move\-Rotate\-Options}}
+\index{request\-Move\-Rotate\-Options@{request\-Move\-Rotate\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Move\-Rotate\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Move\-Rotate\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a2479baa7f8734b3da3fc67daa06a6e68}
+Shows a widget for 'snap to a point with a given distance' options. \hypertarget{classQG__DialogFactory_a3a0175cfb336f456310ef67ddd5e8cb6}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-M\-Text\-Dialog@{request\-M\-Text\-Dialog}}
+\index{request\-M\-Text\-Dialog@{request\-M\-Text\-Dialog}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-M\-Text\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}bool Q\-G\-\_\-\-Dialog\-Factory\-::request\-M\-Text\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-M\-Text} $\ast$}]{text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a3a0175cfb336f456310ef67ddd5e8cb6}
+Shows a dialog to edit the attributes of the given dimension entity. Shows a dialog to edit the attributes of the given multi-\/line text entity. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_ae1618dacc9e6c8c969be486b22ff8617}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_a3f912db3392a223e2012d68b359d7287}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-M\-Text\-Options@{request\-M\-Text\-Options}}
+\index{request\-M\-Text\-Options@{request\-M\-Text\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-M\-Text\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-M\-Text\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a3f912db3392a223e2012d68b359d7287}
+Shows a widget for multi-\/line text options. \hypertarget{classQG__DialogFactory_a0f880d3a5e43fdb3ff333ca98974bc30}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-New\-Block\-Dialog@{request\-New\-Block\-Dialog}}
+\index{request\-New\-Block\-Dialog@{request\-New\-Block\-Dialog}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-New\-Block\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Block\-Data} Q\-G\-\_\-\-Dialog\-Factory\-::request\-New\-Block\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block\-List} $\ast$}]{block\-List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a0f880d3a5e43fdb3ff333ca98974bc30}
+Shows a dialog for adding a block. Doesn't add the block. This is up to the caller.
+
+\begin{DoxyReturn}{Returns}
+a pointer to the newly created block that should be added. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a804b0b5dd9eac9f02660a6a38303800b}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_a61ef4d64473b7e2a493e3d4b3f5d9100}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-New\-Document@{request\-New\-Document}}
+\index{request\-New\-Document@{request\-New\-Document}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-New\-Document}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Graphic\-View} $\ast$ Q\-G\-\_\-\-Dialog\-Factory\-::request\-New\-Document (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{file\-Name = {\ttfamily QString\-:\-:null}, }
+\item[{{\bf R\-S\-\_\-\-Document} $\ast$}]{doc = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a61ef4d64473b7e2a493e3d4b3f5d9100}
+Requests a new document from the main window. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a40deafb82c660a6a14a4a3d08a1cca4c}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_a11680139d112e8497805942896bc31f7}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-New\-Layer\-Dialog@{request\-New\-Layer\-Dialog}}
+\index{request\-New\-Layer\-Dialog@{request\-New\-Layer\-Dialog}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-New\-Layer\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Layer} $\ast$ Q\-G\-\_\-\-Dialog\-Factory\-::request\-New\-Layer\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer\-List} $\ast$}]{layer\-List = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a11680139d112e8497805942896bc31f7}
+Shows a dialog for adding a layer. Doesn't add the layer. This is up to the caller.
+
+\begin{DoxyReturn}{Returns}
+a pointer to the newly created layer that should be added. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a743781e36b98bc37ed22de05b04acaab}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_afe7ca8f0ffa8bd42b6d6cfdf471c6e29}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Options@{request\-Options}}
+\index{request\-Options@{request\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_afe7ca8f0ffa8bd42b6d6cfdf471c6e29}
+This virtual method must be overwritten and must present a widget for options for the given action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & Pointer to the action which needs the options. \\
+\hline
+{\em on} & true\-: switch widget on, false\-: off \\
+\hline
+{\em update} & true\-: widget gets data from the action, false\-: widget gets data from config file. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a7007dbb4c883dda6cf63939d0eebb341}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_a928828a3aabb386e5640a3a50e4ff67a}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Options\-Drawing\-Dialog@{request\-Options\-Drawing\-Dialog}}
+\index{request\-Options\-Drawing\-Dialog@{request\-Options\-Drawing\-Dialog}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Options\-Drawing\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Options\-Drawing\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Graphic} \&}]{graphic}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a928828a3aabb386e5640a3a50e4ff67a}
+Shows dialog for drawing options. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a115e1f29d6419c20d02c185b13dfea37}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_a3102c5d9bf99a2fb9f16acf89f9ac20c}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Options\-General\-Dialog@{request\-Options\-General\-Dialog}}
+\index{request\-Options\-General\-Dialog@{request\-Options\-General\-Dialog}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Options\-General\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Options\-General\-Dialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a3102c5d9bf99a2fb9f16acf89f9ac20c}
+Shows dialog for general application options. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a494de4c323d61be319f88b7a37026e6b}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_ac714ac286131d71810b706abe4d8b261}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Polyline\-Equidistant\-Options@{request\-Polyline\-Equidistant\-Options}}
+\index{request\-Polyline\-Equidistant\-Options@{request\-Polyline\-Equidistant\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Polyline\-Equidistant\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Polyline\-Equidistant\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_ac714ac286131d71810b706abe4d8b261}
+Shows a widget for options for the action\-: \char`\"{}draw equidistant polyline\char`\"{} \hypertarget{classQG__DialogFactory_a5bbf45df7a6eb0032b9a7960cd09f1e9}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Polyline\-Options@{request\-Polyline\-Options}}
+\index{request\-Polyline\-Options@{request\-Polyline\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Polyline\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Polyline\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a5bbf45df7a6eb0032b9a7960cd09f1e9}
+Shows a widget for options for the action\-: \char`\"{}draw polyline\char`\"{} \hypertarget{classQG__DialogFactory_ad948cc42909706407dcad08988c852ab}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Previous\-Menu@{request\-Previous\-Menu}}
+\index{request\-Previous\-Menu@{request\-Previous\-Menu}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Previous\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Previous\-Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_ad948cc42909706407dcad08988c852ab}
+Back to last menu in cad toolbar. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_ad524d6d4c69cca7e5f69c1cff6b89130}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_a8b2cab8df61e3c1cc4e96ecae0753bd9}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Print\-Preview\-Options@{request\-Print\-Preview\-Options}}
+\index{request\-Print\-Preview\-Options@{request\-Print\-Preview\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Print\-Preview\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Print\-Preview\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a8b2cab8df61e3c1cc4e96ecae0753bd9}
+Shows a widget for options for the action\-: \char`\"{}print preview\char`\"{} \hypertarget{classQG__DialogFactory_a7b13c118c028aece6176fd74aa2e2320}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Rotate2\-Dialog@{request\-Rotate2\-Dialog}}
+\index{request\-Rotate2\-Dialog@{request\-Rotate2\-Dialog}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Rotate2\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}bool Q\-G\-\_\-\-Dialog\-Factory\-::request\-Rotate2\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Rotate2\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a7b13c118c028aece6176fd74aa2e2320}
+Shows rotate around two centers options dialog presenting the given data. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_aec13bccf53c82ce95bc4f619c4e45501}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_ab534c8807a9f2f82811832d280ba6927}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Rotate\-Dialog@{request\-Rotate\-Dialog}}
+\index{request\-Rotate\-Dialog@{request\-Rotate\-Dialog}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Rotate\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}bool Q\-G\-\_\-\-Dialog\-Factory\-::request\-Rotate\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Rotate\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_ab534c8807a9f2f82811832d280ba6927}
+Shows rotate options dialog presenting the given data. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a4196686ece4a4a0a0c813b47daa43cc5}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_ab031fb1f853b2c1448b5aca3303d085c}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Round\-Options@{request\-Round\-Options}}
+\index{request\-Round\-Options@{request\-Round\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Round\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Round\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_ab031fb1f853b2c1448b5aca3303d085c}
+Shows a widget for rounding options. \hypertarget{classQG__DialogFactory_a886a98670acf89fd734f39ff44bdab6e}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Scale\-Dialog@{request\-Scale\-Dialog}}
+\index{request\-Scale\-Dialog@{request\-Scale\-Dialog}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Scale\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}bool Q\-G\-\_\-\-Dialog\-Factory\-::request\-Scale\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Scale\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a886a98670acf89fd734f39ff44bdab6e}
+Shows scale options dialog presenting the given data. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_ab2170e70be6fc9846a5d0628600b7e2c}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_a15f383752323fd2a3ade29caa86f9ce3}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Snap\-Dist\-Options@{request\-Snap\-Dist\-Options}}
+\index{request\-Snap\-Dist\-Options@{request\-Snap\-Dist\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Snap\-Dist\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Snap\-Dist\-Options (
+\begin{DoxyParamCaption}
+\item[{double \&}]{dist, }
+\item[{bool}]{on}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a15f383752323fd2a3ade29caa86f9ce3}
+Shows a widget for 'snap to a point with a given distance' options. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_ac9fcb3ea665066b9d70af8360d0e136f}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_a99165c89ff93eea3edc32d50e1e26373}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Snap\-Middle\-Options@{request\-Snap\-Middle\-Options}}
+\index{request\-Snap\-Middle\-Options@{request\-Snap\-Middle\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Snap\-Middle\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Snap\-Middle\-Options (
+\begin{DoxyParamCaption}
+\item[{int \&}]{middle\-Points, }
+\item[{bool}]{on}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a99165c89ff93eea3edc32d50e1e26373}
+Shows a widget for 'snap to equidistant middle points ' options. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_adbeae0efba2bde77f8f0047023125867}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Spline\-Options@{request\-Spline\-Options}}
+\index{request\-Spline\-Options@{request\-Spline\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Spline\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Spline\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_adbeae0efba2bde77f8f0047023125867}
+Shows a widget for spline options. \hypertarget{classQG__DialogFactory_a068b97637497d03011ae6f578fcea1d2}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Text\-Dialog@{request\-Text\-Dialog}}
+\index{request\-Text\-Dialog@{request\-Text\-Dialog}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Text\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}bool Q\-G\-\_\-\-Dialog\-Factory\-::request\-Text\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Text} $\ast$}]{text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a068b97637497d03011ae6f578fcea1d2}
+Shows a dialog to edit the attributes of the given text entity. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a906e43ced9e640964115a9e58e277ff4}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_a1df1a6e52715fbffd283ae1dcf8da949}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Text\-Options@{request\-Text\-Options}}
+\index{request\-Text\-Options@{request\-Text\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Text\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Text\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a1df1a6e52715fbffd283ae1dcf8da949}
+Shows a widget for text options. \hypertarget{classQG__DialogFactory_acf1c9337a3f682472071e2b450c92169}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Tool\-Bar@{request\-Tool\-Bar}}
+\index{request\-Tool\-Bar@{request\-Tool\-Bar}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Tool\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Tool\-Bar (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Tool\-Bar\-Id}}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_acf1c9337a3f682472071e2b450c92169}
+Shows the given toolbar. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a7528e6a77554fcd2873d6eb9e03402ab}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_a01f401e22a5cc5fe559cd8fbf772c51c}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Tool\-Bar\-Select@{request\-Tool\-Bar\-Select}}
+\index{request\-Tool\-Bar\-Select@{request\-Tool\-Bar\-Select}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Tool\-Bar\-Select}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Tool\-Bar\-Select (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{select\-Action, }
+\item[{{\bf R\-S2\-::\-Action\-Type}}]{next\-Action}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a01f401e22a5cc5fe559cd8fbf772c51c}
+Shows the select toolbar with the given action to launch. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a50be8fdda1e8a2060b70adf8972a2857}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_a9f4d6563bbb71f2872760328253323e3}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Trim\-Amount\-Options@{request\-Trim\-Amount\-Options}}
+\index{request\-Trim\-Amount\-Options@{request\-Trim\-Amount\-Options}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Trim\-Amount\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Trim\-Amount\-Options (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action, }
+\item[{bool}]{on, }
+\item[{bool}]{update}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a9f4d6563bbb71f2872760328253323e3}
+Shows a widget for 'trim amount' options. \hypertarget{classQG__DialogFactory_a8b4d537e5d43184c28eab362e048702f}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!request\-Warning\-Dialog@{request\-Warning\-Dialog}}
+\index{request\-Warning\-Dialog@{request\-Warning\-Dialog}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Warning\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::request\-Warning\-Dialog (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{warning}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a8b4d537e5d43184c28eab362e048702f}
+Shows a message dialog. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a1fc58550b66870c2c5a48e566463310f}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_ae1b3cb950123d66076fe228fb8dfb169}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!restore\-Mouse\-Widget@{restore\-Mouse\-Widget}}
+\index{restore\-Mouse\-Widget@{restore\-Mouse\-Widget}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{restore\-Mouse\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::restore\-Mouse\-Widget (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_ae1b3cb950123d66076fe228fb8dfb169}
+Called to restore saved mouse hints 
+
+Implements \hyperlink{classRS__DialogFactoryInterface}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_adf91ee7e5942cefa4f6b780c5b3c4e1e}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!set\-Cad\-Tool\-Bar@{set\-Cad\-Tool\-Bar}}
+\index{set\-Cad\-Tool\-Bar@{set\-Cad\-Tool\-Bar}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{set\-Cad\-Tool\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Q\-G\-\_\-\-Dialog\-Factory\-::set\-Cad\-Tool\-Bar (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-G\-\_\-\-Cad\-Tool\-Bar} $\ast$}]{ctb}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_adf91ee7e5942cefa4f6b780c5b3c4e1e}
+Links this dialog factory to the cad tool bar. \hypertarget{classQG__DialogFactory_a157dfecdc6de1d72da66e607227626ca}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!set\-Command\-Widget@{set\-Command\-Widget}}
+\index{set\-Command\-Widget@{set\-Command\-Widget}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{set\-Command\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Q\-G\-\_\-\-Dialog\-Factory\-::set\-Command\-Widget (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-G\-\_\-\-Command\-Widget} $\ast$}]{cw}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a157dfecdc6de1d72da66e607227626ca}
+Links this dialog factory to a command widget. \hypertarget{classQG__DialogFactory_a0f64a01c628a7717211ccd6ae7949427}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!set\-Coordinate\-Widget@{set\-Coordinate\-Widget}}
+\index{set\-Coordinate\-Widget@{set\-Coordinate\-Widget}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{set\-Coordinate\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Q\-G\-\_\-\-Dialog\-Factory\-::set\-Coordinate\-Widget (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-G\-\_\-\-Coordinate\-Widget} $\ast$}]{cw}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a0f64a01c628a7717211ccd6ae7949427}
+Links this dialog factory to a coordinate widget. \hypertarget{classQG__DialogFactory_aa8ea27fb932e1a8279a5ecc670c759cb}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!set\-Main\-Window@{set\-Main\-Window}}
+\index{set\-Main\-Window@{set\-Main\-Window}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{set\-Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Q\-G\-\_\-\-Dialog\-Factory\-::set\-Main\-Window (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-G\-\_\-\-Main\-Window\-Interface} $\ast$}]{mw}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_aa8ea27fb932e1a8279a5ecc670c759cb}
+Links the dialog factory to a main app window. \hypertarget{classQG__DialogFactory_a0943e749492fa2c6fa36d3f3548cf2be}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!set\-Mouse\-Widget@{set\-Mouse\-Widget}}
+\index{set\-Mouse\-Widget@{set\-Mouse\-Widget}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{set\-Mouse\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Q\-G\-\_\-\-Dialog\-Factory\-::set\-Mouse\-Widget (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-G\-\_\-\-Mouse\-Widget} $\ast$}]{mw}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a0943e749492fa2c6fa36d3f3548cf2be}
+Links this dialog factory to a mouse widget. \hypertarget{classQG__DialogFactory_a3c0d330d9f30231cddc5f193d8368672}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!set\-Option\-Widget@{set\-Option\-Widget}}
+\index{set\-Option\-Widget@{set\-Option\-Widget}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{set\-Option\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Q\-G\-\_\-\-Dialog\-Factory\-::set\-Option\-Widget (
+\begin{DoxyParamCaption}
+\item[{Q\-Tool\-Bar $\ast$}]{ow}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a3c0d330d9f30231cddc5f193d8368672}
+Links factory to a widget that can host tool options. \hypertarget{classQG__DialogFactory_a8eebb9437e6b87018dc6f600aed2270e}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!set\-Selection\-Widget@{set\-Selection\-Widget}}
+\index{set\-Selection\-Widget@{set\-Selection\-Widget}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{set\-Selection\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Q\-G\-\_\-\-Dialog\-Factory\-::set\-Selection\-Widget (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-G\-\_\-\-Selection\-Widget} $\ast$}]{sw}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classQG__DialogFactory_a8eebb9437e6b87018dc6f600aed2270e}
+Links this dialog factory to a selection widget. \hypertarget{classQG__DialogFactory_af5808e6d8f3d67c33528604df9ad022c}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!show\-Cad\-Tool\-Bar@{show\-Cad\-Tool\-Bar}}
+\index{show\-Cad\-Tool\-Bar@{show\-Cad\-Tool\-Bar}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{show\-Cad\-Tool\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::show\-Cad\-Tool\-Bar (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Action\-Type}}]{action\-Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_af5808e6d8f3d67c33528604df9ad022c}
+Show the cad toolbar according to action type Author\-: Dongxu Li 
+
+Implements \hyperlink{classRS__DialogFactoryInterface}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_a7a749662d27c896adc5e4c225db83a8b}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!update\-Coordinate\-Widget@{update\-Coordinate\-Widget}}
+\index{update\-Coordinate\-Widget@{update\-Coordinate\-Widget}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{update\-Coordinate\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::update\-Coordinate\-Widget (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{abs, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{rel, }
+\item[{bool}]{update\-Format = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a7a749662d27c896adc5e4c225db83a8b}
+Called whenever the mouse position changed. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_ac5b510d50ec73019bc67683b163f5840}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_a48cc8fb5248274676560af0f9e1edae0}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!update\-Mouse\-Widget@{update\-Mouse\-Widget}}
+\index{update\-Mouse\-Widget@{update\-Mouse\-Widget}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{update\-Mouse\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::update\-Mouse\-Widget (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{left, }
+\item[{const Q\-String \&}]{right, }
+\item[{bool}]{keeping = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_a48cc8fb5248274676560af0f9e1edae0}
+Called when an action has a mouse hint.  mouse hint for left button  mouse hint for right button  whether to keep the mouse hints to be restored after interruption, default to true 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_ab94aa4be2d7e656ff2092b96dcada744}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+\hypertarget{classQG__DialogFactory_af53709995af55dab2eca8b5ee653aebc}{\index{Q\-G\-\_\-\-Dialog\-Factory@{Q\-G\-\_\-\-Dialog\-Factory}!update\-Selection\-Widget@{update\-Selection\-Widget}}
+\index{update\-Selection\-Widget@{update\-Selection\-Widget}!QG_DialogFactory@{Q\-G\-\_\-\-Dialog\-Factory}}
+\subsubsection[{update\-Selection\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Dialog\-Factory\-::update\-Selection\-Widget (
+\begin{DoxyParamCaption}
+\item[{int}]{num, }
+\item[{double}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__DialogFactory_af53709995af55dab2eca8b5ee653aebc}
+Called whenever the selection changed. 
+
+Implements \hyperlink{classRS__DialogFactoryInterface_a8c7c8945b1a3f01d8fc377bc1a8699ed}{R\-S\-\_\-\-Dialog\-Factory\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/ui/qg\-\_\-dialogfactory.\-h\item 
+librecad/src/ui/qg\-\_\-dialogfactory.\-cpp\end{DoxyCompactItemize}

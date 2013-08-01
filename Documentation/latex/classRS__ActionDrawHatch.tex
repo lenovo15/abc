@@ -1,0 +1,160 @@
+\hypertarget{classRS__ActionDrawHatch}{\section{R\-S\-\_\-\-Action\-Draw\-Hatch Class Reference}
+\label{classRS__ActionDrawHatch}\index{R\-S\-\_\-\-Action\-Draw\-Hatch@{R\-S\-\_\-\-Action\-Draw\-Hatch}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actiondrawhatch.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Draw\-Hatch\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classRS__ActionDrawHatch}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionDrawHatch_a92f87652a726cb5b495530954c83881c}{Status} \{ \hyperlink{classRS__ActionDrawHatch_a92f87652a726cb5b495530954c83881ca279a3bad2dbbb5469f5f66621f1c3f5e}{Show\-Dialog}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionDrawHatch_af3d52d471088ff8a5457ba276d0614c7}{{\bfseries R\-S\-\_\-\-Action\-Draw\-Hatch} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionDrawHatch_af3d52d471088ff8a5457ba276d0614c7}
+
+\item 
+virtual void \hyperlink{classRS__ActionDrawHatch_ad0a96bb9f9acda961b377b9fd60f9851}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionDrawHatch_a60429f89f0ddf091288f0b79b1bd320c}{trigger} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawHatch_ad5804a65e39a555873e7433a036109d1}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDrawHatch_a7ee612b411d7eeb7fc00361b030e8539}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDrawHatch_a3632f07de4070e80d3f5a7a10269559d}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawHatch_ae6756579e3f5060638634a9748e9d116}{update\-Mouse\-Cursor} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawHatch_a4618ddc732966a862d182af4953fa712}{update\-Tool\-Bar} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionDrawHatch_a109cf6554e3109006139906f12a3ec7d}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionDrawHatch_a109cf6554e3109006139906f12a3ec7d}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to draw hatches.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionDrawHatch_a92f87652a726cb5b495530954c83881c}{\index{R\-S\-\_\-\-Action\-Draw\-Hatch@{R\-S\-\_\-\-Action\-Draw\-Hatch}!Status@{Status}}
+\index{Status@{Status}!RS_ActionDrawHatch@{R\-S\-\_\-\-Action\-Draw\-Hatch}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Draw\-Hatch\-::\-Status}}}\label{classRS__ActionDrawHatch_a92f87652a726cb5b495530954c83881c}
+Action States. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Show\-Dialog@{Show\-Dialog}!R\-S\-\_\-\-Action\-Draw\-Hatch@{R\-S\-\_\-\-Action\-Draw\-Hatch}}\index{R\-S\-\_\-\-Action\-Draw\-Hatch@{R\-S\-\_\-\-Action\-Draw\-Hatch}!Show\-Dialog@{Show\-Dialog}}\item[{\em 
+\hypertarget{classRS__ActionDrawHatch_a92f87652a726cb5b495530954c83881ca279a3bad2dbbb5469f5f66621f1c3f5e}{Show\-Dialog}\label{classRS__ActionDrawHatch_a92f87652a726cb5b495530954c83881ca279a3bad2dbbb5469f5f66621f1c3f5e}
+}]Showing the hatch dialog. \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionDrawHatch_ad0a96bb9f9acda961b377b9fd60f9851}{\index{R\-S\-\_\-\-Action\-Draw\-Hatch@{R\-S\-\_\-\-Action\-Draw\-Hatch}!init@{init}}
+\index{init@{init}!RS_ActionDrawHatch@{R\-S\-\_\-\-Action\-Draw\-Hatch}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Hatch\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawHatch_ad0a96bb9f9acda961b377b9fd60f9851}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae5113b2aef5a10acd192786b99580e4a}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawHatch_ad5804a65e39a555873e7433a036109d1}{\index{R\-S\-\_\-\-Action\-Draw\-Hatch@{R\-S\-\_\-\-Action\-Draw\-Hatch}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_ActionDrawHatch@{R\-S\-\_\-\-Action\-Draw\-Hatch}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Hatch\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawHatch_ad5804a65e39a555873e7433a036109d1}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawHatch_a7ee612b411d7eeb7fc00361b030e8539}{\index{R\-S\-\_\-\-Action\-Draw\-Hatch@{R\-S\-\_\-\-Action\-Draw\-Hatch}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionDrawHatch@{R\-S\-\_\-\-Action\-Draw\-Hatch}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Hatch\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawHatch_a7ee612b411d7eeb7fc00361b030e8539}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawHatch_a60429f89f0ddf091288f0b79b1bd320c}{\index{R\-S\-\_\-\-Action\-Draw\-Hatch@{R\-S\-\_\-\-Action\-Draw\-Hatch}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionDrawHatch@{R\-S\-\_\-\-Action\-Draw\-Hatch}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Hatch\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawHatch_a60429f89f0ddf091288f0b79b1bd320c}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawHatch_a3632f07de4070e80d3f5a7a10269559d}{\index{R\-S\-\_\-\-Action\-Draw\-Hatch@{R\-S\-\_\-\-Action\-Draw\-Hatch}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionDrawHatch@{R\-S\-\_\-\-Action\-Draw\-Hatch}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Hatch\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawHatch_a3632f07de4070e80d3f5a7a10269559d}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawHatch_ae6756579e3f5060638634a9748e9d116}{\index{R\-S\-\_\-\-Action\-Draw\-Hatch@{R\-S\-\_\-\-Action\-Draw\-Hatch}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionDrawHatch@{R\-S\-\_\-\-Action\-Draw\-Hatch}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Hatch\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawHatch_ae6756579e3f5060638634a9748e9d116}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawHatch_a4618ddc732966a862d182af4953fa712}{\index{R\-S\-\_\-\-Action\-Draw\-Hatch@{R\-S\-\_\-\-Action\-Draw\-Hatch}!update\-Tool\-Bar@{update\-Tool\-Bar}}
+\index{update\-Tool\-Bar@{update\-Tool\-Bar}!RS_ActionDrawHatch@{R\-S\-\_\-\-Action\-Draw\-Hatch}}
+\subsubsection[{update\-Tool\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Hatch\-::update\-Tool\-Bar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawHatch_a4618ddc732966a862d182af4953fa712}
+Should be overwritten to set the toolbar for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a25ec66468e5b09483afccd2358877361}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actiondrawhatch.\-h\item 
+librecad/src/actions/rs\-\_\-actiondrawhatch.\-cpp\end{DoxyCompactItemize}

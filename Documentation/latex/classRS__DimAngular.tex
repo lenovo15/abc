@@ -1,0 +1,268 @@
+\hypertarget{classRS__DimAngular}{\section{R\-S\-\_\-\-Dim\-Angular Class Reference}
+\label{classRS__DimAngular}\index{R\-S\-\_\-\-Dim\-Angular@{R\-S\-\_\-\-Dim\-Angular}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-dimangular.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Dim\-Angular\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classRS__DimAngular}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__DimAngular_a52c79547503adaabb23fe0ffee308291}{R\-S\-\_\-\-Dim\-Angular} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} $\ast$\hyperlink{classRS__Entity_a80358a8d2fc6739a516a278dc500b49f}{parent}, const \hyperlink{classRS__DimensionData}{R\-S\-\_\-\-Dimension\-Data} \&d, const \hyperlink{classRS__DimAngularData}{R\-S\-\_\-\-Dim\-Angular\-Data} \&ed)
+\item 
+\hypertarget{classRS__DimAngular_a89c82acdf4b748adaee9a3cb3bf7c0b4}{virtual \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$ {\bfseries clone} ()}\label{classRS__DimAngular_a89c82acdf4b748adaee9a3cb3bf7c0b4}
+
+\item 
+virtual \hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6a}{R\-S2\-::\-Entity\-Type} \hyperlink{classRS__DimAngular_a61612ec4f173f4939b6c5ee73c6fa4f4}{rtti} () const 
+\item 
+\hyperlink{classRS__DimAngularData}{R\-S\-\_\-\-Dim\-Angular\-Data} \hyperlink{classRS__DimAngular_aa327ca7159e156c2fc87caecbc329049}{get\-E\-Data} () const 
+\item 
+virtual Q\-String \hyperlink{classRS__DimAngular_a3e59b896af677fc1c96273828200c44a}{get\-Measured\-Label} ()
+\item 
+double \hyperlink{classRS__DimAngular_ada448046606eb6dc1a9dc66dca4b2504}{get\-Angle} ()
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__DimAngular_a3097dd72aa47a7e9c59d25addb26bd0d}{get\-Center} ()
+\item 
+bool \hyperlink{classRS__DimAngular_a2b8f0c0b94eb1fd506564ccf7b8f54e6}{get\-Angles} (double \&ang1, double \&ang2, bool \&reversed, \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&p1, \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&p2)
+\item 
+virtual void \hyperlink{classRS__DimAngular_a8b9c5bb5735a23315d99536a9457685b}{update} (bool auto\-Text=false)
+\item 
+\hypertarget{classRS__DimAngular_a2df981579921655b6ec2eec22501bb8b}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries get\-Definition\-Point1} ()}\label{classRS__DimAngular_a2df981579921655b6ec2eec22501bb8b}
+
+\item 
+\hypertarget{classRS__DimAngular_acac90880a6237c7e87ffd212742c89c2}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries get\-Definition\-Point2} ()}\label{classRS__DimAngular_acac90880a6237c7e87ffd212742c89c2}
+
+\item 
+\hypertarget{classRS__DimAngular_a7ab253558ad63f8b9505394b85cc5a75}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries get\-Definition\-Point3} ()}\label{classRS__DimAngular_a7ab253558ad63f8b9505394b85cc5a75}
+
+\item 
+\hypertarget{classRS__DimAngular_ac470fc7206c1254c56a7978dcdcb521d}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries get\-Definition\-Point4} ()}\label{classRS__DimAngular_ac470fc7206c1254c56a7978dcdcb521d}
+
+\item 
+virtual void \hyperlink{classRS__DimAngular_a87c6b3390b548935f97fbb9ba8a5bf4e}{move} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&\hyperlink{classRS__Entity_aa296d21b9aac99161d386ce2f60f0fea}{offset})
+\item 
+virtual void \hyperlink{classRS__DimAngular_aa39385af9a73e555f5c32cc2fd5afaad}{rotate} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&center, const double \&angle)
+\item 
+\hypertarget{classRS__DimAngular_a15c2694b19c7581a9d30b7a4cbdd6bb2}{virtual void {\bfseries rotate} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&center, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&angle\-Vector)}\label{classRS__DimAngular_a15c2694b19c7581a9d30b7a4cbdd6bb2}
+
+\item 
+virtual void \hyperlink{classRS__DimAngular_ae6ef8362510ac89f949a7fe4cc99bfcc}{scale} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&center, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&factor)
+\item 
+virtual void \hyperlink{classRS__DimAngular_a10875bfa7dc229e36db6fe602ebe6370}{mirror} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&axis\-Point1, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&axis\-Point2)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__DimAngularData}{R\-S\-\_\-\-Dim\-Angular\-Data} \hyperlink{classRS__DimAngular_a4b0ff4ac33106ab11ca76a551afa1ca9}{edata}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{classRS__DimAngular_a3a6c131176a3e9108d970073cd5b5f4a}{operator$<$$<$} (std\-::ostream \&os, const \hyperlink{classRS__DimAngular}{R\-S\-\_\-\-Dim\-Angular} \&d)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for angular dimension entities.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__DimAngular_a52c79547503adaabb23fe0ffee308291}{\index{R\-S\-\_\-\-Dim\-Angular@{R\-S\-\_\-\-Dim\-Angular}!R\-S\-\_\-\-Dim\-Angular@{R\-S\-\_\-\-Dim\-Angular}}
+\index{R\-S\-\_\-\-Dim\-Angular@{R\-S\-\_\-\-Dim\-Angular}!RS_DimAngular@{R\-S\-\_\-\-Dim\-Angular}}
+\subsubsection[{R\-S\-\_\-\-Dim\-Angular}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Dim\-Angular\-::\-R\-S\-\_\-\-Dim\-Angular (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} $\ast$}]{parent, }
+\item[{const {\bf R\-S\-\_\-\-Dimension\-Data} \&}]{d, }
+\item[{const {\bf R\-S\-\_\-\-Dim\-Angular\-Data} \&}]{ed}
+\end{DoxyParamCaption}
+)}}\label{classRS__DimAngular_a52c79547503adaabb23fe0ffee308291}
+Constructor.
+
+parent Parent Entity Container.  d Common dimension geometrical data.  ed Extended geometrical data for angular dimension. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__DimAngular_ada448046606eb6dc1a9dc66dca4b2504}{\index{R\-S\-\_\-\-Dim\-Angular@{R\-S\-\_\-\-Dim\-Angular}!get\-Angle@{get\-Angle}}
+\index{get\-Angle@{get\-Angle}!RS_DimAngular@{R\-S\-\_\-\-Dim\-Angular}}
+\subsubsection[{get\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Dim\-Angular\-::get\-Angle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__DimAngular_ada448046606eb6dc1a9dc66dca4b2504}
+\begin{DoxyReturn}{Returns}
+Angle of the measured dimension. 
+\end{DoxyReturn}
+\hypertarget{classRS__DimAngular_a2b8f0c0b94eb1fd506564ccf7b8f54e6}{\index{R\-S\-\_\-\-Dim\-Angular@{R\-S\-\_\-\-Dim\-Angular}!get\-Angles@{get\-Angles}}
+\index{get\-Angles@{get\-Angles}!RS_DimAngular@{R\-S\-\_\-\-Dim\-Angular}}
+\subsubsection[{get\-Angles}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Dim\-Angular\-::get\-Angles (
+\begin{DoxyParamCaption}
+\item[{double \&}]{ang1, }
+\item[{double \&}]{ang2, }
+\item[{bool \&}]{reversed, }
+\item[{{\bf R\-S\-\_\-\-Vector} \&}]{p1, }
+\item[{{\bf R\-S\-\_\-\-Vector} \&}]{p2}
+\end{DoxyParamCaption}
+)}}\label{classRS__DimAngular_a2b8f0c0b94eb1fd506564ccf7b8f54e6}
+finds out which angles this dimension actually measures.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ang1} & Reference will return the start angle \\
+\hline
+{\em ang2} & Reference will return the end angle \\
+\hline
+{\em reversed} & Reference will return the reversed flag.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true\-: on success 
+\end{DoxyReturn}
+\hypertarget{classRS__DimAngular_a3097dd72aa47a7e9c59d25addb26bd0d}{\index{R\-S\-\_\-\-Dim\-Angular@{R\-S\-\_\-\-Dim\-Angular}!get\-Center@{get\-Center}}
+\index{get\-Center@{get\-Center}!RS_DimAngular@{R\-S\-\_\-\-Dim\-Angular}}
+\subsubsection[{get\-Center}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Dim\-Angular\-::get\-Center (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__DimAngular_a3097dd72aa47a7e9c59d25addb26bd0d}
+\begin{DoxyReturn}{Returns}
+Center of the measured dimension. 
+\end{DoxyReturn}
+\hypertarget{classRS__DimAngular_aa327ca7159e156c2fc87caecbc329049}{\index{R\-S\-\_\-\-Dim\-Angular@{R\-S\-\_\-\-Dim\-Angular}!get\-E\-Data@{get\-E\-Data}}
+\index{get\-E\-Data@{get\-E\-Data}!RS_DimAngular@{R\-S\-\_\-\-Dim\-Angular}}
+\subsubsection[{get\-E\-Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Dim\-Angular\-Data} R\-S\-\_\-\-Dim\-Angular\-::get\-E\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__DimAngular_aa327ca7159e156c2fc87caecbc329049}
+\begin{DoxyReturn}{Returns}
+Copy of data that defines the angular dimension. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classRS__Dimension_ad8c1379f5581614b6fa2905434bc5859}{get\-Data()} 
+\end{DoxySeeAlso}
+\hypertarget{classRS__DimAngular_a3e59b896af677fc1c96273828200c44a}{\index{R\-S\-\_\-\-Dim\-Angular@{R\-S\-\_\-\-Dim\-Angular}!get\-Measured\-Label@{get\-Measured\-Label}}
+\index{get\-Measured\-Label@{get\-Measured\-Label}!RS_DimAngular@{R\-S\-\_\-\-Dim\-Angular}}
+\subsubsection[{get\-Measured\-Label}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Dim\-Angular\-::get\-Measured\-Label (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__DimAngular_a3e59b896af677fc1c96273828200c44a}
+\begin{DoxyReturn}{Returns}
+Automatically created label for the default measurement of this dimension. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__Dimension_ad2da7da6e734c8c04bc7d858674d4653}{R\-S\-\_\-\-Dimension}.
+
+\hypertarget{classRS__DimAngular_a10875bfa7dc229e36db6fe602ebe6370}{\index{R\-S\-\_\-\-Dim\-Angular@{R\-S\-\_\-\-Dim\-Angular}!mirror@{mirror}}
+\index{mirror@{mirror}!RS_DimAngular@{R\-S\-\_\-\-Dim\-Angular}}
+\subsubsection[{mirror}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Dim\-Angular\-::mirror (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{axis\-Point1, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{axis\-Point2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__DimAngular_a10875bfa7dc229e36db6fe602ebe6370}
+Implementations must mirror the entity by the given axis. 
+
+Reimplemented from \hyperlink{classRS__Dimension_a24da8a93a35ef2e7bd69738b8d3a815e}{R\-S\-\_\-\-Dimension}.
+
+\hypertarget{classRS__DimAngular_a87c6b3390b548935f97fbb9ba8a5bf4e}{\index{R\-S\-\_\-\-Dim\-Angular@{R\-S\-\_\-\-Dim\-Angular}!move@{move}}
+\index{move@{move}!RS_DimAngular@{R\-S\-\_\-\-Dim\-Angular}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Dim\-Angular\-::move (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__DimAngular_a87c6b3390b548935f97fbb9ba8a5bf4e}
+Implementations must move the entity by the given vector. 
+
+Reimplemented from \hyperlink{classRS__Dimension_a8c017d0a5bc14a6b517e700008ebe251}{R\-S\-\_\-\-Dimension}.
+
+\hypertarget{classRS__DimAngular_aa39385af9a73e555f5c32cc2fd5afaad}{\index{R\-S\-\_\-\-Dim\-Angular@{R\-S\-\_\-\-Dim\-Angular}!rotate@{rotate}}
+\index{rotate@{rotate}!RS_DimAngular@{R\-S\-\_\-\-Dim\-Angular}}
+\subsubsection[{rotate}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Dim\-Angular\-::rotate (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{center, }
+\item[{const double \&}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__DimAngular_aa39385af9a73e555f5c32cc2fd5afaad}
+Implementations must rotate the entity by the given angle around the given center. 
+
+Reimplemented from \hyperlink{classRS__Dimension_a7a67186938dd2375940510e1c1ebaad7}{R\-S\-\_\-\-Dimension}.
+
+\hypertarget{classRS__DimAngular_a61612ec4f173f4939b6c5ee73c6fa4f4}{\index{R\-S\-\_\-\-Dim\-Angular@{R\-S\-\_\-\-Dim\-Angular}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_DimAngular@{R\-S\-\_\-\-Dim\-Angular}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S2\-::\-Entity\-Type} R\-S\-\_\-\-Dim\-Angular\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__DimAngular_a61612ec4f173f4939b6c5ee73c6fa4f4}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aa6980728730d26135600b8aaff17f33b3}{R\-S2\-::\-Entity\-Dim\-Angular} 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classRS__EntityContainer_ada84ceb9590c74cd3b46134cdde40a3d}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__DimAngular_ae6ef8362510ac89f949a7fe4cc99bfcc}{\index{R\-S\-\_\-\-Dim\-Angular@{R\-S\-\_\-\-Dim\-Angular}!scale@{scale}}
+\index{scale@{scale}!RS_DimAngular@{R\-S\-\_\-\-Dim\-Angular}}
+\subsubsection[{scale}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Dim\-Angular\-::scale (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{center, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{factor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__DimAngular_ae6ef8362510ac89f949a7fe4cc99bfcc}
+Implementations must scale the entity by the given factors. 
+
+Reimplemented from \hyperlink{classRS__Dimension_ae8af3c073d64e0bffa5d1730efd83ccc}{R\-S\-\_\-\-Dimension}.
+
+\hypertarget{classRS__DimAngular_a8b9c5bb5735a23315d99536a9457685b}{\index{R\-S\-\_\-\-Dim\-Angular@{R\-S\-\_\-\-Dim\-Angular}!update@{update}}
+\index{update@{update}!RS_DimAngular@{R\-S\-\_\-\-Dim\-Angular}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Dim\-Angular\-::update (
+\begin{DoxyParamCaption}
+\item[{bool}]{auto\-Text = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__DimAngular_a8b9c5bb5735a23315d99536a9457685b}
+Updates the sub entities of this dimension. Called when the dimension or the position, alignment, .. changes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em auto\-Text} & Automatically reposition the text label \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__Dimension_a67eeb2fe0f6a78c31db89ea7d92d4e1e}{R\-S\-\_\-\-Dimension}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classRS__DimAngular_a3a6c131176a3e9108d970073cd5b5f4a}{\index{R\-S\-\_\-\-Dim\-Angular@{R\-S\-\_\-\-Dim\-Angular}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!RS_DimAngular@{R\-S\-\_\-\-Dim\-Angular}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os, }
+\item[{const {\bf R\-S\-\_\-\-Dim\-Angular} \&}]{d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classRS__DimAngular_a3a6c131176a3e9108d970073cd5b5f4a}
+Dumps the point's data to stdout. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classRS__DimAngular_a4b0ff4ac33106ab11ca76a551afa1ca9}{\index{R\-S\-\_\-\-Dim\-Angular@{R\-S\-\_\-\-Dim\-Angular}!edata@{edata}}
+\index{edata@{edata}!RS_DimAngular@{R\-S\-\_\-\-Dim\-Angular}}
+\subsubsection[{edata}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Dim\-Angular\-Data} R\-S\-\_\-\-Dim\-Angular\-::edata\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__DimAngular_a4b0ff4ac33106ab11ca76a551afa1ca9}
+Extended data. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-dimangular.\-h\item 
+librecad/src/lib/engine/rs\-\_\-dimangular.\-cpp\end{DoxyCompactItemize}

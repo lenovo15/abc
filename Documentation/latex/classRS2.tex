@@ -1,0 +1,1365 @@
+\hypertarget{classRS2}{\section{R\-S2 Class Reference}
+\label{classRS2}\index{R\-S2@{R\-S2}}
+}
+
+
+{\ttfamily \#include $<$rs.\-h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structRS2_1_1LineTypePatternStruct}{Line\-Type\-Pattern\-Struct}
+\begin{DoxyCompactList}\small\item\em Struct that stores a line type pattern (e.\-g. dash dot dot). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS2_a44c2db4b2ed0d533716a5266abafeeca}{Flags} \{ \\*
+\hyperlink{classRS2_a44c2db4b2ed0d533716a5266abafeecaa9ff48e6f3b998828e8d11a1cd206afc0}{Flag\-Undone} = 1$<$$<$0, 
+\hyperlink{classRS2_a44c2db4b2ed0d533716a5266abafeecaab4264f781d78cf1b2df258012ade9db1}{Flag\-Visible} = 1$<$$<$1, 
+\hyperlink{classRS2_a44c2db4b2ed0d533716a5266abafeecaa5695d8e7e282ccafc07f18257da4f78b}{Flag\-By\-Layer} = 1$<$$<$2, 
+\hyperlink{classRS2_a44c2db4b2ed0d533716a5266abafeecaafccfa9b8d47c85e8713a886c410c0619}{Flag\-By\-Block} = 1$<$$<$3, 
+\\*
+\hyperlink{classRS2_a44c2db4b2ed0d533716a5266abafeecaabc228081c0cd60b864f8c04b34968e2b}{Flag\-Frozen} = 1$<$$<$4, 
+\hyperlink{classRS2_a44c2db4b2ed0d533716a5266abafeecaaabfd152e3a83c8b999e443e173cf7467}{Flag\-Def\-Frozen} = 1$<$$<$5, 
+\hyperlink{classRS2_a44c2db4b2ed0d533716a5266abafeecaa0f6159550603001fce21af07b4553ad6}{Flag\-Locked} = 1$<$$<$6, 
+\hyperlink{classRS2_a44c2db4b2ed0d533716a5266abafeecaa818c995d3fba5a5503def5a538f8abe4}{Flag\-Invalid} = 1$<$$<$7, 
+\\*
+\hyperlink{classRS2_a44c2db4b2ed0d533716a5266abafeecaaaf72e9b8b969dd44722c75afd1afc5de}{Flag\-Selected} = 1$<$$<$8, 
+\hyperlink{classRS2_a44c2db4b2ed0d533716a5266abafeecaa40d93a1e22967fac3291d8886155fafc}{Flag\-Closed} = 1$<$$<$9, 
+\hyperlink{classRS2_a44c2db4b2ed0d533716a5266abafeecaab25c508640c79e30edb1d720043c5d51}{Flag\-Temp} = 1$<$$<$10, 
+\hyperlink{classRS2_a44c2db4b2ed0d533716a5266abafeecaa7c9021e11cd578ebc4079b0479783b9e}{Flag\-Processed} = 1$<$$<$11, 
+\\*
+\hyperlink{classRS2_a44c2db4b2ed0d533716a5266abafeecaad067bf696af8200ed6940950b5bb441f}{Flag\-Selected1} = 1$<$$<$12, 
+\hyperlink{classRS2_a44c2db4b2ed0d533716a5266abafeecaadfae35f50ee6bac880b871226017babf}{Flag\-Selected2} = 1$<$$<$13, 
+\hyperlink{classRS2_a44c2db4b2ed0d533716a5266abafeecaa342deed7b530740efa6f5db89137c50d}{Flag\-Highlighted} = 1$<$$<$14
+ \}
+\item 
+enum \hyperlink{classRS2_af1c96c2254f823f3836e8839482870d7}{Variable\-Type} \{ \\*
+{\bfseries Variable\-String}, 
+{\bfseries Variable\-Int}, 
+{\bfseries Variable\-Double}, 
+{\bfseries Variable\-Vector}, 
+\\*
+{\bfseries Variable\-Void}
+ \}
+\item 
+enum \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{Format\-Type} \{ \\*
+\hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189babbd9ecffa4b1eb72a46357317ef44a43}{Format\-Unknown}, 
+\hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba9be5fc14b3cc3bd7142c11ecd698216d}{Format\-D\-X\-F1}, 
+\hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba294157a0596c31a6e73bceaf6c1a06a3}{Format\-D\-X\-F\-R\-W}, 
+\hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189baf2f5d92f18c5dd44e2ddb48fa3b767bc}{Format\-D\-X\-F\-R\-W2004}, 
+\\*
+\hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba99dd476813b841503996f72d7b176ce3}{Format\-D\-X\-F\-R\-W2000}, 
+\hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba9ff3eda789bec63a037a781ed6dc59ab}{Format\-D\-X\-F\-R\-W14}, 
+\hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba65468d51a6080fec069d1305e153a4d9}{Format\-D\-X\-F\-R\-W12}, 
+\hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba62b5557d9f4b75993a0730cb12455e7a}{Format\-L\-F\-F}, 
+\\*
+\hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba9a2b7d7e9a64cd2022b599ff547c250c}{Format\-C\-X\-F}, 
+\hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba2d4c0a3ecccf7cf84120651b1d48e04a}{Format\-J\-W\-W}, 
+\hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189baafd3044c46fc598dd13938869928e8cf}{Format\-J\-W\-C}
+ \}
+\item 
+enum \hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6a}{Entity\-Type} \{ \\*
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aabaf2817e62dad352b28950309ba1a47c}{Entity\-Unknown}, 
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aa27d54713b7d442e5843997b8f13ce0e9}{Entity\-Container}, 
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aafe09aeef2edbe05d4e555adba34d9d36}{Entity\-Block}, 
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aa25f476153356fc1448bc74790da2c37a}{Entity\-Font\-Char}, 
+\\*
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aafc53d2f51b8ff5ab4addf93d68702072}{Entity\-Insert}, 
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aae07a37e33b457e3bca1f6c40ba59381b}{Entity\-Graphic}, 
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aac1d742e034cdec570ef8383f61f882c0}{Entity\-Point}, 
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aac635def37fe336bb8366fc0adfe057cc}{Entity\-Line}, 
+\\*
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aa70e703bb638645463c1360b1426accce}{Entity\-Polyline}, 
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aa58829783e1e32d9f3dd6a1e515a2b2ac}{Entity\-Vertex}, 
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aaec9c0b0ca155c623d94e71bbce0ab8b6}{Entity\-Arc}, 
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aa94c8ac50dedc910b563ebef9f777bb16}{Entity\-Circle}, 
+\\*
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aa43fdff99980da826e13c1086e7e15bc2}{Entity\-Ellipse}, 
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aa472f4c07f9d9426145191dcc05d28a5a}{Entity\-Hyperbola}, 
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aa3ff6595dc45dc8659da54102bfd536eb}{Entity\-Solid}, 
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aa38b0e05c1ba902a3ddcab9e350c29f9c}{Entity\-Construction\-Line}, 
+\\*
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aaba403132c75fd956476401982fc3cbbf}{Entity\-M\-Text}, 
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aa20a2e396364003e403a102c1dcf21faf}{Entity\-Text}, 
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aa9c47c5fe00ba77161a2a79bcdadf4967}{Entity\-Dim\-Aligned}, 
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aa2a69eea8eb0508e7da1c04eb0876a78a}{Entity\-Dim\-Linear}, 
+\\*
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aacd5fd333ba35538c6bd17c4606a5800e}{Entity\-Dim\-Radial}, 
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aa5f98f3bbc726d19d6125b9603b592889}{Entity\-Dim\-Diametric}, 
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aa6980728730d26135600b8aaff17f33b3}{Entity\-Dim\-Angular}, 
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aa799170f6937838067b4986d6452366a3}{Entity\-Dim\-Leader}, 
+\\*
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aafb731de01933c0884138cdc54669ae90}{Entity\-Hatch}, 
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aaa4dafc8ae7cea46de420843ca04c631b}{Entity\-Image}, 
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aa5336aaca7fbdb2c3148bf7c1f276c69f}{Entity\-Spline}, 
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aad75ac72ce0f2c463255fb0c8ba435755}{Entity\-Overlay\-Box}, 
+\\*
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aad1bdca1369edde279368af405e72ddd4}{Entity\-Preview}
+ \}
+\item 
+enum \hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{Action\-Type} \{ \\*
+\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7a87399b91b144b6e5d53f649422fc00c6}{Action\-None}, 
+{\bfseries Action\-Default}, 
+{\bfseries Action\-File\-New}, 
+{\bfseries Action\-File\-New\-Template}, 
+\\*
+{\bfseries Action\-File\-Open}, 
+{\bfseries Action\-File\-Save}, 
+{\bfseries Action\-File\-Save\-As}, 
+{\bfseries Action\-File\-Export}, 
+\\*
+{\bfseries Action\-File\-Close}, 
+{\bfseries Action\-File\-Print}, 
+{\bfseries Action\-File\-Print\-Preview}, 
+{\bfseries Action\-File\-Quit}, 
+\\*
+{\bfseries Action\-Print\-Preview}, 
+{\bfseries Action\-Edit\-Kill\-All\-Actions}, 
+{\bfseries Action\-Edit\-Undo}, 
+{\bfseries Action\-Edit\-Redo}, 
+\\*
+{\bfseries Action\-Edit\-Cut}, 
+{\bfseries Action\-Edit\-Cut\-No\-Select}, 
+{\bfseries Action\-Edit\-Copy}, 
+{\bfseries Action\-Edit\-Copy\-No\-Select}, 
+\\*
+{\bfseries Action\-Edit\-Paste}, 
+{\bfseries Action\-Order\-No\-Select}, 
+{\bfseries Action\-Order\-Bottom}, 
+{\bfseries Action\-Order\-Lower}, 
+\\*
+{\bfseries Action\-Order\-Raise}, 
+{\bfseries Action\-Order\-Top}, 
+{\bfseries Action\-View\-Status\-Bar}, 
+{\bfseries Action\-View\-Layer\-List}, 
+\\*
+{\bfseries Action\-View\-Block\-List}, 
+{\bfseries Action\-View\-Command\-Line}, 
+{\bfseries Action\-View\-Library}, 
+{\bfseries Action\-View\-Pen\-Toolbar}, 
+\\*
+{\bfseries Action\-View\-Option\-Toolbar}, 
+{\bfseries Action\-View\-Cad\-Toolbar}, 
+{\bfseries Action\-View\-File\-Toolbar}, 
+{\bfseries Action\-View\-Edit\-Toolbar}, 
+\\*
+{\bfseries Action\-View\-Snap\-Toolbar}, 
+{\bfseries Action\-View\-Grid}, 
+{\bfseries Action\-View\-Draft}, 
+{\bfseries Action\-Zoom\-In}, 
+\\*
+{\bfseries Action\-Zoom\-Out}, 
+{\bfseries Action\-Zoom\-Auto}, 
+{\bfseries Action\-Zoom\-Window}, 
+{\bfseries Action\-Zoom\-Pan}, 
+\\*
+{\bfseries Action\-Zoom\-Redraw}, 
+{\bfseries Action\-Zoom\-Previous}, 
+{\bfseries Action\-Select}, 
+{\bfseries Action\-Select\-Single}, 
+\\*
+{\bfseries Action\-Select\-Contour}, 
+{\bfseries Action\-Select\-Window}, 
+{\bfseries Action\-Deselect\-Window}, 
+{\bfseries Action\-Select\-All}, 
+\\*
+{\bfseries Action\-Deselect\-All}, 
+{\bfseries Action\-Select\-Intersected}, 
+{\bfseries Action\-Deselect\-Intersected}, 
+{\bfseries Action\-Select\-Invert}, 
+\\*
+{\bfseries Action\-Select\-Layer}, 
+{\bfseries Action\-Select\-Double}, 
+{\bfseries Action\-Draw\-Arc}, 
+{\bfseries Action\-Draw\-Arc3\-P}, 
+\\*
+{\bfseries Action\-Draw\-Arc\-Parallel}, 
+{\bfseries Action\-Draw\-Arc\-Tangential}, 
+{\bfseries Action\-Draw\-Circle}, 
+{\bfseries Action\-Draw\-Circle2\-P}, 
+\\*
+{\bfseries Action\-Draw\-Circle3\-P}, 
+{\bfseries Action\-Draw\-Circle\-C\-R}, 
+{\bfseries Action\-Draw\-Circle\-Parallel}, 
+{\bfseries Action\-Draw\-Circle\-Inscribe}, 
+\\*
+{\bfseries Action\-Draw\-Circle\-Tan2\-\_\-1\-P}, 
+{\bfseries Action\-Draw\-Circle\-Tan1\-\_\-2\-P}, 
+{\bfseries Action\-Draw\-Circle\-Tan2}, 
+{\bfseries Action\-Draw\-Circle\-Tan3}, 
+\\*
+{\bfseries Action\-Draw\-Ellipse\-Arc\-Axis}, 
+{\bfseries Action\-Draw\-Ellipse\-Axis}, 
+{\bfseries Action\-Draw\-Ellipse\-Foci\-Point}, 
+{\bfseries Action\-Draw\-Ellipse4\-Points}, 
+\\*
+{\bfseries Action\-Draw\-Ellipse\-Center3\-Points}, 
+{\bfseries Action\-Draw\-Ellipse\-Inscribe}, 
+{\bfseries Action\-Draw\-Hatch}, 
+{\bfseries Action\-Draw\-Hatch\-No\-Select}, 
+\\*
+{\bfseries Action\-Draw\-Image}, 
+{\bfseries Action\-Draw\-Line}, 
+{\bfseries Action\-Draw\-Line\-Angle}, 
+{\bfseries Action\-Draw\-Line\-Bisector}, 
+\\*
+{\bfseries Action\-Draw\-Line\-Free}, 
+{\bfseries Action\-Draw\-Line\-Hor\-Vert}, 
+{\bfseries Action\-Draw\-Line\-Horizontal}, 
+{\bfseries Action\-Draw\-Line\-Orthogonal}, 
+\\*
+{\bfseries Action\-Draw\-Line\-Orth\-Tan}, 
+{\bfseries Action\-Draw\-Line\-Parallel}, 
+{\bfseries Action\-Draw\-Line\-Parallel\-Through}, 
+{\bfseries Action\-Draw\-Line\-Polygon\-Cen\-Cor}, 
+\\*
+{\bfseries Action\-Draw\-Line\-Polygon\-Cor\-Cor}, 
+{\bfseries Action\-Draw\-Line\-Rectangle}, 
+{\bfseries Action\-Draw\-Line\-Rel\-Angle}, 
+{\bfseries Action\-Draw\-Line\-Tangent1}, 
+\\*
+{\bfseries Action\-Draw\-Line\-Tangent2}, 
+{\bfseries Action\-Draw\-Line\-Vertical}, 
+{\bfseries Action\-Draw\-M\-Text}, 
+{\bfseries Action\-Draw\-Point}, 
+\\*
+{\bfseries Action\-Draw\-Spline}, 
+{\bfseries Action\-Draw\-Polyline}, 
+{\bfseries Action\-Draw\-Text}, 
+{\bfseries Action\-Polyline\-Add}, 
+\\*
+{\bfseries Action\-Polyline\-Append}, 
+{\bfseries Action\-Polyline\-Del}, 
+{\bfseries Action\-Polyline\-Del\-Between}, 
+{\bfseries Action\-Polyline\-Trim}, 
+\\*
+{\bfseries Action\-Polyline\-Equidistant}, 
+{\bfseries Action\-Polyline\-Segment}, 
+{\bfseries Action\-Dim\-Aligned}, 
+{\bfseries Action\-Dim\-Linear}, 
+\\*
+{\bfseries Action\-Dim\-Linear\-Ver}, 
+{\bfseries Action\-Dim\-Linear\-Hor}, 
+{\bfseries Action\-Dim\-Radial}, 
+{\bfseries Action\-Dim\-Diametric}, 
+\\*
+{\bfseries Action\-Dim\-Angular}, 
+{\bfseries Action\-Dim\-Leader}, 
+{\bfseries Action\-Modify\-Attributes}, 
+{\bfseries Action\-Modify\-Attributes\-No\-Select}, 
+\\*
+{\bfseries Action\-Modify\-Delete}, 
+{\bfseries Action\-Modify\-Delete\-No\-Select}, 
+{\bfseries Action\-Modify\-Delete\-Quick}, 
+{\bfseries Action\-Modify\-Delete\-Free}, 
+\\*
+{\bfseries Action\-Modify\-Move}, 
+{\bfseries Action\-Modify\-Move\-No\-Select}, 
+{\bfseries Action\-Modify\-Rotate}, 
+{\bfseries Action\-Modify\-Rotate\-No\-Select}, 
+\\*
+{\bfseries Action\-Modify\-Scale}, 
+{\bfseries Action\-Modify\-Scale\-No\-Select}, 
+{\bfseries Action\-Modify\-Mirror}, 
+{\bfseries Action\-Modify\-Mirror\-No\-Select}, 
+\\*
+{\bfseries Action\-Modify\-Move\-Rotate}, 
+{\bfseries Action\-Modify\-Move\-Rotate\-No\-Select}, 
+{\bfseries Action\-Modify\-Rotate2}, 
+{\bfseries Action\-Modify\-Rotate2\-No\-Select}, 
+\\*
+{\bfseries Action\-Modify\-Entity}, 
+{\bfseries Action\-Modify\-Trim}, 
+{\bfseries Action\-Modify\-Trim2}, 
+{\bfseries Action\-Modify\-Trim\-Amount}, 
+\\*
+{\bfseries Action\-Modify\-Cut}, 
+{\bfseries Action\-Modify\-Stretch}, 
+{\bfseries Action\-Modify\-Bevel}, 
+{\bfseries Action\-Modify\-Round}, 
+\\*
+{\bfseries Action\-Modify\-Offset}, 
+{\bfseries Action\-Modify\-Offset\-No\-Select}, 
+{\bfseries Action\-Snap\-Free}, 
+{\bfseries Action\-Snap\-Grid}, 
+\\*
+{\bfseries Action\-Snap\-Endpoint}, 
+{\bfseries Action\-Snap\-On\-Entity}, 
+{\bfseries Action\-Snap\-Center}, 
+{\bfseries Action\-Snap\-Middle}, 
+\\*
+{\bfseries Action\-Snap\-Dist}, 
+{\bfseries Action\-Snap\-Intersection}, 
+{\bfseries Action\-Snap\-Intersection\-Manual}, 
+{\bfseries Action\-Restrict\-Nothing}, 
+\\*
+{\bfseries Action\-Restrict\-Orthogonal}, 
+{\bfseries Action\-Restrict\-Horizontal}, 
+{\bfseries Action\-Restrict\-Vertical}, 
+{\bfseries Action\-Set\-Relative\-Zero}, 
+\\*
+{\bfseries Action\-Lock\-Relative\-Zero}, 
+{\bfseries Action\-Unlock\-Relative\-Zero}, 
+{\bfseries Action\-Info\-Inside}, 
+{\bfseries Action\-Info\-Dist}, 
+\\*
+{\bfseries Action\-Info\-Dist2}, 
+{\bfseries Action\-Info\-Angle}, 
+{\bfseries Action\-Info\-Total\-Length}, 
+{\bfseries Action\-Info\-Total\-Length\-No\-Select}, 
+\\*
+{\bfseries Action\-Info\-Area}, 
+{\bfseries Action\-Layers\-Defreeze\-All}, 
+{\bfseries Action\-Layers\-Freeze\-All}, 
+{\bfseries Action\-Layers\-Add}, 
+\\*
+{\bfseries Action\-Layers\-Remove}, 
+{\bfseries Action\-Layers\-Edit}, 
+{\bfseries Action\-Layers\-Toggle\-View}, 
+{\bfseries Action\-Layers\-Toggle\-Lock}, 
+\\*
+{\bfseries Action\-Layers\-Toggle\-Print}, 
+{\bfseries Action\-Blocks\-Defreeze\-All}, 
+{\bfseries Action\-Blocks\-Freeze\-All}, 
+{\bfseries Action\-Blocks\-Add}, 
+\\*
+{\bfseries Action\-Blocks\-Remove}, 
+{\bfseries Action\-Blocks\-Attributes}, 
+{\bfseries Action\-Blocks\-Edit}, 
+{\bfseries Action\-Blocks\-Save}, 
+\\*
+{\bfseries Action\-Blocks\-Insert}, 
+{\bfseries Action\-Blocks\-Toggle\-View}, 
+{\bfseries Action\-Blocks\-Create}, 
+{\bfseries Action\-Blocks\-Create\-No\-Select}, 
+\\*
+{\bfseries Action\-Blocks\-Explode}, 
+{\bfseries Action\-Blocks\-Explode\-No\-Select}, 
+{\bfseries Action\-Modify\-Explode\-Text}, 
+{\bfseries Action\-Modify\-Explode\-Text\-No\-Select}, 
+\\*
+{\bfseries Action\-Library\-Insert}, 
+{\bfseries Action\-Options\-General}, 
+{\bfseries Action\-Options\-Drawing}, 
+{\bfseries Action\-Tool\-Regenerate\-Dimensions}, 
+\\*
+{\bfseries Action\-Script\-Open\-I\-D\-E}, 
+{\bfseries Action\-Script\-Run}, 
+{\bfseries Action\-P\-A\-R\-I\-S\-Debug\-Create\-Container}, 
+\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7a0000b6556bad116f75904e10e64adcdd}{Action\-Last}
+ \}
+\item 
+enum \hyperlink{classRS2_a30e80df2ef4bb36f4e89ea500eb212ab}{Ending} \{ \hyperlink{classRS2_a30e80df2ef4bb36f4e89ea500eb212aba49f69cdcb5cc8c90b211d5f98631fe9d}{Ending\-Start}, 
+\hyperlink{classRS2_a30e80df2ef4bb36f4e89ea500eb212abaae7bf55673a9f4a36b86c1d1d975c8aa}{Ending\-End}, 
+\hyperlink{classRS2_a30e80df2ef4bb36f4e89ea500eb212aba5ebf4600c052b2466c24af07d68bc900}{Ending\-None}
+ \}
+\item 
+enum \hyperlink{classRS2_ab05150052f314f729c76afff34f89bc5}{Update\-Mode} \{ \hyperlink{classRS2_ab05150052f314f729c76afff34f89bc5a2f5f049e086d7d82c039accb671c7556}{No\-Update}, 
+\hyperlink{classRS2_ab05150052f314f729c76afff34f89bc5a83180c94271651d6a709844b1453bf58}{Update}, 
+\hyperlink{classRS2_ab05150052f314f729c76afff34f89bc5a5c8e722c8bfb435b79831633ee96b4d3}{Preview\-Update}
+ \}
+\item 
+enum \hyperlink{classRS2_a67196f135592d0f8eff894bd126685b2}{Drawing\-Mode} \{ \hyperlink{classRS2_a67196f135592d0f8eff894bd126685b2a9b815edce02e6ebf9a19d33899e4fb17}{Mode\-Full}, 
+\hyperlink{classRS2_a67196f135592d0f8eff894bd126685b2aff651f6b68141da453d3f2701e5e06cd}{Mode\-Auto}, 
+\hyperlink{classRS2_a67196f135592d0f8eff894bd126685b2aded4ed7fc2818f5392164e96f6f907ac}{Mode\-Preview}, 
+\hyperlink{classRS2_a67196f135592d0f8eff894bd126685b2af706d211e2fc8904bb06df7d26c9542d}{Mode\-B\-W}
+ \}
+\item 
+enum \hyperlink{classRS2_ab5fe5e99761abbb178f2e132d4ac84ee}{Undoable\-Type} \{ \hyperlink{classRS2_ab5fe5e99761abbb178f2e132d4ac84eea5c4d52d9b4d9f1a4d145e77d2bb7f3c5}{Undoable\-Unknown}, 
+\hyperlink{classRS2_ab5fe5e99761abbb178f2e132d4ac84eea146aaf4f748194d366a713fb629c75b4}{Undoable\-Entity}, 
+\hyperlink{classRS2_ab5fe5e99761abbb178f2e132d4ac84eeae90581d7c018a36a07047a2e205bf1ab}{Undoable\-Layer}
+ \}
+\item 
+enum \hyperlink{classRS2_a53db3c150d1d8d501b236d537de53793}{Tool\-Bar\-Id} \{ \\*
+\hyperlink{classRS2_a53db3c150d1d8d501b236d537de53793ade5b06b30dc2f293538ce8bea9a54eb1}{Tool\-Bar\-Main}, 
+\hyperlink{classRS2_a53db3c150d1d8d501b236d537de53793a83016c8fbf0194aef500d7cb176937ac}{Tool\-Bar\-Points}, 
+\hyperlink{classRS2_a53db3c150d1d8d501b236d537de53793a43b5321e0b89ddcbc7831b35f05ad5b2}{Tool\-Bar\-Lines}, 
+\hyperlink{classRS2_a53db3c150d1d8d501b236d537de53793a7f76a50145d04630f240484705308138}{Tool\-Bar\-Arcs}, 
+\\*
+\hyperlink{classRS2_a53db3c150d1d8d501b236d537de53793ad7773f8077f21672caa7534e9180ac20}{Tool\-Bar\-Circles}, 
+\hyperlink{classRS2_a53db3c150d1d8d501b236d537de53793aa6d5da346bb0f7acd900b6ceb44b44fe}{Tool\-Bar\-Ellipses}, 
+\hyperlink{classRS2_a53db3c150d1d8d501b236d537de53793a360a70d8078cbc7393223959e11367f3}{Tool\-Bar\-Splines}, 
+\hyperlink{classRS2_a53db3c150d1d8d501b236d537de53793ac3413f6317876c5076e71d2ee9ce5c06}{Tool\-Bar\-Polylines}, 
+\\*
+\hyperlink{classRS2_a53db3c150d1d8d501b236d537de53793a6a91f8b8828c824d1e5feeadad8557f2}{Tool\-Bar\-Text}, 
+\hyperlink{classRS2_a53db3c150d1d8d501b236d537de53793aaa67149e49d67019ea2ac669d6f4e50f}{Tool\-Bar\-Dim}, 
+\hyperlink{classRS2_a53db3c150d1d8d501b236d537de53793ade84ac35f59aa0809644752edc2ff631}{Tool\-Bar\-Snap}, 
+\hyperlink{classRS2_a53db3c150d1d8d501b236d537de53793a03908138fb7a82f451c872a4c3fa2ac4}{Tool\-Bar\-Modify}, 
+\\*
+\hyperlink{classRS2_a53db3c150d1d8d501b236d537de53793a98ee866457e0931592af1ce08c920a6b}{Tool\-Bar\-Select}, 
+\hyperlink{classRS2_a53db3c150d1d8d501b236d537de53793ac0443bc2db2cce890b459f8657f59e3f}{Tool\-Bar\-Info}, 
+\hyperlink{classRS2_a53db3c150d1d8d501b236d537de53793a4dc03643969a07264b18e58f58cc9d41}{Tool\-Bar\-None}
+ \}
+\item 
+enum \hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828}{Unit} \{ \\*
+\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828ad72221e244469bf066d560394af6985d}{None} = 0, 
+\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828a7b7408a26e7771b1491e072e80ef23f2}{Inch} = 1, 
+\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828a31d4e49ae93b484adbd8ca3386e98aa9}{Foot} = 2, 
+\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828a16c6386c7af4d240da32a3128e27edb0}{Mile} = 3, 
+\\*
+\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828a1a2c7e1f33394582debfd06ab9bba6de}{Millimeter} = 4, 
+\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828ad982442cfabd52ed24f1830cc0ef2908}{Centimeter} = 5, 
+\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828a4bede546afef1120ccbb3078c98872f8}{Meter} = 6, 
+\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828a7918f984665450229de80f216fca41ff}{Kilometer} = 7, 
+\\*
+\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828a2f31575eea32d8c3e304713bf5950460}{Microinch} = 8, 
+\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828ab2cf82c1add12b8fc0cd177e6659140f}{Mil} = 9, 
+\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828a3b3748b5e24d1556be2fd195feec2c5c}{Yard} = 10, 
+\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828a6a4d7a49c6c1337f49bf0fe1509708a3}{Angstrom} = 11, 
+\\*
+\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828a0c64d5a7a3e253f18785584089832453}{Nanometer} = 12, 
+\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828adc19ff607a1ff47fc1b8ac99c623c20f}{Micron} = 13, 
+\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828a8838e6240d993784f8910eeb66c3c658}{Decimeter} = 14, 
+\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828a8a774766ff2c61e3a6c2bfb8eae56bd3}{Decameter} = 15, 
+\\*
+\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828a0873c1e7a38e39d12c39f7040ef84d6e}{Hectometer} = 16, 
+\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828a41b1aa7ad7cdc28627d2d5f97646bf40}{Gigameter} = 17, 
+\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828a84fccaeb08592888b6096f725ef23f87}{Astro} = 18, 
+\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828a690284ea39affba83a12b16135f550eb}{Lightyear} = 19, 
+\\*
+\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828acab7bf77423a85372f11f7430b596616}{Parsec} = 20, 
+\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828a08338c5981e34a915c8e04b3783ea7c2}{Last\-Unit} = 21
+ \}
+\item 
+enum \hyperlink{classRS2_a0fa0506f1e870c169e8d8c1d58d3fa6e}{Linear\-Format} \{ \\*
+\hyperlink{classRS2_a0fa0506f1e870c169e8d8c1d58d3fa6eaaa30a9691155166fafba7b9e567d4162}{Scientific}, 
+\hyperlink{classRS2_a0fa0506f1e870c169e8d8c1d58d3fa6eaedb1e709c9aabbc784e9308e2ccefbef}{Decimal}, 
+\hyperlink{classRS2_a0fa0506f1e870c169e8d8c1d58d3fa6ea2c803ea3d4e6dd23f87b8ff27329da04}{Engineering}, 
+\hyperlink{classRS2_a0fa0506f1e870c169e8d8c1d58d3fa6ead2bce121fb7a45f3fdce55a71f5dd585}{Architectural}, 
+\\*
+\hyperlink{classRS2_a0fa0506f1e870c169e8d8c1d58d3fa6eaf3574c6edb2ee5561583dbfd3ece06fa}{Fractional}
+ \}
+\item 
+enum \hyperlink{classRS2_a8c12c7e315b9378094998281831642f0}{Angle\-Unit} \{ \hyperlink{classRS2_a8c12c7e315b9378094998281831642f0aa65d30f54f40dd8467b8c63c76600a5f}{Deg}, 
+\hyperlink{classRS2_a8c12c7e315b9378094998281831642f0a83cd73644ebae01da9ab54138f2f13fd}{Rad}, 
+\hyperlink{classRS2_a8c12c7e315b9378094998281831642f0a5e1b82e2868401d9b6ef323e34cbbe81}{Gra}
+ \}
+\item 
+enum \hyperlink{classRS2_a9c7a07b03f910b04154536a28c151277}{Angle\-Format} \{ \\*
+\hyperlink{classRS2_a9c7a07b03f910b04154536a28c151277acfc866eaf99835387a07e0ee59c09ce3}{Degrees\-Decimal}, 
+\hyperlink{classRS2_a9c7a07b03f910b04154536a28c151277a6edcd5fa4d723401b3b89a69558ae135}{Degrees\-Minutes\-Seconds}, 
+\hyperlink{classRS2_a9c7a07b03f910b04154536a28c151277af83166b5dfa756caa0993450eb399af7}{Gradians}, 
+\hyperlink{classRS2_a9c7a07b03f910b04154536a28c151277a6f63d794cfea32e97de149c04d49f8f8}{Radians}, 
+\\*
+\hyperlink{classRS2_a9c7a07b03f910b04154536a28c151277ab5be3cfed246b846d9c6c785131483a6}{Surveyors}
+ \}
+\item 
+enum \hyperlink{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20}{Resolve\-Level} \{ \hyperlink{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20aecb7396f39bc313ad8903c8a5fac5a50}{Resolve\-None}, 
+\hyperlink{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20ac8256a367063261c1a704965599c09a4}{Resolve\-All\-But\-Inserts}, 
+\hyperlink{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20a3e805b0eaf8fe584c57b2c724f1552fc}{Resolve\-All\-But\-Texts}, 
+\hyperlink{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20a2a4a53124bbf724f5f486e1066d99a74}{Resolve\-All}
+ \}
+\item 
+enum \hyperlink{classRS2_a6b01552307ddf2599503c2e2f6ae7066}{Direction} \{ {\bfseries Up}, 
+{\bfseries Left}, 
+{\bfseries Right}, 
+{\bfseries Down}
+ \}
+\item 
+enum \hyperlink{classRS2_a1ca12b62d43b9a86d84ddd2e6af87967}{Leader\-Path\-Type} \{ \hyperlink{classRS2_a1ca12b62d43b9a86d84ddd2e6af87967a1d30a76038f24c427bc6ff6182f7c1c5}{Straight}, 
+\hyperlink{classRS2_a1ca12b62d43b9a86d84ddd2e6af87967a1263220f1aba24a1c6b7423c404c6da2}{Spline}
+ \}
+\item 
+enum \hyperlink{classRS2_a7416f66b1968e3ccb9b70b8f48bac8df}{Zoom\-Direction} \{ {\bfseries In}, 
+{\bfseries Out}
+ \}
+\item 
+enum \hyperlink{classRS2_aba103dd97e4a9cea520151de742d9904}{Axis} \{ {\bfseries Only\-X}, 
+{\bfseries Only\-Y}, 
+{\bfseries Both}
+ \}
+\item 
+enum \hyperlink{classRS2_a6900d729544a78e6cda74f93df772acc}{Crosshair\-Type} \{ \hyperlink{classRS2_a6900d729544a78e6cda74f93df772acca7cfca1180ad5623c168885c34a15bec8}{Left\-Crosshair}, 
+\hyperlink{classRS2_a6900d729544a78e6cda74f93df772acca8147c693038a4bcc701aaaa85b64fda5}{Top\-Crosshair}, 
+\hyperlink{classRS2_a6900d729544a78e6cda74f93df772acca6cff857015c0d1719ef4ccc3a345edef}{Right\-Crosshair}, 
+\hyperlink{classRS2_a6900d729544a78e6cda74f93df772acca4ca5fc1c06034b6ba005da98ee337459}{Orthogonal\-Crosshair}
+ \}
+\item 
+enum \hyperlink{classRS2_ad79bb612dc7719b90e79b29298ffaf73}{Snap\-Mode} \{ \\*
+\hyperlink{classRS2_ad79bb612dc7719b90e79b29298ffaf73a5a6d58171fa3b8586d4209ef3761d73f}{Snap\-Free}, 
+\hyperlink{classRS2_ad79bb612dc7719b90e79b29298ffaf73a382b425d5485030585e9ae049bfdf74c}{Snap\-Grid}, 
+\hyperlink{classRS2_ad79bb612dc7719b90e79b29298ffaf73a719d9253174d9539cf03d66ee803491a}{Snap\-Endpoint}, 
+\hyperlink{classRS2_ad79bb612dc7719b90e79b29298ffaf73ab6d10f86aa075ad5ee29b0147188bc70}{Snap\-Middle}, 
+\\*
+\hyperlink{classRS2_ad79bb612dc7719b90e79b29298ffaf73ac766b511ec5ed91362a8d1697aa8a3e0}{Snap\-Center}, 
+\hyperlink{classRS2_ad79bb612dc7719b90e79b29298ffaf73a7bb6afc825071293220e7770e4c8fc0f}{Snap\-On\-Entity}, 
+\hyperlink{classRS2_ad79bb612dc7719b90e79b29298ffaf73ab4fa79632b7ece76e1754d0ad1b9f24a}{Snap\-Dist}, 
+\hyperlink{classRS2_ad79bb612dc7719b90e79b29298ffaf73aa8085654d622b76da79e3b58bf104125}{Snap\-Intersection}, 
+\\*
+\hyperlink{classRS2_ad79bb612dc7719b90e79b29298ffaf73af60d60ccde27d63b4c95bd1b7aedf8df}{Snap\-Intersection\-Manual}
+ \}
+\item 
+enum \hyperlink{classRS2_aac67b6890a08cff619c0fbef48377bae}{Snap\-Restriction} \{ \hyperlink{classRS2_aac67b6890a08cff619c0fbef48377baea6be096819fb24d0ac20fea8db4932dda}{Restrict\-Nothing}, 
+\hyperlink{classRS2_aac67b6890a08cff619c0fbef48377baeaf465294c2efbf56a1649f73e899848dc}{Restrict\-Orthogonal}, 
+\hyperlink{classRS2_aac67b6890a08cff619c0fbef48377baea805635bcd04772a4e3e7ce515643d8ea}{Restrict\-Horizontal}, 
+\hyperlink{classRS2_aac67b6890a08cff619c0fbef48377baea5591f93bc1f684a98fc5d97a49a462eb}{Restrict\-Vertical}
+ \}
+\item 
+enum \hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95f}{Line\-Type} \{ \\*
+\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa2f142da39005616fc2827e5d7e988185}{No\-Pen} = 0, 
+\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa1db8fd78bff5675d67c7dede9d9239c1}{Solid\-Line} = 1, 
+\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95faf6f6df14a9961ddd00dfd7f1abc84c66}{Dot\-Line} = 2, 
+\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95fad771b2aab57e8e8fa6b9ddf048cd8eaf}{Dot\-Line2} = 3, 
+\\*
+\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa13016de22401b341459844a2dd266352}{Dot\-Line\-X2} = 4, 
+\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa8ebe1064c88dae786cbefc0f4e648c1a}{Dash\-Line} = 5, 
+\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa0095b8477e1624a4839238f71aad8517}{Dash\-Line2} = 6, 
+\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95fabd175b29207f4ea9f9c602505a83e2ba}{Dash\-Line\-X2} = 7, 
+\\*
+\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa7962a13d8622f266605cb7d2716cd341}{Dash\-Dot\-Line} = 8, 
+\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95fad5e15339281b37adf2339bccd5f7393e}{Dash\-Dot\-Line2} = 9, 
+\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa2fb3c89aa1836e3af5f95c2a772d89b9}{Dash\-Dot\-Line\-X2} = 10, 
+\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa1e729e5431362891299429afccd5fa4f}{Divide\-Line} = 11, 
+\\*
+\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa6855bdb90e1e41232955e8301cc125ab}{Divide\-Line2} = 12, 
+\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95fad09b280c89154f4f05cafb6e8bbf986a}{Divide\-Line\-X2} = 13, 
+\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95faa102fefc84b88359c6f2ee0303d893c6}{Center\-Line} = 14, 
+\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95fad4b48a7aad2e7a3ba6255247ab52bdc1}{Center\-Line2} = 15, 
+\\*
+\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95fad1250d96a0935514f0f5667ebcdb3095}{Center\-Line\-X2} = 16, 
+\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa1f73f9618ae326f12b6adac260f9543b}{Border\-Line} = 17, 
+\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa75c805566b7a090a18e29c2830ac9fa9}{Border\-Line2} = 18, 
+\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa1f7b901e7660005fb9f5e07256dba013}{Border\-Line\-X2} = 19, 
+\\*
+\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95fad8aebfd03eeae491a53cc5d5ccaa6d4c}{Line\-By\-Layer} = -\/1, 
+\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa229bd9c6186fdcd828eb93fac408b71f}{Line\-By\-Block} = -\/2
+ \}
+\item 
+enum \hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29}{Line\-Width} \{ \\*
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29a5a1fff2387b928abdfd0259024b57469}{Width00} = 0, 
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29a66f28068d3a50408b9ba7dbd6a95bc27}{Width01} = 5, 
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29a53b86b790f7fc23f1abd271b9dc9c726}{Width02} = 9, 
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29af76c4a930151e362092cdcec2ab0ef79}{Width03} = 13, 
+\\*
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29a315a0a680b4f94c8d9baa04451261e6c}{Width04} = 15, 
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29a08d04dec5c11f1dfee9aa41b5d2482be}{Width05} = 18, 
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29a9a757d4fe0ac6da0981d74d8d005c332}{Width06} = 20, 
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29aaa6c2ccdd55585c8be2aa01737543376}{Width07} = 25, 
+\\*
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29a25dfeb81f356ac6cf49a8a5fa94f2e73}{Width08} = 30, 
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29a372f8c6c90c27321febc96a2552641af}{Width09} = 35, 
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29a066ad0efaa20328255c895070c8df4ea}{Width10} = 40, 
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29af385e7306b12458561d2b6c768c785bc}{Width11} = 50, 
+\\*
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29a980fb750b5a13c71cf2a1b27b1528486}{Width12} = 53, 
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29aef855a1478f16ee6fa45db4e7a4f5bc6}{Width13} = 60, 
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29af18edcf731ffb973cb041687a227ec38}{Width14} = 70, 
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29a9faace88a89895afaa8fc24d5e5be01f}{Width15} = 80, 
+\\*
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29a944a309b8ee17641189b80e3d5446dff}{Width16} = 90, 
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29a02de9b5213ef9ef039db09f43010fe49}{Width17} = 100, 
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29a0e7d71436c3a1743d2865cc9d091e43b}{Width18} = 106, 
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29a708ce5a7eb0ec7f93abf23672459f88b}{Width19} = 120, 
+\\*
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29ad91ce6cd10cc9dca2e32694ad1175109}{Width20} = 140, 
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29a60b69ebd9f16dd973a96560550633bc9}{Width21} = 158, 
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29a982ab2cbc000ba615b7862cee8d8f0e7}{Width22} = 200, 
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29a1e64fa9cb464329d20da417a0e0ff8ce}{Width23} = 211, 
+\\*
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29a069965d8c63bd878b2eab03f943465e5}{Width\-By\-Layer} = -\/1, 
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29a06dbfb199684a461e0a78f67878af6cd}{Width\-By\-Block} = -\/2, 
+\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29abb16037a252d81186258f11eebeffcf5}{Width\-Default} = -\/3
+ \}
+\item 
+enum \hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548d}{Cursor\-Type} \{ \\*
+\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548daf55860ebb58ac4938088e2c1bb0437a6}{Arrow\-Cursor}, 
+\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da769d00e575ef0be83a15afec976bdeaa}{Up\-Arrow\-Cursor}, 
+\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548dacd4a2c98f259e2be43ac6164ebcd5702}{Cross\-Cursor}, 
+\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548dacaa96c9b24535a0d3cee300a3678e7e1}{Wait\-Cursor}, 
+\\*
+\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da12508b8e816cc31f87d451ddf932268a}{Ibeam\-Cursor}, 
+\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548daceb6376a322821ea5fcba98b91f38ac6}{Size\-Ver\-Cursor}, 
+\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548daf007caf7be997d0e538ea63a1c839f2e}{Size\-Hor\-Cursor}, 
+\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da9cd14334c8178cf3a7a9472cebb53e0b}{Size\-B\-Diag\-Cursor}, 
+\\*
+\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da0e0ab28f20c684e9f03f65bb53b89d2d}{Size\-F\-Diag\-Cursor}, 
+\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da55fd573310e80e1672669573d06df78d}{Size\-All\-Cursor}, 
+\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548dae55d668953f8c1ec54296f2fdd3dc188}{Blank\-Cursor}, 
+\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da030652fd92f7adc874921fe2e115544d}{Split\-V\-Cursor}, 
+\\*
+\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da614ee4c5f30d544dfe61613005a715da}{Split\-H\-Cursor}, 
+\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da80566a07f69ca963e051e6f3754443a5}{Pointing\-Hand\-Cursor}, 
+\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548dafdaa7895274d794661f025b49c79a22e}{Forbidden\-Cursor}, 
+\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da1df4b3505b5c03ecdd2274457a45892b}{Whats\-This\-Cursor}, 
+\\*
+\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da830b6e1aec1882785030f8651e2a89d8}{Open\-Hand\-Cursor}, 
+\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da8091f7bca5629eda8362b3583ea7f0ec}{Closed\-Hand\-Cursor}, 
+\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548dac35e8530e2e40315eb554eadea2848d4}{Cad\-Cursor}, 
+\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548dacb035a05e32ec357c264ccf59dec55f3}{Del\-Cursor}, 
+\\*
+\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548daa8b8f9c90be2ecbd28c158afa9a8c6e7}{Select\-Cursor}, 
+\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da4d428ef877316ebd75aac4f4b77cd872}{Magnifier\-Cursor}, 
+\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da1ec2014210ccdb86efa06681d18d5952}{Moving\-Hand\-Cursor}
+ \}
+\item 
+enum \hyperlink{classRS2_a99636ecac997160f1e2982859a043cb4}{Paper\-Format} \{ \\*
+{\bfseries Custom}, 
+{\bfseries Letter}, 
+{\bfseries Legal}, 
+{\bfseries Executive}, 
+\\*
+{\bfseries A0}, 
+{\bfseries A1}, 
+{\bfseries A2}, 
+{\bfseries A3}, 
+\\*
+{\bfseries A4}, 
+{\bfseries A5}, 
+{\bfseries A6}, 
+{\bfseries A7}, 
+\\*
+{\bfseries A8}, 
+{\bfseries A9}, 
+{\bfseries B0}, 
+{\bfseries B1}, 
+\\*
+{\bfseries B2}, 
+{\bfseries B3}, 
+{\bfseries B4}, 
+{\bfseries B5}, 
+\\*
+{\bfseries B6}, 
+{\bfseries B7}, 
+{\bfseries B8}, 
+{\bfseries B9}, 
+\\*
+{\bfseries B10}, 
+{\bfseries C5\-E}, 
+{\bfseries Comm10\-E}, 
+{\bfseries D\-L\-E}, 
+\\*
+{\bfseries Folio}, 
+{\bfseries Tabloid}, 
+{\bfseries Arch\-\_\-\-A}, 
+{\bfseries Arch\-\_\-\-B}, 
+\\*
+{\bfseries Arch\-\_\-\-C}, 
+{\bfseries Arch\-\_\-\-D}, 
+{\bfseries Arch\-\_\-\-E}, 
+{\bfseries Arch\-\_\-\-E1}, 
+\\*
+{\bfseries Arch\-\_\-\-E2}, 
+{\bfseries Arch\-\_\-\-E3}, 
+{\bfseries N\-Page\-Size}
+ \}
+\item 
+enum \hyperlink{classRS2_ad08097f2c67307c83fbea0439830f56c}{Overlay\-Graphics} \{ {\bfseries Action\-Preview\-Entity}, 
+{\bfseries Snapper}
+ \}
+\item 
+enum {\bfseries Redraw\-Method} \{ \\*
+{\bfseries Redraw\-None} = 0, 
+{\bfseries Redraw\-Grid} = 1, 
+{\bfseries Redraw\-Overlay} = 2, 
+{\bfseries Redraw\-Drawing} = 4, 
+\\*
+{\bfseries Redraw\-All} = 0xffff
+ \}
+\item 
+enum \hyperlink{classRS2_a3dafd8c4ebe0b83d1cb0e889429a7a59}{Text\-Locale\-Direction} \{ {\bfseries loc\-Left\-To\-Right}, 
+\hyperlink{classRS2_a3dafd8c4ebe0b83d1cb0e889429a7a59a615bee7ff67a4507319a44f0646d7a32}{loc\-Right\-To\-Left}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS2_ac1fdca581db331a1b07ec68a2aaffa5c}{static bool {\bfseries is\-Container} (const \hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6a}{Entity\-Type} en\-Type)}\label{classRS2_ac1fdca581db331a1b07ec68a2aaffa5c}
+
+\item 
+static Qt\-::\-Pen\-Style \hyperlink{classRS2_aaf709fca50d3cd5d38e41e3fcc115a68}{rs\-To\-Qt\-Line\-Type} (\hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95f}{R\-S2\-::\-Line\-Type} t)
+\item 
+static \hyperlink{classRS2_a6f3a82972c2d62456f6cacb74e14c95f}{R\-S2\-::\-Line\-Type} \hyperlink{classRS2_acad6e5163a16036556532c37750f7cac}{qt\-To\-Rs\-Pen\-Style} (Qt\-::\-Pen\-Style s)
+\item 
+static \hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29}{Line\-Width} \hyperlink{classRS2_a3a2353d5f4b7f481eb54caed3fccb194}{int\-To\-Line\-Width} (int w)
+\item 
+static Qt\-::\-Cursor\-Shape \hyperlink{classRS2_ae4eb168bf7a7d6dd2e48f974c52e9095}{rs\-To\-Qt\-Cursor\-Type} (\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548d}{R\-S2\-::\-Cursor\-Type} t)
+\item 
+static Q\-Printer\-::\-Page\-Size \hyperlink{classRS2_a6eef8c61bd91a7821ad4aa683fbcad84}{rs\-To\-Qt\-Paper\-Format} (\hyperlink{classRS2_a99636ecac997160f1e2982859a043cb4}{R\-S2\-::\-Paper\-Format} f)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS2_aab26032e329a9bebf30462c6936ed608}{struct \hyperlink{structRS2_1_1LineTypePatternStruct}{R\-S2\-::\-Line\-Type\-Pattern\-Struct} {\bfseries Line\-Type\-Pattern}}\label{classRS2_aab26032e329a9bebf30462c6936ed608}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class namespace for various enums along with some simple wrapper methods for converting the enums to the Qt counterparts.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{\index{R\-S2@{R\-S2}!Action\-Type@{Action\-Type}}
+\index{Action\-Type@{Action\-Type}!RS2@{R\-S2}}
+\subsubsection[{Action\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Action\-Type}}}\label{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}
+Action types used by action factories. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Action\-None@{Action\-None}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Action\-None@{Action\-None}}\item[{\em 
+\hypertarget{classRS2_afe3523e0bc41fd637b892321cfc4b9d7a87399b91b144b6e5d53f649422fc00c6}{Action\-None}\label{classRS2_afe3523e0bc41fd637b892321cfc4b9d7a87399b91b144b6e5d53f649422fc00c6}
+}]Invalid action id. \index{Action\-Last@{Action\-Last}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Action\-Last@{Action\-Last}}\item[{\em 
+\hypertarget{classRS2_afe3523e0bc41fd637b892321cfc4b9d7a0000b6556bad116f75904e10e64adcdd}{Action\-Last}\label{classRS2_afe3523e0bc41fd637b892321cfc4b9d7a0000b6556bad116f75904e10e64adcdd}
+}]Needed to loop through all actions \end{description}
+\end{Desc}
+\hypertarget{classRS2_a9c7a07b03f910b04154536a28c151277}{\index{R\-S2@{R\-S2}!Angle\-Format@{Angle\-Format}}
+\index{Angle\-Format@{Angle\-Format}!RS2@{R\-S2}}
+\subsubsection[{Angle\-Format}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Angle\-Format}}}\label{classRS2_a9c7a07b03f910b04154536a28c151277}
+Display formats for angles. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Degrees\-Decimal@{Degrees\-Decimal}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Degrees\-Decimal@{Degrees\-Decimal}}\item[{\em 
+\hypertarget{classRS2_a9c7a07b03f910b04154536a28c151277acfc866eaf99835387a07e0ee59c09ce3}{Degrees\-Decimal}\label{classRS2_a9c7a07b03f910b04154536a28c151277acfc866eaf99835387a07e0ee59c09ce3}
+}]Degrees with decimal point (e.\-g. 24.\-5�) \index{Degrees\-Minutes\-Seconds@{Degrees\-Minutes\-Seconds}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Degrees\-Minutes\-Seconds@{Degrees\-Minutes\-Seconds}}\item[{\em 
+\hypertarget{classRS2_a9c7a07b03f910b04154536a28c151277a6edcd5fa4d723401b3b89a69558ae135}{Degrees\-Minutes\-Seconds}\label{classRS2_a9c7a07b03f910b04154536a28c151277a6edcd5fa4d723401b3b89a69558ae135}
+}]Degrees, Minutes and Seconds (e.\-g. 24�30'5'') \index{Gradians@{Gradians}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Gradians@{Gradians}}\item[{\em 
+\hypertarget{classRS2_a9c7a07b03f910b04154536a28c151277af83166b5dfa756caa0993450eb399af7}{Gradians}\label{classRS2_a9c7a07b03f910b04154536a28c151277af83166b5dfa756caa0993450eb399af7}
+}]Gradians with decimal point (e.\-g. 390.\-5) \index{Radians@{Radians}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Radians@{Radians}}\item[{\em 
+\hypertarget{classRS2_a9c7a07b03f910b04154536a28c151277a6f63d794cfea32e97de149c04d49f8f8}{Radians}\label{classRS2_a9c7a07b03f910b04154536a28c151277a6f63d794cfea32e97de149c04d49f8f8}
+}]Radians with decimal point (e.\-g. 1.\-57) \index{Surveyors@{Surveyors}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Surveyors@{Surveyors}}\item[{\em 
+\hypertarget{classRS2_a9c7a07b03f910b04154536a28c151277ab5be3cfed246b846d9c6c785131483a6}{Surveyors}\label{classRS2_a9c7a07b03f910b04154536a28c151277ab5be3cfed246b846d9c6c785131483a6}
+}]Surveyor's units \end{description}
+\end{Desc}
+\hypertarget{classRS2_a8c12c7e315b9378094998281831642f0}{\index{R\-S2@{R\-S2}!Angle\-Unit@{Angle\-Unit}}
+\index{Angle\-Unit@{Angle\-Unit}!RS2@{R\-S2}}
+\subsubsection[{Angle\-Unit}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Angle\-Unit}}}\label{classRS2_a8c12c7e315b9378094998281831642f0}
+Angle Units. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Deg@{Deg}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Deg@{Deg}}\item[{\em 
+\hypertarget{classRS2_a8c12c7e315b9378094998281831642f0aa65d30f54f40dd8467b8c63c76600a5f}{Deg}\label{classRS2_a8c12c7e315b9378094998281831642f0aa65d30f54f40dd8467b8c63c76600a5f}
+}]Degrees \index{Rad@{Rad}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Rad@{Rad}}\item[{\em 
+\hypertarget{classRS2_a8c12c7e315b9378094998281831642f0a83cd73644ebae01da9ab54138f2f13fd}{Rad}\label{classRS2_a8c12c7e315b9378094998281831642f0a83cd73644ebae01da9ab54138f2f13fd}
+}]Radians \index{Gra@{Gra}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Gra@{Gra}}\item[{\em 
+\hypertarget{classRS2_a8c12c7e315b9378094998281831642f0a5e1b82e2868401d9b6ef323e34cbbe81}{Gra}\label{classRS2_a8c12c7e315b9378094998281831642f0a5e1b82e2868401d9b6ef323e34cbbe81}
+}]Gradians \end{description}
+\end{Desc}
+\hypertarget{classRS2_aba103dd97e4a9cea520151de742d9904}{\index{R\-S2@{R\-S2}!Axis@{Axis}}
+\index{Axis@{Axis}!RS2@{R\-S2}}
+\subsubsection[{Axis}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Axis}}}\label{classRS2_aba103dd97e4a9cea520151de742d9904}
+Axis specification for zooming actions. \hypertarget{classRS2_a6900d729544a78e6cda74f93df772acc}{\index{R\-S2@{R\-S2}!Crosshair\-Type@{Crosshair\-Type}}
+\index{Crosshair\-Type@{Crosshair\-Type}!RS2@{R\-S2}}
+\subsubsection[{Crosshair\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Crosshair\-Type}}}\label{classRS2_a6900d729544a78e6cda74f93df772acc}
+Crosshair type \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Left\-Crosshair@{Left\-Crosshair}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Left\-Crosshair@{Left\-Crosshair}}\item[{\em 
+\hypertarget{classRS2_a6900d729544a78e6cda74f93df772acca7cfca1180ad5623c168885c34a15bec8}{Left\-Crosshair}\label{classRS2_a6900d729544a78e6cda74f93df772acca7cfca1180ad5623c168885c34a15bec8}
+}]Left type isometric Crosshair \index{Top\-Crosshair@{Top\-Crosshair}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Top\-Crosshair@{Top\-Crosshair}}\item[{\em 
+\hypertarget{classRS2_a6900d729544a78e6cda74f93df772acca8147c693038a4bcc701aaaa85b64fda5}{Top\-Crosshair}\label{classRS2_a6900d729544a78e6cda74f93df772acca8147c693038a4bcc701aaaa85b64fda5}
+}]Top type isometric Crosshair \index{Right\-Crosshair@{Right\-Crosshair}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Right\-Crosshair@{Right\-Crosshair}}\item[{\em 
+\hypertarget{classRS2_a6900d729544a78e6cda74f93df772acca6cff857015c0d1719ef4ccc3a345edef}{Right\-Crosshair}\label{classRS2_a6900d729544a78e6cda74f93df772acca6cff857015c0d1719ef4ccc3a345edef}
+}]Right type isometric Crosshair \index{Orthogonal\-Crosshair@{Orthogonal\-Crosshair}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Orthogonal\-Crosshair@{Orthogonal\-Crosshair}}\item[{\em 
+\hypertarget{classRS2_a6900d729544a78e6cda74f93df772acca4ca5fc1c06034b6ba005da98ee337459}{Orthogonal\-Crosshair}\label{classRS2_a6900d729544a78e6cda74f93df772acca4ca5fc1c06034b6ba005da98ee337459}
+}]Orthogonal Crosshair \end{description}
+\end{Desc}
+\hypertarget{classRS2_a15aa1c4c60c63de4dc688f0bcb43548d}{\index{R\-S2@{R\-S2}!Cursor\-Type@{Cursor\-Type}}
+\index{Cursor\-Type@{Cursor\-Type}!RS2@{R\-S2}}
+\subsubsection[{Cursor\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Cursor\-Type}}}\label{classRS2_a15aa1c4c60c63de4dc688f0bcb43548d}
+Enum of cursor types. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Arrow\-Cursor@{Arrow\-Cursor}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Arrow\-Cursor@{Arrow\-Cursor}}\item[{\em 
+\hypertarget{classRS2_a15aa1c4c60c63de4dc688f0bcb43548daf55860ebb58ac4938088e2c1bb0437a6}{Arrow\-Cursor}\label{classRS2_a15aa1c4c60c63de4dc688f0bcb43548daf55860ebb58ac4938088e2c1bb0437a6}
+}]Arrow\-Cursor -\/ standard arrow cursor. \index{Up\-Arrow\-Cursor@{Up\-Arrow\-Cursor}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Up\-Arrow\-Cursor@{Up\-Arrow\-Cursor}}\item[{\em 
+\hypertarget{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da769d00e575ef0be83a15afec976bdeaa}{Up\-Arrow\-Cursor}\label{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da769d00e575ef0be83a15afec976bdeaa}
+}]Up\-Arrow\-Cursor -\/ upwards arrow. \index{Cross\-Cursor@{Cross\-Cursor}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Cross\-Cursor@{Cross\-Cursor}}\item[{\em 
+\hypertarget{classRS2_a15aa1c4c60c63de4dc688f0bcb43548dacd4a2c98f259e2be43ac6164ebcd5702}{Cross\-Cursor}\label{classRS2_a15aa1c4c60c63de4dc688f0bcb43548dacd4a2c98f259e2be43ac6164ebcd5702}
+}]Cross\-Cursor -\/ crosshair. \index{Wait\-Cursor@{Wait\-Cursor}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Wait\-Cursor@{Wait\-Cursor}}\item[{\em 
+\hypertarget{classRS2_a15aa1c4c60c63de4dc688f0bcb43548dacaa96c9b24535a0d3cee300a3678e7e1}{Wait\-Cursor}\label{classRS2_a15aa1c4c60c63de4dc688f0bcb43548dacaa96c9b24535a0d3cee300a3678e7e1}
+}]Wait\-Cursor -\/ hourglass/watch. \index{Ibeam\-Cursor@{Ibeam\-Cursor}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Ibeam\-Cursor@{Ibeam\-Cursor}}\item[{\em 
+\hypertarget{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da12508b8e816cc31f87d451ddf932268a}{Ibeam\-Cursor}\label{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da12508b8e816cc31f87d451ddf932268a}
+}]Ibeam\-Cursor -\/ ibeam/text entry. \index{Size\-Ver\-Cursor@{Size\-Ver\-Cursor}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Size\-Ver\-Cursor@{Size\-Ver\-Cursor}}\item[{\em 
+\hypertarget{classRS2_a15aa1c4c60c63de4dc688f0bcb43548daceb6376a322821ea5fcba98b91f38ac6}{Size\-Ver\-Cursor}\label{classRS2_a15aa1c4c60c63de4dc688f0bcb43548daceb6376a322821ea5fcba98b91f38ac6}
+}]Size\-Ver\-Cursor -\/ vertical resize. \index{Size\-Hor\-Cursor@{Size\-Hor\-Cursor}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Size\-Hor\-Cursor@{Size\-Hor\-Cursor}}\item[{\em 
+\hypertarget{classRS2_a15aa1c4c60c63de4dc688f0bcb43548daf007caf7be997d0e538ea63a1c839f2e}{Size\-Hor\-Cursor}\label{classRS2_a15aa1c4c60c63de4dc688f0bcb43548daf007caf7be997d0e538ea63a1c839f2e}
+}]Size\-Hor\-Cursor -\/ horizontal resize. \index{Size\-B\-Diag\-Cursor@{Size\-B\-Diag\-Cursor}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Size\-B\-Diag\-Cursor@{Size\-B\-Diag\-Cursor}}\item[{\em 
+\hypertarget{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da9cd14334c8178cf3a7a9472cebb53e0b}{Size\-B\-Diag\-Cursor}\label{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da9cd14334c8178cf3a7a9472cebb53e0b}
+}]Size\-B\-Diag\-Cursor -\/ diagonal resize (/). \index{Size\-F\-Diag\-Cursor@{Size\-F\-Diag\-Cursor}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Size\-F\-Diag\-Cursor@{Size\-F\-Diag\-Cursor}}\item[{\em 
+\hypertarget{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da0e0ab28f20c684e9f03f65bb53b89d2d}{Size\-F\-Diag\-Cursor}\label{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da0e0ab28f20c684e9f03f65bb53b89d2d}
+}]Size\-F\-Diag\-Cursor -\/ diagonal resize (). \index{Size\-All\-Cursor@{Size\-All\-Cursor}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Size\-All\-Cursor@{Size\-All\-Cursor}}\item[{\em 
+\hypertarget{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da55fd573310e80e1672669573d06df78d}{Size\-All\-Cursor}\label{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da55fd573310e80e1672669573d06df78d}
+}]Size\-All\-Cursor -\/ all directions resize. \index{Blank\-Cursor@{Blank\-Cursor}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Blank\-Cursor@{Blank\-Cursor}}\item[{\em 
+\hypertarget{classRS2_a15aa1c4c60c63de4dc688f0bcb43548dae55d668953f8c1ec54296f2fdd3dc188}{Blank\-Cursor}\label{classRS2_a15aa1c4c60c63de4dc688f0bcb43548dae55d668953f8c1ec54296f2fdd3dc188}
+}]Blank\-Cursor -\/ blank/invisible cursor. \index{Split\-V\-Cursor@{Split\-V\-Cursor}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Split\-V\-Cursor@{Split\-V\-Cursor}}\item[{\em 
+\hypertarget{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da030652fd92f7adc874921fe2e115544d}{Split\-V\-Cursor}\label{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da030652fd92f7adc874921fe2e115544d}
+}]Split\-V\-Cursor -\/ vertical splitting. \index{Split\-H\-Cursor@{Split\-H\-Cursor}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Split\-H\-Cursor@{Split\-H\-Cursor}}\item[{\em 
+\hypertarget{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da614ee4c5f30d544dfe61613005a715da}{Split\-H\-Cursor}\label{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da614ee4c5f30d544dfe61613005a715da}
+}]Split\-H\-Cursor -\/ horziontal splitting. \index{Pointing\-Hand\-Cursor@{Pointing\-Hand\-Cursor}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Pointing\-Hand\-Cursor@{Pointing\-Hand\-Cursor}}\item[{\em 
+\hypertarget{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da80566a07f69ca963e051e6f3754443a5}{Pointing\-Hand\-Cursor}\label{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da80566a07f69ca963e051e6f3754443a5}
+}]Pointing\-Hand\-Cursor -\/ a pointing hand. \index{Forbidden\-Cursor@{Forbidden\-Cursor}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Forbidden\-Cursor@{Forbidden\-Cursor}}\item[{\em 
+\hypertarget{classRS2_a15aa1c4c60c63de4dc688f0bcb43548dafdaa7895274d794661f025b49c79a22e}{Forbidden\-Cursor}\label{classRS2_a15aa1c4c60c63de4dc688f0bcb43548dafdaa7895274d794661f025b49c79a22e}
+}]Forbidden\-Cursor -\/ a slashed circle. \index{Whats\-This\-Cursor@{Whats\-This\-Cursor}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Whats\-This\-Cursor@{Whats\-This\-Cursor}}\item[{\em 
+\hypertarget{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da1df4b3505b5c03ecdd2274457a45892b}{Whats\-This\-Cursor}\label{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da1df4b3505b5c03ecdd2274457a45892b}
+}]Whats\-This\-Cursor -\/ an arrow with a ?. \index{Open\-Hand\-Cursor@{Open\-Hand\-Cursor}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Open\-Hand\-Cursor@{Open\-Hand\-Cursor}}\item[{\em 
+\hypertarget{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da830b6e1aec1882785030f8651e2a89d8}{Open\-Hand\-Cursor}\label{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da830b6e1aec1882785030f8651e2a89d8}
+}]Qt Open\-Hand\-Cursor \index{Closed\-Hand\-Cursor@{Closed\-Hand\-Cursor}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Closed\-Hand\-Cursor@{Closed\-Hand\-Cursor}}\item[{\em 
+\hypertarget{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da8091f7bca5629eda8362b3583ea7f0ec}{Closed\-Hand\-Cursor}\label{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da8091f7bca5629eda8362b3583ea7f0ec}
+}]Qt Closed\-Hand\-Cursor \index{Cad\-Cursor@{Cad\-Cursor}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Cad\-Cursor@{Cad\-Cursor}}\item[{\em 
+\hypertarget{classRS2_a15aa1c4c60c63de4dc688f0bcb43548dac35e8530e2e40315eb554eadea2848d4}{Cad\-Cursor}\label{classRS2_a15aa1c4c60c63de4dc688f0bcb43548dac35e8530e2e40315eb554eadea2848d4}
+}]Cad\-Cursor -\/ a bigger cross. \index{Del\-Cursor@{Del\-Cursor}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Del\-Cursor@{Del\-Cursor}}\item[{\em 
+\hypertarget{classRS2_a15aa1c4c60c63de4dc688f0bcb43548dacb035a05e32ec357c264ccf59dec55f3}{Del\-Cursor}\label{classRS2_a15aa1c4c60c63de4dc688f0bcb43548dacb035a05e32ec357c264ccf59dec55f3}
+}]Del\-Cursor -\/ cursor for choosing entities \index{Select\-Cursor@{Select\-Cursor}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Select\-Cursor@{Select\-Cursor}}\item[{\em 
+\hypertarget{classRS2_a15aa1c4c60c63de4dc688f0bcb43548daa8b8f9c90be2ecbd28c158afa9a8c6e7}{Select\-Cursor}\label{classRS2_a15aa1c4c60c63de4dc688f0bcb43548daa8b8f9c90be2ecbd28c158afa9a8c6e7}
+}]Select\-Cursor -\/ for selecting single entities \index{Magnifier\-Cursor@{Magnifier\-Cursor}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Magnifier\-Cursor@{Magnifier\-Cursor}}\item[{\em 
+\hypertarget{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da4d428ef877316ebd75aac4f4b77cd872}{Magnifier\-Cursor}\label{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da4d428ef877316ebd75aac4f4b77cd872}
+}]Magnifier\-Cursor -\/ a magnifying glass. \index{Moving\-Hand\-Cursor@{Moving\-Hand\-Cursor}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Moving\-Hand\-Cursor@{Moving\-Hand\-Cursor}}\item[{\em 
+\hypertarget{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da1ec2014210ccdb86efa06681d18d5952}{Moving\-Hand\-Cursor}\label{classRS2_a15aa1c4c60c63de4dc688f0bcb43548da1ec2014210ccdb86efa06681d18d5952}
+}]Moving hand -\/ a little flat hand. \end{description}
+\end{Desc}
+\hypertarget{classRS2_a6b01552307ddf2599503c2e2f6ae7066}{\index{R\-S2@{R\-S2}!Direction@{Direction}}
+\index{Direction@{Direction}!RS2@{R\-S2}}
+\subsubsection[{Direction}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Direction}}}\label{classRS2_a6b01552307ddf2599503c2e2f6ae7066}
+Direction used for scrolling actions. \hypertarget{classRS2_a67196f135592d0f8eff894bd126685b2}{\index{R\-S2@{R\-S2}!Drawing\-Mode@{Drawing\-Mode}}
+\index{Drawing\-Mode@{Drawing\-Mode}!RS2@{R\-S2}}
+\subsubsection[{Drawing\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Drawing\-Mode}}}\label{classRS2_a67196f135592d0f8eff894bd126685b2}
+Drawing mode. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Mode\-Full@{Mode\-Full}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Mode\-Full@{Mode\-Full}}\item[{\em 
+\hypertarget{classRS2_a67196f135592d0f8eff894bd126685b2a9b815edce02e6ebf9a19d33899e4fb17}{Mode\-Full}\label{classRS2_a67196f135592d0f8eff894bd126685b2a9b815edce02e6ebf9a19d33899e4fb17}
+}]Draw everything always detailed (default) \index{Mode\-Auto@{Mode\-Auto}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Mode\-Auto@{Mode\-Auto}}\item[{\em 
+\hypertarget{classRS2_a67196f135592d0f8eff894bd126685b2aff651f6b68141da453d3f2701e5e06cd}{Mode\-Auto}\label{classRS2_a67196f135592d0f8eff894bd126685b2aff651f6b68141da453d3f2701e5e06cd}
+}]Draw details when reasonable \index{Mode\-Preview@{Mode\-Preview}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Mode\-Preview@{Mode\-Preview}}\item[{\em 
+\hypertarget{classRS2_a67196f135592d0f8eff894bd126685b2aded4ed7fc2818f5392164e96f6f907ac}{Mode\-Preview}\label{classRS2_a67196f135592d0f8eff894bd126685b2aded4ed7fc2818f5392164e96f6f907ac}
+}]Draw only in black/white without styles \index{Mode\-B\-W@{Mode\-B\-W}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Mode\-B\-W@{Mode\-B\-W}}\item[{\em 
+\hypertarget{classRS2_a67196f135592d0f8eff894bd126685b2af706d211e2fc8904bb06df7d26c9542d}{Mode\-B\-W}\label{classRS2_a67196f135592d0f8eff894bd126685b2af706d211e2fc8904bb06df7d26c9542d}
+}]Black/white. Can be used for printing. \end{description}
+\end{Desc}
+\hypertarget{classRS2_a30e80df2ef4bb36f4e89ea500eb212ab}{\index{R\-S2@{R\-S2}!Ending@{Ending}}
+\index{Ending@{Ending}!RS2@{R\-S2}}
+\subsubsection[{Ending}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Ending}}}\label{classRS2_a30e80df2ef4bb36f4e89ea500eb212ab}
+Entity ending. Used for returning which end of an entity is ment. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Ending\-Start@{Ending\-Start}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Ending\-Start@{Ending\-Start}}\item[{\em 
+\hypertarget{classRS2_a30e80df2ef4bb36f4e89ea500eb212aba49f69cdcb5cc8c90b211d5f98631fe9d}{Ending\-Start}\label{classRS2_a30e80df2ef4bb36f4e89ea500eb212aba49f69cdcb5cc8c90b211d5f98631fe9d}
+}]Start point. \index{Ending\-End@{Ending\-End}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Ending\-End@{Ending\-End}}\item[{\em 
+\hypertarget{classRS2_a30e80df2ef4bb36f4e89ea500eb212abaae7bf55673a9f4a36b86c1d1d975c8aa}{Ending\-End}\label{classRS2_a30e80df2ef4bb36f4e89ea500eb212abaae7bf55673a9f4a36b86c1d1d975c8aa}
+}]End point. \index{Ending\-None@{Ending\-None}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Ending\-None@{Ending\-None}}\item[{\em 
+\hypertarget{classRS2_a30e80df2ef4bb36f4e89ea500eb212aba5ebf4600c052b2466c24af07d68bc900}{Ending\-None}\label{classRS2_a30e80df2ef4bb36f4e89ea500eb212aba5ebf4600c052b2466c24af07d68bc900}
+}]Neither. \end{description}
+\end{Desc}
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6a}{\index{R\-S2@{R\-S2}!Entity\-Type@{Entity\-Type}}
+\index{Entity\-Type@{Entity\-Type}!RS2@{R\-S2}}
+\subsubsection[{Entity\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Entity\-Type}}}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6a}
+Entity types returned by the rtti() method \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Entity\-Unknown@{Entity\-Unknown}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Unknown@{Entity\-Unknown}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aabaf2817e62dad352b28950309ba1a47c}{Entity\-Unknown}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aabaf2817e62dad352b28950309ba1a47c}
+}]Unknown \index{Entity\-Container@{Entity\-Container}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Container@{Entity\-Container}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aa27d54713b7d442e5843997b8f13ce0e9}{Entity\-Container}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aa27d54713b7d442e5843997b8f13ce0e9}
+}]Container \index{Entity\-Block@{Entity\-Block}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Block@{Entity\-Block}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aafe09aeef2edbe05d4e555adba34d9d36}{Entity\-Block}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aafe09aeef2edbe05d4e555adba34d9d36}
+}]Block (Group definition) \index{Entity\-Font\-Char@{Entity\-Font\-Char}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Font\-Char@{Entity\-Font\-Char}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aa25f476153356fc1448bc74790da2c37a}{Entity\-Font\-Char}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aa25f476153356fc1448bc74790da2c37a}
+}]Font character \index{Entity\-Insert@{Entity\-Insert}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Insert@{Entity\-Insert}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aafc53d2f51b8ff5ab4addf93d68702072}{Entity\-Insert}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aafc53d2f51b8ff5ab4addf93d68702072}
+}]Insert (Group instance) \index{Entity\-Graphic@{Entity\-Graphic}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Graphic@{Entity\-Graphic}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aae07a37e33b457e3bca1f6c40ba59381b}{Entity\-Graphic}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aae07a37e33b457e3bca1f6c40ba59381b}
+}]Graphic with layers \index{Entity\-Point@{Entity\-Point}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Point@{Entity\-Point}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aac1d742e034cdec570ef8383f61f882c0}{Entity\-Point}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aac1d742e034cdec570ef8383f61f882c0}
+}]Point \index{Entity\-Line@{Entity\-Line}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Line@{Entity\-Line}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aac635def37fe336bb8366fc0adfe057cc}{Entity\-Line}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aac635def37fe336bb8366fc0adfe057cc}
+}]Line \index{Entity\-Polyline@{Entity\-Polyline}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Polyline@{Entity\-Polyline}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aa70e703bb638645463c1360b1426accce}{Entity\-Polyline}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aa70e703bb638645463c1360b1426accce}
+}]Polyline \index{Entity\-Vertex@{Entity\-Vertex}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Vertex@{Entity\-Vertex}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aa58829783e1e32d9f3dd6a1e515a2b2ac}{Entity\-Vertex}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aa58829783e1e32d9f3dd6a1e515a2b2ac}
+}]Vertex (part of a polyline) \index{Entity\-Arc@{Entity\-Arc}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Arc@{Entity\-Arc}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aaec9c0b0ca155c623d94e71bbce0ab8b6}{Entity\-Arc}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aaec9c0b0ca155c623d94e71bbce0ab8b6}
+}]Arc \index{Entity\-Circle@{Entity\-Circle}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Circle@{Entity\-Circle}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aa94c8ac50dedc910b563ebef9f777bb16}{Entity\-Circle}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aa94c8ac50dedc910b563ebef9f777bb16}
+}]Circle \index{Entity\-Ellipse@{Entity\-Ellipse}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Ellipse@{Entity\-Ellipse}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aa43fdff99980da826e13c1086e7e15bc2}{Entity\-Ellipse}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aa43fdff99980da826e13c1086e7e15bc2}
+}]Ellipse \index{Entity\-Hyperbola@{Entity\-Hyperbola}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Hyperbola@{Entity\-Hyperbola}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aa472f4c07f9d9426145191dcc05d28a5a}{Entity\-Hyperbola}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aa472f4c07f9d9426145191dcc05d28a5a}
+}]Hyperbola \index{Entity\-Solid@{Entity\-Solid}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Solid@{Entity\-Solid}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aa3ff6595dc45dc8659da54102bfd536eb}{Entity\-Solid}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aa3ff6595dc45dc8659da54102bfd536eb}
+}]Solid \index{Entity\-Construction\-Line@{Entity\-Construction\-Line}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Construction\-Line@{Entity\-Construction\-Line}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aa38b0e05c1ba902a3ddcab9e350c29f9c}{Entity\-Construction\-Line}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aa38b0e05c1ba902a3ddcab9e350c29f9c}
+}]Construction line \index{Entity\-M\-Text@{Entity\-M\-Text}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-M\-Text@{Entity\-M\-Text}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aaba403132c75fd956476401982fc3cbbf}{Entity\-M\-Text}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aaba403132c75fd956476401982fc3cbbf}
+}]Multi-\/line Text \index{Entity\-Text@{Entity\-Text}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Text@{Entity\-Text}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aa20a2e396364003e403a102c1dcf21faf}{Entity\-Text}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aa20a2e396364003e403a102c1dcf21faf}
+}]Single-\/line Text \index{Entity\-Dim\-Aligned@{Entity\-Dim\-Aligned}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Dim\-Aligned@{Entity\-Dim\-Aligned}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aa9c47c5fe00ba77161a2a79bcdadf4967}{Entity\-Dim\-Aligned}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aa9c47c5fe00ba77161a2a79bcdadf4967}
+}]Aligned Dimension \index{Entity\-Dim\-Linear@{Entity\-Dim\-Linear}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Dim\-Linear@{Entity\-Dim\-Linear}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aa2a69eea8eb0508e7da1c04eb0876a78a}{Entity\-Dim\-Linear}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aa2a69eea8eb0508e7da1c04eb0876a78a}
+}]Linear Dimension \index{Entity\-Dim\-Radial@{Entity\-Dim\-Radial}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Dim\-Radial@{Entity\-Dim\-Radial}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aacd5fd333ba35538c6bd17c4606a5800e}{Entity\-Dim\-Radial}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aacd5fd333ba35538c6bd17c4606a5800e}
+}]Radial Dimension \index{Entity\-Dim\-Diametric@{Entity\-Dim\-Diametric}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Dim\-Diametric@{Entity\-Dim\-Diametric}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aa5f98f3bbc726d19d6125b9603b592889}{Entity\-Dim\-Diametric}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aa5f98f3bbc726d19d6125b9603b592889}
+}]Diametric Dimension \index{Entity\-Dim\-Angular@{Entity\-Dim\-Angular}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Dim\-Angular@{Entity\-Dim\-Angular}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aa6980728730d26135600b8aaff17f33b3}{Entity\-Dim\-Angular}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aa6980728730d26135600b8aaff17f33b3}
+}]Angular Dimension \index{Entity\-Dim\-Leader@{Entity\-Dim\-Leader}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Dim\-Leader@{Entity\-Dim\-Leader}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aa799170f6937838067b4986d6452366a3}{Entity\-Dim\-Leader}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aa799170f6937838067b4986d6452366a3}
+}]Leader Dimension \index{Entity\-Hatch@{Entity\-Hatch}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Hatch@{Entity\-Hatch}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aafb731de01933c0884138cdc54669ae90}{Entity\-Hatch}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aafb731de01933c0884138cdc54669ae90}
+}]Hatch \index{Entity\-Image@{Entity\-Image}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Image@{Entity\-Image}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aaa4dafc8ae7cea46de420843ca04c631b}{Entity\-Image}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aaa4dafc8ae7cea46de420843ca04c631b}
+}]Image \index{Entity\-Spline@{Entity\-Spline}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Spline@{Entity\-Spline}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aa5336aaca7fbdb2c3148bf7c1f276c69f}{Entity\-Spline}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aa5336aaca7fbdb2c3148bf7c1f276c69f}
+}]Spline \index{Entity\-Overlay\-Box@{Entity\-Overlay\-Box}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Overlay\-Box@{Entity\-Overlay\-Box}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aad75ac72ce0f2c463255fb0c8ba435755}{Entity\-Overlay\-Box}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aad75ac72ce0f2c463255fb0c8ba435755}
+}]Overlay\-Box \index{Entity\-Preview@{Entity\-Preview}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Entity\-Preview@{Entity\-Preview}}\item[{\em 
+\hypertarget{classRS2_a8f26d1b981e1e85cff16738b43337e6aad1bdca1369edde279368af405e72ddd4}{Entity\-Preview}\label{classRS2_a8f26d1b981e1e85cff16738b43337e6aad1bdca1369edde279368af405e72ddd4}
+}]Preview Container \end{description}
+\end{Desc}
+\hypertarget{classRS2_a44c2db4b2ed0d533716a5266abafeeca}{\index{R\-S2@{R\-S2}!Flags@{Flags}}
+\index{Flags@{Flags}!RS2@{R\-S2}}
+\subsubsection[{Flags}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Flags}}}\label{classRS2_a44c2db4b2ed0d533716a5266abafeeca}
+Flags. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Flag\-Undone@{Flag\-Undone}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Flag\-Undone@{Flag\-Undone}}\item[{\em 
+\hypertarget{classRS2_a44c2db4b2ed0d533716a5266abafeecaa9ff48e6f3b998828e8d11a1cd206afc0}{Flag\-Undone}\label{classRS2_a44c2db4b2ed0d533716a5266abafeecaa9ff48e6f3b998828e8d11a1cd206afc0}
+}]Flag for Undoables. \index{Flag\-Visible@{Flag\-Visible}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Flag\-Visible@{Flag\-Visible}}\item[{\em 
+\hypertarget{classRS2_a44c2db4b2ed0d533716a5266abafeecaab4264f781d78cf1b2df258012ade9db1}{Flag\-Visible}\label{classRS2_a44c2db4b2ed0d533716a5266abafeecaab4264f781d78cf1b2df258012ade9db1}
+}]Entity Visibility. \index{Flag\-By\-Layer@{Flag\-By\-Layer}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Flag\-By\-Layer@{Flag\-By\-Layer}}\item[{\em 
+\hypertarget{classRS2_a44c2db4b2ed0d533716a5266abafeecaa5695d8e7e282ccafc07f18257da4f78b}{Flag\-By\-Layer}\label{classRS2_a44c2db4b2ed0d533716a5266abafeecaa5695d8e7e282ccafc07f18257da4f78b}
+}]Entity attribute (e.\-g. color) is defined by layer. \index{Flag\-By\-Block@{Flag\-By\-Block}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Flag\-By\-Block@{Flag\-By\-Block}}\item[{\em 
+\hypertarget{classRS2_a44c2db4b2ed0d533716a5266abafeecaafccfa9b8d47c85e8713a886c410c0619}{Flag\-By\-Block}\label{classRS2_a44c2db4b2ed0d533716a5266abafeecaafccfa9b8d47c85e8713a886c410c0619}
+}]Entity attribute (e.\-g. color) defined by block. \index{Flag\-Frozen@{Flag\-Frozen}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Flag\-Frozen@{Flag\-Frozen}}\item[{\em 
+\hypertarget{classRS2_a44c2db4b2ed0d533716a5266abafeecaabc228081c0cd60b864f8c04b34968e2b}{Flag\-Frozen}\label{classRS2_a44c2db4b2ed0d533716a5266abafeecaabc228081c0cd60b864f8c04b34968e2b}
+}]Layer frozen. \index{Flag\-Def\-Frozen@{Flag\-Def\-Frozen}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Flag\-Def\-Frozen@{Flag\-Def\-Frozen}}\item[{\em 
+\hypertarget{classRS2_a44c2db4b2ed0d533716a5266abafeecaaabfd152e3a83c8b999e443e173cf7467}{Flag\-Def\-Frozen}\label{classRS2_a44c2db4b2ed0d533716a5266abafeecaaabfd152e3a83c8b999e443e173cf7467}
+}]Layer frozen by default. \index{Flag\-Locked@{Flag\-Locked}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Flag\-Locked@{Flag\-Locked}}\item[{\em 
+\hypertarget{classRS2_a44c2db4b2ed0d533716a5266abafeecaa0f6159550603001fce21af07b4553ad6}{Flag\-Locked}\label{classRS2_a44c2db4b2ed0d533716a5266abafeecaa0f6159550603001fce21af07b4553ad6}
+}]Layer locked. \index{Flag\-Invalid@{Flag\-Invalid}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Flag\-Invalid@{Flag\-Invalid}}\item[{\em 
+\hypertarget{classRS2_a44c2db4b2ed0d533716a5266abafeecaa818c995d3fba5a5503def5a538f8abe4}{Flag\-Invalid}\label{classRS2_a44c2db4b2ed0d533716a5266abafeecaa818c995d3fba5a5503def5a538f8abe4}
+}]Used for invalid pens. \index{Flag\-Selected@{Flag\-Selected}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Flag\-Selected@{Flag\-Selected}}\item[{\em 
+\hypertarget{classRS2_a44c2db4b2ed0d533716a5266abafeecaaaf72e9b8b969dd44722c75afd1afc5de}{Flag\-Selected}\label{classRS2_a44c2db4b2ed0d533716a5266abafeecaaaf72e9b8b969dd44722c75afd1afc5de}
+}]Entity in current selection. \index{Flag\-Closed@{Flag\-Closed}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Flag\-Closed@{Flag\-Closed}}\item[{\em 
+\hypertarget{classRS2_a44c2db4b2ed0d533716a5266abafeecaa40d93a1e22967fac3291d8886155fafc}{Flag\-Closed}\label{classRS2_a44c2db4b2ed0d533716a5266abafeecaa40d93a1e22967fac3291d8886155fafc}
+}]Polyline closed? \index{Flag\-Temp@{Flag\-Temp}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Flag\-Temp@{Flag\-Temp}}\item[{\em 
+\hypertarget{classRS2_a44c2db4b2ed0d533716a5266abafeecaab25c508640c79e30edb1d720043c5d51}{Flag\-Temp}\label{classRS2_a44c2db4b2ed0d533716a5266abafeecaab25c508640c79e30edb1d720043c5d51}
+}]Flag for temporary entities (e.\-g. hatch) \index{Flag\-Processed@{Flag\-Processed}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Flag\-Processed@{Flag\-Processed}}\item[{\em 
+\hypertarget{classRS2_a44c2db4b2ed0d533716a5266abafeecaa7c9021e11cd578ebc4079b0479783b9e}{Flag\-Processed}\label{classRS2_a44c2db4b2ed0d533716a5266abafeecaa7c9021e11cd578ebc4079b0479783b9e}
+}]Flag for processed entities (optcontour) \index{Flag\-Selected1@{Flag\-Selected1}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Flag\-Selected1@{Flag\-Selected1}}\item[{\em 
+\hypertarget{classRS2_a44c2db4b2ed0d533716a5266abafeecaad067bf696af8200ed6940950b5bb441f}{Flag\-Selected1}\label{classRS2_a44c2db4b2ed0d533716a5266abafeecaad067bf696af8200ed6940950b5bb441f}
+}]Startpoint selected \index{Flag\-Selected2@{Flag\-Selected2}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Flag\-Selected2@{Flag\-Selected2}}\item[{\em 
+\hypertarget{classRS2_a44c2db4b2ed0d533716a5266abafeecaadfae35f50ee6bac880b871226017babf}{Flag\-Selected2}\label{classRS2_a44c2db4b2ed0d533716a5266abafeecaadfae35f50ee6bac880b871226017babf}
+}]Endpoint selected \index{Flag\-Highlighted@{Flag\-Highlighted}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Flag\-Highlighted@{Flag\-Highlighted}}\item[{\em 
+\hypertarget{classRS2_a44c2db4b2ed0d533716a5266abafeecaa342deed7b530740efa6f5db89137c50d}{Flag\-Highlighted}\label{classRS2_a44c2db4b2ed0d533716a5266abafeecaa342deed7b530740efa6f5db89137c50d}
+}]Entity is highlighted temporarily (as a user action feedback) \end{description}
+\end{Desc}
+\hypertarget{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{\index{R\-S2@{R\-S2}!Format\-Type@{Format\-Type}}
+\index{Format\-Type@{Format\-Type}!RS2@{R\-S2}}
+\subsubsection[{Format\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Format\-Type}}}\label{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}
+File types. Used by file dialogs. Note\-: the extension might not be enough to distinguish file types. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Format\-Unknown@{Format\-Unknown}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Format\-Unknown@{Format\-Unknown}}\item[{\em 
+\hypertarget{classRS2_a077a6c94c9a0ab9962c4d4a612c7189babbd9ecffa4b1eb72a46357317ef44a43}{Format\-Unknown}\label{classRS2_a077a6c94c9a0ab9962c4d4a612c7189babbd9ecffa4b1eb72a46357317ef44a43}
+}]Unknown / unsupported format. \index{Format\-D\-X\-F1@{Format\-D\-X\-F1}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Format\-D\-X\-F1@{Format\-D\-X\-F1}}\item[{\em 
+\hypertarget{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba9be5fc14b3cc3bd7142c11ecd698216d}{Format\-D\-X\-F1}\label{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba9be5fc14b3cc3bd7142c11ecd698216d}
+}]Q\-Cad 1 compatibility D\-X\-F format. \index{Format\-D\-X\-F\-R\-W@{Format\-D\-X\-F\-R\-W}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Format\-D\-X\-F\-R\-W@{Format\-D\-X\-F\-R\-W}}\item[{\em 
+\hypertarget{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba294157a0596c31a6e73bceaf6c1a06a3}{Format\-D\-X\-F\-R\-W}\label{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba294157a0596c31a6e73bceaf6c1a06a3}
+}]D\-X\-F format. v2007. \index{Format\-D\-X\-F\-R\-W2004@{Format\-D\-X\-F\-R\-W2004}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Format\-D\-X\-F\-R\-W2004@{Format\-D\-X\-F\-R\-W2004}}\item[{\em 
+\hypertarget{classRS2_a077a6c94c9a0ab9962c4d4a612c7189baf2f5d92f18c5dd44e2ddb48fa3b767bc}{Format\-D\-X\-F\-R\-W2004}\label{classRS2_a077a6c94c9a0ab9962c4d4a612c7189baf2f5d92f18c5dd44e2ddb48fa3b767bc}
+}]D\-X\-F format. v2004. \index{Format\-D\-X\-F\-R\-W2000@{Format\-D\-X\-F\-R\-W2000}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Format\-D\-X\-F\-R\-W2000@{Format\-D\-X\-F\-R\-W2000}}\item[{\em 
+\hypertarget{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba99dd476813b841503996f72d7b176ce3}{Format\-D\-X\-F\-R\-W2000}\label{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba99dd476813b841503996f72d7b176ce3}
+}]D\-X\-F format. v2000. \index{Format\-D\-X\-F\-R\-W14@{Format\-D\-X\-F\-R\-W14}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Format\-D\-X\-F\-R\-W14@{Format\-D\-X\-F\-R\-W14}}\item[{\em 
+\hypertarget{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba9ff3eda789bec63a037a781ed6dc59ab}{Format\-D\-X\-F\-R\-W14}\label{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba9ff3eda789bec63a037a781ed6dc59ab}
+}]D\-X\-F format. v14. \index{Format\-D\-X\-F\-R\-W12@{Format\-D\-X\-F\-R\-W12}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Format\-D\-X\-F\-R\-W12@{Format\-D\-X\-F\-R\-W12}}\item[{\em 
+\hypertarget{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba65468d51a6080fec069d1305e153a4d9}{Format\-D\-X\-F\-R\-W12}\label{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba65468d51a6080fec069d1305e153a4d9}
+}]D\-X\-F format. v12. \index{Format\-L\-F\-F@{Format\-L\-F\-F}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Format\-L\-F\-F@{Format\-L\-F\-F}}\item[{\em 
+\hypertarget{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba62b5557d9f4b75993a0730cb12455e7a}{Format\-L\-F\-F}\label{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba62b5557d9f4b75993a0730cb12455e7a}
+}]Libre\-C\-A\-D Font File format. \index{Format\-C\-X\-F@{Format\-C\-X\-F}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Format\-C\-X\-F@{Format\-C\-X\-F}}\item[{\em 
+\hypertarget{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba9a2b7d7e9a64cd2022b599ff547c250c}{Format\-C\-X\-F}\label{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba9a2b7d7e9a64cd2022b599ff547c250c}
+}]C\-A\-M Expert Font format. \index{Format\-J\-W\-W@{Format\-J\-W\-W}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Format\-J\-W\-W@{Format\-J\-W\-W}}\item[{\em 
+\hypertarget{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba2d4c0a3ecccf7cf84120651b1d48e04a}{Format\-J\-W\-W}\label{classRS2_a077a6c94c9a0ab9962c4d4a612c7189ba2d4c0a3ecccf7cf84120651b1d48e04a}
+}]J\-W\-W Format type \index{Format\-J\-W\-C@{Format\-J\-W\-C}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Format\-J\-W\-C@{Format\-J\-W\-C}}\item[{\em 
+\hypertarget{classRS2_a077a6c94c9a0ab9962c4d4a612c7189baafd3044c46fc598dd13938869928e8cf}{Format\-J\-W\-C}\label{classRS2_a077a6c94c9a0ab9962c4d4a612c7189baafd3044c46fc598dd13938869928e8cf}
+}]J\-W\-C Format type \end{description}
+\end{Desc}
+\hypertarget{classRS2_a1ca12b62d43b9a86d84ddd2e6af87967}{\index{R\-S2@{R\-S2}!Leader\-Path\-Type@{Leader\-Path\-Type}}
+\index{Leader\-Path\-Type@{Leader\-Path\-Type}!RS2@{R\-S2}}
+\subsubsection[{Leader\-Path\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Leader\-Path\-Type}}}\label{classRS2_a1ca12b62d43b9a86d84ddd2e6af87967}
+Vertical alignments. Horizontal alignments. Text drawing direction. Line spacing style for texts. Leader path type. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Straight@{Straight}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Straight@{Straight}}\item[{\em 
+\hypertarget{classRS2_a1ca12b62d43b9a86d84ddd2e6af87967a1d30a76038f24c427bc6ff6182f7c1c5}{Straight}\label{classRS2_a1ca12b62d43b9a86d84ddd2e6af87967a1d30a76038f24c427bc6ff6182f7c1c5}
+}]Straight line segments \index{Spline@{Spline}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Spline@{Spline}}\item[{\em 
+\hypertarget{classRS2_a1ca12b62d43b9a86d84ddd2e6af87967a1263220f1aba24a1c6b7423c404c6da2}{Spline}\label{classRS2_a1ca12b62d43b9a86d84ddd2e6af87967a1263220f1aba24a1c6b7423c404c6da2}
+}]Splines \end{description}
+\end{Desc}
+\hypertarget{classRS2_a0fa0506f1e870c169e8d8c1d58d3fa6e}{\index{R\-S2@{R\-S2}!Linear\-Format@{Linear\-Format}}
+\index{Linear\-Format@{Linear\-Format}!RS2@{R\-S2}}
+\subsubsection[{Linear\-Format}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Linear\-Format}}}\label{classRS2_a0fa0506f1e870c169e8d8c1d58d3fa6e}
+Format for length values. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Scientific@{Scientific}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Scientific@{Scientific}}\item[{\em 
+\hypertarget{classRS2_a0fa0506f1e870c169e8d8c1d58d3fa6eaaa30a9691155166fafba7b9e567d4162}{Scientific}\label{classRS2_a0fa0506f1e870c169e8d8c1d58d3fa6eaaa30a9691155166fafba7b9e567d4162}
+}]Scientific (e.\-g. 2.\-5\-E+05) \index{Decimal@{Decimal}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Decimal@{Decimal}}\item[{\em 
+\hypertarget{classRS2_a0fa0506f1e870c169e8d8c1d58d3fa6eaedb1e709c9aabbc784e9308e2ccefbef}{Decimal}\label{classRS2_a0fa0506f1e870c169e8d8c1d58d3fa6eaedb1e709c9aabbc784e9308e2ccefbef}
+}]Decimal (e.\-g. 9.\-5) \index{Engineering@{Engineering}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Engineering@{Engineering}}\item[{\em 
+\hypertarget{classRS2_a0fa0506f1e870c169e8d8c1d58d3fa6ea2c803ea3d4e6dd23f87b8ff27329da04}{Engineering}\label{classRS2_a0fa0506f1e870c169e8d8c1d58d3fa6ea2c803ea3d4e6dd23f87b8ff27329da04}
+}]Engineering (e.\-g. 7' 11.\-5") \index{Architectural@{Architectural}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Architectural@{Architectural}}\item[{\em 
+\hypertarget{classRS2_a0fa0506f1e870c169e8d8c1d58d3fa6ead2bce121fb7a45f3fdce55a71f5dd585}{Architectural}\label{classRS2_a0fa0506f1e870c169e8d8c1d58d3fa6ead2bce121fb7a45f3fdce55a71f5dd585}
+}]Architectural (e.\-g. 7'-\/9 1/8") \index{Fractional@{Fractional}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Fractional@{Fractional}}\item[{\em 
+\hypertarget{classRS2_a0fa0506f1e870c169e8d8c1d58d3fa6eaf3574c6edb2ee5561583dbfd3ece06fa}{Fractional}\label{classRS2_a0fa0506f1e870c169e8d8c1d58d3fa6eaf3574c6edb2ee5561583dbfd3ece06fa}
+}]Fractional (e.\-g. 7 9 1/8) \end{description}
+\end{Desc}
+\hypertarget{classRS2_a6f3a82972c2d62456f6cacb74e14c95f}{\index{R\-S2@{R\-S2}!Line\-Type@{Line\-Type}}
+\index{Line\-Type@{Line\-Type}!RS2@{R\-S2}}
+\subsubsection[{Line\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Line\-Type}}}\label{classRS2_a6f3a82972c2d62456f6cacb74e14c95f}
+Enum of line styles\-: \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{No\-Pen@{No\-Pen}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!No\-Pen@{No\-Pen}}\item[{\em 
+\hypertarget{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa2f142da39005616fc2827e5d7e988185}{No\-Pen}\label{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa2f142da39005616fc2827e5d7e988185}
+}]No line at all. \index{Solid\-Line@{Solid\-Line}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Solid\-Line@{Solid\-Line}}\item[{\em 
+\hypertarget{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa1db8fd78bff5675d67c7dede9d9239c1}{Solid\-Line}\label{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa1db8fd78bff5675d67c7dede9d9239c1}
+}]Normal line. \index{Dot\-Line@{Dot\-Line}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Dot\-Line@{Dot\-Line}}\item[{\em 
+\hypertarget{classRS2_a6f3a82972c2d62456f6cacb74e14c95faf6f6df14a9961ddd00dfd7f1abc84c66}{Dot\-Line}\label{classRS2_a6f3a82972c2d62456f6cacb74e14c95faf6f6df14a9961ddd00dfd7f1abc84c66}
+}]Dotted line. \index{Dot\-Line2@{Dot\-Line2}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Dot\-Line2@{Dot\-Line2}}\item[{\em 
+\hypertarget{classRS2_a6f3a82972c2d62456f6cacb74e14c95fad771b2aab57e8e8fa6b9ddf048cd8eaf}{Dot\-Line2}\label{classRS2_a6f3a82972c2d62456f6cacb74e14c95fad771b2aab57e8e8fa6b9ddf048cd8eaf}
+}]Dotted line small. \index{Dot\-Line\-X2@{Dot\-Line\-X2}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Dot\-Line\-X2@{Dot\-Line\-X2}}\item[{\em 
+\hypertarget{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa13016de22401b341459844a2dd266352}{Dot\-Line\-X2}\label{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa13016de22401b341459844a2dd266352}
+}]Dotted line large. \index{Dash\-Line@{Dash\-Line}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Dash\-Line@{Dash\-Line}}\item[{\em 
+\hypertarget{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa8ebe1064c88dae786cbefc0f4e648c1a}{Dash\-Line}\label{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa8ebe1064c88dae786cbefc0f4e648c1a}
+}]Dashed line. \index{Dash\-Line2@{Dash\-Line2}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Dash\-Line2@{Dash\-Line2}}\item[{\em 
+\hypertarget{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa0095b8477e1624a4839238f71aad8517}{Dash\-Line2}\label{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa0095b8477e1624a4839238f71aad8517}
+}]Dashed line small. \index{Dash\-Line\-X2@{Dash\-Line\-X2}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Dash\-Line\-X2@{Dash\-Line\-X2}}\item[{\em 
+\hypertarget{classRS2_a6f3a82972c2d62456f6cacb74e14c95fabd175b29207f4ea9f9c602505a83e2ba}{Dash\-Line\-X2}\label{classRS2_a6f3a82972c2d62456f6cacb74e14c95fabd175b29207f4ea9f9c602505a83e2ba}
+}]Dashed line large. \index{Dash\-Dot\-Line@{Dash\-Dot\-Line}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Dash\-Dot\-Line@{Dash\-Dot\-Line}}\item[{\em 
+\hypertarget{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa7962a13d8622f266605cb7d2716cd341}{Dash\-Dot\-Line}\label{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa7962a13d8622f266605cb7d2716cd341}
+}]Alternate dots and dashes. \index{Dash\-Dot\-Line2@{Dash\-Dot\-Line2}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Dash\-Dot\-Line2@{Dash\-Dot\-Line2}}\item[{\em 
+\hypertarget{classRS2_a6f3a82972c2d62456f6cacb74e14c95fad5e15339281b37adf2339bccd5f7393e}{Dash\-Dot\-Line2}\label{classRS2_a6f3a82972c2d62456f6cacb74e14c95fad5e15339281b37adf2339bccd5f7393e}
+}]Alternate dots and dashes small. \index{Dash\-Dot\-Line\-X2@{Dash\-Dot\-Line\-X2}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Dash\-Dot\-Line\-X2@{Dash\-Dot\-Line\-X2}}\item[{\em 
+\hypertarget{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa2fb3c89aa1836e3af5f95c2a772d89b9}{Dash\-Dot\-Line\-X2}\label{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa2fb3c89aa1836e3af5f95c2a772d89b9}
+}]Alternate dots and dashes large. \index{Divide\-Line@{Divide\-Line}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Divide\-Line@{Divide\-Line}}\item[{\em 
+\hypertarget{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa1e729e5431362891299429afccd5fa4f}{Divide\-Line}\label{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa1e729e5431362891299429afccd5fa4f}
+}]dash, dot, dot. \index{Divide\-Line2@{Divide\-Line2}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Divide\-Line2@{Divide\-Line2}}\item[{\em 
+\hypertarget{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa6855bdb90e1e41232955e8301cc125ab}{Divide\-Line2}\label{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa6855bdb90e1e41232955e8301cc125ab}
+}]dash, dot, dot small. \index{Divide\-Line\-X2@{Divide\-Line\-X2}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Divide\-Line\-X2@{Divide\-Line\-X2}}\item[{\em 
+\hypertarget{classRS2_a6f3a82972c2d62456f6cacb74e14c95fad09b280c89154f4f05cafb6e8bbf986a}{Divide\-Line\-X2}\label{classRS2_a6f3a82972c2d62456f6cacb74e14c95fad09b280c89154f4f05cafb6e8bbf986a}
+}]dash, dot, dot large. \index{Center\-Line@{Center\-Line}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Center\-Line@{Center\-Line}}\item[{\em 
+\hypertarget{classRS2_a6f3a82972c2d62456f6cacb74e14c95faa102fefc84b88359c6f2ee0303d893c6}{Center\-Line}\label{classRS2_a6f3a82972c2d62456f6cacb74e14c95faa102fefc84b88359c6f2ee0303d893c6}
+}]dash, small dash. \index{Center\-Line2@{Center\-Line2}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Center\-Line2@{Center\-Line2}}\item[{\em 
+\hypertarget{classRS2_a6f3a82972c2d62456f6cacb74e14c95fad4b48a7aad2e7a3ba6255247ab52bdc1}{Center\-Line2}\label{classRS2_a6f3a82972c2d62456f6cacb74e14c95fad4b48a7aad2e7a3ba6255247ab52bdc1}
+}]dash, small dash small. \index{Center\-Line\-X2@{Center\-Line\-X2}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Center\-Line\-X2@{Center\-Line\-X2}}\item[{\em 
+\hypertarget{classRS2_a6f3a82972c2d62456f6cacb74e14c95fad1250d96a0935514f0f5667ebcdb3095}{Center\-Line\-X2}\label{classRS2_a6f3a82972c2d62456f6cacb74e14c95fad1250d96a0935514f0f5667ebcdb3095}
+}]dash, small dash large. \index{Border\-Line@{Border\-Line}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Border\-Line@{Border\-Line}}\item[{\em 
+\hypertarget{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa1f73f9618ae326f12b6adac260f9543b}{Border\-Line}\label{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa1f73f9618ae326f12b6adac260f9543b}
+}]dash, dash, dot. \index{Border\-Line2@{Border\-Line2}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Border\-Line2@{Border\-Line2}}\item[{\em 
+\hypertarget{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa75c805566b7a090a18e29c2830ac9fa9}{Border\-Line2}\label{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa75c805566b7a090a18e29c2830ac9fa9}
+}]dash, dash, dot small. \index{Border\-Line\-X2@{Border\-Line\-X2}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Border\-Line\-X2@{Border\-Line\-X2}}\item[{\em 
+\hypertarget{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa1f7b901e7660005fb9f5e07256dba013}{Border\-Line\-X2}\label{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa1f7b901e7660005fb9f5e07256dba013}
+}]dash, dash, dot large. \index{Line\-By\-Layer@{Line\-By\-Layer}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Line\-By\-Layer@{Line\-By\-Layer}}\item[{\em 
+\hypertarget{classRS2_a6f3a82972c2d62456f6cacb74e14c95fad8aebfd03eeae491a53cc5d5ccaa6d4c}{Line\-By\-Layer}\label{classRS2_a6f3a82972c2d62456f6cacb74e14c95fad8aebfd03eeae491a53cc5d5ccaa6d4c}
+}]Line type defined by layer not entity \index{Line\-By\-Block@{Line\-By\-Block}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Line\-By\-Block@{Line\-By\-Block}}\item[{\em 
+\hypertarget{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa229bd9c6186fdcd828eb93fac408b71f}{Line\-By\-Block}\label{classRS2_a6f3a82972c2d62456f6cacb74e14c95fa229bd9c6186fdcd828eb93fac408b71f}
+}]Line type defined by block not entity \end{description}
+\end{Desc}
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29}{\index{R\-S2@{R\-S2}!Line\-Width@{Line\-Width}}
+\index{Line\-Width@{Line\-Width}!RS2@{R\-S2}}
+\subsubsection[{Line\-Width}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Line\-Width}}}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29}
+Enum of line widths\-: \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Width00@{Width00}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width00@{Width00}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29a5a1fff2387b928abdfd0259024b57469}{Width00}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29a5a1fff2387b928abdfd0259024b57469}
+}]Width 1. (0.\-00mm) \index{Width01@{Width01}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width01@{Width01}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29a66f28068d3a50408b9ba7dbd6a95bc27}{Width01}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29a66f28068d3a50408b9ba7dbd6a95bc27}
+}]Width 2. (0.\-05mm) \index{Width02@{Width02}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width02@{Width02}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29a53b86b790f7fc23f1abd271b9dc9c726}{Width02}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29a53b86b790f7fc23f1abd271b9dc9c726}
+}]Width 3. (0.\-09mm) \index{Width03@{Width03}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width03@{Width03}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29af76c4a930151e362092cdcec2ab0ef79}{Width03}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29af76c4a930151e362092cdcec2ab0ef79}
+}]Width 4. (0.\-13mm) \index{Width04@{Width04}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width04@{Width04}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29a315a0a680b4f94c8d9baa04451261e6c}{Width04}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29a315a0a680b4f94c8d9baa04451261e6c}
+}]Width 5. (0.\-15mm) \index{Width05@{Width05}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width05@{Width05}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29a08d04dec5c11f1dfee9aa41b5d2482be}{Width05}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29a08d04dec5c11f1dfee9aa41b5d2482be}
+}]Width 6. (0.\-18mm) \index{Width06@{Width06}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width06@{Width06}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29a9a757d4fe0ac6da0981d74d8d005c332}{Width06}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29a9a757d4fe0ac6da0981d74d8d005c332}
+}]Width 7. (0.\-20mm) \index{Width07@{Width07}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width07@{Width07}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29aaa6c2ccdd55585c8be2aa01737543376}{Width07}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29aaa6c2ccdd55585c8be2aa01737543376}
+}]Width 8. (0.\-25mm) \index{Width08@{Width08}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width08@{Width08}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29a25dfeb81f356ac6cf49a8a5fa94f2e73}{Width08}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29a25dfeb81f356ac6cf49a8a5fa94f2e73}
+}]Width 9. (0.\-30mm) \index{Width09@{Width09}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width09@{Width09}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29a372f8c6c90c27321febc96a2552641af}{Width09}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29a372f8c6c90c27321febc96a2552641af}
+}]Width 10. (0.\-35mm) \index{Width10@{Width10}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width10@{Width10}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29a066ad0efaa20328255c895070c8df4ea}{Width10}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29a066ad0efaa20328255c895070c8df4ea}
+}]Width 11. (0.\-40mm) \index{Width11@{Width11}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width11@{Width11}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29af385e7306b12458561d2b6c768c785bc}{Width11}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29af385e7306b12458561d2b6c768c785bc}
+}]Width 12. (0.\-50mm) \index{Width12@{Width12}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width12@{Width12}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29a980fb750b5a13c71cf2a1b27b1528486}{Width12}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29a980fb750b5a13c71cf2a1b27b1528486}
+}]Width 13. (0.\-53mm) \index{Width13@{Width13}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width13@{Width13}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29aef855a1478f16ee6fa45db4e7a4f5bc6}{Width13}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29aef855a1478f16ee6fa45db4e7a4f5bc6}
+}]Width 14. (0.\-60mm) \index{Width14@{Width14}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width14@{Width14}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29af18edcf731ffb973cb041687a227ec38}{Width14}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29af18edcf731ffb973cb041687a227ec38}
+}]Width 15. (0.\-70mm) \index{Width15@{Width15}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width15@{Width15}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29a9faace88a89895afaa8fc24d5e5be01f}{Width15}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29a9faace88a89895afaa8fc24d5e5be01f}
+}]Width 16. (0.\-80mm) \index{Width16@{Width16}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width16@{Width16}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29a944a309b8ee17641189b80e3d5446dff}{Width16}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29a944a309b8ee17641189b80e3d5446dff}
+}]Width 17. (0.\-90mm) \index{Width17@{Width17}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width17@{Width17}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29a02de9b5213ef9ef039db09f43010fe49}{Width17}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29a02de9b5213ef9ef039db09f43010fe49}
+}]Width 18. (1.\-00mm) \index{Width18@{Width18}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width18@{Width18}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29a0e7d71436c3a1743d2865cc9d091e43b}{Width18}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29a0e7d71436c3a1743d2865cc9d091e43b}
+}]Width 19. (1.\-06mm) \index{Width19@{Width19}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width19@{Width19}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29a708ce5a7eb0ec7f93abf23672459f88b}{Width19}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29a708ce5a7eb0ec7f93abf23672459f88b}
+}]Width 20. (1.\-20mm) \index{Width20@{Width20}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width20@{Width20}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29ad91ce6cd10cc9dca2e32694ad1175109}{Width20}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29ad91ce6cd10cc9dca2e32694ad1175109}
+}]Width 21. (1.\-40mm) \index{Width21@{Width21}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width21@{Width21}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29a60b69ebd9f16dd973a96560550633bc9}{Width21}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29a60b69ebd9f16dd973a96560550633bc9}
+}]Width 22. (1.\-58mm) \index{Width22@{Width22}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width22@{Width22}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29a982ab2cbc000ba615b7862cee8d8f0e7}{Width22}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29a982ab2cbc000ba615b7862cee8d8f0e7}
+}]Width 23. (2.\-00mm) \index{Width23@{Width23}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width23@{Width23}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29a1e64fa9cb464329d20da417a0e0ff8ce}{Width23}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29a1e64fa9cb464329d20da417a0e0ff8ce}
+}]Width 24. (2.\-11mm) \index{Width\-By\-Layer@{Width\-By\-Layer}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width\-By\-Layer@{Width\-By\-Layer}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29a069965d8c63bd878b2eab03f943465e5}{Width\-By\-Layer}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29a069965d8c63bd878b2eab03f943465e5}
+}]Line width defined by layer not entity. \index{Width\-By\-Block@{Width\-By\-Block}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width\-By\-Block@{Width\-By\-Block}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29a06dbfb199684a461e0a78f67878af6cd}{Width\-By\-Block}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29a06dbfb199684a461e0a78f67878af6cd}
+}]Line width defined by block not entity. \index{Width\-Default@{Width\-Default}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Width\-Default@{Width\-Default}}\item[{\em 
+\hypertarget{classRS2_a023485c482c5ee9e36b3dfad781adf29abb16037a252d81186258f11eebeffcf5}{Width\-Default}\label{classRS2_a023485c482c5ee9e36b3dfad781adf29abb16037a252d81186258f11eebeffcf5}
+}]Line width defaults to the predefined line width. \end{description}
+\end{Desc}
+\hypertarget{classRS2_ad08097f2c67307c83fbea0439830f56c}{\index{R\-S2@{R\-S2}!Overlay\-Graphics@{Overlay\-Graphics}}
+\index{Overlay\-Graphics@{Overlay\-Graphics}!RS2@{R\-S2}}
+\subsubsection[{Overlay\-Graphics}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Overlay\-Graphics}}}\label{classRS2_ad08097f2c67307c83fbea0439830f56c}
+Items that can be put on a overlay, teh items are rendered in this order. Best is to leave snapper as last so it always shows up \hypertarget{classRS2_a99636ecac997160f1e2982859a043cb4}{\index{R\-S2@{R\-S2}!Paper\-Format@{Paper\-Format}}
+\index{Paper\-Format@{Paper\-Format}!RS2@{R\-S2}}
+\subsubsection[{Paper\-Format}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Paper\-Format}}}\label{classRS2_a99636ecac997160f1e2982859a043cb4}
+Paper formats. \hypertarget{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20}{\index{R\-S2@{R\-S2}!Resolve\-Level@{Resolve\-Level}}
+\index{Resolve\-Level@{Resolve\-Level}!RS2@{R\-S2}}
+\subsubsection[{Resolve\-Level}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Resolve\-Level}}}\label{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20}
+Enum of levels of resolving when iterating through an entity tree. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Resolve\-None@{Resolve\-None}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Resolve\-None@{Resolve\-None}}\item[{\em 
+\hypertarget{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20aecb7396f39bc313ad8903c8a5fac5a50}{Resolve\-None}\label{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20aecb7396f39bc313ad8903c8a5fac5a50}
+}]Groups are not resolved \index{Resolve\-All\-But\-Inserts@{Resolve\-All\-But\-Inserts}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Resolve\-All\-But\-Inserts@{Resolve\-All\-But\-Inserts}}\item[{\em 
+\hypertarget{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20ac8256a367063261c1a704965599c09a4}{Resolve\-All\-But\-Inserts}\label{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20ac8256a367063261c1a704965599c09a4}
+}]Resolve all but not Inserts. \index{Resolve\-All\-But\-Texts@{Resolve\-All\-But\-Texts}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Resolve\-All\-But\-Texts@{Resolve\-All\-But\-Texts}}\item[{\em 
+\hypertarget{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20a3e805b0eaf8fe584c57b2c724f1552fc}{Resolve\-All\-But\-Texts}\label{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20a3e805b0eaf8fe584c57b2c724f1552fc}
+}]Resolve all but not Text or M\-Text. \index{Resolve\-All@{Resolve\-All}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Resolve\-All@{Resolve\-All}}\item[{\em 
+\hypertarget{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20a2a4a53124bbf724f5f486e1066d99a74}{Resolve\-All}\label{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20a2a4a53124bbf724f5f486e1066d99a74}
+}]all Entity Containers are resolved (including Texts, Polylines, ...) \end{description}
+\end{Desc}
+\hypertarget{classRS2_ad79bb612dc7719b90e79b29298ffaf73}{\index{R\-S2@{R\-S2}!Snap\-Mode@{Snap\-Mode}}
+\index{Snap\-Mode@{Snap\-Mode}!RS2@{R\-S2}}
+\subsubsection[{Snap\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Snap\-Mode}}}\label{classRS2_ad79bb612dc7719b90e79b29298ffaf73}
+Snapping modes \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Snap\-Free@{Snap\-Free}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Snap\-Free@{Snap\-Free}}\item[{\em 
+\hypertarget{classRS2_ad79bb612dc7719b90e79b29298ffaf73a5a6d58171fa3b8586d4209ef3761d73f}{Snap\-Free}\label{classRS2_ad79bb612dc7719b90e79b29298ffaf73a5a6d58171fa3b8586d4209ef3761d73f}
+}]Free positioning \index{Snap\-Grid@{Snap\-Grid}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Snap\-Grid@{Snap\-Grid}}\item[{\em 
+\hypertarget{classRS2_ad79bb612dc7719b90e79b29298ffaf73a382b425d5485030585e9ae049bfdf74c}{Snap\-Grid}\label{classRS2_ad79bb612dc7719b90e79b29298ffaf73a382b425d5485030585e9ae049bfdf74c}
+}]Snap to grid points \index{Snap\-Endpoint@{Snap\-Endpoint}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Snap\-Endpoint@{Snap\-Endpoint}}\item[{\em 
+\hypertarget{classRS2_ad79bb612dc7719b90e79b29298ffaf73a719d9253174d9539cf03d66ee803491a}{Snap\-Endpoint}\label{classRS2_ad79bb612dc7719b90e79b29298ffaf73a719d9253174d9539cf03d66ee803491a}
+}]Snap to endpoints \index{Snap\-Middle@{Snap\-Middle}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Snap\-Middle@{Snap\-Middle}}\item[{\em 
+\hypertarget{classRS2_ad79bb612dc7719b90e79b29298ffaf73ab6d10f86aa075ad5ee29b0147188bc70}{Snap\-Middle}\label{classRS2_ad79bb612dc7719b90e79b29298ffaf73ab6d10f86aa075ad5ee29b0147188bc70}
+}]Snap to middle points \index{Snap\-Center@{Snap\-Center}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Snap\-Center@{Snap\-Center}}\item[{\em 
+\hypertarget{classRS2_ad79bb612dc7719b90e79b29298ffaf73ac766b511ec5ed91362a8d1697aa8a3e0}{Snap\-Center}\label{classRS2_ad79bb612dc7719b90e79b29298ffaf73ac766b511ec5ed91362a8d1697aa8a3e0}
+}]Snap to centers \index{Snap\-On\-Entity@{Snap\-On\-Entity}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Snap\-On\-Entity@{Snap\-On\-Entity}}\item[{\em 
+\hypertarget{classRS2_ad79bb612dc7719b90e79b29298ffaf73a7bb6afc825071293220e7770e4c8fc0f}{Snap\-On\-Entity}\label{classRS2_ad79bb612dc7719b90e79b29298ffaf73a7bb6afc825071293220e7770e4c8fc0f}
+}]Snap to the next point on an entity \index{Snap\-Dist@{Snap\-Dist}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Snap\-Dist@{Snap\-Dist}}\item[{\em 
+\hypertarget{classRS2_ad79bb612dc7719b90e79b29298ffaf73ab4fa79632b7ece76e1754d0ad1b9f24a}{Snap\-Dist}\label{classRS2_ad79bb612dc7719b90e79b29298ffaf73ab4fa79632b7ece76e1754d0ad1b9f24a}
+}]Snap to points with a distance to an endpoint \index{Snap\-Intersection@{Snap\-Intersection}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Snap\-Intersection@{Snap\-Intersection}}\item[{\em 
+\hypertarget{classRS2_ad79bb612dc7719b90e79b29298ffaf73aa8085654d622b76da79e3b58bf104125}{Snap\-Intersection}\label{classRS2_ad79bb612dc7719b90e79b29298ffaf73aa8085654d622b76da79e3b58bf104125}
+}]Snap to intersection \index{Snap\-Intersection\-Manual@{Snap\-Intersection\-Manual}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Snap\-Intersection\-Manual@{Snap\-Intersection\-Manual}}\item[{\em 
+\hypertarget{classRS2_ad79bb612dc7719b90e79b29298ffaf73af60d60ccde27d63b4c95bd1b7aedf8df}{Snap\-Intersection\-Manual}\label{classRS2_ad79bb612dc7719b90e79b29298ffaf73af60d60ccde27d63b4c95bd1b7aedf8df}
+}]Snap to intersection manually \end{description}
+\end{Desc}
+\hypertarget{classRS2_aac67b6890a08cff619c0fbef48377bae}{\index{R\-S2@{R\-S2}!Snap\-Restriction@{Snap\-Restriction}}
+\index{Snap\-Restriction@{Snap\-Restriction}!RS2@{R\-S2}}
+\subsubsection[{Snap\-Restriction}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Snap\-Restriction}}}\label{classRS2_aac67b6890a08cff619c0fbef48377bae}
+Snap restrictions \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Restrict\-Nothing@{Restrict\-Nothing}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Restrict\-Nothing@{Restrict\-Nothing}}\item[{\em 
+\hypertarget{classRS2_aac67b6890a08cff619c0fbef48377baea6be096819fb24d0ac20fea8db4932dda}{Restrict\-Nothing}\label{classRS2_aac67b6890a08cff619c0fbef48377baea6be096819fb24d0ac20fea8db4932dda}
+}]No restriction to snap mode \index{Restrict\-Orthogonal@{Restrict\-Orthogonal}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Restrict\-Orthogonal@{Restrict\-Orthogonal}}\item[{\em 
+\hypertarget{classRS2_aac67b6890a08cff619c0fbef48377baeaf465294c2efbf56a1649f73e899848dc}{Restrict\-Orthogonal}\label{classRS2_aac67b6890a08cff619c0fbef48377baeaf465294c2efbf56a1649f73e899848dc}
+}]Restrict to 90,180,270,0 degrees \index{Restrict\-Horizontal@{Restrict\-Horizontal}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Restrict\-Horizontal@{Restrict\-Horizontal}}\item[{\em 
+\hypertarget{classRS2_aac67b6890a08cff619c0fbef48377baea805635bcd04772a4e3e7ce515643d8ea}{Restrict\-Horizontal}\label{classRS2_aac67b6890a08cff619c0fbef48377baea805635bcd04772a4e3e7ce515643d8ea}
+}]Restrict to 0,180 degrees \index{Restrict\-Vertical@{Restrict\-Vertical}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Restrict\-Vertical@{Restrict\-Vertical}}\item[{\em 
+\hypertarget{classRS2_aac67b6890a08cff619c0fbef48377baea5591f93bc1f684a98fc5d97a49a462eb}{Restrict\-Vertical}\label{classRS2_aac67b6890a08cff619c0fbef48377baea5591f93bc1f684a98fc5d97a49a462eb}
+}]Restrict to 90,270 degrees \end{description}
+\end{Desc}
+\hypertarget{classRS2_a3dafd8c4ebe0b83d1cb0e889429a7a59}{\index{R\-S2@{R\-S2}!Text\-Locale\-Direction@{Text\-Locale\-Direction}}
+\index{Text\-Locale\-Direction@{Text\-Locale\-Direction}!RS2@{R\-S2}}
+\subsubsection[{Text\-Locale\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Text\-Locale\-Direction}}}\label{classRS2_a3dafd8c4ebe0b83d1cb0e889429a7a59}
+Text drawing direction. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{loc\-Right\-To\-Left@{loc\-Right\-To\-Left}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!loc\-Right\-To\-Left@{loc\-Right\-To\-Left}}\item[{\em 
+\hypertarget{classRS2_a3dafd8c4ebe0b83d1cb0e889429a7a59a615bee7ff67a4507319a44f0646d7a32}{loc\-Right\-To\-Left}\label{classRS2_a3dafd8c4ebe0b83d1cb0e889429a7a59a615bee7ff67a4507319a44f0646d7a32}
+}]Left to right Right to Left \end{description}
+\end{Desc}
+\hypertarget{classRS2_a53db3c150d1d8d501b236d537de53793}{\index{R\-S2@{R\-S2}!Tool\-Bar\-Id@{Tool\-Bar\-Id}}
+\index{Tool\-Bar\-Id@{Tool\-Bar\-Id}!RS2@{R\-S2}}
+\subsubsection[{Tool\-Bar\-Id}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Tool\-Bar\-Id}}}\label{classRS2_a53db3c150d1d8d501b236d537de53793}
+Toolbar I\-D's. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Tool\-Bar\-Main@{Tool\-Bar\-Main}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Tool\-Bar\-Main@{Tool\-Bar\-Main}}\item[{\em 
+\hypertarget{classRS2_a53db3c150d1d8d501b236d537de53793ade5b06b30dc2f293538ce8bea9a54eb1}{Tool\-Bar\-Main}\label{classRS2_a53db3c150d1d8d501b236d537de53793ade5b06b30dc2f293538ce8bea9a54eb1}
+}]Main (menu). \index{Tool\-Bar\-Points@{Tool\-Bar\-Points}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Tool\-Bar\-Points@{Tool\-Bar\-Points}}\item[{\em 
+\hypertarget{classRS2_a53db3c150d1d8d501b236d537de53793a83016c8fbf0194aef500d7cb176937ac}{Tool\-Bar\-Points}\label{classRS2_a53db3c150d1d8d501b236d537de53793a83016c8fbf0194aef500d7cb176937ac}
+}]Points. \index{Tool\-Bar\-Lines@{Tool\-Bar\-Lines}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Tool\-Bar\-Lines@{Tool\-Bar\-Lines}}\item[{\em 
+\hypertarget{classRS2_a53db3c150d1d8d501b236d537de53793a43b5321e0b89ddcbc7831b35f05ad5b2}{Tool\-Bar\-Lines}\label{classRS2_a53db3c150d1d8d501b236d537de53793a43b5321e0b89ddcbc7831b35f05ad5b2}
+}]Lines. \index{Tool\-Bar\-Arcs@{Tool\-Bar\-Arcs}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Tool\-Bar\-Arcs@{Tool\-Bar\-Arcs}}\item[{\em 
+\hypertarget{classRS2_a53db3c150d1d8d501b236d537de53793a7f76a50145d04630f240484705308138}{Tool\-Bar\-Arcs}\label{classRS2_a53db3c150d1d8d501b236d537de53793a7f76a50145d04630f240484705308138}
+}]Arcs. \index{Tool\-Bar\-Circles@{Tool\-Bar\-Circles}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Tool\-Bar\-Circles@{Tool\-Bar\-Circles}}\item[{\em 
+\hypertarget{classRS2_a53db3c150d1d8d501b236d537de53793ad7773f8077f21672caa7534e9180ac20}{Tool\-Bar\-Circles}\label{classRS2_a53db3c150d1d8d501b236d537de53793ad7773f8077f21672caa7534e9180ac20}
+}]Circles. \index{Tool\-Bar\-Ellipses@{Tool\-Bar\-Ellipses}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Tool\-Bar\-Ellipses@{Tool\-Bar\-Ellipses}}\item[{\em 
+\hypertarget{classRS2_a53db3c150d1d8d501b236d537de53793aa6d5da346bb0f7acd900b6ceb44b44fe}{Tool\-Bar\-Ellipses}\label{classRS2_a53db3c150d1d8d501b236d537de53793aa6d5da346bb0f7acd900b6ceb44b44fe}
+}]Ellipses. \index{Tool\-Bar\-Splines@{Tool\-Bar\-Splines}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Tool\-Bar\-Splines@{Tool\-Bar\-Splines}}\item[{\em 
+\hypertarget{classRS2_a53db3c150d1d8d501b236d537de53793a360a70d8078cbc7393223959e11367f3}{Tool\-Bar\-Splines}\label{classRS2_a53db3c150d1d8d501b236d537de53793a360a70d8078cbc7393223959e11367f3}
+}]Splines. \index{Tool\-Bar\-Polylines@{Tool\-Bar\-Polylines}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Tool\-Bar\-Polylines@{Tool\-Bar\-Polylines}}\item[{\em 
+\hypertarget{classRS2_a53db3c150d1d8d501b236d537de53793ac3413f6317876c5076e71d2ee9ce5c06}{Tool\-Bar\-Polylines}\label{classRS2_a53db3c150d1d8d501b236d537de53793ac3413f6317876c5076e71d2ee9ce5c06}
+}]Polylines. \index{Tool\-Bar\-Text@{Tool\-Bar\-Text}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Tool\-Bar\-Text@{Tool\-Bar\-Text}}\item[{\em 
+\hypertarget{classRS2_a53db3c150d1d8d501b236d537de53793a6a91f8b8828c824d1e5feeadad8557f2}{Tool\-Bar\-Text}\label{classRS2_a53db3c150d1d8d501b236d537de53793a6a91f8b8828c824d1e5feeadad8557f2}
+}]Text. \index{Tool\-Bar\-Dim@{Tool\-Bar\-Dim}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Tool\-Bar\-Dim@{Tool\-Bar\-Dim}}\item[{\em 
+\hypertarget{classRS2_a53db3c150d1d8d501b236d537de53793aaa67149e49d67019ea2ac669d6f4e50f}{Tool\-Bar\-Dim}\label{classRS2_a53db3c150d1d8d501b236d537de53793aaa67149e49d67019ea2ac669d6f4e50f}
+}]Dimensions. \index{Tool\-Bar\-Snap@{Tool\-Bar\-Snap}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Tool\-Bar\-Snap@{Tool\-Bar\-Snap}}\item[{\em 
+\hypertarget{classRS2_a53db3c150d1d8d501b236d537de53793ade84ac35f59aa0809644752edc2ff631}{Tool\-Bar\-Snap}\label{classRS2_a53db3c150d1d8d501b236d537de53793ade84ac35f59aa0809644752edc2ff631}
+}]Snap. \index{Tool\-Bar\-Modify@{Tool\-Bar\-Modify}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Tool\-Bar\-Modify@{Tool\-Bar\-Modify}}\item[{\em 
+\hypertarget{classRS2_a53db3c150d1d8d501b236d537de53793a03908138fb7a82f451c872a4c3fa2ac4}{Tool\-Bar\-Modify}\label{classRS2_a53db3c150d1d8d501b236d537de53793a03908138fb7a82f451c872a4c3fa2ac4}
+}]Modify. \index{Tool\-Bar\-Select@{Tool\-Bar\-Select}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Tool\-Bar\-Select@{Tool\-Bar\-Select}}\item[{\em 
+\hypertarget{classRS2_a53db3c150d1d8d501b236d537de53793a98ee866457e0931592af1ce08c920a6b}{Tool\-Bar\-Select}\label{classRS2_a53db3c150d1d8d501b236d537de53793a98ee866457e0931592af1ce08c920a6b}
+}]Select. \index{Tool\-Bar\-Info@{Tool\-Bar\-Info}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Tool\-Bar\-Info@{Tool\-Bar\-Info}}\item[{\em 
+\hypertarget{classRS2_a53db3c150d1d8d501b236d537de53793ac0443bc2db2cce890b459f8657f59e3f}{Tool\-Bar\-Info}\label{classRS2_a53db3c150d1d8d501b236d537de53793ac0443bc2db2cce890b459f8657f59e3f}
+}]Information \index{Tool\-Bar\-None@{Tool\-Bar\-None}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Tool\-Bar\-None@{Tool\-Bar\-None}}\item[{\em 
+\hypertarget{classRS2_a53db3c150d1d8d501b236d537de53793a4dc03643969a07264b18e58f58cc9d41}{Tool\-Bar\-None}\label{classRS2_a53db3c150d1d8d501b236d537de53793a4dc03643969a07264b18e58f58cc9d41}
+}]Invalid toolbar I\-D \end{description}
+\end{Desc}
+\hypertarget{classRS2_ab5fe5e99761abbb178f2e132d4ac84ee}{\index{R\-S2@{R\-S2}!Undoable\-Type@{Undoable\-Type}}
+\index{Undoable\-Type@{Undoable\-Type}!RS2@{R\-S2}}
+\subsubsection[{Undoable\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Undoable\-Type}}}\label{classRS2_ab5fe5e99761abbb178f2e132d4ac84ee}
+Undoable rtti. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Undoable\-Unknown@{Undoable\-Unknown}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Undoable\-Unknown@{Undoable\-Unknown}}\item[{\em 
+\hypertarget{classRS2_ab5fe5e99761abbb178f2e132d4ac84eea5c4d52d9b4d9f1a4d145e77d2bb7f3c5}{Undoable\-Unknown}\label{classRS2_ab5fe5e99761abbb178f2e132d4ac84eea5c4d52d9b4d9f1a4d145e77d2bb7f3c5}
+}]Unknown undoable \index{Undoable\-Entity@{Undoable\-Entity}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Undoable\-Entity@{Undoable\-Entity}}\item[{\em 
+\hypertarget{classRS2_ab5fe5e99761abbb178f2e132d4ac84eea146aaf4f748194d366a713fb629c75b4}{Undoable\-Entity}\label{classRS2_ab5fe5e99761abbb178f2e132d4ac84eea146aaf4f748194d366a713fb629c75b4}
+}]Entity \index{Undoable\-Layer@{Undoable\-Layer}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Undoable\-Layer@{Undoable\-Layer}}\item[{\em 
+\hypertarget{classRS2_ab5fe5e99761abbb178f2e132d4ac84eeae90581d7c018a36a07047a2e205bf1ab}{Undoable\-Layer}\label{classRS2_ab5fe5e99761abbb178f2e132d4ac84eeae90581d7c018a36a07047a2e205bf1ab}
+}]Layer \end{description}
+\end{Desc}
+\hypertarget{classRS2_ad859751df6978737e4f35ec111ff9828}{\index{R\-S2@{R\-S2}!Unit@{Unit}}
+\index{Unit@{Unit}!RS2@{R\-S2}}
+\subsubsection[{Unit}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Unit}}}\label{classRS2_ad859751df6978737e4f35ec111ff9828}
+Units. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{None@{None}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!None@{None}}\item[{\em 
+\hypertarget{classRS2_ad859751df6978737e4f35ec111ff9828ad72221e244469bf066d560394af6985d}{None}\label{classRS2_ad859751df6978737e4f35ec111ff9828ad72221e244469bf066d560394af6985d}
+}]No unit (unit from parent) \index{Inch@{Inch}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Inch@{Inch}}\item[{\em 
+\hypertarget{classRS2_ad859751df6978737e4f35ec111ff9828a7b7408a26e7771b1491e072e80ef23f2}{Inch}\label{classRS2_ad859751df6978737e4f35ec111ff9828a7b7408a26e7771b1491e072e80ef23f2}
+}]Inch \index{Foot@{Foot}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Foot@{Foot}}\item[{\em 
+\hypertarget{classRS2_ad859751df6978737e4f35ec111ff9828a31d4e49ae93b484adbd8ca3386e98aa9}{Foot}\label{classRS2_ad859751df6978737e4f35ec111ff9828a31d4e49ae93b484adbd8ca3386e98aa9}
+}]Foot\-: 12 Inches \index{Mile@{Mile}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Mile@{Mile}}\item[{\em 
+\hypertarget{classRS2_ad859751df6978737e4f35ec111ff9828a16c6386c7af4d240da32a3128e27edb0}{Mile}\label{classRS2_ad859751df6978737e4f35ec111ff9828a16c6386c7af4d240da32a3128e27edb0}
+}]Mile\-: 1760 Yards = 1609 m \index{Millimeter@{Millimeter}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Millimeter@{Millimeter}}\item[{\em 
+\hypertarget{classRS2_ad859751df6978737e4f35ec111ff9828a1a2c7e1f33394582debfd06ab9bba6de}{Millimeter}\label{classRS2_ad859751df6978737e4f35ec111ff9828a1a2c7e1f33394582debfd06ab9bba6de}
+}]Millimeter\-: 0.\-001m \index{Centimeter@{Centimeter}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Centimeter@{Centimeter}}\item[{\em 
+\hypertarget{classRS2_ad859751df6978737e4f35ec111ff9828ad982442cfabd52ed24f1830cc0ef2908}{Centimeter}\label{classRS2_ad859751df6978737e4f35ec111ff9828ad982442cfabd52ed24f1830cc0ef2908}
+}]Centimeter\-: 0.\-01m \index{Meter@{Meter}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Meter@{Meter}}\item[{\em 
+\hypertarget{classRS2_ad859751df6978737e4f35ec111ff9828a4bede546afef1120ccbb3078c98872f8}{Meter}\label{classRS2_ad859751df6978737e4f35ec111ff9828a4bede546afef1120ccbb3078c98872f8}
+}]Meter \index{Kilometer@{Kilometer}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Kilometer@{Kilometer}}\item[{\em 
+\hypertarget{classRS2_ad859751df6978737e4f35ec111ff9828a7918f984665450229de80f216fca41ff}{Kilometer}\label{classRS2_ad859751df6978737e4f35ec111ff9828a7918f984665450229de80f216fca41ff}
+}]Kilometer\-: 1000m \index{Microinch@{Microinch}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Microinch@{Microinch}}\item[{\em 
+\hypertarget{classRS2_ad859751df6978737e4f35ec111ff9828a2f31575eea32d8c3e304713bf5950460}{Microinch}\label{classRS2_ad859751df6978737e4f35ec111ff9828a2f31575eea32d8c3e304713bf5950460}
+}]Microinch\-: 0.\-000001 \index{Mil@{Mil}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Mil@{Mil}}\item[{\em 
+\hypertarget{classRS2_ad859751df6978737e4f35ec111ff9828ab2cf82c1add12b8fc0cd177e6659140f}{Mil}\label{classRS2_ad859751df6978737e4f35ec111ff9828ab2cf82c1add12b8fc0cd177e6659140f}
+}]Mil = 0.\-001 Inch \index{Yard@{Yard}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Yard@{Yard}}\item[{\em 
+\hypertarget{classRS2_ad859751df6978737e4f35ec111ff9828a3b3748b5e24d1556be2fd195feec2c5c}{Yard}\label{classRS2_ad859751df6978737e4f35ec111ff9828a3b3748b5e24d1556be2fd195feec2c5c}
+}]Yard\-: 3 Feet \index{Angstrom@{Angstrom}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Angstrom@{Angstrom}}\item[{\em 
+\hypertarget{classRS2_ad859751df6978737e4f35ec111ff9828a6a4d7a49c6c1337f49bf0fe1509708a3}{Angstrom}\label{classRS2_ad859751df6978737e4f35ec111ff9828a6a4d7a49c6c1337f49bf0fe1509708a3}
+}]Angstrom\-: 10$^\wedge$-\/10m \index{Nanometer@{Nanometer}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Nanometer@{Nanometer}}\item[{\em 
+\hypertarget{classRS2_ad859751df6978737e4f35ec111ff9828a0c64d5a7a3e253f18785584089832453}{Nanometer}\label{classRS2_ad859751df6978737e4f35ec111ff9828a0c64d5a7a3e253f18785584089832453}
+}]Nanometer\-: 10$^\wedge$-\/9m \index{Micron@{Micron}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Micron@{Micron}}\item[{\em 
+\hypertarget{classRS2_ad859751df6978737e4f35ec111ff9828adc19ff607a1ff47fc1b8ac99c623c20f}{Micron}\label{classRS2_ad859751df6978737e4f35ec111ff9828adc19ff607a1ff47fc1b8ac99c623c20f}
+}]Micron\-: 10$^\wedge$-\/6m \index{Decimeter@{Decimeter}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Decimeter@{Decimeter}}\item[{\em 
+\hypertarget{classRS2_ad859751df6978737e4f35ec111ff9828a8838e6240d993784f8910eeb66c3c658}{Decimeter}\label{classRS2_ad859751df6978737e4f35ec111ff9828a8838e6240d993784f8910eeb66c3c658}
+}]Decimeter\-: 0.\-1m \index{Decameter@{Decameter}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Decameter@{Decameter}}\item[{\em 
+\hypertarget{classRS2_ad859751df6978737e4f35ec111ff9828a8a774766ff2c61e3a6c2bfb8eae56bd3}{Decameter}\label{classRS2_ad859751df6978737e4f35ec111ff9828a8a774766ff2c61e3a6c2bfb8eae56bd3}
+}]Decameter\-: 10m \index{Hectometer@{Hectometer}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Hectometer@{Hectometer}}\item[{\em 
+\hypertarget{classRS2_ad859751df6978737e4f35ec111ff9828a0873c1e7a38e39d12c39f7040ef84d6e}{Hectometer}\label{classRS2_ad859751df6978737e4f35ec111ff9828a0873c1e7a38e39d12c39f7040ef84d6e}
+}]Hectometer\-: 100m \index{Gigameter@{Gigameter}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Gigameter@{Gigameter}}\item[{\em 
+\hypertarget{classRS2_ad859751df6978737e4f35ec111ff9828a41b1aa7ad7cdc28627d2d5f97646bf40}{Gigameter}\label{classRS2_ad859751df6978737e4f35ec111ff9828a41b1aa7ad7cdc28627d2d5f97646bf40}
+}]Gigameter\-: 1000000m \index{Astro@{Astro}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Astro@{Astro}}\item[{\em 
+\hypertarget{classRS2_ad859751df6978737e4f35ec111ff9828a84fccaeb08592888b6096f725ef23f87}{Astro}\label{classRS2_ad859751df6978737e4f35ec111ff9828a84fccaeb08592888b6096f725ef23f87}
+}]Astro\-: 149.\-6 x 10$^\wedge$9m \index{Lightyear@{Lightyear}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Lightyear@{Lightyear}}\item[{\em 
+\hypertarget{classRS2_ad859751df6978737e4f35ec111ff9828a690284ea39affba83a12b16135f550eb}{Lightyear}\label{classRS2_ad859751df6978737e4f35ec111ff9828a690284ea39affba83a12b16135f550eb}
+}]Lightyear\-: 9460731798 x 10$^\wedge$6m \index{Parsec@{Parsec}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Parsec@{Parsec}}\item[{\em 
+\hypertarget{classRS2_ad859751df6978737e4f35ec111ff9828acab7bf77423a85372f11f7430b596616}{Parsec}\label{classRS2_ad859751df6978737e4f35ec111ff9828acab7bf77423a85372f11f7430b596616}
+}]Parsec\-: 30857 x 10$^\wedge$12 \index{Last\-Unit@{Last\-Unit}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Last\-Unit@{Last\-Unit}}\item[{\em 
+\hypertarget{classRS2_ad859751df6978737e4f35ec111ff9828a08338c5981e34a915c8e04b3783ea7c2}{Last\-Unit}\label{classRS2_ad859751df6978737e4f35ec111ff9828a08338c5981e34a915c8e04b3783ea7c2}
+}]Used to iterate through units \end{description}
+\end{Desc}
+\hypertarget{classRS2_ab05150052f314f729c76afff34f89bc5}{\index{R\-S2@{R\-S2}!Update\-Mode@{Update\-Mode}}
+\index{Update\-Mode@{Update\-Mode}!RS2@{R\-S2}}
+\subsubsection[{Update\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Update\-Mode}}}\label{classRS2_ab05150052f314f729c76afff34f89bc5}
+Update mode for non-\/atomic entities that need to be updated when they change. e.\-g. texts, inserts, ... \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{No\-Update@{No\-Update}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!No\-Update@{No\-Update}}\item[{\em 
+\hypertarget{classRS2_ab05150052f314f729c76afff34f89bc5a2f5f049e086d7d82c039accb671c7556}{No\-Update}\label{classRS2_ab05150052f314f729c76afff34f89bc5a2f5f049e086d7d82c039accb671c7556}
+}]No automatic updates. \index{Update@{Update}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Update@{Update}}\item[{\em 
+\hypertarget{classRS2_ab05150052f314f729c76afff34f89bc5a83180c94271651d6a709844b1453bf58}{Update}\label{classRS2_ab05150052f314f729c76afff34f89bc5a83180c94271651d6a709844b1453bf58}
+}]Always update automatically when modified. \index{Preview\-Update@{Preview\-Update}!R\-S2@{R\-S2}}\index{R\-S2@{R\-S2}!Preview\-Update@{Preview\-Update}}\item[{\em 
+\hypertarget{classRS2_ab05150052f314f729c76afff34f89bc5a5c8e722c8bfb435b79831633ee96b4d3}{Preview\-Update}\label{classRS2_ab05150052f314f729c76afff34f89bc5a5c8e722c8bfb435b79831633ee96b4d3}
+}]Update automatically but only for previews (quick update) \end{description}
+\end{Desc}
+\hypertarget{classRS2_af1c96c2254f823f3836e8839482870d7}{\index{R\-S2@{R\-S2}!Variable\-Type@{Variable\-Type}}
+\index{Variable\-Type@{Variable\-Type}!RS2@{R\-S2}}
+\subsubsection[{Variable\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Variable\-Type}}}\label{classRS2_af1c96c2254f823f3836e8839482870d7}
+Variable types used by \hyperlink{classRS__VariableDict}{R\-S\-\_\-\-Variable\-Dict} and \hyperlink{classRS__Variable}{R\-S\-\_\-\-Variable}. \hypertarget{classRS2_a7416f66b1968e3ccb9b70b8f48bac8df}{\index{R\-S2@{R\-S2}!Zoom\-Direction@{Zoom\-Direction}}
+\index{Zoom\-Direction@{Zoom\-Direction}!RS2@{R\-S2}}
+\subsubsection[{Zoom\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S2\-::\-Zoom\-Direction}}}\label{classRS2_a7416f66b1968e3ccb9b70b8f48bac8df}
+Direction for zooming actions. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS2_a3a2353d5f4b7f481eb54caed3fccb194}{\index{R\-S2@{R\-S2}!int\-To\-Line\-Width@{int\-To\-Line\-Width}}
+\index{int\-To\-Line\-Width@{int\-To\-Line\-Width}!RS2@{R\-S2}}
+\subsubsection[{int\-To\-Line\-Width}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Line\-Width} R\-S2\-::int\-To\-Line\-Width (
+\begin{DoxyParamCaption}
+\item[{int}]{w}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classRS2_a3a2353d5f4b7f481eb54caed3fccb194}
+Wrapper for Qt Wrapper for Qt \hypertarget{classRS2_acad6e5163a16036556532c37750f7cac}{\index{R\-S2@{R\-S2}!qt\-To\-Rs\-Pen\-Style@{qt\-To\-Rs\-Pen\-Style}}
+\index{qt\-To\-Rs\-Pen\-Style@{qt\-To\-Rs\-Pen\-Style}!RS2@{R\-S2}}
+\subsubsection[{qt\-To\-Rs\-Pen\-Style}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf R\-S2\-::\-Line\-Type} R\-S2\-::qt\-To\-Rs\-Pen\-Style (
+\begin{DoxyParamCaption}
+\item[{Qt\-::\-Pen\-Style}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classRS2_acad6e5163a16036556532c37750f7cac}
+Wrapper for Qt. \hypertarget{classRS2_ae4eb168bf7a7d6dd2e48f974c52e9095}{\index{R\-S2@{R\-S2}!rs\-To\-Qt\-Cursor\-Type@{rs\-To\-Qt\-Cursor\-Type}}
+\index{rs\-To\-Qt\-Cursor\-Type@{rs\-To\-Qt\-Cursor\-Type}!RS2@{R\-S2}}
+\subsubsection[{rs\-To\-Qt\-Cursor\-Type}]{\setlength{\rightskip}{0pt plus 5cm}static Qt\-::\-Cursor\-Shape R\-S2\-::rs\-To\-Qt\-Cursor\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Cursor\-Type}}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classRS2_ae4eb168bf7a7d6dd2e48f974c52e9095}
+Wrapper for Qt. \hypertarget{classRS2_aaf709fca50d3cd5d38e41e3fcc115a68}{\index{R\-S2@{R\-S2}!rs\-To\-Qt\-Line\-Type@{rs\-To\-Qt\-Line\-Type}}
+\index{rs\-To\-Qt\-Line\-Type@{rs\-To\-Qt\-Line\-Type}!RS2@{R\-S2}}
+\subsubsection[{rs\-To\-Qt\-Line\-Type}]{\setlength{\rightskip}{0pt plus 5cm}static Qt\-::\-Pen\-Style R\-S2\-::rs\-To\-Qt\-Line\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Line\-Type}}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classRS2_aaf709fca50d3cd5d38e41e3fcc115a68}
+Wrapper for Qt \hypertarget{classRS2_a6eef8c61bd91a7821ad4aa683fbcad84}{\index{R\-S2@{R\-S2}!rs\-To\-Qt\-Paper\-Format@{rs\-To\-Qt\-Paper\-Format}}
+\index{rs\-To\-Qt\-Paper\-Format@{rs\-To\-Qt\-Paper\-Format}!RS2@{R\-S2}}
+\subsubsection[{rs\-To\-Qt\-Paper\-Format}]{\setlength{\rightskip}{0pt plus 5cm}static Q\-Printer\-::\-Page\-Size R\-S2\-::rs\-To\-Qt\-Paper\-Format (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Paper\-Format}}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classRS2_a6eef8c61bd91a7821ad4aa683fbcad84}
+Wrapper for Qt. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs.\-h\end{DoxyCompactItemize}

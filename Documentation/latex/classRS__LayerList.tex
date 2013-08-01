@@ -1,0 +1,308 @@
+\hypertarget{classRS__LayerList}{\section{R\-S\-\_\-\-Layer\-List Class Reference}
+\label{classRS__LayerList}\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-layerlist.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__LayerList_aa8ecbfcdcad3c0ae4a22b33307c63690}{R\-S\-\_\-\-Layer\-List} ()
+\item 
+void \hyperlink{classRS__LayerList_a91fcb5a23d2c0edd5c424bd8b775a6d6}{clear} ()
+\item 
+unsigned int \hyperlink{classRS__LayerList_a0d5ab806563c6f7b237fb7ce84b29089}{count} () const 
+\item 
+\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$ \hyperlink{classRS__LayerList_a75a83b2f18b721257ef6a48bbda0ee58}{at} (unsigned int i)
+\item 
+void \hyperlink{classRS__LayerList_acc07e798bb62272b37a2e788039f1788}{activate} (const Q\-String \&name, bool notify=false)
+\item 
+void \hyperlink{classRS__LayerList_ab0c03774955839b3f822e9b9ce3ae6a6}{activate} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$layer, bool notify=false)
+\item 
+\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$ \hyperlink{classRS__LayerList_abbe307b9c8fb8e020a0ac5b44ebf33cd}{get\-Active} ()
+\item 
+virtual void \hyperlink{classRS__LayerList_a072b23bf6f1cc447c0384092e7abac06}{add} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$layer)
+\item 
+virtual void \hyperlink{classRS__LayerList_aaabe5b4545cb210a64f972e98b8d5f64}{remove} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$layer)
+\item 
+virtual void \hyperlink{classRS__LayerList_ab5f528027d14211040afbe78f6a3b4a4}{edit} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$layer, const \hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} \&source)
+\item 
+\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$ \hyperlink{classRS__LayerList_a290e473b0d829d0f0dd7748153d4d909}{find} (const Q\-String \&name)
+\item 
+int \hyperlink{classRS__LayerList_ad4974fe13444f5eec24457047ea088b1}{get\-Index} (const Q\-String \&name)
+\item 
+int \hyperlink{classRS__LayerList_a0ba5b51d5a2c22b00eb8da5a1f9c600e}{get\-Index} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$layer)
+\item 
+void \hyperlink{classRS__LayerList_a543a68fa388dbfb45570fcc748bad567}{toggle} (const Q\-String \&name)
+\item 
+void \hyperlink{classRS__LayerList_aa9a1916116b5ae881f1f3ddad20e66ee}{toggle} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$layer)
+\item 
+void \hyperlink{classRS__LayerList_aa175cb2f6f286938a5932c9fcc4b6a98}{toggle\-Lock} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$layer)
+\item 
+void \hyperlink{classRS__LayerList_ae270786a424697bd6f8cb2f4472e437b}{freeze\-All} (bool freeze)
+\item 
+\hypertarget{classRS__LayerList_a7dfdbba6c494c749caf47579d0bc5ee6}{void \hyperlink{classRS__LayerList_a7dfdbba6c494c749caf47579d0bc5ee6}{set\-Layer\-Witget} (\hyperlink{classQG__LayerWidget}{Q\-G\-\_\-\-Layer\-Widget} $\ast$lw)}\label{classRS__LayerList_a7dfdbba6c494c749caf47579d0bc5ee6}
+
+\begin{DoxyCompactList}\small\item\em sets the layer\-Widget pointer in R\-S\-\_\-\-Layer\-List\-Class \end{DoxyCompactList}\item 
+\hyperlink{classQG__LayerWidget}{Q\-G\-\_\-\-Layer\-Widget} $\ast$ \hyperlink{classRS__LayerList_a1024cde80fcc46474307becef683a6fc}{get\-Layer\-Witget} ()
+\item 
+void \hyperlink{classRS__LayerList_ab0712cfcdbe37b37d7ad153ec28d129c}{add\-Listener} (\hyperlink{classRS__LayerListListener}{R\-S\-\_\-\-Layer\-List\-Listener} $\ast$listener)
+\item 
+void \hyperlink{classRS__LayerList_a1e8717d29fce8fde4b56858f2af91693}{remove\-Listener} (\hyperlink{classRS__LayerListListener}{R\-S\-\_\-\-Layer\-List\-Listener} $\ast$listener)
+\item 
+void \hyperlink{classRS__LayerList_ad07860fe9b2be449f77578e73592391b}{set\-Modified} (bool m)
+\item 
+virtual bool \hyperlink{classRS__LayerList_a5626e7e951f2b187fc25e9488af75034}{is\-Modified} () const 
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{classRS__LayerList_a54189fd521a263a4175ef40402f147d4}{operator$<$$<$} (std\-::ostream \&os, \hyperlink{classRS__LayerList}{R\-S\-\_\-\-Layer\-List} \&l)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A list of layers.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__LayerList_aa8ecbfcdcad3c0ae4a22b33307c63690}{\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}!R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}}
+\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}!RS_LayerList@{R\-S\-\_\-\-Layer\-List}}
+\subsubsection[{R\-S\-\_\-\-Layer\-List}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Layer\-List\-::\-R\-S\-\_\-\-Layer\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__LayerList_aa8ecbfcdcad3c0ae4a22b33307c63690}
+Default constructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__LayerList_acc07e798bb62272b37a2e788039f1788}{\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}!activate@{activate}}
+\index{activate@{activate}!RS_LayerList@{R\-S\-\_\-\-Layer\-List}}
+\subsubsection[{activate}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Layer\-List\-::activate (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{name, }
+\item[{bool}]{notify = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classRS__LayerList_acc07e798bb62272b37a2e788039f1788}
+Activates the given layer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em notify} & Notify listeners. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__LayerList_ab0c03774955839b3f822e9b9ce3ae6a6}{\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}!activate@{activate}}
+\index{activate@{activate}!RS_LayerList@{R\-S\-\_\-\-Layer\-List}}
+\subsubsection[{activate}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Layer\-List\-::activate (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer} $\ast$}]{layer, }
+\item[{bool}]{notify = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classRS__LayerList_ab0c03774955839b3f822e9b9ce3ae6a6}
+Activates the given layer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em notify} & Notify listeners. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__LayerList_a072b23bf6f1cc447c0384092e7abac06}{\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}!add@{add}}
+\index{add@{add}!RS_LayerList@{R\-S\-\_\-\-Layer\-List}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Layer\-List\-::add (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer} $\ast$}]{layer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__LayerList_a072b23bf6f1cc447c0384092e7abac06}
+Adds a layer to the layer list. If there is already a layer with the same name, no layer is added. In that case the layer passed to the methode will be deleted! If no layer was active so far, the new layer becomes the active one.
+
+Listeners are notified. \hypertarget{classRS__LayerList_ab0712cfcdbe37b37d7ad153ec28d129c}{\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}!add\-Listener@{add\-Listener}}
+\index{add\-Listener@{add\-Listener}!RS_LayerList@{R\-S\-\_\-\-Layer\-List}}
+\subsubsection[{add\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Layer\-List\-::add\-Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer\-List\-Listener} $\ast$}]{listener}
+\end{DoxyParamCaption}
+)}}\label{classRS__LayerList_ab0712cfcdbe37b37d7ad153ec28d129c}
+\begin{DoxyReturn}{Returns}
+First layer of the list. 
+
+Next layer from the list after calling first\-Layer() or next\-Layer().
+\end{DoxyReturn}
+adds a Layer\-List\-Listener to the list of listeners. Listeners are notified when the layer list changes.
+
+Typical listeners are\-: layer list widgets, pen toolbar, graphic view \hypertarget{classRS__LayerList_a75a83b2f18b721257ef6a48bbda0ee58}{\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}!at@{at}}
+\index{at@{at}!RS_LayerList@{R\-S\-\_\-\-Layer\-List}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Layer}$\ast$ R\-S\-\_\-\-Layer\-List\-::at (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__LayerList_a75a83b2f18b721257ef6a48bbda0ee58}
+\begin{DoxyReturn}{Returns}
+Layer at given position or N\-U\-L\-L if i is out of range. 
+\end{DoxyReturn}
+\hypertarget{classRS__LayerList_a91fcb5a23d2c0edd5c424bd8b775a6d6}{\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}!clear@{clear}}
+\index{clear@{clear}!RS_LayerList@{R\-S\-\_\-\-Layer\-List}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Layer\-List\-::clear (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classRS__LayerList_a91fcb5a23d2c0edd5c424bd8b775a6d6}
+Removes all layers in the layerlist. \hypertarget{classRS__LayerList_a0d5ab806563c6f7b237fb7ce84b29089}{\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}!count@{count}}
+\index{count@{count}!RS_LayerList@{R\-S\-\_\-\-Layer\-List}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int R\-S\-\_\-\-Layer\-List\-::count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__LayerList_a0d5ab806563c6f7b237fb7ce84b29089}
+\begin{DoxyReturn}{Returns}
+Number of layers in the list. 
+\end{DoxyReturn}
+\hypertarget{classRS__LayerList_ab5f528027d14211040afbe78f6a3b4a4}{\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}!edit@{edit}}
+\index{edit@{edit}!RS_LayerList@{R\-S\-\_\-\-Layer\-List}}
+\subsubsection[{edit}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Layer\-List\-::edit (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer} $\ast$}]{layer, }
+\item[{const {\bf R\-S\-\_\-\-Layer} \&}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__LayerList_ab5f528027d14211040afbe78f6a3b4a4}
+Changes a layer's attributes. The attributes of layer 'layer' are copied from layer 'source'. Listeners are notified. \hypertarget{classRS__LayerList_a290e473b0d829d0f0dd7748153d4d909}{\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}!find@{find}}
+\index{find@{find}!RS_LayerList@{R\-S\-\_\-\-Layer\-List}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Layer} $\ast$ R\-S\-\_\-\-Layer\-List\-::find (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{name}
+\end{DoxyParamCaption}
+)}}\label{classRS__LayerList_a290e473b0d829d0f0dd7748153d4d909}
+\begin{DoxyReturn}{Returns}
+Pointer to the layer with the given name or {\ttfamily N\-U\-L\-L} if no such layer was found. 
+\end{DoxyReturn}
+\hypertarget{classRS__LayerList_ae270786a424697bd6f8cb2f4472e437b}{\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}!freeze\-All@{freeze\-All}}
+\index{freeze\-All@{freeze\-All}!RS_LayerList@{R\-S\-\_\-\-Layer\-List}}
+\subsubsection[{freeze\-All}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Layer\-List\-::freeze\-All (
+\begin{DoxyParamCaption}
+\item[{bool}]{freeze}
+\end{DoxyParamCaption}
+)}}\label{classRS__LayerList_ae270786a424697bd6f8cb2f4472e437b}
+Freezes or defreezes all layers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em freeze} & true\-: freeze, false\-: defreeze \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__LayerList_abbe307b9c8fb8e020a0ac5b44ebf33cd}{\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}!get\-Active@{get\-Active}}
+\index{get\-Active@{get\-Active}!RS_LayerList@{R\-S\-\_\-\-Layer\-List}}
+\subsubsection[{get\-Active}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Layer}$\ast$ R\-S\-\_\-\-Layer\-List\-::get\-Active (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__LayerList_abbe307b9c8fb8e020a0ac5b44ebf33cd}
+\begin{DoxyReturn}{Returns}
+The active layer of N\-U\-L\-L if no layer is activated. 
+\end{DoxyReturn}
+\hypertarget{classRS__LayerList_ad4974fe13444f5eec24457047ea088b1}{\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}!get\-Index@{get\-Index}}
+\index{get\-Index@{get\-Index}!RS_LayerList@{R\-S\-\_\-\-Layer\-List}}
+\subsubsection[{get\-Index}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Layer\-List\-::get\-Index (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{name}
+\end{DoxyParamCaption}
+)}}\label{classRS__LayerList_ad4974fe13444f5eec24457047ea088b1}
+\begin{DoxyReturn}{Returns}
+Index of the given layer in the layer list or -\/1 if the layer was not found. 
+\end{DoxyReturn}
+\hypertarget{classRS__LayerList_a0ba5b51d5a2c22b00eb8da5a1f9c600e}{\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}!get\-Index@{get\-Index}}
+\index{get\-Index@{get\-Index}!RS_LayerList@{R\-S\-\_\-\-Layer\-List}}
+\subsubsection[{get\-Index}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Layer\-List\-::get\-Index (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer} $\ast$}]{layer}
+\end{DoxyParamCaption}
+)}}\label{classRS__LayerList_a0ba5b51d5a2c22b00eb8da5a1f9c600e}
+\begin{DoxyReturn}{Returns}
+Index of the given layer in the layer list or -\/1 if the layer was not found. 
+\end{DoxyReturn}
+\hypertarget{classRS__LayerList_a1024cde80fcc46474307becef683a6fc}{\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}!get\-Layer\-Witget@{get\-Layer\-Witget}}
+\index{get\-Layer\-Witget@{get\-Layer\-Witget}!RS_LayerList@{R\-S\-\_\-\-Layer\-List}}
+\subsubsection[{get\-Layer\-Witget}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-G\-\_\-\-Layer\-Widget}$\ast$ R\-S\-\_\-\-Layer\-List\-::get\-Layer\-Witget (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__LayerList_a1024cde80fcc46474307becef683a6fc}
+\begin{DoxyReturn}{Returns}
+the layer\-Widget pointer inside the R\-S\-\_\-\-Layer\-List\-Class 
+\end{DoxyReturn}
+\hypertarget{classRS__LayerList_a5626e7e951f2b187fc25e9488af75034}{\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}!is\-Modified@{is\-Modified}}
+\index{is\-Modified@{is\-Modified}!RS_LayerList@{R\-S\-\_\-\-Layer\-List}}
+\subsubsection[{is\-Modified}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Layer\-List\-::is\-Modified (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__LayerList_a5626e7e951f2b187fc25e9488af75034}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & The layer list has been modified. \\
+\hline
+{\em false} & The layer list has not been modified. \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{classRS__LayerList_aaabe5b4545cb210a64f972e98b8d5f64}{\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}!remove@{remove}}
+\index{remove@{remove}!RS_LayerList@{R\-S\-\_\-\-Layer\-List}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Layer\-List\-::remove (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer} $\ast$}]{layer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__LayerList_aaabe5b4545cb210a64f972e98b8d5f64}
+Removes a layer from the list. Listeners are notified after the layer was removed from the list but before it gets deleted. \hypertarget{classRS__LayerList_a1e8717d29fce8fde4b56858f2af91693}{\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}!remove\-Listener@{remove\-Listener}}
+\index{remove\-Listener@{remove\-Listener}!RS_LayerList@{R\-S\-\_\-\-Layer\-List}}
+\subsubsection[{remove\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Layer\-List\-::remove\-Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer\-List\-Listener} $\ast$}]{listener}
+\end{DoxyParamCaption}
+)}}\label{classRS__LayerList_a1e8717d29fce8fde4b56858f2af91693}
+removes a Layer\-List\-Listener from the list of listeners. \hypertarget{classRS__LayerList_ad07860fe9b2be449f77578e73592391b}{\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}!set\-Modified@{set\-Modified}}
+\index{set\-Modified@{set\-Modified}!RS_LayerList@{R\-S\-\_\-\-Layer\-List}}
+\subsubsection[{set\-Modified}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Layer\-List\-::set\-Modified (
+\begin{DoxyParamCaption}
+\item[{bool}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__LayerList_ad07860fe9b2be449f77578e73592391b}
+Sets the layer lists modified status to 'm'. \hypertarget{classRS__LayerList_a543a68fa388dbfb45570fcc748bad567}{\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}!toggle@{toggle}}
+\index{toggle@{toggle}!RS_LayerList@{R\-S\-\_\-\-Layer\-List}}
+\subsubsection[{toggle}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Layer\-List\-::toggle (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{name}
+\end{DoxyParamCaption}
+)}}\label{classRS__LayerList_a543a68fa388dbfb45570fcc748bad567}
+Switches on / off the given layer. Listeners are notified. \hypertarget{classRS__LayerList_aa9a1916116b5ae881f1f3ddad20e66ee}{\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}!toggle@{toggle}}
+\index{toggle@{toggle}!RS_LayerList@{R\-S\-\_\-\-Layer\-List}}
+\subsubsection[{toggle}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Layer\-List\-::toggle (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer} $\ast$}]{layer}
+\end{DoxyParamCaption}
+)}}\label{classRS__LayerList_aa9a1916116b5ae881f1f3ddad20e66ee}
+Switches on / off the given layer. Listeners are notified. \hypertarget{classRS__LayerList_aa175cb2f6f286938a5932c9fcc4b6a98}{\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}!toggle\-Lock@{toggle\-Lock}}
+\index{toggle\-Lock@{toggle\-Lock}!RS_LayerList@{R\-S\-\_\-\-Layer\-List}}
+\subsubsection[{toggle\-Lock}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Layer\-List\-::toggle\-Lock (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer} $\ast$}]{layer}
+\end{DoxyParamCaption}
+)}}\label{classRS__LayerList_aa175cb2f6f286938a5932c9fcc4b6a98}
+Locks or unlocks the given layer. Listeners are notified. 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classRS__LayerList_a54189fd521a263a4175ef40402f147d4}{\index{R\-S\-\_\-\-Layer\-List@{R\-S\-\_\-\-Layer\-List}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!RS_LayerList@{R\-S\-\_\-\-Layer\-List}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os, }
+\item[{{\bf R\-S\-\_\-\-Layer\-List} \&}]{l}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classRS__LayerList_a54189fd521a263a4175ef40402f147d4}
+Dumps the layers to stdout. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-layerlist.\-h\item 
+librecad/src/lib/engine/rs\-\_\-layerlist.\-cpp\end{DoxyCompactItemize}

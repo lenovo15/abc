@@ -1,0 +1,167 @@
+\hypertarget{classRS__ActionPolylineDel}{\section{R\-S\-\_\-\-Action\-Polyline\-Del Class Reference}
+\label{classRS__ActionPolylineDel}\index{R\-S\-\_\-\-Action\-Polyline\-Del@{R\-S\-\_\-\-Action\-Polyline\-Del}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionpolylinedel.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Polyline\-Del\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classRS__ActionPolylineDel}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionPolylineDel_a9335b7146f6cb2176cabec390b784e67}{Status} \{ \hyperlink{classRS__ActionPolylineDel_a9335b7146f6cb2176cabec390b784e67a3c799d7e60c67b37e875afc16482548e}{Choose\-Entity}, 
+\hyperlink{classRS__ActionPolylineDel_a9335b7146f6cb2176cabec390b784e67a2a26c7f0c6bba4b2636c9d8a1d5ee0ff}{Set\-Del\-Point}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionPolylineDel_a6ed8ba2428d1ce58b2bdb6c3e67f5967}{{\bfseries R\-S\-\_\-\-Action\-Polyline\-Del} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionPolylineDel_a6ed8ba2428d1ce58b2bdb6c3e67f5967}
+
+\item 
+virtual \hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__ActionPolylineDel_a01417c1b10a0d49976eb46fb1bfc5375}{rtti} ()
+\item 
+virtual void \hyperlink{classRS__ActionPolylineDel_a68ba81f6ef76c67cc83841e5d72231bd}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionPolylineDel_a9680e81df75a3b6894812e150ed49c9f}{trigger} ()
+\item 
+virtual void \hyperlink{classRS__ActionPolylineDel_ab4e18abf343353a22f776d1dcbbde7fc}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionPolylineDel_a35af7f77fb2019bc68fe76070d74a5ab}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionPolylineDel_a10dbf5c2c3bfd3adc351bae178ec4c33}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionPolylineDel_a11b87578c754fa0599fc8332d8b3876c}{update\-Mouse\-Cursor} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionPolylineDel_a3a68820bb2c43db9ea4d109b93dc5a5c}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionPolylineDel_a3a68820bb2c43db9ea4d109b93dc5a5c}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to move entities.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionPolylineDel_a9335b7146f6cb2176cabec390b784e67}{\index{R\-S\-\_\-\-Action\-Polyline\-Del@{R\-S\-\_\-\-Action\-Polyline\-Del}!Status@{Status}}
+\index{Status@{Status}!RS_ActionPolylineDel@{R\-S\-\_\-\-Action\-Polyline\-Del}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Polyline\-Del\-::\-Status}}}\label{classRS__ActionPolylineDel_a9335b7146f6cb2176cabec390b784e67}
+Action States. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Choose\-Entity@{Choose\-Entity}!R\-S\-\_\-\-Action\-Polyline\-Del@{R\-S\-\_\-\-Action\-Polyline\-Del}}\index{R\-S\-\_\-\-Action\-Polyline\-Del@{R\-S\-\_\-\-Action\-Polyline\-Del}!Choose\-Entity@{Choose\-Entity}}\item[{\em 
+\hypertarget{classRS__ActionPolylineDel_a9335b7146f6cb2176cabec390b784e67a3c799d7e60c67b37e875afc16482548e}{Choose\-Entity}\label{classRS__ActionPolylineDel_a9335b7146f6cb2176cabec390b784e67a3c799d7e60c67b37e875afc16482548e}
+}]Choosing existing polyline to delete its node. \index{Set\-Del\-Point@{Set\-Del\-Point}!R\-S\-\_\-\-Action\-Polyline\-Del@{R\-S\-\_\-\-Action\-Polyline\-Del}}\index{R\-S\-\_\-\-Action\-Polyline\-Del@{R\-S\-\_\-\-Action\-Polyline\-Del}!Set\-Del\-Point@{Set\-Del\-Point}}\item[{\em 
+\hypertarget{classRS__ActionPolylineDel_a9335b7146f6cb2176cabec390b784e67a2a26c7f0c6bba4b2636c9d8a1d5ee0ff}{Set\-Del\-Point}\label{classRS__ActionPolylineDel_a9335b7146f6cb2176cabec390b784e67a2a26c7f0c6bba4b2636c9d8a1d5ee0ff}
+}]Setting the deleting node point. \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionPolylineDel_a68ba81f6ef76c67cc83841e5d72231bd}{\index{R\-S\-\_\-\-Action\-Polyline\-Del@{R\-S\-\_\-\-Action\-Polyline\-Del}!init@{init}}
+\index{init@{init}!RS_ActionPolylineDel@{R\-S\-\_\-\-Action\-Polyline\-Del}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Polyline\-Del\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionPolylineDel_a68ba81f6ef76c67cc83841e5d72231bd}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae5113b2aef5a10acd192786b99580e4a}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionPolylineDel_ab4e18abf343353a22f776d1dcbbde7fc}{\index{R\-S\-\_\-\-Action\-Polyline\-Del@{R\-S\-\_\-\-Action\-Polyline\-Del}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_ActionPolylineDel@{R\-S\-\_\-\-Action\-Polyline\-Del}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Polyline\-Del\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionPolylineDel_ab4e18abf343353a22f776d1dcbbde7fc}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionPolylineDel_a35af7f77fb2019bc68fe76070d74a5ab}{\index{R\-S\-\_\-\-Action\-Polyline\-Del@{R\-S\-\_\-\-Action\-Polyline\-Del}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionPolylineDel@{R\-S\-\_\-\-Action\-Polyline\-Del}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Polyline\-Del\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionPolylineDel_a35af7f77fb2019bc68fe76070d74a5ab}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionPolylineDel_a01417c1b10a0d49976eb46fb1bfc5375}{\index{R\-S\-\_\-\-Action\-Polyline\-Del@{R\-S\-\_\-\-Action\-Polyline\-Del}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_ActionPolylineDel@{R\-S\-\_\-\-Action\-Polyline\-Del}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Action\-Polyline\-Del\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__ActionPolylineDel_a01417c1b10a0d49976eb46fb1bfc5375}
+Must be implemented to return the I\-D of this action.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]no default implementation \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af877a66b5b4a7053f2b1f0519c57a6f5}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionPolylineDel_a9680e81df75a3b6894812e150ed49c9f}{\index{R\-S\-\_\-\-Action\-Polyline\-Del@{R\-S\-\_\-\-Action\-Polyline\-Del}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionPolylineDel@{R\-S\-\_\-\-Action\-Polyline\-Del}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Polyline\-Del\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionPolylineDel_a9680e81df75a3b6894812e150ed49c9f}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionPolylineDel_a10dbf5c2c3bfd3adc351bae178ec4c33}{\index{R\-S\-\_\-\-Action\-Polyline\-Del@{R\-S\-\_\-\-Action\-Polyline\-Del}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionPolylineDel@{R\-S\-\_\-\-Action\-Polyline\-Del}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Polyline\-Del\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionPolylineDel_a10dbf5c2c3bfd3adc351bae178ec4c33}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionPolylineDel_a11b87578c754fa0599fc8332d8b3876c}{\index{R\-S\-\_\-\-Action\-Polyline\-Del@{R\-S\-\_\-\-Action\-Polyline\-Del}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionPolylineDel@{R\-S\-\_\-\-Action\-Polyline\-Del}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Polyline\-Del\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionPolylineDel_a11b87578c754fa0599fc8332d8b3876c}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionpolylinedel.\-h\item 
+librecad/src/actions/rs\-\_\-actionpolylinedel.\-cpp\end{DoxyCompactItemize}

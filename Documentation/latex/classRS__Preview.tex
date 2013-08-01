@@ -1,0 +1,122 @@
+\hypertarget{classRS__Preview}{\section{R\-S\-\_\-\-Preview Class Reference}
+\label{classRS__Preview}\index{R\-S\-\_\-\-Preview@{R\-S\-\_\-\-Preview}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-preview.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Preview\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classRS__Preview}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__Preview_a825e33e7c020406a9099b9192e7babb1}{R\-S\-\_\-\-Preview} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} $\ast$\hyperlink{classRS__Entity_a80358a8d2fc6739a516a278dc500b49f}{parent}=N\-U\-L\-L)
+\item 
+\hyperlink{classRS__Preview_ae179f4a248c41e6987bb2bee35c0a568}{$\sim$\-R\-S\-\_\-\-Preview} ()
+\item 
+virtual \hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6a}{R\-S2\-::\-Entity\-Type} \hyperlink{classRS__Preview_a494a92598b97d2f5b73161e6a9a18521}{rtti} () const 
+\item 
+virtual void \hyperlink{classRS__Preview_aa9d9ae2f8bcadf12651fb37433d8eb8c}{add\-Entity} (\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$entity)
+\item 
+void \hyperlink{classRS__Preview_a7208947384323aa60ef1119c672b4a9a}{add\-Clone\-Of} (\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$entity)
+\item 
+virtual void \hyperlink{classRS__Preview_affda5d6c405b0c973bd3dd131dde2915}{add\-Selection\-From} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container)
+\item 
+virtual void \hyperlink{classRS__Preview_a926acfa950b2b99a3503cfb1718a7ab5}{add\-All\-From} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container)
+\item 
+virtual void \hyperlink{classRS__Preview_a37d54f00316aa3799bc5a88c1c5ca786}{add\-Stretchables\-From} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v1, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v2)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class supports previewing. The \hyperlink{classRS__Snapper}{R\-S\-\_\-\-Snapper} class uses an instance of \hyperlink{classRS__Preview}{R\-S\-\_\-\-Preview} to preview entities, ranges, lines, arcs, ... on the fly.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__Preview_a825e33e7c020406a9099b9192e7babb1}{\index{R\-S\-\_\-\-Preview@{R\-S\-\_\-\-Preview}!R\-S\-\_\-\-Preview@{R\-S\-\_\-\-Preview}}
+\index{R\-S\-\_\-\-Preview@{R\-S\-\_\-\-Preview}!RS_Preview@{R\-S\-\_\-\-Preview}}
+\subsubsection[{R\-S\-\_\-\-Preview}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Preview\-::\-R\-S\-\_\-\-Preview (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} $\ast$}]{parent = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classRS__Preview_a825e33e7c020406a9099b9192e7babb1}
+Constructor. \hypertarget{classRS__Preview_ae179f4a248c41e6987bb2bee35c0a568}{\index{R\-S\-\_\-\-Preview@{R\-S\-\_\-\-Preview}!$\sim$\-R\-S\-\_\-\-Preview@{$\sim$\-R\-S\-\_\-\-Preview}}
+\index{$\sim$\-R\-S\-\_\-\-Preview@{$\sim$\-R\-S\-\_\-\-Preview}!RS_Preview@{R\-S\-\_\-\-Preview}}
+\subsubsection[{$\sim$\-R\-S\-\_\-\-Preview}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Preview\-::$\sim$\-R\-S\-\_\-\-Preview (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Preview_ae179f4a248c41e6987bb2bee35c0a568}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Preview_a926acfa950b2b99a3503cfb1718a7ab5}{\index{R\-S\-\_\-\-Preview@{R\-S\-\_\-\-Preview}!add\-All\-From@{add\-All\-From}}
+\index{add\-All\-From@{add\-All\-From}!RS_Preview@{R\-S\-\_\-\-Preview}}
+\subsubsection[{add\-All\-From}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Preview\-::add\-All\-From (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Preview_a926acfa950b2b99a3503cfb1718a7ab5}
+Adds all entities from 'container' to the preview (unselected). \hypertarget{classRS__Preview_a7208947384323aa60ef1119c672b4a9a}{\index{R\-S\-\_\-\-Preview@{R\-S\-\_\-\-Preview}!add\-Clone\-Of@{add\-Clone\-Of}}
+\index{add\-Clone\-Of@{add\-Clone\-Of}!RS_Preview@{R\-S\-\_\-\-Preview}}
+\subsubsection[{add\-Clone\-Of}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Preview\-::add\-Clone\-Of (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{entity}
+\end{DoxyParamCaption}
+)}}\label{classRS__Preview_a7208947384323aa60ef1119c672b4a9a}
+Clones the given entity and adds the clone to the preview. \hypertarget{classRS__Preview_aa9d9ae2f8bcadf12651fb37433d8eb8c}{\index{R\-S\-\_\-\-Preview@{R\-S\-\_\-\-Preview}!add\-Entity@{add\-Entity}}
+\index{add\-Entity@{add\-Entity}!RS_Preview@{R\-S\-\_\-\-Preview}}
+\subsubsection[{add\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Preview\-::add\-Entity (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity} $\ast$}]{entity}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Preview_aa9d9ae2f8bcadf12651fb37433d8eb8c}
+Adds an entity to this preview and removes any attributes / layer connectsions before that. 
+
+Reimplemented from \hyperlink{classRS__EntityContainer_a707175a62e2b4171691f90570f3867b3}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Preview_affda5d6c405b0c973bd3dd131dde2915}{\index{R\-S\-\_\-\-Preview@{R\-S\-\_\-\-Preview}!add\-Selection\-From@{add\-Selection\-From}}
+\index{add\-Selection\-From@{add\-Selection\-From}!RS_Preview@{R\-S\-\_\-\-Preview}}
+\subsubsection[{add\-Selection\-From}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Preview\-::add\-Selection\-From (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Preview_affda5d6c405b0c973bd3dd131dde2915}
+Adds all selected entities from 'container' to the preview (unselected). \hypertarget{classRS__Preview_a37d54f00316aa3799bc5a88c1c5ca786}{\index{R\-S\-\_\-\-Preview@{R\-S\-\_\-\-Preview}!add\-Stretchables\-From@{add\-Stretchables\-From}}
+\index{add\-Stretchables\-From@{add\-Stretchables\-From}!RS_Preview@{R\-S\-\_\-\-Preview}}
+\subsubsection[{add\-Stretchables\-From}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Preview\-::add\-Stretchables\-From (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v1, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Preview_a37d54f00316aa3799bc5a88c1c5ca786}
+Adds all entities in the given range and those which have endpoints in the given range to the preview. \hypertarget{classRS__Preview_a494a92598b97d2f5b73161e6a9a18521}{\index{R\-S\-\_\-\-Preview@{R\-S\-\_\-\-Preview}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_Preview@{R\-S\-\_\-\-Preview}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S2\-::\-Entity\-Type} R\-S\-\_\-\-Preview\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__Preview_a494a92598b97d2f5b73161e6a9a18521}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aa27d54713b7d442e5843997b8f13ce0e9}{R\-S2\-::\-Entity\-Container} 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classRS__EntityContainer_ada84ceb9590c74cd3b46134cdde40a3d}{R\-S\-\_\-\-Entity\-Container}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/actions/rs\-\_\-preview.\-h\item 
+librecad/src/lib/actions/rs\-\_\-preview.\-cpp\end{DoxyCompactItemize}

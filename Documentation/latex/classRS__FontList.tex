@@ -1,0 +1,133 @@
+\hypertarget{classRS__FontList}{\section{R\-S\-\_\-\-Font\-List Class Reference}
+\label{classRS__FontList}\index{R\-S\-\_\-\-Font\-List@{R\-S\-\_\-\-Font\-List}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-fontlist.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classRS__FontList_a3fc059b979528808a12e7cca411289a3}{init} ()
+\item 
+void \hyperlink{classRS__FontList_ae912dcb9679d8c8deec731b2709cf958}{clear\-Fonts} ()
+\item 
+\hypertarget{classRS__FontList_acffe5357e58671d025d9f17a583c910f}{int {\bfseries count\-Fonts} ()}\label{classRS__FontList_acffe5357e58671d025d9f17a583c910f}
+
+\item 
+virtual void \hyperlink{classRS__FontList_af49497812f26f2978216a0775a221ee9}{remove\-Font} (\hyperlink{classRS__Font}{R\-S\-\_\-\-Font} $\ast$font)
+\item 
+\hyperlink{classRS__Font}{R\-S\-\_\-\-Font} $\ast$ \hyperlink{classRS__FontList_a7df208482c106a314c6a481226d8254a}{request\-Font} (const Q\-String \&name)
+\item 
+Q\-List\-Iterator$<$ \hyperlink{classRS__Font}{R\-S\-\_\-\-Font} $\ast$ $>$ \hyperlink{classRS__FontList_a31898bbe03fc2f1402e29b474e2d99db}{get\-Iteretor} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classRS__FontList}{R\-S\-\_\-\-Font\-List} $\ast$ \hyperlink{classRS__FontList_a9ab9576f5b4ed9435b98f119e777b4f8}{instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__FontList_a65a46c1977ff8ad8135fa6807bfac819}{R\-S\-\_\-\-Font\-List} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__FontList_abb634c4bc11382782ee6f4e8012074fa}{static \hyperlink{classRS__FontList}{R\-S\-\_\-\-Font\-List} $\ast$ {\bfseries unique\-Instance} = N\-U\-L\-L}\label{classRS__FontList_abb634c4bc11382782ee6f4e8012074fa}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{classRS__FontList_a38203f8c82f97994c15092da29857676}{operator$<$$<$} (std\-::ostream \&os, \hyperlink{classRS__FontList}{R\-S\-\_\-\-Font\-List} \&l)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The global list of fonts. This is implemented as a singleton. Use \hyperlink{classRS__FontList_a9ab9576f5b4ed9435b98f119e777b4f8}{R\-S\-\_\-\-Font\-List\-::instance()} to get a pointer to the object.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__FontList_a65a46c1977ff8ad8135fa6807bfac819}{\index{R\-S\-\_\-\-Font\-List@{R\-S\-\_\-\-Font\-List}!R\-S\-\_\-\-Font\-List@{R\-S\-\_\-\-Font\-List}}
+\index{R\-S\-\_\-\-Font\-List@{R\-S\-\_\-\-Font\-List}!RS_FontList@{R\-S\-\_\-\-Font\-List}}
+\subsubsection[{R\-S\-\_\-\-Font\-List}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Font\-List\-::\-R\-S\-\_\-\-Font\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__FontList_a65a46c1977ff8ad8135fa6807bfac819}
+Default constructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__FontList_ae912dcb9679d8c8deec731b2709cf958}{\index{R\-S\-\_\-\-Font\-List@{R\-S\-\_\-\-Font\-List}!clear\-Fonts@{clear\-Fonts}}
+\index{clear\-Fonts@{clear\-Fonts}!RS_FontList@{R\-S\-\_\-\-Font\-List}}
+\subsubsection[{clear\-Fonts}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Font\-List\-::clear\-Fonts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__FontList_ae912dcb9679d8c8deec731b2709cf958}
+Removes all fonts in the fontlist. \hypertarget{classRS__FontList_a31898bbe03fc2f1402e29b474e2d99db}{\index{R\-S\-\_\-\-Font\-List@{R\-S\-\_\-\-Font\-List}!get\-Iteretor@{get\-Iteretor}}
+\index{get\-Iteretor@{get\-Iteretor}!RS_FontList@{R\-S\-\_\-\-Font\-List}}
+\subsubsection[{get\-Iteretor}]{\setlength{\rightskip}{0pt plus 5cm}Q\-List\-Iterator$<${\bf R\-S\-\_\-\-Font} $\ast$$>$ R\-S\-\_\-\-Font\-List\-::get\-Iteretor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__FontList_a31898bbe03fc2f1402e29b474e2d99db}
+\begin{DoxyReturn}{Returns}
+a const iterator for the font list. 
+\end{DoxyReturn}
+\hypertarget{classRS__FontList_a3fc059b979528808a12e7cca411289a3}{\index{R\-S\-\_\-\-Font\-List@{R\-S\-\_\-\-Font\-List}!init@{init}}
+\index{init@{init}!RS_FontList@{R\-S\-\_\-\-Font\-List}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Font\-List\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__FontList_a3fc059b979528808a12e7cca411289a3}
+Initializes the font list by creating empty \hyperlink{classRS__Font}{R\-S\-\_\-\-Font} objects, one for each font that could be found. \hypertarget{classRS__FontList_a9ab9576f5b4ed9435b98f119e777b4f8}{\index{R\-S\-\_\-\-Font\-List@{R\-S\-\_\-\-Font\-List}!instance@{instance}}
+\index{instance@{instance}!RS_FontList@{R\-S\-\_\-\-Font\-List}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf R\-S\-\_\-\-Font\-List}$\ast$ R\-S\-\_\-\-Font\-List\-::instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classRS__FontList_a9ab9576f5b4ed9435b98f119e777b4f8}
+\begin{DoxyReturn}{Returns}
+Instance to the unique font list. 
+\end{DoxyReturn}
+\hypertarget{classRS__FontList_af49497812f26f2978216a0775a221ee9}{\index{R\-S\-\_\-\-Font\-List@{R\-S\-\_\-\-Font\-List}!remove\-Font@{remove\-Font}}
+\index{remove\-Font@{remove\-Font}!RS_FontList@{R\-S\-\_\-\-Font\-List}}
+\subsubsection[{remove\-Font}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Font\-List\-::remove\-Font (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Font} $\ast$}]{font}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FontList_af49497812f26f2978216a0775a221ee9}
+Removes a font from the list. The font was removed from the list and is deleted. \hypertarget{classRS__FontList_a7df208482c106a314c6a481226d8254a}{\index{R\-S\-\_\-\-Font\-List@{R\-S\-\_\-\-Font\-List}!request\-Font@{request\-Font}}
+\index{request\-Font@{request\-Font}!RS_FontList@{R\-S\-\_\-\-Font\-List}}
+\subsubsection[{request\-Font}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Font} $\ast$ R\-S\-\_\-\-Font\-List\-::request\-Font (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{name}
+\end{DoxyParamCaption}
+)}}\label{classRS__FontList_a7df208482c106a314c6a481226d8254a}
+\begin{DoxyReturn}{Returns}
+Pointer to the font with the given name or {\ttfamily N\-U\-L\-L} if no such font was found. The font will be loaded into memory if it's not already. 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classRS__FontList_a38203f8c82f97994c15092da29857676}{\index{R\-S\-\_\-\-Font\-List@{R\-S\-\_\-\-Font\-List}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!RS_FontList@{R\-S\-\_\-\-Font\-List}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os, }
+\item[{{\bf R\-S\-\_\-\-Font\-List} \&}]{l}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classRS__FontList_a38203f8c82f97994c15092da29857676}
+Dumps the fonts to stdout. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-fontlist.\-h\item 
+librecad/src/lib/engine/rs\-\_\-fontlist.\-cpp\end{DoxyCompactItemize}

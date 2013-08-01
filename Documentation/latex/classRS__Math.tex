@@ -1,0 +1,374 @@
+\hypertarget{classRS__Math}{\section{R\-S\-\_\-\-Math Class Reference}
+\label{classRS__Math}\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-math.\-h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classRS__Math_ae9283dad7f5bf90453943cbe2fc031ad}{round} (double v)
+\item 
+static double \hyperlink{classRS__Math_a277ee6bb63fcd7fe31e2b3c7f6243a56}{pow} (double x, double y)
+\item 
+\hypertarget{classRS__Math_a45b2a17df87f27cda973dccb0786bdb1}{static \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries pow} (\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} x, double y)}\label{classRS__Math_a45b2a17df87f27cda973dccb0786bdb1}
+
+\item 
+static double \hyperlink{classRS__Math_a04db55c8e170d671d80279bf6c03b38a}{rad2deg} (double a)
+\item 
+static double \hyperlink{classRS__Math_a75fd326199dde13acfa5d818228d7bcb}{deg2rad} (double a)
+\item 
+static double \hyperlink{classRS__Math_a71f904220f6c5d8ca21b01736dc7f9af}{rad2gra} (double a)
+\item 
+static int \hyperlink{classRS__Math_a619b4d214558b1cdefeb48664ceca6a4}{find\-G\-C\-D} (int a, int b)
+\item 
+static bool \hyperlink{classRS__Math_ab36a8ac371a6c61e883c9d6ec267b257}{is\-Angle\-Between} (double a, double a1, double a2, bool reversed)
+\item 
+static double \hyperlink{classRS__Math_a47e501d73133a0b89a3ceafd9472d1aa}{correct\-Angle} (double a)
+\item 
+static double \hyperlink{classRS__Math_a8322ddc8fd8171414bf3c88d5054a501}{get\-Angle\-Difference} (double a1, double a2, bool reversed=false)
+\item 
+static double \hyperlink{classRS__Math_a5dbb5b417074a25c7a6c51e90b431886}{make\-Angle\-Readable} (double angle, bool readable=true, bool $\ast$corrected=N\-U\-L\-L)
+\item 
+static bool \hyperlink{classRS__Math_a7f5e8c16996cdc0d932afbd20598e11d}{is\-Angle\-Readable} (double angle)
+\item 
+static bool \hyperlink{classRS__Math_aa5f878b254a910ee3ab29d61572ac8c2}{is\-Same\-Direction} (double dir1, double dir2, double tol)
+\item 
+static double \hyperlink{classRS__Math_a5b36874b3feae9cfea03a2647ad7ccc7}{eval} (const Q\-String \&expr, double def=0.\-0)
+\item 
+static bool \hyperlink{classRS__Math_ad38812764771b9a01e014ca0aa904e22}{cmp\-Double} (double v1, double v2, double tol=0.\-001)
+\item 
+\hypertarget{classRS__Math_a6372e0ddd3e53248bbeae3a4afcc2f3a}{{\footnotesize template$<$class T $>$ }\\static void {\bfseries swap} (T \&a, T \&b)}\label{classRS__Math_a6372e0ddd3e53248bbeae3a4afcc2f3a}
+
+\item 
+static double \hyperlink{classRS__Math_a28d5ab64462183ef928c795932b76a7a}{eval} (const Q\-String \&expr, bool $\ast$ok)
+\item 
+\hypertarget{classRS__Math_a6aa16c5aac5cf6114d2d3bdd5ea86f70}{static std\-::vector$<$ double $>$ {\bfseries quadratic\-Solver} (const std\-::vector$<$ double $>$ \&ce)}\label{classRS__Math_a6aa16c5aac5cf6114d2d3bdd5ea86f70}
+
+\item 
+\hypertarget{classRS__Math_a4e1161b5c368f6a23f5cf65c1a50a806}{static std\-::vector$<$ double $>$ {\bfseries cubic\-Solver} (const std\-::vector$<$ double $>$ \&ce)}\label{classRS__Math_a4e1161b5c368f6a23f5cf65c1a50a806}
+
+\item 
+static std\-::vector$<$ double $>$ \hyperlink{classRS__Math_af4f87bcf267d12eff9cae3123d0cc4cc}{quartic\-Solver} (const std\-::vector$<$ double $>$ \&ce)
+\item 
+static std\-::vector$<$ double $>$ \hyperlink{classRS__Math_aea615c3a57d93b4722870f34d8aee59e}{quartic\-Solver\-Full} (const std\-::vector$<$ double $>$ \&ce)
+\item 
+static bool \hyperlink{classRS__Math_a71a95e505cac0e56a9d9d03639270f73}{linear\-Solver} (const Q\-Vector$<$ Q\-Vector$<$ double $>$ $>$ \&m, Q\-Vector$<$ double $>$ \&sn)
+\item 
+static \hyperlink{classRS__VectorSolutions}{R\-S\-\_\-\-Vector\-Solutions} \hyperlink{classRS__Math_abf5a54549bf59de716b4afff3c64805c}{simultaneous\-Quadratic\-Solver} (const std\-::vector$<$ double $>$ \&m)
+\item 
+static \hyperlink{classRS__VectorSolutions}{R\-S\-\_\-\-Vector\-Solutions} \hyperlink{classRS__Math_a944ac480e7a6021f64ee1df480bff7e5}{simultaneous\-Quadratic\-Solver\-Full} (const std\-::vector$<$ std\-::vector$<$ double $>$ $>$ \&m)
+\item 
+static \hyperlink{classRS__VectorSolutions}{R\-S\-\_\-\-Vector\-Solutions} \hyperlink{classRS__Math_a99aa6798cc6c15e910ef3152ef6a76cb}{simultaneous\-Quadratic\-Solver\-Mixed} (const std\-::vector$<$ std\-::vector$<$ double $>$ $>$ \&m)
+\item 
+static bool \hyperlink{classRS__Math_a0ae306acd0f3edb84555e3c0a5d1a049}{simultaneous\-Quadratic\-Verify} (const std\-::vector$<$ std\-::vector$<$ double $>$ $>$ \&m, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v)
+\item 
+static double \hyperlink{classRS__Math_aaae44ec0328bfe0d2ad664eef03a0494}{elliptic\-Integral\-\_\-2} (const double \&k, const double \&phi)
+\item 
+static Q\-String \hyperlink{classRS__Math_abe2a4ac0527cb9c7c7c79b89864e321e}{double\-To\-String} (double value, double prec)
+\item 
+static Q\-String \hyperlink{classRS__Math_ab5c03ef4a4aacd9bc6f2dc7a8d1542d8}{double\-To\-String} (double value, int prec)
+\item 
+static void \hyperlink{classRS__Math_ad19ab060a70905596d1a4ae35b68de56}{test} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Math functions. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Math_ad38812764771b9a01e014ca0aa904e22}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!cmp\-Double@{cmp\-Double}}
+\index{cmp\-Double@{cmp\-Double}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{cmp\-Double}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Math\-::cmp\-Double (
+\begin{DoxyParamCaption}
+\item[{double}]{v1, }
+\item[{double}]{v2, }
+\item[{double}]{tol = {\ttfamily 0.001}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_ad38812764771b9a01e014ca0aa904e22}
+Compares two double values with a tolerance. \hypertarget{classRS__Math_a47e501d73133a0b89a3ceafd9472d1aa}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!correct\-Angle@{correct\-Angle}}
+\index{correct\-Angle@{correct\-Angle}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{correct\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Math\-::correct\-Angle (
+\begin{DoxyParamCaption}
+\item[{double}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_a47e501d73133a0b89a3ceafd9472d1aa}
+Corrects the given angle to the range of 0-\/2$\ast$\-Pi. \hypertarget{classRS__Math_a75fd326199dde13acfa5d818228d7bcb}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!deg2rad@{deg2rad}}
+\index{deg2rad@{deg2rad}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{deg2rad}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Math\-::deg2rad (
+\begin{DoxyParamCaption}
+\item[{double}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_a75fd326199dde13acfa5d818228d7bcb}
+Converts degrees to radians. \hypertarget{classRS__Math_abe2a4ac0527cb9c7c7c79b89864e321e}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!double\-To\-String@{double\-To\-String}}
+\index{double\-To\-String@{double\-To\-String}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{double\-To\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Math\-::double\-To\-String (
+\begin{DoxyParamCaption}
+\item[{double}]{value, }
+\item[{double}]{prec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_abe2a4ac0527cb9c7c7c79b89864e321e}
+Converts a double into a string which is as short as possible
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The double value \\
+\hline
+{\em prec} & Precision e.\-g. a precision of 1 would mean that a value of 2.\-12030 will be converted to \char`\"{}2.\-1\char`\"{}. 2.\-000 is always just \char`\"{}2\char`\"{}). \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Math_ab5c03ef4a4aacd9bc6f2dc7a8d1542d8}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!double\-To\-String@{double\-To\-String}}
+\index{double\-To\-String@{double\-To\-String}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{double\-To\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Math\-::double\-To\-String (
+\begin{DoxyParamCaption}
+\item[{double}]{value, }
+\item[{int}]{prec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_ab5c03ef4a4aacd9bc6f2dc7a8d1542d8}
+Converts a double into a string which is as short as possible.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The double value \\
+\hline
+{\em prec} & Precision \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Math_aaae44ec0328bfe0d2ad664eef03a0494}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!elliptic\-Integral\-\_\-2@{elliptic\-Integral\-\_\-2}}
+\index{elliptic\-Integral\-\_\-2@{elliptic\-Integral\-\_\-2}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{elliptic\-Integral\-\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Math\-::elliptic\-Integral\-\_\-2 (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{k, }
+\item[{const double \&}]{phi}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_aaae44ec0328bfe0d2ad664eef03a0494}
+wrapper for elliptic integral wrapper of elliptic integral of the second type, Legendre form  the elliptic modulus or eccentricity  elliptic angle, must be within range of \mbox{[}0, M\-\_\-\-P\-I\mbox{]}
+
+$\ast$\-Author\-: Dongxu Li
+
+wrapper of elliptic integral of the second type, Legendre form  the elliptic modulus or eccentricity  elliptic angle, must be within range of \mbox{[}0, M\-\_\-\-P\-I\mbox{]}
+
+$\ast$\-Author\-: Dongxu Li \hypertarget{classRS__Math_a5b36874b3feae9cfea03a2647ad7ccc7}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!eval@{eval}}
+\index{eval@{eval}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{eval}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Math\-::eval (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{expr, }
+\item[{double}]{def = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_a5b36874b3feae9cfea03a2647ad7ccc7}
+Evaluates a mathematical expression and returns the result. If an error occured, the given default value 'def' will be returned. \hypertarget{classRS__Math_a28d5ab64462183ef928c795932b76a7a}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!eval@{eval}}
+\index{eval@{eval}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{eval}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Math\-::eval (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{expr, }
+\item[{bool $\ast$}]{ok}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_a28d5ab64462183ef928c795932b76a7a}
+Evaluates a mathematical expression and returns the result. If an error occured, ok will be set to false (if ok isn't N\-U\-L\-L). \hypertarget{classRS__Math_a619b4d214558b1cdefeb48664ceca6a4}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!find\-G\-C\-D@{find\-G\-C\-D}}
+\index{find\-G\-C\-D@{find\-G\-C\-D}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{find\-G\-C\-D}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Math\-::find\-G\-C\-D (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_a619b4d214558b1cdefeb48664ceca6a4}
+Finds greatest common divider using Euclid's algorithm. \hypertarget{classRS__Math_a8322ddc8fd8171414bf3c88d5054a501}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!get\-Angle\-Difference@{get\-Angle\-Difference}}
+\index{get\-Angle\-Difference@{get\-Angle\-Difference}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{get\-Angle\-Difference}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Math\-::get\-Angle\-Difference (
+\begin{DoxyParamCaption}
+\item[{double}]{a1, }
+\item[{double}]{a2, }
+\item[{bool}]{reversed = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_a8322ddc8fd8171414bf3c88d5054a501}
+\begin{DoxyReturn}{Returns}
+The angle that needs to be added to a1 to reach a2. Always positive and less than 2$\ast$pi. 
+\end{DoxyReturn}
+\hypertarget{classRS__Math_ab36a8ac371a6c61e883c9d6ec267b257}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!is\-Angle\-Between@{is\-Angle\-Between}}
+\index{is\-Angle\-Between@{is\-Angle\-Between}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{is\-Angle\-Between}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Math\-::is\-Angle\-Between (
+\begin{DoxyParamCaption}
+\item[{double}]{a, }
+\item[{double}]{a1, }
+\item[{double}]{a2, }
+\item[{bool}]{reversed}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_ab36a8ac371a6c61e883c9d6ec267b257}
+Tests if angle a is between a1 and a2. a, a1 and a2 must be in the range between 0 and 2$\ast$\-P\-I. All angles in rad.
+
+
+\begin{DoxyParams}{Parameters}
+{\em reversed} & true for clockwise testing. false for ccw testing. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the angle a is between a1 and a2. 
+\end{DoxyReturn}
+\hypertarget{classRS__Math_a7f5e8c16996cdc0d932afbd20598e11d}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!is\-Angle\-Readable@{is\-Angle\-Readable}}
+\index{is\-Angle\-Readable@{is\-Angle\-Readable}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{is\-Angle\-Readable}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Math\-::is\-Angle\-Readable (
+\begin{DoxyParamCaption}
+\item[{double}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_a7f5e8c16996cdc0d932afbd20598e11d}
+\begin{DoxyReturn}{Returns}
+true\-: if the given angle is in a range that is readable for texts created with that angle. 
+\end{DoxyReturn}
+\hypertarget{classRS__Math_aa5f878b254a910ee3ab29d61572ac8c2}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!is\-Same\-Direction@{is\-Same\-Direction}}
+\index{is\-Same\-Direction@{is\-Same\-Direction}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{is\-Same\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Math\-::is\-Same\-Direction (
+\begin{DoxyParamCaption}
+\item[{double}]{dir1, }
+\item[{double}]{dir2, }
+\item[{double}]{tol}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_aa5f878b254a910ee3ab29d61572ac8c2}
+
+\begin{DoxyParams}{Parameters}
+{\em tol} & Tolerance in rad. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & The two angles point in the same direction. \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{classRS__Math_a71a95e505cac0e56a9d9d03639270f73}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!linear\-Solver@{linear\-Solver}}
+\index{linear\-Solver@{linear\-Solver}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{linear\-Solver}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Math\-::linear\-Solver (
+\begin{DoxyParamCaption}
+\item[{const Q\-Vector$<$ Q\-Vector$<$ double $>$ $>$ \&}]{mt, }
+\item[{Q\-Vector$<$ double $>$ \&}]{sn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_a71a95e505cac0e56a9d9d03639270f73}
+Solve linear equation set @ mt holds the augmented matrix @ sn holds the solution @ return true, if the equation set has a unique solution, return false otherwise
+
+\-: Dongxu Li \hypertarget{classRS__Math_a5dbb5b417074a25c7a6c51e90b431886}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!make\-Angle\-Readable@{make\-Angle\-Readable}}
+\index{make\-Angle\-Readable@{make\-Angle\-Readable}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{make\-Angle\-Readable}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Math\-::make\-Angle\-Readable (
+\begin{DoxyParamCaption}
+\item[{double}]{angle, }
+\item[{bool}]{readable = {\ttfamily true}, }
+\item[{bool $\ast$}]{corrected = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_a5dbb5b417074a25c7a6c51e90b431886}
+Makes a text constructed with the given angle readable. Used for dimension texts and for mirroring texts.
+
+
+\begin{DoxyParams}{Parameters}
+{\em readable} & true\-: make angle readable, false\-: unreadable \\
+\hline
+{\em corrected} & Will point to true if the given angle was corrected, false otherwise.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The given angle or the given angle+\-P\-I, depending which on is readable from the bottom or right. 
+\end{DoxyReturn}
+\hypertarget{classRS__Math_a277ee6bb63fcd7fe31e2b3c7f6243a56}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!pow@{pow}}
+\index{pow@{pow}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{pow}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Math\-::pow (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_a277ee6bb63fcd7fe31e2b3c7f6243a56}
+Save pow function \hypertarget{classRS__Math_af4f87bcf267d12eff9cae3123d0cc4cc}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!quartic\-Solver@{quartic\-Solver}}
+\index{quartic\-Solver@{quartic\-Solver}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{quartic\-Solver}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ double $>$ R\-S\-\_\-\-Math\-::quartic\-Solver (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ double $>$ \&}]{ce}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_af4f87bcf267d12eff9cae3123d0cc4cc}
+\begin{DoxyVerb}quartic solver
+\end{DoxyVerb}
+ x$^\wedge$4 + ce\mbox{[}0\mbox{]} x$^\wedge$3 + ce\mbox{[}1\mbox{]} x$^\wedge$2 + ce\mbox{[}2\mbox{]} x + ce\mbox{[}3\mbox{]} = 0 , a vector of size 4 contains the coefficient in order \begin{DoxyReturn}{Returns}
+, a vector contains real roots 
+\end{DoxyReturn}
+\hypertarget{classRS__Math_aea615c3a57d93b4722870f34d8aee59e}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!quartic\-Solver\-Full@{quartic\-Solver\-Full}}
+\index{quartic\-Solver\-Full@{quartic\-Solver\-Full}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{quartic\-Solver\-Full}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ double $>$ R\-S\-\_\-\-Math\-::quartic\-Solver\-Full (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ double $>$ \&}]{ce}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_aea615c3a57d93b4722870f34d8aee59e}
+\begin{DoxyVerb}  quartic solver
+\end{DoxyVerb}
+ ce\mbox{[}4\mbox{]} x$^\wedge$4 + ce\mbox{[}3\mbox{]} x$^\wedge$3 + ce\mbox{[}2\mbox{]} x$^\wedge$2 + ce\mbox{[}1\mbox{]} x + ce\mbox{[}0\mbox{]} = 0 , a vector of size 5 contains the coefficient in order \begin{DoxyReturn}{Returns}
+, a vector contains real roots
+\end{DoxyReturn}
+\begin{DoxyVerb}quartic solver
+\end{DoxyVerb}
+ ce\mbox{[}4\mbox{]} x$^\wedge$4 + ce\mbox{[}3\mbox{]} x$^\wedge$3 + ce\mbox{[}2\mbox{]} x$^\wedge$2 + ce\mbox{[}1\mbox{]} x + ce\mbox{[}0\mbox{]} = 0 , a vector of size 5 contains the coefficient in order \begin{DoxyReturn}{Returns}
+, a vector contains real roots $\ast$\-To\-Do, need a robust algorithm to locate zero terms, better handling of tolerances 
+\end{DoxyReturn}
+\hypertarget{classRS__Math_a04db55c8e170d671d80279bf6c03b38a}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!rad2deg@{rad2deg}}
+\index{rad2deg@{rad2deg}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{rad2deg}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Math\-::rad2deg (
+\begin{DoxyParamCaption}
+\item[{double}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_a04db55c8e170d671d80279bf6c03b38a}
+Converts radians to degrees. \hypertarget{classRS__Math_a71f904220f6c5d8ca21b01736dc7f9af}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!rad2gra@{rad2gra}}
+\index{rad2gra@{rad2gra}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{rad2gra}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Math\-::rad2gra (
+\begin{DoxyParamCaption}
+\item[{double}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_a71f904220f6c5d8ca21b01736dc7f9af}
+Converts radians to gradians. \hypertarget{classRS__Math_ae9283dad7f5bf90453943cbe2fc031ad}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!round@{round}}
+\index{round@{round}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{round}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Math\-::round (
+\begin{DoxyParamCaption}
+\item[{double}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_ae9283dad7f5bf90453943cbe2fc031ad}
+Rounds the given double to the closest int. \hypertarget{classRS__Math_abf5a54549bf59de716b4afff3c64805c}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!simultaneous\-Quadratic\-Solver@{simultaneous\-Quadratic\-Solver}}
+\index{simultaneous\-Quadratic\-Solver@{simultaneous\-Quadratic\-Solver}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{simultaneous\-Quadratic\-Solver}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector\-Solutions} R\-S\-\_\-\-Math\-::simultaneous\-Quadratic\-Solver (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ double $>$ \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_abf5a54549bf59de716b4afff3c64805c}
+solver quadratic simultaneous equations of a set of two
+
+solver quadratic simultaneous equations of set two \hypertarget{classRS__Math_a944ac480e7a6021f64ee1df480bff7e5}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!simultaneous\-Quadratic\-Solver\-Full@{simultaneous\-Quadratic\-Solver\-Full}}
+\index{simultaneous\-Quadratic\-Solver\-Full@{simultaneous\-Quadratic\-Solver\-Full}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{simultaneous\-Quadratic\-Solver\-Full}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector\-Solutions} R\-S\-\_\-\-Math\-::simultaneous\-Quadratic\-Solver\-Full (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ std\-::vector$<$ double $>$ $>$ \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_a944ac480e7a6021f64ee1df480bff7e5}
+solver quadratic simultaneous equations of a set of two eliminate x, quartic equation of y
+
+Collect\mbox{[}Eliminate\mbox{[}\{ a$\ast$x$^\wedge$2 + b$\ast$x$\ast$y+c$\ast$y$^\wedge$2+d$\ast$x+e$\ast$y+f==0,g$\ast$x$^\wedge$2+h$\ast$x$\ast$y+i$\ast$y$^\wedge$2+j$\ast$x+k$\ast$y+l==0\},x\mbox{]},y\mbox{]}\hypertarget{classRS__Math_a99aa6798cc6c15e910ef3152ef6a76cb}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!simultaneous\-Quadratic\-Solver\-Mixed@{simultaneous\-Quadratic\-Solver\-Mixed}}
+\index{simultaneous\-Quadratic\-Solver\-Mixed@{simultaneous\-Quadratic\-Solver\-Mixed}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{simultaneous\-Quadratic\-Solver\-Mixed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector\-Solutions} R\-S\-\_\-\-Math\-::simultaneous\-Quadratic\-Solver\-Mixed (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ std\-::vector$<$ double $>$ $>$ \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_a99aa6798cc6c15e910ef3152ef6a76cb}
+y (2 b c d-\/a c e)-\/a c g+c$^\wedge$2 d = y$^\wedge$2 (a$^\wedge$2 (-\/f)+a b e-\/b$^\wedge$2 d)+y (a b g-\/a$^\wedge$2 h)+a$^\wedge$2 (-\/i)\hypertarget{classRS__Math_a0ae306acd0f3edb84555e3c0a5d1a049}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!simultaneous\-Quadratic\-Verify@{simultaneous\-Quadratic\-Verify}}
+\index{simultaneous\-Quadratic\-Verify@{simultaneous\-Quadratic\-Verify}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{simultaneous\-Quadratic\-Verify}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Math\-::simultaneous\-Quadratic\-Verify (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ std\-::vector$<$ double $>$ $>$ \&}]{m, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_a0ae306acd0f3edb84555e3c0a5d1a049}
+verify a solution for simultaneous\-Quadratic  the coefficient matrix , a candidate to verify \begin{DoxyReturn}{Returns}
+true, for a valid solution 
+\end{DoxyReturn}
+tolerance test for bug\#3606099 verifying the equations to floating point tolerance by terms\hypertarget{classRS__Math_ad19ab060a70905596d1a4ae35b68de56}{\index{R\-S\-\_\-\-Math@{R\-S\-\_\-\-Math}!test@{test}}
+\index{test@{test}!RS_Math@{R\-S\-\_\-\-Math}}
+\subsubsection[{test}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Math\-::test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Math_ad19ab060a70905596d1a4ae35b68de56}
+Performs some testing for the math class. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/math/rs\-\_\-math.\-h\item 
+librecad/src/lib/math/rs\-\_\-math.\-cpp\end{DoxyCompactItemize}

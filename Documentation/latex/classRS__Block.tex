@@ -1,0 +1,260 @@
+\hypertarget{classRS__Block}{\section{R\-S\-\_\-\-Block Class Reference}
+\label{classRS__Block}\index{R\-S\-\_\-\-Block@{R\-S\-\_\-\-Block}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-block.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Block\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{classRS__Block}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__Block_a6b07340f917f5fc95285761d3d46c391}{R\-S\-\_\-\-Block} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} $\ast$\hyperlink{classRS__Entity_a80358a8d2fc6739a516a278dc500b49f}{parent}, const \hyperlink{classRS__BlockData}{R\-S\-\_\-\-Block\-Data} \&d)
+\item 
+\hypertarget{classRS__Block_ab296caf344c57e9cf1f63a2e86312b38}{virtual \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$ {\bfseries clone} ()}\label{classRS__Block_ab296caf344c57e9cf1f63a2e86312b38}
+
+\item 
+virtual \hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6a}{R\-S2\-::\-Entity\-Type} \hyperlink{classRS__Block_acfe58f363ff7e72ac42d51dbfd3f0b71}{rtti} () const 
+\item 
+Q\-String \hyperlink{classRS__Block_ac6d7125aa8638c743adbbe6b275ca304}{get\-Name} () const 
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Block_aa4f776303c15ed622bba648945e42738}{get\-Base\-Point} () const 
+\item 
+\hypertarget{classRS__Block_a74bcc0830b2d5c8bf8930ec7509dafb5}{virtual \hyperlink{classRS__LayerList}{R\-S\-\_\-\-Layer\-List} $\ast$ {\bfseries get\-Layer\-List} ()}\label{classRS__Block_a74bcc0830b2d5c8bf8930ec7509dafb5}
+
+\item 
+\hypertarget{classRS__Block_a110d71e74622afc4b3bc4ceeaf7212d4}{virtual \hyperlink{classRS__BlockList}{R\-S\-\_\-\-Block\-List} $\ast$ {\bfseries get\-Block\-List} ()}\label{classRS__Block_a110d71e74622afc4b3bc4ceeaf7212d4}
+
+\item 
+virtual void \hyperlink{classRS__Block_ab444087d5a42be6f9b27ef88ba468a6a}{new\-Doc} ()
+\item 
+virtual bool \hyperlink{classRS__Block_ab7a548d214963b2982954a6612df48dc}{save} (bool is\-Auto\-Save=false)
+\item 
+virtual bool \hyperlink{classRS__Block_af70feeeb48e6f59403d4a3fc307a8eb6}{save\-As} (const Q\-String \&\hyperlink{classRS__Document_aefd3d25d96ec31943bdfd1453031a423}{filename}, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} type, bool force=false)
+\item 
+virtual bool \hyperlink{classRS__Block_a1ee689a437f6dbd4578d7073f61b52cb}{open} (const Q\-String \&, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type})
+\item 
+\hypertarget{classRS__Block_aea681487278b85482fd7997f7fb64b95}{virtual bool {\bfseries load\-Template} (const Q\-String \&, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type})}\label{classRS__Block_aea681487278b85482fd7997f7fb64b95}
+
+\item 
+void \hyperlink{classRS__Block_a0138315e50fbc584be61295c23804b4d}{set\-Name} (const Q\-String \&n)
+\item 
+bool \hyperlink{classRS__Block_ac43440d111abe6c1cc9ddae9b0f5727d}{is\-Frozen} () const 
+\item 
+void \hyperlink{classRS__Block_ad79ccca26afa6e02dea92bcd165eb360}{toggle} ()
+\item 
+void \hyperlink{classRS__Block_af5ef165dda427fe7b87aa4bb0e125bcf}{freeze} (bool freeze)
+\item 
+virtual void \hyperlink{classRS__Block_a7f5958a0728ee32ad361cbb79c4cc3f1}{set\-Modified} (bool m)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__BlockData}{R\-S\-\_\-\-Block\-Data} \hyperlink{classRS__Block_ae9303e76ea74cbf42f95ba9a1e476b1b}{data}
+\begin{DoxyCompactList}\small\item\em Block data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__Block_af76093eaee24d0094ffbb739efcff4e1}{class {\bfseries R\-S\-\_\-\-Block\-List}}\label{classRS__Block_af76093eaee24d0094ffbb739efcff4e1}
+
+\item 
+\hypertarget{classRS__Block_a929f76719c4bd8106f359c10c45fb9fe}{std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&os, const \hyperlink{classRS__Block}{R\-S\-\_\-\-Block} \&b)}\label{classRS__Block_a929f76719c4bd8106f359c10c45fb9fe}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A block is a group of entities. A block unlike an other entity container has a base point which defines the offset of the block. Note that although technically possible, a block should never be part of the entity tree of a graphic. Blocks are stored in a seperate list inside the graphic document (a block list). The graphic can contain \hyperlink{classRS__Insert}{R\-S\-\_\-\-Insert} entities that refer to such blocks.
+
+blocks are documents and can therefore be handled by graphic views.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__Block_a6b07340f917f5fc95285761d3d46c391}{\index{R\-S\-\_\-\-Block@{R\-S\-\_\-\-Block}!R\-S\-\_\-\-Block@{R\-S\-\_\-\-Block}}
+\index{R\-S\-\_\-\-Block@{R\-S\-\_\-\-Block}!RS_Block@{R\-S\-\_\-\-Block}}
+\subsubsection[{R\-S\-\_\-\-Block}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Block\-::\-R\-S\-\_\-\-Block (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} $\ast$}]{parent, }
+\item[{const {\bf R\-S\-\_\-\-Block\-Data} \&}]{d}
+\end{DoxyParamCaption}
+)}}\label{classRS__Block_a6b07340f917f5fc95285761d3d46c391}
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The graphic this block belongs to. \\
+\hline
+{\em block\-Data} & defining data of the block.\\
+\hline
+{\em parent} & The graphic this block belongs to. \\
+\hline
+{\em name} & The name of the block used as an identifier. \\
+\hline
+{\em base\-Point} & Base point (offset) of the block. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Block_af5ef165dda427fe7b87aa4bb0e125bcf}{\index{R\-S\-\_\-\-Block@{R\-S\-\_\-\-Block}!freeze@{freeze}}
+\index{freeze@{freeze}!RS_Block@{R\-S\-\_\-\-Block}}
+\subsubsection[{freeze}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Block\-::freeze (
+\begin{DoxyParamCaption}
+\item[{bool}]{freeze}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Block_af5ef165dda427fe7b87aa4bb0e125bcf}
+(De-\/)freezes this block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em freeze} & true\-: freeze, false\-: defreeze \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Block_aa4f776303c15ed622bba648945e42738}{\index{R\-S\-\_\-\-Block@{R\-S\-\_\-\-Block}!get\-Base\-Point@{get\-Base\-Point}}
+\index{get\-Base\-Point@{get\-Base\-Point}!RS_Block@{R\-S\-\_\-\-Block}}
+\subsubsection[{get\-Base\-Point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Block\-::get\-Base\-Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Block_aa4f776303c15ed622bba648945e42738}
+\begin{DoxyReturn}{Returns}
+base point of this block. 
+\end{DoxyReturn}
+\hypertarget{classRS__Block_ac6d7125aa8638c743adbbe6b275ca304}{\index{R\-S\-\_\-\-Block@{R\-S\-\_\-\-Block}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!RS_Block@{R\-S\-\_\-\-Block}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Block\-::get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Block_ac6d7125aa8638c743adbbe6b275ca304}
+\begin{DoxyReturn}{Returns}
+Name of this block (the name is an Id for this block). 
+\end{DoxyReturn}
+\hypertarget{classRS__Block_ac43440d111abe6c1cc9ddae9b0f5727d}{\index{R\-S\-\_\-\-Block@{R\-S\-\_\-\-Block}!is\-Frozen@{is\-Frozen}}
+\index{is\-Frozen@{is\-Frozen}!RS_Block@{R\-S\-\_\-\-Block}}
+\subsubsection[{is\-Frozen}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Block\-::is\-Frozen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Block_ac43440d111abe6c1cc9ddae9b0f5727d}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & if this block is frozen (invisible) \\
+\hline
+{\em false} & if this block isn't frozen (visible) \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{classRS__Block_ab444087d5a42be6f9b27ef88ba468a6a}{\index{R\-S\-\_\-\-Block@{R\-S\-\_\-\-Block}!new\-Doc@{new\-Doc}}
+\index{new\-Doc@{new\-Doc}!RS_Block@{R\-S\-\_\-\-Block}}
+\subsubsection[{new\-Doc}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Block\-::new\-Doc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__Block_ab444087d5a42be6f9b27ef88ba468a6a}
+Reimplementation from \hyperlink{classRS__Document}{R\-S\-\_\-\-Document}. Does nothing. 
+
+Implements \hyperlink{classRS__Document}{R\-S\-\_\-\-Document}.
+
+\hypertarget{classRS__Block_a1ee689a437f6dbd4578d7073f61b52cb}{\index{R\-S\-\_\-\-Block@{R\-S\-\_\-\-Block}!open@{open}}
+\index{open@{open}!RS_Block@{R\-S\-\_\-\-Block}}
+\subsubsection[{open}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Block\-::open (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__Block_a1ee689a437f6dbd4578d7073f61b52cb}
+Reimplementation from \hyperlink{classRS__Document}{R\-S\-\_\-\-Document}. Does nothing. 
+
+Implements \hyperlink{classRS__Document}{R\-S\-\_\-\-Document}.
+
+\hypertarget{classRS__Block_acfe58f363ff7e72ac42d51dbfd3f0b71}{\index{R\-S\-\_\-\-Block@{R\-S\-\_\-\-Block}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_Block@{R\-S\-\_\-\-Block}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S2\-::\-Entity\-Type} R\-S\-\_\-\-Block\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__Block_acfe58f363ff7e72ac42d51dbfd3f0b71}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aafe09aeef2edbe05d4e555adba34d9d36}{R\-S2\-::\-Entity\-Block} 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classRS__EntityContainer_ada84ceb9590c74cd3b46134cdde40a3d}{R\-S\-\_\-\-Entity\-Container}.
+
+
+
+Reimplemented in \hyperlink{classRS__FontChar_ad2def8b71fd8a1cb6b2c18b91cafb90a}{R\-S\-\_\-\-Font\-Char}.
+
+\hypertarget{classRS__Block_ab7a548d214963b2982954a6612df48dc}{\index{R\-S\-\_\-\-Block@{R\-S\-\_\-\-Block}!save@{save}}
+\index{save@{save}!RS_Block@{R\-S\-\_\-\-Block}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Block\-::save (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\-Auto\-Save = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Block_ab7a548d214963b2982954a6612df48dc}
+Reimplementation from \hyperlink{classRS__Document}{R\-S\-\_\-\-Document}. Saves the parent graphic document. 
+
+Implements \hyperlink{classRS__Document}{R\-S\-\_\-\-Document}.
+
+\hypertarget{classRS__Block_af70feeeb48e6f59403d4a3fc307a8eb6}{\index{R\-S\-\_\-\-Block@{R\-S\-\_\-\-Block}!save\-As@{save\-As}}
+\index{save\-As@{save\-As}!RS_Block@{R\-S\-\_\-\-Block}}
+\subsubsection[{save\-As}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Block\-::save\-As (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{filename, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{type, }
+\item[{bool}]{force = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Block_af70feeeb48e6f59403d4a3fc307a8eb6}
+Reimplementation from \hyperlink{classRS__Document}{R\-S\-\_\-\-Document}. Does nothing. 
+
+Implements \hyperlink{classRS__Document}{R\-S\-\_\-\-Document}.
+
+\hypertarget{classRS__Block_a7f5958a0728ee32ad361cbb79c4cc3f1}{\index{R\-S\-\_\-\-Block@{R\-S\-\_\-\-Block}!set\-Modified@{set\-Modified}}
+\index{set\-Modified@{set\-Modified}!RS_Block@{R\-S\-\_\-\-Block}}
+\subsubsection[{set\-Modified}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Block\-::set\-Modified (
+\begin{DoxyParamCaption}
+\item[{bool}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Block_a7f5958a0728ee32ad361cbb79c4cc3f1}
+Sets the parent documents modified status to 'm'. 
+
+Reimplemented from \hyperlink{classRS__Document_a18e1ef5e5bbc7d5425bbcffaca272a52}{R\-S\-\_\-\-Document}.
+
+\hypertarget{classRS__Block_a0138315e50fbc584be61295c23804b4d}{\index{R\-S\-\_\-\-Block@{R\-S\-\_\-\-Block}!set\-Name@{set\-Name}}
+\index{set\-Name@{set\-Name}!RS_Block@{R\-S\-\_\-\-Block}}
+\subsubsection[{set\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Block\-::set\-Name (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Block_a0138315e50fbc584be61295c23804b4d}
+sets a new name for the block. Only called by blocklist to assure that block names stay unique. \hypertarget{classRS__Block_ad79ccca26afa6e02dea92bcd165eb360}{\index{R\-S\-\_\-\-Block@{R\-S\-\_\-\-Block}!toggle@{toggle}}
+\index{toggle@{toggle}!RS_Block@{R\-S\-\_\-\-Block}}
+\subsubsection[{toggle}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Block\-::toggle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Block_ad79ccca26afa6e02dea92bcd165eb360}
+Toggles the visibility of this block. Freezes the block if it's not frozen, thaws the block otherwise 
+
+\subsection{Member Data Documentation}
+\hypertarget{classRS__Block_ae9303e76ea74cbf42f95ba9a1e476b1b}{\index{R\-S\-\_\-\-Block@{R\-S\-\_\-\-Block}!data@{data}}
+\index{data@{data}!RS_Block@{R\-S\-\_\-\-Block}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Block\-Data} R\-S\-\_\-\-Block\-::data\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__Block_ae9303e76ea74cbf42f95ba9a1e476b1b}
+
+
+Block data. 
+
+Base point of the Block. Usually 0/0 since blocks can be moved around using the insertion point of Insert entities. Block name. Acts as an id. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-block.\-h\item 
+librecad/src/lib/engine/rs\-\_\-block.\-cpp\end{DoxyCompactItemize}

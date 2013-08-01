@@ -1,0 +1,505 @@
+\hypertarget{classRS__Vector}{\section{R\-S\-\_\-\-Vector Class Reference}
+\label{classRS__Vector}\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-vector.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__Vector_aeb0f0df770b60e94c8ab65304749943f}{R\-S\-\_\-\-Vector} ()
+\item 
+\hyperlink{classRS__Vector_a48ba2b83dc071d8c779d2e3d3ae6b3a2}{R\-S\-\_\-\-Vector} (double vx, double vy, double vz=0.\-0)
+\item 
+\hyperlink{classRS__Vector_a6aba6a35bd9cbc18a9c0375a7e02c4f1}{R\-S\-\_\-\-Vector} (double \hyperlink{classRS__Vector_a7fd6801a576580f279353d0fd9d40313}{angle})
+\item 
+\hyperlink{classRS__Vector_a0bc31448ae9fc7f5e8ab41a86fe41e89}{R\-S\-\_\-\-Vector} (bool valid)
+\item 
+\hyperlink{classRS__Vector_ac84e1fb6316457064342312fe232caa7}{$\sim$\-R\-S\-\_\-\-Vector} ()
+\item 
+void \hyperlink{classRS__Vector_a9c5a71f939e7e8d4b675b47f92686a9a}{set} (double \hyperlink{classRS__Vector_a7fd6801a576580f279353d0fd9d40313}{angle})
+\item 
+void \hyperlink{classRS__Vector_ab83aa1475e39334092f1fe5043905787}{set} (double vx, double vy, double vz=0.\-0)
+\item 
+void \hyperlink{classRS__Vector_a97ca1b03bb2c3738cec5b86575ef6bf5}{set\-Polar} (double radius, double \hyperlink{classRS__Vector_a7fd6801a576580f279353d0fd9d40313}{angle})
+\item 
+double \hyperlink{classRS__Vector_ac6e5c85479562f7affae3084db96b155}{distance\-To} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v) const 
+\item 
+double \hyperlink{classRS__Vector_a7fd6801a576580f279353d0fd9d40313}{angle} () const 
+\item 
+double \hyperlink{classRS__Vector_adc2b3700e0310cd24e38824d890979f1}{angle\-To} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v) const 
+\item 
+double \hyperlink{classRS__Vector_a1a84623b84ee49f66eecf2a34517a9a4}{angle\-Between} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v1, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v2) const 
+\item 
+double \hyperlink{classRS__Vector_a641f6f702e187ff7473fbe48af9a01aa}{magnitude} () const 
+\item 
+double \hyperlink{classRS__Vector_a64eabc097972d0b0718638c1b711f053}{squared} () const 
+\item 
+double \hyperlink{classRS__Vector_a758f4d5c9f3740b5bb70370ab72cd821}{squared\-To} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v1) const 
+\item 
+\hypertarget{classRS__Vector_af16d3508d470f965c0cc5f48e306e7c1}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries lerp} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v, double t) const }\label{classRS__Vector_af16d3508d470f965c0cc5f48e306e7c1}
+
+\item 
+bool \hyperlink{classRS__Vector_a80003521417a9e7a3b2d73300d95d093}{is\-In\-Window} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&first\-Corner, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&second\-Corner) const 
+\item 
+bool \hyperlink{classRS__Vector_acdaa542c1c5868d04c1ab6e132c320ae}{is\-In\-Window\-Ordered} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v\-Low, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v\-High) const 
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Vector_af06490486efa030356177ac3a22d59bb}{to\-Integer} ()
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Vector_af269abe625aaca1edbe5af17cb8f3311}{move} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&offset)
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Vector_a4061d72b6163af997e79235a419541af}{rotate} (const double \&ang)
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Vector_a86846fd28e9354ead7162c13918e8853}{rotate} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&angle\-Vector)
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Vector_a2e958ac115b9f804c0d55dcb11058814}{rotate} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&center, const double \&ang)
+\item 
+\hypertarget{classRS__Vector_a880f086e7c1d5dfd6c37e15ad3798ee2}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries rotate} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&center, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&angle\-Vector)}\label{classRS__Vector_a880f086e7c1d5dfd6c37e15ad3798ee2}
+
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Vector_af9abbe643151e7c6e5c19b87e9eba41f}{scale} (const double \&factor)
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Vector_ac693a33d29ecf1c0833b7a83a62b7503}{scale} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&factor)
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Vector_ab27d55398d9b7ce9e9f2a365aa05233f}{scale} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&center, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&factor)
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Vector_a7ac60264986fedb94391e9318a197c61}{mirror} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&axis\-Point1, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&axis\-Point2)
+\item 
+double \hyperlink{classRS__Vector_aa3cd9b00a5860364f5cb82668f221ddf}{dot\-P} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v1)
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Vector_a91c68dba1205738490da545d3a425b05}{operator+} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v) const 
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Vector_a18563367cac322844e732916b7bae69a}{operator-\/} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v) const 
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Vector_ac67e08f66c838c01e0945371a6026ecc}{operator$\ast$} (const double \&s) const 
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Vector_a6ea84de2b038b8ba34212da685d920f8}{operator/} (const double \&s) const 
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Vector_aef40989e83648c190011b3f3bfe653d5}{operator-\/} () const 
+\item 
+void \hyperlink{classRS__Vector_a10f89437491fcd25a980a63ce50f1755}{operator+=} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v)
+\item 
+void \hyperlink{classRS__Vector_a22412abd21eeb0efb7449ab15e55812e}{operator-\/=} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v)
+\item 
+void \hyperlink{classRS__Vector_a19a16a8a1f30f861ce30af326bc4bfb6}{operator$\ast$=} (const double \&s)
+\item 
+void \hyperlink{classRS__Vector_ac90452731480e599b033d45d9f9b5020}{operator/=} (const double \&s)
+\item 
+bool \hyperlink{classRS__Vector_abe3cbb071537621e39da1acdb3e33b47}{operator==} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v) const 
+\item 
+\hypertarget{classRS__Vector_a12bfb0e59793801580c9d49cf0cc6801}{bool {\bfseries operator!=} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v) const }\label{classRS__Vector_a12bfb0e59793801580c9d49cf0cc6801}
+
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Vector_a976e8deb29c882a8fb4e8c89a720cd80}{flip\-X\-Y} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Vector_a49df5b48a2ef3ac495191f54b339bebb}{minimum} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v1, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v2)
+\item 
+static \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Vector_a03d486da18b0c893cf6a8b4b85dc38c5}{maximum} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v1, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v2)
+\item 
+static \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Vector_a5a1375e14d6f9ce1886555dbd5690027}{cross\-P} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v1, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v2)
+\item 
+\hypertarget{classRS__Vector_a5f42090fc50593a60e4508cde0f23c00}{static double {\bfseries dot\-P} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v1, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v2)}\label{classRS__Vector_a5f42090fc50593a60e4508cde0f23c00}
+
+\item 
+\hypertarget{classRS__Vector_a4a976b78f67964e2c0c4373be3e3242b}{static bool {\bfseries test} ()}\label{classRS__Vector_a4a976b78f67964e2c0c4373be3e3242b}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__Vector_a81383ed1e6f744095698592fb7a4da87}{double {\bfseries x}}\label{classRS__Vector_a81383ed1e6f744095698592fb7a4da87}
+
+\item 
+\hypertarget{classRS__Vector_afb6a5512921abeaa92b9b7a1161a7657}{double {\bfseries y}}\label{classRS__Vector_afb6a5512921abeaa92b9b7a1161a7657}
+
+\item 
+\hypertarget{classRS__Vector_ac82be7d44c6e2848b6391fe22657ee74}{double {\bfseries z}}\label{classRS__Vector_ac82be7d44c6e2848b6391fe22657ee74}
+
+\item 
+\hypertarget{classRS__Vector_a218a279eef9451516eb2f35473471f06}{bool {\bfseries valid}}\label{classRS__Vector_a218a279eef9451516eb2f35473471f06}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{classRS__Vector_a8929105d6fd14cd1727b9262f1b1e632}{operator$<$$<$} (std\-::ostream \&, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a 3d vector (x/y/z)
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__Vector_aeb0f0df770b60e94c8ab65304749943f}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}}
+\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{R\-S\-\_\-\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Vector\-::\-R\-S\-\_\-\-Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Vector_aeb0f0df770b60e94c8ab65304749943f}
+Constructor for a point with default coordinates. \hypertarget{classRS__Vector_a48ba2b83dc071d8c779d2e3d3ae6b3a2}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}}
+\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{R\-S\-\_\-\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Vector\-::\-R\-S\-\_\-\-Vector (
+\begin{DoxyParamCaption}
+\item[{double}]{vx, }
+\item[{double}]{vy, }
+\item[{double}]{vz = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)}}\label{classRS__Vector_a48ba2b83dc071d8c779d2e3d3ae6b3a2}
+Constructor for a point with given coordinates. \hypertarget{classRS__Vector_a6aba6a35bd9cbc18a9c0375a7e02c4f1}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}}
+\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{R\-S\-\_\-\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Vector\-::\-R\-S\-\_\-\-Vector (
+\begin{DoxyParamCaption}
+\item[{double}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classRS__Vector_a6aba6a35bd9cbc18a9c0375a7e02c4f1}
+Constructor for a unit vector with given angle \hypertarget{classRS__Vector_a0bc31448ae9fc7f5e8ab41a86fe41e89}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}}
+\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{R\-S\-\_\-\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Vector\-::\-R\-S\-\_\-\-Vector (
+\begin{DoxyParamCaption}
+\item[{bool}]{valid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classRS__Vector_a0bc31448ae9fc7f5e8ab41a86fe41e89}
+Constructor for a point with given coordinates in an array or three doubles. Constructor for a point with given valid flag.
+
+
+\begin{DoxyParams}{Parameters}
+{\em valid} & true\-: a valid vector with default coordinates is created. false\-: an invalid vector is created \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Vector_ac84e1fb6316457064342312fe232caa7}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!$\sim$\-R\-S\-\_\-\-Vector@{$\sim$\-R\-S\-\_\-\-Vector}}
+\index{$\sim$\-R\-S\-\_\-\-Vector@{$\sim$\-R\-S\-\_\-\-Vector}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{$\sim$\-R\-S\-\_\-\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Vector\-::$\sim$\-R\-S\-\_\-\-Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Vector_ac84e1fb6316457064342312fe232caa7}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Vector_a7fd6801a576580f279353d0fd9d40313}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!angle@{angle}}
+\index{angle@{angle}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{angle}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Vector\-::angle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classRS__Vector_a7fd6801a576580f279353d0fd9d40313}
+\begin{DoxyReturn}{Returns}
+The angle from zero to this vector (in rad). 
+\end{DoxyReturn}
+\hypertarget{classRS__Vector_a1a84623b84ee49f66eecf2a34517a9a4}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!angle\-Between@{angle\-Between}}
+\index{angle\-Between@{angle\-Between}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{angle\-Between}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Vector\-::angle\-Between (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v1, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v2}
+\end{DoxyParamCaption}
+) const}}\label{classRS__Vector_a1a84623b84ee49f66eecf2a34517a9a4}
+\begin{DoxyReturn}{Returns}
+The angle from between two vectors using the current vector as the center return 0, if the angle is not well defined 
+\end{DoxyReturn}
+\hypertarget{classRS__Vector_adc2b3700e0310cd24e38824d890979f1}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!angle\-To@{angle\-To}}
+\index{angle\-To@{angle\-To}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{angle\-To}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Vector\-::angle\-To (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v}
+\end{DoxyParamCaption}
+) const}}\label{classRS__Vector_adc2b3700e0310cd24e38824d890979f1}
+\begin{DoxyReturn}{Returns}
+The angle from this and the given coordinate (in rad). 
+\end{DoxyReturn}
+\hypertarget{classRS__Vector_a5a1375e14d6f9ce1886555dbd5690027}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!cross\-P@{cross\-P}}
+\index{cross\-P@{cross\-P}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{cross\-P}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Vector\-::cross\-P (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v1, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Vector_a5a1375e14d6f9ce1886555dbd5690027}
+\begin{DoxyReturn}{Returns}
+Cross product of two vectors. we don't need cross product for 2\-D vectors 
+\end{DoxyReturn}
+\hypertarget{classRS__Vector_ac6e5c85479562f7affae3084db96b155}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!distance\-To@{distance\-To}}
+\index{distance\-To@{distance\-To}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{distance\-To}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Vector\-::distance\-To (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v}
+\end{DoxyParamCaption}
+) const}}\label{classRS__Vector_ac6e5c85479562f7affae3084db96b155}
+\begin{DoxyReturn}{Returns}
+The distance between this and the given coordinate. 
+\end{DoxyReturn}
+\hypertarget{classRS__Vector_aa3cd9b00a5860364f5cb82668f221ddf}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!dot\-P@{dot\-P}}
+\index{dot\-P@{dot\-P}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{dot\-P}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Vector\-::dot\-P (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v1}
+\end{DoxyParamCaption}
+)}}\label{classRS__Vector_aa3cd9b00a5860364f5cb82668f221ddf}
+Scalarproduct (dot product). \hypertarget{classRS__Vector_a976e8deb29c882a8fb4e8c89a720cd80}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!flip\-X\-Y@{flip\-X\-Y}}
+\index{flip\-X\-Y@{flip\-X\-Y}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{flip\-X\-Y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Vector\-::flip\-X\-Y (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}}\label{classRS__Vector_a976e8deb29c882a8fb4e8c89a720cd80}
+switch x,y for all vectors \hypertarget{classRS__Vector_a80003521417a9e7a3b2d73300d95d093}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!is\-In\-Window@{is\-In\-Window}}
+\index{is\-In\-Window@{is\-In\-Window}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{is\-In\-Window}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Vector\-::is\-In\-Window (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{first\-Corner, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{second\-Corner}
+\end{DoxyParamCaption}
+) const}}\label{classRS__Vector_a80003521417a9e7a3b2d73300d95d093}
+\begin{DoxyReturn}{Returns}
+true is this vector is within the given range. 
+\end{DoxyReturn}
+\hypertarget{classRS__Vector_acdaa542c1c5868d04c1ab6e132c320ae}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!is\-In\-Window\-Ordered@{is\-In\-Window\-Ordered}}
+\index{is\-In\-Window\-Ordered@{is\-In\-Window\-Ordered}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{is\-In\-Window\-Ordered}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Vector\-::is\-In\-Window\-Ordered (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v\-Low, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v\-High}
+\end{DoxyParamCaption}
+) const}}\label{classRS__Vector_acdaa542c1c5868d04c1ab6e132c320ae}
+\begin{DoxyReturn}{Returns}
+true is this vector is within the given range of ordered vectors 
+\end{DoxyReturn}
+\hypertarget{classRS__Vector_a641f6f702e187ff7473fbe48af9a01aa}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!magnitude@{magnitude}}
+\index{magnitude@{magnitude}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{magnitude}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Vector\-::magnitude (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classRS__Vector_a641f6f702e187ff7473fbe48af9a01aa}
+\begin{DoxyReturn}{Returns}
+Magnitude (length) of the vector. 
+\end{DoxyReturn}
+\hypertarget{classRS__Vector_a03d486da18b0c893cf6a8b4b85dc38c5}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!maximum@{maximum}}
+\index{maximum@{maximum}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{maximum}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Vector\-::maximum (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v1, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Vector_a03d486da18b0c893cf6a8b4b85dc38c5}
+\begin{DoxyReturn}{Returns}
+A vector with the maximum values from the vectors v1 and v2 
+\end{DoxyReturn}
+\hypertarget{classRS__Vector_a49df5b48a2ef3ac495191f54b339bebb}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!minimum@{minimum}}
+\index{minimum@{minimum}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{minimum}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Vector\-::minimum (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v1, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Vector_a49df5b48a2ef3ac495191f54b339bebb}
+\begin{DoxyReturn}{Returns}
+A vector with the minimum components from the vectors v1 and v2. These might be mixed components from both vectors. 
+\end{DoxyReturn}
+\hypertarget{classRS__Vector_a7ac60264986fedb94391e9318a197c61}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!mirror@{mirror}}
+\index{mirror@{mirror}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{mirror}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Vector\-::mirror (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{axis\-Point1, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{axis\-Point2}
+\end{DoxyParamCaption}
+)}}\label{classRS__Vector_a7ac60264986fedb94391e9318a197c61}
+Mirrors this vector at the given axis, defined by two points on axis. \hypertarget{classRS__Vector_af269abe625aaca1edbe5af17cb8f3311}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!move@{move}}
+\index{move@{move}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Vector\-::move (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{offset}
+\end{DoxyParamCaption}
+)}}\label{classRS__Vector_af269abe625aaca1edbe5af17cb8f3311}
+Moves this vector by the given offset. Equal to the operator +=. \hypertarget{classRS__Vector_ac67e08f66c838c01e0945371a6026ecc}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Vector\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{s}
+\end{DoxyParamCaption}
+) const}}\label{classRS__Vector_ac67e08f66c838c01e0945371a6026ecc}
+binary $\ast$ operator. \hypertarget{classRS__Vector_a19a16a8a1f30f861ce30af326bc4bfb6}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{operator$\ast$=}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Vector\-::operator$\ast$= (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{s}
+\end{DoxyParamCaption}
+)}}\label{classRS__Vector_a19a16a8a1f30f861ce30af326bc4bfb6}
+$\ast$= operator \hypertarget{classRS__Vector_a91c68dba1205738490da545d3a425b05}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!operator+@{operator+}}
+\index{operator+@{operator+}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Vector\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v}
+\end{DoxyParamCaption}
+) const}}\label{classRS__Vector_a91c68dba1205738490da545d3a425b05}
+binary + operator. \hypertarget{classRS__Vector_a10f89437491fcd25a980a63ce50f1755}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Vector\-::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v}
+\end{DoxyParamCaption}
+)}}\label{classRS__Vector_a10f89437491fcd25a980a63ce50f1755}
++= operator. Assert\-: both vectors must be valid. \hypertarget{classRS__Vector_a18563367cac322844e732916b7bae69a}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Vector\-::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v}
+\end{DoxyParamCaption}
+) const}}\label{classRS__Vector_a18563367cac322844e732916b7bae69a}
+binary -\/ operator. \hypertarget{classRS__Vector_aef40989e83648c190011b3f3bfe653d5}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Vector\-::operator-\/ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classRS__Vector_aef40989e83648c190011b3f3bfe653d5}
+unary -\/ operator. \hypertarget{classRS__Vector_a22412abd21eeb0efb7449ab15e55812e}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Vector\-::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v}
+\end{DoxyParamCaption}
+)}}\label{classRS__Vector_a22412abd21eeb0efb7449ab15e55812e}
+-\/= operator \hypertarget{classRS__Vector_a6ea84de2b038b8ba34212da685d920f8}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!operator/@{operator/}}
+\index{operator/@{operator/}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Vector\-::operator/ (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{s}
+\end{DoxyParamCaption}
+) const}}\label{classRS__Vector_a6ea84de2b038b8ba34212da685d920f8}
+binary / operator. \hypertarget{classRS__Vector_ac90452731480e599b033d45d9f9b5020}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{operator/=}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Vector\-::operator/= (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{s}
+\end{DoxyParamCaption}
+)}}\label{classRS__Vector_ac90452731480e599b033d45d9f9b5020}
+/= operator \hypertarget{classRS__Vector_abe3cbb071537621e39da1acdb3e33b47}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!operator==@{operator==}}
+\index{operator==@{operator==}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Vector\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v}
+\end{DoxyParamCaption}
+) const}}\label{classRS__Vector_abe3cbb071537621e39da1acdb3e33b47}
+== operator \hypertarget{classRS__Vector_a4061d72b6163af997e79235a419541af}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!rotate@{rotate}}
+\index{rotate@{rotate}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{rotate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Vector\-::rotate (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{ang}
+\end{DoxyParamCaption}
+)}}\label{classRS__Vector_a4061d72b6163af997e79235a419541af}
+Rotates this vector around 0/0 by the given angle. \hypertarget{classRS__Vector_a86846fd28e9354ead7162c13918e8853}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!rotate@{rotate}}
+\index{rotate@{rotate}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{rotate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Vector\-::rotate (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{angle\-Vector}
+\end{DoxyParamCaption}
+)}}\label{classRS__Vector_a86846fd28e9354ead7162c13918e8853}
+Rotates this vector around 0/0 by the given vector if the vector is a unit, then, it's the same as rotating around 0/0 by the angle of the vector \hypertarget{classRS__Vector_a2e958ac115b9f804c0d55dcb11058814}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!rotate@{rotate}}
+\index{rotate@{rotate}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{rotate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Vector\-::rotate (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{center, }
+\item[{const double \&}]{ang}
+\end{DoxyParamCaption}
+)}}\label{classRS__Vector_a2e958ac115b9f804c0d55dcb11058814}
+Rotates this vector around the given center by the given angle. \hypertarget{classRS__Vector_af9abbe643151e7c6e5c19b87e9eba41f}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!scale@{scale}}
+\index{scale@{scale}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{scale}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Vector\-::scale (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{factor}
+\end{DoxyParamCaption}
+)}}\label{classRS__Vector_af9abbe643151e7c6e5c19b87e9eba41f}
+Scales this vector by the given factors with 0/0 as center. \hypertarget{classRS__Vector_ac693a33d29ecf1c0833b7a83a62b7503}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!scale@{scale}}
+\index{scale@{scale}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{scale}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Vector\-::scale (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{factor}
+\end{DoxyParamCaption}
+)}}\label{classRS__Vector_ac693a33d29ecf1c0833b7a83a62b7503}
+Scales this vector by the given factors with 0/0 as center. \hypertarget{classRS__Vector_ab27d55398d9b7ce9e9f2a365aa05233f}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!scale@{scale}}
+\index{scale@{scale}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{scale}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Vector\-::scale (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{center, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{factor}
+\end{DoxyParamCaption}
+)}}\label{classRS__Vector_ab27d55398d9b7ce9e9f2a365aa05233f}
+Scales this vector by the given factors with the given center. \hypertarget{classRS__Vector_a9c5a71f939e7e8d4b675b47f92686a9a}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!set@{set}}
+\index{set@{set}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Vector\-::set (
+\begin{DoxyParamCaption}
+\item[{double}]{angle}
+\end{DoxyParamCaption}
+)}}\label{classRS__Vector_a9c5a71f939e7e8d4b675b47f92686a9a}
+Sets to a unit vector by the direction angle \hypertarget{classRS__Vector_ab83aa1475e39334092f1fe5043905787}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!set@{set}}
+\index{set@{set}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Vector\-::set (
+\begin{DoxyParamCaption}
+\item[{double}]{vx, }
+\item[{double}]{vy, }
+\item[{double}]{vz = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)}}\label{classRS__Vector_ab83aa1475e39334092f1fe5043905787}
+Sets a new position for the vector. \hypertarget{classRS__Vector_a97ca1b03bb2c3738cec5b86575ef6bf5}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!set\-Polar@{set\-Polar}}
+\index{set\-Polar@{set\-Polar}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{set\-Polar}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Vector\-::set\-Polar (
+\begin{DoxyParamCaption}
+\item[{double}]{radius, }
+\item[{double}]{angle}
+\end{DoxyParamCaption}
+)}}\label{classRS__Vector_a97ca1b03bb2c3738cec5b86575ef6bf5}
+Sets a new position for the vector in polar coordinates. \hypertarget{classRS__Vector_a64eabc097972d0b0718638c1b711f053}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!squared@{squared}}
+\index{squared@{squared}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{squared}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Vector\-::squared (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classRS__Vector_a64eabc097972d0b0718638c1b711f053}
+\begin{DoxyReturn}{Returns}
+square of vector length 
+\end{DoxyReturn}
+\hypertarget{classRS__Vector_a758f4d5c9f3740b5bb70370ab72cd821}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!squared\-To@{squared\-To}}
+\index{squared\-To@{squared\-To}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{squared\-To}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Vector\-::squared\-To (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v1}
+\end{DoxyParamCaption}
+) const}}\label{classRS__Vector_a758f4d5c9f3740b5bb70370ab72cd821}
+\begin{DoxyReturn}{Returns}
+square of vector length 
+\end{DoxyReturn}
+\hypertarget{classRS__Vector_af06490486efa030356177ac3a22d59bb}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!to\-Integer@{to\-Integer}}
+\index{to\-Integer@{to\-Integer}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{to\-Integer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Vector\-::to\-Integer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Vector_af06490486efa030356177ac3a22d59bb}
+move to the closest integer point 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classRS__Vector_a8929105d6fd14cd1727b9262f1b1e632}{\index{R\-S\-\_\-\-Vector@{R\-S\-\_\-\-Vector}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!RS_Vector@{R\-S\-\_\-\-Vector}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classRS__Vector_a8929105d6fd14cd1727b9262f1b1e632}
+Streams the vector components to stdout. e.\-g.\-: \char`\"{}1/4/0\char`\"{} 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-vector.\-h\item 
+librecad/src/lib/engine/rs\-\_\-vector.\-cpp\end{DoxyCompactItemize}

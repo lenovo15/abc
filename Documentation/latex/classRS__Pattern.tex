@@ -1,0 +1,108 @@
+\hypertarget{classRS__Pattern}{\section{R\-S\-\_\-\-Pattern Class Reference}
+\label{classRS__Pattern}\index{R\-S\-\_\-\-Pattern@{R\-S\-\_\-\-Pattern}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-pattern.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Pattern\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classRS__Pattern}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__Pattern_a6956073787aed31eb81b45dde4d54c9a}{R\-S\-\_\-\-Pattern} (const Q\-String \&\hyperlink{classRS__Pattern_a6ee67643c5f2d5f085aef19c59f2aa09}{file\-Name})
+\item 
+virtual \hyperlink{classRS__Pattern_aa410f90afcbc41e0395ec81112b126d4}{$\sim$\-R\-S\-\_\-\-Pattern} ()
+\item 
+virtual bool \hyperlink{classRS__Pattern_a528acfb300de6b8ed98262295ddd0deb}{load\-Pattern} ()
+\item 
+Q\-String \hyperlink{classRS__Pattern_aaeff147532943f474217d663ac9fc3e0}{get\-File\-Name} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__Pattern_a6ee67643c5f2d5f085aef19c59f2aa09}{Q\-String \hyperlink{classRS__Pattern_a6ee67643c5f2d5f085aef19c59f2aa09}{file\-Name}}\label{classRS__Pattern_a6ee67643c5f2d5f085aef19c59f2aa09}
+
+\begin{DoxyCompactList}\small\item\em Pattern file name. \end{DoxyCompactList}\item 
+\hypertarget{classRS__Pattern_a93564fdb29281f0b02b5f52b7a006ea5}{bool \hyperlink{classRS__Pattern_a93564fdb29281f0b02b5f52b7a006ea5}{loaded}}\label{classRS__Pattern_a93564fdb29281f0b02b5f52b7a006ea5}
+
+\begin{DoxyCompactList}\small\item\em Is this pattern currently loaded into memory? \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Patterns are used for hatches. They are stored in a \hyperlink{classRS__PatternList}{R\-S\-\_\-\-Pattern\-List}. Use \hyperlink{classRS__PatternList}{R\-S\-\_\-\-Pattern\-List} to access a pattern.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__Pattern_a6956073787aed31eb81b45dde4d54c9a}{\index{R\-S\-\_\-\-Pattern@{R\-S\-\_\-\-Pattern}!R\-S\-\_\-\-Pattern@{R\-S\-\_\-\-Pattern}}
+\index{R\-S\-\_\-\-Pattern@{R\-S\-\_\-\-Pattern}!RS_Pattern@{R\-S\-\_\-\-Pattern}}
+\subsubsection[{R\-S\-\_\-\-Pattern}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Pattern\-::\-R\-S\-\_\-\-Pattern (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{file\-Name}
+\end{DoxyParamCaption}
+)}}\label{classRS__Pattern_a6956073787aed31eb81b45dde4d54c9a}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\-Name} & File name of a D\-X\-F file defining the pattern \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Pattern_aa410f90afcbc41e0395ec81112b126d4}{\index{R\-S\-\_\-\-Pattern@{R\-S\-\_\-\-Pattern}!$\sim$\-R\-S\-\_\-\-Pattern@{$\sim$\-R\-S\-\_\-\-Pattern}}
+\index{$\sim$\-R\-S\-\_\-\-Pattern@{$\sim$\-R\-S\-\_\-\-Pattern}!RS_Pattern@{R\-S\-\_\-\-Pattern}}
+\subsubsection[{$\sim$\-R\-S\-\_\-\-Pattern}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Pattern\-::$\sim$\-R\-S\-\_\-\-Pattern (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Pattern_aa410f90afcbc41e0395ec81112b126d4}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\-Name} & File name of a P\-A\-T file which defines this pattern among others. \\
+\hline
+{\em name} & Pattern name. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Pattern_aaeff147532943f474217d663ac9fc3e0}{\index{R\-S\-\_\-\-Pattern@{R\-S\-\_\-\-Pattern}!get\-File\-Name@{get\-File\-Name}}
+\index{get\-File\-Name@{get\-File\-Name}!RS_Pattern@{R\-S\-\_\-\-Pattern}}
+\subsubsection[{get\-File\-Name}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Pattern\-::get\-File\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Pattern_aaeff147532943f474217d663ac9fc3e0}
+\begin{DoxyReturn}{Returns}
+the file\-Name of this pattern. 
+\end{DoxyReturn}
+\hypertarget{classRS__Pattern_a528acfb300de6b8ed98262295ddd0deb}{\index{R\-S\-\_\-\-Pattern@{R\-S\-\_\-\-Pattern}!load\-Pattern@{load\-Pattern}}
+\index{load\-Pattern@{load\-Pattern}!RS_Pattern@{R\-S\-\_\-\-Pattern}}
+\subsubsection[{load\-Pattern}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Pattern\-::load\-Pattern (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Pattern_a528acfb300de6b8ed98262295ddd0deb}
+Loads the given pattern file into this pattern. Entities other than lines are ignored.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & File name of the pattern file (without path and extension or full path. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-pattern.\-h\item 
+librecad/src/lib/engine/rs\-\_\-pattern.\-cpp\end{DoxyCompactItemize}

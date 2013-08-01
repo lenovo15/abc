@@ -1,0 +1,209 @@
+\hypertarget{classRS__ActionModifyRotate2}{\section{R\-S\-\_\-\-Action\-Modify\-Rotate2 Class Reference}
+\label{classRS__ActionModifyRotate2}\index{R\-S\-\_\-\-Action\-Modify\-Rotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionmodifyrotate2.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Modify\-Rotate2\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classRS__ActionModifyRotate2}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionModifyRotate2_aaee5e6c9609bd14e7d4d702c505d0b7d}{Status} \{ \hyperlink{classRS__ActionModifyRotate2_aaee5e6c9609bd14e7d4d702c505d0b7da088dfc2eaa43bc219b9b6aea3d6f02bc}{Set\-Reference\-Point1}, 
+\hyperlink{classRS__ActionModifyRotate2_aaee5e6c9609bd14e7d4d702c505d0b7da21d09850027cfda6c8989a043f209413}{Set\-Reference\-Point2}, 
+\hyperlink{classRS__ActionModifyRotate2_aaee5e6c9609bd14e7d4d702c505d0b7daecfe7843150327ed647246d82a404675}{Show\-Dialog}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionModifyRotate2_abb6041d59456b86185ac43af97dfcb98}{{\bfseries R\-S\-\_\-\-Action\-Modify\-Rotate2} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionModifyRotate2_abb6041d59456b86185ac43af97dfcb98}
+
+\item 
+\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__ActionModifyRotate2_a45af3ef28e1b82e096a08637e8e94c2f}{rtti} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyRotate2_a775bd7980ec6b08defb3b3dcd9ab9af5}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionModifyRotate2_af00ae4394d88de27453767b3f657a2fe}{trigger} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyRotate2_a40421660c3f92d157b283a0df16a00fe}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionModifyRotate2_a3c1ea7d63539286860acfd38683852ae}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionModifyRotate2_a2c9e32c2759ef343049cd9cde76e8426}{coordinate\-Event} (\hyperlink{classRS__CoordinateEvent}{R\-S\-\_\-\-Coordinate\-Event} $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionModifyRotate2_aec226bf1b0d905a97a5299ef9583dd30}{command\-Event} (\hyperlink{classRS__CommandEvent}{R\-S\-\_\-\-Command\-Event} $\ast$e)
+\item 
+virtual Q\-String\-List \hyperlink{classRS__ActionModifyRotate2_a34363a8a9a56550a343619eba5ccc860}{get\-Available\-Commands} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyRotate2_a5c1a2dfd193ee571846968c63feab5ee}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyRotate2_a6d600a73c8ccac1bce8c8e9585bce12a}{update\-Mouse\-Cursor} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionModifyRotate2_a510fc0698562e5573efc43ed95559012}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionModifyRotate2_a510fc0698562e5573efc43ed95559012}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to rotate entities around two entities.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionModifyRotate2_aaee5e6c9609bd14e7d4d702c505d0b7d}{\index{R\-S\-\_\-\-Action\-Modify\-Rotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}!Status@{Status}}
+\index{Status@{Status}!RS_ActionModifyRotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Modify\-Rotate2\-::\-Status}}}\label{classRS__ActionModifyRotate2_aaee5e6c9609bd14e7d4d702c505d0b7d}
+Action States. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Set\-Reference\-Point1@{Set\-Reference\-Point1}!R\-S\-\_\-\-Action\-Modify\-Rotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}}\index{R\-S\-\_\-\-Action\-Modify\-Rotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}!Set\-Reference\-Point1@{Set\-Reference\-Point1}}\item[{\em 
+\hypertarget{classRS__ActionModifyRotate2_aaee5e6c9609bd14e7d4d702c505d0b7da088dfc2eaa43bc219b9b6aea3d6f02bc}{Set\-Reference\-Point1}\label{classRS__ActionModifyRotate2_aaee5e6c9609bd14e7d4d702c505d0b7da088dfc2eaa43bc219b9b6aea3d6f02bc}
+}]Setting the reference point. \index{Set\-Reference\-Point2@{Set\-Reference\-Point2}!R\-S\-\_\-\-Action\-Modify\-Rotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}}\index{R\-S\-\_\-\-Action\-Modify\-Rotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}!Set\-Reference\-Point2@{Set\-Reference\-Point2}}\item[{\em 
+\hypertarget{classRS__ActionModifyRotate2_aaee5e6c9609bd14e7d4d702c505d0b7da21d09850027cfda6c8989a043f209413}{Set\-Reference\-Point2}\label{classRS__ActionModifyRotate2_aaee5e6c9609bd14e7d4d702c505d0b7da21d09850027cfda6c8989a043f209413}
+}]Setting the target point. \index{Show\-Dialog@{Show\-Dialog}!R\-S\-\_\-\-Action\-Modify\-Rotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}}\index{R\-S\-\_\-\-Action\-Modify\-Rotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}!Show\-Dialog@{Show\-Dialog}}\item[{\em 
+\hypertarget{classRS__ActionModifyRotate2_aaee5e6c9609bd14e7d4d702c505d0b7daecfe7843150327ed647246d82a404675}{Show\-Dialog}\label{classRS__ActionModifyRotate2_aaee5e6c9609bd14e7d4d702c505d0b7daecfe7843150327ed647246d82a404675}
+}]Showing the options dialog. \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionModifyRotate2_aec226bf1b0d905a97a5299ef9583dd30}{\index{R\-S\-\_\-\-Action\-Modify\-Rotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}!command\-Event@{command\-Event}}
+\index{command\-Event@{command\-Event}!RS_ActionModifyRotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}}
+\subsubsection[{command\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Rotate2\-::command\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Command\-Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyRotate2_aec226bf1b0d905a97a5299ef9583dd30}
+Called when a command from the command line is launched. and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a187365514bab9b2997c5fe7ff5274a22}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyRotate2_a2c9e32c2759ef343049cd9cde76e8426}{\index{R\-S\-\_\-\-Action\-Modify\-Rotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}!coordinate\-Event@{coordinate\-Event}}
+\index{coordinate\-Event@{coordinate\-Event}!RS_ActionModifyRotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}}
+\subsubsection[{coordinate\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Rotate2\-::coordinate\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Coordinate\-Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyRotate2_a2c9e32c2759ef343049cd9cde76e8426}
+Coordinate event. Triggered usually from a command line. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a9013e88769edd39b2a74af5add2986c9}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyRotate2_a34363a8a9a56550a343619eba5ccc860}{\index{R\-S\-\_\-\-Action\-Modify\-Rotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}!get\-Available\-Commands@{get\-Available\-Commands}}
+\index{get\-Available\-Commands@{get\-Available\-Commands}!RS_ActionModifyRotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}}
+\subsubsection[{get\-Available\-Commands}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String\-List R\-S\-\_\-\-Action\-Modify\-Rotate2\-::get\-Available\-Commands (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyRotate2_a34363a8a9a56550a343619eba5ccc860}
+Must be implemented to return the currently available commands for the command line. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acafdac8d18d3f053eda872581fb3e27d}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyRotate2_a775bd7980ec6b08defb3b3dcd9ab9af5}{\index{R\-S\-\_\-\-Action\-Modify\-Rotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}!init@{init}}
+\index{init@{init}!RS_ActionModifyRotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Rotate2\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyRotate2_a775bd7980ec6b08defb3b3dcd9ab9af5}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae5113b2aef5a10acd192786b99580e4a}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyRotate2_a40421660c3f92d157b283a0df16a00fe}{\index{R\-S\-\_\-\-Action\-Modify\-Rotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_ActionModifyRotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Rotate2\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyRotate2_a40421660c3f92d157b283a0df16a00fe}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyRotate2_a3c1ea7d63539286860acfd38683852ae}{\index{R\-S\-\_\-\-Action\-Modify\-Rotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionModifyRotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Rotate2\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyRotate2_a3c1ea7d63539286860acfd38683852ae}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyRotate2_a45af3ef28e1b82e096a08637e8e94c2f}{\index{R\-S\-\_\-\-Action\-Modify\-Rotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_ActionModifyRotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Action\-Modify\-Rotate2\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__ActionModifyRotate2_a45af3ef28e1b82e096a08637e8e94c2f}
+Must be implemented to return the I\-D of this action.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]no default implementation \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af877a66b5b4a7053f2b1f0519c57a6f5}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyRotate2_af00ae4394d88de27453767b3f657a2fe}{\index{R\-S\-\_\-\-Action\-Modify\-Rotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionModifyRotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Rotate2\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyRotate2_af00ae4394d88de27453767b3f657a2fe}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyRotate2_a5c1a2dfd193ee571846968c63feab5ee}{\index{R\-S\-\_\-\-Action\-Modify\-Rotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionModifyRotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Rotate2\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyRotate2_a5c1a2dfd193ee571846968c63feab5ee}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyRotate2_a6d600a73c8ccac1bce8c8e9585bce12a}{\index{R\-S\-\_\-\-Action\-Modify\-Rotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionModifyRotate2@{R\-S\-\_\-\-Action\-Modify\-Rotate2}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Rotate2\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyRotate2_a6d600a73c8ccac1bce8c8e9585bce12a}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionmodifyrotate2.\-h\item 
+librecad/src/actions/rs\-\_\-actionmodifyrotate2.\-cpp\end{DoxyCompactItemize}

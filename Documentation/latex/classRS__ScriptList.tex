@@ -1,0 +1,131 @@
+\hypertarget{classRS__ScriptList}{\section{R\-S\-\_\-\-Script\-List Class Reference}
+\label{classRS__ScriptList}\index{R\-S\-\_\-\-Script\-List@{R\-S\-\_\-\-Script\-List}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-scriptlist.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classRS__ScriptList_a8fd23dac9b4b3d527e6f3a408528f54a}{init} ()
+\item 
+void \hyperlink{classRS__ScriptList_a08ae6bbfe636d1444e7e69a3268793e9}{clear\-Scripts} ()
+\item 
+\hypertarget{classRS__ScriptList_a9fd67c18ce6ee087c2b476cbcc049d16}{int {\bfseries count\-Scripts} ()}\label{classRS__ScriptList_a9fd67c18ce6ee087c2b476cbcc049d16}
+
+\item 
+virtual void \hyperlink{classRS__ScriptList_a4699debda685116d37da19beebeab943}{remove\-Script} (\hyperlink{classRS__Script}{R\-S\-\_\-\-Script} $\ast$script)
+\item 
+\hyperlink{classRS__Script}{R\-S\-\_\-\-Script} $\ast$ \hyperlink{classRS__ScriptList_a97a4ddb13b688f489ee61d194d9a5efd}{request\-Script} (const Q\-String \&name)
+\item 
+Q\-List\-Iterator$<$ \hyperlink{classRS__Script}{R\-S\-\_\-\-Script} $\ast$ $>$ \hyperlink{classRS__ScriptList_ab679f1374b2dfffc20359c3d04c2f1e7}{get\-Iteretor} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classRS__ScriptList}{R\-S\-\_\-\-Script\-List} $\ast$ \hyperlink{classRS__ScriptList_af6e9ad990fba83703fd3c16293145e9e}{instance} ()
+\item 
+static bool \hyperlink{classRS__ScriptList_ad2293fbfa48a5f11c86bc64a462f971f}{test} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__ScriptList_a860ea815838d6500b2577c49335e7833}{R\-S\-\_\-\-Script\-List} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ScriptList_aeb21fc7fb220cf06fb4793908064324b}{static \hyperlink{classRS__ScriptList}{R\-S\-\_\-\-Script\-List} $\ast$ {\bfseries unique\-Instance} = N\-U\-L\-L}\label{classRS__ScriptList_aeb21fc7fb220cf06fb4793908064324b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The global list of scripts. This is implemented as a singleton. Use \hyperlink{classRS__ScriptList_af6e9ad990fba83703fd3c16293145e9e}{R\-S\-\_\-\-Script\-List\-::instance()} to get a pointer to the object.
+
+O\-B\-S\-O\-L\-E\-T\-E
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__ScriptList_a860ea815838d6500b2577c49335e7833}{\index{R\-S\-\_\-\-Script\-List@{R\-S\-\_\-\-Script\-List}!R\-S\-\_\-\-Script\-List@{R\-S\-\_\-\-Script\-List}}
+\index{R\-S\-\_\-\-Script\-List@{R\-S\-\_\-\-Script\-List}!RS_ScriptList@{R\-S\-\_\-\-Script\-List}}
+\subsubsection[{R\-S\-\_\-\-Script\-List}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Script\-List\-::\-R\-S\-\_\-\-Script\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ScriptList_a860ea815838d6500b2577c49335e7833}
+Default constructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ScriptList_a08ae6bbfe636d1444e7e69a3268793e9}{\index{R\-S\-\_\-\-Script\-List@{R\-S\-\_\-\-Script\-List}!clear\-Scripts@{clear\-Scripts}}
+\index{clear\-Scripts@{clear\-Scripts}!RS_ScriptList@{R\-S\-\_\-\-Script\-List}}
+\subsubsection[{clear\-Scripts}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Script\-List\-::clear\-Scripts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__ScriptList_a08ae6bbfe636d1444e7e69a3268793e9}
+Removes all scripts in the scriptlist. \hypertarget{classRS__ScriptList_ab679f1374b2dfffc20359c3d04c2f1e7}{\index{R\-S\-\_\-\-Script\-List@{R\-S\-\_\-\-Script\-List}!get\-Iteretor@{get\-Iteretor}}
+\index{get\-Iteretor@{get\-Iteretor}!RS_ScriptList@{R\-S\-\_\-\-Script\-List}}
+\subsubsection[{get\-Iteretor}]{\setlength{\rightskip}{0pt plus 5cm}Q\-List\-Iterator$<${\bf R\-S\-\_\-\-Script} $\ast$$>$ R\-S\-\_\-\-Script\-List\-::get\-Iteretor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__ScriptList_ab679f1374b2dfffc20359c3d04c2f1e7}
+\begin{DoxyReturn}{Returns}
+a const iterator for the font list. 
+\end{DoxyReturn}
+\hypertarget{classRS__ScriptList_a8fd23dac9b4b3d527e6f3a408528f54a}{\index{R\-S\-\_\-\-Script\-List@{R\-S\-\_\-\-Script\-List}!init@{init}}
+\index{init@{init}!RS_ScriptList@{R\-S\-\_\-\-Script\-List}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Script\-List\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__ScriptList_a8fd23dac9b4b3d527e6f3a408528f54a}
+Initializes the script list by creating \hyperlink{classRS__Script}{R\-S\-\_\-\-Script} objects, one for each script that could be found. \hypertarget{classRS__ScriptList_af6e9ad990fba83703fd3c16293145e9e}{\index{R\-S\-\_\-\-Script\-List@{R\-S\-\_\-\-Script\-List}!instance@{instance}}
+\index{instance@{instance}!RS_ScriptList@{R\-S\-\_\-\-Script\-List}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf R\-S\-\_\-\-Script\-List}$\ast$ R\-S\-\_\-\-Script\-List\-::instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classRS__ScriptList_af6e9ad990fba83703fd3c16293145e9e}
+\begin{DoxyReturn}{Returns}
+Instance to the unique script list. 
+\end{DoxyReturn}
+\hypertarget{classRS__ScriptList_a4699debda685116d37da19beebeab943}{\index{R\-S\-\_\-\-Script\-List@{R\-S\-\_\-\-Script\-List}!remove\-Script@{remove\-Script}}
+\index{remove\-Script@{remove\-Script}!RS_ScriptList@{R\-S\-\_\-\-Script\-List}}
+\subsubsection[{remove\-Script}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Script\-List\-::remove\-Script (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Script} $\ast$}]{script}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ScriptList_a4699debda685116d37da19beebeab943}
+Removes a script from the list. Listeners are notified after the script was removed from the list but before it gets deleted. \hypertarget{classRS__ScriptList_a97a4ddb13b688f489ee61d194d9a5efd}{\index{R\-S\-\_\-\-Script\-List@{R\-S\-\_\-\-Script\-List}!request\-Script@{request\-Script}}
+\index{request\-Script@{request\-Script}!RS_ScriptList@{R\-S\-\_\-\-Script\-List}}
+\subsubsection[{request\-Script}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Script} $\ast$ R\-S\-\_\-\-Script\-List\-::request\-Script (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{name}
+\end{DoxyParamCaption}
+)}}\label{classRS__ScriptList_a97a4ddb13b688f489ee61d194d9a5efd}
+\begin{DoxyReturn}{Returns}
+Pointer to the script with the given name or {\ttfamily N\-U\-L\-L} if no such script was found. The script will be loaded into memory if it's not already. 
+\end{DoxyReturn}
+\hypertarget{classRS__ScriptList_ad2293fbfa48a5f11c86bc64a462f971f}{\index{R\-S\-\_\-\-Script\-List@{R\-S\-\_\-\-Script\-List}!test@{test}}
+\index{test@{test}!RS_ScriptList@{R\-S\-\_\-\-Script\-List}}
+\subsubsection[{test}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Script\-List\-::test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__ScriptList_ad2293fbfa48a5f11c86bc64a462f971f}
+\begin{DoxyReturn}{Returns}
+Pointer to the script with the given name or {\ttfamily N\-U\-L\-L} if no such script was found. Tests the script list and its ability to load scripts. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/scripting/rs\-\_\-scriptlist.\-h\item 
+librecad/src/lib/scripting/rs\-\_\-scriptlist.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,242 @@
+\hypertarget{classRS__Layer}{\section{R\-S\-\_\-\-Layer Class Reference}
+\label{classRS__Layer}\index{R\-S\-\_\-\-Layer@{R\-S\-\_\-\-Layer}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-layer.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__Layer_a2662ad95414337e3fe462aa50b7ee367}{R\-S\-\_\-\-Layer} (const Q\-String \&name)
+\item 
+\hypertarget{classRS__Layer_ad3ae3c4541f7d0024d5a00203c4d92be}{\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$ {\bfseries clone} ()}\label{classRS__Layer_ad3ae3c4541f7d0024d5a00203c4d92be}
+
+\item 
+void \hyperlink{classRS__Layer_af4e1b3caf8a7132d0cd298964863acee}{set\-Name} (const Q\-String \&name)
+\item 
+Q\-String \hyperlink{classRS__Layer_a1a8509534f4f51ab2fcbe137efe84e36}{get\-Name} () const 
+\item 
+void \hyperlink{classRS__Layer_ac5be377e1a80e3e19f12ba7b9dfc5fc8}{set\-Pen} (const \hyperlink{classRS__Pen}{R\-S\-\_\-\-Pen} \&pen)
+\item 
+\hyperlink{classRS__Pen}{R\-S\-\_\-\-Pen} \hyperlink{classRS__Layer_a7c3b69e215ec71b6f67996b13ba14194}{get\-Pen} () const 
+\item 
+bool \hyperlink{classRS__Layer_a4bac277cb1e988be074d2850ef9b7cce}{is\-Frozen} () const 
+\item 
+bool \hyperlink{classRS__Layer_a13d3a2fec12c4b3082f1ad5f0f33a2fc}{is\-Converted} () const 
+\item 
+void \hyperlink{classRS__Layer_a5ff9c824b2c6d22cff58d0e7fe7c22d6}{set\-Converted} (bool c)
+\item 
+void \hyperlink{classRS__Layer_a49082d20120732c79f781f9824cc4367}{toggle} ()
+\item 
+void \hyperlink{classRS__Layer_a9a8140a09260cd97508af31016ced14a}{freeze} (bool freeze)
+\item 
+void \hyperlink{classRS__Layer_a201e3d60c9c2098edca71316a1c4d463}{toggle\-Lock} ()
+\item 
+void \hyperlink{classRS__Layer_a10191b7f9abd3706bfc76fc961b3bfd9}{lock} (bool l)
+\item 
+bool \hyperlink{classRS__Layer_a9d78b6003d8ce252ef7cd6c309f14770}{is\-Locked} ()
+\item 
+void \hyperlink{classRS__Layer_aad843c09bc090f264e748044501c7a8d}{visible\-In\-Layer\-List} (bool l)
+\item 
+bool \hyperlink{classRS__Layer_a33f3643fa4c5c5cb8cdd3f233a7ffbf1}{is\-Visible\-In\-Layer\-List} ()
+\item 
+bool \hyperlink{classRS__Layer_aa78c3119d35be5fb815c8d365e11d33e}{is\-Help\-Layer} ()
+\item 
+\hypertarget{classRS__Layer_aa7112c7d3612310c3a788a3c831f644b}{bool {\bfseries set\-Help\-Layer} (bool help\-Layer)}\label{classRS__Layer_aa7112c7d3612310c3a788a3c831f644b}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{classRS__Layer_ab373691fa4daa129d79f6765bfd34299}{operator$<$$<$} (std\-::ostream \&os, const \hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} \&l)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for representing a layer
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__Layer_a2662ad95414337e3fe462aa50b7ee367}{\index{R\-S\-\_\-\-Layer@{R\-S\-\_\-\-Layer}!R\-S\-\_\-\-Layer@{R\-S\-\_\-\-Layer}}
+\index{R\-S\-\_\-\-Layer@{R\-S\-\_\-\-Layer}!RS_Layer@{R\-S\-\_\-\-Layer}}
+\subsubsection[{R\-S\-\_\-\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Layer\-::\-R\-S\-\_\-\-Layer (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classRS__Layer_a2662ad95414337e3fe462aa50b7ee367}
+Constructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Layer_a9a8140a09260cd97508af31016ced14a}{\index{R\-S\-\_\-\-Layer@{R\-S\-\_\-\-Layer}!freeze@{freeze}}
+\index{freeze@{freeze}!RS_Layer@{R\-S\-\_\-\-Layer}}
+\subsubsection[{freeze}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Layer\-::freeze (
+\begin{DoxyParamCaption}
+\item[{bool}]{freeze}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Layer_a9a8140a09260cd97508af31016ced14a}
+(De-\/)freezes this layer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em freeze} & true\-: freeze, false\-: defreeze \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Layer_a1a8509534f4f51ab2fcbe137efe84e36}{\index{R\-S\-\_\-\-Layer@{R\-S\-\_\-\-Layer}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!RS_Layer@{R\-S\-\_\-\-Layer}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Layer\-::get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Layer_a1a8509534f4f51ab2fcbe137efe84e36}
+\begin{DoxyReturn}{Returns}
+the name of this layer. 
+\end{DoxyReturn}
+\hypertarget{classRS__Layer_a7c3b69e215ec71b6f67996b13ba14194}{\index{R\-S\-\_\-\-Layer@{R\-S\-\_\-\-Layer}!get\-Pen@{get\-Pen}}
+\index{get\-Pen@{get\-Pen}!RS_Layer@{R\-S\-\_\-\-Layer}}
+\subsubsection[{get\-Pen}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Pen} R\-S\-\_\-\-Layer\-::get\-Pen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Layer_a7c3b69e215ec71b6f67996b13ba14194}
+\begin{DoxyReturn}{Returns}
+default pen for this layer. 
+\end{DoxyReturn}
+\hypertarget{classRS__Layer_a13d3a2fec12c4b3082f1ad5f0f33a2fc}{\index{R\-S\-\_\-\-Layer@{R\-S\-\_\-\-Layer}!is\-Converted@{is\-Converted}}
+\index{is\-Converted@{is\-Converted}!RS_Layer@{R\-S\-\_\-\-Layer}}
+\subsubsection[{is\-Converted}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Layer\-::is\-Converted (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Layer_a13d3a2fec12c4b3082f1ad5f0f33a2fc}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & the layer has been converted already \\
+\hline
+{\em false} & the layer still needs to be converted \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{classRS__Layer_a4bac277cb1e988be074d2850ef9b7cce}{\index{R\-S\-\_\-\-Layer@{R\-S\-\_\-\-Layer}!is\-Frozen@{is\-Frozen}}
+\index{is\-Frozen@{is\-Frozen}!RS_Layer@{R\-S\-\_\-\-Layer}}
+\subsubsection[{is\-Frozen}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Layer\-::is\-Frozen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Layer_a4bac277cb1e988be074d2850ef9b7cce}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & if this layer is frozen (invisible) \\
+\hline
+{\em false} & if this layer isn't frozen (visible) \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{classRS__Layer_aa78c3119d35be5fb815c8d365e11d33e}{\index{R\-S\-\_\-\-Layer@{R\-S\-\_\-\-Layer}!is\-Help\-Layer@{is\-Help\-Layer}}
+\index{is\-Help\-Layer@{is\-Help\-Layer}!RS_Layer@{R\-S\-\_\-\-Layer}}
+\subsubsection[{is\-Help\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Layer\-::is\-Help\-Layer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Layer_aa78c3119d35be5fb815c8d365e11d33e}
+\begin{DoxyVerb}  whether the layer is a help layer
+  A help layer has plotF flag=false
+\end{DoxyVerb}
+ 1-\/ L\-A\-Y\-E\-R dxf group codes\-: 70 Standard flags (bit-\/coded values)\-: 1 = Layer is frozen; otherwise layer is thawed 4 = Layer is locked ... more codes follow not used by L\-C 290 Plotting flag. If set to 0, do not plot this layer \hypertarget{classRS__Layer_a9d78b6003d8ce252ef7cd6c309f14770}{\index{R\-S\-\_\-\-Layer@{R\-S\-\_\-\-Layer}!is\-Locked@{is\-Locked}}
+\index{is\-Locked@{is\-Locked}!RS_Layer@{R\-S\-\_\-\-Layer}}
+\subsubsection[{is\-Locked}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Layer\-::is\-Locked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Layer_a9d78b6003d8ce252ef7cd6c309f14770}
+return the L\-O\-C\-K state of the Layer \hypertarget{classRS__Layer_a33f3643fa4c5c5cb8cdd3f233a7ffbf1}{\index{R\-S\-\_\-\-Layer@{R\-S\-\_\-\-Layer}!is\-Visible\-In\-Layer\-List@{is\-Visible\-In\-Layer\-List}}
+\index{is\-Visible\-In\-Layer\-List@{is\-Visible\-In\-Layer\-List}!RS_Layer@{R\-S\-\_\-\-Layer}}
+\subsubsection[{is\-Visible\-In\-Layer\-List}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Layer\-::is\-Visible\-In\-Layer\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Layer_a33f3643fa4c5c5cb8cdd3f233a7ffbf1}
+return the L\-O\-C\-K state of the Layer \hypertarget{classRS__Layer_a10191b7f9abd3706bfc76fc961b3bfd9}{\index{R\-S\-\_\-\-Layer@{R\-S\-\_\-\-Layer}!lock@{lock}}
+\index{lock@{lock}!RS_Layer@{R\-S\-\_\-\-Layer}}
+\subsubsection[{lock}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Layer\-::lock (
+\begin{DoxyParamCaption}
+\item[{bool}]{l}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Layer_a10191b7f9abd3706bfc76fc961b3bfd9}
+Locks/\-Unlocks this layer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & true\-: lock, false\-: unlock \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Layer_a5ff9c824b2c6d22cff58d0e7fe7c22d6}{\index{R\-S\-\_\-\-Layer@{R\-S\-\_\-\-Layer}!set\-Converted@{set\-Converted}}
+\index{set\-Converted@{set\-Converted}!RS_Layer@{R\-S\-\_\-\-Layer}}
+\subsubsection[{set\-Converted}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Layer\-::set\-Converted (
+\begin{DoxyParamCaption}
+\item[{bool}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Layer_a5ff9c824b2c6d22cff58d0e7fe7c22d6}
+Sets the converted flag \hypertarget{classRS__Layer_af4e1b3caf8a7132d0cd298964863acee}{\index{R\-S\-\_\-\-Layer@{R\-S\-\_\-\-Layer}!set\-Name@{set\-Name}}
+\index{set\-Name@{set\-Name}!RS_Layer@{R\-S\-\_\-\-Layer}}
+\subsubsection[{set\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Layer\-::set\-Name (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Layer_af4e1b3caf8a7132d0cd298964863acee}
+sets a new name for this layer. \hypertarget{classRS__Layer_ac5be377e1a80e3e19f12ba7b9dfc5fc8}{\index{R\-S\-\_\-\-Layer@{R\-S\-\_\-\-Layer}!set\-Pen@{set\-Pen}}
+\index{set\-Pen@{set\-Pen}!RS_Layer@{R\-S\-\_\-\-Layer}}
+\subsubsection[{set\-Pen}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Layer\-::set\-Pen (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Pen} \&}]{pen}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Layer_ac5be377e1a80e3e19f12ba7b9dfc5fc8}
+sets the default pen for this layer. \hypertarget{classRS__Layer_a49082d20120732c79f781f9824cc4367}{\index{R\-S\-\_\-\-Layer@{R\-S\-\_\-\-Layer}!toggle@{toggle}}
+\index{toggle@{toggle}!RS_Layer@{R\-S\-\_\-\-Layer}}
+\subsubsection[{toggle}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Layer\-::toggle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Layer_a49082d20120732c79f781f9824cc4367}
+Toggles the visibility of this layer. Freezes the layer if it's not frozen, thaws the layer otherwise \hypertarget{classRS__Layer_a201e3d60c9c2098edca71316a1c4d463}{\index{R\-S\-\_\-\-Layer@{R\-S\-\_\-\-Layer}!toggle\-Lock@{toggle\-Lock}}
+\index{toggle\-Lock@{toggle\-Lock}!RS_Layer@{R\-S\-\_\-\-Layer}}
+\subsubsection[{toggle\-Lock}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Layer\-::toggle\-Lock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Layer_a201e3d60c9c2098edca71316a1c4d463}
+Toggles the lock of this layer. \hypertarget{classRS__Layer_aad843c09bc090f264e748044501c7a8d}{\index{R\-S\-\_\-\-Layer@{R\-S\-\_\-\-Layer}!visible\-In\-Layer\-List@{visible\-In\-Layer\-List}}
+\index{visible\-In\-Layer\-List@{visible\-In\-Layer\-List}!RS_Layer@{R\-S\-\_\-\-Layer}}
+\subsubsection[{visible\-In\-Layer\-List}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Layer\-::visible\-In\-Layer\-List (
+\begin{DoxyParamCaption}
+\item[{bool}]{l}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Layer_aad843c09bc090f264e748044501c7a8d}
+Locks/\-Unlocks this layer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & true\-: lock, false\-: unlock \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classRS__Layer_ab373691fa4daa129d79f6765bfd34299}{\index{R\-S\-\_\-\-Layer@{R\-S\-\_\-\-Layer}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!RS_Layer@{R\-S\-\_\-\-Layer}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os, }
+\item[{const {\bf R\-S\-\_\-\-Layer} \&}]{l}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classRS__Layer_ab373691fa4daa129d79f6765bfd34299}
+Copies all attributes (pen) and the name of the layer.
+
+Dumps the layers data to stdout. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-layer.\-h\item 
+librecad/src/lib/engine/rs\-\_\-layer.\-cpp\end{DoxyCompactItemize}

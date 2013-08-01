@@ -1,0 +1,220 @@
+\hypertarget{classRS__VariableDict}{\section{R\-S\-\_\-\-Variable\-Dict Class Reference}
+\label{classRS__VariableDict}\index{R\-S\-\_\-\-Variable\-Dict@{R\-S\-\_\-\-Variable\-Dict}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-variabledict.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__VariableDict_a62bc76de428630af285f2da279998ae7}{R\-S\-\_\-\-Variable\-Dict} ()
+\item 
+void \hyperlink{classRS__VariableDict_a60d1f5999d3bd1ae867586c1bd7a562c}{clear} ()
+\item 
+int \hyperlink{classRS__VariableDict_a6dcc527f5432f7509abfa800293e4231}{count} ()
+\item 
+void \hyperlink{classRS__VariableDict_a0a9905fba1e3349dd70834d7f8fc0524}{add} (const Q\-String \&key, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&value, int code)
+\item 
+void \hyperlink{classRS__VariableDict_a571efcb90903aade2f846f770bd2d555}{add} (const Q\-String \&key, const Q\-String \&value, int code)
+\item 
+void \hyperlink{classRS__VariableDict_a30d49492775d2b5a33a92c4f1d443579}{add} (const Q\-String \&key, int value, int code)
+\item 
+void \hyperlink{classRS__VariableDict_a4f07f21f7ce9e45b699d3be939077f75}{add} (const Q\-String \&key, double value, int code)
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__VariableDict_aa18a7e6c2df5d908900233e12ee7f732}{get\-Vector} (const Q\-String \&key, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&def)
+\item 
+Q\-String \hyperlink{classRS__VariableDict_afbdefa3c33e5ec27d26c76454df4acb7}{get\-String} (const Q\-String \&key, const Q\-String \&def)
+\item 
+int \hyperlink{classRS__VariableDict_af40be0bf9aec8128eeb85c2d632f2a8e}{get\-Int} (const Q\-String \&key, int def)
+\item 
+double \hyperlink{classRS__VariableDict_ac32fa71577bd4152bcfb841db4264ebe}{get\-Double} (const Q\-String \&key, double def)
+\item 
+virtual void \hyperlink{classRS__VariableDict_a037461b82e97d3c8d3fc3e60ad7855cb}{remove} (const Q\-String \&key)
+\item 
+\hypertarget{classRS__VariableDict_afc34ca3a593a233371db141c9fccecb0}{Q\-Hash$<$ Q\-String, \hyperlink{classRS__Variable}{R\-S\-\_\-\-Variable} $>$ \& {\bfseries get\-Variable\-Dict} ()}\label{classRS__VariableDict_afc34ca3a593a233371db141c9fccecb0}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{classRS__VariableDict_ae8f9e922a9302e3fecec788bff29e3b7}{operator$<$$<$} (std\-::ostream \&os, \hyperlink{classRS__VariableDict}{R\-S\-\_\-\-Variable\-Dict} \&v)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Dictionary of variables. The variables are stored as key / value pairs (string / string).
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__VariableDict_a62bc76de428630af285f2da279998ae7}{\index{R\-S\-\_\-\-Variable\-Dict@{R\-S\-\_\-\-Variable\-Dict}!R\-S\-\_\-\-Variable\-Dict@{R\-S\-\_\-\-Variable\-Dict}}
+\index{R\-S\-\_\-\-Variable\-Dict@{R\-S\-\_\-\-Variable\-Dict}!RS_VariableDict@{R\-S\-\_\-\-Variable\-Dict}}
+\subsubsection[{R\-S\-\_\-\-Variable\-Dict}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Variable\-Dict\-::\-R\-S\-\_\-\-Variable\-Dict (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__VariableDict_a62bc76de428630af285f2da279998ae7}
+Constructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__VariableDict_a0a9905fba1e3349dd70834d7f8fc0524}{\index{R\-S\-\_\-\-Variable\-Dict@{R\-S\-\_\-\-Variable\-Dict}!add@{add}}
+\index{add@{add}!RS_VariableDict@{R\-S\-\_\-\-Variable\-Dict}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Variable\-Dict\-::add (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{key, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{value, }
+\item[{int}]{code}
+\end{DoxyParamCaption}
+)}}\label{classRS__VariableDict_a0a9905fba1e3349dd70834d7f8fc0524}
+Adds a variable to the variable dictionary. If a variable with the same name already exists, is will be overwritten. \hypertarget{classRS__VariableDict_a571efcb90903aade2f846f770bd2d555}{\index{R\-S\-\_\-\-Variable\-Dict@{R\-S\-\_\-\-Variable\-Dict}!add@{add}}
+\index{add@{add}!RS_VariableDict@{R\-S\-\_\-\-Variable\-Dict}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Variable\-Dict\-::add (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{key, }
+\item[{const Q\-String \&}]{value, }
+\item[{int}]{code}
+\end{DoxyParamCaption}
+)}}\label{classRS__VariableDict_a571efcb90903aade2f846f770bd2d555}
+Activates the given block. Listeners are notified. Activates the given block. Listeners are notified. Adds a variable to the variable dictionary. If a variable with the same name already exists, is will be overwritten. \hypertarget{classRS__VariableDict_a30d49492775d2b5a33a92c4f1d443579}{\index{R\-S\-\_\-\-Variable\-Dict@{R\-S\-\_\-\-Variable\-Dict}!add@{add}}
+\index{add@{add}!RS_VariableDict@{R\-S\-\_\-\-Variable\-Dict}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Variable\-Dict\-::add (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{key, }
+\item[{int}]{value, }
+\item[{int}]{code}
+\end{DoxyParamCaption}
+)}}\label{classRS__VariableDict_a30d49492775d2b5a33a92c4f1d443579}
+Adds a variable to the variable dictionary. If a variable with the same name already exists, is will be overwritten. \hypertarget{classRS__VariableDict_a4f07f21f7ce9e45b699d3be939077f75}{\index{R\-S\-\_\-\-Variable\-Dict@{R\-S\-\_\-\-Variable\-Dict}!add@{add}}
+\index{add@{add}!RS_VariableDict@{R\-S\-\_\-\-Variable\-Dict}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Variable\-Dict\-::add (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{key, }
+\item[{double}]{value, }
+\item[{int}]{code}
+\end{DoxyParamCaption}
+)}}\label{classRS__VariableDict_a4f07f21f7ce9e45b699d3be939077f75}
+Adds a variable to the variable dictionary. If a variable with the same name already exists, is will be overwritten. \hypertarget{classRS__VariableDict_a60d1f5999d3bd1ae867586c1bd7a562c}{\index{R\-S\-\_\-\-Variable\-Dict@{R\-S\-\_\-\-Variable\-Dict}!clear@{clear}}
+\index{clear@{clear}!RS_VariableDict@{R\-S\-\_\-\-Variable\-Dict}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Variable\-Dict\-::clear (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classRS__VariableDict_a60d1f5999d3bd1ae867586c1bd7a562c}
+Removes all variables in the blocklist. \hypertarget{classRS__VariableDict_a6dcc527f5432f7509abfa800293e4231}{\index{R\-S\-\_\-\-Variable\-Dict@{R\-S\-\_\-\-Variable\-Dict}!count@{count}}
+\index{count@{count}!RS_VariableDict@{R\-S\-\_\-\-Variable\-Dict}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Variable\-Dict\-::count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__VariableDict_a6dcc527f5432f7509abfa800293e4231}
+\begin{DoxyReturn}{Returns}
+Number of variables available. 
+\end{DoxyReturn}
+\hypertarget{classRS__VariableDict_ac32fa71577bd4152bcfb841db4264ebe}{\index{R\-S\-\_\-\-Variable\-Dict@{R\-S\-\_\-\-Variable\-Dict}!get\-Double@{get\-Double}}
+\index{get\-Double@{get\-Double}!RS_VariableDict@{R\-S\-\_\-\-Variable\-Dict}}
+\subsubsection[{get\-Double}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Variable\-Dict\-::get\-Double (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{key, }
+\item[{double}]{def}
+\end{DoxyParamCaption}
+)}}\label{classRS__VariableDict_ac32fa71577bd4152bcfb841db4264ebe}
+Gets the value as double for the given variable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Key of the variable. \\
+\hline
+{\em def} & Default value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value for the given variable or the given default value if the variable couldn't be found. 
+\end{DoxyReturn}
+\hypertarget{classRS__VariableDict_af40be0bf9aec8128eeb85c2d632f2a8e}{\index{R\-S\-\_\-\-Variable\-Dict@{R\-S\-\_\-\-Variable\-Dict}!get\-Int@{get\-Int}}
+\index{get\-Int@{get\-Int}!RS_VariableDict@{R\-S\-\_\-\-Variable\-Dict}}
+\subsubsection[{get\-Int}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Variable\-Dict\-::get\-Int (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{key, }
+\item[{int}]{def}
+\end{DoxyParamCaption}
+)}}\label{classRS__VariableDict_af40be0bf9aec8128eeb85c2d632f2a8e}
+Gets the value as int for the given variable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Key of the variable. \\
+\hline
+{\em def} & Default value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value for the given variable or the given default value if the variable couldn't be found. 
+\end{DoxyReturn}
+\hypertarget{classRS__VariableDict_afbdefa3c33e5ec27d26c76454df4acb7}{\index{R\-S\-\_\-\-Variable\-Dict@{R\-S\-\_\-\-Variable\-Dict}!get\-String@{get\-String}}
+\index{get\-String@{get\-String}!RS_VariableDict@{R\-S\-\_\-\-Variable\-Dict}}
+\subsubsection[{get\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Variable\-Dict\-::get\-String (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{key, }
+\item[{const Q\-String \&}]{def}
+\end{DoxyParamCaption}
+)}}\label{classRS__VariableDict_afbdefa3c33e5ec27d26c76454df4acb7}
+Gets the value for the given variable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Key of the variable. \\
+\hline
+{\em def} & Default value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value for the given variable or the given default value if the variable couldn't be found. 
+\end{DoxyReturn}
+\hypertarget{classRS__VariableDict_aa18a7e6c2df5d908900233e12ee7f732}{\index{R\-S\-\_\-\-Variable\-Dict@{R\-S\-\_\-\-Variable\-Dict}!get\-Vector@{get\-Vector}}
+\index{get\-Vector@{get\-Vector}!RS_VariableDict@{R\-S\-\_\-\-Variable\-Dict}}
+\subsubsection[{get\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Variable\-Dict\-::get\-Vector (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{key, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{def}
+\end{DoxyParamCaption}
+)}}\label{classRS__VariableDict_aa18a7e6c2df5d908900233e12ee7f732}
+Gets the value for the given variable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Key of the variable. \\
+\hline
+{\em def} & Default value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value for the given variable or the given default value if the variable couldn't be found. 
+\end{DoxyReturn}
+\hypertarget{classRS__VariableDict_a037461b82e97d3c8d3fc3e60ad7855cb}{\index{R\-S\-\_\-\-Variable\-Dict@{R\-S\-\_\-\-Variable\-Dict}!remove@{remove}}
+\index{remove@{remove}!RS_VariableDict@{R\-S\-\_\-\-Variable\-Dict}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Variable\-Dict\-::remove (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__VariableDict_a037461b82e97d3c8d3fc3e60ad7855cb}
+Notifies the listeners about layers that were added. This can be used after adding a lot of variables without auto-\/update. Removes a variable from the list. T\-O\-D\-O\-: Listeners are notified after the block was removed from the list but before it gets deleted. 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classRS__VariableDict_ae8f9e922a9302e3fecec788bff29e3b7}{\index{R\-S\-\_\-\-Variable\-Dict@{R\-S\-\_\-\-Variable\-Dict}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!RS_VariableDict@{R\-S\-\_\-\-Variable\-Dict}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os, }
+\item[{{\bf R\-S\-\_\-\-Variable\-Dict} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classRS__VariableDict_ae8f9e922a9302e3fecec788bff29e3b7}
+Dumps the variables to stdout. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-variabledict.\-h\item 
+librecad/src/lib/engine/rs\-\_\-variabledict.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,186 @@
+\hypertarget{classRS__ActionModifyStretch}{\section{R\-S\-\_\-\-Action\-Modify\-Stretch Class Reference}
+\label{classRS__ActionModifyStretch}\index{R\-S\-\_\-\-Action\-Modify\-Stretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionmodifystretch.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Modify\-Stretch\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classRS__ActionModifyStretch}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionModifyStretch_a76e24e563deadcc168b1af226cff7666}{Status} \{ \hyperlink{classRS__ActionModifyStretch_a76e24e563deadcc168b1af226cff7666a046d6b4a871571e2e2eca1d1cf167d6c}{Set\-First\-Corner}, 
+\hyperlink{classRS__ActionModifyStretch_a76e24e563deadcc168b1af226cff7666a4eae9bf6cfaef3c66782d4b4b5b73aef}{Set\-Second\-Corner}, 
+\hyperlink{classRS__ActionModifyStretch_a76e24e563deadcc168b1af226cff7666a2b5899630c854b8128faea8f5b4362a0}{Set\-Reference\-Point}, 
+\hyperlink{classRS__ActionModifyStretch_a76e24e563deadcc168b1af226cff7666ae7f5f7d7b19c0c48978a9c9e41294702}{Set\-Target\-Point}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionModifyStretch_ae1ae10a968f0807305518759efac6f7b}{{\bfseries R\-S\-\_\-\-Action\-Modify\-Stretch} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionModifyStretch_ae1ae10a968f0807305518759efac6f7b}
+
+\item 
+\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__ActionModifyStretch_a42ad534adc2909c338736dc2e32884e7}{rtti} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyStretch_a3d3f351bc998eb2bee6ce967ed8ecfe5}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionModifyStretch_ae94ef515cb45bb9531c7f8d283a9ff79}{trigger} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyStretch_a2c7a9640e2002afff274334ee225fdae}{coordinate\-Event} (\hyperlink{classRS__CoordinateEvent}{R\-S\-\_\-\-Coordinate\-Event} $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionModifyStretch_aedc3502727afafdf74e2010d779feafd}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionModifyStretch_a35606ab922a518abbf451e1487808ce1}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionModifyStretch_a7991c68318d2ff44e7284b7c8539cda4}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyStretch_abe0f0112128dff43c3533eb868d49894}{update\-Mouse\-Cursor} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionModifyStretch_aaf665311f386f2b80b7828cedc6c27c0}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionModifyStretch_aaf665311f386f2b80b7828cedc6c27c0}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to move entities.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionModifyStretch_a76e24e563deadcc168b1af226cff7666}{\index{R\-S\-\_\-\-Action\-Modify\-Stretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}!Status@{Status}}
+\index{Status@{Status}!RS_ActionModifyStretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Modify\-Stretch\-::\-Status}}}\label{classRS__ActionModifyStretch_a76e24e563deadcc168b1af226cff7666}
+Action States. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Set\-First\-Corner@{Set\-First\-Corner}!R\-S\-\_\-\-Action\-Modify\-Stretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}}\index{R\-S\-\_\-\-Action\-Modify\-Stretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}!Set\-First\-Corner@{Set\-First\-Corner}}\item[{\em 
+\hypertarget{classRS__ActionModifyStretch_a76e24e563deadcc168b1af226cff7666a046d6b4a871571e2e2eca1d1cf167d6c}{Set\-First\-Corner}\label{classRS__ActionModifyStretch_a76e24e563deadcc168b1af226cff7666a046d6b4a871571e2e2eca1d1cf167d6c}
+}]Setting first corner of selection. \index{Set\-Second\-Corner@{Set\-Second\-Corner}!R\-S\-\_\-\-Action\-Modify\-Stretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}}\index{R\-S\-\_\-\-Action\-Modify\-Stretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}!Set\-Second\-Corner@{Set\-Second\-Corner}}\item[{\em 
+\hypertarget{classRS__ActionModifyStretch_a76e24e563deadcc168b1af226cff7666a4eae9bf6cfaef3c66782d4b4b5b73aef}{Set\-Second\-Corner}\label{classRS__ActionModifyStretch_a76e24e563deadcc168b1af226cff7666a4eae9bf6cfaef3c66782d4b4b5b73aef}
+}]Setting second corner of selection. \index{Set\-Reference\-Point@{Set\-Reference\-Point}!R\-S\-\_\-\-Action\-Modify\-Stretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}}\index{R\-S\-\_\-\-Action\-Modify\-Stretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}!Set\-Reference\-Point@{Set\-Reference\-Point}}\item[{\em 
+\hypertarget{classRS__ActionModifyStretch_a76e24e563deadcc168b1af226cff7666a2b5899630c854b8128faea8f5b4362a0}{Set\-Reference\-Point}\label{classRS__ActionModifyStretch_a76e24e563deadcc168b1af226cff7666a2b5899630c854b8128faea8f5b4362a0}
+}]Setting the reference point. \index{Set\-Target\-Point@{Set\-Target\-Point}!R\-S\-\_\-\-Action\-Modify\-Stretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}}\index{R\-S\-\_\-\-Action\-Modify\-Stretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}!Set\-Target\-Point@{Set\-Target\-Point}}\item[{\em 
+\hypertarget{classRS__ActionModifyStretch_a76e24e563deadcc168b1af226cff7666ae7f5f7d7b19c0c48978a9c9e41294702}{Set\-Target\-Point}\label{classRS__ActionModifyStretch_a76e24e563deadcc168b1af226cff7666ae7f5f7d7b19c0c48978a9c9e41294702}
+}]Setting the target point. \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionModifyStretch_a2c7a9640e2002afff274334ee225fdae}{\index{R\-S\-\_\-\-Action\-Modify\-Stretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}!coordinate\-Event@{coordinate\-Event}}
+\index{coordinate\-Event@{coordinate\-Event}!RS_ActionModifyStretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}}
+\subsubsection[{coordinate\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Stretch\-::coordinate\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Coordinate\-Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyStretch_a2c7a9640e2002afff274334ee225fdae}
+Coordinate event. Triggered usually from a command line. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a9013e88769edd39b2a74af5add2986c9}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyStretch_a3d3f351bc998eb2bee6ce967ed8ecfe5}{\index{R\-S\-\_\-\-Action\-Modify\-Stretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}!init@{init}}
+\index{init@{init}!RS_ActionModifyStretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Stretch\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyStretch_a3d3f351bc998eb2bee6ce967ed8ecfe5}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae5113b2aef5a10acd192786b99580e4a}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyStretch_aedc3502727afafdf74e2010d779feafd}{\index{R\-S\-\_\-\-Action\-Modify\-Stretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_ActionModifyStretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Stretch\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyStretch_aedc3502727afafdf74e2010d779feafd}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyStretch_a35606ab922a518abbf451e1487808ce1}{\index{R\-S\-\_\-\-Action\-Modify\-Stretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionModifyStretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Stretch\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyStretch_a35606ab922a518abbf451e1487808ce1}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyStretch_a42ad534adc2909c338736dc2e32884e7}{\index{R\-S\-\_\-\-Action\-Modify\-Stretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_ActionModifyStretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Action\-Modify\-Stretch\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__ActionModifyStretch_a42ad534adc2909c338736dc2e32884e7}
+Must be implemented to return the I\-D of this action.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]no default implementation \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af877a66b5b4a7053f2b1f0519c57a6f5}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyStretch_ae94ef515cb45bb9531c7f8d283a9ff79}{\index{R\-S\-\_\-\-Action\-Modify\-Stretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionModifyStretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Stretch\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyStretch_ae94ef515cb45bb9531c7f8d283a9ff79}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyStretch_a7991c68318d2ff44e7284b7c8539cda4}{\index{R\-S\-\_\-\-Action\-Modify\-Stretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionModifyStretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Stretch\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyStretch_a7991c68318d2ff44e7284b7c8539cda4}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyStretch_abe0f0112128dff43c3533eb868d49894}{\index{R\-S\-\_\-\-Action\-Modify\-Stretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionModifyStretch@{R\-S\-\_\-\-Action\-Modify\-Stretch}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Stretch\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyStretch_abe0f0112128dff43c3533eb868d49894}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionmodifystretch.\-h\item 
+librecad/src/actions/rs\-\_\-actionmodifystretch.\-cpp\end{DoxyCompactItemize}

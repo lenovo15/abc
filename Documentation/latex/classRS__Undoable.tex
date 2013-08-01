@@ -1,0 +1,123 @@
+\hypertarget{classRS__Undoable}{\section{R\-S\-\_\-\-Undoable Class Reference}
+\label{classRS__Undoable}\index{R\-S\-\_\-\-Undoable@{R\-S\-\_\-\-Undoable}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-undoable.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Undoable\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classRS__Undoable}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__Undoable_a6c18486e7d9835d1f01c40159b65589d}{R\-S\-\_\-\-Undoable} ()
+\item 
+virtual \hyperlink{classRS__Undoable_a6233ad4a789bac1057379dab6a51a90a}{$\sim$\-R\-S\-\_\-\-Undoable} ()
+\item 
+virtual \hyperlink{classRS2_ab5fe5e99761abbb178f2e132d4ac84ee}{R\-S2\-::\-Undoable\-Type} \hyperlink{classRS__Undoable_a82cbb94a22101e252be773b1f60630b3}{undo\-Rtti} ()
+\item 
+virtual void \hyperlink{classRS__Undoable_a3f529e443cff66f29407e2d42e368a31}{set\-Undo\-Cycle} (\hyperlink{classRS__UndoCycle}{R\-S\-\_\-\-Undo\-Cycle} $\ast$cycle)
+\item 
+virtual void \hyperlink{classRS__Undoable_af87cf57be35694730b4fe25248956ad8}{change\-Undo\-State} ()
+\item 
+virtual void \hyperlink{classRS__Undoable_ad527222fbb916d1b1360815b12eef618}{set\-Undo\-State} (bool undone)
+\item 
+virtual bool \hyperlink{classRS__Undoable_a94bf4f10d1060e8a831ffeeaaf7952e8}{is\-Undone} () const 
+\item 
+virtual void \hyperlink{classRS__Undoable_a8db54f4812aafa6772ddd375a66e21bb}{undo\-State\-Changed} (bool)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for something that can be added and deleted and every addition and deletion can be undone.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classRS__Undo}{R\-S\-\_\-\-Undo} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__Undoable_a6c18486e7d9835d1f01c40159b65589d}{\index{R\-S\-\_\-\-Undoable@{R\-S\-\_\-\-Undoable}!R\-S\-\_\-\-Undoable@{R\-S\-\_\-\-Undoable}}
+\index{R\-S\-\_\-\-Undoable@{R\-S\-\_\-\-Undoable}!RS_Undoable@{R\-S\-\_\-\-Undoable}}
+\subsubsection[{R\-S\-\_\-\-Undoable}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Undoable\-::\-R\-S\-\_\-\-Undoable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Undoable_a6c18486e7d9835d1f01c40159b65589d}
+Default constructor. \hypertarget{classRS__Undoable_a6233ad4a789bac1057379dab6a51a90a}{\index{R\-S\-\_\-\-Undoable@{R\-S\-\_\-\-Undoable}!$\sim$\-R\-S\-\_\-\-Undoable@{$\sim$\-R\-S\-\_\-\-Undoable}}
+\index{$\sim$\-R\-S\-\_\-\-Undoable@{$\sim$\-R\-S\-\_\-\-Undoable}!RS_Undoable@{R\-S\-\_\-\-Undoable}}
+\subsubsection[{$\sim$\-R\-S\-\_\-\-Undoable}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Undoable\-::$\sim$\-R\-S\-\_\-\-Undoable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Undoable_a6233ad4a789bac1057379dab6a51a90a}
+Destructor. Makes sure that this undoable is removed from its undo cycle before it is deleted. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Undoable_af87cf57be35694730b4fe25248956ad8}{\index{R\-S\-\_\-\-Undoable@{R\-S\-\_\-\-Undoable}!change\-Undo\-State@{change\-Undo\-State}}
+\index{change\-Undo\-State@{change\-Undo\-State}!RS_Undoable@{R\-S\-\_\-\-Undoable}}
+\subsubsection[{change\-Undo\-State}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Undoable\-::change\-Undo\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Undoable_af87cf57be35694730b4fe25248956ad8}
+The undoable thing gets activated if it was undone and deactivated otherwise. \hypertarget{classRS__Undoable_a94bf4f10d1060e8a831ffeeaaf7952e8}{\index{R\-S\-\_\-\-Undoable@{R\-S\-\_\-\-Undoable}!is\-Undone@{is\-Undone}}
+\index{is\-Undone@{is\-Undone}!RS_Undoable@{R\-S\-\_\-\-Undoable}}
+\subsubsection[{is\-Undone}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Undoable\-::is\-Undone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Undoable_a94bf4f10d1060e8a831ffeeaaf7952e8}
+Is this entity in the Undo memory and not active? 
+
+Reimplemented in \hyperlink{classRS__Entity_a6a45b22292f81d60bc98002abdc6561b}{R\-S\-\_\-\-Entity}.
+
+\hypertarget{classRS__Undoable_a3f529e443cff66f29407e2d42e368a31}{\index{R\-S\-\_\-\-Undoable@{R\-S\-\_\-\-Undoable}!set\-Undo\-Cycle@{set\-Undo\-Cycle}}
+\index{set\-Undo\-Cycle@{set\-Undo\-Cycle}!RS_Undoable@{R\-S\-\_\-\-Undoable}}
+\subsubsection[{set\-Undo\-Cycle}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Undoable\-::set\-Undo\-Cycle (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Undo\-Cycle} $\ast$}]{cycle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Undoable_a3f529e443cff66f29407e2d42e368a31}
+Sets the undo cycle this entity is in. This is necessary to make sure the entity can remove itself from the cycle before being deleted. \hypertarget{classRS__Undoable_ad527222fbb916d1b1360815b12eef618}{\index{R\-S\-\_\-\-Undoable@{R\-S\-\_\-\-Undoable}!set\-Undo\-State@{set\-Undo\-State}}
+\index{set\-Undo\-State@{set\-Undo\-State}!RS_Undoable@{R\-S\-\_\-\-Undoable}}
+\subsubsection[{set\-Undo\-State}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Undoable\-::set\-Undo\-State (
+\begin{DoxyParamCaption}
+\item[{bool}]{undone}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Undoable_ad527222fbb916d1b1360815b12eef618}
+Undoes or redoes an undoable. \hypertarget{classRS__Undoable_a82cbb94a22101e252be773b1f60630b3}{\index{R\-S\-\_\-\-Undoable@{R\-S\-\_\-\-Undoable}!undo\-Rtti@{undo\-Rtti}}
+\index{undo\-Rtti@{undo\-Rtti}!RS_Undoable@{R\-S\-\_\-\-Undoable}}
+\subsubsection[{undo\-Rtti}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S2\-::\-Undoable\-Type} R\-S\-\_\-\-Undoable\-::undo\-Rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__Undoable_a82cbb94a22101e252be773b1f60630b3}
+Runtime type identification for undoables. Note that this is voluntarily. The default implementation returns \hyperlink{classRS2_ab5fe5e99761abbb178f2e132d4ac84eea5c4d52d9b4d9f1a4d145e77d2bb7f3c5}{R\-S2\-::\-Undoable\-Unknown}. 
+
+Reimplemented in \hyperlink{classRS__Entity_a224d378cdafc8b11dc3a1548ae93dc1d}{R\-S\-\_\-\-Entity}.
+
+\hypertarget{classRS__Undoable_a8db54f4812aafa6772ddd375a66e21bb}{\index{R\-S\-\_\-\-Undoable@{R\-S\-\_\-\-Undoable}!undo\-State\-Changed@{undo\-State\-Changed}}
+\index{undo\-State\-Changed@{undo\-State\-Changed}!RS_Undoable@{R\-S\-\_\-\-Undoable}}
+\subsubsection[{undo\-State\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Undoable\-::undo\-State\-Changed (
+\begin{DoxyParamCaption}
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__Undoable_a8db54f4812aafa6772ddd375a66e21bb}
+Can be overwriten by the implementing class to be notified when the undo state changes (the undoable becomes visible / invisible). 
+
+Reimplemented in \hyperlink{classRS__Entity_a1c8984b044120833c2089c19fac68bcf}{R\-S\-\_\-\-Entity}, and \hyperlink{classRS__EntityContainer_a2744a674667c0c9d4c1779c573616685}{R\-S\-\_\-\-Entity\-Container}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-undoable.\-h\item 
+librecad/src/lib/engine/rs\-\_\-undoable.\-cpp\end{DoxyCompactItemize}

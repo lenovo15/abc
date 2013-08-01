@@ -1,0 +1,265 @@
+\hypertarget{classRS__ActionDefault}{\section{R\-S\-\_\-\-Action\-Default Class Reference}
+\label{classRS__ActionDefault}\index{R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actiondefault.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Default\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classRS__ActionDefault}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionDefault_ad26a7fa3d02107a86e4ad44276ee8e1c}{Status} \{ \\*
+\hyperlink{classRS__ActionDefault_ad26a7fa3d02107a86e4ad44276ee8e1caecf914a039f05d75196e949386822851}{Neutral}, 
+\hyperlink{classRS__ActionDefault_ad26a7fa3d02107a86e4ad44276ee8e1cab93e25eb8e74629529ef10a2b9e836bf}{Dragging}, 
+\hyperlink{classRS__ActionDefault_ad26a7fa3d02107a86e4ad44276ee8e1ca704410bdbf6fc179e102171a2a677303}{Set\-Corner2}, 
+\hyperlink{classRS__ActionDefault_ad26a7fa3d02107a86e4ad44276ee8e1ca0f5c04611a2fe57dff2a8df6322e7eb3}{Moving}, 
+\\*
+\hyperlink{classRS__ActionDefault_ad26a7fa3d02107a86e4ad44276ee8e1ca9841b3acd25316214793c1cc1f70a7ec}{Moving\-Ref}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__ActionDefault_a2982dd8193c5b590a14c480f9b81ac27}{R\-S\-\_\-\-Action\-Default} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)
+\item 
+virtual \hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__ActionDefault_a1006349b259e10251fafd9da37ef1a0b}{rtti} ()
+\item 
+virtual void \hyperlink{classRS__ActionDefault_aa1fe85d09bee8ff975833fae1b596ddb}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionDefault_ac17b69f974f99c0993f5d5db81f495b2}{trigger} ()
+\item 
+virtual void \hyperlink{classRS__ActionDefault_afa74af95dcfe056ce3b25010da79d8b9}{key\-Press\-Event} (Q\-Key\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDefault_a36965c9c0165f18106303204f59d2325}{key\-Release\-Event} (Q\-Key\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDefault_a5c874399d41cc918f8c00240bdef9f3c}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDefault_ad7bddd5242345357d49c9457706d664b}{mouse\-Press\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDefault_a49a1c31f2ff3311a5535f5fca556e8ce}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDefault_aaeb4de57685584043ff9a520f511f8d3}{command\-Event} (\hyperlink{classRS__CommandEvent}{R\-S\-\_\-\-Command\-Event} $\ast$e)
+\item 
+virtual Q\-String\-List \hyperlink{classRS__ActionDefault_a4368e54834631dc1a63f25574020cd17}{get\-Available\-Commands} ()
+\item 
+virtual void \hyperlink{classRS__ActionDefault_ab4f16933b76557eb2ab0f87a12dbbe24}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionDefault_aa8b587096607c40ae179bfab72e826fa}{update\-Mouse\-Cursor} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionDefault_af075bcd42af2c528246c1d0995311e92}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionDefault_af075bcd42af2c528246c1d0995311e92}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionDefault_a459c3a50869296fe92c9852fd1c4321a}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries v1}}\label{classRS__ActionDefault_a459c3a50869296fe92c9852fd1c4321a}
+
+\item 
+\hypertarget{classRS__ActionDefault_a0337596df72bb7d79be2c3eb99d955ae}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries v2}}\label{classRS__ActionDefault_a0337596df72bb7d79be2c3eb99d955ae}
+
+\item 
+\hypertarget{classRS__ActionDefault_a9bc6d992a5b1ab6a4b3ece23abc7fe66}{\hyperlink{classRS2_aac67b6890a08cff619c0fbef48377bae}{R\-S2\-::\-Snap\-Restriction} {\bfseries restr\-Bak}}\label{classRS__ActionDefault_a9bc6d992a5b1ab6a4b3ece23abc7fe66}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to select all entities.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionDefault_ad26a7fa3d02107a86e4ad44276ee8e1c}{\index{R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}!Status@{Status}}
+\index{Status@{Status}!RS_ActionDefault@{R\-S\-\_\-\-Action\-Default}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Default\-::\-Status}}}\label{classRS__ActionDefault_ad26a7fa3d02107a86e4ad44276ee8e1c}
+Action States. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Neutral@{Neutral}!R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}}\index{R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}!Neutral@{Neutral}}\item[{\em 
+\hypertarget{classRS__ActionDefault_ad26a7fa3d02107a86e4ad44276ee8e1caecf914a039f05d75196e949386822851}{Neutral}\label{classRS__ActionDefault_ad26a7fa3d02107a86e4ad44276ee8e1caecf914a039f05d75196e949386822851}
+}]we don't know what we do yet. \index{Dragging@{Dragging}!R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}}\index{R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}!Dragging@{Dragging}}\item[{\em 
+\hypertarget{classRS__ActionDefault_ad26a7fa3d02107a86e4ad44276ee8e1cab93e25eb8e74629529ef10a2b9e836bf}{Dragging}\label{classRS__ActionDefault_ad26a7fa3d02107a86e4ad44276ee8e1cab93e25eb8e74629529ef10a2b9e836bf}
+}]dragging (either an entity or the first part of a selection window) \index{Set\-Corner2@{Set\-Corner2}!R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}}\index{R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}!Set\-Corner2@{Set\-Corner2}}\item[{\em 
+\hypertarget{classRS__ActionDefault_ad26a7fa3d02107a86e4ad44276ee8e1ca704410bdbf6fc179e102171a2a677303}{Set\-Corner2}\label{classRS__ActionDefault_ad26a7fa3d02107a86e4ad44276ee8e1ca704410bdbf6fc179e102171a2a677303}
+}]Setting the 2nd corner of a selection window. \index{Moving@{Moving}!R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}}\index{R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}!Moving@{Moving}}\item[{\em 
+\hypertarget{classRS__ActionDefault_ad26a7fa3d02107a86e4ad44276ee8e1ca0f5c04611a2fe57dff2a8df6322e7eb3}{Moving}\label{classRS__ActionDefault_ad26a7fa3d02107a86e4ad44276ee8e1ca0f5c04611a2fe57dff2a8df6322e7eb3}
+}]Moving entities (drag'n'drop) \index{Moving\-Ref@{Moving\-Ref}!R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}}\index{R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}!Moving\-Ref@{Moving\-Ref}}\item[{\em 
+\hypertarget{classRS__ActionDefault_ad26a7fa3d02107a86e4ad44276ee8e1ca9841b3acd25316214793c1cc1f70a7ec}{Moving\-Ref}\label{classRS__ActionDefault_ad26a7fa3d02107a86e4ad44276ee8e1ca9841b3acd25316214793c1cc1f70a7ec}
+}]Moving a reference point of one or more selected entities \end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__ActionDefault_a2982dd8193c5b590a14c480f9b81ac27}{\index{R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}!R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}}
+\index{R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}!RS_ActionDefault@{R\-S\-\_\-\-Action\-Default}}
+\subsubsection[{R\-S\-\_\-\-Action\-Default}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Action\-Default\-::\-R\-S\-\_\-\-Action\-Default (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} \&}]{graphic\-View}
+\end{DoxyParamCaption}
+)}}\label{classRS__ActionDefault_a2982dd8193c5b590a14c480f9b81ac27}
+Constructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionDefault_aaeb4de57685584043ff9a520f511f8d3}{\index{R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}!command\-Event@{command\-Event}}
+\index{command\-Event@{command\-Event}!RS_ActionDefault@{R\-S\-\_\-\-Action\-Default}}
+\subsubsection[{command\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Default\-::command\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Command\-Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDefault_aaeb4de57685584043ff9a520f511f8d3}
+Called when a command from the command line is launched. and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a187365514bab9b2997c5fe7ff5274a22}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDefault_a4368e54834631dc1a63f25574020cd17}{\index{R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}!get\-Available\-Commands@{get\-Available\-Commands}}
+\index{get\-Available\-Commands@{get\-Available\-Commands}!RS_ActionDefault@{R\-S\-\_\-\-Action\-Default}}
+\subsubsection[{get\-Available\-Commands}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String\-List R\-S\-\_\-\-Action\-Default\-::get\-Available\-Commands (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDefault_a4368e54834631dc1a63f25574020cd17}
+Must be implemented to return the currently available commands for the command line. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acafdac8d18d3f053eda872581fb3e27d}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDefault_aa1fe85d09bee8ff975833fae1b596ddb}{\index{R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}!init@{init}}
+\index{init@{init}!RS_ActionDefault@{R\-S\-\_\-\-Action\-Default}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Default\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDefault_aa1fe85d09bee8ff975833fae1b596ddb}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae5113b2aef5a10acd192786b99580e4a}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDefault_afa74af95dcfe056ce3b25010da79d8b9}{\index{R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}!key\-Press\-Event@{key\-Press\-Event}}
+\index{key\-Press\-Event@{key\-Press\-Event}!RS_ActionDefault@{R\-S\-\_\-\-Action\-Default}}
+\subsubsection[{key\-Press\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Default\-::key\-Press\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Key\-Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDefault_afa74af95dcfe056ce3b25010da79d8b9}
+Called when a key is pressed and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_ac95b65c310b028a96125ada37e62eb36}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDefault_a36965c9c0165f18106303204f59d2325}{\index{R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}!key\-Release\-Event@{key\-Release\-Event}}
+\index{key\-Release\-Event@{key\-Release\-Event}!RS_ActionDefault@{R\-S\-\_\-\-Action\-Default}}
+\subsubsection[{key\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Default\-::key\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Key\-Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDefault_a36965c9c0165f18106303204f59d2325}
+Called when a key is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_ad8e2085be7cde82f12c6145824956e81}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDefault_a5c874399d41cc918f8c00240bdef9f3c}{\index{R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_ActionDefault@{R\-S\-\_\-\-Action\-Default}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Default\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDefault_a5c874399d41cc918f8c00240bdef9f3c}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDefault_ad7bddd5242345357d49c9457706d664b}{\index{R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}!mouse\-Press\-Event@{mouse\-Press\-Event}}
+\index{mouse\-Press\-Event@{mouse\-Press\-Event}!RS_ActionDefault@{R\-S\-\_\-\-Action\-Default}}
+\subsubsection[{mouse\-Press\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Default\-::mouse\-Press\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDefault_ad7bddd5242345357d49c9457706d664b}
+Called when the left mouse button is pressed and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a323ab454694976656f426eb6cc7f456c}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDefault_a49a1c31f2ff3311a5535f5fca556e8ce}{\index{R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionDefault@{R\-S\-\_\-\-Action\-Default}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Default\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDefault_a49a1c31f2ff3311a5535f5fca556e8ce}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDefault_a1006349b259e10251fafd9da37ef1a0b}{\index{R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_ActionDefault@{R\-S\-\_\-\-Action\-Default}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Action\-Default\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__ActionDefault_a1006349b259e10251fafd9da37ef1a0b}
+Must be implemented to return the I\-D of this action.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]no default implementation \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af877a66b5b4a7053f2b1f0519c57a6f5}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDefault_ac17b69f974f99c0993f5d5db81f495b2}{\index{R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionDefault@{R\-S\-\_\-\-Action\-Default}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Default\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDefault_ac17b69f974f99c0993f5d5db81f495b2}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDefault_ab4f16933b76557eb2ab0f87a12dbbe24}{\index{R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionDefault@{R\-S\-\_\-\-Action\-Default}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Default\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDefault_ab4f16933b76557eb2ab0f87a12dbbe24}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDefault_aa8b587096607c40ae179bfab72e826fa}{\index{R\-S\-\_\-\-Action\-Default@{R\-S\-\_\-\-Action\-Default}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionDefault@{R\-S\-\_\-\-Action\-Default}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Default\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDefault_aa8b587096607c40ae179bfab72e826fa}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actiondefault.\-h\item 
+librecad/src/actions/rs\-\_\-actiondefault.\-cpp\end{DoxyCompactItemize}

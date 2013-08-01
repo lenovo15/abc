@@ -1,0 +1,365 @@
+\hypertarget{classRS__Units}{\section{R\-S\-\_\-\-Units Class Reference}
+\label{classRS__Units}\index{R\-S\-\_\-\-Units@{R\-S\-\_\-\-Units}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-units.\-h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828}{R\-S2\-::\-Unit} \hyperlink{classRS__Units_a11d2b29f6f51e740f3f093cb27e3f23f}{dxfint2unit} (int dxfint)
+\item 
+static Q\-String \hyperlink{classRS__Units_a4a5b96d80f2292a5c9b2db9d351b1194}{unit\-To\-String} (\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828}{R\-S2\-::\-Unit} u, bool t=true)
+\item 
+static \hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828}{R\-S2\-::\-Unit} \hyperlink{classRS__Units_a192dcc1011b50ad5fea11320b4c3480b}{string\-To\-Unit} (const Q\-String \&u)
+\item 
+static bool \hyperlink{classRS__Units_ac4e933d8888c02e69dc87954800a8b91}{is\-Metric} (\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828}{R\-S2\-::\-Unit} u)
+\item 
+static double \hyperlink{classRS__Units_adf5765cbead5bbb3087a6ef666feedb4}{get\-Factor\-To\-M\-M} (\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828}{R\-S2\-::\-Unit} u)
+\item 
+static double \hyperlink{classRS__Units_a66319fe4b641ce38adda06b25b4c9c34}{convert} (double val, \hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828}{R\-S2\-::\-Unit} src, \hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828}{R\-S2\-::\-Unit} dest)
+\item 
+static \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Units_aaf734555e3ce8715322ad6cbfa5dbc8b}{convert} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} val, \hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828}{R\-S2\-::\-Unit} src, \hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828}{R\-S2\-::\-Unit} dest)
+\item 
+static Q\-String \hyperlink{classRS__Units_a162a187293370ff69f18e3beabbc5888}{unit\-To\-Sign} (\hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828}{R\-S2\-::\-Unit} u)
+\item 
+static Q\-String \hyperlink{classRS__Units_ae876795e761628a91ae79e66b10fc39b}{format\-Linear} (double length, \hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828}{R\-S2\-::\-Unit} unit, \hyperlink{classRS2_a0fa0506f1e870c169e8d8c1d58d3fa6e}{R\-S2\-::\-Linear\-Format} format, int prec, bool show\-Unit=false)
+\item 
+static Q\-String \hyperlink{classRS__Units_a944aac6c69dcfc3a1f361a0bea352a9e}{format\-Scientific} (double length, \hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828}{R\-S2\-::\-Unit} unit, int prec, bool show\-Unit=false)
+\item 
+static Q\-String \hyperlink{classRS__Units_a9ebb6902248e219184dfab66948d6883}{format\-Decimal} (double length, \hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828}{R\-S2\-::\-Unit} unit, int prec, bool show\-Unit=false)
+\item 
+static Q\-String \hyperlink{classRS__Units_ab07cbb26854e3807f49937f299d0e051}{format\-Engineering} (double length, \hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828}{R\-S2\-::\-Unit} unit, int prec, bool show\-Unit=false)
+\item 
+static Q\-String \hyperlink{classRS__Units_ab4ec17de85ddd36eb62b67d4edd3680f}{format\-Architectural} (double length, \hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828}{R\-S2\-::\-Unit} unit, int prec, bool show\-Unit=false)
+\item 
+static Q\-String \hyperlink{classRS__Units_a83ed1be860a37ca4f8c9d133bb966cd7}{format\-Fractional} (double length, \hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828}{R\-S2\-::\-Unit} unit, int prec, bool show\-Unit=false)
+\item 
+static Q\-String \hyperlink{classRS__Units_a1e09b15c546e262907e85d3a80ef8686}{format\-Angle} (double angle, \hyperlink{classRS2_a9c7a07b03f910b04154536a28c151277}{R\-S2\-::\-Angle\-Format} format, int prec)
+\item 
+static \hyperlink{classRS2_a9c7a07b03f910b04154536a28c151277}{R\-S2\-::\-Angle\-Format} \hyperlink{classRS__Units_a913a1b496927b3339e60169182c57c89}{number\-To\-Angle\-Format} (int num)
+\item 
+static \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Units_acb64071b40ccb4e1e34c4c01106ad4c1}{paper\-Format\-To\-Size} (\hyperlink{classRS2_a99636ecac997160f1e2982859a043cb4}{R\-S2\-::\-Paper\-Format} p)
+\item 
+static \hyperlink{classRS2_a99636ecac997160f1e2982859a043cb4}{R\-S2\-::\-Paper\-Format} \hyperlink{classRS__Units_a39726263387c4efc5a0f186edd7a54a3}{paper\-Size\-To\-Format} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} s)
+\item 
+static Q\-String \hyperlink{classRS__Units_a978ff55136f2e14415e0c52866d92514}{paper\-Format\-To\-String} (\hyperlink{classRS2_a99636ecac997160f1e2982859a043cb4}{R\-S2\-::\-Paper\-Format} p)
+\item 
+static \hyperlink{classRS2_a99636ecac997160f1e2982859a043cb4}{R\-S2\-::\-Paper\-Format} \hyperlink{classRS__Units_a3ad1f793852a5a2dd529444236d6095c}{string\-To\-Paper\-Format} (const Q\-String \&p)
+\item 
+static void \hyperlink{classRS__Units_a0a5f6c84f48353bfed10fa8f2b7582e6}{test} ()
+\item 
+static double \hyperlink{classRS__Units_aec32a21b1b04d2e25f0820ca712c02f3}{dpi\-To\-Scale} (double dpi, \hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828}{R\-S2\-::\-Unit} unit)
+\item 
+static double \hyperlink{classRS__Units_ad83f1cf0fb0e2c2a5a208d91909b3ea7}{scale\-To\-Dpi} (double scale, \hyperlink{classRS2_ad859751df6978737e4f35ec111ff9828}{R\-S2\-::\-Unit} unit)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Conversion methods for units
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Units_a66319fe4b641ce38adda06b25b4c9c34}{\index{R\-S\-\_\-\-Units@{R\-S\-\_\-\-Units}!convert@{convert}}
+\index{convert@{convert}!RS_Units@{R\-S\-\_\-\-Units}}
+\subsubsection[{convert}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Units\-::convert (
+\begin{DoxyParamCaption}
+\item[{double}]{val, }
+\item[{{\bf R\-S2\-::\-Unit}}]{src, }
+\item[{{\bf R\-S2\-::\-Unit}}]{dest}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Units_a66319fe4b641ce38adda06b25b4c9c34}
+Converts the given value 'val' from unit 'src' to unit 'dest'. \hypertarget{classRS__Units_aaf734555e3ce8715322ad6cbfa5dbc8b}{\index{R\-S\-\_\-\-Units@{R\-S\-\_\-\-Units}!convert@{convert}}
+\index{convert@{convert}!RS_Units@{R\-S\-\_\-\-Units}}
+\subsubsection[{convert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Units\-::convert (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector}}]{val, }
+\item[{{\bf R\-S2\-::\-Unit}}]{src, }
+\item[{{\bf R\-S2\-::\-Unit}}]{dest}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Units_aaf734555e3ce8715322ad6cbfa5dbc8b}
+Converts the given vector 'val' from unit 'src' to unit 'dest'. \hypertarget{classRS__Units_aec32a21b1b04d2e25f0820ca712c02f3}{\index{R\-S\-\_\-\-Units@{R\-S\-\_\-\-Units}!dpi\-To\-Scale@{dpi\-To\-Scale}}
+\index{dpi\-To\-Scale@{dpi\-To\-Scale}!RS_Units@{R\-S\-\_\-\-Units}}
+\subsubsection[{dpi\-To\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Units\-::dpi\-To\-Scale (
+\begin{DoxyParamCaption}
+\item[{double}]{dpi, }
+\item[{{\bf R\-S2\-::\-Unit}}]{unit}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Units_aec32a21b1b04d2e25f0820ca712c02f3}
+Calculates a scaling factor from given dpi and units. \hypertarget{classRS__Units_a11d2b29f6f51e740f3f093cb27e3f23f}{\index{R\-S\-\_\-\-Units@{R\-S\-\_\-\-Units}!dxfint2unit@{dxfint2unit}}
+\index{dxfint2unit@{dxfint2unit}!RS_Units@{R\-S\-\_\-\-Units}}
+\subsubsection[{dxfint2unit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Unit} R\-S\-\_\-\-Units\-::dxfint2unit (
+\begin{DoxyParamCaption}
+\item[{int}]{dxfint}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Units_a11d2b29f6f51e740f3f093cb27e3f23f}
+Converts a D\-X\-F integer () to a Unit enum. \hypertarget{classRS__Units_a1e09b15c546e262907e85d3a80ef8686}{\index{R\-S\-\_\-\-Units@{R\-S\-\_\-\-Units}!format\-Angle@{format\-Angle}}
+\index{format\-Angle@{format\-Angle}!RS_Units@{R\-S\-\_\-\-Units}}
+\subsubsection[{format\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Units\-::format\-Angle (
+\begin{DoxyParamCaption}
+\item[{double}]{angle, }
+\item[{{\bf R\-S2\-::\-Angle\-Format}}]{format, }
+\item[{int}]{prec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Units_a1e09b15c546e262907e85d3a80ef8686}
+Formats the given angle with the given format.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle (always in rad). \\
+\hline
+{\em format} & Format of the string. \\
+\hline
+{\em prec} & Precisision of the value (e.\-g. 0.\-001 or 1/128 = 0.\-0078125)\\
+\hline
+\end{DoxyParams}
+String with the formatted angle. \hypertarget{classRS__Units_ab4ec17de85ddd36eb62b67d4edd3680f}{\index{R\-S\-\_\-\-Units@{R\-S\-\_\-\-Units}!format\-Architectural@{format\-Architectural}}
+\index{format\-Architectural@{format\-Architectural}!RS_Units@{R\-S\-\_\-\-Units}}
+\subsubsection[{format\-Architectural}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Units\-::format\-Architectural (
+\begin{DoxyParamCaption}
+\item[{double}]{length, }
+\item[{{\bf R\-S2\-::\-Unit}}]{unit, }
+\item[{int}]{prec, }
+\item[{bool}]{show\-Unit = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Units_ab4ec17de85ddd36eb62b67d4edd3680f}
+Formats the given length in architectural format (e.\-g. 5' 4 1/2").
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & The length in the current unit of the drawing. \\
+\hline
+{\em prec} & Precisision of the value (e.\-g. 0.\-001 or 1/128 = 0.\-0078125) \&\\
+\hline
+{\em show\-Unit} & Append unit to the value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Units_a9ebb6902248e219184dfab66948d6883}{\index{R\-S\-\_\-\-Units@{R\-S\-\_\-\-Units}!format\-Decimal@{format\-Decimal}}
+\index{format\-Decimal@{format\-Decimal}!RS_Units@{R\-S\-\_\-\-Units}}
+\subsubsection[{format\-Decimal}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Units\-::format\-Decimal (
+\begin{DoxyParamCaption}
+\item[{double}]{length, }
+\item[{{\bf R\-S2\-::\-Unit}}]{unit, }
+\item[{int}]{prec, }
+\item[{bool}]{show\-Unit = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Units_a9ebb6902248e219184dfab66948d6883}
+Formats the given length in decimal (normal) format (e.\-g. 2.\-5).
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & The length in the current unit of the drawing. \\
+\hline
+{\em prec} & Precisision of the value (e.\-g. 0.\-001) \&\\
+\hline
+{\em show\-Unit} & Append unit to the value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Units_ab07cbb26854e3807f49937f299d0e051}{\index{R\-S\-\_\-\-Units@{R\-S\-\_\-\-Units}!format\-Engineering@{format\-Engineering}}
+\index{format\-Engineering@{format\-Engineering}!RS_Units@{R\-S\-\_\-\-Units}}
+\subsubsection[{format\-Engineering}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Units\-::format\-Engineering (
+\begin{DoxyParamCaption}
+\item[{double}]{length, }
+\item[{{\bf R\-S2\-::\-Unit}}]{unit, }
+\item[{int}]{prec, }
+\item[{bool}]{show\-Unit = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Units_ab07cbb26854e3807f49937f299d0e051}
+Formats the given length in engineering format (e.\-g. 5' 4.\-5").
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & The length in the current unit of the drawing. \\
+\hline
+{\em prec} & Precisision of the value (e.\-g. 0.\-001 or 1/128 = 0.\-0078125) \&\\
+\hline
+{\em show\-Unit} & Append unit to the value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Units_a83ed1be860a37ca4f8c9d133bb966cd7}{\index{R\-S\-\_\-\-Units@{R\-S\-\_\-\-Units}!format\-Fractional@{format\-Fractional}}
+\index{format\-Fractional@{format\-Fractional}!RS_Units@{R\-S\-\_\-\-Units}}
+\subsubsection[{format\-Fractional}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Units\-::format\-Fractional (
+\begin{DoxyParamCaption}
+\item[{double}]{length, }
+\item[{{\bf R\-S2\-::\-Unit}}]{unit, }
+\item[{int}]{prec, }
+\item[{bool}]{show\-Unit = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Units_a83ed1be860a37ca4f8c9d133bb966cd7}
+Formats the given length in fractional (barbarian) format (e.\-g. 5' 3 1/64").
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & The length in the current unit of the drawing. \\
+\hline
+{\em unit} & Should be inches. \\
+\hline
+{\em prec} & Precisision of the value (e.\-g. 0.\-001 or 1/128 = 0.\-0078125) \&\\
+\hline
+{\em show\-Unit} & Append unit to the value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Units_ae876795e761628a91ae79e66b10fc39b}{\index{R\-S\-\_\-\-Units@{R\-S\-\_\-\-Units}!format\-Linear@{format\-Linear}}
+\index{format\-Linear@{format\-Linear}!RS_Units@{R\-S\-\_\-\-Units}}
+\subsubsection[{format\-Linear}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Units\-::format\-Linear (
+\begin{DoxyParamCaption}
+\item[{double}]{length, }
+\item[{{\bf R\-S2\-::\-Unit}}]{unit, }
+\item[{{\bf R\-S2\-::\-Linear\-Format}}]{format, }
+\item[{int}]{prec, }
+\item[{bool}]{show\-Unit = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Units_ae876795e761628a91ae79e66b10fc39b}
+Formats the given length in the given format.
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & The length in the current unit of the drawing. \\
+\hline
+{\em format} & Format of the string. \\
+\hline
+{\em prec} & Precisision of the value (e.\-g. 0.\-001 or 1/128 = 0.\-0078125) \&\\
+\hline
+{\em show\-Unit} & Append unit to the value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Units_a944aac6c69dcfc3a1f361a0bea352a9e}{\index{R\-S\-\_\-\-Units@{R\-S\-\_\-\-Units}!format\-Scientific@{format\-Scientific}}
+\index{format\-Scientific@{format\-Scientific}!RS_Units@{R\-S\-\_\-\-Units}}
+\subsubsection[{format\-Scientific}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Units\-::format\-Scientific (
+\begin{DoxyParamCaption}
+\item[{double}]{length, }
+\item[{{\bf R\-S2\-::\-Unit}}]{unit, }
+\item[{int}]{prec, }
+\item[{bool}]{show\-Unit = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Units_a944aac6c69dcfc3a1f361a0bea352a9e}
+Formats the given length in scientific format (e.\-g. 2.\-5\-E7).
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & The length in the current unit of the drawing. \\
+\hline
+{\em prec} & Precisision of the value (e.\-g. 0.\-001 or 1/128 = 0.\-0078125) \&\\
+\hline
+{\em show\-Unit} & Append unit to the value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__Units_adf5765cbead5bbb3087a6ef666feedb4}{\index{R\-S\-\_\-\-Units@{R\-S\-\_\-\-Units}!get\-Factor\-To\-M\-M@{get\-Factor\-To\-M\-M}}
+\index{get\-Factor\-To\-M\-M@{get\-Factor\-To\-M\-M}!RS_Units@{R\-S\-\_\-\-Units}}
+\subsubsection[{get\-Factor\-To\-M\-M}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Units\-::get\-Factor\-To\-M\-M (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Unit}}]{u}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Units_adf5765cbead5bbb3087a6ef666feedb4}
+\begin{DoxyReturn}{Returns}
+factor to convert the given unit to Millimeters. 
+\end{DoxyReturn}
+\hypertarget{classRS__Units_ac4e933d8888c02e69dc87954800a8b91}{\index{R\-S\-\_\-\-Units@{R\-S\-\_\-\-Units}!is\-Metric@{is\-Metric}}
+\index{is\-Metric@{is\-Metric}!RS_Units@{R\-S\-\_\-\-Units}}
+\subsubsection[{is\-Metric}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Units\-::is\-Metric (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Unit}}]{u}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Units_ac4e933d8888c02e69dc87954800a8b91}
+\begin{DoxyReturn}{Returns}
+true\-: the unit is metric, false\-: the unit is imperial. 
+\end{DoxyReturn}
+\hypertarget{classRS__Units_a913a1b496927b3339e60169182c57c89}{\index{R\-S\-\_\-\-Units@{R\-S\-\_\-\-Units}!number\-To\-Angle\-Format@{number\-To\-Angle\-Format}}
+\index{number\-To\-Angle\-Format@{number\-To\-Angle\-Format}!RS_Units@{R\-S\-\_\-\-Units}}
+\subsubsection[{number\-To\-Angle\-Format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Angle\-Format} R\-S\-\_\-\-Units\-::number\-To\-Angle\-Format (
+\begin{DoxyParamCaption}
+\item[{int}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Units_a913a1b496927b3339e60169182c57c89}
+Converts the given number from a D\-X\-F file into an Angle\-Format enum.
+
+
+\begin{DoxyParams}[1]{Parameters}
+num & {\em \$\-D\-I\-M\-A\-U\-N\-I\-T} & from D\-X\-F (0\-: decimal deg, 1\-: deg/min/sec, 2\-: gradians, 3\-: radians, 4\-: surveyor's units)\\
+\hline
+\end{DoxyParams}
+Matching Angle\-Format enum value. \hypertarget{classRS__Units_acb64071b40ccb4e1e34c4c01106ad4c1}{\index{R\-S\-\_\-\-Units@{R\-S\-\_\-\-Units}!paper\-Format\-To\-Size@{paper\-Format\-To\-Size}}
+\index{paper\-Format\-To\-Size@{paper\-Format\-To\-Size}!RS_Units@{R\-S\-\_\-\-Units}}
+\subsubsection[{paper\-Format\-To\-Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Units\-::paper\-Format\-To\-Size (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Paper\-Format}}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Units_acb64071b40ccb4e1e34c4c01106ad4c1}
+\begin{DoxyReturn}{Returns}
+Size of the given paper format. 
+\end{DoxyReturn}
+\hypertarget{classRS__Units_a978ff55136f2e14415e0c52866d92514}{\index{R\-S\-\_\-\-Units@{R\-S\-\_\-\-Units}!paper\-Format\-To\-String@{paper\-Format\-To\-String}}
+\index{paper\-Format\-To\-String@{paper\-Format\-To\-String}!RS_Units@{R\-S\-\_\-\-Units}}
+\subsubsection[{paper\-Format\-To\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Units\-::paper\-Format\-To\-String (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Paper\-Format}}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Units_a978ff55136f2e14415e0c52866d92514}
+Converts a paper format to a string (e.\-g. for a combobox). \hypertarget{classRS__Units_a39726263387c4efc5a0f186edd7a54a3}{\index{R\-S\-\_\-\-Units@{R\-S\-\_\-\-Units}!paper\-Size\-To\-Format@{paper\-Size\-To\-Format}}
+\index{paper\-Size\-To\-Format@{paper\-Size\-To\-Format}!RS_Units@{R\-S\-\_\-\-Units}}
+\subsubsection[{paper\-Size\-To\-Format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Paper\-Format} R\-S\-\_\-\-Units\-::paper\-Size\-To\-Format (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector}}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Units_a39726263387c4efc5a0f186edd7a54a3}
+Gets the paper format which matches the given size. If no format matches, R\-S2\-::\-Custom is returned. \hypertarget{classRS__Units_ad83f1cf0fb0e2c2a5a208d91909b3ea7}{\index{R\-S\-\_\-\-Units@{R\-S\-\_\-\-Units}!scale\-To\-Dpi@{scale\-To\-Dpi}}
+\index{scale\-To\-Dpi@{scale\-To\-Dpi}!RS_Units@{R\-S\-\_\-\-Units}}
+\subsubsection[{scale\-To\-Dpi}]{\setlength{\rightskip}{0pt plus 5cm}double R\-S\-\_\-\-Units\-::scale\-To\-Dpi (
+\begin{DoxyParamCaption}
+\item[{double}]{scale, }
+\item[{{\bf R\-S2\-::\-Unit}}]{unit}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Units_ad83f1cf0fb0e2c2a5a208d91909b3ea7}
+Calculates a dpi value from given scaling factor and units. \hypertarget{classRS__Units_a3ad1f793852a5a2dd529444236d6095c}{\index{R\-S\-\_\-\-Units@{R\-S\-\_\-\-Units}!string\-To\-Paper\-Format@{string\-To\-Paper\-Format}}
+\index{string\-To\-Paper\-Format@{string\-To\-Paper\-Format}!RS_Units@{R\-S\-\_\-\-Units}}
+\subsubsection[{string\-To\-Paper\-Format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Paper\-Format} R\-S\-\_\-\-Units\-::string\-To\-Paper\-Format (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Units_a3ad1f793852a5a2dd529444236d6095c}
+Converts a string to a paper format. \hypertarget{classRS__Units_a192dcc1011b50ad5fea11320b4c3480b}{\index{R\-S\-\_\-\-Units@{R\-S\-\_\-\-Units}!string\-To\-Unit@{string\-To\-Unit}}
+\index{string\-To\-Unit@{string\-To\-Unit}!RS_Units@{R\-S\-\_\-\-Units}}
+\subsubsection[{string\-To\-Unit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Unit} R\-S\-\_\-\-Units\-::string\-To\-Unit (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{u}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Units_a192dcc1011b50ad5fea11320b4c3480b}
+Converts a string into a unit enum. \hypertarget{classRS__Units_a0a5f6c84f48353bfed10fa8f2b7582e6}{\index{R\-S\-\_\-\-Units@{R\-S\-\_\-\-Units}!test@{test}}
+\index{test@{test}!RS_Units@{R\-S\-\_\-\-Units}}
+\subsubsection[{test}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Units\-::test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Units_a0a5f6c84f48353bfed10fa8f2b7582e6}
+Performs some testing for the math class. \hypertarget{classRS__Units_a162a187293370ff69f18e3beabbc5888}{\index{R\-S\-\_\-\-Units@{R\-S\-\_\-\-Units}!unit\-To\-Sign@{unit\-To\-Sign}}
+\index{unit\-To\-Sign@{unit\-To\-Sign}!RS_Units@{R\-S\-\_\-\-Units}}
+\subsubsection[{unit\-To\-Sign}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Units\-::unit\-To\-Sign (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Unit}}]{u}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Units_a162a187293370ff69f18e3beabbc5888}
+\begin{DoxyReturn}{Returns}
+a short string representing the given unit (e.\-g. \char`\"{}mm\char`\"{}) 
+\end{DoxyReturn}
+\hypertarget{classRS__Units_a4a5b96d80f2292a5c9b2db9d351b1194}{\index{R\-S\-\_\-\-Units@{R\-S\-\_\-\-Units}!unit\-To\-String@{unit\-To\-String}}
+\index{unit\-To\-String@{unit\-To\-String}!RS_Units@{R\-S\-\_\-\-Units}}
+\subsubsection[{unit\-To\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Units\-::unit\-To\-String (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Unit}}]{u, }
+\item[{bool}]{t = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Units_a4a5b96d80f2292a5c9b2db9d351b1194}
+\begin{DoxyReturn}{Returns}
+a string representing the given unit (e.\-g. \char`\"{}\-Millimeter\char`\"{}). translated if {\itshape t} is true (the default). 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-units.\-h\item 
+librecad/src/lib/engine/rs\-\_\-units.\-cpp\end{DoxyCompactItemize}

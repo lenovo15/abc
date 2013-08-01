@@ -1,0 +1,247 @@
+\hypertarget{classDRW__Dimension}{\section{D\-R\-W\-\_\-\-Dimension Class Reference}
+\label{classDRW__Dimension}\index{D\-R\-W\-\_\-\-Dimension@{D\-R\-W\-\_\-\-Dimension}}
+}
+
+
+Base class for dimension entity.  
+
+
+
+
+{\ttfamily \#include $<$drw\-\_\-entities.\-h$>$}
+
+Inheritance diagram for D\-R\-W\-\_\-\-Dimension\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.765432cm]{classDRW__Dimension}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDRW__Dimension_aaa3d0aa12fc78b6f6dab9c1039040910}{{\bfseries D\-R\-W\-\_\-\-Dimension} (const \hyperlink{classDRW__Dimension}{D\-R\-W\-\_\-\-Dimension} \&d)}\label{classDRW__Dimension_aaa3d0aa12fc78b6f6dab9c1039040910}
+
+\item 
+\hypertarget{classDRW__Dimension_a65a475f25fc8178addf6313c677d0b71}{void {\bfseries parse\-Code} (int code, \hyperlink{classdxfReader}{dxf\-Reader} $\ast$reader)}\label{classDRW__Dimension_a65a475f25fc8178addf6313c677d0b71}
+
+\item 
+\hypertarget{classDRW__Dimension_a2a76f7b7a368bf5d447bed4fdcd565a4}{virtual void {\bfseries apply\-Extrusion} ()}\label{classDRW__Dimension_a2a76f7b7a368bf5d447bed4fdcd565a4}
+
+\item 
+\hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} \hyperlink{classDRW__Dimension_aff7c5b5035b520428c2a0c181f7cb102}{get\-Def\-Point} () const 
+\item 
+\hypertarget{classDRW__Dimension_aa9512e1d9b84d3c2331a7a08c9e64da8}{void {\bfseries set\-Def\-Point} (const \hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} p)}\label{classDRW__Dimension_aa9512e1d9b84d3c2331a7a08c9e64da8}
+
+\item 
+\hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} \hyperlink{classDRW__Dimension_aa7dcaa119dfc8aaacdf093067ac5a781}{get\-Text\-Point} () const 
+\item 
+\hypertarget{classDRW__Dimension_a6c3de2ac1fcba7ed202498314b8b4c79}{void {\bfseries set\-Text\-Point} (const \hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} p)}\label{classDRW__Dimension_a6c3de2ac1fcba7ed202498314b8b4c79}
+
+\item 
+string \hyperlink{classDRW__Dimension_a5f21c8705f59bfb2d51b7cb133acbc10}{get\-Style} () const 
+\item 
+\hypertarget{classDRW__Dimension_a13592943a7005ace74ea75b181a3d7ab}{void {\bfseries set\-Style} (const string s)}\label{classDRW__Dimension_a13592943a7005ace74ea75b181a3d7ab}
+
+\item 
+int \hyperlink{classDRW__Dimension_ac4423a75a6bf64525e096fe72938bfd7}{get\-Align} () const 
+\item 
+\hypertarget{classDRW__Dimension_ac2b64afa50f4f4616ec9ee45fa9d74ca}{void {\bfseries set\-Align} (const int a)}\label{classDRW__Dimension_ac2b64afa50f4f4616ec9ee45fa9d74ca}
+
+\item 
+int \hyperlink{classDRW__Dimension_a5774fd11d8745a32e6c2a94a697a3584}{get\-Text\-Line\-Style} () const 
+\item 
+\hypertarget{classDRW__Dimension_aac34cdbb585f7773882743eebb2c53a8}{void {\bfseries set\-Text\-Line\-Style} (const int l)}\label{classDRW__Dimension_aac34cdbb585f7773882743eebb2c53a8}
+
+\item 
+string \hyperlink{classDRW__Dimension_a353b67d805913fdfe12d393a75101d4a}{get\-Text} () const 
+\item 
+\hypertarget{classDRW__Dimension_ae762b7c8f299c9d90c14f8709dd67eb9}{void {\bfseries set\-Text} (const string t)}\label{classDRW__Dimension_ae762b7c8f299c9d90c14f8709dd67eb9}
+
+\item 
+double \hyperlink{classDRW__Dimension_a92f00fef72a9f5de2058360f7ce4d518}{get\-Text\-Line\-Factor} () const 
+\item 
+\hypertarget{classDRW__Dimension_a9980fe1feec082c5a7499a6b1734fcbf}{void {\bfseries set\-Text\-Line\-Factor} (const double l)}\label{classDRW__Dimension_a9980fe1feec082c5a7499a6b1734fcbf}
+
+\item 
+double \hyperlink{classDRW__Dimension_afce2fe039bfbff29ef8dca9ab5d4d41c}{get\-Dir} () const 
+\item 
+\hypertarget{classDRW__Dimension_a62a37e43242e5f766f09f6e5665b39b3}{void {\bfseries set\-Dir} (const double d)}\label{classDRW__Dimension_a62a37e43242e5f766f09f6e5665b39b3}
+
+\item 
+\hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} \hyperlink{classDRW__Dimension_acbbe026791231ce980ad2adcf0a259c2}{get\-Extrusion} ()
+\item 
+\hypertarget{classDRW__Dimension_ab33520becea162a4a9ce23a0e3b01dd7}{void {\bfseries set\-Extrusion} (const \hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} p)}\label{classDRW__Dimension_ab33520becea162a4a9ce23a0e3b01dd7}
+
+\item 
+string \hyperlink{classDRW__Dimension_a0d0defb9cb9648267450c3c815783551}{get\-Name} ()
+\item 
+\hypertarget{classDRW__Dimension_a00619087e89266540ecf924e8477fd9d}{void {\bfseries set\-Name} (const string s)}\label{classDRW__Dimension_a00619087e89266540ecf924e8477fd9d}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classDRW__Dimension_ad3af7cb327656cb2c1c33a00d26ed933}{type}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDRW__Dimension_a13121a65e8e0e48c44e91e4b748d690a}{\hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} {\bfseries get\-Pt2} () const }\label{classDRW__Dimension_a13121a65e8e0e48c44e91e4b748d690a}
+
+\item 
+\hypertarget{classDRW__Dimension_a03db8932d1fa3fc750458e346ddb8499}{void {\bfseries set\-Pt2} (const \hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} p)}\label{classDRW__Dimension_a03db8932d1fa3fc750458e346ddb8499}
+
+\item 
+\hypertarget{classDRW__Dimension_aacd2e27b314a6cdd3a13a0711b62d198}{\hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} {\bfseries get\-Pt3} () const }\label{classDRW__Dimension_aacd2e27b314a6cdd3a13a0711b62d198}
+
+\item 
+\hypertarget{classDRW__Dimension_a7dcf6c2c343d4c223a1d7a801b8f705d}{void {\bfseries set\-Pt3} (const \hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} p)}\label{classDRW__Dimension_a7dcf6c2c343d4c223a1d7a801b8f705d}
+
+\item 
+\hypertarget{classDRW__Dimension_a941c4efc5f6d06b85b9cedb310a37579}{\hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} {\bfseries get\-Pt4} () const }\label{classDRW__Dimension_a941c4efc5f6d06b85b9cedb310a37579}
+
+\item 
+\hypertarget{classDRW__Dimension_add7059efdbc2dc51e27014c313f762a3}{void {\bfseries set\-Pt4} (const \hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} p)}\label{classDRW__Dimension_add7059efdbc2dc51e27014c313f762a3}
+
+\item 
+\hypertarget{classDRW__Dimension_a0e4da49693e65a5a466189eb784cb48b}{\hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} {\bfseries get\-Pt5} () const }\label{classDRW__Dimension_a0e4da49693e65a5a466189eb784cb48b}
+
+\item 
+\hypertarget{classDRW__Dimension_a167b92d96644fe59b8014b2591c6717e}{void {\bfseries set\-Pt5} (const \hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} p)}\label{classDRW__Dimension_a167b92d96644fe59b8014b2591c6717e}
+
+\item 
+\hypertarget{classDRW__Dimension_aa8a46b987af18ba2a4368b32b846d9cf}{\hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} {\bfseries get\-Pt6} () const }\label{classDRW__Dimension_aa8a46b987af18ba2a4368b32b846d9cf}
+
+\item 
+\hypertarget{classDRW__Dimension_a649bfc57ede8413888a56c1d7f6b284c}{void {\bfseries set\-Pt6} (const \hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} p)}\label{classDRW__Dimension_a649bfc57ede8413888a56c1d7f6b284c}
+
+\item 
+double \hyperlink{classDRW__Dimension_ae45501f2cad8bdcd9be874ff4f05749b}{get\-An50} () const 
+\item 
+\hypertarget{classDRW__Dimension_a61d400d9287138a5eccab60be331d92b}{void {\bfseries set\-An50} (const double d)}\label{classDRW__Dimension_a61d400d9287138a5eccab60be331d92b}
+
+\item 
+double \hyperlink{classDRW__Dimension_a36825b8bb477ec416d20a68d3cc5d54e}{get\-Ob52} () const 
+\item 
+\hypertarget{classDRW__Dimension_adc00e3257f59f222e2f725908b197d37}{void {\bfseries set\-Ob52} (const double d)}\label{classDRW__Dimension_adc00e3257f59f222e2f725908b197d37}
+
+\item 
+double \hyperlink{classDRW__Dimension_a6d8226ab5f019e2cd2f9a46c4fa7cade}{get\-Ra40} () const 
+\item 
+\hypertarget{classDRW__Dimension_afe0de16e5f1bda47b132e145d4cd2a3e}{void {\bfseries set\-Ra40} (const double d)}\label{classDRW__Dimension_afe0de16e5f1bda47b132e145d4cd2a3e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for dimension entity. 
+
+Base class for dimension entity \begin{DoxyAuthor}{Author}
+Rallaz 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDRW__Dimension_ac4423a75a6bf64525e096fe72938bfd7}{\index{D\-R\-W\-\_\-\-Dimension@{D\-R\-W\-\_\-\-Dimension}!get\-Align@{get\-Align}}
+\index{get\-Align@{get\-Align}!DRW_Dimension@{D\-R\-W\-\_\-\-Dimension}}
+\subsubsection[{get\-Align}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-Dimension\-::get\-Align (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDRW__Dimension_ac4423a75a6bf64525e096fe72938bfd7}
+attachment point, code 71 \hypertarget{classDRW__Dimension_ae45501f2cad8bdcd9be874ff4f05749b}{\index{D\-R\-W\-\_\-\-Dimension@{D\-R\-W\-\_\-\-Dimension}!get\-An50@{get\-An50}}
+\index{get\-An50@{get\-An50}!DRW_Dimension@{D\-R\-W\-\_\-\-Dimension}}
+\subsubsection[{get\-An50}]{\setlength{\rightskip}{0pt plus 5cm}double D\-R\-W\-\_\-\-Dimension\-::get\-An50 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classDRW__Dimension_ae45501f2cad8bdcd9be874ff4f05749b}
+Angle of rotated, horizontal, or vertical dimensions, code 50 \hypertarget{classDRW__Dimension_aff7c5b5035b520428c2a0c181f7cb102}{\index{D\-R\-W\-\_\-\-Dimension@{D\-R\-W\-\_\-\-Dimension}!get\-Def\-Point@{get\-Def\-Point}}
+\index{get\-Def\-Point@{get\-Def\-Point}!DRW_Dimension@{D\-R\-W\-\_\-\-Dimension}}
+\subsubsection[{get\-Def\-Point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-R\-W\-\_\-\-Coord} D\-R\-W\-\_\-\-Dimension\-::get\-Def\-Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDRW__Dimension_aff7c5b5035b520428c2a0c181f7cb102}
+Definition point, code 10, 20 \& 30 \hypertarget{classDRW__Dimension_afce2fe039bfbff29ef8dca9ab5d4d41c}{\index{D\-R\-W\-\_\-\-Dimension@{D\-R\-W\-\_\-\-Dimension}!get\-Dir@{get\-Dir}}
+\index{get\-Dir@{get\-Dir}!DRW_Dimension@{D\-R\-W\-\_\-\-Dimension}}
+\subsubsection[{get\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}double D\-R\-W\-\_\-\-Dimension\-::get\-Dir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDRW__Dimension_afce2fe039bfbff29ef8dca9ab5d4d41c}
+rotation angle of the dimension text, code 53 (optional) default 0 \hypertarget{classDRW__Dimension_acbbe026791231ce980ad2adcf0a259c2}{\index{D\-R\-W\-\_\-\-Dimension@{D\-R\-W\-\_\-\-Dimension}!get\-Extrusion@{get\-Extrusion}}
+\index{get\-Extrusion@{get\-Extrusion}!DRW_Dimension@{D\-R\-W\-\_\-\-Dimension}}
+\subsubsection[{get\-Extrusion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-R\-W\-\_\-\-Coord} D\-R\-W\-\_\-\-Dimension\-::get\-Extrusion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDRW__Dimension_acbbe026791231ce980ad2adcf0a259c2}
+extrusion, code 210, 220 \& 230 \hypertarget{classDRW__Dimension_a0d0defb9cb9648267450c3c815783551}{\index{D\-R\-W\-\_\-\-Dimension@{D\-R\-W\-\_\-\-Dimension}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!DRW_Dimension@{D\-R\-W\-\_\-\-Dimension}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}string D\-R\-W\-\_\-\-Dimension\-::get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDRW__Dimension_a0d0defb9cb9648267450c3c815783551}
+Name of the block that contains the entities, code 2 \hypertarget{classDRW__Dimension_a36825b8bb477ec416d20a68d3cc5d54e}{\index{D\-R\-W\-\_\-\-Dimension@{D\-R\-W\-\_\-\-Dimension}!get\-Ob52@{get\-Ob52}}
+\index{get\-Ob52@{get\-Ob52}!DRW_Dimension@{D\-R\-W\-\_\-\-Dimension}}
+\subsubsection[{get\-Ob52}]{\setlength{\rightskip}{0pt plus 5cm}double D\-R\-W\-\_\-\-Dimension\-::get\-Ob52 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classDRW__Dimension_a36825b8bb477ec416d20a68d3cc5d54e}
+oblique angle, code 52 \hypertarget{classDRW__Dimension_a6d8226ab5f019e2cd2f9a46c4fa7cade}{\index{D\-R\-W\-\_\-\-Dimension@{D\-R\-W\-\_\-\-Dimension}!get\-Ra40@{get\-Ra40}}
+\index{get\-Ra40@{get\-Ra40}!DRW_Dimension@{D\-R\-W\-\_\-\-Dimension}}
+\subsubsection[{get\-Ra40}]{\setlength{\rightskip}{0pt plus 5cm}double D\-R\-W\-\_\-\-Dimension\-::get\-Ra40 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classDRW__Dimension_a6d8226ab5f019e2cd2f9a46c4fa7cade}
+Leader length, code 40 \hypertarget{classDRW__Dimension_a5f21c8705f59bfb2d51b7cb133acbc10}{\index{D\-R\-W\-\_\-\-Dimension@{D\-R\-W\-\_\-\-Dimension}!get\-Style@{get\-Style}}
+\index{get\-Style@{get\-Style}!DRW_Dimension@{D\-R\-W\-\_\-\-Dimension}}
+\subsubsection[{get\-Style}]{\setlength{\rightskip}{0pt plus 5cm}string D\-R\-W\-\_\-\-Dimension\-::get\-Style (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDRW__Dimension_a5f21c8705f59bfb2d51b7cb133acbc10}
+Dimension style, code 3 \hypertarget{classDRW__Dimension_a353b67d805913fdfe12d393a75101d4a}{\index{D\-R\-W\-\_\-\-Dimension@{D\-R\-W\-\_\-\-Dimension}!get\-Text@{get\-Text}}
+\index{get\-Text@{get\-Text}!DRW_Dimension@{D\-R\-W\-\_\-\-Dimension}}
+\subsubsection[{get\-Text}]{\setlength{\rightskip}{0pt plus 5cm}string D\-R\-W\-\_\-\-Dimension\-::get\-Text (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDRW__Dimension_a353b67d805913fdfe12d393a75101d4a}
+Dimension text explicitly entered by the user, code 1 \hypertarget{classDRW__Dimension_a92f00fef72a9f5de2058360f7ce4d518}{\index{D\-R\-W\-\_\-\-Dimension@{D\-R\-W\-\_\-\-Dimension}!get\-Text\-Line\-Factor@{get\-Text\-Line\-Factor}}
+\index{get\-Text\-Line\-Factor@{get\-Text\-Line\-Factor}!DRW_Dimension@{D\-R\-W\-\_\-\-Dimension}}
+\subsubsection[{get\-Text\-Line\-Factor}]{\setlength{\rightskip}{0pt plus 5cm}double D\-R\-W\-\_\-\-Dimension\-::get\-Text\-Line\-Factor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDRW__Dimension_a92f00fef72a9f5de2058360f7ce4d518}
+Dimension text line spacing factor, code 41, default 1? \hypertarget{classDRW__Dimension_a5774fd11d8745a32e6c2a94a697a3584}{\index{D\-R\-W\-\_\-\-Dimension@{D\-R\-W\-\_\-\-Dimension}!get\-Text\-Line\-Style@{get\-Text\-Line\-Style}}
+\index{get\-Text\-Line\-Style@{get\-Text\-Line\-Style}!DRW_Dimension@{D\-R\-W\-\_\-\-Dimension}}
+\subsubsection[{get\-Text\-Line\-Style}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-Dimension\-::get\-Text\-Line\-Style (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDRW__Dimension_a5774fd11d8745a32e6c2a94a697a3584}
+Dimension text line spacing style, code 72, default 1 \hypertarget{classDRW__Dimension_aa7dcaa119dfc8aaacdf093067ac5a781}{\index{D\-R\-W\-\_\-\-Dimension@{D\-R\-W\-\_\-\-Dimension}!get\-Text\-Point@{get\-Text\-Point}}
+\index{get\-Text\-Point@{get\-Text\-Point}!DRW_Dimension@{D\-R\-W\-\_\-\-Dimension}}
+\subsubsection[{get\-Text\-Point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-R\-W\-\_\-\-Coord} D\-R\-W\-\_\-\-Dimension\-::get\-Text\-Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDRW__Dimension_aa7dcaa119dfc8aaacdf093067ac5a781}
+Middle point of text, code 11, 21 \& 31 
+
+\subsection{Member Data Documentation}
+\hypertarget{classDRW__Dimension_ad3af7cb327656cb2c1c33a00d26ed933}{\index{D\-R\-W\-\_\-\-Dimension@{D\-R\-W\-\_\-\-Dimension}!type@{type}}
+\index{type@{type}!DRW_Dimension@{D\-R\-W\-\_\-\-Dimension}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-Dimension\-::type}}\label{classDRW__Dimension_ad3af7cb327656cb2c1c33a00d26ed933}
+Dimension type, code 70 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+libraries/libdxfrw/src/drw\-\_\-entities.\-h\item 
+libraries/libdxfrw/src/drw\-\_\-entities.\-cpp\end{DoxyCompactItemize}

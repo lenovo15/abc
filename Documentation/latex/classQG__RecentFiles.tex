@@ -1,0 +1,96 @@
+\hypertarget{classQG__RecentFiles}{\section{Q\-G\-\_\-\-Recent\-Files Class Reference}
+\label{classQG__RecentFiles}\index{Q\-G\-\_\-\-Recent\-Files@{Q\-G\-\_\-\-Recent\-Files}}
+}
+
+
+{\ttfamily \#include $<$qg\-\_\-recentfiles.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQG__RecentFiles_ac3908f55b3c631b6f000926e28ee2ded}{Q\-G\-\_\-\-Recent\-Files} (int number)
+\item 
+virtual \hyperlink{classQG__RecentFiles_ae9bc5e65079cdc613a0a9ec03bd265fe}{$\sim$\-Q\-G\-\_\-\-Recent\-Files} ()
+\item 
+void \hyperlink{classQG__RecentFiles_a60402f6f71b799a39c0a940cb172adab}{add} (const Q\-String \&filename)
+\item 
+Q\-String \hyperlink{classQG__RecentFiles_a876762356a6f2aa83d5bfb8a0b3a1634}{get} (int i)
+\item 
+int \hyperlink{classQG__RecentFiles_a6cd7fec338de5f02018fc9d446d8b2b1}{count} ()
+\item 
+int \hyperlink{classQG__RecentFiles_a46798bff2f7e30596c174989224b76dc}{get\-Number} ()
+\item 
+\hypertarget{classQG__RecentFiles_a87630bd46eb5293b17925923bca0b23e}{int {\bfseries index\-Of} (const Q\-String \&filename)}\label{classQG__RecentFiles_a87630bd46eb5293b17925923bca0b23e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class can store recent files in a list. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classQG__RecentFiles_ac3908f55b3c631b6f000926e28ee2ded}{\index{Q\-G\-\_\-\-Recent\-Files@{Q\-G\-\_\-\-Recent\-Files}!Q\-G\-\_\-\-Recent\-Files@{Q\-G\-\_\-\-Recent\-Files}}
+\index{Q\-G\-\_\-\-Recent\-Files@{Q\-G\-\_\-\-Recent\-Files}!QG_RecentFiles@{Q\-G\-\_\-\-Recent\-Files}}
+\subsubsection[{Q\-G\-\_\-\-Recent\-Files}]{\setlength{\rightskip}{0pt plus 5cm}Q\-G\-\_\-\-Recent\-Files\-::\-Q\-G\-\_\-\-Recent\-Files (
+\begin{DoxyParamCaption}
+\item[{int}]{number}
+\end{DoxyParamCaption}
+)}}\label{classQG__RecentFiles_ac3908f55b3c631b6f000926e28ee2ded}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em number} & Number of files that can be stored in the list at maximum \\
+\hline
+\end{DoxyParams}
+\hypertarget{classQG__RecentFiles_ae9bc5e65079cdc613a0a9ec03bd265fe}{\index{Q\-G\-\_\-\-Recent\-Files@{Q\-G\-\_\-\-Recent\-Files}!$\sim$\-Q\-G\-\_\-\-Recent\-Files@{$\sim$\-Q\-G\-\_\-\-Recent\-Files}}
+\index{$\sim$\-Q\-G\-\_\-\-Recent\-Files@{$\sim$\-Q\-G\-\_\-\-Recent\-Files}!QG_RecentFiles@{Q\-G\-\_\-\-Recent\-Files}}
+\subsubsection[{$\sim$\-Q\-G\-\_\-\-Recent\-Files}]{\setlength{\rightskip}{0pt plus 5cm}Q\-G\-\_\-\-Recent\-Files\-::$\sim$\-Q\-G\-\_\-\-Recent\-Files (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__RecentFiles_ae9bc5e65079cdc613a0a9ec03bd265fe}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classQG__RecentFiles_a60402f6f71b799a39c0a940cb172adab}{\index{Q\-G\-\_\-\-Recent\-Files@{Q\-G\-\_\-\-Recent\-Files}!add@{add}}
+\index{add@{add}!QG_RecentFiles@{Q\-G\-\_\-\-Recent\-Files}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Recent\-Files\-::add (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classQG__RecentFiles_a60402f6f71b799a39c0a940cb172adab}
+Adds a file to the list of recently loaded files if it's not already in the list. \hypertarget{classQG__RecentFiles_a6cd7fec338de5f02018fc9d446d8b2b1}{\index{Q\-G\-\_\-\-Recent\-Files@{Q\-G\-\_\-\-Recent\-Files}!count@{count}}
+\index{count@{count}!QG_RecentFiles@{Q\-G\-\_\-\-Recent\-Files}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}int Q\-G\-\_\-\-Recent\-Files\-::count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classQG__RecentFiles_a6cd7fec338de5f02018fc9d446d8b2b1}
+\begin{DoxyReturn}{Returns}
+number of files currently stored in the list 
+\end{DoxyReturn}
+\hypertarget{classQG__RecentFiles_a876762356a6f2aa83d5bfb8a0b3a1634}{\index{Q\-G\-\_\-\-Recent\-Files@{Q\-G\-\_\-\-Recent\-Files}!get@{get}}
+\index{get@{get}!QG_RecentFiles@{Q\-G\-\_\-\-Recent\-Files}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Q\-G\-\_\-\-Recent\-Files\-::get (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classQG__RecentFiles_a876762356a6f2aa83d5bfb8a0b3a1634}
+\begin{DoxyReturn}{Returns}
+complete path and name of the file stored in the list at index i 
+\end{DoxyReturn}
+\hypertarget{classQG__RecentFiles_a46798bff2f7e30596c174989224b76dc}{\index{Q\-G\-\_\-\-Recent\-Files@{Q\-G\-\_\-\-Recent\-Files}!get\-Number@{get\-Number}}
+\index{get\-Number@{get\-Number}!QG_RecentFiles@{Q\-G\-\_\-\-Recent\-Files}}
+\subsubsection[{get\-Number}]{\setlength{\rightskip}{0pt plus 5cm}int Q\-G\-\_\-\-Recent\-Files\-::get\-Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classQG__RecentFiles_a46798bff2f7e30596c174989224b76dc}
+\begin{DoxyReturn}{Returns}
+number of files that can be stored in the list at maximum 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/ui/qg\-\_\-recentfiles.\-h\item 
+librecad/src/ui/qg\-\_\-recentfiles.\-cpp\end{DoxyCompactItemize}

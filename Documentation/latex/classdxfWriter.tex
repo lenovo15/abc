@@ -1,0 +1,63 @@
+\hypertarget{classdxfWriter}{\section{dxf\-Writer Class Reference}
+\label{classdxfWriter}\index{dxf\-Writer@{dxf\-Writer}}
+}
+Inheritance diagram for dxf\-Writer\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdxfWriter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classdxfWriter_a6144e17b1eb593cf9eeef5276e8312bc}{{\bfseries dxf\-Writer} (std\-::ofstream $\ast$stream)}\label{classdxfWriter_a6144e17b1eb593cf9eeef5276e8312bc}
+
+\item 
+\hypertarget{classdxfWriter_a63b9ff453f41759914c73c108450e6ec}{virtual bool {\bfseries write\-String} (int code, std\-::string text)=0}\label{classdxfWriter_a63b9ff453f41759914c73c108450e6ec}
+
+\item 
+\hypertarget{classdxfWriter_a2519b606405ddd8b14d88fff3bb31c9b}{bool {\bfseries write\-Utf8\-String} (int code, std\-::string text)}\label{classdxfWriter_a2519b606405ddd8b14d88fff3bb31c9b}
+
+\item 
+\hypertarget{classdxfWriter_aa03b5b6b366b5551cce5584701ac2a40}{bool {\bfseries write\-Utf8\-Caps} (int code, std\-::string text)}\label{classdxfWriter_aa03b5b6b366b5551cce5584701ac2a40}
+
+\item 
+\hypertarget{classdxfWriter_aca2bac33f26041d820dff3cd4e24e9e7}{std\-::string {\bfseries from\-Utf8\-String} (std\-::string t)}\label{classdxfWriter_aca2bac33f26041d820dff3cd4e24e9e7}
+
+\item 
+\hypertarget{classdxfWriter_a9c5f609840aeb2a1c3218fff84c1693a}{virtual bool {\bfseries write\-Int16} (int code, int data)=0}\label{classdxfWriter_a9c5f609840aeb2a1c3218fff84c1693a}
+
+\item 
+\hypertarget{classdxfWriter_adce2dc57c74bf3ddb03c9769563450f1}{virtual bool {\bfseries write\-Int32} (int code, int data)=0}\label{classdxfWriter_adce2dc57c74bf3ddb03c9769563450f1}
+
+\item 
+\hypertarget{classdxfWriter_a454f17fb9213a1dcde6c073e614a9f5a}{virtual bool {\bfseries write\-Int64} (int code, unsigned long long int data)=0}\label{classdxfWriter_a454f17fb9213a1dcde6c073e614a9f5a}
+
+\item 
+\hypertarget{classdxfWriter_a2adba3b09587e382ce886ac1a0ef14e7}{virtual bool {\bfseries write\-Double} (int code, double data)=0}\label{classdxfWriter_a2adba3b09587e382ce886ac1a0ef14e7}
+
+\item 
+\hypertarget{classdxfWriter_abea6468805103d768fa89ff3d0598334}{virtual bool {\bfseries write\-Bool} (int code, bool data)=0}\label{classdxfWriter_abea6468805103d768fa89ff3d0598334}
+
+\item 
+\hypertarget{classdxfWriter_a1cc7a45291d6124387647ef6297fc9fd}{void {\bfseries set\-Version} (std\-::string $\ast$v)}\label{classdxfWriter_a1cc7a45291d6124387647ef6297fc9fd}
+
+\item 
+\hypertarget{classdxfWriter_a326e6fe9da46d450eeb075a56686d12c}{void {\bfseries set\-Code\-Page} (std\-::string $\ast$c)}\label{classdxfWriter_a326e6fe9da46d450eeb075a56686d12c}
+
+\item 
+\hypertarget{classdxfWriter_a9bdfe8ff84e82ffa452af2c963601ee2}{std\-::string {\bfseries get\-Code\-Page} ()}\label{classdxfWriter_a9bdfe8ff84e82ffa452af2c963601ee2}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classdxfWriter_ad5829abb51dfc015890bf184c2beadea}{std\-::ofstream $\ast$ {\bfseries filestr}}\label{classdxfWriter_ad5829abb51dfc015890bf184c2beadea}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+libraries/libdxfrw/src/dxfwriter.\-h\item 
+libraries/libdxfrw/src/dxfwriter.\-cpp\end{DoxyCompactItemize}

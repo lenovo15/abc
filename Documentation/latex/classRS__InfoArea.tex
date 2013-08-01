@@ -1,0 +1,102 @@
+\hypertarget{classRS__InfoArea}{\section{R\-S\-\_\-\-Info\-Area Class Reference}
+\label{classRS__InfoArea}\index{R\-S\-\_\-\-Info\-Area@{R\-S\-\_\-\-Info\-Area}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-infoarea.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__InfoArea_a7891997030eacb8915f5bee9e790497a}{R\-S\-\_\-\-Info\-Area} ()
+\item 
+\hyperlink{classRS__InfoArea_a2d888f413fb9c2933f5ce43b6139c1a9}{$\sim$\-R\-S\-\_\-\-Info\-Area} ()
+\item 
+void \hyperlink{classRS__InfoArea_aa7644b2930d873be82bcca1eb106edba}{reset} ()
+\item 
+void \hyperlink{classRS__InfoArea_a6fd4af7aa005ded04ad76121c83d5583}{push\-\_\-back} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&p)
+\item 
+bool \hyperlink{classRS__InfoArea_a2ad42f28e7d99e791545d1b537bcc077}{duplicated} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&p)
+\item 
+\hypertarget{classRS__InfoArea_a28648d32f1d27c7e312ab3dee64e0a0e}{void {\bfseries pop\-\_\-back} ()}\label{classRS__InfoArea_a28648d32f1d27c7e312ab3dee64e0a0e}
+
+\item 
+\hypertarget{classRS__InfoArea_a033fd228b48159c16e0a8a255756385b}{double {\bfseries get\-Area} ()}\label{classRS__InfoArea_a033fd228b48159c16e0a8a255756385b}
+
+\item 
+\hypertarget{classRS__InfoArea_afee788740e92b6aba3381dba919b85c0}{double {\bfseries get\-Circumference} ()}\label{classRS__InfoArea_afee788740e92b6aba3381dba919b85c0}
+
+\item 
+\hypertarget{classRS__InfoArea_aea98ddbe88467454a70c51d67118bd61}{int {\bfseries size} ()}\label{classRS__InfoArea_aea98ddbe88467454a70c51d67118bd61}
+
+\item 
+\hypertarget{classRS__InfoArea_a306bcebbedb3b781f57aeb6836f8cb9c}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries at} (int i)}\label{classRS__InfoArea_a306bcebbedb3b781f57aeb6836f8cb9c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for getting information about an area.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__InfoArea_a7891997030eacb8915f5bee9e790497a}{\index{R\-S\-\_\-\-Info\-Area@{R\-S\-\_\-\-Info\-Area}!R\-S\-\_\-\-Info\-Area@{R\-S\-\_\-\-Info\-Area}}
+\index{R\-S\-\_\-\-Info\-Area@{R\-S\-\_\-\-Info\-Area}!RS_InfoArea@{R\-S\-\_\-\-Info\-Area}}
+\subsubsection[{R\-S\-\_\-\-Info\-Area}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Info\-Area\-::\-R\-S\-\_\-\-Info\-Area (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__InfoArea_a7891997030eacb8915f5bee9e790497a}
+Constructor. \hypertarget{classRS__InfoArea_a2d888f413fb9c2933f5ce43b6139c1a9}{\index{R\-S\-\_\-\-Info\-Area@{R\-S\-\_\-\-Info\-Area}!$\sim$\-R\-S\-\_\-\-Info\-Area@{$\sim$\-R\-S\-\_\-\-Info\-Area}}
+\index{$\sim$\-R\-S\-\_\-\-Info\-Area@{$\sim$\-R\-S\-\_\-\-Info\-Area}!RS_InfoArea@{R\-S\-\_\-\-Info\-Area}}
+\subsubsection[{$\sim$\-R\-S\-\_\-\-Info\-Area}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Info\-Area\-::$\sim$\-R\-S\-\_\-\-Info\-Area (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__InfoArea_a2d888f413fb9c2933f5ce43b6139c1a9}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__InfoArea_a2ad42f28e7d99e791545d1b537bcc077}{\index{R\-S\-\_\-\-Info\-Area@{R\-S\-\_\-\-Info\-Area}!duplicated@{duplicated}}
+\index{duplicated@{duplicated}!RS_InfoArea@{R\-S\-\_\-\-Info\-Area}}
+\subsubsection[{duplicated}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Info\-Area\-::duplicated (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{p}
+\end{DoxyParamCaption}
+)}}\label{classRS__InfoArea_a2ad42f28e7d99e791545d1b537bcc077}
+whether a point is already in contour \begin{DoxyReturn}{Returns}
+true if the point is a duplicate 
+
+false if the point is not in contour 
+\end{DoxyReturn}
+\hypertarget{classRS__InfoArea_a6fd4af7aa005ded04ad76121c83d5583}{\index{R\-S\-\_\-\-Info\-Area@{R\-S\-\_\-\-Info\-Area}!push\-\_\-back@{push\-\_\-back}}
+\index{push\-\_\-back@{push\-\_\-back}!RS_InfoArea@{R\-S\-\_\-\-Info\-Area}}
+\subsubsection[{push\-\_\-back}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Info\-Area\-::push\-\_\-back (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{p}
+\end{DoxyParamCaption}
+)}}\label{classRS__InfoArea_a6fd4af7aa005ded04ad76121c83d5583}
+Adds a point to the internal list
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & co-\/ordinate of the point \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__InfoArea_aa7644b2930d873be82bcca1eb106edba}{\index{R\-S\-\_\-\-Info\-Area@{R\-S\-\_\-\-Info\-Area}!reset@{reset}}
+\index{reset@{reset}!RS_InfoArea@{R\-S\-\_\-\-Info\-Area}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Info\-Area\-::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__InfoArea_aa7644b2930d873be82bcca1eb106edba}
+Resets the points. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/information/rs\-\_\-infoarea.\-h\item 
+librecad/src/lib/information/rs\-\_\-infoarea.\-cpp\end{DoxyCompactItemize}

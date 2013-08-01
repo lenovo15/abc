@@ -1,0 +1,223 @@
+\hypertarget{classRS__Undo}{\section{R\-S\-\_\-\-Undo Class Reference}
+\label{classRS__Undo}\index{R\-S\-\_\-\-Undo@{R\-S\-\_\-\-Undo}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-undo.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Undo\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classRS__Undo}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__Undo_a799f14114717bdaa94cbafb7e1b36c29}{R\-S\-\_\-\-Undo} ()
+\item 
+void \hyperlink{classRS__Undo_a734f94ee8180caea3c1a31200e2e2473}{add\-Undo\-Cycle} (\hyperlink{classRS__UndoCycle}{R\-S\-\_\-\-Undo\-Cycle} $\ast$i)
+\item 
+virtual bool \hyperlink{classRS__Undo_adbe3c82cedfdf11edbef14d43a2666bd}{undo} ()
+\item 
+virtual bool \hyperlink{classRS__Undo_af6851ac0b268e0542ba952db60453b46}{redo} ()
+\item 
+virtual \hyperlink{classRS__UndoCycle}{R\-S\-\_\-\-Undo\-Cycle} $\ast$ \hyperlink{classRS__Undo_a20d9fb1a8598aa67a46ab4ec5f2f73e2}{get\-Undo\-Cycle} ()
+\item 
+virtual \hyperlink{classRS__UndoCycle}{R\-S\-\_\-\-Undo\-Cycle} $\ast$ \hyperlink{classRS__Undo_a095f2315d74e0bfd8a98e0523504c497}{get\-Redo\-Cycle} ()
+\item 
+virtual int \hyperlink{classRS__Undo_af7e643590c293acd4e602884585254fe}{count\-Undo\-Cycles} ()
+\item 
+virtual int \hyperlink{classRS__Undo_afbe439460b8db37026be55984bf065bd}{count\-Redo\-Cycles} ()
+\item 
+virtual void \hyperlink{classRS__Undo_ae5072794f8b500d8ac71ec778465d9d1}{start\-Undo\-Cycle} ()
+\item 
+virtual void \hyperlink{classRS__Undo_ad18cd07ef7366e30d3b4dcf71bed685e}{add\-Undoable} (\hyperlink{classRS__Undoable}{R\-S\-\_\-\-Undoable} $\ast$u)
+\item 
+virtual void \hyperlink{classRS__Undo_a38779a6cf414880d30adcb401f39ccb1}{end\-Undo\-Cycle} ()
+\item 
+virtual void \hyperlink{classRS__Undo_af6e7ff4fb277e2d6635200f0563310ef}{remove\-Undoable} (\hyperlink{classRS__Undoable}{R\-S\-\_\-\-Undoable} $\ast$u)=0
+\item 
+virtual void \hyperlink{classRS__Undo_ac0141af319c4ed8011b6e4ca3f23b2f0}{set\-G\-U\-I\-Buttons} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classRS__Undo_a037a55ea2a64516543c166a35624a930}{test} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__Undo_afef4a3f7db613fe109b024d323aa0ea1}{Q\-List$<$ \hyperlink{classRS__UndoCycle}{R\-S\-\_\-\-Undo\-Cycle} $\ast$ $>$ \hyperlink{classRS__Undo_afef4a3f7db613fe109b024d323aa0ea1}{undo\-List}}\label{classRS__Undo_afef4a3f7db613fe109b024d323aa0ea1}
+
+\begin{DoxyCompactList}\small\item\em List of undo list items. every item is something that can be undone. \end{DoxyCompactList}\item 
+int \hyperlink{classRS__Undo_abfa9454560fba30af5c06a506b07fc89}{undo\-Pointer}
+\item 
+\hyperlink{classRS__UndoCycle}{R\-S\-\_\-\-Undo\-Cycle} $\ast$ \hyperlink{classRS__Undo_a0e92a818317a5de8c3cad84e6c1bebb1}{current\-Cycle}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{classRS__Undo_a2d1eefd8e568642ef7fb6cfc48c35ddb}{operator$<$$<$} (std\-::ostream \&os, \hyperlink{classRS__Undo}{R\-S\-\_\-\-Undo} \&a)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Undo / redo functionality. The internal undo list consists of \hyperlink{classRS__UndoCycle}{R\-S\-\_\-\-Undo\-Cycle} entries.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classRS__UndoCycle}{R\-S\-\_\-\-Undo\-Cycle} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__Undo_a799f14114717bdaa94cbafb7e1b36c29}{\index{R\-S\-\_\-\-Undo@{R\-S\-\_\-\-Undo}!R\-S\-\_\-\-Undo@{R\-S\-\_\-\-Undo}}
+\index{R\-S\-\_\-\-Undo@{R\-S\-\_\-\-Undo}!RS_Undo@{R\-S\-\_\-\-Undo}}
+\subsubsection[{R\-S\-\_\-\-Undo}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Undo\-::\-R\-S\-\_\-\-Undo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Undo_a799f14114717bdaa94cbafb7e1b36c29}
+Default constructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Undo_ad18cd07ef7366e30d3b4dcf71bed685e}{\index{R\-S\-\_\-\-Undo@{R\-S\-\_\-\-Undo}!add\-Undoable@{add\-Undoable}}
+\index{add\-Undoable@{add\-Undoable}!RS_Undo@{R\-S\-\_\-\-Undo}}
+\subsubsection[{add\-Undoable}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Undo\-::add\-Undoable (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Undoable} $\ast$}]{u}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Undo_ad18cd07ef7366e30d3b4dcf71bed685e}
+Adds an undoable to the current undo cycle. \hypertarget{classRS__Undo_a734f94ee8180caea3c1a31200e2e2473}{\index{R\-S\-\_\-\-Undo@{R\-S\-\_\-\-Undo}!add\-Undo\-Cycle@{add\-Undo\-Cycle}}
+\index{add\-Undo\-Cycle@{add\-Undo\-Cycle}!RS_Undo@{R\-S\-\_\-\-Undo}}
+\subsubsection[{add\-Undo\-Cycle}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Undo\-::add\-Undo\-Cycle (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Undo\-Cycle} $\ast$}]{i}
+\end{DoxyParamCaption}
+)}}\label{classRS__Undo_a734f94ee8180caea3c1a31200e2e2473}
+Adds an Undo Cycle at the current position in the list. All Cycles after the new one are removed and the Undoabels on them deleted. \hypertarget{classRS__Undo_afbe439460b8db37026be55984bf065bd}{\index{R\-S\-\_\-\-Undo@{R\-S\-\_\-\-Undo}!count\-Redo\-Cycles@{count\-Redo\-Cycles}}
+\index{count\-Redo\-Cycles@{count\-Redo\-Cycles}!RS_Undo@{R\-S\-\_\-\-Undo}}
+\subsubsection[{count\-Redo\-Cycles}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Undo\-::count\-Redo\-Cycles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Undo_afbe439460b8db37026be55984bf065bd}
+\begin{DoxyReturn}{Returns}
+Number of Cycles that can be redone. 
+\end{DoxyReturn}
+\hypertarget{classRS__Undo_af7e643590c293acd4e602884585254fe}{\index{R\-S\-\_\-\-Undo@{R\-S\-\_\-\-Undo}!count\-Undo\-Cycles@{count\-Undo\-Cycles}}
+\index{count\-Undo\-Cycles@{count\-Undo\-Cycles}!RS_Undo@{R\-S\-\_\-\-Undo}}
+\subsubsection[{count\-Undo\-Cycles}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Undo\-::count\-Undo\-Cycles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Undo_af7e643590c293acd4e602884585254fe}
+\begin{DoxyReturn}{Returns}
+Number of Cycles that can be undone. 
+\end{DoxyReturn}
+\hypertarget{classRS__Undo_a38779a6cf414880d30adcb401f39ccb1}{\index{R\-S\-\_\-\-Undo@{R\-S\-\_\-\-Undo}!end\-Undo\-Cycle@{end\-Undo\-Cycle}}
+\index{end\-Undo\-Cycle@{end\-Undo\-Cycle}!RS_Undo@{R\-S\-\_\-\-Undo}}
+\subsubsection[{end\-Undo\-Cycle}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Undo\-::end\-Undo\-Cycle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Undo_a38779a6cf414880d30adcb401f39ccb1}
+Ends the current undo cycle. \hypertarget{classRS__Undo_a095f2315d74e0bfd8a98e0523504c497}{\index{R\-S\-\_\-\-Undo@{R\-S\-\_\-\-Undo}!get\-Redo\-Cycle@{get\-Redo\-Cycle}}
+\index{get\-Redo\-Cycle@{get\-Redo\-Cycle}!RS_Undo@{R\-S\-\_\-\-Undo}}
+\subsubsection[{get\-Redo\-Cycle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Undo\-Cycle} $\ast$ R\-S\-\_\-\-Undo\-::get\-Redo\-Cycle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Undo_a095f2315d74e0bfd8a98e0523504c497}
+\begin{DoxyReturn}{Returns}
+The redo item that is next if we're about to redo or N\-U\-L\-L. 
+\end{DoxyReturn}
+\hypertarget{classRS__Undo_a20d9fb1a8598aa67a46ab4ec5f2f73e2}{\index{R\-S\-\_\-\-Undo@{R\-S\-\_\-\-Undo}!get\-Undo\-Cycle@{get\-Undo\-Cycle}}
+\index{get\-Undo\-Cycle@{get\-Undo\-Cycle}!RS_Undo@{R\-S\-\_\-\-Undo}}
+\subsubsection[{get\-Undo\-Cycle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Undo\-Cycle} $\ast$ R\-S\-\_\-\-Undo\-::get\-Undo\-Cycle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Undo_a20d9fb1a8598aa67a46ab4ec5f2f73e2}
+\begin{DoxyReturn}{Returns}
+The undo item that is next if we're about to undo or N\-U\-L\-L. 
+\end{DoxyReturn}
+\hypertarget{classRS__Undo_af6851ac0b268e0542ba952db60453b46}{\index{R\-S\-\_\-\-Undo@{R\-S\-\_\-\-Undo}!redo@{redo}}
+\index{redo@{redo}!RS_Undo@{R\-S\-\_\-\-Undo}}
+\subsubsection[{redo}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Undo\-::redo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Undo_af6851ac0b268e0542ba952db60453b46}
+Redoes the undo cycle which was at last undone. \hypertarget{classRS__Undo_af6e7ff4fb277e2d6635200f0563310ef}{\index{R\-S\-\_\-\-Undo@{R\-S\-\_\-\-Undo}!remove\-Undoable@{remove\-Undoable}}
+\index{remove\-Undoable@{remove\-Undoable}!RS_Undo@{R\-S\-\_\-\-Undo}}
+\subsubsection[{remove\-Undoable}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Undo\-::remove\-Undoable (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Undoable} $\ast$}]{u}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classRS__Undo_af6e7ff4fb277e2d6635200f0563310ef}
+Must be overwritten by the implementing class and delete the given Undoable (unrecoverable). This method is called for Undoables that are no longer in the undo buffer. 
+
+Implemented in \hyperlink{classRS__Document_af8dfb197c811c4a0655499447d3e9a82}{R\-S\-\_\-\-Document}.
+
+\hypertarget{classRS__Undo_ac0141af319c4ed8011b6e4ca3f23b2f0}{\index{R\-S\-\_\-\-Undo@{R\-S\-\_\-\-Undo}!set\-G\-U\-I\-Buttons@{set\-G\-U\-I\-Buttons}}
+\index{set\-G\-U\-I\-Buttons@{set\-G\-U\-I\-Buttons}!RS_Undo@{R\-S\-\_\-\-Undo}}
+\subsubsection[{set\-G\-U\-I\-Buttons}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Undo\-::set\-G\-U\-I\-Buttons (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Undo_ac0141af319c4ed8011b6e4ca3f23b2f0}
+enable/disable redo/undo buttons in main application window Author\-: Dongxu Li \hypertarget{classRS__Undo_ae5072794f8b500d8ac71ec778465d9d1}{\index{R\-S\-\_\-\-Undo@{R\-S\-\_\-\-Undo}!start\-Undo\-Cycle@{start\-Undo\-Cycle}}
+\index{start\-Undo\-Cycle@{start\-Undo\-Cycle}!RS_Undo@{R\-S\-\_\-\-Undo}}
+\subsubsection[{start\-Undo\-Cycle}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Undo\-::start\-Undo\-Cycle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Undo_ae5072794f8b500d8ac71ec778465d9d1}
+Starts a new cycle for one undo step. Every undoable that is added after calling this method goes into this cycle. 
+
+Reimplemented in \hyperlink{classRS__Document_a10ef1b7c7dbda0913c59c2b533f31b64}{R\-S\-\_\-\-Document}.
+
+\hypertarget{classRS__Undo_a037a55ea2a64516543c166a35624a930}{\index{R\-S\-\_\-\-Undo@{R\-S\-\_\-\-Undo}!test@{test}}
+\index{test@{test}!RS_Undo@{R\-S\-\_\-\-Undo}}
+\subsubsection[{test}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Undo\-::test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Undo_a037a55ea2a64516543c166a35624a930}
+Testing Undoables, Undo Cycles and the Undo container. \hypertarget{classRS__Undo_adbe3c82cedfdf11edbef14d43a2666bd}{\index{R\-S\-\_\-\-Undo@{R\-S\-\_\-\-Undo}!undo@{undo}}
+\index{undo@{undo}!RS_Undo@{R\-S\-\_\-\-Undo}}
+\subsubsection[{undo}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Undo\-::undo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Undo_adbe3c82cedfdf11edbef14d43a2666bd}
+Undoes the last undo cycle. 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classRS__Undo_a2d1eefd8e568642ef7fb6cfc48c35ddb}{\index{R\-S\-\_\-\-Undo@{R\-S\-\_\-\-Undo}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!RS_Undo@{R\-S\-\_\-\-Undo}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os, }
+\item[{{\bf R\-S\-\_\-\-Undo} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classRS__Undo_a2d1eefd8e568642ef7fb6cfc48c35ddb}
+Dumps the undo list to stdout. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classRS__Undo_a0e92a818317a5de8c3cad84e6c1bebb1}{\index{R\-S\-\_\-\-Undo@{R\-S\-\_\-\-Undo}!current\-Cycle@{current\-Cycle}}
+\index{current\-Cycle@{current\-Cycle}!RS_Undo@{R\-S\-\_\-\-Undo}}
+\subsubsection[{current\-Cycle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Undo\-Cycle}$\ast$ R\-S\-\_\-\-Undo\-::current\-Cycle\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__Undo_a0e92a818317a5de8c3cad84e6c1bebb1}
+Current undo cycle. \hypertarget{classRS__Undo_abfa9454560fba30af5c06a506b07fc89}{\index{R\-S\-\_\-\-Undo@{R\-S\-\_\-\-Undo}!undo\-Pointer@{undo\-Pointer}}
+\index{undo\-Pointer@{undo\-Pointer}!RS_Undo@{R\-S\-\_\-\-Undo}}
+\subsubsection[{undo\-Pointer}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Undo\-::undo\-Pointer\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__Undo_abfa9454560fba30af5c06a506b07fc89}
+Index that points to the current position in the undo list. The item it points on will be undone the next time undo is called. The item after will be redone (if there is an item) when redo is called. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-undo.\-h\item 
+librecad/src/lib/engine/rs\-\_\-undo.\-cpp\end{DoxyCompactItemize}

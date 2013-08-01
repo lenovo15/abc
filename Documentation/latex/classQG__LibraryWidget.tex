@@ -1,0 +1,124 @@
+\hypertarget{classQG__LibraryWidget}{\section{Q\-G\-\_\-\-Library\-Widget Class Reference}
+\label{classQG__LibraryWidget}\index{Q\-G\-\_\-\-Library\-Widget@{Q\-G\-\_\-\-Library\-Widget}}
+}
+Inheritance diagram for Q\-G\-\_\-\-Library\-Widget\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classQG__LibraryWidget}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classQG__LibraryWidget_a851f0c7c3ac6e65527939b9f48fddbdf}{virtual void {\bfseries set\-Action\-Handler} (\hyperlink{classQG__ActionHandler}{Q\-G\-\_\-\-Action\-Handler} $\ast$ah)}\label{classQG__LibraryWidget_a851f0c7c3ac6e65527939b9f48fddbdf}
+
+\item 
+virtual void \hyperlink{classQG__LibraryWidget_a445311ed0c18382dd42e0aa62dc7eb7b}{key\-Press\-Event} (Q\-Key\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classQG__LibraryWidget_a6e8f2cf6e5dcf3dc1c17069bf3cc5076}{insert} ()
+\item 
+virtual void \hyperlink{classQG__LibraryWidget_a0167c4c30dccaa42ed13392b78fdf98a}{append\-Tree} (Q\-Standard\-Item $\ast$item, Q\-String directory)
+\item 
+virtual void \hyperlink{classQG__LibraryWidget_a1af395083858346ff9640f49717a3c61}{update\-Preview} (Q\-Model\-Index idx)
+\item 
+virtual void \hyperlink{classQG__LibraryWidget_ae41664d92820d774c5f777998f500ef7}{expand\-View} (Q\-Model\-Index idx)
+\item 
+virtual void \hyperlink{classQG__LibraryWidget_a3e7ed5a76b83fc1151f0b597108e4524}{collapse\-View} (Q\-Model\-Index idx)
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classQG__LibraryWidget_a4db17b775704bcaaf7248abfd81a9e7b}{void {\bfseries escape} ()}\label{classQG__LibraryWidget_a4db17b775704bcaaf7248abfd81a9e7b}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classQG__LibraryWidget_a0a6a4deaa30e367f2e1b83b2606f2b3e}{{\bfseries Q\-G\-\_\-\-Library\-Widget} (Q\-Widget $\ast$parent=0, const char $\ast$name=0, Qt\-::\-Window\-Flags fl=0)}\label{classQG__LibraryWidget_a0a6a4deaa30e367f2e1b83b2606f2b3e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classQG__LibraryWidget_ad685fd31fa5f2188082709eb78b56472}{Q\-Push\-Button $\ast$ {\bfseries b\-Insert}}\label{classQG__LibraryWidget_ad685fd31fa5f2188082709eb78b56472}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Slots}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classQG__LibraryWidget_adb9cae0a46de4b34800c27c56c9119e1}{virtual void {\bfseries language\-Change} ()}\label{classQG__LibraryWidget_adb9cae0a46de4b34800c27c56c9119e1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classQG__LibraryWidget_a0167c4c30dccaa42ed13392b78fdf98a}{\index{Q\-G\-\_\-\-Library\-Widget@{Q\-G\-\_\-\-Library\-Widget}!append\-Tree@{append\-Tree}}
+\index{append\-Tree@{append\-Tree}!QG_LibraryWidget@{Q\-G\-\_\-\-Library\-Widget}}
+\subsubsection[{append\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Library\-Widget\-::append\-Tree (
+\begin{DoxyParamCaption}
+\item[{Q\-Standard\-Item $\ast$}]{item, }
+\item[{Q\-String}]{directory}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [slot]}}}\label{classQG__LibraryWidget_a0167c4c30dccaa42ed13392b78fdf98a}
+Appends the given directory to the given list view item. Called recursively until all library directories are appended.
+
+\begin{DoxyAuthor}{Author}
+Rallaz 
+\end{DoxyAuthor}
+\hypertarget{classQG__LibraryWidget_a3e7ed5a76b83fc1151f0b597108e4524}{\index{Q\-G\-\_\-\-Library\-Widget@{Q\-G\-\_\-\-Library\-Widget}!collapse\-View@{collapse\-View}}
+\index{collapse\-View@{collapse\-View}!QG_LibraryWidget@{Q\-G\-\_\-\-Library\-Widget}}
+\subsubsection[{collapse\-View}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Library\-Widget\-::collapse\-View (
+\begin{DoxyParamCaption}
+\item[{Q\-Model\-Index}]{idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [slot]}}}\label{classQG__LibraryWidget_a3e7ed5a76b83fc1151f0b597108e4524}
+Change the icon item when is collapsed.
+
+\begin{DoxyAuthor}{Author}
+Rallaz 
+\end{DoxyAuthor}
+\hypertarget{classQG__LibraryWidget_ae41664d92820d774c5f777998f500ef7}{\index{Q\-G\-\_\-\-Library\-Widget@{Q\-G\-\_\-\-Library\-Widget}!expand\-View@{expand\-View}}
+\index{expand\-View@{expand\-View}!QG_LibraryWidget@{Q\-G\-\_\-\-Library\-Widget}}
+\subsubsection[{expand\-View}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Library\-Widget\-::expand\-View (
+\begin{DoxyParamCaption}
+\item[{Q\-Model\-Index}]{idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [slot]}}}\label{classQG__LibraryWidget_ae41664d92820d774c5f777998f500ef7}
+Change the icon item when is expanded.
+
+\begin{DoxyAuthor}{Author}
+Rallaz 
+\end{DoxyAuthor}
+\hypertarget{classQG__LibraryWidget_a6e8f2cf6e5dcf3dc1c17069bf3cc5076}{\index{Q\-G\-\_\-\-Library\-Widget@{Q\-G\-\_\-\-Library\-Widget}!insert@{insert}}
+\index{insert@{insert}!QG_LibraryWidget@{Q\-G\-\_\-\-Library\-Widget}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Library\-Widget\-::insert (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [slot]}}}\label{classQG__LibraryWidget_a6e8f2cf6e5dcf3dc1c17069bf3cc5076}
+Insert. \hypertarget{classQG__LibraryWidget_a445311ed0c18382dd42e0aa62dc7eb7b}{\index{Q\-G\-\_\-\-Library\-Widget@{Q\-G\-\_\-\-Library\-Widget}!key\-Press\-Event@{key\-Press\-Event}}
+\index{key\-Press\-Event@{key\-Press\-Event}!QG_LibraryWidget@{Q\-G\-\_\-\-Library\-Widget}}
+\subsubsection[{key\-Press\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Library\-Widget\-::key\-Press\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Key\-Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [slot]}}}\label{classQG__LibraryWidget_a445311ed0c18382dd42e0aa62dc7eb7b}
+Escape releases focus. \hypertarget{classQG__LibraryWidget_a1af395083858346ff9640f49717a3c61}{\index{Q\-G\-\_\-\-Library\-Widget@{Q\-G\-\_\-\-Library\-Widget}!update\-Preview@{update\-Preview}}
+\index{update\-Preview@{update\-Preview}!QG_LibraryWidget@{Q\-G\-\_\-\-Library\-Widget}}
+\subsubsection[{update\-Preview}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Library\-Widget\-::update\-Preview (
+\begin{DoxyParamCaption}
+\item[{Q\-Model\-Index}]{idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [slot]}}}\label{classQG__LibraryWidget_a1af395083858346ff9640f49717a3c61}
+Updates the icon preview.
+
+\begin{DoxyAuthor}{Author}
+Rallaz 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/ui/qg\-\_\-librarywidget.\-h\item 
+generated/librecad/moc/moc\-\_\-qg\-\_\-librarywidget.\-cpp\item 
+librecad/src/ui/qg\-\_\-librarywidget.\-cpp\end{DoxyCompactItemize}

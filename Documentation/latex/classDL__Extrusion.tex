@@ -1,0 +1,133 @@
+\hypertarget{classDL__Extrusion}{\section{D\-L\-\_\-\-Extrusion Class Reference}
+\label{classDL__Extrusion}\index{D\-L\-\_\-\-Extrusion@{D\-L\-\_\-\-Extrusion}}
+}
+
+
+{\ttfamily \#include $<$dl\-\_\-extrusion.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDL__Extrusion_a9a85147996b6438b3f3f472146243cc3}{D\-L\-\_\-\-Extrusion} ()
+\item 
+\hyperlink{classDL__Extrusion_aee6fcb5ac8bba1858c8eeb785464c7a7}{$\sim$\-D\-L\-\_\-\-Extrusion} ()
+\item 
+\hyperlink{classDL__Extrusion_ae5f0f06b79873e894d0b20d1cb01ae38}{D\-L\-\_\-\-Extrusion} (double dx, double dy, double dz, double elevation)
+\item 
+void \hyperlink{classDL__Extrusion_a30b12a53645a96349add841ffc453ed3}{set\-Direction} (double dx, double dy, double dz)
+\item 
+double $\ast$ \hyperlink{classDL__Extrusion_a5b7f22647d721b0d4a042a38832e1452}{get\-Direction} () const 
+\item 
+void \hyperlink{classDL__Extrusion_a5142880d02f430c7b1667a59c514e299}{get\-Direction} (double dir\mbox{[}$\,$\mbox{]}) const 
+\item 
+void \hyperlink{classDL__Extrusion_a3c73bd98b7fd70f54a39f7edf9cd951a}{set\-Elevation} (double elevation)
+\item 
+double \hyperlink{classDL__Extrusion_aa114cffc0148ad7d9c928f31e34648b6}{get\-Elevation} () const 
+\item 
+\hyperlink{classDL__Extrusion}{D\-L\-\_\-\-Extrusion} \hyperlink{classDL__Extrusion_ad7629524f016f4e3b92572a40e1284dc}{operator=} (const \hyperlink{classDL__Extrusion}{D\-L\-\_\-\-Extrusion} \&extru)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Storing and passing around attributes. Attributes are the layer name, color, width and line type.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDL__Extrusion_a9a85147996b6438b3f3f472146243cc3}{\index{D\-L\-\_\-\-Extrusion@{D\-L\-\_\-\-Extrusion}!D\-L\-\_\-\-Extrusion@{D\-L\-\_\-\-Extrusion}}
+\index{D\-L\-\_\-\-Extrusion@{D\-L\-\_\-\-Extrusion}!DL_Extrusion@{D\-L\-\_\-\-Extrusion}}
+\subsubsection[{D\-L\-\_\-\-Extrusion}]{\setlength{\rightskip}{0pt plus 5cm}D\-L\-\_\-\-Extrusion\-::\-D\-L\-\_\-\-Extrusion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Extrusion_a9a85147996b6438b3f3f472146243cc3}
+Default constructor. \hypertarget{classDL__Extrusion_aee6fcb5ac8bba1858c8eeb785464c7a7}{\index{D\-L\-\_\-\-Extrusion@{D\-L\-\_\-\-Extrusion}!$\sim$\-D\-L\-\_\-\-Extrusion@{$\sim$\-D\-L\-\_\-\-Extrusion}}
+\index{$\sim$\-D\-L\-\_\-\-Extrusion@{$\sim$\-D\-L\-\_\-\-Extrusion}!DL_Extrusion@{D\-L\-\_\-\-Extrusion}}
+\subsubsection[{$\sim$\-D\-L\-\_\-\-Extrusion}]{\setlength{\rightskip}{0pt plus 5cm}D\-L\-\_\-\-Extrusion\-::$\sim$\-D\-L\-\_\-\-Extrusion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Extrusion_aee6fcb5ac8bba1858c8eeb785464c7a7}
+Destructor. \hypertarget{classDL__Extrusion_ae5f0f06b79873e894d0b20d1cb01ae38}{\index{D\-L\-\_\-\-Extrusion@{D\-L\-\_\-\-Extrusion}!D\-L\-\_\-\-Extrusion@{D\-L\-\_\-\-Extrusion}}
+\index{D\-L\-\_\-\-Extrusion@{D\-L\-\_\-\-Extrusion}!DL_Extrusion@{D\-L\-\_\-\-Extrusion}}
+\subsubsection[{D\-L\-\_\-\-Extrusion}]{\setlength{\rightskip}{0pt plus 5cm}D\-L\-\_\-\-Extrusion\-::\-D\-L\-\_\-\-Extrusion (
+\begin{DoxyParamCaption}
+\item[{double}]{dx, }
+\item[{double}]{dy, }
+\item[{double}]{dz, }
+\item[{double}]{elevation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Extrusion_ae5f0f06b79873e894d0b20d1cb01ae38}
+Constructor for D\-X\-F extrusion.
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & Vector of axis along which the entity shall be extruded this is also the Z axis of the Entity coordinate system \\
+\hline
+{\em elevation} & Distance of the entities X\-Y plane from the origin of the world coordinate system \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDL__Extrusion_a5b7f22647d721b0d4a042a38832e1452}{\index{D\-L\-\_\-\-Extrusion@{D\-L\-\_\-\-Extrusion}!get\-Direction@{get\-Direction}}
+\index{get\-Direction@{get\-Direction}!DL_Extrusion@{D\-L\-\_\-\-Extrusion}}
+\subsubsection[{get\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ D\-L\-\_\-\-Extrusion\-::get\-Direction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Extrusion_a5b7f22647d721b0d4a042a38832e1452}
+\begin{DoxyReturn}{Returns}
+direction vector. 
+\end{DoxyReturn}
+\hypertarget{classDL__Extrusion_a5142880d02f430c7b1667a59c514e299}{\index{D\-L\-\_\-\-Extrusion@{D\-L\-\_\-\-Extrusion}!get\-Direction@{get\-Direction}}
+\index{get\-Direction@{get\-Direction}!DL_Extrusion@{D\-L\-\_\-\-Extrusion}}
+\subsubsection[{get\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Extrusion\-::get\-Direction (
+\begin{DoxyParamCaption}
+\item[{double}]{dir\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Extrusion_a5142880d02f430c7b1667a59c514e299}
+\begin{DoxyReturn}{Returns}
+direction vector. 
+\end{DoxyReturn}
+\hypertarget{classDL__Extrusion_aa114cffc0148ad7d9c928f31e34648b6}{\index{D\-L\-\_\-\-Extrusion@{D\-L\-\_\-\-Extrusion}!get\-Elevation@{get\-Elevation}}
+\index{get\-Elevation@{get\-Elevation}!DL_Extrusion@{D\-L\-\_\-\-Extrusion}}
+\subsubsection[{get\-Elevation}]{\setlength{\rightskip}{0pt plus 5cm}double D\-L\-\_\-\-Extrusion\-::get\-Elevation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Extrusion_aa114cffc0148ad7d9c928f31e34648b6}
+\begin{DoxyReturn}{Returns}
+Elevation. 
+\end{DoxyReturn}
+\hypertarget{classDL__Extrusion_ad7629524f016f4e3b92572a40e1284dc}{\index{D\-L\-\_\-\-Extrusion@{D\-L\-\_\-\-Extrusion}!operator=@{operator=}}
+\index{operator=@{operator=}!DL_Extrusion@{D\-L\-\_\-\-Extrusion}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-L\-\_\-\-Extrusion} D\-L\-\_\-\-Extrusion\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf D\-L\-\_\-\-Extrusion} \&}]{extru}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Extrusion_ad7629524f016f4e3b92572a40e1284dc}
+Copies extrusion (deep copies) from another extrusion object. \hypertarget{classDL__Extrusion_a30b12a53645a96349add841ffc453ed3}{\index{D\-L\-\_\-\-Extrusion@{D\-L\-\_\-\-Extrusion}!set\-Direction@{set\-Direction}}
+\index{set\-Direction@{set\-Direction}!DL_Extrusion@{D\-L\-\_\-\-Extrusion}}
+\subsubsection[{set\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Extrusion\-::set\-Direction (
+\begin{DoxyParamCaption}
+\item[{double}]{dx, }
+\item[{double}]{dy, }
+\item[{double}]{dz}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Extrusion_a30b12a53645a96349add841ffc453ed3}
+Sets the direction vector. \hypertarget{classDL__Extrusion_a3c73bd98b7fd70f54a39f7edf9cd951a}{\index{D\-L\-\_\-\-Extrusion@{D\-L\-\_\-\-Extrusion}!set\-Elevation@{set\-Elevation}}
+\index{set\-Elevation@{set\-Elevation}!DL_Extrusion@{D\-L\-\_\-\-Extrusion}}
+\subsubsection[{set\-Elevation}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Extrusion\-::set\-Elevation (
+\begin{DoxyParamCaption}
+\item[{double}]{elevation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classDL__Extrusion_a3c73bd98b7fd70f54a39f7edf9cd951a}
+Sets the elevation. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+libraries/jwwlib/src/dl\-\_\-extrusion.\-h\end{DoxyCompactItemize}

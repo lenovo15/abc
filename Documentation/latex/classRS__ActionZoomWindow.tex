@@ -1,0 +1,178 @@
+\hypertarget{classRS__ActionZoomWindow}{\section{R\-S\-\_\-\-Action\-Zoom\-Window Class Reference}
+\label{classRS__ActionZoomWindow}\index{R\-S\-\_\-\-Action\-Zoom\-Window@{R\-S\-\_\-\-Action\-Zoom\-Window}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionzoomwindow.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Zoom\-Window\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classRS__ActionZoomWindow}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Status} \{ {\bfseries Set\-First\-Corner}, 
+{\bfseries Set\-Second\-Corner}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__ActionZoomWindow_ae218fddffe1948ea1b7e3b80d08f4b3c}{R\-S\-\_\-\-Action\-Zoom\-Window} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View, bool keep\-Aspect\-Ratio=true)
+\item 
+virtual void \hyperlink{classRS__ActionZoomWindow_a40588ecd6c755410a2d18482ccd3a414}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionZoomWindow_a8446256ec3f0d39a93018e34824ed5cf}{trigger} ()
+\item 
+virtual void \hyperlink{classRS__ActionZoomWindow_a5d66169a336e4e66ca2f5603d74bf879}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionZoomWindow_a2eddecda9f2e9b8e0decd018096ff4df}{mouse\-Press\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionZoomWindow_a5465b575d101df87274def7c71cf2e8f}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionZoomWindow_a93c839446fb489ba3c80ca518eb42a28}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionZoomWindow_af800f6756436dff7b0632f57bc48d366}{update\-Mouse\-Cursor} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionZoomWindow_a9bb63f5262bc145ff7114d693d5d9c6b}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionZoomWindow_a9bb63f5262bc145ff7114d693d5d9c6b}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionZoomWindow_a7aa1d2dc7fb812b0eac610b3fd0a4cd9}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries v1}}\label{classRS__ActionZoomWindow_a7aa1d2dc7fb812b0eac610b3fd0a4cd9}
+
+\item 
+\hypertarget{classRS__ActionZoomWindow_abbebb74a6193e179ddbda5cd8e21c51d}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries v2}}\label{classRS__ActionZoomWindow_abbebb74a6193e179ddbda5cd8e21c51d}
+
+\item 
+\hypertarget{classRS__ActionZoomWindow_abdd9622eaeee74cce3108f77a9293ec2}{bool {\bfseries keep\-Aspect\-Ratio}}\label{classRS__ActionZoomWindow_abdd9622eaeee74cce3108f77a9293ec2}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to zoom in a window.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__ActionZoomWindow_ae218fddffe1948ea1b7e3b80d08f4b3c}{\index{R\-S\-\_\-\-Action\-Zoom\-Window@{R\-S\-\_\-\-Action\-Zoom\-Window}!R\-S\-\_\-\-Action\-Zoom\-Window@{R\-S\-\_\-\-Action\-Zoom\-Window}}
+\index{R\-S\-\_\-\-Action\-Zoom\-Window@{R\-S\-\_\-\-Action\-Zoom\-Window}!RS_ActionZoomWindow@{R\-S\-\_\-\-Action\-Zoom\-Window}}
+\subsubsection[{R\-S\-\_\-\-Action\-Zoom\-Window}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Action\-Zoom\-Window\-::\-R\-S\-\_\-\-Action\-Zoom\-Window (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} \&}]{graphic\-View, }
+\item[{bool}]{keep\-Aspect\-Ratio = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classRS__ActionZoomWindow_ae218fddffe1948ea1b7e3b80d08f4b3c}
+Default constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em keep\-Aspect\-Ratio} & Keep the aspect ratio. true\-: the factors in x and y will stay the same. false Exactly the chosen area will be fit to the viewport. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionZoomWindow_a40588ecd6c755410a2d18482ccd3a414}{\index{R\-S\-\_\-\-Action\-Zoom\-Window@{R\-S\-\_\-\-Action\-Zoom\-Window}!init@{init}}
+\index{init@{init}!RS_ActionZoomWindow@{R\-S\-\_\-\-Action\-Zoom\-Window}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Zoom\-Window\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionZoomWindow_a40588ecd6c755410a2d18482ccd3a414}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae5113b2aef5a10acd192786b99580e4a}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionZoomWindow_a5d66169a336e4e66ca2f5603d74bf879}{\index{R\-S\-\_\-\-Action\-Zoom\-Window@{R\-S\-\_\-\-Action\-Zoom\-Window}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_ActionZoomWindow@{R\-S\-\_\-\-Action\-Zoom\-Window}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Zoom\-Window\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionZoomWindow_a5d66169a336e4e66ca2f5603d74bf879}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionZoomWindow_a2eddecda9f2e9b8e0decd018096ff4df}{\index{R\-S\-\_\-\-Action\-Zoom\-Window@{R\-S\-\_\-\-Action\-Zoom\-Window}!mouse\-Press\-Event@{mouse\-Press\-Event}}
+\index{mouse\-Press\-Event@{mouse\-Press\-Event}!RS_ActionZoomWindow@{R\-S\-\_\-\-Action\-Zoom\-Window}}
+\subsubsection[{mouse\-Press\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Zoom\-Window\-::mouse\-Press\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionZoomWindow_a2eddecda9f2e9b8e0decd018096ff4df}
+Called when the left mouse button is pressed and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a323ab454694976656f426eb6cc7f456c}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionZoomWindow_a5465b575d101df87274def7c71cf2e8f}{\index{R\-S\-\_\-\-Action\-Zoom\-Window@{R\-S\-\_\-\-Action\-Zoom\-Window}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionZoomWindow@{R\-S\-\_\-\-Action\-Zoom\-Window}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Zoom\-Window\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionZoomWindow_a5465b575d101df87274def7c71cf2e8f}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionZoomWindow_a8446256ec3f0d39a93018e34824ed5cf}{\index{R\-S\-\_\-\-Action\-Zoom\-Window@{R\-S\-\_\-\-Action\-Zoom\-Window}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionZoomWindow@{R\-S\-\_\-\-Action\-Zoom\-Window}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Zoom\-Window\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionZoomWindow_a8446256ec3f0d39a93018e34824ed5cf}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionZoomWindow_a93c839446fb489ba3c80ca518eb42a28}{\index{R\-S\-\_\-\-Action\-Zoom\-Window@{R\-S\-\_\-\-Action\-Zoom\-Window}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionZoomWindow@{R\-S\-\_\-\-Action\-Zoom\-Window}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Zoom\-Window\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionZoomWindow_a93c839446fb489ba3c80ca518eb42a28}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionZoomWindow_af800f6756436dff7b0632f57bc48d366}{\index{R\-S\-\_\-\-Action\-Zoom\-Window@{R\-S\-\_\-\-Action\-Zoom\-Window}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionZoomWindow@{R\-S\-\_\-\-Action\-Zoom\-Window}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Zoom\-Window\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionZoomWindow_af800f6756436dff7b0632f57bc48d366}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionzoomwindow.\-h\item 
+librecad/src/actions/rs\-\_\-actionzoomwindow.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,233 @@
+\hypertarget{classRS__ActionDrawCircle2P}{\section{R\-S\-\_\-\-Action\-Draw\-Circle2\-P Class Reference}
+\label{classRS__ActionDrawCircle2P}\index{R\-S\-\_\-\-Action\-Draw\-Circle2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actiondrawcircle2p.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Draw\-Circle2\-P\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classRS__ActionDrawCircle2P}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionDrawCircle2P_a6808ccbf598645949cd3b1ce7a218411}{Status} \{ \hyperlink{classRS__ActionDrawCircle2P_a6808ccbf598645949cd3b1ce7a218411af04dfd42d571b8b4571562c9150d446e}{Set\-Point1}, 
+\hyperlink{classRS__ActionDrawCircle2P_a6808ccbf598645949cd3b1ce7a218411a0ce1c43716381b628e20a7261dad6ade}{Set\-Point2}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionDrawCircle2P_a38be63d1f866ad239bc46fdc6bea6a78}{{\bfseries R\-S\-\_\-\-Action\-Draw\-Circle2\-P} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionDrawCircle2P_a38be63d1f866ad239bc46fdc6bea6a78}
+
+\item 
+virtual \hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__ActionDrawCircle2P_a9e4e2223c7aa8b8d6c2c48e3fde35147}{rtti} ()
+\item 
+\hypertarget{classRS__ActionDrawCircle2P_acbce06319ebc659002df6b902a767d7a}{void {\bfseries reset} ()}\label{classRS__ActionDrawCircle2P_acbce06319ebc659002df6b902a767d7a}
+
+\item 
+virtual void \hyperlink{classRS__ActionDrawCircle2P_abcf760094d8d463ea6c5a18472c91450}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionDrawCircle2P_a35eac4823382124844f2de816ce30af5}{trigger} ()
+\item 
+\hypertarget{classRS__ActionDrawCircle2P_a936d88f411b4abb5036e0e28910623e3}{void {\bfseries prepare\-Preview} ()}\label{classRS__ActionDrawCircle2P_a936d88f411b4abb5036e0e28910623e3}
+
+\item 
+virtual void \hyperlink{classRS__ActionDrawCircle2P_a154d92e577b9e6a77f16ce8e1d369dde}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDrawCircle2P_a67d4b88e1988322383b68a31d10efec3}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDrawCircle2P_a862f8ed7e984559c6eedba332d4e2474}{coordinate\-Event} (\hyperlink{classRS__CoordinateEvent}{R\-S\-\_\-\-Coordinate\-Event} $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDrawCircle2P_a13f9669929066720728f7435b247d1fc}{command\-Event} (\hyperlink{classRS__CommandEvent}{R\-S\-\_\-\-Command\-Event} $\ast$e)
+\item 
+virtual Q\-String\-List \hyperlink{classRS__ActionDrawCircle2P_a025e1e38f38060c827202c14684c3885}{get\-Available\-Commands} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawCircle2P_a458ce0183a1c304da0f8a2dd8d979dc0}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawCircle2P_a32e3065ce5d2f9346708926fbe4d61e1}{update\-Mouse\-Cursor} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionDrawCircle2P_a95419f6a0f69495754cb7971f8ab864e}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionDrawCircle2P_a95419f6a0f69495754cb7971f8ab864e}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__CircleData}{R\-S\-\_\-\-Circle\-Data} \hyperlink{classRS__ActionDrawCircle2P_af95bc65a82656e4e5d740e9f8e9abd41}{data}
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__ActionDrawCircle2P_a111a559b7dd5946befd13893a5beb630}{point1}
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__ActionDrawCircle2P_a3497d07cd675dcdf3aad478f973a2cca}{point2}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to draw simple arcs with the center, radius, start-\/ and endangle given.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionDrawCircle2P_a6808ccbf598645949cd3b1ce7a218411}{\index{R\-S\-\_\-\-Action\-Draw\-Circle2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}!Status@{Status}}
+\index{Status@{Status}!RS_ActionDrawCircle2P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Draw\-Circle2\-P\-::\-Status}}}\label{classRS__ActionDrawCircle2P_a6808ccbf598645949cd3b1ce7a218411}
+Action States. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Set\-Point1@{Set\-Point1}!R\-S\-\_\-\-Action\-Draw\-Circle2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}}\index{R\-S\-\_\-\-Action\-Draw\-Circle2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}!Set\-Point1@{Set\-Point1}}\item[{\em 
+\hypertarget{classRS__ActionDrawCircle2P_a6808ccbf598645949cd3b1ce7a218411af04dfd42d571b8b4571562c9150d446e}{Set\-Point1}\label{classRS__ActionDrawCircle2P_a6808ccbf598645949cd3b1ce7a218411af04dfd42d571b8b4571562c9150d446e}
+}]Setting the 1st point. \index{Set\-Point2@{Set\-Point2}!R\-S\-\_\-\-Action\-Draw\-Circle2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}}\index{R\-S\-\_\-\-Action\-Draw\-Circle2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}!Set\-Point2@{Set\-Point2}}\item[{\em 
+\hypertarget{classRS__ActionDrawCircle2P_a6808ccbf598645949cd3b1ce7a218411a0ce1c43716381b628e20a7261dad6ade}{Set\-Point2}\label{classRS__ActionDrawCircle2P_a6808ccbf598645949cd3b1ce7a218411a0ce1c43716381b628e20a7261dad6ade}
+}]Setting the 2nd point. \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionDrawCircle2P_a13f9669929066720728f7435b247d1fc}{\index{R\-S\-\_\-\-Action\-Draw\-Circle2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}!command\-Event@{command\-Event}}
+\index{command\-Event@{command\-Event}!RS_ActionDrawCircle2P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}}
+\subsubsection[{command\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Circle2\-P\-::command\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Command\-Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawCircle2P_a13f9669929066720728f7435b247d1fc}
+Called when a command from the command line is launched. and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a187365514bab9b2997c5fe7ff5274a22}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawCircle2P_a862f8ed7e984559c6eedba332d4e2474}{\index{R\-S\-\_\-\-Action\-Draw\-Circle2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}!coordinate\-Event@{coordinate\-Event}}
+\index{coordinate\-Event@{coordinate\-Event}!RS_ActionDrawCircle2P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}}
+\subsubsection[{coordinate\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Circle2\-P\-::coordinate\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Coordinate\-Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawCircle2P_a862f8ed7e984559c6eedba332d4e2474}
+Coordinate event. Triggered usually from a command line. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a9013e88769edd39b2a74af5add2986c9}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawCircle2P_a025e1e38f38060c827202c14684c3885}{\index{R\-S\-\_\-\-Action\-Draw\-Circle2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}!get\-Available\-Commands@{get\-Available\-Commands}}
+\index{get\-Available\-Commands@{get\-Available\-Commands}!RS_ActionDrawCircle2P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}}
+\subsubsection[{get\-Available\-Commands}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String\-List R\-S\-\_\-\-Action\-Draw\-Circle2\-P\-::get\-Available\-Commands (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawCircle2P_a025e1e38f38060c827202c14684c3885}
+Must be implemented to return the currently available commands for the command line. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acafdac8d18d3f053eda872581fb3e27d}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawCircle2P_abcf760094d8d463ea6c5a18472c91450}{\index{R\-S\-\_\-\-Action\-Draw\-Circle2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}!init@{init}}
+\index{init@{init}!RS_ActionDrawCircle2P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Circle2\-P\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawCircle2P_abcf760094d8d463ea6c5a18472c91450}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae5113b2aef5a10acd192786b99580e4a}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawCircle2P_a154d92e577b9e6a77f16ce8e1d369dde}{\index{R\-S\-\_\-\-Action\-Draw\-Circle2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_ActionDrawCircle2P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Circle2\-P\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawCircle2P_a154d92e577b9e6a77f16ce8e1d369dde}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawCircle2P_a67d4b88e1988322383b68a31d10efec3}{\index{R\-S\-\_\-\-Action\-Draw\-Circle2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionDrawCircle2P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Circle2\-P\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawCircle2P_a67d4b88e1988322383b68a31d10efec3}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawCircle2P_a9e4e2223c7aa8b8d6c2c48e3fde35147}{\index{R\-S\-\_\-\-Action\-Draw\-Circle2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_ActionDrawCircle2P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Action\-Draw\-Circle2\-P\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__ActionDrawCircle2P_a9e4e2223c7aa8b8d6c2c48e3fde35147}
+Must be implemented to return the I\-D of this action.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]no default implementation \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af877a66b5b4a7053f2b1f0519c57a6f5}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawCircle2P_a35eac4823382124844f2de816ce30af5}{\index{R\-S\-\_\-\-Action\-Draw\-Circle2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionDrawCircle2P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Circle2\-P\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawCircle2P_a35eac4823382124844f2de816ce30af5}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawCircle2P_a458ce0183a1c304da0f8a2dd8d979dc0}{\index{R\-S\-\_\-\-Action\-Draw\-Circle2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionDrawCircle2P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Circle2\-P\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawCircle2P_a458ce0183a1c304da0f8a2dd8d979dc0}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawCircle2P_a32e3065ce5d2f9346708926fbe4d61e1}{\index{R\-S\-\_\-\-Action\-Draw\-Circle2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionDrawCircle2P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Circle2\-P\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawCircle2P_a32e3065ce5d2f9346708926fbe4d61e1}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classRS__ActionDrawCircle2P_af95bc65a82656e4e5d740e9f8e9abd41}{\index{R\-S\-\_\-\-Action\-Draw\-Circle2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}!data@{data}}
+\index{data@{data}!RS_ActionDrawCircle2P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Circle\-Data} R\-S\-\_\-\-Action\-Draw\-Circle2\-P\-::data\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDrawCircle2P_af95bc65a82656e4e5d740e9f8e9abd41}
+Circle data defined so far. \hypertarget{classRS__ActionDrawCircle2P_a111a559b7dd5946befd13893a5beb630}{\index{R\-S\-\_\-\-Action\-Draw\-Circle2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}!point1@{point1}}
+\index{point1@{point1}!RS_ActionDrawCircle2P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}}
+\subsubsection[{point1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Action\-Draw\-Circle2\-P\-::point1\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDrawCircle2P_a111a559b7dd5946befd13893a5beb630}
+1st point. \hypertarget{classRS__ActionDrawCircle2P_a3497d07cd675dcdf3aad478f973a2cca}{\index{R\-S\-\_\-\-Action\-Draw\-Circle2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}!point2@{point2}}
+\index{point2@{point2}!RS_ActionDrawCircle2P@{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}}
+\subsubsection[{point2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Action\-Draw\-Circle2\-P\-::point2\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDrawCircle2P_a3497d07cd675dcdf3aad478f973a2cca}
+2nd point. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actiondrawcircle2p.\-h\item 
+librecad/src/actions/rs\-\_\-actiondrawcircle2p.\-cpp\end{DoxyCompactItemize}

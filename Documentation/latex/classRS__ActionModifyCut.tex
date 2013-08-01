@@ -1,0 +1,167 @@
+\hypertarget{classRS__ActionModifyCut}{\section{R\-S\-\_\-\-Action\-Modify\-Cut Class Reference}
+\label{classRS__ActionModifyCut}\index{R\-S\-\_\-\-Action\-Modify\-Cut@{R\-S\-\_\-\-Action\-Modify\-Cut}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionmodifycut.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Modify\-Cut\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__ActionModifyCut}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionModifyCut_a5777f39854f76d3b456617bdd165f675}{Status} \{ \hyperlink{classRS__ActionModifyCut_a5777f39854f76d3b456617bdd165f675a04b69f4bb1a0a61d4cfd016f24ed6895}{Choose\-Cut\-Entity}, 
+\hyperlink{classRS__ActionModifyCut_a5777f39854f76d3b456617bdd165f675a037a12bfeb22b9e8a782c7e03d028b41}{Set\-Cut\-Coord}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionModifyCut_ae6a264e349569c09dc6bf7c1e8da8bf9}{{\bfseries R\-S\-\_\-\-Action\-Modify\-Cut} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionModifyCut_ae6a264e349569c09dc6bf7c1e8da8bf9}
+
+\item 
+\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__ActionModifyCut_a59e810bb29dee030c93f23c09acf8bbc}{rtti} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyCut_a1a2fc1692f802f8b147dc57d47ca6473}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionModifyCut_ada76b8e51948f468a5b9747043a4f345}{trigger} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyCut_a3bded418e2ceba0bfcdd19f54cf0b869}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionModifyCut_a1550d42d9ae7acd446c81381169d6ae9}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionModifyCut_aea8b2c39b56548e2ca0f47224609f488}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyCut_a25630f47756d474142742d9339cfcc79}{update\-Mouse\-Cursor} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionModifyCut_aa2df65fc5aabfb24c30f04006c05cd4b}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionModifyCut_aa2df65fc5aabfb24c30f04006c05cd4b}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to divide entities.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionModifyCut_a5777f39854f76d3b456617bdd165f675}{\index{R\-S\-\_\-\-Action\-Modify\-Cut@{R\-S\-\_\-\-Action\-Modify\-Cut}!Status@{Status}}
+\index{Status@{Status}!RS_ActionModifyCut@{R\-S\-\_\-\-Action\-Modify\-Cut}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Modify\-Cut\-::\-Status}}}\label{classRS__ActionModifyCut_a5777f39854f76d3b456617bdd165f675}
+Action States. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Choose\-Cut\-Entity@{Choose\-Cut\-Entity}!R\-S\-\_\-\-Action\-Modify\-Cut@{R\-S\-\_\-\-Action\-Modify\-Cut}}\index{R\-S\-\_\-\-Action\-Modify\-Cut@{R\-S\-\_\-\-Action\-Modify\-Cut}!Choose\-Cut\-Entity@{Choose\-Cut\-Entity}}\item[{\em 
+\hypertarget{classRS__ActionModifyCut_a5777f39854f76d3b456617bdd165f675a04b69f4bb1a0a61d4cfd016f24ed6895}{Choose\-Cut\-Entity}\label{classRS__ActionModifyCut_a5777f39854f76d3b456617bdd165f675a04b69f4bb1a0a61d4cfd016f24ed6895}
+}]Choosing the entity to cut in two. \index{Set\-Cut\-Coord@{Set\-Cut\-Coord}!R\-S\-\_\-\-Action\-Modify\-Cut@{R\-S\-\_\-\-Action\-Modify\-Cut}}\index{R\-S\-\_\-\-Action\-Modify\-Cut@{R\-S\-\_\-\-Action\-Modify\-Cut}!Set\-Cut\-Coord@{Set\-Cut\-Coord}}\item[{\em 
+\hypertarget{classRS__ActionModifyCut_a5777f39854f76d3b456617bdd165f675a037a12bfeb22b9e8a782c7e03d028b41}{Set\-Cut\-Coord}\label{classRS__ActionModifyCut_a5777f39854f76d3b456617bdd165f675a037a12bfeb22b9e8a782c7e03d028b41}
+}]Choosing the cutting point. \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionModifyCut_a1a2fc1692f802f8b147dc57d47ca6473}{\index{R\-S\-\_\-\-Action\-Modify\-Cut@{R\-S\-\_\-\-Action\-Modify\-Cut}!init@{init}}
+\index{init@{init}!RS_ActionModifyCut@{R\-S\-\_\-\-Action\-Modify\-Cut}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Cut\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyCut_a1a2fc1692f802f8b147dc57d47ca6473}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a05b7dca5deeb371eb51edcb73facd45f}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyCut_a3bded418e2ceba0bfcdd19f54cf0b869}{\index{R\-S\-\_\-\-Action\-Modify\-Cut@{R\-S\-\_\-\-Action\-Modify\-Cut}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_ActionModifyCut@{R\-S\-\_\-\-Action\-Modify\-Cut}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Cut\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyCut_a3bded418e2ceba0bfcdd19f54cf0b869}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyCut_a1550d42d9ae7acd446c81381169d6ae9}{\index{R\-S\-\_\-\-Action\-Modify\-Cut@{R\-S\-\_\-\-Action\-Modify\-Cut}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionModifyCut@{R\-S\-\_\-\-Action\-Modify\-Cut}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Cut\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyCut_a1550d42d9ae7acd446c81381169d6ae9}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyCut_a59e810bb29dee030c93f23c09acf8bbc}{\index{R\-S\-\_\-\-Action\-Modify\-Cut@{R\-S\-\_\-\-Action\-Modify\-Cut}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_ActionModifyCut@{R\-S\-\_\-\-Action\-Modify\-Cut}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Action\-Modify\-Cut\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__ActionModifyCut_a59e810bb29dee030c93f23c09acf8bbc}
+Must be implemented to return the I\-D of this action.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]no default implementation \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af877a66b5b4a7053f2b1f0519c57a6f5}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyCut_ada76b8e51948f468a5b9747043a4f345}{\index{R\-S\-\_\-\-Action\-Modify\-Cut@{R\-S\-\_\-\-Action\-Modify\-Cut}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionModifyCut@{R\-S\-\_\-\-Action\-Modify\-Cut}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Cut\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyCut_ada76b8e51948f468a5b9747043a4f345}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa2ba8f6f697f735eace4ec5449c0b8cd}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyCut_aea8b2c39b56548e2ca0f47224609f488}{\index{R\-S\-\_\-\-Action\-Modify\-Cut@{R\-S\-\_\-\-Action\-Modify\-Cut}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionModifyCut@{R\-S\-\_\-\-Action\-Modify\-Cut}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Cut\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyCut_aea8b2c39b56548e2ca0f47224609f488}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyCut_a25630f47756d474142742d9339cfcc79}{\index{R\-S\-\_\-\-Action\-Modify\-Cut@{R\-S\-\_\-\-Action\-Modify\-Cut}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionModifyCut@{R\-S\-\_\-\-Action\-Modify\-Cut}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Cut\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyCut_a25630f47756d474142742d9339cfcc79}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionmodifycut.\-h\item 
+librecad/src/actions/rs\-\_\-actionmodifycut.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,192 @@
+\hypertarget{classDL__WriterA}{\section{D\-L\-\_\-\-Writer\-A Class Reference}
+\label{classDL__WriterA}\index{D\-L\-\_\-\-Writer\-A@{D\-L\-\_\-\-Writer\-A}}
+}
+
+
+{\ttfamily \#include $<$dl\-\_\-writer\-\_\-ascii.\-h$>$}
+
+Inheritance diagram for D\-L\-\_\-\-Writer\-A\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDL__WriterA}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDL__WriterA_a59d5ee4ea070211bd443d632a8e30a91}{{\bfseries D\-L\-\_\-\-Writer\-A} (const char $\ast$fname, \hyperlink{classDL__Codes_a5eba107e2d280c70b52ffab0292fb9dc}{D\-L\-\_\-\-Codes\-::version} \hyperlink{classDL__Writer_af82f15c96f8ddaa4ebfffdb5ea41fb8c}{version}=V\-E\-R\-\_\-2000)}\label{classDL__WriterA_a59d5ee4ea070211bd443d632a8e30a91}
+
+\item 
+bool \hyperlink{classDL__WriterA_a4407523bec170f67c6f9a19cb6ec592d}{open\-Failed} () const 
+\item 
+void \hyperlink{classDL__WriterA_a9b558c54eca5f14ac0f040ba0e3d9b84}{close} () const 
+\item 
+void \hyperlink{classDL__WriterA_a312d2c162e82a838858e8acf512e5786}{dxf\-Real} (int gc, double value) const 
+\item 
+void \hyperlink{classDL__WriterA_a51ba6db986c225e57f54d99ae9613dc8}{dxf\-Int} (int gc, int value) const 
+\item 
+void \hyperlink{classDL__WriterA_aa8edb47a42a6b8fc6dd2abb22b168b13}{dxf\-Hex} (int gc, int value) const 
+\item 
+void \hyperlink{classDL__WriterA_a1ca52fde1bdce2c66c49c0c377e05e1a}{dxf\-String} (int gc, const char $\ast$value) const 
+\item 
+void \hyperlink{classDL__WriterA_a48438853c9ea284a6d750d7f5b4fa64b}{dxf\-String} (int gc, const string \&value) const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classDL__WriterA_acef58eea4f7599463bf0593133a134f3}{str\-Replace} (char $\ast$str, char src, char dest)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Implements functions defined in \hyperlink{classDL__Writer}{D\-L\-\_\-\-Writer} for writing low level D\-X\-F constructs to an A\-S\-C\-I\-I format D\-X\-F file.
+
+fname File name of the file to be created.  version D\-X\-F version. Defaults to V\-E\-R\-\_\-2002.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000005}{Todo}]What if {\ttfamily fname} is N\-U\-L\-L? Or {\ttfamily fname} can't be opened for another reason? \end{DoxyRefDesc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDL__WriterA_a9b558c54eca5f14ac0f040ba0e3d9b84}{\index{D\-L\-\_\-\-Writer\-A@{D\-L\-\_\-\-Writer\-A}!close@{close}}
+\index{close@{close}!DL_WriterA@{D\-L\-\_\-\-Writer\-A}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-A\-::close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classDL__WriterA_a9b558c54eca5f14ac0f040ba0e3d9b84}
+Closes the output file. \hypertarget{classDL__WriterA_aa8edb47a42a6b8fc6dd2abb22b168b13}{\index{D\-L\-\_\-\-Writer\-A@{D\-L\-\_\-\-Writer\-A}!dxf\-Hex@{dxf\-Hex}}
+\index{dxf\-Hex@{dxf\-Hex}!DL_WriterA@{D\-L\-\_\-\-Writer\-A}}
+\subsubsection[{dxf\-Hex}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-A\-::dxf\-Hex (
+\begin{DoxyParamCaption}
+\item[{int}]{gc, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDL__WriterA_aa8edb47a42a6b8fc6dd2abb22b168b13}
+Writes a hex int variable to the D\-X\-F file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em gc} & Group code. \\
+\hline
+{\em value} & Int value \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classDL__Writer_ab3efae31c835548d5266aa72cc8b25e4}{D\-L\-\_\-\-Writer}.
+
+\hypertarget{classDL__WriterA_a51ba6db986c225e57f54d99ae9613dc8}{\index{D\-L\-\_\-\-Writer\-A@{D\-L\-\_\-\-Writer\-A}!dxf\-Int@{dxf\-Int}}
+\index{dxf\-Int@{dxf\-Int}!DL_WriterA@{D\-L\-\_\-\-Writer\-A}}
+\subsubsection[{dxf\-Int}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-A\-::dxf\-Int (
+\begin{DoxyParamCaption}
+\item[{int}]{gc, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDL__WriterA_a51ba6db986c225e57f54d99ae9613dc8}
+Writes an int variable to the D\-X\-F file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em gc} & Group code. \\
+\hline
+{\em value} & Int value \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classDL__Writer_a038b715457b6c1b15183e14e1bca5ced}{D\-L\-\_\-\-Writer}.
+
+\hypertarget{classDL__WriterA_a312d2c162e82a838858e8acf512e5786}{\index{D\-L\-\_\-\-Writer\-A@{D\-L\-\_\-\-Writer\-A}!dxf\-Real@{dxf\-Real}}
+\index{dxf\-Real@{dxf\-Real}!DL_WriterA@{D\-L\-\_\-\-Writer\-A}}
+\subsubsection[{dxf\-Real}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-A\-::dxf\-Real (
+\begin{DoxyParamCaption}
+\item[{int}]{gc, }
+\item[{double}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDL__WriterA_a312d2c162e82a838858e8acf512e5786}
+Writes a real (double) variable to the D\-X\-F file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em gc} & Group code. \\
+\hline
+{\em value} & Double value \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classDL__Writer_a36f163a34cb91e63dcc5ff412f7981d0}{D\-L\-\_\-\-Writer}.
+
+\hypertarget{classDL__WriterA_a1ca52fde1bdce2c66c49c0c377e05e1a}{\index{D\-L\-\_\-\-Writer\-A@{D\-L\-\_\-\-Writer\-A}!dxf\-String@{dxf\-String}}
+\index{dxf\-String@{dxf\-String}!DL_WriterA@{D\-L\-\_\-\-Writer\-A}}
+\subsubsection[{dxf\-String}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-A\-::dxf\-String (
+\begin{DoxyParamCaption}
+\item[{int}]{gc, }
+\item[{const char $\ast$}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDL__WriterA_a1ca52fde1bdce2c66c49c0c377e05e1a}
+Writes a string variable to the D\-X\-F file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em gc} & Group code. \\
+\hline
+{\em value} & String \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classDL__Writer_a06a4aa2b632a66800defb87794d13896}{D\-L\-\_\-\-Writer}.
+
+\hypertarget{classDL__WriterA_a48438853c9ea284a6d750d7f5b4fa64b}{\index{D\-L\-\_\-\-Writer\-A@{D\-L\-\_\-\-Writer\-A}!dxf\-String@{dxf\-String}}
+\index{dxf\-String@{dxf\-String}!DL_WriterA@{D\-L\-\_\-\-Writer\-A}}
+\subsubsection[{dxf\-String}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-A\-::dxf\-String (
+\begin{DoxyParamCaption}
+\item[{int}]{gc, }
+\item[{const string \&}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDL__WriterA_a48438853c9ea284a6d750d7f5b4fa64b}
+Must be overwritten by the implementing class to write a string to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em gc} & Group code. \\
+\hline
+{\em value} & The string. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classDL__Writer_a18e79d9a34b2c3680f07d9c7bdcbd6a1}{D\-L\-\_\-\-Writer}.
+
+\hypertarget{classDL__WriterA_a4407523bec170f67c6f9a19cb6ec592d}{\index{D\-L\-\_\-\-Writer\-A@{D\-L\-\_\-\-Writer\-A}!open\-Failed@{open\-Failed}}
+\index{open\-Failed@{open\-Failed}!DL_WriterA@{D\-L\-\_\-\-Writer\-A}}
+\subsubsection[{open\-Failed}]{\setlength{\rightskip}{0pt plus 5cm}bool D\-L\-\_\-\-Writer\-A\-::open\-Failed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classDL__WriterA_a4407523bec170f67c6f9a19cb6ec592d}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & Opening file has failed. \\
+\hline
+{\em false} & Otherwise. \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{classDL__WriterA_acef58eea4f7599463bf0593133a134f3}{\index{D\-L\-\_\-\-Writer\-A@{D\-L\-\_\-\-Writer\-A}!str\-Replace@{str\-Replace}}
+\index{str\-Replace@{str\-Replace}!DL_WriterA@{D\-L\-\_\-\-Writer\-A}}
+\subsubsection[{str\-Replace}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Writer\-A\-::str\-Replace (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str, }
+\item[{char}]{src, }
+\item[{char}]{dest}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classDL__WriterA_acef58eea4f7599463bf0593133a134f3}
+Replaces every occurence of src with dest in the null terminated str. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+libraries/jwwlib/src/dl\-\_\-writer\-\_\-ascii.\-h\item 
+libraries/jwwlib/src/dl\-\_\-writer\-\_\-ascii.\-cpp\end{DoxyCompactItemize}

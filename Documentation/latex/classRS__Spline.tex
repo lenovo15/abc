@@ -1,0 +1,580 @@
+\hypertarget{classRS__Spline}{\section{R\-S\-\_\-\-Spline Class Reference}
+\label{classRS__Spline}\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-spline.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Spline\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classRS__Spline}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__Spline_a7d04b0f29bb997cd7c39c8b3608b3f5c}{R\-S\-\_\-\-Spline} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} $\ast$\hyperlink{classRS__Entity_a80358a8d2fc6739a516a278dc500b49f}{parent}, const \hyperlink{classRS__SplineData}{R\-S\-\_\-\-Spline\-Data} \&d)
+\item 
+\hypertarget{classRS__Spline_a03bf4749d8f28c45239ec51debc73e0c}{virtual \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$ {\bfseries clone} ()}\label{classRS__Spline_a03bf4749d8f28c45239ec51debc73e0c}
+
+\item 
+virtual \hyperlink{classRS__Spline_a6d30da2e2a1878dbb39b6f5998bf2c37}{$\sim$\-R\-S\-\_\-\-Spline} ()
+\item 
+virtual \hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6a}{R\-S2\-::\-Entity\-Type} \hyperlink{classRS__Spline_a2209ff22720f8431c524cff82d43999b}{rtti} () const 
+\item 
+virtual bool \hyperlink{classRS__Spline_a63841fa451c155052683af686986e4b4}{is\-Edge} () const 
+\item 
+\hyperlink{classRS__SplineData}{R\-S\-\_\-\-Spline\-Data} \hyperlink{classRS__Spline_aac1a47d960968611aa585a1900665586}{get\-Data} () const 
+\item 
+void \hyperlink{classRS__Spline_a8ea2beab3c0668c4fe98473a7a263166}{set\-Degree} (int deg)
+\item 
+int \hyperlink{classRS__Spline_a285a63ac0b6be6387100ed2545498067}{get\-Degree} ()
+\item 
+int \hyperlink{classRS__Spline_acf4f4032007b72e86a24a162ba4ae682}{get\-Number\-Of\-Knots} ()
+\item 
+int \hyperlink{classRS__Spline_ae93600828361d4e1d30a2d8630f88e47}{get\-Number\-Of\-Control\-Points} ()
+\item 
+bool \hyperlink{classRS__Spline_a7e252d42870c970938961564efebbb7a}{is\-Closed} ()
+\item 
+void \hyperlink{classRS__Spline_a93139ef7957405e9148d14cad3e059cd}{set\-Closed} (bool c)
+\item 
+virtual \hyperlink{classRS__VectorSolutions}{R\-S\-\_\-\-Vector\-Solutions} \hyperlink{classRS__Spline_ab4f80d174f9282526645bd8613c3fea2}{get\-Ref\-Points} ()
+\item 
+virtual \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Spline_aac7c380a3722178c13cedfa31d982479}{get\-Nearest\-Ref} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord, double $\ast$dist=N\-U\-L\-L)
+\item 
+virtual \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Spline_a04c269d07eb72075f9c2f021255b0816}{get\-Nearest\-Selected\-Ref} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord, double $\ast$dist=N\-U\-L\-L)
+\item 
+virtual \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Spline_af9cc8ca95415b7cb4f6cfa1ed94a8300}{get\-Startpoint} () const 
+\item 
+virtual \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Spline_a1271d3558d26764ec3c8d9d96feb3538}{get\-Endpoint} () const 
+\item 
+void \hyperlink{classRS__Spline_a92830157f9485cfd15ac20b049cb25e3}{update} ()
+\item 
+virtual \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Spline_a0c6ea06a65c7b637ce82a11ce8508db8}{get\-Nearest\-Endpoint} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord, double $\ast$dist=N\-U\-L\-L) const 
+\item 
+virtual \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Spline_a23d25f1a892f9f72b90daec6ce627a78}{get\-Nearest\-Center} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord, double $\ast$dist=N\-U\-L\-L)
+\item 
+\hypertarget{classRS__Spline_a4722ec889ce70dcd77935b4e71f14a85}{virtual \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries get\-Nearest\-Middle} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord, double $\ast$dist=N\-U\-L\-L) const }\label{classRS__Spline_a4722ec889ce70dcd77935b4e71f14a85}
+
+\item 
+virtual \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Spline_a2624a79ab3e49d33ccaf9ae05cc78198}{get\-Nearest\-Dist} (double distance, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord, double $\ast$dist=N\-U\-L\-L)
+\item 
+virtual void \hyperlink{classRS__Spline_a2f2d3a6339d243019e19c14361dd6fd8}{add\-Control\-Point} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&v)
+\item 
+virtual void \hyperlink{classRS__Spline_a07278c2c17681195a035bb597a01dea0}{remove\-Last\-Control\-Point} ()
+\item 
+virtual void \hyperlink{classRS__Spline_af7b7f227408c82d53fe48243f601bee5}{move} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&\hyperlink{classRS__Entity_aa296d21b9aac99161d386ce2f60f0fea}{offset})
+\item 
+virtual void \hyperlink{classRS__Spline_ac9811a626db113c0d33e94a011d01381}{rotate} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&center, const double \&angle)
+\item 
+\hypertarget{classRS__Spline_ad204ee709de5324b689736d8ee74fb7a}{virtual void {\bfseries rotate} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&center, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&angle\-Vector)}\label{classRS__Spline_ad204ee709de5324b689736d8ee74fb7a}
+
+\item 
+virtual void \hyperlink{classRS__Spline_a0bcd286aa6e083eceba53390a56a9c6b}{scale} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&center, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&factor)
+\item 
+virtual void \hyperlink{classRS__Spline_a21454167f4010bc0d2436aa8d8379313}{mirror} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&axis\-Point1, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&axis\-Point2)
+\item 
+virtual void \hyperlink{classRS__Spline_ae57cfa1b12e958a176950db6931daee5}{move\-Ref} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&ref, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&\hyperlink{classRS__Entity_aa296d21b9aac99161d386ce2f60f0fea}{offset})
+\item 
+virtual void \hyperlink{classRS__Spline_afe87f24a39ca03e2aaba0647846abf0c}{draw} (\hyperlink{classRS__Painter}{R\-S\-\_\-\-Painter} $\ast$painter, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} $\ast$view, double \&pattern\-Offset)
+\item 
+Q\-List$<$ \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} $>$ \hyperlink{classRS__Spline_aef536f161e526820be8ba3bf5748a6d6}{get\-Control\-Points} ()
+\item 
+virtual void \hyperlink{classRS__Spline_a22585601e62ab8c0b90f945f90302f13}{calculate\-Borders} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classRS__Spline_ac17c9d2c444e5c99bb2fe6886a3910d5}{rbasis} (int c, double t, int npts, int x\mbox{[}$\,$\mbox{]}, double h\mbox{[}$\,$\mbox{]}, double r\mbox{[}$\,$\mbox{]})
+\item 
+static void \hyperlink{classRS__Spline_ace7bae5dd82deb0a69582af5d8b1b0c7}{knot} (int num, int order, int knot\-Vector\mbox{[}$\,$\mbox{]})
+\item 
+static void \hyperlink{classRS__Spline_a5816a62154815628f3b928118ed9d855}{rbspline} (int npts, int k, int p1, double b\mbox{[}$\,$\mbox{]}, double h\mbox{[}$\,$\mbox{]}, double p\mbox{[}$\,$\mbox{]})
+\item 
+\hypertarget{classRS__Spline_a5f24d65e642b34f54e04ffb53bb14b25}{static void {\bfseries knotu} (int num, int order, int knot\-Vector\mbox{[}$\,$\mbox{]})}\label{classRS__Spline_a5f24d65e642b34f54e04ffb53bb14b25}
+
+\item 
+\hypertarget{classRS__Spline_adf510f9d002ef522378686f75965803e}{static void {\bfseries rbsplinu} (int npts, int k, int p1, double b\mbox{[}$\,$\mbox{]}, double h\mbox{[}$\,$\mbox{]}, double p\mbox{[}$\,$\mbox{]})}\label{classRS__Spline_adf510f9d002ef522378686f75965803e}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__Spline_a81e45fc8f7f6131c527895ba7e6a814a}{\hyperlink{classRS__SplineData}{R\-S\-\_\-\-Spline\-Data} {\bfseries data}}\label{classRS__Spline_a81e45fc8f7f6131c527895ba7e6a814a}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{classRS__Spline_a5848002e0b1adf644a4d2bc6474c7d0b}{operator$<$$<$} (std\-::ostream \&os, const \hyperlink{classRS__Spline}{R\-S\-\_\-\-Spline} \&l)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for a spline entity.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__Spline_a7d04b0f29bb997cd7c39c8b3608b3f5c}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}}
+\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{R\-S\-\_\-\-Spline}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Spline\-::\-R\-S\-\_\-\-Spline (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} $\ast$}]{parent, }
+\item[{const {\bf R\-S\-\_\-\-Spline\-Data} \&}]{d}
+\end{DoxyParamCaption}
+)}}\label{classRS__Spline_a7d04b0f29bb997cd7c39c8b3608b3f5c}
+Constructor. \hypertarget{classRS__Spline_a6d30da2e2a1878dbb39b6f5998bf2c37}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!$\sim$\-R\-S\-\_\-\-Spline@{$\sim$\-R\-S\-\_\-\-Spline}}
+\index{$\sim$\-R\-S\-\_\-\-Spline@{$\sim$\-R\-S\-\_\-\-Spline}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{$\sim$\-R\-S\-\_\-\-Spline}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Spline\-::$\sim$\-R\-S\-\_\-\-Spline (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Spline_a6d30da2e2a1878dbb39b6f5998bf2c37}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Spline_a2f2d3a6339d243019e19c14361dd6fd8}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!add\-Control\-Point@{add\-Control\-Point}}
+\index{add\-Control\-Point@{add\-Control\-Point}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{add\-Control\-Point}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Spline\-::add\-Control\-Point (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Spline_a2f2d3a6339d243019e19c14361dd6fd8}
+Appends the given point to the control points. \hypertarget{classRS__Spline_a22585601e62ab8c0b90f945f90302f13}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!calculate\-Borders@{calculate\-Borders}}
+\index{calculate\-Borders@{calculate\-Borders}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{calculate\-Borders}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Spline\-::calculate\-Borders (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Spline_a22585601e62ab8c0b90f945f90302f13}
+Recalculates the borders of this entity container. 
+
+Reimplemented from \hyperlink{classRS__EntityContainer_a852ac3bad97f3c3fff80f0a83c6862d7}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Spline_afe87f24a39ca03e2aaba0647846abf0c}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!draw@{draw}}
+\index{draw@{draw}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Spline\-::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Painter} $\ast$}]{painter, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} $\ast$}]{view, }
+\item[{double \&}]{pattern\-Offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Spline_afe87f24a39ca03e2aaba0647846abf0c}
+Implementations must draw the entity on the given device. 
+
+Reimplemented from \hyperlink{classRS__EntityContainer_a38dad976bacc4b40db0c2d791d0b9958}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Spline_aef536f161e526820be8ba3bf5748a6d6}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!get\-Control\-Points@{get\-Control\-Points}}
+\index{get\-Control\-Points@{get\-Control\-Points}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{get\-Control\-Points}]{\setlength{\rightskip}{0pt plus 5cm}Q\-List$<$ {\bf R\-S\-\_\-\-Vector} $>$ R\-S\-\_\-\-Spline\-::get\-Control\-Points (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Spline_aef536f161e526820be8ba3bf5748a6d6}
+Todo\-: draw the spline, user patterns. \begin{DoxyReturn}{Returns}
+The reference points of the spline. 
+\end{DoxyReturn}
+\hypertarget{classRS__Spline_aac1a47d960968611aa585a1900665586}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!get\-Data@{get\-Data}}
+\index{get\-Data@{get\-Data}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{get\-Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Spline\-Data} R\-S\-\_\-\-Spline\-::get\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Spline_aac1a47d960968611aa585a1900665586}
+\begin{DoxyReturn}{Returns}
+Copy of data that defines the spline. 
+\end{DoxyReturn}
+\hypertarget{classRS__Spline_a285a63ac0b6be6387100ed2545498067}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!get\-Degree@{get\-Degree}}
+\index{get\-Degree@{get\-Degree}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{get\-Degree}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Spline\-::get\-Degree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Spline_a285a63ac0b6be6387100ed2545498067}
+\begin{DoxyReturn}{Returns}
+Degree of this spline curve (1-\/3). 
+\end{DoxyReturn}
+\hypertarget{classRS__Spline_a1271d3558d26764ec3c8d9d96feb3538}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!get\-Endpoint@{get\-Endpoint}}
+\index{get\-Endpoint@{get\-Endpoint}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{get\-Endpoint}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Spline\-::get\-Endpoint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Spline_a1271d3558d26764ec3c8d9d96feb3538}
+\begin{DoxyReturn}{Returns}
+End point of the entity 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity}.
+
+\hypertarget{classRS__Spline_a23d25f1a892f9f72b90daec6ce627a78}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!get\-Nearest\-Center@{get\-Nearest\-Center}}
+\index{get\-Nearest\-Center@{get\-Nearest\-Center}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{get\-Nearest\-Center}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Spline\-::get\-Nearest\-Center (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord, }
+\item[{double $\ast$}]{dist = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Spline_a23d25f1a892f9f72b90daec6ce627a78}
+Must be overwritten to get the (nearest) center point to the given coordinate for this entity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & Coordinate (typically a mouse coordinate) \\
+\hline
+{\em dist} & Pointer to a value which will contain the measured distance between 'coord' and the closest center point. The passed pointer can also be N\-U\-L\-L in which case the distance will be lost.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The closest center point. 
+\end{DoxyReturn}
+$<$ Text 16
+
+$<$ Text 17
+
+$<$ Aligned Dimension
+
+$<$ Linear Dimension
+
+$<$ Radial Dimension
+
+$<$ Diametric Dimension
+
+$<$ Angular Dimension
+
+$<$ Leader Dimension 
+
+Reimplemented from \hyperlink{classRS__EntityContainer_a861b1604b2d739a52577dc9cff99891c}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Spline_a2624a79ab3e49d33ccaf9ae05cc78198}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!get\-Nearest\-Dist@{get\-Nearest\-Dist}}
+\index{get\-Nearest\-Dist@{get\-Nearest\-Dist}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{get\-Nearest\-Dist}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Spline\-::get\-Nearest\-Dist (
+\begin{DoxyParamCaption}
+\item[{double}]{distance, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord, }
+\item[{double $\ast$}]{dist = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Spline_a2624a79ab3e49d33ccaf9ae05cc78198}
+Must be overwritten to get the nearest point with a given distance to the endpoint to the given coordinate for this entity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em distance} & Distance to endpoint. \\
+\hline
+{\em coord} & Coordinate (typically a mouse coordinate) \\
+\hline
+{\em dist} & Pointer to a value which will contain the measured distance between 'coord' and the closest point. The passed pointer can also be N\-U\-L\-L in which case the distance will be lost.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The closest point with the given distance to the endpoint. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classRS__EntityContainer_a5a46efb8138389da04826716ada5d9e0}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Spline_a0c6ea06a65c7b637ce82a11ce8508db8}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!get\-Nearest\-Endpoint@{get\-Nearest\-Endpoint}}
+\index{get\-Nearest\-Endpoint@{get\-Nearest\-Endpoint}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{get\-Nearest\-Endpoint}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Spline\-::get\-Nearest\-Endpoint (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord, }
+\item[{double $\ast$}]{dist = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Spline_a0c6ea06a65c7b637ce82a11ce8508db8}
+\begin{DoxyReturn}{Returns}
+the center point of the line. 
+
+The length of the line. 
+
+The angle of the line (from start to endpoint). 
+
+The angle of the line (from end to startpoint). 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classRS__EntityContainer_a4489ea8efab805e50958ead1ac9a79e8}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Spline_aac7c380a3722178c13cedfa31d982479}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!get\-Nearest\-Ref@{get\-Nearest\-Ref}}
+\index{get\-Nearest\-Ref@{get\-Nearest\-Ref}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{get\-Nearest\-Ref}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Spline\-::get\-Nearest\-Ref (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord, }
+\item[{double $\ast$}]{dist = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Spline_aac7c380a3722178c13cedfa31d982479}
+Must be overwritten to get the nearest reference point for this entity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & Coordinate (typically a mouse coordinate) \\
+\hline
+{\em dist} & Pointer to a value which will contain the measured distance between 'coord' and the closest point. The passed pointer can also be N\-U\-L\-L in which case the distance will be lost.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The closest point with the given distance to the endpoint. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classRS__EntityContainer_a1ee77d9793910900b4e929700028a5fd}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Spline_a04c269d07eb72075f9c2f021255b0816}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!get\-Nearest\-Selected\-Ref@{get\-Nearest\-Selected\-Ref}}
+\index{get\-Nearest\-Selected\-Ref@{get\-Nearest\-Selected\-Ref}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{get\-Nearest\-Selected\-Ref}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Spline\-::get\-Nearest\-Selected\-Ref (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{coord, }
+\item[{double $\ast$}]{dist = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Spline_a04c269d07eb72075f9c2f021255b0816}
+Gets the nearest reference point of this entity if it is selected. Containers re-\/implement this method to return the nearest reference point of a selected sub entity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & Coordinate (typically a mouse coordinate) \\
+\hline
+{\em dist} & Pointer to a value which will contain the measured distance between 'coord' and the closest point. The passed pointer can also be N\-U\-L\-L in which case the distance will be lost.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The closest point with the given distance to the endpoint. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classRS__EntityContainer_a37111b0bfc94f0c4e8b0d81c170775b8}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Spline_ae93600828361d4e1d30a2d8630f88e47}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!get\-Number\-Of\-Control\-Points@{get\-Number\-Of\-Control\-Points}}
+\index{get\-Number\-Of\-Control\-Points@{get\-Number\-Of\-Control\-Points}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{get\-Number\-Of\-Control\-Points}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Spline\-::get\-Number\-Of\-Control\-Points (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Spline_ae93600828361d4e1d30a2d8630f88e47}
+\begin{DoxyReturn}{Returns}
+Number of control points. 
+\end{DoxyReturn}
+\hypertarget{classRS__Spline_acf4f4032007b72e86a24a162ba4ae682}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!get\-Number\-Of\-Knots@{get\-Number\-Of\-Knots}}
+\index{get\-Number\-Of\-Knots@{get\-Number\-Of\-Knots}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{get\-Number\-Of\-Knots}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Spline\-::get\-Number\-Of\-Knots (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Spline_acf4f4032007b72e86a24a162ba4ae682}
+\begin{DoxyReturn}{Returns}
+0. 
+\end{DoxyReturn}
+\hypertarget{classRS__Spline_ab4f80d174f9282526645bd8613c3fea2}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!get\-Ref\-Points@{get\-Ref\-Points}}
+\index{get\-Ref\-Points@{get\-Ref\-Points}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{get\-Ref\-Points}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector\-Solutions} R\-S\-\_\-\-Spline\-::get\-Ref\-Points (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Spline_ab4f80d174f9282526645bd8613c3fea2}
+Must be overwritten to get all reference points of the entity. 
+
+Reimplemented from \hyperlink{classRS__Entity_a643485f2d50de736f961eefbb7b0f9e2}{R\-S\-\_\-\-Entity}.
+
+\hypertarget{classRS__Spline_af9cc8ca95415b7cb4f6cfa1ed94a8300}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!get\-Startpoint@{get\-Startpoint}}
+\index{get\-Startpoint@{get\-Startpoint}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{get\-Startpoint}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Spline\-::get\-Startpoint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Spline_af9cc8ca95415b7cb4f6cfa1ed94a8300}
+\begin{DoxyReturn}{Returns}
+Start point of the entity 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity}.
+
+\hypertarget{classRS__Spline_a7e252d42870c970938961564efebbb7a}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!is\-Closed@{is\-Closed}}
+\index{is\-Closed@{is\-Closed}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{is\-Closed}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Spline\-::is\-Closed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Spline_a7e252d42870c970938961564efebbb7a}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & if the spline is closed. \\
+\hline
+{\em false} & otherwise. \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{classRS__Spline_a63841fa451c155052683af686986e4b4}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!is\-Edge@{is\-Edge}}
+\index{is\-Edge@{is\-Edge}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{is\-Edge}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Spline\-::is\-Edge (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__Spline_a63841fa451c155052683af686986e4b4}
+\begin{DoxyReturn}{Returns}
+false 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classRS__Entity_aa71d0c049265021ac9b1e42ad20f3a74}{R\-S\-\_\-\-Entity}.
+
+\hypertarget{classRS__Spline_ace7bae5dd82deb0a69582af5d8b1b0c7}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!knot@{knot}}
+\index{knot@{knot}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{knot}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Spline\-::knot (
+\begin{DoxyParamCaption}
+\item[{int}]{num, }
+\item[{int}]{order, }
+\item[{int}]{knot\-Vector\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Spline_ace7bae5dd82deb0a69582af5d8b1b0c7}
+Generates B-\/\-Spline open knot vector with multiplicity equal to the order at the ends. \hypertarget{classRS__Spline_a21454167f4010bc0d2436aa8d8379313}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!mirror@{mirror}}
+\index{mirror@{mirror}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{mirror}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Spline\-::mirror (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{axis\-Point1, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{axis\-Point2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Spline_a21454167f4010bc0d2436aa8d8379313}
+Implementations must mirror the entity by the given axis. 
+
+Reimplemented from \hyperlink{classRS__EntityContainer_a6715f6871daaf6b2ba12581bcfbdcb5d}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Spline_af7b7f227408c82d53fe48243f601bee5}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!move@{move}}
+\index{move@{move}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Spline\-::move (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Spline_af7b7f227408c82d53fe48243f601bee5}
+Implementations must move the entity by the given vector. 
+
+Reimplemented from \hyperlink{classRS__EntityContainer_a7a12575ce16c4b34e198b42eab47ba0f}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Spline_ae57cfa1b12e958a176950db6931daee5}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!move\-Ref@{move\-Ref}}
+\index{move\-Ref@{move\-Ref}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{move\-Ref}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Spline\-::move\-Ref (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Spline_ae57cfa1b12e958a176950db6931daee5}
+Implementations must drag the reference point(s) of all (sub-\/)entities that are very close to ref by offset. 
+
+Reimplemented from \hyperlink{classRS__EntityContainer_a339f673caeaa50e85505f2aaa34f2dda}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Spline_ac17c9d2c444e5c99bb2fe6886a3910d5}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!rbasis@{rbasis}}
+\index{rbasis@{rbasis}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{rbasis}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Spline\-::rbasis (
+\begin{DoxyParamCaption}
+\item[{int}]{c, }
+\item[{double}]{t, }
+\item[{int}]{npts, }
+\item[{int}]{x\mbox{[}$\,$\mbox{]}, }
+\item[{double}]{h\mbox{[}$\,$\mbox{]}, }
+\item[{double}]{r\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Spline_ac17c9d2c444e5c99bb2fe6886a3910d5}
+Generates rational B-\/spline basis functions for an open knot vector. \hypertarget{classRS__Spline_a5816a62154815628f3b928118ed9d855}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!rbspline@{rbspline}}
+\index{rbspline@{rbspline}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{rbspline}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Spline\-::rbspline (
+\begin{DoxyParamCaption}
+\item[{int}]{npts, }
+\item[{int}]{k, }
+\item[{int}]{p1, }
+\item[{double}]{b\mbox{[}$\,$\mbox{]}, }
+\item[{double}]{h\mbox{[}$\,$\mbox{]}, }
+\item[{double}]{p\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__Spline_a5816a62154815628f3b928118ed9d855}
+Generates a rational B-\/spline curve using a uniform open knot vector. \hypertarget{classRS__Spline_a07278c2c17681195a035bb597a01dea0}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!remove\-Last\-Control\-Point@{remove\-Last\-Control\-Point}}
+\index{remove\-Last\-Control\-Point@{remove\-Last\-Control\-Point}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{remove\-Last\-Control\-Point}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Spline\-::remove\-Last\-Control\-Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Spline_a07278c2c17681195a035bb597a01dea0}
+Removes the control point that was last added. \hypertarget{classRS__Spline_ac9811a626db113c0d33e94a011d01381}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!rotate@{rotate}}
+\index{rotate@{rotate}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{rotate}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Spline\-::rotate (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{center, }
+\item[{const double \&}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Spline_ac9811a626db113c0d33e94a011d01381}
+Implementations must rotate the entity by the given angle around the given center. 
+
+Reimplemented from \hyperlink{classRS__EntityContainer_a61223b4cae4966ab65e1d06d2d8eaccb}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Spline_a2209ff22720f8431c524cff82d43999b}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S2\-::\-Entity\-Type} R\-S\-\_\-\-Spline\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__Spline_a2209ff22720f8431c524cff82d43999b}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aa5336aaca7fbdb2c3148bf7c1f276c69f}{R\-S2\-::\-Entity\-Spline} 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classRS__EntityContainer_ada84ceb9590c74cd3b46134cdde40a3d}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Spline_a0bcd286aa6e083eceba53390a56a9c6b}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!scale@{scale}}
+\index{scale@{scale}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{scale}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Spline\-::scale (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{center, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{factor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Spline_a0bcd286aa6e083eceba53390a56a9c6b}
+Implementations must scale the entity by the given factors. 
+
+Reimplemented from \hyperlink{classRS__EntityContainer_a8912550cbf78c7f3521e079d66c0617f}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Spline_a93139ef7957405e9148d14cad3e059cd}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!set\-Closed@{set\-Closed}}
+\index{set\-Closed@{set\-Closed}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{set\-Closed}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Spline\-::set\-Closed (
+\begin{DoxyParamCaption}
+\item[{bool}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Spline_a93139ef7957405e9148d14cad3e059cd}
+Sets the closed falg of this spline. \hypertarget{classRS__Spline_a8ea2beab3c0668c4fe98473a7a263166}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!set\-Degree@{set\-Degree}}
+\index{set\-Degree@{set\-Degree}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{set\-Degree}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Spline\-::set\-Degree (
+\begin{DoxyParamCaption}
+\item[{int}]{deg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Spline_a8ea2beab3c0668c4fe98473a7a263166}
+Sets the splines degree (1-\/3). \hypertarget{classRS__Spline_a92830157f9485cfd15ac20b049cb25e3}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!update@{update}}
+\index{update@{update}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Spline\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Spline_a92830157f9485cfd15ac20b049cb25e3}
+Sets the startpoint Sets the endpoint
+
+Updates the internal polygon of this spline. Called when the spline or it's data, position, .. changes. 
+
+Reimplemented from \hyperlink{classRS__EntityContainer_a684d16893e76812fd194ceac56a03730}{R\-S\-\_\-\-Entity\-Container}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classRS__Spline_a5848002e0b1adf644a4d2bc6474c7d0b}{\index{R\-S\-\_\-\-Spline@{R\-S\-\_\-\-Spline}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!RS_Spline@{R\-S\-\_\-\-Spline}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os, }
+\item[{const {\bf R\-S\-\_\-\-Spline} \&}]{l}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classRS__Spline_a5848002e0b1adf644a4d2bc6474c7d0b}
+Dumps the spline's data to stdout. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-spline.\-h\item 
+librecad/src/lib/engine/rs\-\_\-spline.\-cpp\end{DoxyCompactItemize}

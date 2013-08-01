@@ -1,0 +1,287 @@
+\hypertarget{classRS__FilterDXF1}{\section{R\-S\-\_\-\-Filter\-D\-X\-F1 Class Reference}
+\label{classRS__FilterDXF1}\index{R\-S\-\_\-\-Filter\-D\-X\-F1@{R\-S\-\_\-\-Filter\-D\-X\-F1}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-filterdxf1.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Filter\-D\-X\-F1\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRS__FilterDXF1}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__FilterDXF1_a1c835b5ac49fabc402b81d8b7aef3dc1}{R\-S\-\_\-\-Filter\-D\-X\-F1} ()
+\item 
+virtual bool \hyperlink{classRS__FilterDXF1_ab201625ba2d95c01efe9cee244f4f187}{can\-Import} (const Q\-String \&, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} t) const 
+\item 
+virtual bool \hyperlink{classRS__FilterDXF1_a556f382e48302117268f1080de34792d}{can\-Export} (const Q\-String \&, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type}) const 
+\item 
+virtual bool \hyperlink{classRS__FilterDXF1_a6beab6ec3b112a9c956150b0dd9db1df}{file\-Import} (\hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} \&g, const Q\-String \&file, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type})
+\item 
+virtual bool \hyperlink{classRS__FilterDXF1_acbeb13283cf577c9d69ee1fafb3d323a}{file\-Export} (\hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} \&, const Q\-String \&, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type})
+\item 
+bool \hyperlink{classRS__FilterDXF1_ab5fe0390d2e2eb88f08217a38673ec6b}{read\-From\-Buffer} ()
+\item 
+void \hyperlink{classRS__FilterDXF1_addb90f0893dafaacb236cdba08190ef1}{reset} ()
+\item 
+void \hyperlink{classRS__FilterDXF1_a04201004d2255555b255544d4c5745dc}{reset\-Buf\-P} ()
+\item 
+void \hyperlink{classRS__FilterDXF1_af3cd551b57d520a36892efff63c1611d}{set\-Buf\-P} (int \-\_\-f\-Buf\-P)
+\item 
+\hypertarget{classRS__FilterDXF1_abb3554e1b4fd00bb467532f455d155b3}{int {\bfseries get\-Buf\-P} ()}\label{classRS__FilterDXF1_abb3554e1b4fd00bb467532f455d155b3}
+
+\item 
+void \hyperlink{classRS__FilterDXF1_a6d6f84a7b91978fa669d9c5245fe47e5}{del\-Buffer} ()
+\item 
+void \hyperlink{classRS__FilterDXF1_a33db3f7fda72b9b3609fd3c3f7a71a1b}{dos2unix} ()
+\item 
+\hypertarget{classRS__FilterDXF1_a786c1dbcbd3beb7ea86a1da4840ced01}{Q\-String {\bfseries get\-Buf\-Line} ()}\label{classRS__FilterDXF1_a786c1dbcbd3beb7ea86a1da4840ced01}
+
+\item 
+\hypertarget{classRS__FilterDXF1_a63dde1e48dedd57f3af111b3c774448a}{char $\ast$ {\bfseries get\-Buf\-Line\-Ch} ()}\label{classRS__FilterDXF1_a63dde1e48dedd57f3af111b3c774448a}
+
+\item 
+\hypertarget{classRS__FilterDXF1_a67eb454cf2cb4354005025f4b01a322e}{char $\ast$ {\bfseries get\-Buf} ()}\label{classRS__FilterDXF1_a67eb454cf2cb4354005025f4b01a322e}
+
+\item 
+\hypertarget{classRS__FilterDXF1_a9aded2ae05029875dde78516a846dd77}{void {\bfseries set\-Buf} (char $\ast$\-\_\-buf)}\label{classRS__FilterDXF1_a9aded2ae05029875dde78516a846dd77}
+
+\item 
+\hypertarget{classRS__FilterDXF1_a2ccbcc66435ebeeecfeb088287900d51}{void {\bfseries set\-F\-Size} (uint \-\_\-s)}\label{classRS__FilterDXF1_a2ccbcc66435ebeeecfeb088287900d51}
+
+\item 
+\hypertarget{classRS__FilterDXF1_a48e25d8ba8788cabdd897ae96834db98}{void {\bfseries copy\-Buf\-From} (const char $\ast$\-\_\-buf)}\label{classRS__FilterDXF1_a48e25d8ba8788cabdd897ae96834db98}
+
+\item 
+\hypertarget{classRS__FilterDXF1_af8829900057b8469dd1e5a17b6eab769}{bool {\bfseries goto\-Buf\-Line} (char $\ast$\-\_\-lstr)}\label{classRS__FilterDXF1_af8829900057b8469dd1e5a17b6eab769}
+
+\item 
+\hypertarget{classRS__FilterDXF1_a50e49531e3a9b793c98d59b3522e33ab}{bool {\bfseries goto\-Buf\-Line\-String} (char $\ast$\-\_\-lstr)}\label{classRS__FilterDXF1_a50e49531e3a9b793c98d59b3522e33ab}
+
+\item 
+\hypertarget{classRS__FilterDXF1_a2df7b20a16d0c3a6835f011999091752}{void {\bfseries replace\-Binary\-Bytes\-By} (char \-\_\-c)}\label{classRS__FilterDXF1_a2df7b20a16d0c3a6835f011999091752}
+
+\item 
+\hypertarget{classRS__FilterDXF1_a6e43e96c833d1b70f3ed91c7e8081711}{void {\bfseries separate\-Buf} (char \-\_\-c1=13, char \-\_\-c2=10, char \-\_\-c3=0, char \-\_\-c4=0)}\label{classRS__FilterDXF1_a6e43e96c833d1b70f3ed91c7e8081711}
+
+\item 
+\hypertarget{classRS__FilterDXF1_a7a1f217c32ca5aec82202315dce33c6e}{void {\bfseries remove\-Comment} (char \-\_\-fc='(', char \-\_\-lc=')')}\label{classRS__FilterDXF1_a7a1f217c32ca5aec82202315dce33c6e}
+
+\item 
+\hypertarget{classRS__FilterDXF1_a85ef0e4322f8d168906cdf29deb1e927}{bool {\bfseries read\-File\-In\-Buffer} (char $\ast$\-\_\-name, int \-\_\-b\-Num=-\/1)}\label{classRS__FilterDXF1_a85ef0e4322f8d168906cdf29deb1e927}
+
+\item 
+\hypertarget{classRS__FilterDXF1_a0b02b1194945e7087677f42fb0609260}{bool {\bfseries read\-File\-In\-Buffer} (int \-\_\-b\-Num=-\/1)}\label{classRS__FilterDXF1_a0b02b1194945e7087677f42fb0609260}
+
+\item 
+\hypertarget{classRS__FilterDXF1_a15c4bd3c32a3ece4a6d7faa336974bf1}{void {\bfseries str\-Decode\-Dxf\-String} (Q\-String \&str)}\label{classRS__FilterDXF1_a15c4bd3c32a3ece4a6d7faa336974bf1}
+
+\item 
+\hypertarget{classRS__FilterDXF1_a6f5235b874cf45b6de0dfa334edb2533}{bool {\bfseries mt\-Comp\-Float} (double \-\_\-v1, double \-\_\-v2, double \-\_\-tol=1.\-0e-\/6)}\label{classRS__FilterDXF1_a6f5235b874cf45b6de0dfa334edb2533}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__FilterDXF1_a84f6bb14efc55056a66c473f2e98e74d}{static \hyperlink{classRS__FilterInterface}{R\-S\-\_\-\-Filter\-Interface} $\ast$ {\bfseries create\-Filter} ()}\label{classRS__FilterDXF1_a84f6bb14efc55056a66c473f2e98e74d}
+
+\item 
+static \hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29}{R\-S2\-::\-Line\-Width} \hyperlink{classRS__FilterDXF1_a9686a0bd0fab3c71b0039d6940c25e44}{number\-To\-Width} (int num)
+\item 
+static int \hyperlink{classRS__FilterDXF1_a25a22fb5edafded7658fb0261ffadb6d}{width\-To\-Number} (\hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29}{R\-S2\-::\-Line\-Width} width)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__Graphic}{R\-S\-\_\-\-Graphic} $\ast$ \hyperlink{classRS__FilterDXF1_a51669658011c6b6727b45169c53ddf36}{graphic}
+\item 
+\hypertarget{classRS__FilterDXF1_a3906b584ac2e4bc1c5c7ab5caa329e82}{F\-I\-L\-E $\ast$ {\bfseries f\-Pointer}}\label{classRS__FilterDXF1_a3906b584ac2e4bc1c5c7ab5caa329e82}
+
+\item 
+\hypertarget{classRS__FilterDXF1_abb59f92ae659fd8e2311d29158dd83c6}{char $\ast$ {\bfseries f\-Buf}}\label{classRS__FilterDXF1_abb59f92ae659fd8e2311d29158dd83c6}
+
+\item 
+\hypertarget{classRS__FilterDXF1_aa7a5dc68f7b039e0d3076fd78b28d30a}{int {\bfseries f\-Buf\-P}}\label{classRS__FilterDXF1_aa7a5dc68f7b039e0d3076fd78b28d30a}
+
+\item 
+\hypertarget{classRS__FilterDXF1_a2a16559f5c64db7ef2ad47f11f8d3821}{uint {\bfseries f\-Size}}\label{classRS__FilterDXF1_a2a16559f5c64db7ef2ad47f11f8d3821}
+
+\item 
+\hypertarget{classRS__FilterDXF1_a93e47fb906c197bd79e240276f87ad8e}{bool {\bfseries dos\-File}}\label{classRS__FilterDXF1_a93e47fb906c197bd79e240276f87ad8e}
+
+\item 
+\hypertarget{classRS__FilterDXF1_a7d9b8828380221e43703184d65e5c581}{int {\bfseries num\-Elements}}\label{classRS__FilterDXF1_a7d9b8828380221e43703184d65e5c581}
+
+\item 
+\hypertarget{classRS__FilterDXF1_acf2d7a5f1c1504d060d1d1221b95b246}{Q\-String {\bfseries name}}\label{classRS__FilterDXF1_acf2d7a5f1c1504d060d1d1221b95b246}
+
+\item 
+\hypertarget{classRS__FilterDXF1_a34a00cbd818a65679e90c381a1d963a7}{Q\-File {\bfseries file}}\label{classRS__FilterDXF1_a34a00cbd818a65679e90c381a1d963a7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This format filter class can import and export old D\-X\-F files from Q\-Cad 1.\-x.
+
+This is legacy code from Q\-Cad 1.\-x.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__FilterDXF1_a1c835b5ac49fabc402b81d8b7aef3dc1}{\index{R\-S\-\_\-\-Filter\-D\-X\-F1@{R\-S\-\_\-\-Filter\-D\-X\-F1}!R\-S\-\_\-\-Filter\-D\-X\-F1@{R\-S\-\_\-\-Filter\-D\-X\-F1}}
+\index{R\-S\-\_\-\-Filter\-D\-X\-F1@{R\-S\-\_\-\-Filter\-D\-X\-F1}!RS_FilterDXF1@{R\-S\-\_\-\-Filter\-D\-X\-F1}}
+\subsubsection[{R\-S\-\_\-\-Filter\-D\-X\-F1}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Filter\-D\-X\-F1\-::\-R\-S\-\_\-\-Filter\-D\-X\-F1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF1_a1c835b5ac49fabc402b81d8b7aef3dc1}
+Default constructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__FilterDXF1_a556f382e48302117268f1080de34792d}{\index{R\-S\-\_\-\-Filter\-D\-X\-F1@{R\-S\-\_\-\-Filter\-D\-X\-F1}!can\-Export@{can\-Export}}
+\index{can\-Export@{can\-Export}!RS_FilterDXF1@{R\-S\-\_\-\-Filter\-D\-X\-F1}}
+\subsubsection[{can\-Export}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Filter\-D\-X\-F1\-::can\-Export (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{file\-Name, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{t}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__FilterDXF1_a556f382e48302117268f1080de34792d}
+Checks if this filter can export the given file type.
+
+\begin{DoxyReturn}{Returns}
+true if the filter can export the file type, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__FilterInterface_af96c8b390ee351e7b7112a974a52828c}{R\-S\-\_\-\-Filter\-Interface}.
+
+\hypertarget{classRS__FilterDXF1_ab201625ba2d95c01efe9cee244f4f187}{\index{R\-S\-\_\-\-Filter\-D\-X\-F1@{R\-S\-\_\-\-Filter\-D\-X\-F1}!can\-Import@{can\-Import}}
+\index{can\-Import@{can\-Import}!RS_FilterDXF1@{R\-S\-\_\-\-Filter\-D\-X\-F1}}
+\subsubsection[{can\-Import}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Filter\-D\-X\-F1\-::can\-Import (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{file\-Name, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{t}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__FilterDXF1_ab201625ba2d95c01efe9cee244f4f187}
+Checks if this filter can import the given file type.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & if the filter can import the file type \\
+\hline
+{\em false} & otherwise. \\
+\hline
+\end{DoxyRetVals}
+
+
+Implements \hyperlink{classRS__FilterInterface_a62540c02649ca2040be61e5ce9e56742}{R\-S\-\_\-\-Filter\-Interface}.
+
+\hypertarget{classRS__FilterDXF1_a6d6f84a7b91978fa669d9c5245fe47e5}{\index{R\-S\-\_\-\-Filter\-D\-X\-F1@{R\-S\-\_\-\-Filter\-D\-X\-F1}!del\-Buffer@{del\-Buffer}}
+\index{del\-Buffer@{del\-Buffer}!RS_FilterDXF1@{R\-S\-\_\-\-Filter\-D\-X\-F1}}
+\subsubsection[{del\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F1\-::del\-Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF1_a6d6f84a7b91978fa669d9c5245fe47e5}
+delete buffer\-: \hypertarget{classRS__FilterDXF1_a33db3f7fda72b9b3609fd3c3f7a71a1b}{\index{R\-S\-\_\-\-Filter\-D\-X\-F1@{R\-S\-\_\-\-Filter\-D\-X\-F1}!dos2unix@{dos2unix}}
+\index{dos2unix@{dos2unix}!RS_FilterDXF1@{R\-S\-\_\-\-Filter\-D\-X\-F1}}
+\subsubsection[{dos2unix}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F1\-::dos2unix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF1_a33db3f7fda72b9b3609fd3c3f7a71a1b}
+Remove any 13-\/characters in the buffer\-: \hypertarget{classRS__FilterDXF1_acbeb13283cf577c9d69ee1fafb3d323a}{\index{R\-S\-\_\-\-Filter\-D\-X\-F1@{R\-S\-\_\-\-Filter\-D\-X\-F1}!file\-Export@{file\-Export}}
+\index{file\-Export@{file\-Export}!RS_FilterDXF1@{R\-S\-\_\-\-Filter\-D\-X\-F1}}
+\subsubsection[{file\-Export}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Filter\-D\-X\-F1\-::file\-Export (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Graphic} \&}]{g, }
+\item[{const Q\-String \&}]{file, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__FilterDXF1_acbeb13283cf577c9d69ee1fafb3d323a}
+The implementation of this method in a inherited format class should write the entities in the current entity container to a file on the disk. 
+
+Implements \hyperlink{classRS__FilterInterface_a85601a186a66bbf6bedaed7b79cd034f}{R\-S\-\_\-\-Filter\-Interface}.
+
+\hypertarget{classRS__FilterDXF1_a6beab6ec3b112a9c956150b0dd9db1df}{\index{R\-S\-\_\-\-Filter\-D\-X\-F1@{R\-S\-\_\-\-Filter\-D\-X\-F1}!file\-Import@{file\-Import}}
+\index{file\-Import@{file\-Import}!RS_FilterDXF1@{R\-S\-\_\-\-Filter\-D\-X\-F1}}
+\subsubsection[{file\-Import}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Filter\-D\-X\-F1\-::file\-Import (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Graphic} \&}]{g, }
+\item[{const Q\-String \&}]{file, }
+\item[{{\bf R\-S2\-::\-Format\-Type}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__FilterDXF1_a6beab6ec3b112a9c956150b0dd9db1df}
+Implementation of the method used for R\-S\-\_\-\-Import to communicate with this filter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphic} & The graphic in which the entities from the file will be created or the graphics from which the entities are taken to be stored in a file. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classRS__FilterInterface_a6d4bf32c02a4c61f8465acc78b10e090}{R\-S\-\_\-\-Filter\-Interface}.
+
+\hypertarget{classRS__FilterDXF1_a9686a0bd0fab3c71b0039d6940c25e44}{\index{R\-S\-\_\-\-Filter\-D\-X\-F1@{R\-S\-\_\-\-Filter\-D\-X\-F1}!number\-To\-Width@{number\-To\-Width}}
+\index{number\-To\-Width@{number\-To\-Width}!RS_FilterDXF1@{R\-S\-\_\-\-Filter\-D\-X\-F1}}
+\subsubsection[{number\-To\-Width}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Line\-Width} R\-S\-\_\-\-Filter\-D\-X\-F1\-::number\-To\-Width (
+\begin{DoxyParamCaption}
+\item[{int}]{num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__FilterDXF1_a9686a0bd0fab3c71b0039d6940c25e44}
+Converts a line width number (e.\-g. 1) into a \hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29}{R\-S2\-::\-Line\-Width}. \hypertarget{classRS__FilterDXF1_ab5fe0390d2e2eb88f08217a38673ec6b}{\index{R\-S\-\_\-\-Filter\-D\-X\-F1@{R\-S\-\_\-\-Filter\-D\-X\-F1}!read\-From\-Buffer@{read\-From\-Buffer}}
+\index{read\-From\-Buffer@{read\-From\-Buffer}!RS_FilterDXF1@{R\-S\-\_\-\-Filter\-D\-X\-F1}}
+\subsubsection[{read\-From\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Filter\-D\-X\-F1\-::read\-From\-Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF1_ab5fe0390d2e2eb88f08217a38673ec6b}
+Reads a dxf1 file from buffer. if(!add) graphic-\/$>$clear\-Layers(); \hypertarget{classRS__FilterDXF1_addb90f0893dafaacb236cdba08190ef1}{\index{R\-S\-\_\-\-Filter\-D\-X\-F1@{R\-S\-\_\-\-Filter\-D\-X\-F1}!reset@{reset}}
+\index{reset@{reset}!RS_FilterDXF1@{R\-S\-\_\-\-Filter\-D\-X\-F1}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F1\-::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF1_addb90f0893dafaacb236cdba08190ef1}
+Resets the whole object (base class too) \hypertarget{classRS__FilterDXF1_a04201004d2255555b255544d4c5745dc}{\index{R\-S\-\_\-\-Filter\-D\-X\-F1@{R\-S\-\_\-\-Filter\-D\-X\-F1}!reset\-Buf\-P@{reset\-Buf\-P}}
+\index{reset\-Buf\-P@{reset\-Buf\-P}!RS_FilterDXF1@{R\-S\-\_\-\-Filter\-D\-X\-F1}}
+\subsubsection[{reset\-Buf\-P}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F1\-::reset\-Buf\-P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF1_a04201004d2255555b255544d4c5745dc}
+Reset buffer pointer to the beginning of the buffer\-: \hypertarget{classRS__FilterDXF1_af3cd551b57d520a36892efff63c1611d}{\index{R\-S\-\_\-\-Filter\-D\-X\-F1@{R\-S\-\_\-\-Filter\-D\-X\-F1}!set\-Buf\-P@{set\-Buf\-P}}
+\index{set\-Buf\-P@{set\-Buf\-P}!RS_FilterDXF1@{R\-S\-\_\-\-Filter\-D\-X\-F1}}
+\subsubsection[{set\-Buf\-P}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Filter\-D\-X\-F1\-::set\-Buf\-P (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-f\-Buf\-P}
+\end{DoxyParamCaption}
+)}}\label{classRS__FilterDXF1_af3cd551b57d520a36892efff63c1611d}
+Set buffer pointer to the given index\-: \hypertarget{classRS__FilterDXF1_a25a22fb5edafded7658fb0261ffadb6d}{\index{R\-S\-\_\-\-Filter\-D\-X\-F1@{R\-S\-\_\-\-Filter\-D\-X\-F1}!width\-To\-Number@{width\-To\-Number}}
+\index{width\-To\-Number@{width\-To\-Number}!RS_FilterDXF1@{R\-S\-\_\-\-Filter\-D\-X\-F1}}
+\subsubsection[{width\-To\-Number}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Filter\-D\-X\-F1\-::width\-To\-Number (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Line\-Width}}]{width}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__FilterDXF1_a25a22fb5edafded7658fb0261ffadb6d}
+Converts a \hyperlink{classRS2_a023485c482c5ee9e36b3dfad781adf29}{R\-S2\-::\-Line\-Width} into an int width. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classRS__FilterDXF1_a51669658011c6b6727b45169c53ddf36}{\index{R\-S\-\_\-\-Filter\-D\-X\-F1@{R\-S\-\_\-\-Filter\-D\-X\-F1}!graphic@{graphic}}
+\index{graphic@{graphic}!RS_FilterDXF1@{R\-S\-\_\-\-Filter\-D\-X\-F1}}
+\subsubsection[{graphic}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Graphic}$\ast$ R\-S\-\_\-\-Filter\-D\-X\-F1\-::graphic\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__FilterDXF1_a51669658011c6b6727b45169c53ddf36}
+Pointer to the graphic we currently operate on. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/filters/rs\-\_\-filterdxf1.\-h\item 
+librecad/src/lib/filters/rs\-\_\-filterdxf1.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,88 @@
+\hypertarget{classRS__BlockListListener}{\section{R\-S\-\_\-\-Block\-List\-Listener Class Reference}
+\label{classRS__BlockListListener}\index{R\-S\-\_\-\-Block\-List\-Listener@{R\-S\-\_\-\-Block\-List\-Listener}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-blocklistlistener.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Block\-List\-Listener\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__BlockListListener}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classRS__BlockListListener_a836501f8d1c0b726c145ece168c2e2c2}{block\-Activated} (\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$)
+\item 
+virtual void \hyperlink{classRS__BlockListListener_a6424d65934abba9b4737413e1c35a922}{block\-Added} (\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$)
+\item 
+virtual void \hyperlink{classRS__BlockListListener_a80547616e22f383d40909b72352f01f0}{block\-Removed} (\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$)
+\item 
+virtual void \hyperlink{classRS__BlockListListener_a6025cde7a4f5f6f98f4a989d3302fb3a}{block\-Edited} (\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$)
+\item 
+virtual void \hyperlink{classRS__BlockListListener_af30e8177f06cc254049194b4be88a620}{block\-Toggled} (\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is an interface for classes that are interested in knowing about changes in the block list. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__BlockListListener_a836501f8d1c0b726c145ece168c2e2c2}{\index{R\-S\-\_\-\-Block\-List\-Listener@{R\-S\-\_\-\-Block\-List\-Listener}!block\-Activated@{block\-Activated}}
+\index{block\-Activated@{block\-Activated}!RS_BlockListListener@{R\-S\-\_\-\-Block\-List\-Listener}}
+\subsubsection[{block\-Activated}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Block\-List\-Listener\-::block\-Activated (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__BlockListListener_a836501f8d1c0b726c145ece168c2e2c2}
+Called when the active block changes. \hypertarget{classRS__BlockListListener_a6424d65934abba9b4737413e1c35a922}{\index{R\-S\-\_\-\-Block\-List\-Listener@{R\-S\-\_\-\-Block\-List\-Listener}!block\-Added@{block\-Added}}
+\index{block\-Added@{block\-Added}!RS_BlockListListener@{R\-S\-\_\-\-Block\-List\-Listener}}
+\subsubsection[{block\-Added}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Block\-List\-Listener\-::block\-Added (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__BlockListListener_a6424d65934abba9b4737413e1c35a922}
+Called when a new block is added to the list. 
+
+Reimplemented in \hyperlink{classQG__BlockWidget_a25d6562a145e8eb5039849acfc7081d5}{Q\-G\-\_\-\-Block\-Widget}.
+
+\hypertarget{classRS__BlockListListener_a6025cde7a4f5f6f98f4a989d3302fb3a}{\index{R\-S\-\_\-\-Block\-List\-Listener@{R\-S\-\_\-\-Block\-List\-Listener}!block\-Edited@{block\-Edited}}
+\index{block\-Edited@{block\-Edited}!RS_BlockListListener@{R\-S\-\_\-\-Block\-List\-Listener}}
+\subsubsection[{block\-Edited}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Block\-List\-Listener\-::block\-Edited (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__BlockListListener_a6025cde7a4f5f6f98f4a989d3302fb3a}
+Called when a block's attributes are modified. 
+
+Reimplemented in \hyperlink{classQG__BlockWidget_a6d38e6c479ab5a9b138c916e40448ec4}{Q\-G\-\_\-\-Block\-Widget}.
+
+\hypertarget{classRS__BlockListListener_a80547616e22f383d40909b72352f01f0}{\index{R\-S\-\_\-\-Block\-List\-Listener@{R\-S\-\_\-\-Block\-List\-Listener}!block\-Removed@{block\-Removed}}
+\index{block\-Removed@{block\-Removed}!RS_BlockListListener@{R\-S\-\_\-\-Block\-List\-Listener}}
+\subsubsection[{block\-Removed}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Block\-List\-Listener\-::block\-Removed (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__BlockListListener_a80547616e22f383d40909b72352f01f0}
+Called when a block is removed from the list. 
+
+Reimplemented in \hyperlink{classQG__BlockWidget_ad6c1a642da644216f03e6fbebf4ac6c1}{Q\-G\-\_\-\-Block\-Widget}.
+
+\hypertarget{classRS__BlockListListener_af30e8177f06cc254049194b4be88a620}{\index{R\-S\-\_\-\-Block\-List\-Listener@{R\-S\-\_\-\-Block\-List\-Listener}!block\-Toggled@{block\-Toggled}}
+\index{block\-Toggled@{block\-Toggled}!RS_BlockListListener@{R\-S\-\_\-\-Block\-List\-Listener}}
+\subsubsection[{block\-Toggled}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Block\-List\-Listener\-::block\-Toggled (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__BlockListListener_af30e8177f06cc254049194b4be88a620}
+Called when a block's visibility is toggled. 
+
+Reimplemented in \hyperlink{classQG__BlockWidget_afb8a75e75062026b8fbfeb9cd3ced5b4}{Q\-G\-\_\-\-Block\-Widget}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-blocklistlistener.\-h\end{DoxyCompactItemize}

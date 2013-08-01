@@ -1,0 +1,112 @@
+\hypertarget{classRS__ActionModifyDeleteQuick}{\section{R\-S\-\_\-\-Action\-Modify\-Delete\-Quick Class Reference}
+\label{classRS__ActionModifyDeleteQuick}\index{R\-S\-\_\-\-Action\-Modify\-Delete\-Quick@{R\-S\-\_\-\-Action\-Modify\-Delete\-Quick}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionmodifydeletequick.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Modify\-Delete\-Quick\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__ActionModifyDeleteQuick}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionModifyDeleteQuick_a0e66d5b619aba48525f9f32cf7e08284}{{\bfseries R\-S\-\_\-\-Action\-Modify\-Delete\-Quick} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionModifyDeleteQuick_a0e66d5b619aba48525f9f32cf7e08284}
+
+\item 
+\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__ActionModifyDeleteQuick_a5df152f443a1346fd5c90b091ff1ac26}{rtti} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyDeleteQuick_a483f3ca2e020193b6314b5e43e03eb70}{trigger} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyDeleteQuick_a5cc5d0c5f75f118701e5e2b865041fac}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionModifyDeleteQuick_a2b794ce9d969126b031bccf56b8626ac}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyDeleteQuick_a1e9abfe39cfb5237d7f15578c851abf7}{update\-Mouse\-Cursor} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionModifyDeleteQuick_aa967d0e37d76fece18181772676e9411}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$parent)}\label{classRS__ActionModifyDeleteQuick_aa967d0e37d76fece18181772676e9411}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to delete entities directly (every click removes an entity).
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionModifyDeleteQuick_a5cc5d0c5f75f118701e5e2b865041fac}{\index{R\-S\-\_\-\-Action\-Modify\-Delete\-Quick@{R\-S\-\_\-\-Action\-Modify\-Delete\-Quick}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionModifyDeleteQuick@{R\-S\-\_\-\-Action\-Modify\-Delete\-Quick}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Delete\-Quick\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyDeleteQuick_a5cc5d0c5f75f118701e5e2b865041fac}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyDeleteQuick_a5df152f443a1346fd5c90b091ff1ac26}{\index{R\-S\-\_\-\-Action\-Modify\-Delete\-Quick@{R\-S\-\_\-\-Action\-Modify\-Delete\-Quick}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_ActionModifyDeleteQuick@{R\-S\-\_\-\-Action\-Modify\-Delete\-Quick}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Action\-Modify\-Delete\-Quick\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__ActionModifyDeleteQuick_a5df152f443a1346fd5c90b091ff1ac26}
+Must be implemented to return the I\-D of this action.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]no default implementation \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af877a66b5b4a7053f2b1f0519c57a6f5}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyDeleteQuick_a483f3ca2e020193b6314b5e43e03eb70}{\index{R\-S\-\_\-\-Action\-Modify\-Delete\-Quick@{R\-S\-\_\-\-Action\-Modify\-Delete\-Quick}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionModifyDeleteQuick@{R\-S\-\_\-\-Action\-Modify\-Delete\-Quick}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Delete\-Quick\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyDeleteQuick_a483f3ca2e020193b6314b5e43e03eb70}
+Deletes all entities that were selected. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa2ba8f6f697f735eace4ec5449c0b8cd}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyDeleteQuick_a2b794ce9d969126b031bccf56b8626ac}{\index{R\-S\-\_\-\-Action\-Modify\-Delete\-Quick@{R\-S\-\_\-\-Action\-Modify\-Delete\-Quick}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionModifyDeleteQuick@{R\-S\-\_\-\-Action\-Modify\-Delete\-Quick}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Delete\-Quick\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyDeleteQuick_a2b794ce9d969126b031bccf56b8626ac}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyDeleteQuick_a1e9abfe39cfb5237d7f15578c851abf7}{\index{R\-S\-\_\-\-Action\-Modify\-Delete\-Quick@{R\-S\-\_\-\-Action\-Modify\-Delete\-Quick}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionModifyDeleteQuick@{R\-S\-\_\-\-Action\-Modify\-Delete\-Quick}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Delete\-Quick\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyDeleteQuick_a1e9abfe39cfb5237d7f15578c851abf7}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionmodifydeletequick.\-h\item 
+librecad/src/actions/rs\-\_\-actionmodifydeletequick.\-cpp\end{DoxyCompactItemize}

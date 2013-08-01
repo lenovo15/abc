@@ -1,0 +1,96 @@
+\hypertarget{classRS__ActionSetSnapRestriction}{\section{R\-S\-\_\-\-Action\-Set\-Snap\-Restriction Class Reference}
+\label{classRS__ActionSetSnapRestriction}\index{R\-S\-\_\-\-Action\-Set\-Snap\-Restriction@{R\-S\-\_\-\-Action\-Set\-Snap\-Restriction}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionsetsnaprestriction.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Set\-Snap\-Restriction\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__ActionSetSnapRestriction}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__ActionSetSnapRestriction_a30c93daf443b2d3f85b4804e8be1f808}{R\-S\-\_\-\-Action\-Set\-Snap\-Restriction} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View, \hyperlink{classRS2_aac67b6890a08cff619c0fbef48377bae}{R\-S2\-::\-Snap\-Restriction} snap\-Res)
+\item 
+virtual void \hyperlink{classRS__ActionSetSnapRestriction_a2a0b4bd07b08585c2d22f27eab4e984f}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionSetSnapRestriction_aae47557c35970c345f00da2699698f54}{trigger} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionSetSnapRestriction_a8507846189d3044a48d5729b36456ef4}{\hyperlink{classRS2_aac67b6890a08cff619c0fbef48377bae}{R\-S2\-::\-Snap\-Restriction} {\bfseries snap\-Res}}\label{classRS__ActionSetSnapRestriction_a8507846189d3044a48d5729b36456ef4}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action changes the current additional snap mode.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__ActionSetSnapRestriction_a30c93daf443b2d3f85b4804e8be1f808}{\index{R\-S\-\_\-\-Action\-Set\-Snap\-Restriction@{R\-S\-\_\-\-Action\-Set\-Snap\-Restriction}!R\-S\-\_\-\-Action\-Set\-Snap\-Restriction@{R\-S\-\_\-\-Action\-Set\-Snap\-Restriction}}
+\index{R\-S\-\_\-\-Action\-Set\-Snap\-Restriction@{R\-S\-\_\-\-Action\-Set\-Snap\-Restriction}!RS_ActionSetSnapRestriction@{R\-S\-\_\-\-Action\-Set\-Snap\-Restriction}}
+\subsubsection[{R\-S\-\_\-\-Action\-Set\-Snap\-Restriction}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Action\-Set\-Snap\-Restriction\-::\-R\-S\-\_\-\-Action\-Set\-Snap\-Restriction (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} \&}]{graphic\-View, }
+\item[{{\bf R\-S2\-::\-Snap\-Restriction}}]{snap\-Res}
+\end{DoxyParamCaption}
+)}}\label{classRS__ActionSetSnapRestriction_a30c93daf443b2d3f85b4804e8be1f808}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em snap\-Res} & The new snap mode used from now on. \\
+\hline
+{\em set} & true\-: set additional snap mode / false\-: unset \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionSetSnapRestriction_a2a0b4bd07b08585c2d22f27eab4e984f}{\index{R\-S\-\_\-\-Action\-Set\-Snap\-Restriction@{R\-S\-\_\-\-Action\-Set\-Snap\-Restriction}!init@{init}}
+\index{init@{init}!RS_ActionSetSnapRestriction@{R\-S\-\_\-\-Action\-Set\-Snap\-Restriction}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Set\-Snap\-Restriction\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionSetSnapRestriction_a2a0b4bd07b08585c2d22f27eab4e984f}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a05b7dca5deeb371eb51edcb73facd45f}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionSetSnapRestriction_aae47557c35970c345f00da2699698f54}{\index{R\-S\-\_\-\-Action\-Set\-Snap\-Restriction@{R\-S\-\_\-\-Action\-Set\-Snap\-Restriction}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionSetSnapRestriction@{R\-S\-\_\-\-Action\-Set\-Snap\-Restriction}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Set\-Snap\-Restriction\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionSetSnapRestriction_aae47557c35970c345f00da2699698f54}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa2ba8f6f697f735eace4ec5449c0b8cd}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionsetsnaprestriction.\-h\item 
+librecad/src/actions/rs\-\_\-actionsetsnaprestriction.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,100 @@
+\hypertarget{classQG__LayerBox}{\section{Q\-G\-\_\-\-Layer\-Box Class Reference}
+\label{classQG__LayerBox}\index{Q\-G\-\_\-\-Layer\-Box@{Q\-G\-\_\-\-Layer\-Box}}
+}
+
+
+{\ttfamily \#include $<$qg\-\_\-layerbox.\-h$>$}
+
+Inheritance diagram for Q\-G\-\_\-\-Layer\-Box\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classQG__LayerBox}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classQG__LayerBox_ada2e247e1c116e892eb2324f5e420beb}{void {\bfseries layer\-Changed} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$layer)}\label{classQG__LayerBox_ada2e247e1c116e892eb2324f5e420beb}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQG__LayerBox_a8e5e2ff80bb8aaf3cc78592006ce3d3a}{Q\-G\-\_\-\-Layer\-Box} (Q\-Widget $\ast$parent=0)
+\item 
+virtual \hyperlink{classQG__LayerBox_a91765bb14b412b700e7a457d9b8399c9}{$\sim$\-Q\-G\-\_\-\-Layer\-Box} ()
+\item 
+\hypertarget{classQG__LayerBox_aded431e9d7b048fdb32d2a247a7d2af1}{\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$ {\bfseries get\-Layer} ()}\label{classQG__LayerBox_aded431e9d7b048fdb32d2a247a7d2af1}
+
+\item 
+void \hyperlink{classQG__LayerBox_adbe81f81e16e644d99f8263d40f119dc}{set\-Layer} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} \&layer)
+\item 
+void \hyperlink{classQG__LayerBox_a583a799a2cf26f88a2b995f3ea9a8b30}{set\-Layer} (Q\-String \&layer)
+\item 
+void \hyperlink{classQG__LayerBox_a13746b6d809fca0aba8fd8eb37aa4ecd}{init} (\hyperlink{classRS__LayerList}{R\-S\-\_\-\-Layer\-List} \&layer\-List, bool show\-By\-Block, bool show\-Unchanged)
+\item 
+\hypertarget{classQG__LayerBox_a602bd81fb137514592486df847d6e0db}{bool {\bfseries is\-Unchanged} ()}\label{classQG__LayerBox_a602bd81fb137514592486df847d6e0db}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A combobox for choosing a layer. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classQG__LayerBox_a8e5e2ff80bb8aaf3cc78592006ce3d3a}{\index{Q\-G\-\_\-\-Layer\-Box@{Q\-G\-\_\-\-Layer\-Box}!Q\-G\-\_\-\-Layer\-Box@{Q\-G\-\_\-\-Layer\-Box}}
+\index{Q\-G\-\_\-\-Layer\-Box@{Q\-G\-\_\-\-Layer\-Box}!QG_LayerBox@{Q\-G\-\_\-\-Layer\-Box}}
+\subsubsection[{Q\-G\-\_\-\-Layer\-Box}]{\setlength{\rightskip}{0pt plus 5cm}Q\-G\-\_\-\-Layer\-Box\-::\-Q\-G\-\_\-\-Layer\-Box (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classQG__LayerBox_a8e5e2ff80bb8aaf3cc78592006ce3d3a}
+Default Constructor. You must call init manually before using this class. \hypertarget{classQG__LayerBox_a91765bb14b412b700e7a457d9b8399c9}{\index{Q\-G\-\_\-\-Layer\-Box@{Q\-G\-\_\-\-Layer\-Box}!$\sim$\-Q\-G\-\_\-\-Layer\-Box@{$\sim$\-Q\-G\-\_\-\-Layer\-Box}}
+\index{$\sim$\-Q\-G\-\_\-\-Layer\-Box@{$\sim$\-Q\-G\-\_\-\-Layer\-Box}!QG_LayerBox@{Q\-G\-\_\-\-Layer\-Box}}
+\subsubsection[{$\sim$\-Q\-G\-\_\-\-Layer\-Box}]{\setlength{\rightskip}{0pt plus 5cm}Q\-G\-\_\-\-Layer\-Box\-::$\sim$\-Q\-G\-\_\-\-Layer\-Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__LayerBox_a91765bb14b412b700e7a457d9b8399c9}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classQG__LayerBox_a13746b6d809fca0aba8fd8eb37aa4ecd}{\index{Q\-G\-\_\-\-Layer\-Box@{Q\-G\-\_\-\-Layer\-Box}!init@{init}}
+\index{init@{init}!QG_LayerBox@{Q\-G\-\_\-\-Layer\-Box}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Layer\-Box\-::init (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer\-List} \&}]{layer\-List, }
+\item[{bool}]{show\-By\-Block, }
+\item[{bool}]{show\-Unchanged}
+\end{DoxyParamCaption}
+)}}\label{classQG__LayerBox_a13746b6d809fca0aba8fd8eb37aa4ecd}
+Initialisation (called manually only once).
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer\-List} & Layer list which provides the layer names that are available. \\
+\hline
+{\em show\-By\-Block} & true\-: Show attribute By\-Block. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classQG__LayerBox_adbe81f81e16e644d99f8263d40f119dc}{\index{Q\-G\-\_\-\-Layer\-Box@{Q\-G\-\_\-\-Layer\-Box}!set\-Layer@{set\-Layer}}
+\index{set\-Layer@{set\-Layer}!QG_LayerBox@{Q\-G\-\_\-\-Layer\-Box}}
+\subsubsection[{set\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Layer\-Box\-::set\-Layer (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer} \&}]{layer}
+\end{DoxyParamCaption}
+)}}\label{classQG__LayerBox_adbe81f81e16e644d99f8263d40f119dc}
+Sets the layer shown in the combobox to the given layer. \hypertarget{classQG__LayerBox_a583a799a2cf26f88a2b995f3ea9a8b30}{\index{Q\-G\-\_\-\-Layer\-Box@{Q\-G\-\_\-\-Layer\-Box}!set\-Layer@{set\-Layer}}
+\index{set\-Layer@{set\-Layer}!QG_LayerBox@{Q\-G\-\_\-\-Layer\-Box}}
+\subsubsection[{set\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Layer\-Box\-::set\-Layer (
+\begin{DoxyParamCaption}
+\item[{Q\-String \&}]{layer}
+\end{DoxyParamCaption}
+)}}\label{classQG__LayerBox_a583a799a2cf26f88a2b995f3ea9a8b30}
+Sets the layer shown in the combobox to the given layer. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/ui/qg\-\_\-layerbox.\-h\item 
+generated/librecad/moc/moc\-\_\-qg\-\_\-layerbox.\-cpp\item 
+librecad/src/ui/qg\-\_\-layerbox.\-cpp\end{DoxyCompactItemize}

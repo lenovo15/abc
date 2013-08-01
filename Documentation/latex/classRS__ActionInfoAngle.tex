@@ -1,0 +1,167 @@
+\hypertarget{classRS__ActionInfoAngle}{\section{R\-S\-\_\-\-Action\-Info\-Angle Class Reference}
+\label{classRS__ActionInfoAngle}\index{R\-S\-\_\-\-Action\-Info\-Angle@{R\-S\-\_\-\-Action\-Info\-Angle}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actioninfoangle.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Info\-Angle\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classRS__ActionInfoAngle}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionInfoAngle_a6679ade78c6497eec42e7ca76b486860}{Status} \{ \hyperlink{classRS__ActionInfoAngle_a6679ade78c6497eec42e7ca76b486860afea0b0ff6a75624ddc9b22c649716870}{Set\-Entity1}, 
+\hyperlink{classRS__ActionInfoAngle_a6679ade78c6497eec42e7ca76b486860a93c5b9272b59671ec3570a61b69b769d}{Set\-Entity2}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionInfoAngle_a7f9cbb796619f8396c8534c1e4c7a368}{{\bfseries R\-S\-\_\-\-Action\-Info\-Angle} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionInfoAngle_a7f9cbb796619f8396c8534c1e4c7a368}
+
+\item 
+virtual \hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__ActionInfoAngle_a9fcceeb049d1200a5ae7a51e4d1e779a}{rtti} ()
+\item 
+virtual void \hyperlink{classRS__ActionInfoAngle_affc08741baf9fdf33d2dac4d19709ec1}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionInfoAngle_ad75ebc8873ac8d7691f41f34b0374e5a}{trigger} ()
+\item 
+virtual void \hyperlink{classRS__ActionInfoAngle_ae3cb8dadc093f9653d72e05c7d5c99a6}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionInfoAngle_a610f8ba042b2fa0bad4e5b3aafb35530}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionInfoAngle_a1b7ff106fd7d1b7c6be9486bbcf7708b}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionInfoAngle_a1e809b7ed8c8bfb9534781e212d0046f}{update\-Mouse\-Cursor} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionInfoAngle_ac1f111e3b8680ebff3f271e4d4b306ba}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionInfoAngle_ac1f111e3b8680ebff3f271e4d4b306ba}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to measure angles.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionInfoAngle_a6679ade78c6497eec42e7ca76b486860}{\index{R\-S\-\_\-\-Action\-Info\-Angle@{R\-S\-\_\-\-Action\-Info\-Angle}!Status@{Status}}
+\index{Status@{Status}!RS_ActionInfoAngle@{R\-S\-\_\-\-Action\-Info\-Angle}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Info\-Angle\-::\-Status}}}\label{classRS__ActionInfoAngle_a6679ade78c6497eec42e7ca76b486860}
+Action States. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Set\-Entity1@{Set\-Entity1}!R\-S\-\_\-\-Action\-Info\-Angle@{R\-S\-\_\-\-Action\-Info\-Angle}}\index{R\-S\-\_\-\-Action\-Info\-Angle@{R\-S\-\_\-\-Action\-Info\-Angle}!Set\-Entity1@{Set\-Entity1}}\item[{\em 
+\hypertarget{classRS__ActionInfoAngle_a6679ade78c6497eec42e7ca76b486860afea0b0ff6a75624ddc9b22c649716870}{Set\-Entity1}\label{classRS__ActionInfoAngle_a6679ade78c6497eec42e7ca76b486860afea0b0ff6a75624ddc9b22c649716870}
+}]Setting the 1st entity. \index{Set\-Entity2@{Set\-Entity2}!R\-S\-\_\-\-Action\-Info\-Angle@{R\-S\-\_\-\-Action\-Info\-Angle}}\index{R\-S\-\_\-\-Action\-Info\-Angle@{R\-S\-\_\-\-Action\-Info\-Angle}!Set\-Entity2@{Set\-Entity2}}\item[{\em 
+\hypertarget{classRS__ActionInfoAngle_a6679ade78c6497eec42e7ca76b486860a93c5b9272b59671ec3570a61b69b769d}{Set\-Entity2}\label{classRS__ActionInfoAngle_a6679ade78c6497eec42e7ca76b486860a93c5b9272b59671ec3570a61b69b769d}
+}]Setting the 2nd entity. \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionInfoAngle_affc08741baf9fdf33d2dac4d19709ec1}{\index{R\-S\-\_\-\-Action\-Info\-Angle@{R\-S\-\_\-\-Action\-Info\-Angle}!init@{init}}
+\index{init@{init}!RS_ActionInfoAngle@{R\-S\-\_\-\-Action\-Info\-Angle}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Info\-Angle\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionInfoAngle_affc08741baf9fdf33d2dac4d19709ec1}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae5113b2aef5a10acd192786b99580e4a}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionInfoAngle_ae3cb8dadc093f9653d72e05c7d5c99a6}{\index{R\-S\-\_\-\-Action\-Info\-Angle@{R\-S\-\_\-\-Action\-Info\-Angle}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_ActionInfoAngle@{R\-S\-\_\-\-Action\-Info\-Angle}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Info\-Angle\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionInfoAngle_ae3cb8dadc093f9653d72e05c7d5c99a6}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionInfoAngle_a610f8ba042b2fa0bad4e5b3aafb35530}{\index{R\-S\-\_\-\-Action\-Info\-Angle@{R\-S\-\_\-\-Action\-Info\-Angle}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionInfoAngle@{R\-S\-\_\-\-Action\-Info\-Angle}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Info\-Angle\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionInfoAngle_a610f8ba042b2fa0bad4e5b3aafb35530}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionInfoAngle_a9fcceeb049d1200a5ae7a51e4d1e779a}{\index{R\-S\-\_\-\-Action\-Info\-Angle@{R\-S\-\_\-\-Action\-Info\-Angle}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_ActionInfoAngle@{R\-S\-\_\-\-Action\-Info\-Angle}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Action\-Info\-Angle\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__ActionInfoAngle_a9fcceeb049d1200a5ae7a51e4d1e779a}
+Must be implemented to return the I\-D of this action.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]no default implementation \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af877a66b5b4a7053f2b1f0519c57a6f5}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionInfoAngle_ad75ebc8873ac8d7691f41f34b0374e5a}{\index{R\-S\-\_\-\-Action\-Info\-Angle@{R\-S\-\_\-\-Action\-Info\-Angle}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionInfoAngle@{R\-S\-\_\-\-Action\-Info\-Angle}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Info\-Angle\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionInfoAngle_ad75ebc8873ac8d7691f41f34b0374e5a}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionInfoAngle_a1b7ff106fd7d1b7c6be9486bbcf7708b}{\index{R\-S\-\_\-\-Action\-Info\-Angle@{R\-S\-\_\-\-Action\-Info\-Angle}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionInfoAngle@{R\-S\-\_\-\-Action\-Info\-Angle}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Info\-Angle\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionInfoAngle_a1b7ff106fd7d1b7c6be9486bbcf7708b}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionInfoAngle_a1e809b7ed8c8bfb9534781e212d0046f}{\index{R\-S\-\_\-\-Action\-Info\-Angle@{R\-S\-\_\-\-Action\-Info\-Angle}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionInfoAngle@{R\-S\-\_\-\-Action\-Info\-Angle}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Info\-Angle\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionInfoAngle_a1e809b7ed8c8bfb9534781e212d0046f}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actioninfoangle.\-h\item 
+librecad/src/actions/rs\-\_\-actioninfoangle.\-cpp\end{DoxyCompactItemize}

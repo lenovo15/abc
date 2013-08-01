@@ -1,0 +1,205 @@
+\hypertarget{classRS__ActionDrawEllipse4Points}{\section{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points Class Reference}
+\label{classRS__ActionDrawEllipse4Points}\index{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actiondrawellipse4points.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classRS__ActionDrawEllipse4Points}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionDrawEllipse4Points_a1fb78a0bac1186aa7984105108927c52}{Status} \{ {\bfseries Set\-Point1}, 
+{\bfseries Set\-Point2}, 
+{\bfseries Set\-Point3}, 
+{\bfseries Set\-Point4}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__ActionDrawEllipse4Points_a68fac043b7bac85718ad61d97c9fea09}{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)
+\item 
+\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__ActionDrawEllipse4Points_af0df132883d06de0b37e8827175603d7}{rtti} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipse4Points_a6df225bb21a5d390207c359cc149db81}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipse4Points_ac181ac7568c462d080c210ffc27c0706}{trigger} ()
+\item 
+\hypertarget{classRS__ActionDrawEllipse4Points_a1d4ae09ed24ce09570a1c3f81fe836c5}{virtual bool {\bfseries prepare\-Preview} ()}\label{classRS__ActionDrawEllipse4Points_a1d4ae09ed24ce09570a1c3f81fe836c5}
+
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipse4Points_a2bb8a25ac5a15412d816bedc52bbac9b}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipse4Points_ab6668199d0516c5e40e492ec29a40d4d}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipse4Points_a38601beb626f9d9b798ec856ea822659}{coordinate\-Event} (\hyperlink{classRS__CoordinateEvent}{R\-S\-\_\-\-Coordinate\-Event} $\ast$e)
+\item 
+virtual Q\-String\-List \hyperlink{classRS__ActionDrawEllipse4Points_ab43683c37aefee4a31dfbe6ac14b3b8e}{get\-Available\-Commands} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipse4Points_a16e5fd2f64836c377cd6f4bdda9df1bc}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawEllipse4Points_a7abe0f6186960595961f7892cefb401d}{update\-Mouse\-Cursor} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionDrawEllipse4Points_a0e6b1453208ca706b370d1efd342469b}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} type, Q\-Object $\ast$)}\label{classRS__ActionDrawEllipse4Points_a0e6b1453208ca706b370d1efd342469b}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionDrawEllipse4Points_af05eb0ac52dd89fff73d4a240fdb5448}{\hyperlink{classRS__VectorSolutions}{R\-S\-\_\-\-Vector\-Solutions} {\bfseries points}}\label{classRS__ActionDrawEllipse4Points_af05eb0ac52dd89fff73d4a240fdb5448}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Draw ellipse by foci and a point on ellipse
+
+\begin{DoxyAuthor}{Author}
+Dongxu Li 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionDrawEllipse4Points_a1fb78a0bac1186aa7984105108927c52}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}!Status@{Status}}
+\index{Status@{Status}!RS_ActionDrawEllipse4Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points\-::\-Status}}}\label{classRS__ActionDrawEllipse4Points_a1fb78a0bac1186aa7984105108927c52}
+Action States. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__ActionDrawEllipse4Points_a68fac043b7bac85718ad61d97c9fea09}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}!R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}}
+\index{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}!RS_ActionDrawEllipse4Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}}
+\subsubsection[{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points\-::\-R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} \&}]{graphic\-View}
+\end{DoxyParamCaption}
+)}}\label{classRS__ActionDrawEllipse4Points_a68fac043b7bac85718ad61d97c9fea09}
+Constructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionDrawEllipse4Points_a38601beb626f9d9b798ec856ea822659}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}!coordinate\-Event@{coordinate\-Event}}
+\index{coordinate\-Event@{coordinate\-Event}!RS_ActionDrawEllipse4Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}}
+\subsubsection[{coordinate\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points\-::coordinate\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Coordinate\-Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipse4Points_a38601beb626f9d9b798ec856ea822659}
+Coordinate event. Triggered usually from a command line. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a9013e88769edd39b2a74af5add2986c9}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipse4Points_ab43683c37aefee4a31dfbe6ac14b3b8e}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}!get\-Available\-Commands@{get\-Available\-Commands}}
+\index{get\-Available\-Commands@{get\-Available\-Commands}!RS_ActionDrawEllipse4Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}}
+\subsubsection[{get\-Available\-Commands}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String\-List R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points\-::get\-Available\-Commands (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipse4Points_ab43683c37aefee4a31dfbe6ac14b3b8e}
+Must be implemented to return the currently available commands for the command line. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acafdac8d18d3f053eda872581fb3e27d}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipse4Points_a6df225bb21a5d390207c359cc149db81}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}!init@{init}}
+\index{init@{init}!RS_ActionDrawEllipse4Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipse4Points_a6df225bb21a5d390207c359cc149db81}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae5113b2aef5a10acd192786b99580e4a}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipse4Points_a2bb8a25ac5a15412d816bedc52bbac9b}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_ActionDrawEllipse4Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipse4Points_a2bb8a25ac5a15412d816bedc52bbac9b}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipse4Points_ab6668199d0516c5e40e492ec29a40d4d}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionDrawEllipse4Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipse4Points_ab6668199d0516c5e40e492ec29a40d4d}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipse4Points_af0df132883d06de0b37e8827175603d7}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_ActionDrawEllipse4Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipse4Points_af0df132883d06de0b37e8827175603d7}
+Must be implemented to return the I\-D of this action.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]no default implementation \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af877a66b5b4a7053f2b1f0519c57a6f5}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipse4Points_ac181ac7568c462d080c210ffc27c0706}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionDrawEllipse4Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipse4Points_ac181ac7568c462d080c210ffc27c0706}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipse4Points_a16e5fd2f64836c377cd6f4bdda9df1bc}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionDrawEllipse4Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipse4Points_a16e5fd2f64836c377cd6f4bdda9df1bc}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawEllipse4Points_a7abe0f6186960595961f7892cefb401d}{\index{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionDrawEllipse4Points@{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawEllipse4Points_a7abe0f6186960595961f7892cefb401d}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actiondrawellipse4points.\-h\item 
+librecad/src/actions/rs\-\_\-actiondrawellipse4points.\-cpp\end{DoxyCompactItemize}

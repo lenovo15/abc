@@ -1,0 +1,279 @@
+\hypertarget{classRS__ActionDimLinear}{\section{R\-S\-\_\-\-Action\-Dim\-Linear Class Reference}
+\label{classRS__ActionDimLinear}\index{R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actiondimlinear.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Dim\-Linear\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classRS__ActionDimLinear}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionDimLinear_aa4054f4dacf4b8b37c1fd83b86f9fc0f}{Variation} \{ {\bfseries Any\-Angle}, 
+{\bfseries Horizontal}, 
+{\bfseries Vertical}
+ \}
+\item 
+enum \hyperlink{classRS__ActionDimLinear_abeef5d00bc33a2b97d5aaf6290c84949}{Status} \{ \\*
+\hyperlink{classRS__ActionDimLinear_abeef5d00bc33a2b97d5aaf6290c84949abfb3608b391e14bf26648a64c05ec051}{Set\-Ext\-Point1}, 
+\hyperlink{classRS__ActionDimLinear_abeef5d00bc33a2b97d5aaf6290c84949a743e7741e079a4e2cc87475a7f1b675f}{Set\-Ext\-Point2}, 
+\hyperlink{classRS__ActionDimLinear_abeef5d00bc33a2b97d5aaf6290c84949a944e66ad3812207b27d95af24e73cb4b}{Set\-Def\-Point}, 
+\hyperlink{classRS__ActionDimLinear_abeef5d00bc33a2b97d5aaf6290c84949a0af09e3b3b9e1da35f75ad7c417295cd}{Set\-Text}, 
+\\*
+\hyperlink{classRS__ActionDimLinear_abeef5d00bc33a2b97d5aaf6290c84949ac1bbfa8cba50c30c4b932f17c587fc9a}{Set\-Angle}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__ActionDimLinear_abbaede035159e3e9e3e6a5310de9f521}{R\-S\-\_\-\-Action\-Dim\-Linear} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View, double angle=0.\-0, bool \hyperlink{classRS__ActionDimLinear_aefb615e1a23d3fde4d44ce9b7232d2e5}{fixed\-Angle}=false, \hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} type=R\-S2\-::\-Action\-Dim\-Linear)
+\item 
+virtual \hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__ActionDimLinear_adfb43924fa63874b8ad527998238564a}{rtti} ()
+\item 
+\hypertarget{classRS__ActionDimLinear_a3ba1c21fc0633f179e205e377d9fb075}{void {\bfseries reset} ()}\label{classRS__ActionDimLinear_a3ba1c21fc0633f179e205e377d9fb075}
+
+\item 
+virtual void \hyperlink{classRS__ActionDimLinear_acca601d14e09ec36d9b11dfe1b7ab349}{trigger} ()
+\item 
+\hypertarget{classRS__ActionDimLinear_a870c94d6575c5ef9780f62b4e538bcc5}{void {\bfseries prepare\-Preview} ()}\label{classRS__ActionDimLinear_a870c94d6575c5ef9780f62b4e538bcc5}
+
+\item 
+virtual void \hyperlink{classRS__ActionDimLinear_aa0d035f612ca4b0c02412b34c4dea445}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDimLinear_a7b9382d41a4a5cf4fcb5e8f523628f1b}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDimLinear_a18b0017e76e9a30ac88919b5ba331442}{coordinate\-Event} (\hyperlink{classRS__CoordinateEvent}{R\-S\-\_\-\-Coordinate\-Event} $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDimLinear_aa90cfed1454b7597cf0fcac1d601f279}{command\-Event} (\hyperlink{classRS__CommandEvent}{R\-S\-\_\-\-Command\-Event} $\ast$e)
+\item 
+virtual Q\-String\-List \hyperlink{classRS__ActionDimLinear_ab273139ec72fe946b60764586aa0b6b5}{get\-Available\-Commands} ()
+\item 
+virtual void \hyperlink{classRS__ActionDimLinear_aaa11df2e4885e08e3e320815e2591a2d}{hide\-Options} ()
+\item 
+virtual void \hyperlink{classRS__ActionDimLinear_a8f67a1d2810b51e966bc1ea51c23b639}{show\-Options} ()
+\item 
+virtual void \hyperlink{classRS__ActionDimLinear_a5afc5423f7f542ab10c3ecb561165d8a}{update\-Mouse\-Button\-Hints} ()
+\item 
+\hypertarget{classRS__ActionDimLinear_a62f36e9d28f6b8ccfb793d927d634de5}{double {\bfseries get\-Angle} ()}\label{classRS__ActionDimLinear_a62f36e9d28f6b8ccfb793d927d634de5}
+
+\item 
+\hypertarget{classRS__ActionDimLinear_ad8fffe39b0b1aaf44cf5fe6c9926d880}{void {\bfseries set\-Angle} (double a)}\label{classRS__ActionDimLinear_ad8fffe39b0b1aaf44cf5fe6c9926d880}
+
+\item 
+\hypertarget{classRS__ActionDimLinear_a74932a9e08a960738ea782ac12bcc74e}{bool {\bfseries has\-Fixed\-Angle} ()}\label{classRS__ActionDimLinear_a74932a9e08a960738ea782ac12bcc74e}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionDimLinear_a5612e5e9833be03ec12286c2b925505b}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} type, Q\-Object $\ast$)}\label{classRS__ActionDimLinear_a5612e5e9833be03ec12286c2b925505b}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__DimLinearData}{R\-S\-\_\-\-Dim\-Linear\-Data} \hyperlink{classRS__ActionDimLinear_aa4f47d77d19f888e92b7a5d236a00e72}{edata}
+\item 
+bool \hyperlink{classRS__ActionDimLinear_aefb615e1a23d3fde4d44ce9b7232d2e5}{fixed\-Angle}
+\item 
+\hyperlink{classRS__ActionDimLinear_abeef5d00bc33a2b97d5aaf6290c84949}{Status} \hyperlink{classRS__ActionDimLinear_ad0b972a529601f4ab3a0f5fa6a4729dc}{last\-Status}
+\item 
+\hypertarget{classRS__ActionDimLinear_a0f0b6766f4ac6dbb08ad1f117141ccfa}{\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} {\bfseries action\-Type}}\label{classRS__ActionDimLinear_a0f0b6766f4ac6dbb08ad1f117141ccfa}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to draw aligned dimensions.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionDimLinear_abeef5d00bc33a2b97d5aaf6290c84949}{\index{R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}!Status@{Status}}
+\index{Status@{Status}!RS_ActionDimLinear@{R\-S\-\_\-\-Action\-Dim\-Linear}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Dim\-Linear\-::\-Status}}}\label{classRS__ActionDimLinear_abeef5d00bc33a2b97d5aaf6290c84949}
+Action States. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Set\-Ext\-Point1@{Set\-Ext\-Point1}!R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}}\index{R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}!Set\-Ext\-Point1@{Set\-Ext\-Point1}}\item[{\em 
+\hypertarget{classRS__ActionDimLinear_abeef5d00bc33a2b97d5aaf6290c84949abfb3608b391e14bf26648a64c05ec051}{Set\-Ext\-Point1}\label{classRS__ActionDimLinear_abeef5d00bc33a2b97d5aaf6290c84949abfb3608b391e14bf26648a64c05ec051}
+}]Setting the 1st ext point. \index{Set\-Ext\-Point2@{Set\-Ext\-Point2}!R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}}\index{R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}!Set\-Ext\-Point2@{Set\-Ext\-Point2}}\item[{\em 
+\hypertarget{classRS__ActionDimLinear_abeef5d00bc33a2b97d5aaf6290c84949a743e7741e079a4e2cc87475a7f1b675f}{Set\-Ext\-Point2}\label{classRS__ActionDimLinear_abeef5d00bc33a2b97d5aaf6290c84949a743e7741e079a4e2cc87475a7f1b675f}
+}]Setting the 2nd ext point. \index{Set\-Def\-Point@{Set\-Def\-Point}!R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}}\index{R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}!Set\-Def\-Point@{Set\-Def\-Point}}\item[{\em 
+\hypertarget{classRS__ActionDimLinear_abeef5d00bc33a2b97d5aaf6290c84949a944e66ad3812207b27d95af24e73cb4b}{Set\-Def\-Point}\label{classRS__ActionDimLinear_abeef5d00bc33a2b97d5aaf6290c84949a944e66ad3812207b27d95af24e73cb4b}
+}]Setting the common def point. \index{Set\-Text@{Set\-Text}!R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}}\index{R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}!Set\-Text@{Set\-Text}}\item[{\em 
+\hypertarget{classRS__ActionDimLinear_abeef5d00bc33a2b97d5aaf6290c84949a0af09e3b3b9e1da35f75ad7c417295cd}{Set\-Text}\label{classRS__ActionDimLinear_abeef5d00bc33a2b97d5aaf6290c84949a0af09e3b3b9e1da35f75ad7c417295cd}
+}]Setting the text label in the command line. \index{Set\-Angle@{Set\-Angle}!R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}}\index{R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}!Set\-Angle@{Set\-Angle}}\item[{\em 
+\hypertarget{classRS__ActionDimLinear_abeef5d00bc33a2b97d5aaf6290c84949ac1bbfa8cba50c30c4b932f17c587fc9a}{Set\-Angle}\label{classRS__ActionDimLinear_abeef5d00bc33a2b97d5aaf6290c84949ac1bbfa8cba50c30c4b932f17c587fc9a}
+}]Setting the angle in the command line. \end{description}
+\end{Desc}
+\hypertarget{classRS__ActionDimLinear_aa4054f4dacf4b8b37c1fd83b86f9fc0f}{\index{R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}!Variation@{Variation}}
+\index{Variation@{Variation}!RS_ActionDimLinear@{R\-S\-\_\-\-Action\-Dim\-Linear}}
+\subsubsection[{Variation}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Dim\-Linear\-::\-Variation}}}\label{classRS__ActionDimLinear_aa4054f4dacf4b8b37c1fd83b86f9fc0f}
+Varitions of this action. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__ActionDimLinear_abbaede035159e3e9e3e6a5310de9f521}{\index{R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}!R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}}
+\index{R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}!RS_ActionDimLinear@{R\-S\-\_\-\-Action\-Dim\-Linear}}
+\subsubsection[{R\-S\-\_\-\-Action\-Dim\-Linear}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Action\-Dim\-Linear\-::\-R\-S\-\_\-\-Action\-Dim\-Linear (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} \&}]{graphic\-View, }
+\item[{double}]{angle = {\ttfamily 0.0}, }
+\item[{bool}]{fixed\-Angle = {\ttfamily false}, }
+\item[{{\bf R\-S2\-::\-Action\-Type}}]{type = {\ttfamily RS2\-:\-:ActionDimLinear}}
+\end{DoxyParamCaption}
+)}}\label{classRS__ActionDimLinear_abbaede035159e3e9e3e6a5310de9f521}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & Initial angle in rad. \\
+\hline
+{\em fixed\-Angle} & true\-: The user can't change the angle. false\-: The user can change the angle in a option widget. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionDimLinear_aa90cfed1454b7597cf0fcac1d601f279}{\index{R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}!command\-Event@{command\-Event}}
+\index{command\-Event@{command\-Event}!RS_ActionDimLinear@{R\-S\-\_\-\-Action\-Dim\-Linear}}
+\subsubsection[{command\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Dim\-Linear\-::command\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Command\-Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDimLinear_aa90cfed1454b7597cf0fcac1d601f279}
+Called when a command from the command line is launched. and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a187365514bab9b2997c5fe7ff5274a22}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDimLinear_a18b0017e76e9a30ac88919b5ba331442}{\index{R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}!coordinate\-Event@{coordinate\-Event}}
+\index{coordinate\-Event@{coordinate\-Event}!RS_ActionDimLinear@{R\-S\-\_\-\-Action\-Dim\-Linear}}
+\subsubsection[{coordinate\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Dim\-Linear\-::coordinate\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Coordinate\-Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDimLinear_a18b0017e76e9a30ac88919b5ba331442}
+Coordinate event. Triggered usually from a command line. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a9013e88769edd39b2a74af5add2986c9}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDimLinear_ab273139ec72fe946b60764586aa0b6b5}{\index{R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}!get\-Available\-Commands@{get\-Available\-Commands}}
+\index{get\-Available\-Commands@{get\-Available\-Commands}!RS_ActionDimLinear@{R\-S\-\_\-\-Action\-Dim\-Linear}}
+\subsubsection[{get\-Available\-Commands}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String\-List R\-S\-\_\-\-Action\-Dim\-Linear\-::get\-Available\-Commands (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDimLinear_ab273139ec72fe946b60764586aa0b6b5}
+Must be implemented to return the currently available commands for the command line. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acafdac8d18d3f053eda872581fb3e27d}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDimLinear_aaa11df2e4885e08e3e320815e2591a2d}{\index{R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}!hide\-Options@{hide\-Options}}
+\index{hide\-Options@{hide\-Options}!RS_ActionDimLinear@{R\-S\-\_\-\-Action\-Dim\-Linear}}
+\subsubsection[{hide\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Dim\-Linear\-::hide\-Options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDimLinear_aaa11df2e4885e08e3e320815e2591a2d}
+Hides the tool options. Default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionDimension_a5d87779fd13b576ac7b9cf74151c2fb6}{R\-S\-\_\-\-Action\-Dimension}.
+
+\hypertarget{classRS__ActionDimLinear_aa0d035f612ca4b0c02412b34c4dea445}{\index{R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_ActionDimLinear@{R\-S\-\_\-\-Action\-Dim\-Linear}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Dim\-Linear\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDimLinear_aa0d035f612ca4b0c02412b34c4dea445}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDimLinear_a7b9382d41a4a5cf4fcb5e8f523628f1b}{\index{R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionDimLinear@{R\-S\-\_\-\-Action\-Dim\-Linear}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Dim\-Linear\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDimLinear_a7b9382d41a4a5cf4fcb5e8f523628f1b}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDimLinear_adfb43924fa63874b8ad527998238564a}{\index{R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_ActionDimLinear@{R\-S\-\_\-\-Action\-Dim\-Linear}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Action\-Dim\-Linear\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDimLinear_adfb43924fa63874b8ad527998238564a}
+Must be implemented to return the I\-D of this action.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]no default implementation \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af877a66b5b4a7053f2b1f0519c57a6f5}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDimLinear_a8f67a1d2810b51e966bc1ea51c23b639}{\index{R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}!show\-Options@{show\-Options}}
+\index{show\-Options@{show\-Options}!RS_ActionDimLinear@{R\-S\-\_\-\-Action\-Dim\-Linear}}
+\subsubsection[{show\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Dim\-Linear\-::show\-Options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDimLinear_a8f67a1d2810b51e966bc1ea51c23b639}
+Shows the tool options. Default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionDimension_a994e9ee7793e6043c13e8278231f50b3}{R\-S\-\_\-\-Action\-Dimension}.
+
+\hypertarget{classRS__ActionDimLinear_acca601d14e09ec36d9b11dfe1b7ab349}{\index{R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionDimLinear@{R\-S\-\_\-\-Action\-Dim\-Linear}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Dim\-Linear\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDimLinear_acca601d14e09ec36d9b11dfe1b7ab349}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDimLinear_a5afc5423f7f542ab10c3ecb561165d8a}{\index{R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionDimLinear@{R\-S\-\_\-\-Action\-Dim\-Linear}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Dim\-Linear\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDimLinear_a5afc5423f7f542ab10c3ecb561165d8a}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classRS__ActionDimLinear_aa4f47d77d19f888e92b7a5d236a00e72}{\index{R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}!edata@{edata}}
+\index{edata@{edata}!RS_ActionDimLinear@{R\-S\-\_\-\-Action\-Dim\-Linear}}
+\subsubsection[{edata}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Dim\-Linear\-Data} R\-S\-\_\-\-Action\-Dim\-Linear\-::edata\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDimLinear_aa4f47d77d19f888e92b7a5d236a00e72}
+Aligned dimension data. \hypertarget{classRS__ActionDimLinear_aefb615e1a23d3fde4d44ce9b7232d2e5}{\index{R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}!fixed\-Angle@{fixed\-Angle}}
+\index{fixed\-Angle@{fixed\-Angle}!RS_ActionDimLinear@{R\-S\-\_\-\-Action\-Dim\-Linear}}
+\subsubsection[{fixed\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Action\-Dim\-Linear\-::fixed\-Angle\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDimLinear_aefb615e1a23d3fde4d44ce9b7232d2e5}
+Is the angle fixed? \hypertarget{classRS__ActionDimLinear_ad0b972a529601f4ab3a0f5fa6a4729dc}{\index{R\-S\-\_\-\-Action\-Dim\-Linear@{R\-S\-\_\-\-Action\-Dim\-Linear}!last\-Status@{last\-Status}}
+\index{last\-Status@{last\-Status}!RS_ActionDimLinear@{R\-S\-\_\-\-Action\-Dim\-Linear}}
+\subsubsection[{last\-Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Status} R\-S\-\_\-\-Action\-Dim\-Linear\-::last\-Status\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDimLinear_ad0b972a529601f4ab3a0f5fa6a4729dc}
+Last status before entering text or angle. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actiondimlinear.\-h\item 
+librecad/src/actions/rs\-\_\-actiondimlinear.\-cpp\end{DoxyCompactItemize}

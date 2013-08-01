@@ -1,0 +1,176 @@
+\hypertarget{classRS__StaticGraphicView}{\section{R\-S\-\_\-\-Static\-Graphic\-View Class Reference}
+\label{classRS__StaticGraphicView}\index{R\-S\-\_\-\-Static\-Graphic\-View@{R\-S\-\_\-\-Static\-Graphic\-View}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-staticgraphicview.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Static\-Graphic\-View\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRS__StaticGraphicView}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__StaticGraphicView_ae3c48aff55516fdfb2f4adf7ce293479}{R\-S\-\_\-\-Static\-Graphic\-View} (int w, int h, \hyperlink{classRS__Painter}{R\-S\-\_\-\-Painter} $\ast$p, Q\-Size b=Q\-Size(5, 5))
+\item 
+virtual \hyperlink{classRS__StaticGraphicView_aa8d2ab183db2c04e0bce85e1fb1588d0}{$\sim$\-R\-S\-\_\-\-Static\-Graphic\-View} ()
+\item 
+virtual int \hyperlink{classRS__StaticGraphicView_ae4aa91a2b40c4bbd5575da0dd37d39a8}{get\-Width} ()
+\item 
+virtual int \hyperlink{classRS__StaticGraphicView_ae07f0d96c25dffb695dfb1647a684cb3}{get\-Height} ()
+\item 
+virtual void \hyperlink{classRS__StaticGraphicView_af9d0538d36ae04d02eea24486d99b636}{redraw} (R\-S2\-::\-Redraw\-Method)
+\item 
+virtual void \hyperlink{classRS__StaticGraphicView_af43aea5e7f21072089f223b6ef227533}{adjust\-Offset\-Controls} ()
+\item 
+virtual void \hyperlink{classRS__StaticGraphicView_aadc4f5560267cd7e4c9ea51c7faea576}{adjust\-Zoom\-Controls} ()
+\item 
+virtual void \hyperlink{classRS__StaticGraphicView_a752ef5e5313de1e9c4f6f1f4ceaea9d9}{set\-Mouse\-Cursor} (\hyperlink{classRS2_a15aa1c4c60c63de4dc688f0bcb43548d}{R\-S2\-::\-Cursor\-Type})
+\item 
+virtual void \hyperlink{classRS__StaticGraphicView_a3bc6dc81ab671205635625df45a2bd2a}{emulate\-Mouse\-Move\-Event} ()
+\item 
+\hypertarget{classRS__StaticGraphicView_aa3432e04f9f999dc02d2fe01fc3a6b1b}{virtual void {\bfseries update\-Grid\-Status\-Widget} (const Q\-String \&)}\label{classRS__StaticGraphicView_aa3432e04f9f999dc02d2fe01fc3a6b1b}
+
+\item 
+void \hyperlink{classRS__StaticGraphicView_ad1596200a84c0b63b9a63963187efb48}{paint} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This is an implementation of a graphic viewer with a fixed size for drawing onto fixed devices (such as bitmaps). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__StaticGraphicView_ae3c48aff55516fdfb2f4adf7ce293479}{\index{R\-S\-\_\-\-Static\-Graphic\-View@{R\-S\-\_\-\-Static\-Graphic\-View}!R\-S\-\_\-\-Static\-Graphic\-View@{R\-S\-\_\-\-Static\-Graphic\-View}}
+\index{R\-S\-\_\-\-Static\-Graphic\-View@{R\-S\-\_\-\-Static\-Graphic\-View}!RS_StaticGraphicView@{R\-S\-\_\-\-Static\-Graphic\-View}}
+\subsubsection[{R\-S\-\_\-\-Static\-Graphic\-View}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Static\-Graphic\-View\-::\-R\-S\-\_\-\-Static\-Graphic\-View (
+\begin{DoxyParamCaption}
+\item[{int}]{w, }
+\item[{int}]{h, }
+\item[{{\bf R\-S\-\_\-\-Painter} $\ast$}]{p, }
+\item[{Q\-Size}]{b = {\ttfamily QSize(5,5)}}
+\end{DoxyParamCaption}
+)}}\label{classRS__StaticGraphicView_ae3c48aff55516fdfb2f4adf7ce293479}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & Width \\
+\hline
+{\em h} & Height \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__StaticGraphicView_aa8d2ab183db2c04e0bce85e1fb1588d0}{\index{R\-S\-\_\-\-Static\-Graphic\-View@{R\-S\-\_\-\-Static\-Graphic\-View}!$\sim$\-R\-S\-\_\-\-Static\-Graphic\-View@{$\sim$\-R\-S\-\_\-\-Static\-Graphic\-View}}
+\index{$\sim$\-R\-S\-\_\-\-Static\-Graphic\-View@{$\sim$\-R\-S\-\_\-\-Static\-Graphic\-View}!RS_StaticGraphicView@{R\-S\-\_\-\-Static\-Graphic\-View}}
+\subsubsection[{$\sim$\-R\-S\-\_\-\-Static\-Graphic\-View}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Static\-Graphic\-View\-::$\sim$\-R\-S\-\_\-\-Static\-Graphic\-View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__StaticGraphicView_aa8d2ab183db2c04e0bce85e1fb1588d0}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__StaticGraphicView_af43aea5e7f21072089f223b6ef227533}{\index{R\-S\-\_\-\-Static\-Graphic\-View@{R\-S\-\_\-\-Static\-Graphic\-View}!adjust\-Offset\-Controls@{adjust\-Offset\-Controls}}
+\index{adjust\-Offset\-Controls@{adjust\-Offset\-Controls}!RS_StaticGraphicView@{R\-S\-\_\-\-Static\-Graphic\-View}}
+\subsubsection[{adjust\-Offset\-Controls}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Static\-Graphic\-View\-::adjust\-Offset\-Controls (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__StaticGraphicView_af43aea5e7f21072089f223b6ef227533}
+This virtual method must be overwritten and is then called whenever the view changed 
+
+Reimplemented from \hyperlink{classRS__GraphicView_a87478365dda45fc26c349874d9b92ca0}{R\-S\-\_\-\-Graphic\-View}.
+
+\hypertarget{classRS__StaticGraphicView_aadc4f5560267cd7e4c9ea51c7faea576}{\index{R\-S\-\_\-\-Static\-Graphic\-View@{R\-S\-\_\-\-Static\-Graphic\-View}!adjust\-Zoom\-Controls@{adjust\-Zoom\-Controls}}
+\index{adjust\-Zoom\-Controls@{adjust\-Zoom\-Controls}!RS_StaticGraphicView@{R\-S\-\_\-\-Static\-Graphic\-View}}
+\subsubsection[{adjust\-Zoom\-Controls}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Static\-Graphic\-View\-::adjust\-Zoom\-Controls (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__StaticGraphicView_aadc4f5560267cd7e4c9ea51c7faea576}
+This virtual method must be overwritten and is then called whenever the view changed 
+
+Reimplemented from \hyperlink{classRS__GraphicView_aa26f3d00ce72bde330808acd064737ea}{R\-S\-\_\-\-Graphic\-View}.
+
+\hypertarget{classRS__StaticGraphicView_a3bc6dc81ab671205635625df45a2bd2a}{\index{R\-S\-\_\-\-Static\-Graphic\-View@{R\-S\-\_\-\-Static\-Graphic\-View}!emulate\-Mouse\-Move\-Event@{emulate\-Mouse\-Move\-Event}}
+\index{emulate\-Mouse\-Move\-Event@{emulate\-Mouse\-Move\-Event}!RS_StaticGraphicView@{R\-S\-\_\-\-Static\-Graphic\-View}}
+\subsubsection[{emulate\-Mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Static\-Graphic\-View\-::emulate\-Mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__StaticGraphicView_a3bc6dc81ab671205635625df45a2bd2a}
+Must be overwritten to emulate a mouse move event with the last known mouse position.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classRS__GraphicView_afd91d0e74c3f78f1346b80badca435d4}{mx}, \hyperlink{classRS__GraphicView_a152e04094253c01279069ab3d82802bf}{my} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classRS__GraphicView_a5d4cb4b6bb21358a6c959ca30d67e22d}{R\-S\-\_\-\-Graphic\-View}.
+
+\hypertarget{classRS__StaticGraphicView_ae07f0d96c25dffb695dfb1647a684cb3}{\index{R\-S\-\_\-\-Static\-Graphic\-View@{R\-S\-\_\-\-Static\-Graphic\-View}!get\-Height@{get\-Height}}
+\index{get\-Height@{get\-Height}!RS_StaticGraphicView@{R\-S\-\_\-\-Static\-Graphic\-View}}
+\subsubsection[{get\-Height}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Static\-Graphic\-View\-::get\-Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__StaticGraphicView_ae07f0d96c25dffb695dfb1647a684cb3}
+\begin{DoxyReturn}{Returns}
+height of widget. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__GraphicView_af354fd031dfc0c8e6d8bfb83f415bea5}{R\-S\-\_\-\-Graphic\-View}.
+
+\hypertarget{classRS__StaticGraphicView_ae4aa91a2b40c4bbd5575da0dd37d39a8}{\index{R\-S\-\_\-\-Static\-Graphic\-View@{R\-S\-\_\-\-Static\-Graphic\-View}!get\-Width@{get\-Width}}
+\index{get\-Width@{get\-Width}!RS_StaticGraphicView@{R\-S\-\_\-\-Static\-Graphic\-View}}
+\subsubsection[{get\-Width}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Static\-Graphic\-View\-::get\-Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__StaticGraphicView_ae4aa91a2b40c4bbd5575da0dd37d39a8}
+\begin{DoxyReturn}{Returns}
+width of widget. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRS__GraphicView_a99858a9507de483858071fd209a53e89}{R\-S\-\_\-\-Graphic\-View}.
+
+\hypertarget{classRS__StaticGraphicView_ad1596200a84c0b63b9a63963187efb48}{\index{R\-S\-\_\-\-Static\-Graphic\-View@{R\-S\-\_\-\-Static\-Graphic\-View}!paint@{paint}}
+\index{paint@{paint}!RS_StaticGraphicView@{R\-S\-\_\-\-Static\-Graphic\-View}}
+\subsubsection[{paint}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Static\-Graphic\-View\-::paint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__StaticGraphicView_ad1596200a84c0b63b9a63963187efb48}
+Handles paint events by redrawing the graphic in this view. \hypertarget{classRS__StaticGraphicView_af9d0538d36ae04d02eea24486d99b636}{\index{R\-S\-\_\-\-Static\-Graphic\-View@{R\-S\-\_\-\-Static\-Graphic\-View}!redraw@{redraw}}
+\index{redraw@{redraw}!RS_StaticGraphicView@{R\-S\-\_\-\-Static\-Graphic\-View}}
+\subsubsection[{redraw}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Static\-Graphic\-View\-::redraw (
+\begin{DoxyParamCaption}
+\item[{R\-S2\-::\-Redraw\-Method}]{method}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__StaticGraphicView_af9d0538d36ae04d02eea24486d99b636}
+This virtual method must be overwritten to redraw the widget. 
+
+Implements \hyperlink{classRS__GraphicView_a5ea54ec2dfcc2bb1553dfa867986fe31}{R\-S\-\_\-\-Graphic\-View}.
+
+\hypertarget{classRS__StaticGraphicView_a752ef5e5313de1e9c4f6f1f4ceaea9d9}{\index{R\-S\-\_\-\-Static\-Graphic\-View@{R\-S\-\_\-\-Static\-Graphic\-View}!set\-Mouse\-Cursor@{set\-Mouse\-Cursor}}
+\index{set\-Mouse\-Cursor@{set\-Mouse\-Cursor}!RS_StaticGraphicView@{R\-S\-\_\-\-Static\-Graphic\-View}}
+\subsubsection[{set\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Static\-Graphic\-View\-::set\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Cursor\-Type}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__StaticGraphicView_a752ef5e5313de1e9c4f6f1f4ceaea9d9}
+This virtual method can be overwritten to set the mouse cursor to the given type. 
+
+Reimplemented from \hyperlink{classRS__GraphicView_a94f6771b47ea77eb63170100365bfed7}{R\-S\-\_\-\-Graphic\-View}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/gui/rs\-\_\-staticgraphicview.\-h\item 
+librecad/src/lib/gui/rs\-\_\-staticgraphicview.\-cpp\end{DoxyCompactItemize}

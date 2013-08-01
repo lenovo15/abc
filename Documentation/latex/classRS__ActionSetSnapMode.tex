@@ -1,0 +1,94 @@
+\hypertarget{classRS__ActionSetSnapMode}{\section{R\-S\-\_\-\-Action\-Set\-Snap\-Mode Class Reference}
+\label{classRS__ActionSetSnapMode}\index{R\-S\-\_\-\-Action\-Set\-Snap\-Mode@{R\-S\-\_\-\-Action\-Set\-Snap\-Mode}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionsetsnapmode.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Set\-Snap\-Mode\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__ActionSetSnapMode}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__ActionSetSnapMode_a64a04ec6240fa45d1eeb0cee6c65f40c}{R\-S\-\_\-\-Action\-Set\-Snap\-Mode} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View, \hyperlink{classRS2_ad79bb612dc7719b90e79b29298ffaf73}{R\-S2\-::\-Snap\-Mode} snap\-Mode)
+\item 
+virtual void \hyperlink{classRS__ActionSetSnapMode_aaa0778207f5640111596f691825d00f6}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionSetSnapMode_a2638e4603b0b01ee2e445309d22a0efe}{trigger} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionSetSnapMode_a67f263a56b975d76cbfd8fb9ab68420d}{\hyperlink{classRS2_ad79bb612dc7719b90e79b29298ffaf73}{R\-S2\-::\-Snap\-Mode} {\bfseries snap\-Mode}}\label{classRS__ActionSetSnapMode_a67f263a56b975d76cbfd8fb9ab68420d}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action changes the current snap mode.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__ActionSetSnapMode_a64a04ec6240fa45d1eeb0cee6c65f40c}{\index{R\-S\-\_\-\-Action\-Set\-Snap\-Mode@{R\-S\-\_\-\-Action\-Set\-Snap\-Mode}!R\-S\-\_\-\-Action\-Set\-Snap\-Mode@{R\-S\-\_\-\-Action\-Set\-Snap\-Mode}}
+\index{R\-S\-\_\-\-Action\-Set\-Snap\-Mode@{R\-S\-\_\-\-Action\-Set\-Snap\-Mode}!RS_ActionSetSnapMode@{R\-S\-\_\-\-Action\-Set\-Snap\-Mode}}
+\subsubsection[{R\-S\-\_\-\-Action\-Set\-Snap\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Action\-Set\-Snap\-Mode\-::\-R\-S\-\_\-\-Action\-Set\-Snap\-Mode (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} \&}]{graphic\-View, }
+\item[{{\bf R\-S2\-::\-Snap\-Mode}}]{snap\-Mode}
+\end{DoxyParamCaption}
+)}}\label{classRS__ActionSetSnapMode_a64a04ec6240fa45d1eeb0cee6c65f40c}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em snap\-Mode} & The new snap mode used from now on. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionSetSnapMode_aaa0778207f5640111596f691825d00f6}{\index{R\-S\-\_\-\-Action\-Set\-Snap\-Mode@{R\-S\-\_\-\-Action\-Set\-Snap\-Mode}!init@{init}}
+\index{init@{init}!RS_ActionSetSnapMode@{R\-S\-\_\-\-Action\-Set\-Snap\-Mode}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Set\-Snap\-Mode\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionSetSnapMode_aaa0778207f5640111596f691825d00f6}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a05b7dca5deeb371eb51edcb73facd45f}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionSetSnapMode_a2638e4603b0b01ee2e445309d22a0efe}{\index{R\-S\-\_\-\-Action\-Set\-Snap\-Mode@{R\-S\-\_\-\-Action\-Set\-Snap\-Mode}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionSetSnapMode@{R\-S\-\_\-\-Action\-Set\-Snap\-Mode}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Set\-Snap\-Mode\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionSetSnapMode_a2638e4603b0b01ee2e445309d22a0efe}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa2ba8f6f697f735eace4ec5449c0b8cd}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionsetsnapmode.\-h\item 
+librecad/src/actions/rs\-\_\-actionsetsnapmode.\-cpp\end{DoxyCompactItemize}

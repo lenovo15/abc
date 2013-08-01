@@ -1,0 +1,243 @@
+\hypertarget{classRS__Document}{\section{R\-S\-\_\-\-Document Class Reference}
+\label{classRS__Document}\index{R\-S\-\_\-\-Document@{R\-S\-\_\-\-Document}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-document.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Document\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.000000cm]{classRS__Document}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__Document_ad4f493b59861514e06835437d83fae7e}{R\-S\-\_\-\-Document} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} $\ast$\hyperlink{classRS__Entity_a80358a8d2fc6739a516a278dc500b49f}{parent}=N\-U\-L\-L)
+\item 
+\hypertarget{classRS__Document_ab4db71a9596d9e70d36e7b81034a3d79}{virtual \hyperlink{classRS__LayerList}{R\-S\-\_\-\-Layer\-List} $\ast$ {\bfseries get\-Layer\-List} ()=0}\label{classRS__Document_ab4db71a9596d9e70d36e7b81034a3d79}
+
+\item 
+\hypertarget{classRS__Document_a03a5d6a959d006c53d003401ffd19980}{virtual \hyperlink{classRS__BlockList}{R\-S\-\_\-\-Block\-List} $\ast$ {\bfseries get\-Block\-List} ()=0}\label{classRS__Document_a03a5d6a959d006c53d003401ffd19980}
+
+\item 
+\hypertarget{classRS__Document_aef497824f140c3a63f66c6baca718ebe}{virtual void {\bfseries new\-Doc} ()=0}\label{classRS__Document_aef497824f140c3a63f66c6baca718ebe}
+
+\item 
+\hypertarget{classRS__Document_a8a327696ee7f94d50b3f467192d28472}{virtual bool {\bfseries save} (bool is\-Auto\-Save=false)=0}\label{classRS__Document_a8a327696ee7f94d50b3f467192d28472}
+
+\item 
+\hypertarget{classRS__Document_abdf2e9eca1cebf9d83434c9a9356177a}{virtual bool {\bfseries save\-As} (const Q\-String \&\hyperlink{classRS__Document_aefd3d25d96ec31943bdfd1453031a423}{filename}, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} type, bool force)=0}\label{classRS__Document_abdf2e9eca1cebf9d83434c9a9356177a}
+
+\item 
+\hypertarget{classRS__Document_a1d5614f0d8a703f53e66f226d8a7fd7a}{virtual bool {\bfseries open} (const Q\-String \&\hyperlink{classRS__Document_aefd3d25d96ec31943bdfd1453031a423}{filename}, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} type)=0}\label{classRS__Document_a1d5614f0d8a703f53e66f226d8a7fd7a}
+
+\item 
+\hypertarget{classRS__Document_a706d60b8d7c40b43466bfa25aa26c5d3}{virtual bool {\bfseries load\-Template} (const Q\-String \&\hyperlink{classRS__Document_aefd3d25d96ec31943bdfd1453031a423}{filename}, \hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} type)=0}\label{classRS__Document_a706d60b8d7c40b43466bfa25aa26c5d3}
+
+\item 
+virtual bool \hyperlink{classRS__Document_a3993bf1dd82399ec1b34c358ff153dba}{is\-Document} () const 
+\item 
+virtual void \hyperlink{classRS__Document_af8dfb197c811c4a0655499447d3e9a82}{remove\-Undoable} (\hyperlink{classRS__Undoable}{R\-S\-\_\-\-Undoable} $\ast$u)
+\item 
+\hyperlink{classRS__Pen}{R\-S\-\_\-\-Pen} \hyperlink{classRS__Document_ac306d94b55d65065fe2c56455c6b5355}{get\-Active\-Pen} () const 
+\item 
+void \hyperlink{classRS__Document_a1b95789328f2dd127f244c152271b93b}{set\-Active\-Pen} (\hyperlink{classRS__Pen}{R\-S\-\_\-\-Pen} p)
+\item 
+Q\-String \hyperlink{classRS__Document_a45f92f4e5ee38bd12c776ee8ce1aaf5d}{get\-Filename} () const 
+\item 
+Q\-String \hyperlink{classRS__Document_a2ad144d05f1d240dda9d5eebfcfb754d}{get\-Auto\-Save\-Filename} () const 
+\item 
+void \hyperlink{classRS__Document_aa351aad20b818b353b090a398813b72d}{set\-Filename} (const Q\-String \&fn)
+\item 
+virtual void \hyperlink{classRS__Document_a18e1ef5e5bbc7d5425bbcffaca272a52}{set\-Modified} (bool m)
+\item 
+virtual bool \hyperlink{classRS__Document_a5a00e0dba56983d5ff2afe4e364c5c0c}{is\-Modified} () const 
+\item 
+virtual void \hyperlink{classRS__Document_a10ef1b7c7dbda0913c59c2b533f31b64}{start\-Undo\-Cycle} ()
+\item 
+\hypertarget{classRS__Document_a0e17f10c919d92b785bf6abf8d357d37}{void {\bfseries set\-Graphic\-View} (\hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} $\ast$g)}\label{classRS__Document_a0e17f10c919d92b785bf6abf8d357d37}
+
+\item 
+\hypertarget{classRS__Document_a8c6cd8dad140fcaf0ecc2ffeb2b653e5}{\hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} $\ast$ {\bfseries get\-Graphic\-View} ()}\label{classRS__Document_a8c6cd8dad140fcaf0ecc2ffeb2b653e5}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classRS__Document_a33c3706d1fa8ae816192c085b72290f0}{modified}
+\item 
+\hyperlink{classRS__Pen}{R\-S\-\_\-\-Pen} \hyperlink{classRS__Document_a54935def017bc5ebab2dd56b3e7e106a}{active\-Pen}
+\item 
+Q\-String \hyperlink{classRS__Document_aefd3d25d96ec31943bdfd1453031a423}{filename}
+\item 
+Q\-String \hyperlink{classRS__Document_a5969ebd6f6d140a940d2c3e35048622b}{autosave\-Filename}
+\item 
+\hyperlink{classRS2_a077a6c94c9a0ab9962c4d4a612c7189b}{R\-S2\-::\-Format\-Type} \hyperlink{classRS__Document_a3039f46a236bb1c3f0208c5f304b3f4b}{format\-Type}
+\item 
+\hypertarget{classRS__Document_a62143f6b4f18cd3f29e8787308cb1f07}{\hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} $\ast$ {\bfseries gv}}\label{classRS__Document_a62143f6b4f18cd3f29e8787308cb1f07}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Base class for documents. Documents can be either graphics or blocks and are typically shown in graphic views. Documents hold an active pen for drawing in the Document, a file name and they know whether they have been modified or not.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__Document_ad4f493b59861514e06835437d83fae7e}{\index{R\-S\-\_\-\-Document@{R\-S\-\_\-\-Document}!R\-S\-\_\-\-Document@{R\-S\-\_\-\-Document}}
+\index{R\-S\-\_\-\-Document@{R\-S\-\_\-\-Document}!RS_Document@{R\-S\-\_\-\-Document}}
+\subsubsection[{R\-S\-\_\-\-Document}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Document\-::\-R\-S\-\_\-\-Document (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} $\ast$}]{parent = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classRS__Document_ad4f493b59861514e06835437d83fae7e}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Parent of the document. Often that's N\-U\-L\-L but for blocks it's the blocklist. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Document_ac306d94b55d65065fe2c56455c6b5355}{\index{R\-S\-\_\-\-Document@{R\-S\-\_\-\-Document}!get\-Active\-Pen@{get\-Active\-Pen}}
+\index{get\-Active\-Pen@{get\-Active\-Pen}!RS_Document@{R\-S\-\_\-\-Document}}
+\subsubsection[{get\-Active\-Pen}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Pen} R\-S\-\_\-\-Document\-::get\-Active\-Pen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Document_ac306d94b55d65065fe2c56455c6b5355}
+\begin{DoxyReturn}{Returns}
+Currently active drawing pen. 
+\end{DoxyReturn}
+\hypertarget{classRS__Document_a2ad144d05f1d240dda9d5eebfcfb754d}{\index{R\-S\-\_\-\-Document@{R\-S\-\_\-\-Document}!get\-Auto\-Save\-Filename@{get\-Auto\-Save\-Filename}}
+\index{get\-Auto\-Save\-Filename@{get\-Auto\-Save\-Filename}!RS_Document@{R\-S\-\_\-\-Document}}
+\subsubsection[{get\-Auto\-Save\-Filename}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Document\-::get\-Auto\-Save\-Filename (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Document_a2ad144d05f1d240dda9d5eebfcfb754d}
+\begin{DoxyReturn}{Returns}
+Auto-\/save file name of the document currently loaded. 
+\end{DoxyReturn}
+\hypertarget{classRS__Document_a45f92f4e5ee38bd12c776ee8ce1aaf5d}{\index{R\-S\-\_\-\-Document@{R\-S\-\_\-\-Document}!get\-Filename@{get\-Filename}}
+\index{get\-Filename@{get\-Filename}!RS_Document@{R\-S\-\_\-\-Document}}
+\subsubsection[{get\-Filename}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Document\-::get\-Filename (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Document_a45f92f4e5ee38bd12c776ee8ce1aaf5d}
+\begin{DoxyReturn}{Returns}
+File name of the document currently loaded. Note, that the default file name is empty. 
+\end{DoxyReturn}
+\hypertarget{classRS__Document_a3993bf1dd82399ec1b34c358ff153dba}{\index{R\-S\-\_\-\-Document@{R\-S\-\_\-\-Document}!is\-Document@{is\-Document}}
+\index{is\-Document@{is\-Document}!RS_Document@{R\-S\-\_\-\-Document}}
+\subsubsection[{is\-Document}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Document\-::is\-Document (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__Document_a3993bf1dd82399ec1b34c358ff153dba}
+\begin{DoxyReturn}{Returns}
+true for all document entities (e.\-g. Graphics or Blocks). 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classRS__Entity_a707a0ce416c9321d20005409e476f7da}{R\-S\-\_\-\-Entity}.
+
+\hypertarget{classRS__Document_a5a00e0dba56983d5ff2afe4e364c5c0c}{\index{R\-S\-\_\-\-Document@{R\-S\-\_\-\-Document}!is\-Modified@{is\-Modified}}
+\index{is\-Modified@{is\-Modified}!RS_Document@{R\-S\-\_\-\-Document}}
+\subsubsection[{is\-Modified}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Document\-::is\-Modified (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__Document_a5a00e0dba56983d5ff2afe4e364c5c0c}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & The document has been modified since it was last saved. \\
+\hline
+{\em false} & The document has not been modified since it was last saved. \\
+\hline
+\end{DoxyRetVals}
+
+
+Reimplemented in \hyperlink{classRS__Graphic_ab46ea774787769ba5ecde9f8025746e7}{R\-S\-\_\-\-Graphic}.
+
+\hypertarget{classRS__Document_af8dfb197c811c4a0655499447d3e9a82}{\index{R\-S\-\_\-\-Document@{R\-S\-\_\-\-Document}!remove\-Undoable@{remove\-Undoable}}
+\index{remove\-Undoable@{remove\-Undoable}!RS_Document@{R\-S\-\_\-\-Document}}
+\subsubsection[{remove\-Undoable}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Document\-::remove\-Undoable (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Undoable} $\ast$}]{u}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__Document_af8dfb197c811c4a0655499447d3e9a82}
+Removes an entity from the entiy container. Implementation from \hyperlink{classRS__Undo}{R\-S\-\_\-\-Undo}. 
+
+Implements \hyperlink{classRS__Undo_af6e7ff4fb277e2d6635200f0563310ef}{R\-S\-\_\-\-Undo}.
+
+\hypertarget{classRS__Document_a1b95789328f2dd127f244c152271b93b}{\index{R\-S\-\_\-\-Document@{R\-S\-\_\-\-Document}!set\-Active\-Pen@{set\-Active\-Pen}}
+\index{set\-Active\-Pen@{set\-Active\-Pen}!RS_Document@{R\-S\-\_\-\-Document}}
+\subsubsection[{set\-Active\-Pen}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Document\-::set\-Active\-Pen (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Pen}}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Document_a1b95789328f2dd127f244c152271b93b}
+Sets the currently active drawing pen to p. \hypertarget{classRS__Document_aa351aad20b818b353b090a398813b72d}{\index{R\-S\-\_\-\-Document@{R\-S\-\_\-\-Document}!set\-Filename@{set\-Filename}}
+\index{set\-Filename@{set\-Filename}!RS_Document@{R\-S\-\_\-\-Document}}
+\subsubsection[{set\-Filename}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Document\-::set\-Filename (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{fn}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Document_aa351aad20b818b353b090a398813b72d}
+Sets file name for the document currently loaded. \hypertarget{classRS__Document_a18e1ef5e5bbc7d5425bbcffaca272a52}{\index{R\-S\-\_\-\-Document@{R\-S\-\_\-\-Document}!set\-Modified@{set\-Modified}}
+\index{set\-Modified@{set\-Modified}!RS_Document@{R\-S\-\_\-\-Document}}
+\subsubsection[{set\-Modified}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Document\-::set\-Modified (
+\begin{DoxyParamCaption}
+\item[{bool}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__Document_a18e1ef5e5bbc7d5425bbcffaca272a52}
+Sets the documents modified status to 'm'. 
+
+Reimplemented in \hyperlink{classRS__Graphic_a03473e425c04214eb54238ed23842900}{R\-S\-\_\-\-Graphic}, and \hyperlink{classRS__Block_a7f5958a0728ee32ad361cbb79c4cc3f1}{R\-S\-\_\-\-Block}.
+
+\hypertarget{classRS__Document_a10ef1b7c7dbda0913c59c2b533f31b64}{\index{R\-S\-\_\-\-Document@{R\-S\-\_\-\-Document}!start\-Undo\-Cycle@{start\-Undo\-Cycle}}
+\index{start\-Undo\-Cycle@{start\-Undo\-Cycle}!RS_Document@{R\-S\-\_\-\-Document}}
+\subsubsection[{start\-Undo\-Cycle}]{\setlength{\rightskip}{0pt plus 5cm}virtual void R\-S\-\_\-\-Document\-::start\-Undo\-Cycle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__Document_a10ef1b7c7dbda0913c59c2b533f31b64}
+Overwritten to set modified flag before starting an undo cycle. 
+
+Reimplemented from \hyperlink{classRS__Undo_ae5072794f8b500d8ac71ec778465d9d1}{R\-S\-\_\-\-Undo}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classRS__Document_a54935def017bc5ebab2dd56b3e7e106a}{\index{R\-S\-\_\-\-Document@{R\-S\-\_\-\-Document}!active\-Pen@{active\-Pen}}
+\index{active\-Pen@{active\-Pen}!RS_Document@{R\-S\-\_\-\-Document}}
+\subsubsection[{active\-Pen}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Pen} R\-S\-\_\-\-Document\-::active\-Pen\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__Document_a54935def017bc5ebab2dd56b3e7e106a}
+Active pen. \hypertarget{classRS__Document_a5969ebd6f6d140a940d2c3e35048622b}{\index{R\-S\-\_\-\-Document@{R\-S\-\_\-\-Document}!autosave\-Filename@{autosave\-Filename}}
+\index{autosave\-Filename@{autosave\-Filename}!RS_Document@{R\-S\-\_\-\-Document}}
+\subsubsection[{autosave\-Filename}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Document\-::autosave\-Filename\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__Document_a5969ebd6f6d140a940d2c3e35048622b}
+Auto-\/save file name of document. \hypertarget{classRS__Document_aefd3d25d96ec31943bdfd1453031a423}{\index{R\-S\-\_\-\-Document@{R\-S\-\_\-\-Document}!filename@{filename}}
+\index{filename@{filename}!RS_Document@{R\-S\-\_\-\-Document}}
+\subsubsection[{filename}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-Document\-::filename\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__Document_aefd3d25d96ec31943bdfd1453031a423}
+File name of the document or empty for a new document. \hypertarget{classRS__Document_a3039f46a236bb1c3f0208c5f304b3f4b}{\index{R\-S\-\_\-\-Document@{R\-S\-\_\-\-Document}!format\-Type@{format\-Type}}
+\index{format\-Type@{format\-Type}!RS_Document@{R\-S\-\_\-\-Document}}
+\subsubsection[{format\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Format\-Type} R\-S\-\_\-\-Document\-::format\-Type\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__Document_a3039f46a236bb1c3f0208c5f304b3f4b}
+Format type \hypertarget{classRS__Document_a33c3706d1fa8ae816192c085b72290f0}{\index{R\-S\-\_\-\-Document@{R\-S\-\_\-\-Document}!modified@{modified}}
+\index{modified@{modified}!RS_Document@{R\-S\-\_\-\-Document}}
+\subsubsection[{modified}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Document\-::modified\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__Document_a33c3706d1fa8ae816192c085b72290f0}
+Flag set if the document was modified and not yet saved. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-document.\-h\item 
+librecad/src/lib/engine/rs\-\_\-document.\-cpp\end{DoxyCompactItemize}

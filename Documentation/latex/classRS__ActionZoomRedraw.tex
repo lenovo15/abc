@@ -1,0 +1,93 @@
+\hypertarget{classRS__ActionZoomRedraw}{\section{R\-S\-\_\-\-Action\-Zoom\-Redraw Class Reference}
+\label{classRS__ActionZoomRedraw}\index{R\-S\-\_\-\-Action\-Zoom\-Redraw@{R\-S\-\_\-\-Action\-Zoom\-Redraw}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionzoomredraw.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Zoom\-Redraw\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__ActionZoomRedraw}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__ActionZoomRedraw_a9fb9032603111b877a53bde51eba7b43}{R\-S\-\_\-\-Action\-Zoom\-Redraw} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)
+\item 
+virtual void \hyperlink{classRS__ActionZoomRedraw_a33c45dd6fe16b61b4a8119ef8da6637a}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionZoomRedraw_a591c6dea729a8792bdf4064716d727a5}{trigger} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionZoomRedraw_a948e5164d0eb3621fcfd792d835d9a8c}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionZoomRedraw_a948e5164d0eb3621fcfd792d835d9a8c}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action triggers an auto zoom.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__ActionZoomRedraw_a9fb9032603111b877a53bde51eba7b43}{\index{R\-S\-\_\-\-Action\-Zoom\-Redraw@{R\-S\-\_\-\-Action\-Zoom\-Redraw}!R\-S\-\_\-\-Action\-Zoom\-Redraw@{R\-S\-\_\-\-Action\-Zoom\-Redraw}}
+\index{R\-S\-\_\-\-Action\-Zoom\-Redraw@{R\-S\-\_\-\-Action\-Zoom\-Redraw}!RS_ActionZoomRedraw@{R\-S\-\_\-\-Action\-Zoom\-Redraw}}
+\subsubsection[{R\-S\-\_\-\-Action\-Zoom\-Redraw}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Action\-Zoom\-Redraw\-::\-R\-S\-\_\-\-Action\-Zoom\-Redraw (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} \&}]{graphic\-View}
+\end{DoxyParamCaption}
+)}}\label{classRS__ActionZoomRedraw_a9fb9032603111b877a53bde51eba7b43}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em keep\-Aspect\-Ratio} & true\-: keep same zoom value for x/y. false\-: adjust both x and y individually \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionZoomRedraw_a33c45dd6fe16b61b4a8119ef8da6637a}{\index{R\-S\-\_\-\-Action\-Zoom\-Redraw@{R\-S\-\_\-\-Action\-Zoom\-Redraw}!init@{init}}
+\index{init@{init}!RS_ActionZoomRedraw@{R\-S\-\_\-\-Action\-Zoom\-Redraw}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Zoom\-Redraw\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionZoomRedraw_a33c45dd6fe16b61b4a8119ef8da6637a}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a05b7dca5deeb371eb51edcb73facd45f}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionZoomRedraw_a591c6dea729a8792bdf4064716d727a5}{\index{R\-S\-\_\-\-Action\-Zoom\-Redraw@{R\-S\-\_\-\-Action\-Zoom\-Redraw}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionZoomRedraw@{R\-S\-\_\-\-Action\-Zoom\-Redraw}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Zoom\-Redraw\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionZoomRedraw_a591c6dea729a8792bdf4064716d727a5}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa2ba8f6f697f735eace4ec5449c0b8cd}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionzoomredraw.\-h\item 
+librecad/src/actions/rs\-\_\-actionzoomredraw.\-cpp\end{DoxyCompactItemize}

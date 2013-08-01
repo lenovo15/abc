@@ -1,0 +1,94 @@
+\hypertarget{classDRW__LWPolyline}{\section{D\-R\-W\-\_\-\-L\-W\-Polyline Class Reference}
+\label{classDRW__LWPolyline}\index{D\-R\-W\-\_\-\-L\-W\-Polyline@{D\-R\-W\-\_\-\-L\-W\-Polyline}}
+}
+
+
+Class to handle lwpolyline entity.  
+
+
+
+
+{\ttfamily \#include $<$drw\-\_\-entities.\-h$>$}
+
+Inheritance diagram for D\-R\-W\-\_\-\-L\-W\-Polyline\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDRW__LWPolyline}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDRW__LWPolyline_a19b9554fccc115de6d4a0ee4d556b6f2}{virtual void {\bfseries apply\-Extrusion} ()}\label{classDRW__LWPolyline_a19b9554fccc115de6d4a0ee4d556b6f2}
+
+\item 
+\hypertarget{classDRW__LWPolyline_a80c04abc7c6b5a1fecc5bd790e20fcde}{void {\bfseries add\-Vertex} (\hyperlink{classDRW__Vertex2D}{D\-R\-W\-\_\-\-Vertex2\-D} v)}\label{classDRW__LWPolyline_a80c04abc7c6b5a1fecc5bd790e20fcde}
+
+\item 
+\hypertarget{classDRW__LWPolyline_a472ab6e5ba8919a138937c293092c818}{\hyperlink{classDRW__Vertex2D}{D\-R\-W\-\_\-\-Vertex2\-D} $\ast$ {\bfseries add\-Vertex} ()}\label{classDRW__LWPolyline_a472ab6e5ba8919a138937c293092c818}
+
+\item 
+\hypertarget{classDRW__LWPolyline_a05ab17440df5865cf574aeee432c27cd}{void {\bfseries parse\-Code} (int code, \hyperlink{classdxfReader}{dxf\-Reader} $\ast$reader)}\label{classDRW__LWPolyline_a05ab17440df5865cf574aeee432c27cd}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classDRW__LWPolyline_a7aa318239f9956b6e0331199491e20a5}{vertexnum}
+\item 
+int \hyperlink{classDRW__LWPolyline_a66f6b406675a3c4ef540099356973510}{flags}
+\item 
+double \hyperlink{classDRW__LWPolyline_aedd6dd732a0b425711921104b52f8ce9}{width}
+\item 
+double \hyperlink{classDRW__LWPolyline_a86ba4b8badb8f008997401ec9f084a3b}{elevation}
+\item 
+double \hyperlink{classDRW__LWPolyline_abab38cc3e874a5c89469b382ebeb2284}{thickness}
+\item 
+\hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} \hyperlink{classDRW__LWPolyline_a859105f0a27e812dc074483809a38194}{ext\-Point}
+\item 
+\hyperlink{classDRW__Vertex2D}{D\-R\-W\-\_\-\-Vertex2\-D} $\ast$ \hyperlink{classDRW__LWPolyline_af59a2babb12d2f8865991c39cf464538}{vertex}
+\item 
+std\-::vector$<$ \hyperlink{classDRW__Vertex2D}{D\-R\-W\-\_\-\-Vertex2\-D} $\ast$ $>$ \hyperlink{classDRW__LWPolyline_a2da7f3449eec6588fb3765a1c9541404}{vertlist}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class to handle lwpolyline entity. 
+
+Class to handle lwpolyline entity \begin{DoxyAuthor}{Author}
+Rallaz 
+\end{DoxyAuthor}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classDRW__LWPolyline_a86ba4b8badb8f008997401ec9f084a3b}{\index{D\-R\-W\-\_\-\-L\-W\-Polyline@{D\-R\-W\-\_\-\-L\-W\-Polyline}!elevation@{elevation}}
+\index{elevation@{elevation}!DRW_LWPolyline@{D\-R\-W\-\_\-\-L\-W\-Polyline}}
+\subsubsection[{elevation}]{\setlength{\rightskip}{0pt plus 5cm}double D\-R\-W\-\_\-\-L\-W\-Polyline\-::elevation}}\label{classDRW__LWPolyline_a86ba4b8badb8f008997401ec9f084a3b}
+elevation, code 38 \hypertarget{classDRW__LWPolyline_a859105f0a27e812dc074483809a38194}{\index{D\-R\-W\-\_\-\-L\-W\-Polyline@{D\-R\-W\-\_\-\-L\-W\-Polyline}!ext\-Point@{ext\-Point}}
+\index{ext\-Point@{ext\-Point}!DRW_LWPolyline@{D\-R\-W\-\_\-\-L\-W\-Polyline}}
+\subsubsection[{ext\-Point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-R\-W\-\_\-\-Coord} D\-R\-W\-\_\-\-L\-W\-Polyline\-::ext\-Point}}\label{classDRW__LWPolyline_a859105f0a27e812dc074483809a38194}
+Dir extrusion normal vector, code 210, 220 \& 230 \hypertarget{classDRW__LWPolyline_a66f6b406675a3c4ef540099356973510}{\index{D\-R\-W\-\_\-\-L\-W\-Polyline@{D\-R\-W\-\_\-\-L\-W\-Polyline}!flags@{flags}}
+\index{flags@{flags}!DRW_LWPolyline@{D\-R\-W\-\_\-\-L\-W\-Polyline}}
+\subsubsection[{flags}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-L\-W\-Polyline\-::flags}}\label{classDRW__LWPolyline_a66f6b406675a3c4ef540099356973510}
+polyline flag, code 70, default 0 \hypertarget{classDRW__LWPolyline_abab38cc3e874a5c89469b382ebeb2284}{\index{D\-R\-W\-\_\-\-L\-W\-Polyline@{D\-R\-W\-\_\-\-L\-W\-Polyline}!thickness@{thickness}}
+\index{thickness@{thickness}!DRW_LWPolyline@{D\-R\-W\-\_\-\-L\-W\-Polyline}}
+\subsubsection[{thickness}]{\setlength{\rightskip}{0pt plus 5cm}double D\-R\-W\-\_\-\-L\-W\-Polyline\-::thickness}}\label{classDRW__LWPolyline_abab38cc3e874a5c89469b382ebeb2284}
+thickness, code 39 \hypertarget{classDRW__LWPolyline_af59a2babb12d2f8865991c39cf464538}{\index{D\-R\-W\-\_\-\-L\-W\-Polyline@{D\-R\-W\-\_\-\-L\-W\-Polyline}!vertex@{vertex}}
+\index{vertex@{vertex}!DRW_LWPolyline@{D\-R\-W\-\_\-\-L\-W\-Polyline}}
+\subsubsection[{vertex}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-R\-W\-\_\-\-Vertex2\-D}$\ast$ D\-R\-W\-\_\-\-L\-W\-Polyline\-::vertex}}\label{classDRW__LWPolyline_af59a2babb12d2f8865991c39cf464538}
+current vertex to add data \hypertarget{classDRW__LWPolyline_a7aa318239f9956b6e0331199491e20a5}{\index{D\-R\-W\-\_\-\-L\-W\-Polyline@{D\-R\-W\-\_\-\-L\-W\-Polyline}!vertexnum@{vertexnum}}
+\index{vertexnum@{vertexnum}!DRW_LWPolyline@{D\-R\-W\-\_\-\-L\-W\-Polyline}}
+\subsubsection[{vertexnum}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-L\-W\-Polyline\-::vertexnum}}\label{classDRW__LWPolyline_a7aa318239f9956b6e0331199491e20a5}
+number of vertex, code 90 \hypertarget{classDRW__LWPolyline_a2da7f3449eec6588fb3765a1c9541404}{\index{D\-R\-W\-\_\-\-L\-W\-Polyline@{D\-R\-W\-\_\-\-L\-W\-Polyline}!vertlist@{vertlist}}
+\index{vertlist@{vertlist}!DRW_LWPolyline@{D\-R\-W\-\_\-\-L\-W\-Polyline}}
+\subsubsection[{vertlist}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf D\-R\-W\-\_\-\-Vertex2\-D} $\ast$$>$ D\-R\-W\-\_\-\-L\-W\-Polyline\-::vertlist}}\label{classDRW__LWPolyline_a2da7f3449eec6588fb3765a1c9541404}
+vertex list \hypertarget{classDRW__LWPolyline_aedd6dd732a0b425711921104b52f8ce9}{\index{D\-R\-W\-\_\-\-L\-W\-Polyline@{D\-R\-W\-\_\-\-L\-W\-Polyline}!width@{width}}
+\index{width@{width}!DRW_LWPolyline@{D\-R\-W\-\_\-\-L\-W\-Polyline}}
+\subsubsection[{width}]{\setlength{\rightskip}{0pt plus 5cm}double D\-R\-W\-\_\-\-L\-W\-Polyline\-::width}}\label{classDRW__LWPolyline_aedd6dd732a0b425711921104b52f8ce9}
+constant width, code 43 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+libraries/libdxfrw/src/drw\-\_\-entities.\-h\item 
+libraries/libdxfrw/src/drw\-\_\-entities.\-cpp\end{DoxyCompactItemize}

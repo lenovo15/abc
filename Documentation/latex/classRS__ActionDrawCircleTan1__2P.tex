@@ -1,0 +1,254 @@
+\hypertarget{classRS__ActionDrawCircleTan1__2P}{\section{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P Class Reference}
+\label{classRS__ActionDrawCircleTan1__2P}\index{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actiondrawcircletan1\-\_\-2p.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classRS__ActionDrawCircleTan1__2P}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionDrawCircleTan1__2P_a373f052ae219b6fe648ad61142e91e87}{Status} \{ {\bfseries Set\-Circle1} =0, 
+{\bfseries Set\-Point1} =1, 
+{\bfseries Set\-Point2} =2, 
+{\bfseries Set\-Center}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__ActionDrawCircleTan1__2P_ac5b7b1849141bf862b4c35909033feba}{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)
+\item 
+virtual \hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__ActionDrawCircleTan1__2P_a67e77b353ae96930a41be9af0b145053}{rtti} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawCircleTan1__2P_a694a5a5f6803b49a85b21c8dd33cf56d}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionDrawCircleTan1__2P_af85c0aaecb1c0405e7991bdcb044b967}{trigger} ()
+\item 
+\hypertarget{classRS__ActionDrawCircleTan1__2P_a89cb4bba99b33c82ffeb664e7446358d}{virtual bool {\bfseries get\-Centers} ()}\label{classRS__ActionDrawCircleTan1__2P_a89cb4bba99b33c82ffeb664e7446358d}
+
+\item 
+\hypertarget{classRS__ActionDrawCircleTan1__2P_adcbba395d5eec41b1c3be8567fe1bb2a}{virtual bool {\bfseries prepare\-Preview} ()}\label{classRS__ActionDrawCircleTan1__2P_adcbba395d5eec41b1c3be8567fe1bb2a}
+
+\item 
+virtual void \hyperlink{classRS__ActionDrawCircleTan1__2P_a1e5e06da2b702b85bebf910bffd3cc75}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDrawCircleTan1__2P_a2c2cf31a5c3026ce8a956966dfef6913}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDrawCircleTan1__2P_a3c389cf2e5e5708d44bca6fc8526160a}{coordinate\-Event} (\hyperlink{classRS__CoordinateEvent}{R\-S\-\_\-\-Coordinate\-Event} $\ast$e)
+\item 
+virtual Q\-String\-List \hyperlink{classRS__ActionDrawCircleTan1__2P_aa38679944da8e5aa5ea2073fca1002cf}{get\-Available\-Commands} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawCircleTan1__2P_a2a4f22a1e5b149dd8a7d029a1535fd40}{finish} (bool update\-T\-B=true)
+\item 
+virtual void \hyperlink{classRS__ActionDrawCircleTan1__2P_acdbe11711caccb83686efd13dd842798}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawCircleTan1__2P_a972b009d07dc5898d26edc0487488bc8}{update\-Mouse\-Cursor} ()
+\item 
+\hypertarget{classRS__ActionDrawCircleTan1__2P_a31fccc718357eaa582df02af7f05ff4a}{double {\bfseries get\-Radius} ()}\label{classRS__ActionDrawCircleTan1__2P_a31fccc718357eaa582df02af7f05ff4a}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionDrawCircleTan1__2P_a3456148d9785bb288e6917cdaf9ad4fb}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} type, Q\-Object $\ast$)}\label{classRS__ActionDrawCircleTan1__2P_a3456148d9785bb288e6917cdaf9ad4fb}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$ \hyperlink{classRS__ActionDrawCircleTan1__2P_a8f717155b0a030dda322a0622ecc4f8a}{catch\-Circle} (Q\-Mouse\-Event $\ast$e)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionDrawCircleTan1__2P_a7a9af6274ffa4b6d8c28e79419e0c801}{\hyperlink{classRS__AtomicEntity}{R\-S\-\_\-\-Atomic\-Entity} $\ast$ {\bfseries circle}}\label{classRS__ActionDrawCircleTan1__2P_a7a9af6274ffa4b6d8c28e79419e0c801}
+
+\item 
+\hypertarget{classRS__ActionDrawCircleTan1__2P_a55e50c6d8e3c7508a4e98a3607696d1a}{Q\-Vector$<$ \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} $>$ {\bfseries points}}\label{classRS__ActionDrawCircleTan1__2P_a55e50c6d8e3c7508a4e98a3607696d1a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Draw ellipse by foci and a point on ellipse
+
+\begin{DoxyAuthor}{Author}
+Dongxu Li 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionDrawCircleTan1__2P_a373f052ae219b6fe648ad61142e91e87}{\index{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}!Status@{Status}}
+\index{Status@{Status}!RS_ActionDrawCircleTan1_2P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P\-::\-Status}}}\label{classRS__ActionDrawCircleTan1__2P_a373f052ae219b6fe648ad61142e91e87}
+Action States. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__ActionDrawCircleTan1__2P_ac5b7b1849141bf862b4c35909033feba}{\index{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}!R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}}
+\index{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}!RS_ActionDrawCircleTan1_2P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}}
+\subsubsection[{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P\-::\-R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} \&}]{graphic\-View}
+\end{DoxyParamCaption}
+)}}\label{classRS__ActionDrawCircleTan1__2P_ac5b7b1849141bf862b4c35909033feba}
+Constructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionDrawCircleTan1__2P_a8f717155b0a030dda322a0622ecc4f8a}{\index{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}!catch\-Circle@{catch\-Circle}}
+\index{catch\-Circle@{catch\-Circle}!RS_ActionDrawCircleTan1_2P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}}
+\subsubsection[{catch\-Circle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Entity} $\ast$ R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P\-::catch\-Circle (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDrawCircleTan1__2P_a8f717155b0a030dda322a0622ecc4f8a}
+Insert
+
+$<$ Text 15
+
+$<$ Text 15
+
+$<$ Aligned Dimension
+
+$<$ Linear Dimension
+
+$<$ Radial Dimension
+
+$<$ Diametric Dimension
+
+$<$ Angular Dimension
+
+$<$ Leader Dimension \hypertarget{classRS__ActionDrawCircleTan1__2P_a3c389cf2e5e5708d44bca6fc8526160a}{\index{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}!coordinate\-Event@{coordinate\-Event}}
+\index{coordinate\-Event@{coordinate\-Event}!RS_ActionDrawCircleTan1_2P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}}
+\subsubsection[{coordinate\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P\-::coordinate\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Coordinate\-Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawCircleTan1__2P_a3c389cf2e5e5708d44bca6fc8526160a}
+Coordinate event. Triggered usually from a command line. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a9013e88769edd39b2a74af5add2986c9}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawCircleTan1__2P_a2a4f22a1e5b149dd8a7d029a1535fd40}{\index{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}!finish@{finish}}
+\index{finish@{finish}!RS_ActionDrawCircleTan1_2P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}}
+\subsubsection[{finish}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P\-::finish (
+\begin{DoxyParamCaption}
+\item[{bool}]{update\-T\-B = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawCircleTan1__2P_a2a4f22a1e5b149dd8a7d029a1535fd40}
+Finishes this action. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_af382ba093466b3acd8213e684529edc6}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawCircleTan1__2P_aa38679944da8e5aa5ea2073fca1002cf}{\index{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}!get\-Available\-Commands@{get\-Available\-Commands}}
+\index{get\-Available\-Commands@{get\-Available\-Commands}!RS_ActionDrawCircleTan1_2P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}}
+\subsubsection[{get\-Available\-Commands}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String\-List R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P\-::get\-Available\-Commands (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawCircleTan1__2P_aa38679944da8e5aa5ea2073fca1002cf}
+Must be implemented to return the currently available commands for the command line. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acafdac8d18d3f053eda872581fb3e27d}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawCircleTan1__2P_a694a5a5f6803b49a85b21c8dd33cf56d}{\index{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}!init@{init}}
+\index{init@{init}!RS_ActionDrawCircleTan1_2P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawCircleTan1__2P_a694a5a5f6803b49a85b21c8dd33cf56d}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae5113b2aef5a10acd192786b99580e4a}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawCircleTan1__2P_a1e5e06da2b702b85bebf910bffd3cc75}{\index{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_ActionDrawCircleTan1_2P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawCircleTan1__2P_a1e5e06da2b702b85bebf910bffd3cc75}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawCircleTan1__2P_a2c2cf31a5c3026ce8a956966dfef6913}{\index{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionDrawCircleTan1_2P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawCircleTan1__2P_a2c2cf31a5c3026ce8a956966dfef6913}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawCircleTan1__2P_a67e77b353ae96930a41be9af0b145053}{\index{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_ActionDrawCircleTan1_2P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__ActionDrawCircleTan1__2P_a67e77b353ae96930a41be9af0b145053}
+Must be implemented to return the I\-D of this action.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]no default implementation \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af877a66b5b4a7053f2b1f0519c57a6f5}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawCircleTan1__2P_af85c0aaecb1c0405e7991bdcb044b967}{\index{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionDrawCircleTan1_2P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawCircleTan1__2P_af85c0aaecb1c0405e7991bdcb044b967}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawCircleTan1__2P_acdbe11711caccb83686efd13dd842798}{\index{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionDrawCircleTan1_2P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawCircleTan1__2P_acdbe11711caccb83686efd13dd842798}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawCircleTan1__2P_a972b009d07dc5898d26edc0487488bc8}{\index{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionDrawCircleTan1_2P@{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawCircleTan1__2P_a972b009d07dc5898d26edc0487488bc8}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actiondrawcircletan1\-\_\-2p.\-h\item 
+librecad/src/actions/rs\-\_\-actiondrawcircletan1\-\_\-2p.\-cpp\end{DoxyCompactItemize}

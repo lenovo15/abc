@@ -1,0 +1,76 @@
+\hypertarget{classRS__ActionLayersToggleView}{\section{R\-S\-\_\-\-Action\-Layers\-Toggle\-View Class Reference}
+\label{classRS__ActionLayersToggleView}\index{R\-S\-\_\-\-Action\-Layers\-Toggle\-View@{R\-S\-\_\-\-Action\-Layers\-Toggle\-View}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionlayerstoggleview.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Layers\-Toggle\-View\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__ActionLayersToggleView}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionLayersToggleView_ad1aed2cc39e0519193037206df1b2073}{{\bfseries R\-S\-\_\-\-Action\-Layers\-Toggle\-View} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionLayersToggleView_ad1aed2cc39e0519193037206df1b2073}
+
+\item 
+virtual void \hyperlink{classRS__ActionLayersToggleView_a836ac530f75b63a243e357c1a87e1b81}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionLayersToggleView_a3892ee8b016c999f11b31dc1eb5bc2a1}{trigger} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionLayersToggleView_af0d44f0e3d69d96163d77b983941cdcc}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionLayersToggleView_af0d44f0e3d69d96163d77b983941cdcc}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to edit layers.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionLayersToggleView_a836ac530f75b63a243e357c1a87e1b81}{\index{R\-S\-\_\-\-Action\-Layers\-Toggle\-View@{R\-S\-\_\-\-Action\-Layers\-Toggle\-View}!init@{init}}
+\index{init@{init}!RS_ActionLayersToggleView@{R\-S\-\_\-\-Action\-Layers\-Toggle\-View}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Layers\-Toggle\-View\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionLayersToggleView_a836ac530f75b63a243e357c1a87e1b81}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a05b7dca5deeb371eb51edcb73facd45f}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionLayersToggleView_a3892ee8b016c999f11b31dc1eb5bc2a1}{\index{R\-S\-\_\-\-Action\-Layers\-Toggle\-View@{R\-S\-\_\-\-Action\-Layers\-Toggle\-View}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionLayersToggleView@{R\-S\-\_\-\-Action\-Layers\-Toggle\-View}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Layers\-Toggle\-View\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionLayersToggleView_a3892ee8b016c999f11b31dc1eb5bc2a1}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa2ba8f6f697f735eace4ec5449c0b8cd}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionlayerstoggleview.\-h\item 
+librecad/src/actions/rs\-\_\-actionlayerstoggleview.\-cpp\end{DoxyCompactItemize}

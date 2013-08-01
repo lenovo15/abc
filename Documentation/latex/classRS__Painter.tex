@@ -1,0 +1,184 @@
+\hypertarget{classRS__Painter}{\section{R\-S\-\_\-\-Painter Class Reference}
+\label{classRS__Painter}\index{R\-S\-\_\-\-Painter@{R\-S\-\_\-\-Painter}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-painter.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Painter\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRS__Painter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classRS__Painter_a88a1a453bc7e08f214052c3adf0503b8}{set\-Drawing\-Mode} (\hyperlink{classRS2_a67196f135592d0f8eff894bd126685b2}{R\-S2\-::\-Drawing\-Mode} m)
+\item 
+\hypertarget{classRS__Painter_a8d1570665fffca8525b17a549a551873}{void {\bfseries set\-Draw\-Selected\-Only} (bool dso)}\label{classRS__Painter_a8d1570665fffca8525b17a549a551873}
+
+\item 
+\hypertarget{classRS__Painter_a60040b54a2cf9f3c1a1b0adc8a96dd82}{bool {\bfseries should\-Draw\-Selected} ()}\label{classRS__Painter_a60040b54a2cf9f3c1a1b0adc8a96dd82}
+
+\item 
+\hyperlink{classRS2_a67196f135592d0f8eff894bd126685b2}{R\-S2\-::\-Drawing\-Mode} \hyperlink{classRS__Painter_a80521757acab6e423095a789074351a0}{get\-Drawing\-Mode} ()
+\item 
+\hypertarget{classRS__Painter_a0aad518b8aede9e847f9743ff474485a}{virtual void {\bfseries move\-To} (int x, int y)=0}\label{classRS__Painter_a0aad518b8aede9e847f9743ff474485a}
+
+\item 
+\hypertarget{classRS__Painter_a779a7272bbb90c16e84f2fc18efd2e09}{virtual void {\bfseries line\-To} (int x, int y)=0}\label{classRS__Painter_a779a7272bbb90c16e84f2fc18efd2e09}
+
+\item 
+\hypertarget{classRS__Painter_a68549b379070674f7b61b01ce84326f9}{virtual void {\bfseries draw\-Grid\-Point} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&p)=0}\label{classRS__Painter_a68549b379070674f7b61b01ce84326f9}
+
+\item 
+\hypertarget{classRS__Painter_a97193625a8bbe5a72980e12177e28515}{virtual void {\bfseries draw\-Point} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&p)=0}\label{classRS__Painter_a97193625a8bbe5a72980e12177e28515}
+
+\item 
+\hypertarget{classRS__Painter_aca9e841aa5d7749cf5b82b9e5a74368f}{virtual void {\bfseries draw\-Line} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&p1, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&p2)=0}\label{classRS__Painter_aca9e841aa5d7749cf5b82b9e5a74368f}
+
+\item 
+\hypertarget{classRS__Painter_a71fd68254615cf767e0339d7dd24248e}{virtual void {\bfseries draw\-Rect} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&p1, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&p2)}\label{classRS__Painter_a71fd68254615cf767e0339d7dd24248e}
+
+\item 
+\hypertarget{classRS__Painter_a602d646911767b4971ecae5a743e99a7}{virtual void {\bfseries draw\-Arc} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&cp, double radius, double a1, double a2, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&p1, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&p2, bool reversed)=0}\label{classRS__Painter_a602d646911767b4971ecae5a743e99a7}
+
+\item 
+\hypertarget{classRS__Painter_acd8b8b5fb18669b91b1f6010650a44db}{virtual void {\bfseries draw\-Arc} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&cp, double radius, double a1, double a2, bool reversed)=0}\label{classRS__Painter_acd8b8b5fb18669b91b1f6010650a44db}
+
+\item 
+\hypertarget{classRS__Painter_adebc18b790e49d2dfad8598a18301820}{void {\bfseries create\-Arc} (Q\-Polygon \&pa, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&cp, double radius, double a1, double a2, bool reversed)}\label{classRS__Painter_adebc18b790e49d2dfad8598a18301820}
+
+\item 
+\hypertarget{classRS__Painter_a1fc5b87c7101968aeccab99ac92cef8b}{void {\bfseries create\-Ellipse} (Q\-Polygon \&pa, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&cp, double radius1, double radius2, double angle, double angle1, double angle2, bool reversed)}\label{classRS__Painter_a1fc5b87c7101968aeccab99ac92cef8b}
+
+\item 
+\hypertarget{classRS__Painter_a98680df13196e5db8b9d1e73d7d72650}{virtual void {\bfseries draw\-Circle} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&cp, double radius)=0}\label{classRS__Painter_a98680df13196e5db8b9d1e73d7d72650}
+
+\item 
+\hypertarget{classRS__Painter_abf2b32a5e4e37b8e800c0bc0a666c14e}{virtual void {\bfseries draw\-Ellipse} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&cp, double radius1, double radius2, double angle, double angle1, double angle2, bool reversed)=0}\label{classRS__Painter_abf2b32a5e4e37b8e800c0bc0a666c14e}
+
+\item 
+\hypertarget{classRS__Painter_a77fbdfab54b1be74f1b17b245171e378}{virtual void {\bfseries draw\-Img} (Q\-Image \&img, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&pos, double angle, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&factor, int sx, int sy, int sw, int sh)=0}\label{classRS__Painter_a77fbdfab54b1be74f1b17b245171e378}
+
+\item 
+\hypertarget{classRS__Painter_a31fd58bdf5451d6d265f144f09ebed3a}{virtual void {\bfseries draw\-Text\-H} (int x1, int y1, int x2, int y2, const Q\-String \&text)=0}\label{classRS__Painter_a31fd58bdf5451d6d265f144f09ebed3a}
+
+\item 
+\hypertarget{classRS__Painter_a34752eff7bfabd45d2bf9a8b5ef87020}{virtual void {\bfseries draw\-Text\-V} (int x1, int y1, int x2, int y2, const Q\-String \&text)=0}\label{classRS__Painter_a34752eff7bfabd45d2bf9a8b5ef87020}
+
+\item 
+\hypertarget{classRS__Painter_aa1cb9ce06be9a432c4e96e279f2aeb98}{virtual void {\bfseries fill\-Rect} (int x1, int y1, int w, int h, const \hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \&col)=0}\label{classRS__Painter_aa1cb9ce06be9a432c4e96e279f2aeb98}
+
+\item 
+\hypertarget{classRS__Painter_acecefb7c38745f731042da81d566fc59}{virtual void {\bfseries fill\-Rect} (const Q\-Rect\-F \&rectangle, const \hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \&color)=0}\label{classRS__Painter_acecefb7c38745f731042da81d566fc59}
+
+\item 
+\hypertarget{classRS__Painter_a11352f2e365ac4ff5b1f75afca74937b}{virtual void {\bfseries fill\-Rect} (const Q\-Rect\-F \&rectangle, const Q\-Brush \&brush)=0}\label{classRS__Painter_a11352f2e365ac4ff5b1f75afca74937b}
+
+\item 
+\hypertarget{classRS__Painter_ae3e44c750fdad1b2f4e0c24d73a4d6e8}{virtual void {\bfseries fill\-Triangle} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&p1, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&p2, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&p3)=0}\label{classRS__Painter_ae3e44c750fdad1b2f4e0c24d73a4d6e8}
+
+\item 
+\hypertarget{classRS__Painter_a052902d6ed41576fd0473d60f9eb3ae1}{virtual void {\bfseries draw\-Path} (const Q\-Painter\-Path \&path)=0}\label{classRS__Painter_a052902d6ed41576fd0473d60f9eb3ae1}
+
+\item 
+\hypertarget{classRS__Painter_a5d5c876e02a006efc890862de4cf2025}{virtual void {\bfseries draw\-Handle} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&p, const \hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \&c, int size=-\/1)}\label{classRS__Painter_a5d5c876e02a006efc890862de4cf2025}
+
+\item 
+\hypertarget{classRS__Painter_ab789e764edcc03f58bf88a2a4fd535c6}{virtual \hyperlink{classRS__Pen}{R\-S\-\_\-\-Pen} {\bfseries get\-Pen} ()=0}\label{classRS__Painter_ab789e764edcc03f58bf88a2a4fd535c6}
+
+\item 
+\hypertarget{classRS__Painter_a7243ff417964960d70b2a7a1b78eeba6}{virtual void {\bfseries set\-Pen} (const \hyperlink{classRS__Pen}{R\-S\-\_\-\-Pen} \&pen)=0}\label{classRS__Painter_a7243ff417964960d70b2a7a1b78eeba6}
+
+\item 
+\hypertarget{classRS__Painter_ad202d85ad84606967256199bf0629caa}{virtual void {\bfseries set\-Pen} (const \hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \&color)=0}\label{classRS__Painter_ad202d85ad84606967256199bf0629caa}
+
+\item 
+\hypertarget{classRS__Painter_af999be920b11dfc315a1be4675c7d272}{virtual void {\bfseries set\-Pen} (int r, int g, int b)=0}\label{classRS__Painter_af999be920b11dfc315a1be4675c7d272}
+
+\item 
+\hypertarget{classRS__Painter_accd93682a92bc8712dd51f336600ae0e}{virtual void {\bfseries disable\-Pen} ()=0}\label{classRS__Painter_accd93682a92bc8712dd51f336600ae0e}
+
+\item 
+\hypertarget{classRS__Painter_ac4444181905e299736670e09b0425678}{virtual void {\bfseries set\-Brush} (const \hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \&color)=0}\label{classRS__Painter_ac4444181905e299736670e09b0425678}
+
+\item 
+\hypertarget{classRS__Painter_ad3a2754dd29330ec0928434903b08aec}{virtual void {\bfseries draw\-Polygon} (const Q\-Polygon \&a, Qt\-::\-Fill\-Rule rule=Qt\-::\-Winding\-Fill)=0}\label{classRS__Painter_ad3a2754dd29330ec0928434903b08aec}
+
+\item 
+\hypertarget{classRS__Painter_ae9014f4f86afde3f8b0381bdbea7145d}{virtual void {\bfseries erase} ()=0}\label{classRS__Painter_ae9014f4f86afde3f8b0381bdbea7145d}
+
+\item 
+\hypertarget{classRS__Painter_af46058850467b4863f5f23c6de757a6e}{virtual int {\bfseries get\-Width} ()=0}\label{classRS__Painter_af46058850467b4863f5f23c6de757a6e}
+
+\item 
+\hypertarget{classRS__Painter_a9c973de560f5a4ec4d8b539d3695f81b}{virtual int {\bfseries get\-Height} ()=0}\label{classRS__Painter_a9c973de560f5a4ec4d8b539d3695f81b}
+
+\item 
+\hypertarget{classRS__Painter_a979d6d3d99081903b09e1b9a6b5b2d18}{virtual void {\bfseries set\-Offset} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&o)}\label{classRS__Painter_a979d6d3d99081903b09e1b9a6b5b2d18}
+
+\item 
+\hypertarget{classRS__Painter_afa4a1d26339a73aba018f24f2a6e1eb8}{virtual void {\bfseries set\-Clip\-Rect} (int x, int y, int w, int h)=0}\label{classRS__Painter_afa4a1d26339a73aba018f24f2a6e1eb8}
+
+\item 
+\hypertarget{classRS__Painter_a7c44f85b8d9664e5b4121cfb285d8492}{virtual void {\bfseries reset\-Clipping} ()=0}\label{classRS__Painter_a7c44f85b8d9664e5b4121cfb285d8492}
+
+\item 
+\hypertarget{classRS__Painter_af2c25fc5d08ed038223f997801ce6899}{int {\bfseries to\-Screen\-X} (double x)}\label{classRS__Painter_af2c25fc5d08ed038223f997801ce6899}
+
+\item 
+\hypertarget{classRS__Painter_a0a6446acea7526b62cbf64230b8a3a11}{int {\bfseries to\-Screen\-Y} (double y)}\label{classRS__Painter_a0a6446acea7526b62cbf64230b8a3a11}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS2_a67196f135592d0f8eff894bd126685b2}{R\-S2\-::\-Drawing\-Mode} \hyperlink{classRS__Painter_a8576780585347b0682daffb1b8cf8b1c}{drawing\-Mode}
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__Painter_a5d6c68b2780795e155e846cef39cd42b}{offset}
+\item 
+\hypertarget{classRS__Painter_aa412cfd1f85bd07bb4b4e82018f06142}{bool {\bfseries draw\-Selected\-Entities}}\label{classRS__Painter_aa412cfd1f85bd07bb4b4e82018f06142}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is a common interface for a painter class. Such a class will in it's implementation be responsible to paint lines, arcs, ... in widgets. All angles in rad.
+
+Note that this is just an interface used as a slot to communicate with the Libre\-C\-A\-D from a G\-U\-I level. This does not contain any Qt or platform specific code. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Painter_a80521757acab6e423095a789074351a0}{\index{R\-S\-\_\-\-Painter@{R\-S\-\_\-\-Painter}!get\-Drawing\-Mode@{get\-Drawing\-Mode}}
+\index{get\-Drawing\-Mode@{get\-Drawing\-Mode}!RS_Painter@{R\-S\-\_\-\-Painter}}
+\subsubsection[{get\-Drawing\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Drawing\-Mode} R\-S\-\_\-\-Painter\-::get\-Drawing\-Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Painter_a80521757acab6e423095a789074351a0}
+\begin{DoxyReturn}{Returns}
+Current drawing mode. 
+\end{DoxyReturn}
+\hypertarget{classRS__Painter_a88a1a453bc7e08f214052c3adf0503b8}{\index{R\-S\-\_\-\-Painter@{R\-S\-\_\-\-Painter}!set\-Drawing\-Mode@{set\-Drawing\-Mode}}
+\index{set\-Drawing\-Mode@{set\-Drawing\-Mode}!RS_Painter@{R\-S\-\_\-\-Painter}}
+\subsubsection[{set\-Drawing\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Painter\-::set\-Drawing\-Mode (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Drawing\-Mode}}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Painter_a88a1a453bc7e08f214052c3adf0503b8}
+Sets the drawing mode. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classRS__Painter_a8576780585347b0682daffb1b8cf8b1c}{\index{R\-S\-\_\-\-Painter@{R\-S\-\_\-\-Painter}!drawing\-Mode@{drawing\-Mode}}
+\index{drawing\-Mode@{drawing\-Mode}!RS_Painter@{R\-S\-\_\-\-Painter}}
+\subsubsection[{drawing\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Drawing\-Mode} R\-S\-\_\-\-Painter\-::drawing\-Mode\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__Painter_a8576780585347b0682daffb1b8cf8b1c}
+Current drawing mode. \hypertarget{classRS__Painter_a5d6c68b2780795e155e846cef39cd42b}{\index{R\-S\-\_\-\-Painter@{R\-S\-\_\-\-Painter}!offset@{offset}}
+\index{offset@{offset}!RS_Painter@{R\-S\-\_\-\-Painter}}
+\subsubsection[{offset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Painter\-::offset\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__Painter_a5d6c68b2780795e155e846cef39cd42b}
+A fixed offset added to all entities drawn (useful for previews). 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/gui/rs\-\_\-painter.\-h\item 
+librecad/src/lib/gui/rs\-\_\-painter.\-cpp\end{DoxyCompactItemize}

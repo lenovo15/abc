@@ -1,0 +1,351 @@
+\hypertarget{classRS__ActionDrawPolyline}{\section{R\-S\-\_\-\-Action\-Draw\-Polyline Class Reference}
+\label{classRS__ActionDrawPolyline}\index{R\-S\-\_\-\-Action\-Draw\-Polyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actiondrawpolyline.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Draw\-Polyline\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classRS__ActionDrawPolyline}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionDrawPolyline_a40edf125038897bf04b036913d22594f}{Status} \{ \hyperlink{classRS__ActionDrawPolyline_a40edf125038897bf04b036913d22594fa022ceb9ae1dcadfb72f0f4a8a679d692}{Set\-Startpoint}, 
+\hyperlink{classRS__ActionDrawPolyline_a40edf125038897bf04b036913d22594fa73539a92360435367f88211036cf26e1}{Set\-Next\-Point}
+ \}
+\item 
+enum {\bfseries Mode} \{ {\bfseries Line}, 
+{\bfseries Tangential}, 
+{\bfseries Tan\-Rad}, 
+{\bfseries Ang}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionDrawPolyline_a52315e29b6ec0fd4cce4c192cd6c3c1b}{{\bfseries R\-S\-\_\-\-Action\-Draw\-Polyline} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionDrawPolyline_a52315e29b6ec0fd4cce4c192cd6c3c1b}
+
+\item 
+virtual \hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__ActionDrawPolyline_afba5611105156c88f91e356e6c659c2c}{rtti} ()
+\item 
+\hypertarget{classRS__ActionDrawPolyline_ac268cfb60067bc2def8643af37024ec0}{void {\bfseries reset} ()}\label{classRS__ActionDrawPolyline_ac268cfb60067bc2def8643af37024ec0}
+
+\item 
+virtual void \hyperlink{classRS__ActionDrawPolyline_a2e698ba57d3e80a835c86b3de120737d}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionDrawPolyline_a54e86bb479bf7b5db099bffd6d789706}{trigger} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawPolyline_aed44fe50ae4cf75f75528de6e20679c2}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDrawPolyline_a7dc607122a47cb490e74920f00b6e9ef}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDrawPolyline_aeb229028e541e444f29e30cf2e43b786}{coordinate\-Event} (\hyperlink{classRS__CoordinateEvent}{R\-S\-\_\-\-Coordinate\-Event} $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionDrawPolyline_a41df59a29a74a8bc8e6e96d2dd59c878}{command\-Event} (\hyperlink{classRS__CommandEvent}{R\-S\-\_\-\-Command\-Event} $\ast$e)
+\item 
+virtual Q\-String\-List \hyperlink{classRS__ActionDrawPolyline_a8890961ecbf79591700b17f3151bfff6}{get\-Available\-Commands} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawPolyline_a52dd80d2285b91981822fc7bb599f911}{show\-Options} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawPolyline_a0c2a10cb1e641f23f8678680874c95d8}{hide\-Options} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawPolyline_ac926827296200c604ddada31e432511c}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionDrawPolyline_a9484312fe1867aa0bf17cbf011de86e2}{update\-Mouse\-Cursor} ()
+\item 
+\hypertarget{classRS__ActionDrawPolyline_ab802185d66b8a7415175e2efcdebd8ff}{void {\bfseries close} ()}\label{classRS__ActionDrawPolyline_ab802185d66b8a7415175e2efcdebd8ff}
+
+\item 
+\hypertarget{classRS__ActionDrawPolyline_a73c073b3fc55e0ed576241c45bf24d70}{void {\bfseries undo} ()}\label{classRS__ActionDrawPolyline_a73c073b3fc55e0ed576241c45bf24d70}
+
+\item 
+\hypertarget{classRS__ActionDrawPolyline_a00bbbc7cbc3d1d6860e4bef413a8b31c}{void {\bfseries set\-Mode} (int m)}\label{classRS__ActionDrawPolyline_a00bbbc7cbc3d1d6860e4bef413a8b31c}
+
+\item 
+\hypertarget{classRS__ActionDrawPolyline_ac54942e1a692207b8b109d48f8657f98}{int {\bfseries get\-Mode} ()}\label{classRS__ActionDrawPolyline_ac54942e1a692207b8b109d48f8657f98}
+
+\item 
+\hypertarget{classRS__ActionDrawPolyline_a4fdabad26f6f02f89b11c304004873fd}{void {\bfseries set\-Radius} (double r)}\label{classRS__ActionDrawPolyline_a4fdabad26f6f02f89b11c304004873fd}
+
+\item 
+\hypertarget{classRS__ActionDrawPolyline_a03a2e6e3745c0276794475045d36340d}{double {\bfseries get\-Radius} ()}\label{classRS__ActionDrawPolyline_a03a2e6e3745c0276794475045d36340d}
+
+\item 
+\hypertarget{classRS__ActionDrawPolyline_ae1c49f300cd199ee401eff5a7fd7e870}{void {\bfseries set\-Angle} (double a)}\label{classRS__ActionDrawPolyline_ae1c49f300cd199ee401eff5a7fd7e870}
+
+\item 
+\hypertarget{classRS__ActionDrawPolyline_ab1e3838a71c4db68d003a21c7d025aaf}{double {\bfseries get\-Angle} ()}\label{classRS__ActionDrawPolyline_ab1e3838a71c4db68d003a21c7d025aaf}
+
+\item 
+\hypertarget{classRS__ActionDrawPolyline_aa04b4b3f202f41ecdfc579383f83b1d7}{void {\bfseries set\-Reversed} (bool c)}\label{classRS__ActionDrawPolyline_aa04b4b3f202f41ecdfc579383f83b1d7}
+
+\item 
+\hypertarget{classRS__ActionDrawPolyline_af65619bf5273b848b1e900d3b7840373}{bool {\bfseries is\-Reversed} ()}\label{classRS__ActionDrawPolyline_af65619bf5273b848b1e900d3b7840373}
+
+\item 
+\hypertarget{classRS__ActionDrawPolyline_aa8736c60e5c69d5914f738b223d3de37}{double {\bfseries solve\-Bulge} (\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} mouse)}\label{classRS__ActionDrawPolyline_aa8736c60e5c69d5914f738b223d3de37}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionDrawPolyline_acfe5693e6731116b0492063cb9481ba9}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionDrawPolyline_acfe5693e6731116b0492063cb9481ba9}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionDrawPolyline_a2e4379dfb476dc820c3afeb843e8dd98}{double {\bfseries Radius}}\label{classRS__ActionDrawPolyline_a2e4379dfb476dc820c3afeb843e8dd98}
+
+\item 
+\hypertarget{classRS__ActionDrawPolyline_a4db7c5b7fa755c9f62e11236c607823f}{double {\bfseries Angle}}\label{classRS__ActionDrawPolyline_a4db7c5b7fa755c9f62e11236c607823f}
+
+\item 
+\hypertarget{classRS__ActionDrawPolyline_ae79af425746125b753824c3e1fcaa6e4}{int {\bfseries Mode}}\label{classRS__ActionDrawPolyline_ae79af425746125b753824c3e1fcaa6e4}
+
+\item 
+\hypertarget{classRS__ActionDrawPolyline_a892732a4f829251beb22927e32acffa0}{int {\bfseries Reversed}}\label{classRS__ActionDrawPolyline_a892732a4f829251beb22927e32acffa0}
+
+\item 
+\hypertarget{classRS__ActionDrawPolyline_a41b9f86a80aa2d9716afac4bc5c90b41}{bool {\bfseries calculated\-Segment}}\label{classRS__ActionDrawPolyline_a41b9f86a80aa2d9716afac4bc5c90b41}
+
+\item 
+\hyperlink{classRS__PolylineData}{R\-S\-\_\-\-Polyline\-Data} \hyperlink{classRS__ActionDrawPolyline_af1cec35c43a3f812826d75030b2ccd89}{data}
+\item 
+\hypertarget{classRS__ActionDrawPolyline_ae20aed00daddfbfd8f78767eecb0a155}{\hyperlink{classRS__ArcData}{R\-S\-\_\-\-Arc\-Data} {\bfseries arc\-\_\-data}}\label{classRS__ActionDrawPolyline_ae20aed00daddfbfd8f78767eecb0a155}
+
+\item 
+\hyperlink{classRS__Polyline}{R\-S\-\_\-\-Polyline} $\ast$ \hyperlink{classRS__ActionDrawPolyline_a0cd87f49ebb92313d3c1f36e07b9018f}{polyline}
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__ActionDrawPolyline_aaa0fcca41b31e393c3a77a5ba69e8201}{point}
+\item 
+\hypertarget{classRS__ActionDrawPolyline_adc909cce19cba4c1fc744dc508ac9a2c}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries calculated\-Endpoint}}\label{classRS__ActionDrawPolyline_adc909cce19cba4c1fc744dc508ac9a2c}
+
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__ActionDrawPolyline_a950fb9523df15cdc97402d5c50dd1e5f}{start}
+\item 
+Q\-List$<$ \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} $>$ \hyperlink{classRS__ActionDrawPolyline_a06b67f7b5d7606785c4f0767c241aeed}{history}
+\item 
+Q\-List$<$ double $>$ \hyperlink{classRS__ActionDrawPolyline_ab82053db77a74c54939e6256ebeed896}{b\-History}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to draw simple lines with the start-\/ and endpoint given.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionDrawPolyline_a40edf125038897bf04b036913d22594f}{\index{R\-S\-\_\-\-Action\-Draw\-Polyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}!Status@{Status}}
+\index{Status@{Status}!RS_ActionDrawPolyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Draw\-Polyline\-::\-Status}}}\label{classRS__ActionDrawPolyline_a40edf125038897bf04b036913d22594f}
+Action States. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Set\-Startpoint@{Set\-Startpoint}!R\-S\-\_\-\-Action\-Draw\-Polyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}}\index{R\-S\-\_\-\-Action\-Draw\-Polyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}!Set\-Startpoint@{Set\-Startpoint}}\item[{\em 
+\hypertarget{classRS__ActionDrawPolyline_a40edf125038897bf04b036913d22594fa022ceb9ae1dcadfb72f0f4a8a679d692}{Set\-Startpoint}\label{classRS__ActionDrawPolyline_a40edf125038897bf04b036913d22594fa022ceb9ae1dcadfb72f0f4a8a679d692}
+}]Setting the startpoint. \index{Set\-Next\-Point@{Set\-Next\-Point}!R\-S\-\_\-\-Action\-Draw\-Polyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}}\index{R\-S\-\_\-\-Action\-Draw\-Polyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}!Set\-Next\-Point@{Set\-Next\-Point}}\item[{\em 
+\hypertarget{classRS__ActionDrawPolyline_a40edf125038897bf04b036913d22594fa73539a92360435367f88211036cf26e1}{Set\-Next\-Point}\label{classRS__ActionDrawPolyline_a40edf125038897bf04b036913d22594fa73539a92360435367f88211036cf26e1}
+}]Setting the endpoint. \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionDrawPolyline_a41df59a29a74a8bc8e6e96d2dd59c878}{\index{R\-S\-\_\-\-Action\-Draw\-Polyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}!command\-Event@{command\-Event}}
+\index{command\-Event@{command\-Event}!RS_ActionDrawPolyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}}
+\subsubsection[{command\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Polyline\-::command\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Command\-Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawPolyline_a41df59a29a74a8bc8e6e96d2dd59c878}
+Called when a command from the command line is launched. and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a187365514bab9b2997c5fe7ff5274a22}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawPolyline_aeb229028e541e444f29e30cf2e43b786}{\index{R\-S\-\_\-\-Action\-Draw\-Polyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}!coordinate\-Event@{coordinate\-Event}}
+\index{coordinate\-Event@{coordinate\-Event}!RS_ActionDrawPolyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}}
+\subsubsection[{coordinate\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Polyline\-::coordinate\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Coordinate\-Event} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawPolyline_aeb229028e541e444f29e30cf2e43b786}
+Coordinate event. Triggered usually from a command line. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a9013e88769edd39b2a74af5add2986c9}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+Reimplemented in \hyperlink{classRS__ActionPolylineAppend_a8357d7d800ddf4cdb4246357c1971e5d}{R\-S\-\_\-\-Action\-Polyline\-Append}.
+
+\hypertarget{classRS__ActionDrawPolyline_a8890961ecbf79591700b17f3151bfff6}{\index{R\-S\-\_\-\-Action\-Draw\-Polyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}!get\-Available\-Commands@{get\-Available\-Commands}}
+\index{get\-Available\-Commands@{get\-Available\-Commands}!RS_ActionDrawPolyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}}
+\subsubsection[{get\-Available\-Commands}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String\-List R\-S\-\_\-\-Action\-Draw\-Polyline\-::get\-Available\-Commands (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawPolyline_a8890961ecbf79591700b17f3151bfff6}
+Must be implemented to return the currently available commands for the command line. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acafdac8d18d3f053eda872581fb3e27d}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawPolyline_a0c2a10cb1e641f23f8678680874c95d8}{\index{R\-S\-\_\-\-Action\-Draw\-Polyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}!hide\-Options@{hide\-Options}}
+\index{hide\-Options@{hide\-Options}!RS_ActionDrawPolyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}}
+\subsubsection[{hide\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Polyline\-::hide\-Options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawPolyline_a0c2a10cb1e641f23f8678680874c95d8}
+Hides the tool options. Default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_adca8d2f958d687e08f6d4477ef0fa43a}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawPolyline_a2e698ba57d3e80a835c86b3de120737d}{\index{R\-S\-\_\-\-Action\-Draw\-Polyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}!init@{init}}
+\index{init@{init}!RS_ActionDrawPolyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Polyline\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawPolyline_a2e698ba57d3e80a835c86b3de120737d}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae5113b2aef5a10acd192786b99580e4a}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawPolyline_aed44fe50ae4cf75f75528de6e20679c2}{\index{R\-S\-\_\-\-Action\-Draw\-Polyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_ActionDrawPolyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Polyline\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawPolyline_aed44fe50ae4cf75f75528de6e20679c2}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawPolyline_a7dc607122a47cb490e74920f00b6e9ef}{\index{R\-S\-\_\-\-Action\-Draw\-Polyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionDrawPolyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Polyline\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawPolyline_a7dc607122a47cb490e74920f00b6e9ef}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+Reimplemented in \hyperlink{classRS__ActionPolylineAppend_a9a4740b0e1bded2cb94329500e91f755}{R\-S\-\_\-\-Action\-Polyline\-Append}.
+
+\hypertarget{classRS__ActionDrawPolyline_afba5611105156c88f91e356e6c659c2c}{\index{R\-S\-\_\-\-Action\-Draw\-Polyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_ActionDrawPolyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Action\-Draw\-Polyline\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__ActionDrawPolyline_afba5611105156c88f91e356e6c659c2c}
+Must be implemented to return the I\-D of this action.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]no default implementation \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af877a66b5b4a7053f2b1f0519c57a6f5}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+Reimplemented in \hyperlink{classRS__ActionPolylineAppend_a03860fa3c5e4165de93cbbfd5958e303}{R\-S\-\_\-\-Action\-Polyline\-Append}.
+
+\hypertarget{classRS__ActionDrawPolyline_a52dd80d2285b91981822fc7bb599f911}{\index{R\-S\-\_\-\-Action\-Draw\-Polyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}!show\-Options@{show\-Options}}
+\index{show\-Options@{show\-Options}!RS_ActionDrawPolyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}}
+\subsubsection[{show\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Polyline\-::show\-Options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawPolyline_a52dd80d2285b91981822fc7bb599f911}
+Shows the tool options. Default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_add4bb135e4be51bd0dc169e0e7b9e695}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionDrawPolyline_a54e86bb479bf7b5db099bffd6d789706}{\index{R\-S\-\_\-\-Action\-Draw\-Polyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionDrawPolyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Polyline\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawPolyline_a54e86bb479bf7b5db099bffd6d789706}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+
+
+Reimplemented in \hyperlink{classRS__ActionPolylineAppend_ace0b12d971511f421b1abef99694675f}{R\-S\-\_\-\-Action\-Polyline\-Append}.
+
+\hypertarget{classRS__ActionDrawPolyline_ac926827296200c604ddada31e432511c}{\index{R\-S\-\_\-\-Action\-Draw\-Polyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionDrawPolyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Polyline\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawPolyline_ac926827296200c604ddada31e432511c}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+Reimplemented in \hyperlink{classRS__ActionPolylineAppend_a929aeba09ccd99500d297fc51fe79f8a}{R\-S\-\_\-\-Action\-Polyline\-Append}.
+
+\hypertarget{classRS__ActionDrawPolyline_a9484312fe1867aa0bf17cbf011de86e2}{\index{R\-S\-\_\-\-Action\-Draw\-Polyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionDrawPolyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Draw\-Polyline\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionDrawPolyline_a9484312fe1867aa0bf17cbf011de86e2}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classRS__ActionDrawPolyline_ab82053db77a74c54939e6256ebeed896}{\index{R\-S\-\_\-\-Action\-Draw\-Polyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}!b\-History@{b\-History}}
+\index{b\-History@{b\-History}!RS_ActionDrawPolyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}}
+\subsubsection[{b\-History}]{\setlength{\rightskip}{0pt plus 5cm}Q\-List$<$double$>$ R\-S\-\_\-\-Action\-Draw\-Polyline\-::b\-History\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDrawPolyline_ab82053db77a74c54939e6256ebeed896}
+Bulge history (for undo) \hypertarget{classRS__ActionDrawPolyline_af1cec35c43a3f812826d75030b2ccd89}{\index{R\-S\-\_\-\-Action\-Draw\-Polyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}!data@{data}}
+\index{data@{data}!RS_ActionDrawPolyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Polyline\-Data} R\-S\-\_\-\-Action\-Draw\-Polyline\-::data\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDrawPolyline_af1cec35c43a3f812826d75030b2ccd89}
+Line data defined so far. \hypertarget{classRS__ActionDrawPolyline_a06b67f7b5d7606785c4f0767c241aeed}{\index{R\-S\-\_\-\-Action\-Draw\-Polyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}!history@{history}}
+\index{history@{history}!RS_ActionDrawPolyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}}
+\subsubsection[{history}]{\setlength{\rightskip}{0pt plus 5cm}Q\-List$<${\bf R\-S\-\_\-\-Vector}$>$ R\-S\-\_\-\-Action\-Draw\-Polyline\-::history\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDrawPolyline_a06b67f7b5d7606785c4f0767c241aeed}
+Point history (for undo) \hypertarget{classRS__ActionDrawPolyline_aaa0fcca41b31e393c3a77a5ba69e8201}{\index{R\-S\-\_\-\-Action\-Draw\-Polyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}!point@{point}}
+\index{point@{point}!RS_ActionDrawPolyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}}
+\subsubsection[{point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Action\-Draw\-Polyline\-::point\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDrawPolyline_aaa0fcca41b31e393c3a77a5ba69e8201}
+last point. \hypertarget{classRS__ActionDrawPolyline_a0cd87f49ebb92313d3c1f36e07b9018f}{\index{R\-S\-\_\-\-Action\-Draw\-Polyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}!polyline@{polyline}}
+\index{polyline@{polyline}!RS_ActionDrawPolyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}}
+\subsubsection[{polyline}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Polyline}$\ast$ R\-S\-\_\-\-Action\-Draw\-Polyline\-::polyline\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDrawPolyline_a0cd87f49ebb92313d3c1f36e07b9018f}
+Polyline entity we're working on. \hypertarget{classRS__ActionDrawPolyline_a950fb9523df15cdc97402d5c50dd1e5f}{\index{R\-S\-\_\-\-Action\-Draw\-Polyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}!start@{start}}
+\index{start@{start}!RS_ActionDrawPolyline@{R\-S\-\_\-\-Action\-Draw\-Polyline}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Action\-Draw\-Polyline\-::start\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__ActionDrawPolyline_a950fb9523df15cdc97402d5c50dd1e5f}
+Start point of the series of lines. Used for close function. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actiondrawpolyline.\-h\item 
+librecad/src/actions/rs\-\_\-actiondrawpolyline.\-cpp\end{DoxyCompactItemize}

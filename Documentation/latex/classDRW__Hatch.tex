@@ -1,0 +1,106 @@
+\hypertarget{classDRW__Hatch}{\section{D\-R\-W\-\_\-\-Hatch Class Reference}
+\label{classDRW__Hatch}\index{D\-R\-W\-\_\-\-Hatch@{D\-R\-W\-\_\-\-Hatch}}
+}
+
+
+Class to handle hatch entity.  
+
+
+
+
+{\ttfamily \#include $<$drw\-\_\-entities.\-h$>$}
+
+Inheritance diagram for D\-R\-W\-\_\-\-Hatch\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classDRW__Hatch}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDRW__Hatch_abc13c63ddb4758b14971df48f6f2fc1c}{void {\bfseries append\-Loop} (\hyperlink{classDRW__HatchLoop}{D\-R\-W\-\_\-\-Hatch\-Loop} $\ast$v)}\label{classDRW__Hatch_abc13c63ddb4758b14971df48f6f2fc1c}
+
+\item 
+\hypertarget{classDRW__Hatch_a5f4d83f519ba43ce26d6c9d91f6f0bc3}{virtual void {\bfseries apply\-Extrusion} ()}\label{classDRW__Hatch_a5f4d83f519ba43ce26d6c9d91f6f0bc3}
+
+\item 
+\hypertarget{classDRW__Hatch_a3dab474d443aedfd308d26bc63019d71}{void {\bfseries parse\-Code} (int code, \hyperlink{classdxfReader}{dxf\-Reader} $\ast$reader)}\label{classDRW__Hatch_a3dab474d443aedfd308d26bc63019d71}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+U\-T\-F8\-S\-T\-R\-I\-N\-G \hyperlink{classDRW__Hatch_a3e864b79a0757b7ab2a8c32a21165150}{name}
+\item 
+int \hyperlink{classDRW__Hatch_a4eec0fc3cd839a3892e875bcc9789d48}{solid}
+\item 
+int \hyperlink{classDRW__Hatch_af152cba96e8bd0471aafd2764defe458}{associative}
+\item 
+int \hyperlink{classDRW__Hatch_a7b8950911e5fb319f0d63b7ee2251f87}{hstyle}
+\item 
+int \hyperlink{classDRW__Hatch_abb23290d594b69e7b9c18ece2de7ec8e}{hpattern}
+\item 
+int \hyperlink{classDRW__Hatch_a06da8a64445bd9e5c159dab4243c992a}{doubleflag}
+\item 
+int \hyperlink{classDRW__Hatch_a52ba4f38bba83fe735cb14447e256260}{loopsnum}
+\item 
+double \hyperlink{classDRW__Hatch_aee22d8d574a33e852ad82c345899b886}{angle}
+\item 
+double \hyperlink{classDRW__Hatch_a0ee3311f6d41385488af2cafd55cd7ef}{scale}
+\item 
+int \hyperlink{classDRW__Hatch_a15bd241e3c34d82c35db31470fe25741}{deflines}
+\item 
+std\-::vector$<$ \hyperlink{classDRW__HatchLoop}{D\-R\-W\-\_\-\-Hatch\-Loop} $\ast$ $>$ \hyperlink{classDRW__Hatch_a258a13a2da31ae31fd22e2da3757da5c}{looplist}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class to handle hatch entity. 
+
+Class to handle hatch entity \begin{DoxyAuthor}{Author}
+Rallaz 
+\end{DoxyAuthor}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classDRW__Hatch_aee22d8d574a33e852ad82c345899b886}{\index{D\-R\-W\-\_\-\-Hatch@{D\-R\-W\-\_\-\-Hatch}!angle@{angle}}
+\index{angle@{angle}!DRW_Hatch@{D\-R\-W\-\_\-\-Hatch}}
+\subsubsection[{angle}]{\setlength{\rightskip}{0pt plus 5cm}double D\-R\-W\-\_\-\-Hatch\-::angle}}\label{classDRW__Hatch_aee22d8d574a33e852ad82c345899b886}
+hatch pattern angle, code 52 \hypertarget{classDRW__Hatch_af152cba96e8bd0471aafd2764defe458}{\index{D\-R\-W\-\_\-\-Hatch@{D\-R\-W\-\_\-\-Hatch}!associative@{associative}}
+\index{associative@{associative}!DRW_Hatch@{D\-R\-W\-\_\-\-Hatch}}
+\subsubsection[{associative}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-Hatch\-::associative}}\label{classDRW__Hatch_af152cba96e8bd0471aafd2764defe458}
+associativity, code 71, associatve=1, non-\/assoc.=0 \hypertarget{classDRW__Hatch_a15bd241e3c34d82c35db31470fe25741}{\index{D\-R\-W\-\_\-\-Hatch@{D\-R\-W\-\_\-\-Hatch}!deflines@{deflines}}
+\index{deflines@{deflines}!DRW_Hatch@{D\-R\-W\-\_\-\-Hatch}}
+\subsubsection[{deflines}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-Hatch\-::deflines}}\label{classDRW__Hatch_a15bd241e3c34d82c35db31470fe25741}
+number of pattern definition lines, code 78 \hypertarget{classDRW__Hatch_a06da8a64445bd9e5c159dab4243c992a}{\index{D\-R\-W\-\_\-\-Hatch@{D\-R\-W\-\_\-\-Hatch}!doubleflag@{doubleflag}}
+\index{doubleflag@{doubleflag}!DRW_Hatch@{D\-R\-W\-\_\-\-Hatch}}
+\subsubsection[{doubleflag}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-Hatch\-::doubleflag}}\label{classDRW__Hatch_a06da8a64445bd9e5c159dab4243c992a}
+hatch pattern double flag, code 77, double=1, single=0 \hypertarget{classDRW__Hatch_abb23290d594b69e7b9c18ece2de7ec8e}{\index{D\-R\-W\-\_\-\-Hatch@{D\-R\-W\-\_\-\-Hatch}!hpattern@{hpattern}}
+\index{hpattern@{hpattern}!DRW_Hatch@{D\-R\-W\-\_\-\-Hatch}}
+\subsubsection[{hpattern}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-Hatch\-::hpattern}}\label{classDRW__Hatch_abb23290d594b69e7b9c18ece2de7ec8e}
+hatch pattern type, code 76 \hypertarget{classDRW__Hatch_a7b8950911e5fb319f0d63b7ee2251f87}{\index{D\-R\-W\-\_\-\-Hatch@{D\-R\-W\-\_\-\-Hatch}!hstyle@{hstyle}}
+\index{hstyle@{hstyle}!DRW_Hatch@{D\-R\-W\-\_\-\-Hatch}}
+\subsubsection[{hstyle}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-Hatch\-::hstyle}}\label{classDRW__Hatch_a7b8950911e5fb319f0d63b7ee2251f87}
+hatch style, code 75 \hypertarget{classDRW__Hatch_a258a13a2da31ae31fd22e2da3757da5c}{\index{D\-R\-W\-\_\-\-Hatch@{D\-R\-W\-\_\-\-Hatch}!looplist@{looplist}}
+\index{looplist@{looplist}!DRW_Hatch@{D\-R\-W\-\_\-\-Hatch}}
+\subsubsection[{looplist}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf D\-R\-W\-\_\-\-Hatch\-Loop} $\ast$$>$ D\-R\-W\-\_\-\-Hatch\-::looplist}}\label{classDRW__Hatch_a258a13a2da31ae31fd22e2da3757da5c}
+polyline list \hypertarget{classDRW__Hatch_a52ba4f38bba83fe735cb14447e256260}{\index{D\-R\-W\-\_\-\-Hatch@{D\-R\-W\-\_\-\-Hatch}!loopsnum@{loopsnum}}
+\index{loopsnum@{loopsnum}!DRW_Hatch@{D\-R\-W\-\_\-\-Hatch}}
+\subsubsection[{loopsnum}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-Hatch\-::loopsnum}}\label{classDRW__Hatch_a52ba4f38bba83fe735cb14447e256260}
+namber of boundary paths (loops), code 91 \hypertarget{classDRW__Hatch_a3e864b79a0757b7ab2a8c32a21165150}{\index{D\-R\-W\-\_\-\-Hatch@{D\-R\-W\-\_\-\-Hatch}!name@{name}}
+\index{name@{name}!DRW_Hatch@{D\-R\-W\-\_\-\-Hatch}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}U\-T\-F8\-S\-T\-R\-I\-N\-G D\-R\-W\-\_\-\-Hatch\-::name}}\label{classDRW__Hatch_a3e864b79a0757b7ab2a8c32a21165150}
+hatch pattern name, code 2 \hypertarget{classDRW__Hatch_a0ee3311f6d41385488af2cafd55cd7ef}{\index{D\-R\-W\-\_\-\-Hatch@{D\-R\-W\-\_\-\-Hatch}!scale@{scale}}
+\index{scale@{scale}!DRW_Hatch@{D\-R\-W\-\_\-\-Hatch}}
+\subsubsection[{scale}]{\setlength{\rightskip}{0pt plus 5cm}double D\-R\-W\-\_\-\-Hatch\-::scale}}\label{classDRW__Hatch_a0ee3311f6d41385488af2cafd55cd7ef}
+hatch pattern scale, code 41 \hypertarget{classDRW__Hatch_a4eec0fc3cd839a3892e875bcc9789d48}{\index{D\-R\-W\-\_\-\-Hatch@{D\-R\-W\-\_\-\-Hatch}!solid@{solid}}
+\index{solid@{solid}!DRW_Hatch@{D\-R\-W\-\_\-\-Hatch}}
+\subsubsection[{solid}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-Hatch\-::solid}}\label{classDRW__Hatch_a4eec0fc3cd839a3892e875bcc9789d48}
+solid fill flag, code 70, solid=1, pattern=0 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+libraries/libdxfrw/src/drw\-\_\-entities.\-h\item 
+libraries/libdxfrw/src/drw\-\_\-entities.\-cpp\end{DoxyCompactItemize}

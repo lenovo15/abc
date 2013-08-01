@@ -1,0 +1,45 @@
+\hypertarget{classLC__HyperbolaData}{\section{L\-C\-\_\-\-Hyperbola\-Data Class Reference}
+\label{classLC__HyperbolaData}\index{L\-C\-\_\-\-Hyperbola\-Data@{L\-C\-\_\-\-Hyperbola\-Data}}
+}
+
+
+{\ttfamily \#include $<$lc\-\_\-hyperbola.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classLC__HyperbolaData_ae8f1e02a8f724304cd9fb67e49cdf5bb}{{\bfseries L\-C\-\_\-\-Hyperbola\-Data} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&center, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&major\-P, double ratio, double angle1, double angle2, bool reversed)}\label{classLC__HyperbolaData_ae8f1e02a8f724304cd9fb67e49cdf5bb}
+
+\item 
+\hyperlink{classLC__HyperbolaData_abff42b4a687c050850430b79982da473}{L\-C\-\_\-\-Hyperbola\-Data} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&focus0, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&focus1, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&point)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classLC__HyperbolaData_a94787ad192b04f9702692fff14e1145d}{class {\bfseries L\-C\-\_\-\-Hyperbola}}\label{classLC__HyperbolaData_a94787ad192b04f9702692fff14e1145d}
+
+\item 
+\hypertarget{classLC__HyperbolaData_a184c667dccd5d3ec327617cad68600cb}{std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&os, const \hyperlink{classLC__HyperbolaData}{L\-C\-\_\-\-Hyperbola\-Data} \&ed)}\label{classLC__HyperbolaData_a184c667dccd5d3ec327617cad68600cb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds the data that defines one branch of a hyperbola. major\-P is the vector from center to the vertex ratio is the ratio between semi-\/major and semi-\/minor axis 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classLC__HyperbolaData_abff42b4a687c050850430b79982da473}{\index{L\-C\-\_\-\-Hyperbola\-Data@{L\-C\-\_\-\-Hyperbola\-Data}!L\-C\-\_\-\-Hyperbola\-Data@{L\-C\-\_\-\-Hyperbola\-Data}}
+\index{L\-C\-\_\-\-Hyperbola\-Data@{L\-C\-\_\-\-Hyperbola\-Data}!LC_HyperbolaData@{L\-C\-\_\-\-Hyperbola\-Data}}
+\subsubsection[{L\-C\-\_\-\-Hyperbola\-Data}]{\setlength{\rightskip}{0pt plus 5cm}L\-C\-\_\-\-Hyperbola\-Data\-::\-L\-C\-\_\-\-Hyperbola\-Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{focus0, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{focus1, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{point}
+\end{DoxyParamCaption}
+)}}\label{classLC__HyperbolaData_abff42b4a687c050850430b79982da473}
+create data based on foci and a point on hyperbola 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/lc\-\_\-hyperbola.\-h\item 
+librecad/src/lib/engine/lc\-\_\-hyperbola.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,99 @@
+\hypertarget{classRS__ActionSelectAll}{\section{R\-S\-\_\-\-Action\-Select\-All Class Reference}
+\label{classRS__ActionSelectAll}\index{R\-S\-\_\-\-Action\-Select\-All@{R\-S\-\_\-\-Action\-Select\-All}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionselectall.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Select\-All\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__ActionSelectAll}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionSelectAll_aa4f9baece66dc102d0f90b5b26d61a16}{{\bfseries R\-S\-\_\-\-Action\-Select\-All} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View, bool select)}\label{classRS__ActionSelectAll_aa4f9baece66dc102d0f90b5b26d61a16}
+
+\item 
+virtual \hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__ActionSelectAll_a6f00f94529c8e1f5ff0f729d1b033d8b}{rtti} ()
+\item 
+void \hyperlink{classRS__ActionSelectAll_a8915d60bf614b2c7e7ac395993321bd1}{init} (int status)
+\item 
+virtual void \hyperlink{classRS__ActionSelectAll_af3cd65c374ea0e7d1ab223ea07d091bb}{trigger} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionSelectAll_afc1b3b18e5c7e712ece04c67901ffa6a}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} type, Q\-Object $\ast$parent)}\label{classRS__ActionSelectAll_afc1b3b18e5c7e712ece04c67901ffa6a}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionSelectAll_a3e9b9d0f5f6482278a1bdcd4b6b04536}{bool {\bfseries select}}\label{classRS__ActionSelectAll_a3e9b9d0f5f6482278a1bdcd4b6b04536}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to select all entities.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionSelectAll_a8915d60bf614b2c7e7ac395993321bd1}{\index{R\-S\-\_\-\-Action\-Select\-All@{R\-S\-\_\-\-Action\-Select\-All}!init@{init}}
+\index{init@{init}!RS_ActionSelectAll@{R\-S\-\_\-\-Action\-Select\-All}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Select\-All\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionSelectAll_a8915d60bf614b2c7e7ac395993321bd1}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a05b7dca5deeb371eb51edcb73facd45f}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionSelectAll_a6f00f94529c8e1f5ff0f729d1b033d8b}{\index{R\-S\-\_\-\-Action\-Select\-All@{R\-S\-\_\-\-Action\-Select\-All}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_ActionSelectAll@{R\-S\-\_\-\-Action\-Select\-All}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Action\-Select\-All\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__ActionSelectAll_a6f00f94529c8e1f5ff0f729d1b033d8b}
+Must be implemented to return the I\-D of this action.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]no default implementation \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af877a66b5b4a7053f2b1f0519c57a6f5}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionSelectAll_af3cd65c374ea0e7d1ab223ea07d091bb}{\index{R\-S\-\_\-\-Action\-Select\-All@{R\-S\-\_\-\-Action\-Select\-All}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionSelectAll@{R\-S\-\_\-\-Action\-Select\-All}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Select\-All\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionSelectAll_af3cd65c374ea0e7d1ab223ea07d091bb}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa2ba8f6f697f735eace4ec5449c0b8cd}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionselectall.\-h\item 
+librecad/src/actions/rs\-\_\-actionselectall.\-cpp\end{DoxyCompactItemize}

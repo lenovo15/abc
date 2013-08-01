@@ -1,0 +1,138 @@
+\hypertarget{classRS__ActionModifyDelete}{\section{R\-S\-\_\-\-Action\-Modify\-Delete Class Reference}
+\label{classRS__ActionModifyDelete}\index{R\-S\-\_\-\-Action\-Modify\-Delete@{R\-S\-\_\-\-Action\-Modify\-Delete}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionmodifydelete.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Modify\-Delete\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__ActionModifyDelete}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionModifyDelete_a70e3636d2aa7028a5e5741f7becd1df1}{Status} \{ \hyperlink{classRS__ActionModifyDelete_a70e3636d2aa7028a5e5741f7becd1df1ade02076a7773bc443da8fcdb6ec0c7cf}{Acknowledge}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionModifyDelete_a65448e3a46c79131fb42a62abf5c53c0}{{\bfseries R\-S\-\_\-\-Action\-Modify\-Delete} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionModifyDelete_a65448e3a46c79131fb42a62abf5c53c0}
+
+\item 
+\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} \hyperlink{classRS__ActionModifyDelete_ac306ad6e4b6291b72d267029bd201c16}{rtti} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyDelete_a9a7551161f7ef5aae9f0e998d8f4acb0}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionModifyDelete_a6ead31552cabe88617197230fcaa4862}{trigger} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyDelete_a038efe0e5d3470c2390f28fb5900c156}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyDelete_a656d4d1a2704c53921d8ef5badce9dbc}{update\-Mouse\-Cursor} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionModifyDelete_ae821126f8bf9dd094bb6a056a9ad510c}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionModifyDelete_ae821126f8bf9dd094bb6a056a9ad510c}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to delete entities.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionModifyDelete_a70e3636d2aa7028a5e5741f7becd1df1}{\index{R\-S\-\_\-\-Action\-Modify\-Delete@{R\-S\-\_\-\-Action\-Modify\-Delete}!Status@{Status}}
+\index{Status@{Status}!RS_ActionModifyDelete@{R\-S\-\_\-\-Action\-Modify\-Delete}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Modify\-Delete\-::\-Status}}}\label{classRS__ActionModifyDelete_a70e3636d2aa7028a5e5741f7becd1df1}
+Action States. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Acknowledge@{Acknowledge}!R\-S\-\_\-\-Action\-Modify\-Delete@{R\-S\-\_\-\-Action\-Modify\-Delete}}\index{R\-S\-\_\-\-Action\-Modify\-Delete@{R\-S\-\_\-\-Action\-Modify\-Delete}!Acknowledge@{Acknowledge}}\item[{\em 
+\hypertarget{classRS__ActionModifyDelete_a70e3636d2aa7028a5e5741f7becd1df1ade02076a7773bc443da8fcdb6ec0c7cf}{Acknowledge}\label{classRS__ActionModifyDelete_a70e3636d2aa7028a5e5741f7becd1df1ade02076a7773bc443da8fcdb6ec0c7cf}
+}]Acknowledge or cancel. \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionModifyDelete_a9a7551161f7ef5aae9f0e998d8f4acb0}{\index{R\-S\-\_\-\-Action\-Modify\-Delete@{R\-S\-\_\-\-Action\-Modify\-Delete}!init@{init}}
+\index{init@{init}!RS_ActionModifyDelete@{R\-S\-\_\-\-Action\-Modify\-Delete}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Delete\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyDelete_a9a7551161f7ef5aae9f0e998d8f4acb0}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a05b7dca5deeb371eb51edcb73facd45f}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyDelete_ac306ad6e4b6291b72d267029bd201c16}{\index{R\-S\-\_\-\-Action\-Modify\-Delete@{R\-S\-\_\-\-Action\-Modify\-Delete}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_ActionModifyDelete@{R\-S\-\_\-\-Action\-Modify\-Delete}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S2\-::\-Action\-Type} R\-S\-\_\-\-Action\-Modify\-Delete\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__ActionModifyDelete_ac306ad6e4b6291b72d267029bd201c16}
+Must be implemented to return the I\-D of this action.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]no default implementation \end{DoxyRefDesc}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af877a66b5b4a7053f2b1f0519c57a6f5}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyDelete_a6ead31552cabe88617197230fcaa4862}{\index{R\-S\-\_\-\-Action\-Modify\-Delete@{R\-S\-\_\-\-Action\-Modify\-Delete}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionModifyDelete@{R\-S\-\_\-\-Action\-Modify\-Delete}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Delete\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyDelete_a6ead31552cabe88617197230fcaa4862}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa2ba8f6f697f735eace4ec5449c0b8cd}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyDelete_a038efe0e5d3470c2390f28fb5900c156}{\index{R\-S\-\_\-\-Action\-Modify\-Delete@{R\-S\-\_\-\-Action\-Modify\-Delete}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionModifyDelete@{R\-S\-\_\-\-Action\-Modify\-Delete}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Delete\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyDelete_a038efe0e5d3470c2390f28fb5900c156}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyDelete_a656d4d1a2704c53921d8ef5badce9dbc}{\index{R\-S\-\_\-\-Action\-Modify\-Delete@{R\-S\-\_\-\-Action\-Modify\-Delete}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionModifyDelete@{R\-S\-\_\-\-Action\-Modify\-Delete}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Delete\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyDelete_a656d4d1a2704c53921d8ef5badce9dbc}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionmodifydelete.\-h\item 
+librecad/src/actions/rs\-\_\-actionmodifydelete.\-cpp\end{DoxyCompactItemize}

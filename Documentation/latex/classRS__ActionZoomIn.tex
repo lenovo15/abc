@@ -1,0 +1,110 @@
+\hypertarget{classRS__ActionZoomIn}{\section{R\-S\-\_\-\-Action\-Zoom\-In Class Reference}
+\label{classRS__ActionZoomIn}\index{R\-S\-\_\-\-Action\-Zoom\-In@{R\-S\-\_\-\-Action\-Zoom\-In}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionzoomin.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Zoom\-In\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__ActionZoomIn}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__ActionZoomIn_a9068983133b0ada546e2147f522a6efb}{R\-S\-\_\-\-Action\-Zoom\-In} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View, \hyperlink{classRS2_a7416f66b1968e3ccb9b70b8f48bac8df}{R\-S2\-::\-Zoom\-Direction} direction=R\-S2\-::\-In, \hyperlink{classRS2_aba103dd97e4a9cea520151de742d9904}{R\-S2\-::\-Axis} axis=R\-S2\-::\-Both, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&center=\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector}(false))
+\item 
+virtual void \hyperlink{classRS__ActionZoomIn_a535c5868d70fd876f7bcf85022543358}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionZoomIn_ab49ad247da59cb057461aec673ab7bb8}{trigger} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionZoomIn_a1d0febe075e363f0325fe8f4563e2f64}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} type, Q\-Object $\ast$)}\label{classRS__ActionZoomIn_a1d0febe075e363f0325fe8f4563e2f64}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionZoomIn_a41fd5529cab6499d46b18ed07d540032}{\hyperlink{classRS2_a7416f66b1968e3ccb9b70b8f48bac8df}{R\-S2\-::\-Zoom\-Direction} {\bfseries direction}}\label{classRS__ActionZoomIn_a41fd5529cab6499d46b18ed07d540032}
+
+\item 
+\hypertarget{classRS__ActionZoomIn_a987646988c7afaeb5572cd725e8a116c}{\hyperlink{classRS2_aba103dd97e4a9cea520151de742d9904}{R\-S2\-::\-Axis} {\bfseries axis}}\label{classRS__ActionZoomIn_a987646988c7afaeb5572cd725e8a116c}
+
+\item 
+\hypertarget{classRS__ActionZoomIn_a410d29294ab937682afba6c04140de13}{\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} {\bfseries center}}\label{classRS__ActionZoomIn_a410d29294ab937682afba6c04140de13}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action triggers zoom increase.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__ActionZoomIn_a9068983133b0ada546e2147f522a6efb}{\index{R\-S\-\_\-\-Action\-Zoom\-In@{R\-S\-\_\-\-Action\-Zoom\-In}!R\-S\-\_\-\-Action\-Zoom\-In@{R\-S\-\_\-\-Action\-Zoom\-In}}
+\index{R\-S\-\_\-\-Action\-Zoom\-In@{R\-S\-\_\-\-Action\-Zoom\-In}!RS_ActionZoomIn@{R\-S\-\_\-\-Action\-Zoom\-In}}
+\subsubsection[{R\-S\-\_\-\-Action\-Zoom\-In}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Action\-Zoom\-In\-::\-R\-S\-\_\-\-Action\-Zoom\-In (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} \&}]{graphic\-View, }
+\item[{{\bf R\-S2\-::\-Zoom\-Direction}}]{direction = {\ttfamily RS2\-:\-:In}, }
+\item[{{\bf R\-S2\-::\-Axis}}]{axis = {\ttfamily RS2\-:\-:Both}, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{center = {\ttfamily {\bf R\-S\-\_\-\-Vector}(false)}}
+\end{DoxyParamCaption}
+)}}\label{classRS__ActionZoomIn_a9068983133b0ada546e2147f522a6efb}
+Default constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & In for zooming in, Out for zooming out. \\
+\hline
+{\em axis} & Axis that are affected by the zoom (Only\-X, Only\-Y or Both) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionZoomIn_a535c5868d70fd876f7bcf85022543358}{\index{R\-S\-\_\-\-Action\-Zoom\-In@{R\-S\-\_\-\-Action\-Zoom\-In}!init@{init}}
+\index{init@{init}!RS_ActionZoomIn@{R\-S\-\_\-\-Action\-Zoom\-In}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Zoom\-In\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionZoomIn_a535c5868d70fd876f7bcf85022543358}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a05b7dca5deeb371eb51edcb73facd45f}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionZoomIn_ab49ad247da59cb057461aec673ab7bb8}{\index{R\-S\-\_\-\-Action\-Zoom\-In@{R\-S\-\_\-\-Action\-Zoom\-In}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionZoomIn@{R\-S\-\_\-\-Action\-Zoom\-In}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Zoom\-In\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionZoomIn_ab49ad247da59cb057461aec673ab7bb8}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa2ba8f6f697f735eace4ec5449c0b8cd}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionzoomin.\-h\item 
+librecad/src/actions/rs\-\_\-actionzoomin.\-cpp\end{DoxyCompactItemize}

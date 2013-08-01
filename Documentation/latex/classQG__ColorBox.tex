@@ -1,0 +1,127 @@
+\hypertarget{classQG__ColorBox}{\section{Q\-G\-\_\-\-Color\-Box Class Reference}
+\label{classQG__ColorBox}\index{Q\-G\-\_\-\-Color\-Box@{Q\-G\-\_\-\-Color\-Box}}
+}
+
+
+{\ttfamily \#include $<$qg\-\_\-colorbox.\-h$>$}
+
+Inheritance diagram for Q\-G\-\_\-\-Color\-Box\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classQG__ColorBox}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classQG__ColorBox_ad0204ceab0506e5e3844ff3d205d48df}{void {\bfseries color\-Changed} (const \hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \&color)}\label{classQG__ColorBox_ad0204ceab0506e5e3844ff3d205d48df}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQG__ColorBox_a88451f744118b8ba7b90b1963e9e2584}{Q\-G\-\_\-\-Color\-Box} (Q\-Widget $\ast$parent=0, const char $\ast$name=0)
+\item 
+\hyperlink{classQG__ColorBox_a36e04f1a12a0f7b44b8e588aaa61169f}{Q\-G\-\_\-\-Color\-Box} (bool show\-By\-Layer, bool show\-Unchanged, Q\-Widget $\ast$parent=0, const char $\ast$name=0)
+\item 
+virtual \hyperlink{classQG__ColorBox_a3fbfcb4b7c9a384db5268a3759f5d185}{$\sim$\-Q\-G\-\_\-\-Color\-Box} ()
+\item 
+\hypertarget{classQG__ColorBox_a52e0fa11d686f0cb04ff8d9af269cb1e}{\hyperlink{classRS__Color}{R\-S\-\_\-\-Color} {\bfseries get\-Color} ()}\label{classQG__ColorBox_a52e0fa11d686f0cb04ff8d9af269cb1e}
+
+\item 
+void \hyperlink{classQG__ColorBox_a75e7ac16011ef2188ad6140674c7e638}{add\-Color} (Qt\-::\-Global\-Color color, Q\-String text)
+\item 
+void \hyperlink{classQG__ColorBox_a304b0cb1ede5388f940fdaa753f8e721}{set\-Color} (const \hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \&color)
+\item 
+void \hyperlink{classQG__ColorBox_a98581a273be62c532652cdf75bd81674}{set\-Layer\-Color} (const \hyperlink{classRS__Color}{R\-S\-\_\-\-Color} \&color)
+\item 
+void \hyperlink{classQG__ColorBox_a3ec3ec7a178bf840b29156015978eb19}{init} (bool show\-By\-Layer, bool show\-Unchanged)
+\item 
+\hypertarget{classQG__ColorBox_ae736f16eaa045243c3e9ef2888406504}{bool {\bfseries is\-Unchanged} ()}\label{classQG__ColorBox_ae736f16eaa045243c3e9ef2888406504}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A combobox for choosing a color. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classQG__ColorBox_a88451f744118b8ba7b90b1963e9e2584}{\index{Q\-G\-\_\-\-Color\-Box@{Q\-G\-\_\-\-Color\-Box}!Q\-G\-\_\-\-Color\-Box@{Q\-G\-\_\-\-Color\-Box}}
+\index{Q\-G\-\_\-\-Color\-Box@{Q\-G\-\_\-\-Color\-Box}!QG_ColorBox@{Q\-G\-\_\-\-Color\-Box}}
+\subsubsection[{Q\-G\-\_\-\-Color\-Box}]{\setlength{\rightskip}{0pt plus 5cm}Q\-G\-\_\-\-Color\-Box\-::\-Q\-G\-\_\-\-Color\-Box (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}, }
+\item[{const char $\ast$}]{name = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classQG__ColorBox_a88451f744118b8ba7b90b1963e9e2584}
+Default Constructor. You must call init manually if you choose to use this constructor. \hypertarget{classQG__ColorBox_a36e04f1a12a0f7b44b8e588aaa61169f}{\index{Q\-G\-\_\-\-Color\-Box@{Q\-G\-\_\-\-Color\-Box}!Q\-G\-\_\-\-Color\-Box@{Q\-G\-\_\-\-Color\-Box}}
+\index{Q\-G\-\_\-\-Color\-Box@{Q\-G\-\_\-\-Color\-Box}!QG_ColorBox@{Q\-G\-\_\-\-Color\-Box}}
+\subsubsection[{Q\-G\-\_\-\-Color\-Box}]{\setlength{\rightskip}{0pt plus 5cm}Q\-G\-\_\-\-Color\-Box\-::\-Q\-G\-\_\-\-Color\-Box (
+\begin{DoxyParamCaption}
+\item[{bool}]{show\-By\-Layer, }
+\item[{bool}]{show\-Unchanged, }
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}, }
+\item[{const char $\ast$}]{name = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classQG__ColorBox_a36e04f1a12a0f7b44b8e588aaa61169f}
+Constructor that calls init and provides a fully functional combobox for choosing colors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em show\-By\-Layer} & true\-: Show attribute By\-Layer, By\-Block. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classQG__ColorBox_a3fbfcb4b7c9a384db5268a3759f5d185}{\index{Q\-G\-\_\-\-Color\-Box@{Q\-G\-\_\-\-Color\-Box}!$\sim$\-Q\-G\-\_\-\-Color\-Box@{$\sim$\-Q\-G\-\_\-\-Color\-Box}}
+\index{$\sim$\-Q\-G\-\_\-\-Color\-Box@{$\sim$\-Q\-G\-\_\-\-Color\-Box}!QG_ColorBox@{Q\-G\-\_\-\-Color\-Box}}
+\subsubsection[{$\sim$\-Q\-G\-\_\-\-Color\-Box}]{\setlength{\rightskip}{0pt plus 5cm}Q\-G\-\_\-\-Color\-Box\-::$\sim$\-Q\-G\-\_\-\-Color\-Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQG__ColorBox_a3fbfcb4b7c9a384db5268a3759f5d185}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classQG__ColorBox_a75e7ac16011ef2188ad6140674c7e638}{\index{Q\-G\-\_\-\-Color\-Box@{Q\-G\-\_\-\-Color\-Box}!add\-Color@{add\-Color}}
+\index{add\-Color@{add\-Color}!QG_ColorBox@{Q\-G\-\_\-\-Color\-Box}}
+\subsubsection[{add\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Color\-Box\-::add\-Color (
+\begin{DoxyParamCaption}
+\item[{Qt\-::\-Global\-Color}]{color, }
+\item[{Q\-String}]{text}
+\end{DoxyParamCaption}
+)}}\label{classQG__ColorBox_a75e7ac16011ef2188ad6140674c7e638}
+generate icon from color, then add to color box \hypertarget{classQG__ColorBox_a3ec3ec7a178bf840b29156015978eb19}{\index{Q\-G\-\_\-\-Color\-Box@{Q\-G\-\_\-\-Color\-Box}!init@{init}}
+\index{init@{init}!QG_ColorBox@{Q\-G\-\_\-\-Color\-Box}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Color\-Box\-::init (
+\begin{DoxyParamCaption}
+\item[{bool}]{show\-By\-Layer, }
+\item[{bool}]{show\-Unchanged}
+\end{DoxyParamCaption}
+)}}\label{classQG__ColorBox_a3ec3ec7a178bf840b29156015978eb19}
+Initialisation (called from constructor or manually but only once).
+
+
+\begin{DoxyParams}{Parameters}
+{\em show\-By\-Layer} & true\-: Show attribute By\-Layer, By\-Block. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classQG__ColorBox_a304b0cb1ede5388f940fdaa753f8e721}{\index{Q\-G\-\_\-\-Color\-Box@{Q\-G\-\_\-\-Color\-Box}!set\-Color@{set\-Color}}
+\index{set\-Color@{set\-Color}!QG_ColorBox@{Q\-G\-\_\-\-Color\-Box}}
+\subsubsection[{set\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Color\-Box\-::set\-Color (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Color} \&}]{color}
+\end{DoxyParamCaption}
+)}}\label{classQG__ColorBox_a304b0cb1ede5388f940fdaa753f8e721}
+Sets the color shown in the combobox to the given color. \hypertarget{classQG__ColorBox_a98581a273be62c532652cdf75bd81674}{\index{Q\-G\-\_\-\-Color\-Box@{Q\-G\-\_\-\-Color\-Box}!set\-Layer\-Color@{set\-Layer\-Color}}
+\index{set\-Layer\-Color@{set\-Layer\-Color}!QG_ColorBox@{Q\-G\-\_\-\-Color\-Box}}
+\subsubsection[{set\-Layer\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Color\-Box\-::set\-Layer\-Color (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Color} \&}]{color}
+\end{DoxyParamCaption}
+)}}\label{classQG__ColorBox_a98581a273be62c532652cdf75bd81674}
+Sets the color of the pixmap next to the \char`\"{}\-By Layer\char`\"{} item to the given color. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/ui/qg\-\_\-colorbox.\-h\item 
+generated/librecad/moc/moc\-\_\-qg\-\_\-colorbox.\-cpp\item 
+librecad/src/ui/qg\-\_\-colorbox.\-cpp\end{DoxyCompactItemize}

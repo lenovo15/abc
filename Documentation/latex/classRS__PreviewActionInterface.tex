@@ -1,0 +1,180 @@
+\hypertarget{classRS__PreviewActionInterface}{\section{R\-S\-\_\-\-Preview\-Action\-Interface Class Reference}
+\label{classRS__PreviewActionInterface}\index{R\-S\-\_\-\-Preview\-Action\-Interface@{R\-S\-\_\-\-Preview\-Action\-Interface}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-previewactioninterface.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Preview\-Action\-Interface\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classRS__PreviewActionInterface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__PreviewActionInterface_ac70809bcec45aa1b93433d721a34b6e2}{R\-S\-\_\-\-Preview\-Action\-Interface} (const char $\ast$\hyperlink{classRS__ActionInterface_a1fdccfa2fcee3e1d21e6f79e6987f3df}{name}, \hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)
+\item 
+virtual \hyperlink{classRS__PreviewActionInterface_aca7fbf61619ddea62a9e92f5a18c3139}{$\sim$\-R\-S\-\_\-\-Preview\-Action\-Interface} ()
+\item 
+virtual void \hyperlink{classRS__PreviewActionInterface_ae5113b2aef5a10acd192786b99580e4a}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__PreviewActionInterface_af382ba093466b3acd8213e684529edc6}{finish} (bool update\-T\-B=true)
+\item 
+virtual void \hyperlink{classRS__PreviewActionInterface_a9f3b0c21f2b7b05ee53da53e197bda1b}{suspend} ()
+\item 
+virtual void \hyperlink{classRS__PreviewActionInterface_a796e15a324f4334437e6b17db55e6c77}{resume} ()
+\item 
+virtual void \hyperlink{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{trigger} ()
+\item 
+void \hyperlink{classRS__PreviewActionInterface_a1e9aced99871e4996364e15bdcebdfb2}{draw\-Preview} ()
+\item 
+void \hyperlink{classRS__PreviewActionInterface_ab812809bb9587e8eca7e22709d73263e}{delete\-Preview} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__Preview}{R\-S\-\_\-\-Preview} $\ast$ \hyperlink{classRS__PreviewActionInterface_ad678416870a4ad243bdbd09aebe12739}{preview}
+\item 
+\hypertarget{classRS__PreviewActionInterface_a85f3b48ce3f12cb691d2ed8355bea873}{bool {\bfseries has\-Preview}}\label{classRS__PreviewActionInterface_a85f3b48ce3f12cb691d2ed8355bea873}
+
+\item 
+\hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \hyperlink{classRS__PreviewActionInterface_ac067e0e61fa1375a4e10868be94cacb8}{offset}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This is the interface that must be implemented for all action classes which need a preview.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__PreviewActionInterface_ac70809bcec45aa1b93433d721a34b6e2}{\index{R\-S\-\_\-\-Preview\-Action\-Interface@{R\-S\-\_\-\-Preview\-Action\-Interface}!R\-S\-\_\-\-Preview\-Action\-Interface@{R\-S\-\_\-\-Preview\-Action\-Interface}}
+\index{R\-S\-\_\-\-Preview\-Action\-Interface@{R\-S\-\_\-\-Preview\-Action\-Interface}!RS_PreviewActionInterface@{R\-S\-\_\-\-Preview\-Action\-Interface}}
+\subsubsection[{R\-S\-\_\-\-Preview\-Action\-Interface}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Preview\-Action\-Interface\-::\-R\-S\-\_\-\-Preview\-Action\-Interface (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} \&}]{graphic\-View}
+\end{DoxyParamCaption}
+)}}\label{classRS__PreviewActionInterface_ac70809bcec45aa1b93433d721a34b6e2}
+Constructor.
+
+Sets the entity container on which the action class inherited from this interface operates. \hypertarget{classRS__PreviewActionInterface_aca7fbf61619ddea62a9e92f5a18c3139}{\index{R\-S\-\_\-\-Preview\-Action\-Interface@{R\-S\-\_\-\-Preview\-Action\-Interface}!$\sim$\-R\-S\-\_\-\-Preview\-Action\-Interface@{$\sim$\-R\-S\-\_\-\-Preview\-Action\-Interface}}
+\index{$\sim$\-R\-S\-\_\-\-Preview\-Action\-Interface@{$\sim$\-R\-S\-\_\-\-Preview\-Action\-Interface}!RS_PreviewActionInterface@{R\-S\-\_\-\-Preview\-Action\-Interface}}
+\subsubsection[{$\sim$\-R\-S\-\_\-\-Preview\-Action\-Interface}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Preview\-Action\-Interface\-::$\sim$\-R\-S\-\_\-\-Preview\-Action\-Interface (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__PreviewActionInterface_aca7fbf61619ddea62a9e92f5a18c3139}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__PreviewActionInterface_ab812809bb9587e8eca7e22709d73263e}{\index{R\-S\-\_\-\-Preview\-Action\-Interface@{R\-S\-\_\-\-Preview\-Action\-Interface}!delete\-Preview@{delete\-Preview}}
+\index{delete\-Preview@{delete\-Preview}!RS_PreviewActionInterface@{R\-S\-\_\-\-Preview\-Action\-Interface}}
+\subsubsection[{delete\-Preview}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Preview\-Action\-Interface\-::delete\-Preview (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__PreviewActionInterface_ab812809bb9587e8eca7e22709d73263e}
+Deletes the preview from the screen. \hypertarget{classRS__PreviewActionInterface_a1e9aced99871e4996364e15bdcebdfb2}{\index{R\-S\-\_\-\-Preview\-Action\-Interface@{R\-S\-\_\-\-Preview\-Action\-Interface}!draw\-Preview@{draw\-Preview}}
+\index{draw\-Preview@{draw\-Preview}!RS_PreviewActionInterface@{R\-S\-\_\-\-Preview\-Action\-Interface}}
+\subsubsection[{draw\-Preview}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Preview\-Action\-Interface\-::draw\-Preview (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__PreviewActionInterface_a1e9aced99871e4996364e15bdcebdfb2}
+Draws / deletes the current preview. \hypertarget{classRS__PreviewActionInterface_af382ba093466b3acd8213e684529edc6}{\index{R\-S\-\_\-\-Preview\-Action\-Interface@{R\-S\-\_\-\-Preview\-Action\-Interface}!finish@{finish}}
+\index{finish@{finish}!RS_PreviewActionInterface@{R\-S\-\_\-\-Preview\-Action\-Interface}}
+\subsubsection[{finish}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Preview\-Action\-Interface\-::finish (
+\begin{DoxyParamCaption}
+\item[{bool}]{update\-T\-B = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__PreviewActionInterface_af382ba093466b3acd8213e684529edc6}
+Finishes this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a63768bfe3a17d972be51f1800406e952}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+Reimplemented in \hyperlink{classRS__ActionDrawCircleTan1__2P_a2a4f22a1e5b149dd8a7d029a1535fd40}{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}, \hyperlink{classRS__ActionDrawCircleTan2__1P_adaa2aa1eca1b66af33c50241775408d1}{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan2\-\_\-1\-P}, \hyperlink{classRS__ActionDrawCircleTan3_af30d02c9d5c6450baaa501ad0553e77e}{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan3}, \hyperlink{classRS__ActionDrawCircleTan2_aa905732fa5455f65afc756f9c67dd3e4}{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan2}, \hyperlink{classRS__ActionDrawCircleInscribe_a60a03a1e8a713712a3b6ec2887ad5f77}{R\-S\-\_\-\-Action\-Draw\-Circle\-Inscribe}, \hyperlink{classRS__ActionDrawEllipseInscribe_a082db97ba5e66a469f6bffe8b1b024d3}{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}, \hyperlink{classRS__ActionDrawLineTangent2_a09835ee8441f86ca2abf2cf814c75714}{R\-S\-\_\-\-Action\-Draw\-Line\-Tangent2}, and \hyperlink{classRS__ActionDrawLineOrthTan_a065fa12a4e597f67b7c9bc7bf8121022}{R\-S\-\_\-\-Action\-Draw\-Line\-Orth\-Tan}.
+
+\hypertarget{classRS__PreviewActionInterface_ae5113b2aef5a10acd192786b99580e4a}{\index{R\-S\-\_\-\-Preview\-Action\-Interface@{R\-S\-\_\-\-Preview\-Action\-Interface}!init@{init}}
+\index{init@{init}!RS_PreviewActionInterface@{R\-S\-\_\-\-Preview\-Action\-Interface}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Preview\-Action\-Interface\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__PreviewActionInterface_ae5113b2aef5a10acd192786b99580e4a}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a05b7dca5deeb371eb51edcb73facd45f}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+Reimplemented in \hyperlink{classRS__ActionDrawPolyline_a2e698ba57d3e80a835c86b3de120737d}{R\-S\-\_\-\-Action\-Draw\-Polyline}, \hyperlink{classRS__ActionDrawImage_a803881c868c3f039645900cba4e4d230}{R\-S\-\_\-\-Action\-Draw\-Image}, \hyperlink{classRS__ActionLibraryInsert_aa1a625415f562391169faae3aeea1bcb}{R\-S\-\_\-\-Action\-Library\-Insert}, \hyperlink{classRS__ActionDrawArc_a65aba046c3cd4db4841d4560559f6fa3}{R\-S\-\_\-\-Action\-Draw\-Arc}, \hyperlink{classRS__ActionBlocksInsert_afbf7e8fbc47cafd8e2b53d08ad9fca8d}{R\-S\-\_\-\-Action\-Blocks\-Insert}, \hyperlink{classRS__ActionDrawLineAngle_ac3b42dca18f8ca55990ab4a88e4fe4d2}{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}, \hyperlink{classRS__ActionDefault_aa1fe85d09bee8ff975833fae1b596ddb}{R\-S\-\_\-\-Action\-Default}, \hyperlink{classRS__ActionDimLeader_afb9e4c8a5263913d7f94f08b52a3557b}{R\-S\-\_\-\-Action\-Dim\-Leader}, \hyperlink{classRS__ActionDrawEllipseAxis_abab81e44a6873bb54407ab49ef2a17e7}{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}, \hyperlink{classRS__ActionModifyBevel_a96d2054da7b029f4b193bb6fe5079d77}{R\-S\-\_\-\-Action\-Modify\-Bevel}, \hyperlink{classRS__ActionModifyMoveRotate_ad0b11d66b6ede4a83f810be95c4ea20e}{R\-S\-\_\-\-Action\-Modify\-Move\-Rotate}, \hyperlink{classRS__ActionDrawArcTangential_a0b7f38017d23a1b5134c83a1a6244355}{R\-S\-\_\-\-Action\-Draw\-Arc\-Tangential}, \hyperlink{classRS__ActionDrawCircle_ad6d071eabd7d2d843a2e1ff6458a351c}{R\-S\-\_\-\-Action\-Draw\-Circle}, \hyperlink{classRS__ActionDrawCircle3P_a4e7318669c35de4b4eadc2abe9f01f7e}{R\-S\-\_\-\-Action\-Draw\-Circle3\-P}, \hyperlink{classRS__ActionDrawCircleCR_a11ffb91ada314a450349d631efedb188}{R\-S\-\_\-\-Action\-Draw\-Circle\-C\-R}, \hyperlink{classRS__ActionDrawLine_a0a41c90d5af69657e724117dc83ed0a5}{R\-S\-\_\-\-Action\-Draw\-Line}, \hyperlink{classRS__ActionDrawLineRectangle_af1f87929d1795b929c54ec7792a22ece}{R\-S\-\_\-\-Action\-Draw\-Line\-Rectangle}, \hyperlink{classRS__ActionDrawSpline_a56c09df61d6d9a66dcc49f591918663a}{R\-S\-\_\-\-Action\-Draw\-Spline}, \hyperlink{classRS__ActionDrawText_a91e74d20a7b8976f0c070823b64db6f9}{R\-S\-\_\-\-Action\-Draw\-Text}, \hyperlink{classRS__ActionModifyOffset_a159be9aa4f95caf6fc5fdab18986c9e4}{R\-S\-\_\-\-Action\-Modify\-Offset}, \hyperlink{classRS__ActionModifyRound_a6a894b13c82ccfb28b7b8c57d1c5151e}{R\-S\-\_\-\-Action\-Modify\-Round}, \hyperlink{classRS__ActionDrawArc3P_ac50e9d0c26220b267fd84bb0f164baea}{R\-S\-\_\-\-Action\-Draw\-Arc3\-P}, \hyperlink{classRS__ActionDrawCircle2P_abcf760094d8d463ea6c5a18472c91450}{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}, \hyperlink{classRS__ActionDrawMText_abaa6ec90e1af2e8a12e02ca9ab3e2dec}{R\-S\-\_\-\-Action\-Draw\-M\-Text}, \hyperlink{classRS__ActionSelectIntersected_abfd5a39babce8a502147de943557a57e}{R\-S\-\_\-\-Action\-Select\-Intersected}, \hyperlink{classRS__ActionDrawLineHorVert_aa50fd84da48303b578bd3673aa33ddec}{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}, \hyperlink{classRS__ActionInfoArea_a4ad8dbce488f70efe38e14b924256168}{R\-S\-\_\-\-Action\-Info\-Area}, \hyperlink{classRS__ActionModifyRotate_a7a81eb9e99548f97ca4aa91f9e1a07c8}{R\-S\-\_\-\-Action\-Modify\-Rotate}, \hyperlink{classRS__ActionModifyRotate2_a775bd7980ec6b08defb3b3dcd9ab9af5}{R\-S\-\_\-\-Action\-Modify\-Rotate2}, \hyperlink{classRS__ActionSelectWindow_a8442ec1fc4aade7e9a3071304a76268d}{R\-S\-\_\-\-Action\-Select\-Window}, \hyperlink{classRS__ActionBlocksCreate_aac414b60f1b82ffbd5511194127a7bf9}{R\-S\-\_\-\-Action\-Blocks\-Create}, \hyperlink{classRS__ActionDrawCircleTan1__2P_a694a5a5f6803b49a85b21c8dd33cf56d}{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}, \hyperlink{classRS__ActionDrawCircleTan2__1P_a00b5f96870cc4f400524f4565b08c318}{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan2\-\_\-1\-P}, \hyperlink{classRS__ActionInfoDist_a5c8b40860e81f029a08b8fe88d703a2f}{R\-S\-\_\-\-Action\-Info\-Dist}, \hyperlink{classRS__ActionInfoDist2_a8bd8a0763e16359f9c376a65941346a7}{R\-S\-\_\-\-Action\-Info\-Dist2}, \hyperlink{classRS__ActionModifyMirror_a56b91ed9c2491a7ee5e610e7ca553023}{R\-S\-\_\-\-Action\-Modify\-Mirror}, \hyperlink{classRS__ActionModifyStretch_a3d3f351bc998eb2bee6ce967ed8ecfe5}{R\-S\-\_\-\-Action\-Modify\-Stretch}, \hyperlink{classRS__ActionDrawCircleTan3_a4b5746d6eb7779580a757ca6de498ba2}{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan3}, \hyperlink{classRS__ActionInfoAngle_affc08741baf9fdf33d2dac4d19709ec1}{R\-S\-\_\-\-Action\-Info\-Angle}, \hyperlink{classRS__ActionModifyScale_ab90b82cf252efdd4432f93c7b5f55e7a}{R\-S\-\_\-\-Action\-Modify\-Scale}, \hyperlink{classRS__ActionPolylineAdd_aaa7f71125d9a07ce8e892d6db3112831}{R\-S\-\_\-\-Action\-Polyline\-Add}, \hyperlink{classRS__ActionPolylineTrim_af09cce1b4d6ffc0672c97e232121d4cf}{R\-S\-\_\-\-Action\-Polyline\-Trim}, \hyperlink{classRS__ActionDrawCircleInscribe_acd6250f1447c54f6926951da676ea186}{R\-S\-\_\-\-Action\-Draw\-Circle\-Inscribe}, \hyperlink{classRS__ActionDrawCircleTan2_a9e18991f44f3e9e43266c400ed1afd0f}{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan2}, \hyperlink{classRS__ActionDrawEllipseInscribe_a6113e039be9efceae6b81036611fa04b}{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}, \hyperlink{classRS__ActionModifyTrim_aa28e8adbe2082171f980ade9657dd0bc}{R\-S\-\_\-\-Action\-Modify\-Trim}, \hyperlink{classRS__ActionPolylineDelBetween_a39371e2cb69b485571449e8917366410}{R\-S\-\_\-\-Action\-Polyline\-Del\-Between}, \hyperlink{classRS__ActionDrawEllipse4Points_a6df225bb21a5d390207c359cc149db81}{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}, \hyperlink{classRS__ActionDrawEllipseCenter3Points_a9b1210baec29dc2f997dade3f2e7ae6b}{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Center3\-Points}, \hyperlink{classRS__ActionDrawHatch_ad0a96bb9f9acda961b377b9fd60f9851}{R\-S\-\_\-\-Action\-Draw\-Hatch}, \hyperlink{classRS__ActionOrder_a2ea08979959565e232b1e0a1a1df17e2}{R\-S\-\_\-\-Action\-Order}, \hyperlink{classRS__ActionPolylineDel_a68ba81f6ef76c67cc83841e5d72231bd}{R\-S\-\_\-\-Action\-Polyline\-Del}, \hyperlink{classRS__ActionPolylineEquidistant_ae7affb7f36a8d0911e05543d8171e664}{R\-S\-\_\-\-Action\-Polyline\-Equidistant}, \hyperlink{classRS__ActionSnapIntersectionManual_a86dc49ce963c68283e87cba9b4dff51e}{R\-S\-\_\-\-Action\-Snap\-Intersection\-Manual}, \hyperlink{classRS__ActionDrawEllipseFociPoint_ae40d5109a4ed895d36463204c53b6b5b}{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}, \hyperlink{classRS__ActionEditPaste_aba71f496f5330d89ee5827466f074b8e}{R\-S\-\_\-\-Action\-Edit\-Paste}, \hyperlink{classRS__ActionPolylineSegment_a02e276ef724f8018231c27663a949643}{R\-S\-\_\-\-Action\-Polyline\-Segment}, \hyperlink{classRS__ActionZoomWindow_a40588ecd6c755410a2d18482ccd3a414}{R\-S\-\_\-\-Action\-Zoom\-Window}, \hyperlink{classRS__ActionBlocksExplode_a5053d0d7013d1a12d13d260b0319d01f}{R\-S\-\_\-\-Action\-Blocks\-Explode}, \hyperlink{classRS__ActionModifyExplodeText_a130d880fd6f13fa3b19e285d27ef47e8}{R\-S\-\_\-\-Action\-Modify\-Explode\-Text}, and \hyperlink{classRS__ActionDimension_a200dae046b7b888093148d4c89033e73}{R\-S\-\_\-\-Action\-Dimension}.
+
+\hypertarget{classRS__PreviewActionInterface_a796e15a324f4334437e6b17db55e6c77}{\index{R\-S\-\_\-\-Preview\-Action\-Interface@{R\-S\-\_\-\-Preview\-Action\-Interface}!resume@{resume}}
+\index{resume@{resume}!RS_PreviewActionInterface@{R\-S\-\_\-\-Preview\-Action\-Interface}}
+\subsubsection[{resume}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Preview\-Action\-Interface\-::resume (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__PreviewActionInterface_a796e15a324f4334437e6b17db55e6c77}
+Resumes an action after it was suspended. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_ae82ff598b25d54f624325553f8b680a7}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__PreviewActionInterface_a9f3b0c21f2b7b05ee53da53e197bda1b}{\index{R\-S\-\_\-\-Preview\-Action\-Interface@{R\-S\-\_\-\-Preview\-Action\-Interface}!suspend@{suspend}}
+\index{suspend@{suspend}!RS_PreviewActionInterface@{R\-S\-\_\-\-Preview\-Action\-Interface}}
+\subsubsection[{suspend}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Preview\-Action\-Interface\-::suspend (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__PreviewActionInterface_a9f3b0c21f2b7b05ee53da53e197bda1b}
+Suspends this action while another action takes place. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a7f4a0d32f846b52728b10c9dbaab6c78}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{\index{R\-S\-\_\-\-Preview\-Action\-Interface@{R\-S\-\_\-\-Preview\-Action\-Interface}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_PreviewActionInterface@{R\-S\-\_\-\-Preview\-Action\-Interface}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Preview\-Action\-Interface\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa2ba8f6f697f735eace4ec5449c0b8cd}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+Reimplemented in \hyperlink{classRS__ActionDrawPolyline_a54e86bb479bf7b5db099bffd6d789706}{R\-S\-\_\-\-Action\-Draw\-Polyline}, \hyperlink{classRS__ActionDimLinear_acca601d14e09ec36d9b11dfe1b7ab349}{R\-S\-\_\-\-Action\-Dim\-Linear}, \hyperlink{classRS__ActionDrawImage_a2e0bc369ed0dc0ec46baacc118792f04}{R\-S\-\_\-\-Action\-Draw\-Image}, \hyperlink{classRS__ActionLibraryInsert_a789f957a86dc85f2a497a7fd4fbd0365}{R\-S\-\_\-\-Action\-Library\-Insert}, \hyperlink{classRS__ActionBlocksInsert_a63797c853cfc6266d3defe4688002dad}{R\-S\-\_\-\-Action\-Blocks\-Insert}, \hyperlink{classRS__ActionDrawArc_ab6d03ad94c858d0dacf1eb86f95e7764}{R\-S\-\_\-\-Action\-Draw\-Arc}, \hyperlink{classRS__ActionDrawLineAngle_a2e2cd55786d5b50058a28ec545493b5c}{R\-S\-\_\-\-Action\-Draw\-Line\-Angle}, \hyperlink{classRS__ActionDefault_ac17b69f974f99c0993f5d5db81f495b2}{R\-S\-\_\-\-Action\-Default}, \hyperlink{classRS__ActionDrawText_af63c0fb27c8cbd0fc6a2947d53259f8d}{R\-S\-\_\-\-Action\-Draw\-Text}, \hyperlink{classRS__ActionDrawEllipseAxis_aba40cbf6a7cb35b72511ff276bd17f05}{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Axis}, \hyperlink{classRS__ActionDrawMText_a45cebf26719a492b2816aeec1d4f6f65}{R\-S\-\_\-\-Action\-Draw\-M\-Text}, \hyperlink{classRS__ActionModifyMoveRotate_ab407e961ac1242c95a2a042233bda39f}{R\-S\-\_\-\-Action\-Modify\-Move\-Rotate}, \hyperlink{classRS__ActionDimAligned_ab0ba344ce5b27d4f98691da1aa8d1284}{R\-S\-\_\-\-Action\-Dim\-Aligned}, \hyperlink{classRS__ActionDimLeader_aa7d60324f93cb5fb08523745f2f2b32d}{R\-S\-\_\-\-Action\-Dim\-Leader}, \hyperlink{classRS__ActionDrawArcTangential_a0be4ced6287e229c8a13dae282a288aa}{R\-S\-\_\-\-Action\-Draw\-Arc\-Tangential}, \hyperlink{classRS__ActionDrawCircle_a47ffa1b64c42b89c00c1c38860c0e9f0}{R\-S\-\_\-\-Action\-Draw\-Circle}, \hyperlink{classRS__ActionDrawCircle3P_a5218ce6b698e770f5bc990221e10036b}{R\-S\-\_\-\-Action\-Draw\-Circle3\-P}, \hyperlink{classRS__ActionDrawCircleCR_aa115d8f8280ddcb0c010f3be15131063}{R\-S\-\_\-\-Action\-Draw\-Circle\-C\-R}, \hyperlink{classRS__ActionDrawLineRelAngle_a853749201786879b2587b2b6caf9b363}{R\-S\-\_\-\-Action\-Draw\-Line\-Rel\-Angle}, \hyperlink{classRS__ActionModifyBevel_afab2830b31b3730f1ca982bd1d43bb1b}{R\-S\-\_\-\-Action\-Modify\-Bevel}, \hyperlink{classRS__ActionDrawArc3P_ad472014ca82e009ee153f6ce91f3504e}{R\-S\-\_\-\-Action\-Draw\-Arc3\-P}, \hyperlink{classRS__ActionDrawCircle2P_a35eac4823382124844f2de816ce30af5}{R\-S\-\_\-\-Action\-Draw\-Circle2\-P}, \hyperlink{classRS__ActionDrawLine_a5d7253adf5687be889ab7a86054afc95}{R\-S\-\_\-\-Action\-Draw\-Line}, \hyperlink{classRS__ActionDrawLineRectangle_ace7368d0513f7c563cb6ebaec92eb3c4}{R\-S\-\_\-\-Action\-Draw\-Line\-Rectangle}, \hyperlink{classRS__ActionDrawSpline_aa1f85d43f04a3a01085d9c5b2c535734}{R\-S\-\_\-\-Action\-Draw\-Spline}, \hyperlink{classRS__ActionModifyOffset_a7f1379d68732bb3469505bd99cd38e81}{R\-S\-\_\-\-Action\-Modify\-Offset}, \hyperlink{classRS__ActionModifyRound_aca1b9048129a2ec36c108252aef62e22}{R\-S\-\_\-\-Action\-Modify\-Round}, \hyperlink{classRS__ActionSelectIntersected_acaa95ed81f3b885ba2f23f1965dd1faa}{R\-S\-\_\-\-Action\-Select\-Intersected}, \hyperlink{classRS__ActionModifyRotate_a6621ca4a012ec6e7054bea070cc18034}{R\-S\-\_\-\-Action\-Modify\-Rotate}, \hyperlink{classRS__ActionSelectWindow_a78078d101937451ad89b382b80c12630}{R\-S\-\_\-\-Action\-Select\-Window}, \hyperlink{classRS__ActionBlocksCreate_ac8e647cb693c017f4168cf4d3445a0e9}{R\-S\-\_\-\-Action\-Blocks\-Create}, \hyperlink{classRS__ActionDimAngular_a93934a798c23e4b2cef18072b710d003}{R\-S\-\_\-\-Action\-Dim\-Angular}, \hyperlink{classRS__ActionDrawCircleTan1__2P_af85c0aaecb1c0405e7991bdcb044b967}{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan1\-\_\-2\-P}, \hyperlink{classRS__ActionDrawCircleTan2__1P_a424b9cc5920da4db3b5f402705a442ae}{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan2\-\_\-1\-P}, \hyperlink{classRS__ActionDrawLineHorVert_ac552544d3a1a2d0f5211d6ea9d4f1918}{R\-S\-\_\-\-Action\-Draw\-Line\-Hor\-Vert}, \hyperlink{classRS__ActionInfoArea_aa4a77a0063610c4a69c99e517e89c92a}{R\-S\-\_\-\-Action\-Info\-Area}, \hyperlink{classRS__ActionModifyRotate2_af00ae4394d88de27453767b3f657a2fe}{R\-S\-\_\-\-Action\-Modify\-Rotate2}, \hyperlink{classRS__ActionDimDiametric_a115401222ef6745b6646d50fe2aedd8a}{R\-S\-\_\-\-Action\-Dim\-Diametric}, \hyperlink{classRS__ActionDimRadial_a2be730b44fcb690e4265d280b2ff77af}{R\-S\-\_\-\-Action\-Dim\-Radial}, \hyperlink{classRS__ActionDrawCircleTan3_a7542915b1e6c1b30f82d0673dfd65a10}{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan3}, \hyperlink{classRS__ActionInfoDist_a18b9794da319137a344a1b683949b279}{R\-S\-\_\-\-Action\-Info\-Dist}, \hyperlink{classRS__ActionInfoDist2_ae13989ec559c87a9a888878e887671b9}{R\-S\-\_\-\-Action\-Info\-Dist2}, \hyperlink{classRS__ActionModifyMirror_a7095c735f1a452181bf5cd8d77ba5be7}{R\-S\-\_\-\-Action\-Modify\-Mirror}, \hyperlink{classRS__ActionModifyMove_a0c3e5ff9dd29d49f11f599ca5d72b1f4}{R\-S\-\_\-\-Action\-Modify\-Move}, \hyperlink{classRS__ActionModifyStretch_ae94ef515cb45bb9531c7f8d283a9ff79}{R\-S\-\_\-\-Action\-Modify\-Stretch}, \hyperlink{classRS__ActionDrawLineParallel_a4c5b1741cad88c4bb0a2b3d3c7bb9445}{R\-S\-\_\-\-Action\-Draw\-Line\-Parallel}, \hyperlink{classRS__ActionDrawLineTangent2_ac67b98988b96ade25ae7190aa215382a}{R\-S\-\_\-\-Action\-Draw\-Line\-Tangent2}, \hyperlink{classRS__ActionInfoAngle_ad75ebc8873ac8d7691f41f34b0374e5a}{R\-S\-\_\-\-Action\-Info\-Angle}, \hyperlink{classRS__ActionModifyScale_abec9cf60288e4cd8fa328f22d127e4d9}{R\-S\-\_\-\-Action\-Modify\-Scale}, \hyperlink{classRS__ActionPolylineAdd_af820ce62ec3a089dd6f73bd6d509606a}{R\-S\-\_\-\-Action\-Polyline\-Add}, \hyperlink{classRS__ActionPolylineAppend_ace0b12d971511f421b1abef99694675f}{R\-S\-\_\-\-Action\-Polyline\-Append}, \hyperlink{classRS__ActionPolylineTrim_ac8553ad877b92eef0effb1ae48f3606c}{R\-S\-\_\-\-Action\-Polyline\-Trim}, \hyperlink{classRS__ActionDrawCircleInscribe_a98e3bb1e0ce8be658e5fd1c7db835997}{R\-S\-\_\-\-Action\-Draw\-Circle\-Inscribe}, \hyperlink{classRS__ActionDrawCircleTan2_a9e4b34ef1ad85630c5fd1ed9b4fa9a4b}{R\-S\-\_\-\-Action\-Draw\-Circle\-Tan2}, \hyperlink{classRS__ActionDrawEllipseInscribe_a70ba2860b8adaa9f97ec86a634e929e6}{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Inscribe}, \hyperlink{classRS__ActionDrawLineBisector_af00453c0471ab36159e179c5dab135bc}{R\-S\-\_\-\-Action\-Draw\-Line\-Bisector}, \hyperlink{classRS__ActionDrawLineParallelThrough_a96335d73f2d8f5a400ac7d10de5132a8}{R\-S\-\_\-\-Action\-Draw\-Line\-Parallel\-Through}, \hyperlink{classRS__ActionPolylineDelBetween_a3b5a203971587b7085b197dee552a415}{R\-S\-\_\-\-Action\-Polyline\-Del\-Between}, \hyperlink{classRS__ActionDrawEllipse4Points_ac181ac7568c462d080c210ffc27c0706}{R\-S\-\_\-\-Action\-Draw\-Ellipse4\-Points}, \hyperlink{classRS__ActionDrawEllipseCenter3Points_a968b709f851502576a44cc5e216c47c5}{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Center3\-Points}, \hyperlink{classRS__ActionDrawLineFree_abea7d7039bf1eab5f2a20484ccf97976}{R\-S\-\_\-\-Action\-Draw\-Line\-Free}, \hyperlink{classRS__ActionDrawLinePolygonCenCor_a77658504f3efbb34221bcfbf45bbaad5}{R\-S\-\_\-\-Action\-Draw\-Line\-Polygon\-Cen\-Cor}, \hyperlink{classRS__ActionDrawLinePolygonCorCor_a1007ee4068be24c81c734994fbaa52e5}{R\-S\-\_\-\-Action\-Draw\-Line\-Polygon\-Cor\-Cor}, \hyperlink{classRS__ActionDrawLineTangent1_a6861bf90f170771fb37a57599fb9ee90}{R\-S\-\_\-\-Action\-Draw\-Line\-Tangent1}, \hyperlink{classRS__ActionModifyTrim_ae8de35eeb2994c66ddde422e81dc3df2}{R\-S\-\_\-\-Action\-Modify\-Trim}, \hyperlink{classRS__ActionOrder_a18859dc9a147c60ff3260af43c5d62c9}{R\-S\-\_\-\-Action\-Order}, \hyperlink{classRS__ActionPolylineDel_a9680e81df75a3b6894812e150ed49c9f}{R\-S\-\_\-\-Action\-Polyline\-Del}, \hyperlink{classRS__ActionPolylineEquidistant_a5f0d934987fd154f79ef20d892e8fdc8}{R\-S\-\_\-\-Action\-Polyline\-Equidistant}, \hyperlink{classRS__ActionDrawEllipseFociPoint_a71efc76a9e9eb3a520a9a50ef5a0915b}{R\-S\-\_\-\-Action\-Draw\-Ellipse\-Foci\-Point}, \hyperlink{classRS__ActionDrawHatch_a60429f89f0ddf091288f0b79b1bd320c}{R\-S\-\_\-\-Action\-Draw\-Hatch}, \hyperlink{classRS__ActionEditPaste_a248285c542bbbdaac44f9d62e7bdd533}{R\-S\-\_\-\-Action\-Edit\-Paste}, \hyperlink{classRS__ActionPolylineSegment_a48bc30353f471b2fbab78b7a19329382}{R\-S\-\_\-\-Action\-Polyline\-Segment}, \hyperlink{classRS__ActionSnapIntersectionManual_a207be94887919e22ef4a9aaaeed08b53}{R\-S\-\_\-\-Action\-Snap\-Intersection\-Manual}, \hyperlink{classRS__ActionDrawLineOrthTan_a7154ec4665b5045be619786426a823d3}{R\-S\-\_\-\-Action\-Draw\-Line\-Orth\-Tan}, \hyperlink{classRS__ActionBlocksExplode_afe1a1c463470a95b7eb7f007bdc4d629}{R\-S\-\_\-\-Action\-Blocks\-Explode}, \hyperlink{classRS__ActionModifyExplodeText_a92733f1c0884f75610998f41553029df}{R\-S\-\_\-\-Action\-Modify\-Explode\-Text}, \hyperlink{classRS__ActionSetRelativeZero_a23b54b6e4fb1ed518584e962082e9890}{R\-S\-\_\-\-Action\-Set\-Relative\-Zero}, \hyperlink{classRS__ActionZoomWindow_a8446256ec3f0d39a93018e34824ed5cf}{R\-S\-\_\-\-Action\-Zoom\-Window}, \hyperlink{classRS__ActionDrawPoint_acf48060fef74abc4e006b98f2c28c15b}{R\-S\-\_\-\-Action\-Draw\-Point}, and \hyperlink{classQC__ActionGetPoint_afa25202f83e6408d6208ea6fc14fd2ad}{Q\-C\-\_\-\-Action\-Get\-Point}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classRS__PreviewActionInterface_ac067e0e61fa1375a4e10868be94cacb8}{\index{R\-S\-\_\-\-Preview\-Action\-Interface@{R\-S\-\_\-\-Preview\-Action\-Interface}!offset@{offset}}
+\index{offset@{offset}!RS_PreviewActionInterface@{R\-S\-\_\-\-Preview\-Action\-Interface}}
+\subsubsection[{offset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Vector} R\-S\-\_\-\-Preview\-Action\-Interface\-::offset\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__PreviewActionInterface_ac067e0e61fa1375a4e10868be94cacb8}
+Current offset of the preview. \hypertarget{classRS__PreviewActionInterface_ad678416870a4ad243bdbd09aebe12739}{\index{R\-S\-\_\-\-Preview\-Action\-Interface@{R\-S\-\_\-\-Preview\-Action\-Interface}!preview@{preview}}
+\index{preview@{preview}!RS_PreviewActionInterface@{R\-S\-\_\-\-Preview\-Action\-Interface}}
+\subsubsection[{preview}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Preview}$\ast$ R\-S\-\_\-\-Preview\-Action\-Interface\-::preview\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRS__PreviewActionInterface_ad678416870a4ad243bdbd09aebe12739}
+Preview that holds the entities to be previewed. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/actions/rs\-\_\-previewactioninterface.\-h\item 
+librecad/src/lib/actions/rs\-\_\-previewactioninterface.\-cpp\end{DoxyCompactItemize}

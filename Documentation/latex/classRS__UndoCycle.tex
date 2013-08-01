@@ -1,0 +1,77 @@
+\hypertarget{classRS__UndoCycle}{\section{R\-S\-\_\-\-Undo\-Cycle Class Reference}
+\label{classRS__UndoCycle}\index{R\-S\-\_\-\-Undo\-Cycle@{R\-S\-\_\-\-Undo\-Cycle}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-undocycle.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__UndoCycle_a0ceb8ebeb0289cda2d24b0ca3980b122}{R\-S\-\_\-\-Undo\-Cycle} ()
+\item 
+void \hyperlink{classRS__UndoCycle_a1170db495b64f5ebb0e2d1ea5b2de335}{add\-Undoable} (\hyperlink{classRS__Undoable}{R\-S\-\_\-\-Undoable} $\ast$u)
+\item 
+void \hyperlink{classRS__UndoCycle_aa6d935f6508a380e92b3982f551a1194}{remove\-Undoable} (\hyperlink{classRS__Undoable}{R\-S\-\_\-\-Undoable} $\ast$u)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__UndoCycle_a1f51f791b37bc81c3ea77c6501f72afc}{class {\bfseries R\-S\-\_\-\-Undo}}\label{classRS__UndoCycle_a1f51f791b37bc81c3ea77c6501f72afc}
+
+\item 
+\hypertarget{classRS__UndoCycle_a28ec005fe07eec50d363218e285b1fa7}{std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&os, \hyperlink{classRS__UndoCycle}{R\-S\-\_\-\-Undo\-Cycle} \&uc)}\label{classRS__UndoCycle_a28ec005fe07eec50d363218e285b1fa7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An Undo Cycle represents an action that was triggered and can be undone. It stores all the pointers to the Undoables affected by the action. Undoables are entities in a container that can be created and deleted.
+
+Undo Cycles are stored within classes derrived from \hyperlink{classRS__Undo}{R\-S\-\_\-\-Undo}.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classRS__Undoable}{R\-S\-\_\-\-Undoable} 
+
+\hyperlink{classRS__Undo}{R\-S\-\_\-\-Undo}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__UndoCycle_a0ceb8ebeb0289cda2d24b0ca3980b122}{\index{R\-S\-\_\-\-Undo\-Cycle@{R\-S\-\_\-\-Undo\-Cycle}!R\-S\-\_\-\-Undo\-Cycle@{R\-S\-\_\-\-Undo\-Cycle}}
+\index{R\-S\-\_\-\-Undo\-Cycle@{R\-S\-\_\-\-Undo\-Cycle}!RS_UndoCycle@{R\-S\-\_\-\-Undo\-Cycle}}
+\subsubsection[{R\-S\-\_\-\-Undo\-Cycle}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Undo\-Cycle\-::\-R\-S\-\_\-\-Undo\-Cycle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__UndoCycle_a0ceb8ebeb0289cda2d24b0ca3980b122}
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Type of undo item. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__UndoCycle_a1170db495b64f5ebb0e2d1ea5b2de335}{\index{R\-S\-\_\-\-Undo\-Cycle@{R\-S\-\_\-\-Undo\-Cycle}!add\-Undoable@{add\-Undoable}}
+\index{add\-Undoable@{add\-Undoable}!RS_UndoCycle@{R\-S\-\_\-\-Undo\-Cycle}}
+\subsubsection[{add\-Undoable}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Undo\-Cycle\-::add\-Undoable (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Undoable} $\ast$}]{u}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__UndoCycle_a1170db495b64f5ebb0e2d1ea5b2de335}
+Adds an Undoable to this Undo Cycle. Every Cycle can contain one or more Undoables. \hypertarget{classRS__UndoCycle_aa6d935f6508a380e92b3982f551a1194}{\index{R\-S\-\_\-\-Undo\-Cycle@{R\-S\-\_\-\-Undo\-Cycle}!remove\-Undoable@{remove\-Undoable}}
+\index{remove\-Undoable@{remove\-Undoable}!RS_UndoCycle@{R\-S\-\_\-\-Undo\-Cycle}}
+\subsubsection[{remove\-Undoable}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Undo\-Cycle\-::remove\-Undoable (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Undoable} $\ast$}]{u}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__UndoCycle_aa6d935f6508a380e92b3982f551a1194}
+Removes an undoable from the list. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-undocycle.\-h\end{DoxyCompactItemize}

@@ -1,0 +1,358 @@
+\hypertarget{classRS__System}{\section{R\-S\-\_\-\-System Class Reference}
+\label{classRS__System}\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-system.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classRS__System_aace7d6702555aa2174c0372470f007f9}{init} (const Q\-String \&app\-Name, const Q\-String \&app\-Version, const Q\-String \&app\-Dir\-Name, const Q\-String \&app\-Dir=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{classRS__System_a407398c6097ecc13b26b420db301cc97}{init\-Language\-List} ()
+\item 
+\hypertarget{classRS__System_ac1d10d7d6ba941657c6081dc4963335f}{void {\bfseries init\-All\-Languages\-List} ()}\label{classRS__System_ac1d10d7d6ba941657c6081dc4963335f}
+
+\item 
+bool \hyperlink{classRS__System_a659df7be14487e01da17512639506984}{check\-Init} ()
+\item 
+bool \hyperlink{classRS__System_a71fa72d2e0d2b5ece0c2bb5dfb2a2bdb}{create\-Paths} (const Q\-String \&p)
+\item 
+Q\-String \hyperlink{classRS__System_a169a410fb7c0f843624c14389391cb01}{get\-Home\-Dir} ()
+\item 
+Q\-String \hyperlink{classRS__System_a4a3aa12f9531e9dc3bc8589b508eb832}{get\-Current\-Dir} ()
+\item 
+Q\-String \hyperlink{classRS__System_a7094cceb1e25d11c3176e215b4663af4}{get\-App\-Dir} ()
+\item 
+Q\-String \hyperlink{classRS__System_a3e96a3d71a6a039b5d7ecc71b2568fa5}{get\-App\-Data\-Dir} ()
+\item 
+Q\-String\-List \hyperlink{classRS__System_a3418ba822d0d1edab8f75b87c196f687}{get\-Font\-List} ()
+\item 
+Q\-String\-List \hyperlink{classRS__System_aeade79f9340e4d20ff9d413ce51c4f1a}{get\-New\-Font\-List} ()
+\item 
+Q\-String\-List \hyperlink{classRS__System_ae49613ad49e589c4eb0a3554b5872d6f}{get\-Pattern\-List} ()
+\item 
+Q\-String\-List \hyperlink{classRS__System_a486e47811cbad1987c47bd1c2a0a28f8}{get\-Script\-List} ()
+\item 
+Q\-String\-List \hyperlink{classRS__System_adb669795cc5e0efa1cd960c4c4f7a124}{get\-Machine\-List} ()
+\item 
+Q\-String \hyperlink{classRS__System_ade0d60d1aece6b9f10c1ac21132abfc0}{get\-Doc\-Path} ()
+\item 
+Q\-String \hyperlink{classRS__System_a5f90f6a18e8e586e701835ae3196edd4}{get\-App\-Name} ()
+\item 
+Q\-String \hyperlink{classRS__System_a07efe8e59894307022bbf020d3282f19}{get\-App\-Version} ()
+\item 
+Q\-String\-List \hyperlink{classRS__System_a1667436d300a39666a8c06024ebb8c06}{get\-File\-List} (const Q\-String \&sub\-Directory, const Q\-String \&file\-Extension)
+\item 
+Q\-String\-List \hyperlink{classRS__System_ae2658670b2384d06ad3ff2e8e3132b2d}{get\-Directory\-List} (const Q\-String \&sub\-Directory)
+\item 
+\hypertarget{classRS__System_abfa6fc249a8e1dcf29b3c5f30ddb75d2}{Q\-String\-List {\bfseries get\-Language\-List} ()}\label{classRS__System_abfa6fc249a8e1dcf29b3c5f30ddb75d2}
+
+\item 
+void \hyperlink{classRS__System_a8b26bcf968f27491d47b874c4dc82a72}{load\-Translation} (const Q\-String \&lang, const Q\-String \&lang\-Cmd)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classRS__System}{R\-S\-\_\-\-System} $\ast$ \hyperlink{classRS__System_abc000967d6c96c8011146bd82c9a6594}{instance} ()
+\item 
+static Q\-String \hyperlink{classRS__System_a0fe0708127e7e142e08e9646eaa9d05a}{language\-To\-Symbol} (const Q\-String \&lang)
+\item 
+static Q\-String \hyperlink{classRS__System_a9960c35db080fe160a2baa2a55623c28}{symbol\-To\-Language} (const Q\-String \&symb)
+\item 
+static Q\-String \hyperlink{classRS__System_a3e9cce6dc630433b3311acfc1d925bc5}{get\-Encoding} (const Q\-String \&str)
+\item 
+\hypertarget{classRS__System_a3d98bc7a4780043adf068bdf459f97e3}{static bool {\bfseries test} ()}\label{classRS__System_a3d98bc7a4780043adf068bdf459f97e3}
+
+\item 
+static Q\-Byte\-Array \hyperlink{classRS__System_ad35c509c2e0be808daf12246a265675f}{locale\-To\-I\-S\-O} (const Q\-Byte\-Array \&locale)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__System_a8fd06bdb3020dd287551ff874368489a}{Q\-String {\bfseries app\-Name}}\label{classRS__System_a8fd06bdb3020dd287551ff874368489a}
+
+\item 
+\hypertarget{classRS__System_a9670c06884e117f2fdf174bde9cbc463}{Q\-String {\bfseries app\-Version}}\label{classRS__System_a9670c06884e117f2fdf174bde9cbc463}
+
+\item 
+\hypertarget{classRS__System_abd8d53c8633bd2a17f3a23c6e6d653e5}{Q\-String {\bfseries app\-Dir\-Name}}\label{classRS__System_abd8d53c8633bd2a17f3a23c6e6d653e5}
+
+\item 
+\hypertarget{classRS__System_af9baa77dd73f92114c57125c495177d9}{Q\-String {\bfseries app\-Dir}}\label{classRS__System_af9baa77dd73f92114c57125c495177d9}
+
+\item 
+\hypertarget{classRS__System_adc8e4180334c0e718781af4c18b41426}{Q\-String\-List \hyperlink{classRS__System_adc8e4180334c0e718781af4c18b41426}{language\-List}}\label{classRS__System_adc8e4180334c0e718781af4c18b41426}
+
+\begin{DoxyCompactList}\small\item\em List of available translations. \end{DoxyCompactList}\item 
+\hypertarget{classRS__System_a402173e1050d468f6b194240682f4c5b}{bool {\bfseries initialized}}\label{classRS__System_a402173e1050d468f6b194240682f4c5b}
+
+\item 
+\hypertarget{classRS__System_ad6502aa22d099e1a4dd69715570b4ec9}{Q\-List$<$ Q\-Shared\-Pointer\\*
+$<$ \hyperlink{classRS__Locale}{R\-S\-\_\-\-Locale} $>$ $>$ {\bfseries all\-Known\-Locales}}\label{classRS__System_ad6502aa22d099e1a4dd69715570b4ec9}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__System_a81d6b9f13bea1798cc3d81f2d11c53aa}{static \hyperlink{classRS__System}{R\-S\-\_\-\-System} $\ast$ {\bfseries unique\-Instance} = N\-U\-L\-L}\label{classRS__System_a81d6b9f13bea1798cc3d81f2d11c53aa}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for some system methods such as file system operations. Implemented as singleton. Use init to Initialize the class before you use it.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__System_a659df7be14487e01da17512639506984}{\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}!check\-Init@{check\-Init}}
+\index{check\-Init@{check\-Init}!RS_System@{R\-S\-\_\-\-System}}
+\subsubsection[{check\-Init}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-System\-::check\-Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__System_a659df7be14487e01da17512639506984}
+Checks if the system has been initialized and prints a warning otherwise to stderr. \hypertarget{classRS__System_a71fa72d2e0d2b5ece0c2bb5dfb2a2bdb}{\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}!create\-Paths@{create\-Paths}}
+\index{create\-Paths@{create\-Paths}!RS_System@{R\-S\-\_\-\-System}}
+\subsubsection[{create\-Paths}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-System\-::create\-Paths (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{directory}
+\end{DoxyParamCaption}
+)}}\label{classRS__System_a71fa72d2e0d2b5ece0c2bb5dfb2a2bdb}
+Creates all given directories in the user's home. \hypertarget{classRS__System_a3e96a3d71a6a039b5d7ecc71b2568fa5}{\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}!get\-App\-Data\-Dir@{get\-App\-Data\-Dir}}
+\index{get\-App\-Data\-Dir@{get\-App\-Data\-Dir}!RS_System@{R\-S\-\_\-\-System}}
+\subsubsection[{get\-App\-Data\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-System\-::get\-App\-Data\-Dir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__System_a3e96a3d71a6a039b5d7ecc71b2568fa5}
+\begin{DoxyReturn}{Returns}
+Application Data directory.
+\end{DoxyReturn}
+Create if not exist and return the Application data directory. In O\-S\-\_\-\-W\-I\-N32 \char`\"{}c\-:\textbackslash{}documents\&settings$<$user$>$\textbackslash{}local configuration\textbackslash{}application data\textbackslash{}\-Libre\-C\-A\-D\char`\"{} In O\-S\-\_\-\-M\-A\-C \char`\"{}???\char`\"{} In O\-S\-\_\-\-L\-I\-N\-U\-X \char`\"{}/home/$<$user$>$/.\-local/share/data/\-Libre\-C\-A\-D\char`\"{}
+
+\begin{DoxyReturn}{Returns}
+Application data directory. 
+\end{DoxyReturn}
+\hypertarget{classRS__System_a7094cceb1e25d11c3176e215b4663af4}{\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}!get\-App\-Dir@{get\-App\-Dir}}
+\index{get\-App\-Dir@{get\-App\-Dir}!RS_System@{R\-S\-\_\-\-System}}
+\subsubsection[{get\-App\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-System\-::get\-App\-Dir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__System_a7094cceb1e25d11c3176e215b4663af4}
+\begin{DoxyReturn}{Returns}
+Application directory. 
+\end{DoxyReturn}
+\hypertarget{classRS__System_a5f90f6a18e8e586e701835ae3196edd4}{\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}!get\-App\-Name@{get\-App\-Name}}
+\index{get\-App\-Name@{get\-App\-Name}!RS_System@{R\-S\-\_\-\-System}}
+\subsubsection[{get\-App\-Name}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-System\-::get\-App\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__System_a5f90f6a18e8e586e701835ae3196edd4}
+\begin{DoxyReturn}{Returns}
+The application name. 
+\end{DoxyReturn}
+\hypertarget{classRS__System_a07efe8e59894307022bbf020d3282f19}{\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}!get\-App\-Version@{get\-App\-Version}}
+\index{get\-App\-Version@{get\-App\-Version}!RS_System@{R\-S\-\_\-\-System}}
+\subsubsection[{get\-App\-Version}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-System\-::get\-App\-Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__System_a07efe8e59894307022bbf020d3282f19}
+\begin{DoxyReturn}{Returns}
+The application version. 
+\end{DoxyReturn}
+\hypertarget{classRS__System_a4a3aa12f9531e9dc3bc8589b508eb832}{\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}!get\-Current\-Dir@{get\-Current\-Dir}}
+\index{get\-Current\-Dir@{get\-Current\-Dir}!RS_System@{R\-S\-\_\-\-System}}
+\subsubsection[{get\-Current\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-System\-::get\-Current\-Dir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__System_a4a3aa12f9531e9dc3bc8589b508eb832}
+\begin{DoxyReturn}{Returns}
+Current directory. 
+\end{DoxyReturn}
+\hypertarget{classRS__System_ae2658670b2384d06ad3ff2e8e3132b2d}{\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}!get\-Directory\-List@{get\-Directory\-List}}
+\index{get\-Directory\-List@{get\-Directory\-List}!RS_System@{R\-S\-\_\-\-System}}
+\subsubsection[{get\-Directory\-List}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String\-List R\-S\-\_\-\-System\-::get\-Directory\-List (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{\-\_\-sub\-Directory}
+\end{DoxyParamCaption}
+)}}\label{classRS__System_ae2658670b2384d06ad3ff2e8e3132b2d}
+\begin{DoxyReturn}{Returns}
+List of all directories in subdirectory 'sub\-Directory' in all possible Q\-Cad directories. 
+\end{DoxyReturn}
+\hypertarget{classRS__System_ade0d60d1aece6b9f10c1ac21132abfc0}{\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}!get\-Doc\-Path@{get\-Doc\-Path}}
+\index{get\-Doc\-Path@{get\-Doc\-Path}!RS_System@{R\-S\-\_\-\-System}}
+\subsubsection[{get\-Doc\-Path}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-System\-::get\-Doc\-Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__System_ade0d60d1aece6b9f10c1ac21132abfc0}
+\begin{DoxyReturn}{Returns}
+Absolute path to the documentation. 
+\end{DoxyReturn}
+\hypertarget{classRS__System_a3e9cce6dc630433b3311acfc1d925bc5}{\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}!get\-Encoding@{get\-Encoding}}
+\index{get\-Encoding@{get\-Encoding}!RS_System@{R\-S\-\_\-\-System}}
+\subsubsection[{get\-Encoding}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-System\-::get\-Encoding (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__System_a3e9cce6dc630433b3311acfc1d925bc5}
+Tries to convert the given encoding string to an encoding Qt knows. \hypertarget{classRS__System_a1667436d300a39666a8c06024ebb8c06}{\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}!get\-File\-List@{get\-File\-List}}
+\index{get\-File\-List@{get\-File\-List}!RS_System@{R\-S\-\_\-\-System}}
+\subsubsection[{get\-File\-List}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String\-List R\-S\-\_\-\-System\-::get\-File\-List (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{sub\-Directory, }
+\item[{const Q\-String \&}]{file\-Extension}
+\end{DoxyParamCaption}
+)}}\label{classRS__System_a1667436d300a39666a8c06024ebb8c06}
+Searches for files in an application shared directory in the given subdirectory with the given extension.
+
+\begin{DoxyReturn}{Returns}
+List of the absolute paths of the files found. 
+\end{DoxyReturn}
+\hypertarget{classRS__System_a3418ba822d0d1edab8f75b87c196f687}{\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}!get\-Font\-List@{get\-Font\-List}}
+\index{get\-Font\-List@{get\-Font\-List}!RS_System@{R\-S\-\_\-\-System}}
+\subsubsection[{get\-Font\-List}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String\-List R\-S\-\_\-\-System\-::get\-Font\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__System_a3418ba822d0d1edab8f75b87c196f687}
+\begin{DoxyReturn}{Returns}
+A list of absolute paths to all font files found. 
+\end{DoxyReturn}
+\hypertarget{classRS__System_a169a410fb7c0f843624c14389391cb01}{\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}!get\-Home\-Dir@{get\-Home\-Dir}}
+\index{get\-Home\-Dir@{get\-Home\-Dir}!RS_System@{R\-S\-\_\-\-System}}
+\subsubsection[{get\-Home\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-System\-::get\-Home\-Dir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__System_a169a410fb7c0f843624c14389391cb01}
+\begin{DoxyReturn}{Returns}
+Users home directory. 
+\end{DoxyReturn}
+\hypertarget{classRS__System_adb669795cc5e0efa1cd960c4c4f7a124}{\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}!get\-Machine\-List@{get\-Machine\-List}}
+\index{get\-Machine\-List@{get\-Machine\-List}!RS_System@{R\-S\-\_\-\-System}}
+\subsubsection[{get\-Machine\-List}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String\-List R\-S\-\_\-\-System\-::get\-Machine\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__System_adb669795cc5e0efa1cd960c4c4f7a124}
+\begin{DoxyReturn}{Returns}
+A list of absolute paths to all machine configuration files found. 
+\end{DoxyReturn}
+\hypertarget{classRS__System_aeade79f9340e4d20ff9d413ce51c4f1a}{\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}!get\-New\-Font\-List@{get\-New\-Font\-List}}
+\index{get\-New\-Font\-List@{get\-New\-Font\-List}!RS_System@{R\-S\-\_\-\-System}}
+\subsubsection[{get\-New\-Font\-List}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String\-List R\-S\-\_\-\-System\-::get\-New\-Font\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__System_aeade79f9340e4d20ff9d413ce51c4f1a}
+\begin{DoxyReturn}{Returns}
+A list of absolute paths to all N\-E\-W font files found. 
+\end{DoxyReturn}
+\hypertarget{classRS__System_ae49613ad49e589c4eb0a3554b5872d6f}{\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}!get\-Pattern\-List@{get\-Pattern\-List}}
+\index{get\-Pattern\-List@{get\-Pattern\-List}!RS_System@{R\-S\-\_\-\-System}}
+\subsubsection[{get\-Pattern\-List}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String\-List R\-S\-\_\-\-System\-::get\-Pattern\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__System_ae49613ad49e589c4eb0a3554b5872d6f}
+\begin{DoxyReturn}{Returns}
+A list of absolute paths to all hatch pattern files found. 
+\end{DoxyReturn}
+\hypertarget{classRS__System_a486e47811cbad1987c47bd1c2a0a28f8}{\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}!get\-Script\-List@{get\-Script\-List}}
+\index{get\-Script\-List@{get\-Script\-List}!RS_System@{R\-S\-\_\-\-System}}
+\subsubsection[{get\-Script\-List}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String\-List R\-S\-\_\-\-System\-::get\-Script\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__System_a486e47811cbad1987c47bd1c2a0a28f8}
+\begin{DoxyReturn}{Returns}
+A list of absolute paths to all script files found. 
+\end{DoxyReturn}
+\hypertarget{classRS__System_aace7d6702555aa2174c0372470f007f9}{\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}!init@{init}}
+\index{init@{init}!RS_System@{R\-S\-\_\-\-System}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-System\-::init (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{app\-Name, }
+\item[{const Q\-String \&}]{app\-Version, }
+\item[{const Q\-String \&}]{app\-Dir\-Name, }
+\item[{const Q\-String \&}]{app\-Dir = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classRS__System_aace7d6702555aa2174c0372470f007f9}
+Initializes the system.
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\-Name} & Application name (e.\-g. \char`\"{}librecad I\-I\char`\"{}) \\
+\hline
+{\em app\-Version} & Application version (e.\-g. \char`\"{}1.\-2.\-3\char`\"{}) \\
+\hline
+{\em app\-Dir\-Name} & Application directory name used for subdirectories in /usr, /etc $\sim$/. \\
+\hline
+{\em app\-Dir} & Absolute application directory (e.\-g. /opt/qcad) defaults to current directory. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRS__System_a407398c6097ecc13b26b420db301cc97}{\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}!init\-Language\-List@{init\-Language\-List}}
+\index{init\-Language\-List@{init\-Language\-List}!RS_System@{R\-S\-\_\-\-System}}
+\subsubsection[{init\-Language\-List}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-System\-::init\-Language\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__System_a407398c6097ecc13b26b420db301cc97}
+Initializes the list of available translations. \hypertarget{classRS__System_abc000967d6c96c8011146bd82c9a6594}{\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}!instance@{instance}}
+\index{instance@{instance}!RS_System@{R\-S\-\_\-\-System}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf R\-S\-\_\-\-System}$\ast$ R\-S\-\_\-\-System\-::instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classRS__System_abc000967d6c96c8011146bd82c9a6594}
+\begin{DoxyReturn}{Returns}
+Instance to the unique system object. 
+\end{DoxyReturn}
+\hypertarget{classRS__System_a0fe0708127e7e142e08e9646eaa9d05a}{\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}!language\-To\-Symbol@{language\-To\-Symbol}}
+\index{language\-To\-Symbol@{language\-To\-Symbol}!RS_System@{R\-S\-\_\-\-System}}
+\subsubsection[{language\-To\-Symbol}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-System\-::language\-To\-Symbol (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{lang}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__System_a0fe0708127e7e142e08e9646eaa9d05a}
+Converts a language string to a symbol (e.\-g. Deutsch or German to 'de'). Languages taken from R\-F\-C3066 \hypertarget{classRS__System_a8b26bcf968f27491d47b874c4dc82a72}{\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}!load\-Translation@{load\-Translation}}
+\index{load\-Translation@{load\-Translation}!RS_System@{R\-S\-\_\-\-System}}
+\subsubsection[{load\-Translation}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-System\-::load\-Translation (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{lang, }
+\item[{const Q\-String \&}]{lang\-Cmd}
+\end{DoxyParamCaption}
+)}}\label{classRS__System_a8b26bcf968f27491d47b874c4dc82a72}
+Loads a different translation for the application G\-U\-I.
+
+$\ast$fixme, need to support command language \hypertarget{classRS__System_ad35c509c2e0be808daf12246a265675f}{\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}!locale\-To\-I\-S\-O@{locale\-To\-I\-S\-O}}
+\index{locale\-To\-I\-S\-O@{locale\-To\-I\-S\-O}!RS_System@{R\-S\-\_\-\-System}}
+\subsubsection[{locale\-To\-I\-S\-O}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Byte\-Array R\-S\-\_\-\-System\-::locale\-To\-I\-S\-O (
+\begin{DoxyParamCaption}
+\item[{const Q\-Byte\-Array \&}]{locale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__System_ad35c509c2e0be808daf12246a265675f}
+Returns I\-S\-O code for given locale. Needed for win32 to convert from system encodings. \hypertarget{classRS__System_a9960c35db080fe160a2baa2a55623c28}{\index{R\-S\-\_\-\-System@{R\-S\-\_\-\-System}!symbol\-To\-Language@{symbol\-To\-Language}}
+\index{symbol\-To\-Language@{symbol\-To\-Language}!RS_System@{R\-S\-\_\-\-System}}
+\subsubsection[{symbol\-To\-Language}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String R\-S\-\_\-\-System\-::symbol\-To\-Language (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{symb}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classRS__System_a9960c35db080fe160a2baa2a55623c28}
+Converst a locale code into a readable string (e.\-g. 'de' to 'German Deutsch' (e.\-g. 'en\-\_\-au' to 'English (Australia)' 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-system.\-h\item 
+librecad/src/lib/engine/rs\-\_\-system.\-cpp\end{DoxyCompactItemize}

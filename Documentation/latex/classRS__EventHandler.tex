@@ -1,0 +1,283 @@
+\hypertarget{classRS__EventHandler}{\section{R\-S\-\_\-\-Event\-Handler Class Reference}
+\label{classRS__EventHandler}\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-eventhandler.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__EventHandler_aa511bd458c84e861916a9aee5d25a271}{R\-S\-\_\-\-Event\-Handler} (\hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} $\ast$graphic\-View)
+\item 
+\hyperlink{classRS__EventHandler_ab307f357c79b273e62f4fdd255e594eb}{$\sim$\-R\-S\-\_\-\-Event\-Handler} ()
+\item 
+void \hyperlink{classRS__EventHandler_aa195dff724e99fcc4d65a263a1ef9aff}{back} ()
+\item 
+void \hyperlink{classRS__EventHandler_ab60ad9e3fad898e5aeaa2b2acd998ef0}{enter} ()
+\item 
+void \hyperlink{classRS__EventHandler_a626d180d1c5861509137391c4611251b}{mouse\-Press\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+void \hyperlink{classRS__EventHandler_a4224050d891443439fed7574e3e7b8db}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+void \hyperlink{classRS__EventHandler_a84459b98a8c50cb6aa5e7e3d6aa34977}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+void \hyperlink{classRS__EventHandler_a1061bf11d56bc015cfd9aafc407a3f86}{mouse\-Leave\-Event} ()
+\item 
+void \hyperlink{classRS__EventHandler_a59ff028c9118a8a37dae2bb181a095f5}{mouse\-Enter\-Event} ()
+\item 
+void \hyperlink{classRS__EventHandler_a6829855cd44fbfa0ef8d80d153c2275b}{key\-Press\-Event} (Q\-Key\-Event $\ast$e)
+\item 
+void \hyperlink{classRS__EventHandler_aab9114ff34d6e2b69f3190c1a0591bcf}{key\-Release\-Event} (Q\-Key\-Event $\ast$e)
+\item 
+void \hyperlink{classRS__EventHandler_a7a5a011570c379b583d0d8b30eb3e841}{command\-Event} (\hyperlink{classRS__CommandEvent}{R\-S\-\_\-\-Command\-Event} $\ast$e)
+\item 
+void \hyperlink{classRS__EventHandler_a7d6db13956e1b6de13ed14bd7ea2c6cc}{enable\-Coordinate\-Input} ()
+\item 
+void \hyperlink{classRS__EventHandler_a4baabbea0587234676bfad1e4cfd0dd1}{disable\-Coordinate\-Input} ()
+\item 
+void \hyperlink{classRS__EventHandler_a1fb6a0d2ab584f553427e63a369a80b1}{set\-Default\-Action} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action)
+\item 
+\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$ \hyperlink{classRS__EventHandler_a986e440c3ecb585ed34fab54ddef7f46}{get\-Default\-Action} ()
+\item 
+void \hyperlink{classRS__EventHandler_a3d40c1173beaabcf3325c1944e84d49f}{set\-Current\-Action} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action)
+\item 
+\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$ \hyperlink{classRS__EventHandler_abb32b056c91d0d747eb6000ffbcd5a94}{get\-Current\-Action} ()
+\item 
+bool \hyperlink{classRS__EventHandler_a801a77a7765ac758b18f3f2de55b0458}{is\-Valid} (\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$action)
+\item 
+void \hyperlink{classRS__EventHandler_a1b9bdf8245a7e9992c16e9ad89a2d5d3}{kill\-Select\-Actions} ()
+\item 
+void \hyperlink{classRS__EventHandler_a51f5c377885d6919d46641494801ccd6}{kill\-All\-Actions} ()
+\item 
+bool \hyperlink{classRS__EventHandler_a1675b5383f70cc8e0f855abb3df33e1d}{has\-Action} ()
+\item 
+void \hyperlink{classRS__EventHandler_a0f59545b4e5099e93cfa8d7b5320ec0f}{clean\-Up} ()
+\item 
+\hypertarget{classRS__EventHandler_a1163751fd58e27c95fafb615652c98c8}{void {\bfseries debug\-Actions} ()}\label{classRS__EventHandler_a1163751fd58e27c95fafb615652c98c8}
+
+\item 
+void \hyperlink{classRS__EventHandler_ae24865dd929f5dee4baa1af01a3e13da}{set\-Snap\-Mode} (\hyperlink{structRS__SnapMode}{R\-S\-\_\-\-Snap\-Mode} sm)
+\item 
+void \hyperlink{classRS__EventHandler_a5a31c0a7988d319cc7bc4784fcfd7866}{set\-Snap\-Restriction} (\hyperlink{classRS2_aac67b6890a08cff619c0fbef48377bae}{R\-S2\-::\-Snap\-Restriction} sr)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__EventHandler_a71c5cf4758663d1b3fe1dec8d6c9ad7f}{\hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} $\ast$ {\bfseries graphic\-View}}\label{classRS__EventHandler_a71c5cf4758663d1b3fe1dec8d6c9ad7f}
+
+\item 
+\hypertarget{classRS__EventHandler_aed5905023c439632508f2683931e5084}{\hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$ {\bfseries default\-Action}}\label{classRS__EventHandler_aed5905023c439632508f2683931e5084}
+
+\item 
+\hypertarget{classRS__EventHandler_a40364458ae5d10da2647ac6bf7611df5}{Q\-List$<$ \hyperlink{classRS__ActionInterface}{R\-S\-\_\-\-Action\-Interface} $\ast$ $>$ {\bfseries current\-Actions}}\label{classRS__EventHandler_a40364458ae5d10da2647ac6bf7611df5}
+
+\item 
+\hypertarget{classRS__EventHandler_a4bffca11ac0c4562d366b76d9a1a16a3}{int {\bfseries action\-Index}}\label{classRS__EventHandler_a4bffca11ac0c4562d366b76d9a1a16a3}
+
+\item 
+\hypertarget{classRS__EventHandler_af1bb1d1103fc7b0d0b821b43b5d0dab6}{bool {\bfseries coordinate\-Input\-Enabled}}\label{classRS__EventHandler_af1bb1d1103fc7b0d0b821b43b5d0dab6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The event handler owns and manages all actions that are currently active. All events going from the view to the actions come over this class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__EventHandler_aa511bd458c84e861916a9aee5d25a271}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}}
+\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{R\-S\-\_\-\-Event\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Event\-Handler\-::\-R\-S\-\_\-\-Event\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} $\ast$}]{graphic\-View}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_aa511bd458c84e861916a9aee5d25a271}
+Constructor. \hypertarget{classRS__EventHandler_ab307f357c79b273e62f4fdd255e594eb}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!$\sim$\-R\-S\-\_\-\-Event\-Handler@{$\sim$\-R\-S\-\_\-\-Event\-Handler}}
+\index{$\sim$\-R\-S\-\_\-\-Event\-Handler@{$\sim$\-R\-S\-\_\-\-Event\-Handler}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{$\sim$\-R\-S\-\_\-\-Event\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Event\-Handler\-::$\sim$\-R\-S\-\_\-\-Event\-Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_ab307f357c79b273e62f4fdd255e594eb}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__EventHandler_aa195dff724e99fcc4d65a263a1ef9aff}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!back@{back}}
+\index{back@{back}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{back}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Event\-Handler\-::back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_aa195dff724e99fcc4d65a263a1ef9aff}
+Go back in current action. \hypertarget{classRS__EventHandler_a0f59545b4e5099e93cfa8d7b5320ec0f}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!clean\-Up@{clean\-Up}}
+\index{clean\-Up@{clean\-Up}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{clean\-Up}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Event\-Handler\-::clean\-Up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_a0f59545b4e5099e93cfa8d7b5320ec0f}
+Garbage collector for actions. \hypertarget{classRS__EventHandler_a7a5a011570c379b583d0d8b30eb3e841}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!command\-Event@{command\-Event}}
+\index{command\-Event@{command\-Event}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{command\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Event\-Handler\-::command\-Event (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Command\-Event} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_a7a5a011570c379b583d0d8b30eb3e841}
+Handles command line events. \hypertarget{classRS__EventHandler_a4baabbea0587234676bfad1e4cfd0dd1}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!disable\-Coordinate\-Input@{disable\-Coordinate\-Input}}
+\index{disable\-Coordinate\-Input@{disable\-Coordinate\-Input}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{disable\-Coordinate\-Input}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Event\-Handler\-::disable\-Coordinate\-Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_a4baabbea0587234676bfad1e4cfd0dd1}
+Enables coordinate input in the command line. \hypertarget{classRS__EventHandler_a7d6db13956e1b6de13ed14bd7ea2c6cc}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!enable\-Coordinate\-Input@{enable\-Coordinate\-Input}}
+\index{enable\-Coordinate\-Input@{enable\-Coordinate\-Input}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{enable\-Coordinate\-Input}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Event\-Handler\-::enable\-Coordinate\-Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_a7d6db13956e1b6de13ed14bd7ea2c6cc}
+Enables coordinate input in the command line. \hypertarget{classRS__EventHandler_ab60ad9e3fad898e5aeaa2b2acd998ef0}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!enter@{enter}}
+\index{enter@{enter}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{enter}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Event\-Handler\-::enter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_ab60ad9e3fad898e5aeaa2b2acd998ef0}
+Go enter pressed event for current action. \hypertarget{classRS__EventHandler_abb32b056c91d0d747eb6000ffbcd5a94}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!get\-Current\-Action@{get\-Current\-Action}}
+\index{get\-Current\-Action@{get\-Current\-Action}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{get\-Current\-Action}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Action\-Interface} $\ast$ R\-S\-\_\-\-Event\-Handler\-::get\-Current\-Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_abb32b056c91d0d747eb6000ffbcd5a94}
+\begin{DoxyReturn}{Returns}
+Current action. 
+\end{DoxyReturn}
+\hypertarget{classRS__EventHandler_a986e440c3ecb585ed34fab54ddef7f46}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!get\-Default\-Action@{get\-Default\-Action}}
+\index{get\-Default\-Action@{get\-Default\-Action}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{get\-Default\-Action}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Action\-Interface} $\ast$ R\-S\-\_\-\-Event\-Handler\-::get\-Default\-Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_a986e440c3ecb585ed34fab54ddef7f46}
+\begin{DoxyReturn}{Returns}
+The current default action. 
+\end{DoxyReturn}
+\hypertarget{classRS__EventHandler_a1675b5383f70cc8e0f855abb3df33e1d}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!has\-Action@{has\-Action}}
+\index{has\-Action@{has\-Action}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{has\-Action}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Event\-Handler\-::has\-Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_a1675b5383f70cc8e0f855abb3df33e1d}
+\begin{DoxyReturn}{Returns}
+true if there is at least one action in the action stack. 
+\end{DoxyReturn}
+\hypertarget{classRS__EventHandler_a801a77a7765ac758b18f3f2de55b0458}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!is\-Valid@{is\-Valid}}
+\index{is\-Valid@{is\-Valid}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{is\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Event\-Handler\-::is\-Valid (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_a801a77a7765ac758b18f3f2de55b0458}
+\begin{DoxyReturn}{Returns}
+true if the action is within current\-Actions 
+\end{DoxyReturn}
+\hypertarget{classRS__EventHandler_a6829855cd44fbfa0ef8d80d153c2275b}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!key\-Press\-Event@{key\-Press\-Event}}
+\index{key\-Press\-Event@{key\-Press\-Event}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{key\-Press\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Event\-Handler\-::key\-Press\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Key\-Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_a6829855cd44fbfa0ef8d80d153c2275b}
+Called by \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \hypertarget{classRS__EventHandler_aab9114ff34d6e2b69f3190c1a0591bcf}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!key\-Release\-Event@{key\-Release\-Event}}
+\index{key\-Release\-Event@{key\-Release\-Event}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{key\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Event\-Handler\-::key\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Key\-Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_aab9114ff34d6e2b69f3190c1a0591bcf}
+Called by \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \hypertarget{classRS__EventHandler_a51f5c377885d6919d46641494801ccd6}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!kill\-All\-Actions@{kill\-All\-Actions}}
+\index{kill\-All\-Actions@{kill\-All\-Actions}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{kill\-All\-Actions}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Event\-Handler\-::kill\-All\-Actions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_a51f5c377885d6919d46641494801ccd6}
+Kills all running actions. Called when a window is closed. \hypertarget{classRS__EventHandler_a1b9bdf8245a7e9992c16e9ad89a2d5d3}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!kill\-Select\-Actions@{kill\-Select\-Actions}}
+\index{kill\-Select\-Actions@{kill\-Select\-Actions}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{kill\-Select\-Actions}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Event\-Handler\-::kill\-Select\-Actions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_a1b9bdf8245a7e9992c16e9ad89a2d5d3}
+Kills all running selection actions. Called when a selection action is launched to reduce confusion. \hypertarget{classRS__EventHandler_a59ff028c9118a8a37dae2bb181a095f5}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!mouse\-Enter\-Event@{mouse\-Enter\-Event}}
+\index{mouse\-Enter\-Event@{mouse\-Enter\-Event}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{mouse\-Enter\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Event\-Handler\-::mouse\-Enter\-Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_a59ff028c9118a8a37dae2bb181a095f5}
+Called by \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \hypertarget{classRS__EventHandler_a1061bf11d56bc015cfd9aafc407a3f86}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!mouse\-Leave\-Event@{mouse\-Leave\-Event}}
+\index{mouse\-Leave\-Event@{mouse\-Leave\-Event}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{mouse\-Leave\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Event\-Handler\-::mouse\-Leave\-Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_a1061bf11d56bc015cfd9aafc407a3f86}
+Called by \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \hypertarget{classRS__EventHandler_a84459b98a8c50cb6aa5e7e3d6aa34977}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Event\-Handler\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_a84459b98a8c50cb6aa5e7e3d6aa34977}
+Called by \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \hypertarget{classRS__EventHandler_a626d180d1c5861509137391c4611251b}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!mouse\-Press\-Event@{mouse\-Press\-Event}}
+\index{mouse\-Press\-Event@{mouse\-Press\-Event}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{mouse\-Press\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Event\-Handler\-::mouse\-Press\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_a626d180d1c5861509137391c4611251b}
+Called by \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \hypertarget{classRS__EventHandler_a4224050d891443439fed7574e3e7b8db}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Event\-Handler\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_a4224050d891443439fed7574e3e7b8db}
+Called by \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \hypertarget{classRS__EventHandler_a3d40c1173beaabcf3325c1944e84d49f}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!set\-Current\-Action@{set\-Current\-Action}}
+\index{set\-Current\-Action@{set\-Current\-Action}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{set\-Current\-Action}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Event\-Handler\-::set\-Current\-Action (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_a3d40c1173beaabcf3325c1944e84d49f}
+Sets the current action. \hypertarget{classRS__EventHandler_a1fb6a0d2ab584f553427e63a369a80b1}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!set\-Default\-Action@{set\-Default\-Action}}
+\index{set\-Default\-Action@{set\-Default\-Action}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{set\-Default\-Action}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Event\-Handler\-::set\-Default\-Action (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Action\-Interface} $\ast$}]{action}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_a1fb6a0d2ab584f553427e63a369a80b1}
+Sets the default action. \hypertarget{classRS__EventHandler_ae24865dd929f5dee4baa1af01a3e13da}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!set\-Snap\-Mode@{set\-Snap\-Mode}}
+\index{set\-Snap\-Mode@{set\-Snap\-Mode}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{set\-Snap\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Event\-Handler\-::set\-Snap\-Mode (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Snap\-Mode}}]{sm}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_ae24865dd929f5dee4baa1af01a3e13da}
+Sets the snap mode for all currently active actions. \hypertarget{classRS__EventHandler_a5a31c0a7988d319cc7bc4784fcfd7866}{\index{R\-S\-\_\-\-Event\-Handler@{R\-S\-\_\-\-Event\-Handler}!set\-Snap\-Restriction@{set\-Snap\-Restriction}}
+\index{set\-Snap\-Restriction@{set\-Snap\-Restriction}!RS_EventHandler@{R\-S\-\_\-\-Event\-Handler}}
+\subsubsection[{set\-Snap\-Restriction}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Event\-Handler\-::set\-Snap\-Restriction (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S2\-::\-Snap\-Restriction}}]{sr}
+\end{DoxyParamCaption}
+)}}\label{classRS__EventHandler_a5a31c0a7988d319cc7bc4784fcfd7866}
+Sets the snap restriction for all currently active actions. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/gui/rs\-\_\-eventhandler.\-h\item 
+librecad/src/lib/gui/rs\-\_\-eventhandler.\-cpp\end{DoxyCompactItemize}

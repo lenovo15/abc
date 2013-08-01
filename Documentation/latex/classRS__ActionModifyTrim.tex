@@ -1,0 +1,166 @@
+\hypertarget{classRS__ActionModifyTrim}{\section{R\-S\-\_\-\-Action\-Modify\-Trim Class Reference}
+\label{classRS__ActionModifyTrim}\index{R\-S\-\_\-\-Action\-Modify\-Trim@{R\-S\-\_\-\-Action\-Modify\-Trim}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionmodifytrim.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Modify\-Trim\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classRS__ActionModifyTrim}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRS__ActionModifyTrim_a521594ffd83b9267b637fb7e36937c1e}{Status} \{ \hyperlink{classRS__ActionModifyTrim_a521594ffd83b9267b637fb7e36937c1ea408fa881c80d71900494fa9a60b82342}{Choose\-Limit\-Entity}, 
+\hyperlink{classRS__ActionModifyTrim_a521594ffd83b9267b637fb7e36937c1ea9e6134a551f22c5c52c4d6e5464801f7}{Choose\-Trim\-Entity}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__ActionModifyTrim_a89d6c0954d3ba5fa2657b4aadf492622}{R\-S\-\_\-\-Action\-Modify\-Trim} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View, bool both=false)
+\item 
+virtual void \hyperlink{classRS__ActionModifyTrim_aa28e8adbe2082171f980ade9657dd0bc}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionModifyTrim_ae8de35eeb2994c66ddde422e81dc3df2}{trigger} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyTrim_ac95d857765616d6531cc3bf89a8af7c3}{mouse\-Move\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionModifyTrim_a908f649f0ca9a7c1bfc15199ff2afd89}{mouse\-Release\-Event} (Q\-Mouse\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classRS__ActionModifyTrim_a3293f6cd20923c4295e63676b5ca6574}{update\-Mouse\-Button\-Hints} ()
+\item 
+virtual void \hyperlink{classRS__ActionModifyTrim_a92c811d68a95c69c750a10db82b634db}{update\-Mouse\-Cursor} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionModifyTrim_ada34964e87aeb83a4a04d9ff00df4ddb}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type}, Q\-Object $\ast$)}\label{classRS__ActionModifyTrim_ada34964e87aeb83a4a04d9ff00df4ddb}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to trim entities.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRS__ActionModifyTrim_a521594ffd83b9267b637fb7e36937c1e}{\index{R\-S\-\_\-\-Action\-Modify\-Trim@{R\-S\-\_\-\-Action\-Modify\-Trim}!Status@{Status}}
+\index{Status@{Status}!RS_ActionModifyTrim@{R\-S\-\_\-\-Action\-Modify\-Trim}}
+\subsubsection[{Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\-S\-\_\-\-Action\-Modify\-Trim\-::\-Status}}}\label{classRS__ActionModifyTrim_a521594ffd83b9267b637fb7e36937c1e}
+Action States. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Choose\-Limit\-Entity@{Choose\-Limit\-Entity}!R\-S\-\_\-\-Action\-Modify\-Trim@{R\-S\-\_\-\-Action\-Modify\-Trim}}\index{R\-S\-\_\-\-Action\-Modify\-Trim@{R\-S\-\_\-\-Action\-Modify\-Trim}!Choose\-Limit\-Entity@{Choose\-Limit\-Entity}}\item[{\em 
+\hypertarget{classRS__ActionModifyTrim_a521594ffd83b9267b637fb7e36937c1ea408fa881c80d71900494fa9a60b82342}{Choose\-Limit\-Entity}\label{classRS__ActionModifyTrim_a521594ffd83b9267b637fb7e36937c1ea408fa881c80d71900494fa9a60b82342}
+}]Choosing the limiting entity. \index{Choose\-Trim\-Entity@{Choose\-Trim\-Entity}!R\-S\-\_\-\-Action\-Modify\-Trim@{R\-S\-\_\-\-Action\-Modify\-Trim}}\index{R\-S\-\_\-\-Action\-Modify\-Trim@{R\-S\-\_\-\-Action\-Modify\-Trim}!Choose\-Trim\-Entity@{Choose\-Trim\-Entity}}\item[{\em 
+\hypertarget{classRS__ActionModifyTrim_a521594ffd83b9267b637fb7e36937c1ea9e6134a551f22c5c52c4d6e5464801f7}{Choose\-Trim\-Entity}\label{classRS__ActionModifyTrim_a521594ffd83b9267b637fb7e36937c1ea9e6134a551f22c5c52c4d6e5464801f7}
+}]Choosing the entity to trim. \end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__ActionModifyTrim_a89d6c0954d3ba5fa2657b4aadf492622}{\index{R\-S\-\_\-\-Action\-Modify\-Trim@{R\-S\-\_\-\-Action\-Modify\-Trim}!R\-S\-\_\-\-Action\-Modify\-Trim@{R\-S\-\_\-\-Action\-Modify\-Trim}}
+\index{R\-S\-\_\-\-Action\-Modify\-Trim@{R\-S\-\_\-\-Action\-Modify\-Trim}!RS_ActionModifyTrim@{R\-S\-\_\-\-Action\-Modify\-Trim}}
+\subsubsection[{R\-S\-\_\-\-Action\-Modify\-Trim}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Action\-Modify\-Trim\-::\-R\-S\-\_\-\-Action\-Modify\-Trim (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} \&}]{container, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} \&}]{graphic\-View, }
+\item[{bool}]{both = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classRS__ActionModifyTrim_a89d6c0954d3ba5fa2657b4aadf492622}
+
+\begin{DoxyParams}{Parameters}
+{\em both} & Trim both entities. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionModifyTrim_aa28e8adbe2082171f980ade9657dd0bc}{\index{R\-S\-\_\-\-Action\-Modify\-Trim@{R\-S\-\_\-\-Action\-Modify\-Trim}!init@{init}}
+\index{init@{init}!RS_ActionModifyTrim@{R\-S\-\_\-\-Action\-Modify\-Trim}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Trim\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyTrim_aa28e8adbe2082171f980ade9657dd0bc}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae5113b2aef5a10acd192786b99580e4a}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyTrim_ac95d857765616d6531cc3bf89a8af7c3}{\index{R\-S\-\_\-\-Action\-Modify\-Trim@{R\-S\-\_\-\-Action\-Modify\-Trim}!mouse\-Move\-Event@{mouse\-Move\-Event}}
+\index{mouse\-Move\-Event@{mouse\-Move\-Event}!RS_ActionModifyTrim@{R\-S\-\_\-\-Action\-Modify\-Trim}}
+\subsubsection[{mouse\-Move\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Trim\-::mouse\-Move\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyTrim_ac95d857765616d6531cc3bf89a8af7c3}
+Called when the mouse moves and this is the current action. This function can be overwritten by the implementing action. The default implementation keeps track of the mouse position. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa572523d745621231b7512f9960b5d8e}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyTrim_a908f649f0ca9a7c1bfc15199ff2afd89}{\index{R\-S\-\_\-\-Action\-Modify\-Trim@{R\-S\-\_\-\-Action\-Modify\-Trim}!mouse\-Release\-Event@{mouse\-Release\-Event}}
+\index{mouse\-Release\-Event@{mouse\-Release\-Event}!RS_ActionModifyTrim@{R\-S\-\_\-\-Action\-Modify\-Trim}}
+\subsubsection[{mouse\-Release\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Trim\-::mouse\-Release\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Mouse\-Event $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyTrim_a908f649f0ca9a7c1bfc15199ff2afd89}
+Called when the left mouse button is released and this is the current action. This function can be overwritten by the implementing action. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_acb1f52ac33be936c4d15ef8ec95f0fe0}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyTrim_ae8de35eeb2994c66ddde422e81dc3df2}{\index{R\-S\-\_\-\-Action\-Modify\-Trim@{R\-S\-\_\-\-Action\-Modify\-Trim}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionModifyTrim@{R\-S\-\_\-\-Action\-Modify\-Trim}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Trim\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyTrim_ae8de35eeb2994c66ddde422e81dc3df2}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__PreviewActionInterface_ae2c5528899a0e863f1ec227d91411ac9}{R\-S\-\_\-\-Preview\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyTrim_a3293f6cd20923c4295e63676b5ca6574}{\index{R\-S\-\_\-\-Action\-Modify\-Trim@{R\-S\-\_\-\-Action\-Modify\-Trim}!update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}}
+\index{update\-Mouse\-Button\-Hints@{update\-Mouse\-Button\-Hints}!RS_ActionModifyTrim@{R\-S\-\_\-\-Action\-Modify\-Trim}}
+\subsubsection[{update\-Mouse\-Button\-Hints}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Trim\-::update\-Mouse\-Button\-Hints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyTrim_a3293f6cd20923c4295e63676b5ca6574}
+Should be overwritten to update the mouse button hints wherever they might needed. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a16c2d17c24c1131d88360abbdfcc1d63}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionModifyTrim_a92c811d68a95c69c750a10db82b634db}{\index{R\-S\-\_\-\-Action\-Modify\-Trim@{R\-S\-\_\-\-Action\-Modify\-Trim}!update\-Mouse\-Cursor@{update\-Mouse\-Cursor}}
+\index{update\-Mouse\-Cursor@{update\-Mouse\-Cursor}!RS_ActionModifyTrim@{R\-S\-\_\-\-Action\-Modify\-Trim}}
+\subsubsection[{update\-Mouse\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Modify\-Trim\-::update\-Mouse\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionModifyTrim_a92c811d68a95c69c750a10db82b634db}
+Should be overwritten to set the mouse cursor for this action. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_af1a8d898a8bf0521295d7c45d80e6d09}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionmodifytrim.\-h\item 
+librecad/src/actions/rs\-\_\-actionmodifytrim.\-cpp\end{DoxyCompactItemize}

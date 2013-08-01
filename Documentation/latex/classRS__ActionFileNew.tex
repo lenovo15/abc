@@ -1,0 +1,76 @@
+\hypertarget{classRS__ActionFileNew}{\section{R\-S\-\_\-\-Action\-File\-New Class Reference}
+\label{classRS__ActionFileNew}\index{R\-S\-\_\-\-Action\-File\-New@{R\-S\-\_\-\-Action\-File\-New}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionfilenew.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-File\-New\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__ActionFileNew}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionFileNew_a4a1048f76a6c21db24d2ac7bcdffe0c1}{{\bfseries R\-S\-\_\-\-Action\-File\-New} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionFileNew_a4a1048f76a6c21db24d2ac7bcdffe0c1}
+
+\item 
+virtual void \hyperlink{classRS__ActionFileNew_a45d1b9059dd64be1f51edab529655191}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionFileNew_a0d01781979de239b4d6c0c39d9be63af}{trigger} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionFileNew_a91ad5068056fbb221393378d3f9a95c7}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} type, Q\-Object $\ast$parent)}\label{classRS__ActionFileNew_a91ad5068056fbb221393378d3f9a95c7}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to create new blank documents.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionFileNew_a45d1b9059dd64be1f51edab529655191}{\index{R\-S\-\_\-\-Action\-File\-New@{R\-S\-\_\-\-Action\-File\-New}!init@{init}}
+\index{init@{init}!RS_ActionFileNew@{R\-S\-\_\-\-Action\-File\-New}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-File\-New\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionFileNew_a45d1b9059dd64be1f51edab529655191}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a05b7dca5deeb371eb51edcb73facd45f}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionFileNew_a0d01781979de239b4d6c0c39d9be63af}{\index{R\-S\-\_\-\-Action\-File\-New@{R\-S\-\_\-\-Action\-File\-New}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionFileNew@{R\-S\-\_\-\-Action\-File\-New}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-File\-New\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionFileNew_a0d01781979de239b4d6c0c39d9be63af}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa2ba8f6f697f735eace4ec5449c0b8cd}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionfilenew.\-h\item 
+librecad/src/actions/rs\-\_\-actionfilenew.\-cpp\end{DoxyCompactItemize}

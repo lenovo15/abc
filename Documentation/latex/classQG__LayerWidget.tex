@@ -1,0 +1,204 @@
+\hypertarget{classQG__LayerWidget}{\section{Q\-G\-\_\-\-Layer\-Widget Class Reference}
+\label{classQG__LayerWidget}\index{Q\-G\-\_\-\-Layer\-Widget@{Q\-G\-\_\-\-Layer\-Widget}}
+}
+
+
+{\ttfamily \#include $<$qg\-\_\-layerwidget.\-h$>$}
+
+Inheritance diagram for Q\-G\-\_\-\-Layer\-Widget\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classQG__LayerWidget}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classQG__LayerWidget_af03d6b4cc7f89d32825f106c0531ab2a}{slot\-Activated} (Q\-Model\-Index layer\-Idx)
+\item 
+void \hyperlink{classQG__LayerWidget_a00a5de91ad496b13ab0f626ce0058a0b}{slot\-Update\-Layer\-List} ()
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classQG__LayerWidget_a986aa49a56aa7c8f0156164519abc69e}{void {\bfseries escape} ()}\label{classQG__LayerWidget_a986aa49a56aa7c8f0156164519abc69e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQG__LayerWidget_ab0e3c1d039e10b85123809eeb8992af4}{Q\-G\-\_\-\-Layer\-Widget} (\hyperlink{classQG__ActionHandler}{Q\-G\-\_\-\-Action\-Handler} $\ast$ah, Q\-Widget $\ast$parent, const char $\ast$name=0, Qt\-::\-Window\-Flags f=0)
+\item 
+\hyperlink{classQG__LayerWidget_a18835f5398a488765db5f1d1c5e35b21}{$\sim$\-Q\-G\-\_\-\-Layer\-Widget} ()
+\item 
+void \hyperlink{classQG__LayerWidget_a9748eb839c74ebc7754f949a69d56196}{set\-Layer\-List} (\hyperlink{classRS__LayerList}{R\-S\-\_\-\-Layer\-List} $\ast$layer\-List, bool show\-By\-Block)
+\item 
+void \hyperlink{classQG__LayerWidget_a03ed2304a473131bf9b752e426860796}{update} ()
+\item 
+void \hyperlink{classQG__LayerWidget_af55da8ed292b21e44f72e0a59101eac4}{activate\-Layer} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$layer)
+\item 
+virtual void \hyperlink{classQG__LayerWidget_af67ac3c98b8f8dba926345677ce90f62}{layer\-Activated} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$layer)
+\item 
+virtual void \hyperlink{classQG__LayerWidget_afd491d7e1792632c1dab71329c258f96}{layer\-Added} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$layer)
+\item 
+virtual void \hyperlink{classQG__LayerWidget_a4de9c38c5374cd79855e69b1bb1929d4}{layer\-Edited} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$)
+\item 
+virtual void \hyperlink{classQG__LayerWidget_ac11105df931565da55e7299121823706}{layer\-Removed} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$)
+\item 
+virtual void \hyperlink{classQG__LayerWidget_a4b5b55580590c971dffff3b9707b6b23}{layer\-Toggled} (\hyperlink{classRS__Layer}{R\-S\-\_\-\-Layer} $\ast$)
+\item 
+\hypertarget{classQG__LayerWidget_a7389544e7de72aba94022599af6ef94d}{Q\-Line\-Edit $\ast$ {\bfseries get\-Match\-Layer\-Name} ()}\label{classQG__LayerWidget_a7389544e7de72aba94022599af6ef94d}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classQG__LayerWidget_aae33198f7a2308bbc2d995cbd5025e87}{context\-Menu\-Event} (Q\-Context\-Menu\-Event $\ast$e)
+\item 
+virtual void \hyperlink{classQG__LayerWidget_a03cfec25054495e48ac57e899e61a418}{key\-Press\-Event} (Q\-Key\-Event $\ast$e)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the Qt implementation of a widget which can view a layer list and provides a user interface for basic layer actions. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classQG__LayerWidget_ab0e3c1d039e10b85123809eeb8992af4}{\index{Q\-G\-\_\-\-Layer\-Widget@{Q\-G\-\_\-\-Layer\-Widget}!Q\-G\-\_\-\-Layer\-Widget@{Q\-G\-\_\-\-Layer\-Widget}}
+\index{Q\-G\-\_\-\-Layer\-Widget@{Q\-G\-\_\-\-Layer\-Widget}!QG_LayerWidget@{Q\-G\-\_\-\-Layer\-Widget}}
+\subsubsection[{Q\-G\-\_\-\-Layer\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}Q\-G\-\_\-\-Layer\-Widget\-::\-Q\-G\-\_\-\-Layer\-Widget (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\-G\-\_\-\-Action\-Handler} $\ast$}]{ah, }
+\item[{Q\-Widget $\ast$}]{parent, }
+\item[{const char $\ast$}]{name = {\ttfamily 0}, }
+\item[{Qt\-::\-Window\-Flags}]{f = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classQG__LayerWidget_ab0e3c1d039e10b85123809eeb8992af4}
+Constructor. \hypertarget{classQG__LayerWidget_a18835f5398a488765db5f1d1c5e35b21}{\index{Q\-G\-\_\-\-Layer\-Widget@{Q\-G\-\_\-\-Layer\-Widget}!$\sim$\-Q\-G\-\_\-\-Layer\-Widget@{$\sim$\-Q\-G\-\_\-\-Layer\-Widget}}
+\index{$\sim$\-Q\-G\-\_\-\-Layer\-Widget@{$\sim$\-Q\-G\-\_\-\-Layer\-Widget}!QG_LayerWidget@{Q\-G\-\_\-\-Layer\-Widget}}
+\subsubsection[{$\sim$\-Q\-G\-\_\-\-Layer\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}Q\-G\-\_\-\-Layer\-Widget\-::$\sim$\-Q\-G\-\_\-\-Layer\-Widget (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQG__LayerWidget_a18835f5398a488765db5f1d1c5e35b21}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classQG__LayerWidget_af55da8ed292b21e44f72e0a59101eac4}{\index{Q\-G\-\_\-\-Layer\-Widget@{Q\-G\-\_\-\-Layer\-Widget}!activate\-Layer@{activate\-Layer}}
+\index{activate\-Layer@{activate\-Layer}!QG_LayerWidget@{Q\-G\-\_\-\-Layer\-Widget}}
+\subsubsection[{activate\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Layer\-Widget\-::activate\-Layer (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer} $\ast$}]{layer}
+\end{DoxyParamCaption}
+)}}\label{classQG__LayerWidget_af55da8ed292b21e44f72e0a59101eac4}
+Activates the given layer and makes it the active layer in the layerlist. \hypertarget{classQG__LayerWidget_aae33198f7a2308bbc2d995cbd5025e87}{\index{Q\-G\-\_\-\-Layer\-Widget@{Q\-G\-\_\-\-Layer\-Widget}!context\-Menu\-Event@{context\-Menu\-Event}}
+\index{context\-Menu\-Event@{context\-Menu\-Event}!QG_LayerWidget@{Q\-G\-\_\-\-Layer\-Widget}}
+\subsubsection[{context\-Menu\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Layer\-Widget\-::context\-Menu\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Context\-Menu\-Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classQG__LayerWidget_aae33198f7a2308bbc2d995cbd5025e87}
+Shows a context menu for the layer widget. Launched with a right click. \hypertarget{classQG__LayerWidget_a03cfec25054495e48ac57e899e61a418}{\index{Q\-G\-\_\-\-Layer\-Widget@{Q\-G\-\_\-\-Layer\-Widget}!key\-Press\-Event@{key\-Press\-Event}}
+\index{key\-Press\-Event@{key\-Press\-Event}!QG_LayerWidget@{Q\-G\-\_\-\-Layer\-Widget}}
+\subsubsection[{key\-Press\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Layer\-Widget\-::key\-Press\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Key\-Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classQG__LayerWidget_a03cfec25054495e48ac57e899e61a418}
+Escape releases focus. \hypertarget{classQG__LayerWidget_af67ac3c98b8f8dba926345677ce90f62}{\index{Q\-G\-\_\-\-Layer\-Widget@{Q\-G\-\_\-\-Layer\-Widget}!layer\-Activated@{layer\-Activated}}
+\index{layer\-Activated@{layer\-Activated}!QG_LayerWidget@{Q\-G\-\_\-\-Layer\-Widget}}
+\subsubsection[{layer\-Activated}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Q\-G\-\_\-\-Layer\-Widget\-::layer\-Activated (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classQG__LayerWidget_af67ac3c98b8f8dba926345677ce90f62}
+Called when the active layer changes. 
+
+Reimplemented from \hyperlink{classRS__LayerListListener_a09ebd52346c417fe0e82876cc0abc59e}{R\-S\-\_\-\-Layer\-List\-Listener}.
+
+\hypertarget{classQG__LayerWidget_afd491d7e1792632c1dab71329c258f96}{\index{Q\-G\-\_\-\-Layer\-Widget@{Q\-G\-\_\-\-Layer\-Widget}!layer\-Added@{layer\-Added}}
+\index{layer\-Added@{layer\-Added}!QG_LayerWidget@{Q\-G\-\_\-\-Layer\-Widget}}
+\subsubsection[{layer\-Added}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Q\-G\-\_\-\-Layer\-Widget\-::layer\-Added (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classQG__LayerWidget_afd491d7e1792632c1dab71329c258f96}
+Called when a new layer is added to the list. 
+
+Reimplemented from \hyperlink{classRS__LayerListListener_a0dcaa002205a13589a576eebc1723153}{R\-S\-\_\-\-Layer\-List\-Listener}.
+
+\hypertarget{classQG__LayerWidget_a4de9c38c5374cd79855e69b1bb1929d4}{\index{Q\-G\-\_\-\-Layer\-Widget@{Q\-G\-\_\-\-Layer\-Widget}!layer\-Edited@{layer\-Edited}}
+\index{layer\-Edited@{layer\-Edited}!QG_LayerWidget@{Q\-G\-\_\-\-Layer\-Widget}}
+\subsubsection[{layer\-Edited}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Q\-G\-\_\-\-Layer\-Widget\-::layer\-Edited (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classQG__LayerWidget_a4de9c38c5374cd79855e69b1bb1929d4}
+Called when a layer's attributes are modified. 
+
+Reimplemented from \hyperlink{classRS__LayerListListener_a6953aab6245c88b0bed2f25493522791}{R\-S\-\_\-\-Layer\-List\-Listener}.
+
+\hypertarget{classQG__LayerWidget_ac11105df931565da55e7299121823706}{\index{Q\-G\-\_\-\-Layer\-Widget@{Q\-G\-\_\-\-Layer\-Widget}!layer\-Removed@{layer\-Removed}}
+\index{layer\-Removed@{layer\-Removed}!QG_LayerWidget@{Q\-G\-\_\-\-Layer\-Widget}}
+\subsubsection[{layer\-Removed}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Q\-G\-\_\-\-Layer\-Widget\-::layer\-Removed (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classQG__LayerWidget_ac11105df931565da55e7299121823706}
+Called when a layer is removed from the list. 
+
+Reimplemented from \hyperlink{classRS__LayerListListener_a1135bfb08284866a5ea1190213b3e761}{R\-S\-\_\-\-Layer\-List\-Listener}.
+
+\hypertarget{classQG__LayerWidget_a4b5b55580590c971dffff3b9707b6b23}{\index{Q\-G\-\_\-\-Layer\-Widget@{Q\-G\-\_\-\-Layer\-Widget}!layer\-Toggled@{layer\-Toggled}}
+\index{layer\-Toggled@{layer\-Toggled}!QG_LayerWidget@{Q\-G\-\_\-\-Layer\-Widget}}
+\subsubsection[{layer\-Toggled}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Q\-G\-\_\-\-Layer\-Widget\-::layer\-Toggled (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classQG__LayerWidget_a4b5b55580590c971dffff3b9707b6b23}
+Called when a layer's visibility is toggled. 
+
+Reimplemented from \hyperlink{classRS__LayerListListener_a159ef2488a66a30c08b050e277083c25}{R\-S\-\_\-\-Layer\-List\-Listener}.
+
+\hypertarget{classQG__LayerWidget_a9748eb839c74ebc7754f949a69d56196}{\index{Q\-G\-\_\-\-Layer\-Widget@{Q\-G\-\_\-\-Layer\-Widget}!set\-Layer\-List@{set\-Layer\-List}}
+\index{set\-Layer\-List@{set\-Layer\-List}!QG_LayerWidget@{Q\-G\-\_\-\-Layer\-Widget}}
+\subsubsection[{set\-Layer\-List}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Layer\-Widget\-::set\-Layer\-List (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Layer\-List} $\ast$}]{layer\-List, }
+\item[{bool}]{show\-By\-Block}
+\end{DoxyParamCaption}
+)}}\label{classQG__LayerWidget_a9748eb839c74ebc7754f949a69d56196}
+Sets the layerlist this layer widget should show.
+
+
+\begin{DoxyParams}{Parameters}
+{\em show\-By\-Block} & true\-: show the layer with the name \char`\"{}\-By\-Block\char`\"{} if it exists. false\-: don't show special layer \char`\"{}\-By\-Block\char`\"{} \\
+\hline
+\end{DoxyParams}
+\hypertarget{classQG__LayerWidget_af03d6b4cc7f89d32825f106c0531ab2a}{\index{Q\-G\-\_\-\-Layer\-Widget@{Q\-G\-\_\-\-Layer\-Widget}!slot\-Activated@{slot\-Activated}}
+\index{slot\-Activated@{slot\-Activated}!QG_LayerWidget@{Q\-G\-\_\-\-Layer\-Widget}}
+\subsubsection[{slot\-Activated}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Layer\-Widget\-::slot\-Activated (
+\begin{DoxyParamCaption}
+\item[{Q\-Model\-Index}]{layer\-Idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classQG__LayerWidget_af03d6b4cc7f89d32825f106c0531ab2a}
+Called when the user activates (highlights) a layer. \hypertarget{classQG__LayerWidget_a00a5de91ad496b13ab0f626ce0058a0b}{\index{Q\-G\-\_\-\-Layer\-Widget@{Q\-G\-\_\-\-Layer\-Widget}!slot\-Update\-Layer\-List@{slot\-Update\-Layer\-List}}
+\index{slot\-Update\-Layer\-List@{slot\-Update\-Layer\-List}!QG_LayerWidget@{Q\-G\-\_\-\-Layer\-Widget}}
+\subsubsection[{slot\-Update\-Layer\-List}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Layer\-Widget\-::slot\-Update\-Layer\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{classQG__LayerWidget_a00a5de91ad496b13ab0f626ce0058a0b}
+Called when reg-\/expresion match\-Layer\-Name-\/$>$text changed \hypertarget{classQG__LayerWidget_a03ed2304a473131bf9b752e426860796}{\index{Q\-G\-\_\-\-Layer\-Widget@{Q\-G\-\_\-\-Layer\-Widget}!update@{update}}
+\index{update@{update}!QG_LayerWidget@{Q\-G\-\_\-\-Layer\-Widget}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-G\-\_\-\-Layer\-Widget\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQG__LayerWidget_a03ed2304a473131bf9b752e426860796}
+Updates the layer box from the layers in the graphic. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/ui/qg\-\_\-layerwidget.\-h\item 
+generated/librecad/moc/moc\-\_\-qg\-\_\-layerwidget.\-cpp\item 
+librecad/src/ui/qg\-\_\-layerwidget.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,305 @@
+\hypertarget{classRS__Hatch}{\section{R\-S\-\_\-\-Hatch Class Reference}
+\label{classRS__Hatch}\index{R\-S\-\_\-\-Hatch@{R\-S\-\_\-\-Hatch}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-hatch.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Hatch\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classRS__Hatch}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRS__Hatch_a937772e393acad59a5c37efa881a5142}{R\-S\-\_\-\-Hatch} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} $\ast$\hyperlink{classRS__Entity_a80358a8d2fc6739a516a278dc500b49f}{parent}, const \hyperlink{classRS__HatchData}{R\-S\-\_\-\-Hatch\-Data} \&d)
+\item 
+\hypertarget{classRS__Hatch_a710abc8ca6ab4031dc73a921fa4b8682}{virtual \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$ {\bfseries clone} ()}\label{classRS__Hatch_a710abc8ca6ab4031dc73a921fa4b8682}
+
+\item 
+virtual \hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6a}{R\-S2\-::\-Entity\-Type} \hyperlink{classRS__Hatch_a5b6786a83520bc6c32265e01f19e0d3e}{rtti} () const 
+\item 
+virtual bool \hyperlink{classRS__Hatch_a8f8ec47f35811e91eac47b9cffbfdfe2}{is\-Container} () const 
+\item 
+\hyperlink{classRS__HatchData}{R\-S\-\_\-\-Hatch\-Data} \hyperlink{classRS__Hatch_aca807c373b9f5318943327403425d22c}{get\-Data} () const 
+\item 
+bool \hyperlink{classRS__Hatch_a7365f0a8552c603820773734b4f7c7fe}{validate} ()
+\item 
+int \hyperlink{classRS__Hatch_a93946e5d803f716e5f2a3e8469e35dd3}{count\-Loops} ()
+\item 
+bool \hyperlink{classRS__Hatch_a51b6c2c406ad28e13464613c436b94bd}{is\-Solid} () const 
+\item 
+\hypertarget{classRS__Hatch_a28289153088e6195c079f9814f349b2a}{void {\bfseries set\-Solid} (bool solid)}\label{classRS__Hatch_a28289153088e6195c079f9814f349b2a}
+
+\item 
+\hypertarget{classRS__Hatch_ab1bba044635f02d56130820847f91bde}{Q\-String {\bfseries get\-Pattern} ()}\label{classRS__Hatch_ab1bba044635f02d56130820847f91bde}
+
+\item 
+\hypertarget{classRS__Hatch_afc88330efc26502d216288b9d517ac5e}{void {\bfseries set\-Pattern} (const Q\-String \&pattern)}\label{classRS__Hatch_afc88330efc26502d216288b9d517ac5e}
+
+\item 
+\hypertarget{classRS__Hatch_a3061dc086629733728134d7b7b521b8f}{double {\bfseries get\-Scale} ()}\label{classRS__Hatch_a3061dc086629733728134d7b7b521b8f}
+
+\item 
+\hypertarget{classRS__Hatch_a11661050877b5f4f1db2f33615bb77ae}{void {\bfseries set\-Scale} (double \hyperlink{classRS__Hatch_a248bf7c36b81652fda481e976dd62b09}{scale})}\label{classRS__Hatch_a11661050877b5f4f1db2f33615bb77ae}
+
+\item 
+\hypertarget{classRS__Hatch_ad01b3888c7a772b7c848eadc9d275685}{double {\bfseries get\-Angle} ()}\label{classRS__Hatch_ad01b3888c7a772b7c848eadc9d275685}
+
+\item 
+\hypertarget{classRS__Hatch_a9d6092c04f735c004e33230ea4e975ea}{void {\bfseries set\-Angle} (double angle)}\label{classRS__Hatch_a9d6092c04f735c004e33230ea4e975ea}
+
+\item 
+virtual void \hyperlink{classRS__Hatch_aace15e876d6f85e4adb799e5d079ee99}{calculate\-Borders} ()
+\item 
+void \hyperlink{classRS__Hatch_abc88cf985de2914662cdbbf0f0ee224f}{update} ()
+\item 
+void \hyperlink{classRS__Hatch_a98f6aa8cd6de0df790db6474911ed16d}{activate\-Contour} (bool on)
+\item 
+virtual void \hyperlink{classRS__Hatch_a09a7c4269f0aeff38763a767b07cd5ba}{draw} (\hyperlink{classRS__Painter}{R\-S\-\_\-\-Painter} $\ast$painter, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} $\ast$view, double \&pattern\-Offset)
+\item 
+\hypertarget{classRS__Hatch_a0661f2849d0b3bd08ea716607c89deb9}{virtual double {\bfseries get\-Distance\-To\-Point} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&coord, \hyperlink{classRS__Entity}{R\-S\-\_\-\-Entity} $\ast$$\ast$entity=N\-U\-L\-L, \hyperlink{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20}{R\-S2\-::\-Resolve\-Level} level=\hyperlink{classRS2_a1b2c5e3a3e9d1b03a9564229255faa20aecb7396f39bc313ad8903c8a5fac5a50}{R\-S2\-::\-Resolve\-None}, double solid\-Dist=R\-S\-\_\-\-M\-A\-X\-D\-O\-U\-B\-L\-E) const }\label{classRS__Hatch_a0661f2849d0b3bd08ea716607c89deb9}
+
+\item 
+virtual void \hyperlink{classRS__Hatch_afdd3cb3f765d7ade1902da99d827103b}{move} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&\hyperlink{classRS__Entity_aa296d21b9aac99161d386ce2f60f0fea}{offset})
+\item 
+virtual void \hyperlink{classRS__Hatch_ac346cf4772acc2f7913fcfc189bb2348}{rotate} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&center, const double \&angle)
+\item 
+\hypertarget{classRS__Hatch_a429968660a186692e228896d499648e5}{virtual void {\bfseries rotate} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&center, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&angle\-Vector)}\label{classRS__Hatch_a429968660a186692e228896d499648e5}
+
+\item 
+virtual void \hyperlink{classRS__Hatch_a248bf7c36b81652fda481e976dd62b09}{scale} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&center, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&factor)
+\item 
+virtual void \hyperlink{classRS__Hatch_acdb3096869d211692fa20cfcec6bc5c2}{mirror} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&axis\-Point1, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&axis\-Point2)
+\item 
+virtual void \hyperlink{classRS__Hatch_aa60f4ae4e78e7d53b35be9a425f78117}{stretch} (const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&first\-Corner, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&second\-Corner, const \hyperlink{classRS__Vector}{R\-S\-\_\-\-Vector} \&\hyperlink{classRS__Entity_aa296d21b9aac99161d386ce2f60f0fea}{offset})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__Hatch_af25b899800d818f8aeae84170f1f1cd7}{\hyperlink{classRS__HatchData}{R\-S\-\_\-\-Hatch\-Data} {\bfseries data}}\label{classRS__Hatch_af25b899800d818f8aeae84170f1f1cd7}
+
+\item 
+\hypertarget{classRS__Hatch_a58a3fe3db17bcc24aaacc5196ba7ecb4}{\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} $\ast$ {\bfseries hatch}}\label{classRS__Hatch_a58a3fe3db17bcc24aaacc5196ba7ecb4}
+
+\item 
+\hypertarget{classRS__Hatch_a95c9d30f1f417e3c28888376254d79e9}{bool {\bfseries update\-Running}}\label{classRS__Hatch_a95c9d30f1f417e3c28888376254d79e9}
+
+\item 
+\hypertarget{classRS__Hatch_a04870952ef8e84416adb2a4ffb73b39d}{bool {\bfseries need\-Optimization}}\label{classRS__Hatch_a04870952ef8e84416adb2a4ffb73b39d}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{classRS__Hatch_a5b267a9e959fc58ff5aaa63d0bbfef2d}{operator$<$$<$} (std\-::ostream \&os, const \hyperlink{classRS__Hatch}{R\-S\-\_\-\-Hatch} \&p)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for a hatch entity.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRS__Hatch_a937772e393acad59a5c37efa881a5142}{\index{R\-S\-\_\-\-Hatch@{R\-S\-\_\-\-Hatch}!R\-S\-\_\-\-Hatch@{R\-S\-\_\-\-Hatch}}
+\index{R\-S\-\_\-\-Hatch@{R\-S\-\_\-\-Hatch}!RS_Hatch@{R\-S\-\_\-\-Hatch}}
+\subsubsection[{R\-S\-\_\-\-Hatch}]{\setlength{\rightskip}{0pt plus 5cm}R\-S\-\_\-\-Hatch\-::\-R\-S\-\_\-\-Hatch (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Entity\-Container} $\ast$}]{parent, }
+\item[{const {\bf R\-S\-\_\-\-Hatch\-Data} \&}]{d}
+\end{DoxyParamCaption}
+)}}\label{classRS__Hatch_a937772e393acad59a5c37efa881a5142}
+Constructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__Hatch_a98f6aa8cd6de0df790db6474911ed16d}{\index{R\-S\-\_\-\-Hatch@{R\-S\-\_\-\-Hatch}!activate\-Contour@{activate\-Contour}}
+\index{activate\-Contour@{activate\-Contour}!RS_Hatch@{R\-S\-\_\-\-Hatch}}
+\subsubsection[{activate\-Contour}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Hatch\-::activate\-Contour (
+\begin{DoxyParamCaption}
+\item[{bool}]{on}
+\end{DoxyParamCaption}
+)}}\label{classRS__Hatch_a98f6aa8cd6de0df790db6474911ed16d}
+Activates of deactivates the hatch boundary. \hypertarget{classRS__Hatch_aace15e876d6f85e4adb799e5d079ee99}{\index{R\-S\-\_\-\-Hatch@{R\-S\-\_\-\-Hatch}!calculate\-Borders@{calculate\-Borders}}
+\index{calculate\-Borders@{calculate\-Borders}!RS_Hatch@{R\-S\-\_\-\-Hatch}}
+\subsubsection[{calculate\-Borders}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Hatch\-::calculate\-Borders (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Hatch_aace15e876d6f85e4adb799e5d079ee99}
+Recalculates the borders of this hatch. 
+
+Reimplemented from \hyperlink{classRS__EntityContainer_a852ac3bad97f3c3fff80f0a83c6862d7}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Hatch_a93946e5d803f716e5f2a3e8469e35dd3}{\index{R\-S\-\_\-\-Hatch@{R\-S\-\_\-\-Hatch}!count\-Loops@{count\-Loops}}
+\index{count\-Loops@{count\-Loops}!RS_Hatch@{R\-S\-\_\-\-Hatch}}
+\subsubsection[{count\-Loops}]{\setlength{\rightskip}{0pt plus 5cm}int R\-S\-\_\-\-Hatch\-::count\-Loops (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Hatch_a93946e5d803f716e5f2a3e8469e35dd3}
+\begin{DoxyReturn}{Returns}
+Number of loops. 
+\end{DoxyReturn}
+\hypertarget{classRS__Hatch_a09a7c4269f0aeff38763a767b07cd5ba}{\index{R\-S\-\_\-\-Hatch@{R\-S\-\_\-\-Hatch}!draw@{draw}}
+\index{draw@{draw}!RS_Hatch@{R\-S\-\_\-\-Hatch}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Hatch\-::draw (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Painter} $\ast$}]{painter, }
+\item[{{\bf R\-S\-\_\-\-Graphic\-View} $\ast$}]{view, }
+\item[{double \&}]{pattern\-Offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Hatch_a09a7c4269f0aeff38763a767b07cd5ba}
+Overrides drawing of subentities. This is only ever called for solid fills. 
+
+Reimplemented from \hyperlink{classRS__EntityContainer_a38dad976bacc4b40db0c2d791d0b9958}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Hatch_aca807c373b9f5318943327403425d22c}{\index{R\-S\-\_\-\-Hatch@{R\-S\-\_\-\-Hatch}!get\-Data@{get\-Data}}
+\index{get\-Data@{get\-Data}!RS_Hatch@{R\-S\-\_\-\-Hatch}}
+\subsubsection[{get\-Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-S\-\_\-\-Hatch\-Data} R\-S\-\_\-\-Hatch\-::get\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Hatch_aca807c373b9f5318943327403425d22c}
+\begin{DoxyReturn}{Returns}
+Copy of data that defines the hatch. 
+\end{DoxyReturn}
+\hypertarget{classRS__Hatch_a8f8ec47f35811e91eac47b9cffbfdfe2}{\index{R\-S\-\_\-\-Hatch@{R\-S\-\_\-\-Hatch}!is\-Container@{is\-Container}}
+\index{is\-Container@{is\-Container}!RS_Hatch@{R\-S\-\_\-\-Hatch}}
+\subsubsection[{is\-Container}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool R\-S\-\_\-\-Hatch\-::is\-Container (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__Hatch_a8f8ec47f35811e91eac47b9cffbfdfe2}
+\begin{DoxyReturn}{Returns}
+true\-: if this is a hatch with lines (hatch pattern), false\-: if this is filled with a solid color. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classRS__EntityContainer_a74ff8b794220eb00317ca75f4f78b58a}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Hatch_a51b6c2c406ad28e13464613c436b94bd}{\index{R\-S\-\_\-\-Hatch@{R\-S\-\_\-\-Hatch}!is\-Solid@{is\-Solid}}
+\index{is\-Solid@{is\-Solid}!RS_Hatch@{R\-S\-\_\-\-Hatch}}
+\subsubsection[{is\-Solid}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Hatch\-::is\-Solid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRS__Hatch_a51b6c2c406ad28e13464613c436b94bd}
+\begin{DoxyReturn}{Returns}
+true if this is a solid fill. false if it is a pattern hatch. 
+\end{DoxyReturn}
+\hypertarget{classRS__Hatch_acdb3096869d211692fa20cfcec6bc5c2}{\index{R\-S\-\_\-\-Hatch@{R\-S\-\_\-\-Hatch}!mirror@{mirror}}
+\index{mirror@{mirror}!RS_Hatch@{R\-S\-\_\-\-Hatch}}
+\subsubsection[{mirror}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Hatch\-::mirror (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{axis\-Point1, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{axis\-Point2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Hatch_acdb3096869d211692fa20cfcec6bc5c2}
+Implementations must mirror the entity by the given axis. 
+
+Reimplemented from \hyperlink{classRS__EntityContainer_a6715f6871daaf6b2ba12581bcfbdcb5d}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Hatch_afdd3cb3f765d7ade1902da99d827103b}{\index{R\-S\-\_\-\-Hatch@{R\-S\-\_\-\-Hatch}!move@{move}}
+\index{move@{move}!RS_Hatch@{R\-S\-\_\-\-Hatch}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Hatch\-::move (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Hatch_afdd3cb3f765d7ade1902da99d827103b}
+Implementations must move the entity by the given vector. 
+
+Reimplemented from \hyperlink{classRS__EntityContainer_a7a12575ce16c4b34e198b42eab47ba0f}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Hatch_ac346cf4772acc2f7913fcfc189bb2348}{\index{R\-S\-\_\-\-Hatch@{R\-S\-\_\-\-Hatch}!rotate@{rotate}}
+\index{rotate@{rotate}!RS_Hatch@{R\-S\-\_\-\-Hatch}}
+\subsubsection[{rotate}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Hatch\-::rotate (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{center, }
+\item[{const double \&}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Hatch_ac346cf4772acc2f7913fcfc189bb2348}
+Implementations must rotate the entity by the given angle around the given center. 
+
+Reimplemented from \hyperlink{classRS__EntityContainer_a61223b4cae4966ab65e1d06d2d8eaccb}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Hatch_a5b6786a83520bc6c32265e01f19e0d3e}{\index{R\-S\-\_\-\-Hatch@{R\-S\-\_\-\-Hatch}!rtti@{rtti}}
+\index{rtti@{rtti}!RS_Hatch@{R\-S\-\_\-\-Hatch}}
+\subsubsection[{rtti}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf R\-S2\-::\-Entity\-Type} R\-S\-\_\-\-Hatch\-::rtti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classRS__Hatch_a5b6786a83520bc6c32265e01f19e0d3e}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classRS2_a8f26d1b981e1e85cff16738b43337e6aafb731de01933c0884138cdc54669ae90}{R\-S2\-::\-Entity\-Hatch} 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classRS__EntityContainer_ada84ceb9590c74cd3b46134cdde40a3d}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Hatch_a248bf7c36b81652fda481e976dd62b09}{\index{R\-S\-\_\-\-Hatch@{R\-S\-\_\-\-Hatch}!scale@{scale}}
+\index{scale@{scale}!RS_Hatch@{R\-S\-\_\-\-Hatch}}
+\subsubsection[{scale}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Hatch\-::scale (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{center, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{factor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Hatch_a248bf7c36b81652fda481e976dd62b09}
+Implementations must scale the entity by the given factors. 
+
+Reimplemented from \hyperlink{classRS__EntityContainer_a8912550cbf78c7f3521e079d66c0617f}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Hatch_aa60f4ae4e78e7d53b35be9a425f78117}{\index{R\-S\-\_\-\-Hatch@{R\-S\-\_\-\-Hatch}!stretch@{stretch}}
+\index{stretch@{stretch}!RS_Hatch@{R\-S\-\_\-\-Hatch}}
+\subsubsection[{stretch}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Hatch\-::stretch (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{first\-Corner, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{second\-Corner, }
+\item[{const {\bf R\-S\-\_\-\-Vector} \&}]{offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Hatch_aa60f4ae4e78e7d53b35be9a425f78117}
+Implementations must stretch the given range of the entity by the given offset. This default implementation moves the whole entity if it is completely inside the given range. 
+
+Reimplemented from \hyperlink{classRS__EntityContainer_a8e4dd5e12871bd33fbb1d77f9c9135af}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Hatch_abc88cf985de2914662cdbbf0f0ee224f}{\index{R\-S\-\_\-\-Hatch@{R\-S\-\_\-\-Hatch}!update@{update}}
+\index{update@{update}!RS_Hatch@{R\-S\-\_\-\-Hatch}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Hatch\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__Hatch_abc88cf985de2914662cdbbf0f0ee224f}
+Updates the Hatch. Called when the hatch or it's data, position, alignment, .. changes. 
+
+Reimplemented from \hyperlink{classRS__EntityContainer_a684d16893e76812fd194ceac56a03730}{R\-S\-\_\-\-Entity\-Container}.
+
+\hypertarget{classRS__Hatch_a7365f0a8552c603820773734b4f7c7fe}{\index{R\-S\-\_\-\-Hatch@{R\-S\-\_\-\-Hatch}!validate@{validate}}
+\index{validate@{validate}!RS_Hatch@{R\-S\-\_\-\-Hatch}}
+\subsubsection[{validate}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-S\-\_\-\-Hatch\-::validate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRS__Hatch_a7365f0a8552c603820773734b4f7c7fe}
+Validates the hatch. 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classRS__Hatch_a5b267a9e959fc58ff5aaa63d0bbfef2d}{\index{R\-S\-\_\-\-Hatch@{R\-S\-\_\-\-Hatch}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!RS_Hatch@{R\-S\-\_\-\-Hatch}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os, }
+\item[{const {\bf R\-S\-\_\-\-Hatch} \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classRS__Hatch_a5b267a9e959fc58ff5aaa63d0bbfef2d}
+Dumps the point's data to stdout. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/lib/engine/rs\-\_\-hatch.\-h\item 
+librecad/src/lib/engine/rs\-\_\-hatch.\-cpp\end{DoxyCompactItemize}

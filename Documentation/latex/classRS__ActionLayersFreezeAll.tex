@@ -1,0 +1,76 @@
+\hypertarget{classRS__ActionLayersFreezeAll}{\section{R\-S\-\_\-\-Action\-Layers\-Freeze\-All Class Reference}
+\label{classRS__ActionLayersFreezeAll}\index{R\-S\-\_\-\-Action\-Layers\-Freeze\-All@{R\-S\-\_\-\-Action\-Layers\-Freeze\-All}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionlayersfreezeall.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-Layers\-Freeze\-All\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__ActionLayersFreezeAll}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionLayersFreezeAll_a96fe2b30062217e9a9a1c49a297404a1}{{\bfseries R\-S\-\_\-\-Action\-Layers\-Freeze\-All} (bool freeze, \hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionLayersFreezeAll_a96fe2b30062217e9a9a1c49a297404a1}
+
+\item 
+virtual void \hyperlink{classRS__ActionLayersFreezeAll_ad999c3530d516b91c1180a2e235822fe}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionLayersFreezeAll_a80c6503c79ebb84a8a9940334e5b9f37}{trigger} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionLayersFreezeAll_adb2f71f343a670e0c8385394c588ed47}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} type, Q\-Object $\ast$)}\label{classRS__ActionLayersFreezeAll_adb2f71f343a670e0c8385394c588ed47}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to edit layers.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionLayersFreezeAll_ad999c3530d516b91c1180a2e235822fe}{\index{R\-S\-\_\-\-Action\-Layers\-Freeze\-All@{R\-S\-\_\-\-Action\-Layers\-Freeze\-All}!init@{init}}
+\index{init@{init}!RS_ActionLayersFreezeAll@{R\-S\-\_\-\-Action\-Layers\-Freeze\-All}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Layers\-Freeze\-All\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionLayersFreezeAll_ad999c3530d516b91c1180a2e235822fe}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a05b7dca5deeb371eb51edcb73facd45f}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionLayersFreezeAll_a80c6503c79ebb84a8a9940334e5b9f37}{\index{R\-S\-\_\-\-Action\-Layers\-Freeze\-All@{R\-S\-\_\-\-Action\-Layers\-Freeze\-All}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionLayersFreezeAll@{R\-S\-\_\-\-Action\-Layers\-Freeze\-All}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-Layers\-Freeze\-All\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionLayersFreezeAll_a80c6503c79ebb84a8a9940334e5b9f37}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa2ba8f6f697f735eace4ec5449c0b8cd}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionlayersfreezeall.\-h\item 
+librecad/src/actions/rs\-\_\-actionlayersfreezeall.\-cpp\end{DoxyCompactItemize}

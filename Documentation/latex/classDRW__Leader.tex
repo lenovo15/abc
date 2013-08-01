@@ -1,0 +1,128 @@
+\hypertarget{classDRW__Leader}{\section{D\-R\-W\-\_\-\-Leader Class Reference}
+\label{classDRW__Leader}\index{D\-R\-W\-\_\-\-Leader@{D\-R\-W\-\_\-\-Leader}}
+}
+
+
+Class to handle leader entity.  
+
+
+
+
+{\ttfamily \#include $<$drw\-\_\-entities.\-h$>$}
+
+Inheritance diagram for D\-R\-W\-\_\-\-Leader\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDRW__Leader}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDRW__Leader_a4949b7f618c7a9d839b1e835e52bab00}{virtual void {\bfseries apply\-Extrusion} ()}\label{classDRW__Leader_a4949b7f618c7a9d839b1e835e52bab00}
+
+\item 
+\hypertarget{classDRW__Leader_ae803bfea4896739f8fa0fd2f99eec101}{void {\bfseries parse\-Code} (int code, \hyperlink{classdxfReader}{dxf\-Reader} $\ast$reader)}\label{classDRW__Leader_ae803bfea4896739f8fa0fd2f99eec101}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+U\-T\-F8\-S\-T\-R\-I\-N\-G \hyperlink{classDRW__Leader_a7a4e898ceae92208a03e86f7857e78e0}{style}
+\item 
+int \hyperlink{classDRW__Leader_a42f61a808411cf8465ec7f64c49cc4a6}{arrow}
+\item 
+int \hyperlink{classDRW__Leader_a4ba900b63165cb87b79612a9f9b4ff50}{leadertype}
+\item 
+int \hyperlink{classDRW__Leader_adcf19e8f9d127c910267e37a9d09e828}{flag}
+\item 
+int \hyperlink{classDRW__Leader_a80aca0277cc06cbcb4af9c6a42decf06}{hookline}
+\item 
+int \hyperlink{classDRW__Leader_a5d47804340900202fe3d1cd7bebbcecf}{hookflag}
+\item 
+double \hyperlink{classDRW__Leader_a5d4c5d32e962710240fc6ffa392c951b}{textheight}
+\item 
+double \hyperlink{classDRW__Leader_ab08450146f7f0658eca773a534d64be0}{textwidth}
+\item 
+int \hyperlink{classDRW__Leader_a8c0f8d7ebce1a2f1a4cb6d367a0c6a0d}{vertnum}
+\item 
+int \hyperlink{classDRW__Leader_afdff2ddfa67b8f2f46b367f52e06e027}{coloruse}
+\item 
+string \hyperlink{classDRW__Leader_a888e422223a71784801bc1c0d54578c1}{handle}
+\item 
+\hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} \hyperlink{classDRW__Leader_a9ef3ab714584747ac54612c47edd570a}{extrusion\-Point}
+\item 
+\hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} \hyperlink{classDRW__Leader_a31292925946b20b3c24f679c54f83523}{horizdir}
+\item 
+\hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} \hyperlink{classDRW__Leader_aa6a2e2b354365f405b52240c9bca3c8a}{offsetblock}
+\item 
+\hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} \hyperlink{classDRW__Leader_a6326c764bc74feaf7a5a3efa57325f67}{offsettext}
+\item 
+std\-::vector$<$ \hyperlink{classDRW__Coord}{D\-R\-W\-\_\-\-Coord} $\ast$ $>$ \hyperlink{classDRW__Leader_a7aef5bd8c0202b0c6836e15552866fcd}{vertexlist}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class to handle leader entity. 
+
+Class to handle leader entity \begin{DoxyAuthor}{Author}
+Rallaz 
+\end{DoxyAuthor}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classDRW__Leader_a42f61a808411cf8465ec7f64c49cc4a6}{\index{D\-R\-W\-\_\-\-Leader@{D\-R\-W\-\_\-\-Leader}!arrow@{arrow}}
+\index{arrow@{arrow}!DRW_Leader@{D\-R\-W\-\_\-\-Leader}}
+\subsubsection[{arrow}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-Leader\-::arrow}}\label{classDRW__Leader_a42f61a808411cf8465ec7f64c49cc4a6}
+Arrowhead flag, code 71, 0=Disabled; 1=Enabled \hypertarget{classDRW__Leader_afdff2ddfa67b8f2f46b367f52e06e027}{\index{D\-R\-W\-\_\-\-Leader@{D\-R\-W\-\_\-\-Leader}!coloruse@{coloruse}}
+\index{coloruse@{coloruse}!DRW_Leader@{D\-R\-W\-\_\-\-Leader}}
+\subsubsection[{coloruse}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-Leader\-::coloruse}}\label{classDRW__Leader_afdff2ddfa67b8f2f46b367f52e06e027}
+Color to use if leader's D\-I\-M\-C\-L\-R\-D = B\-Y\-B\-L\-O\-C\-K, code 77 \hypertarget{classDRW__Leader_a9ef3ab714584747ac54612c47edd570a}{\index{D\-R\-W\-\_\-\-Leader@{D\-R\-W\-\_\-\-Leader}!extrusion\-Point@{extrusion\-Point}}
+\index{extrusion\-Point@{extrusion\-Point}!DRW_Leader@{D\-R\-W\-\_\-\-Leader}}
+\subsubsection[{extrusion\-Point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-R\-W\-\_\-\-Coord} D\-R\-W\-\_\-\-Leader\-::extrusion\-Point}}\label{classDRW__Leader_a9ef3ab714584747ac54612c47edd570a}
+Normal vector, code 210, 220 \& 230 \hypertarget{classDRW__Leader_adcf19e8f9d127c910267e37a9d09e828}{\index{D\-R\-W\-\_\-\-Leader@{D\-R\-W\-\_\-\-Leader}!flag@{flag}}
+\index{flag@{flag}!DRW_Leader@{D\-R\-W\-\_\-\-Leader}}
+\subsubsection[{flag}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-Leader\-::flag}}\label{classDRW__Leader_adcf19e8f9d127c910267e37a9d09e828}
+Leader creation flag, code 73, default 3 \hypertarget{classDRW__Leader_a888e422223a71784801bc1c0d54578c1}{\index{D\-R\-W\-\_\-\-Leader@{D\-R\-W\-\_\-\-Leader}!handle@{handle}}
+\index{handle@{handle}!DRW_Leader@{D\-R\-W\-\_\-\-Leader}}
+\subsubsection[{handle}]{\setlength{\rightskip}{0pt plus 5cm}string D\-R\-W\-\_\-\-Leader\-::handle}}\label{classDRW__Leader_a888e422223a71784801bc1c0d54578c1}
+Hard reference to associated annotation, code 340 \hypertarget{classDRW__Leader_a5d47804340900202fe3d1cd7bebbcecf}{\index{D\-R\-W\-\_\-\-Leader@{D\-R\-W\-\_\-\-Leader}!hookflag@{hookflag}}
+\index{hookflag@{hookflag}!DRW_Leader@{D\-R\-W\-\_\-\-Leader}}
+\subsubsection[{hookflag}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-Leader\-::hookflag}}\label{classDRW__Leader_a5d47804340900202fe3d1cd7bebbcecf}
+Hook line flag, code 75 \hypertarget{classDRW__Leader_a80aca0277cc06cbcb4af9c6a42decf06}{\index{D\-R\-W\-\_\-\-Leader@{D\-R\-W\-\_\-\-Leader}!hookline@{hookline}}
+\index{hookline@{hookline}!DRW_Leader@{D\-R\-W\-\_\-\-Leader}}
+\subsubsection[{hookline}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-Leader\-::hookline}}\label{classDRW__Leader_a80aca0277cc06cbcb4af9c6a42decf06}
+Hook line direction flag, code 74, default 1 \hypertarget{classDRW__Leader_a31292925946b20b3c24f679c54f83523}{\index{D\-R\-W\-\_\-\-Leader@{D\-R\-W\-\_\-\-Leader}!horizdir@{horizdir}}
+\index{horizdir@{horizdir}!DRW_Leader@{D\-R\-W\-\_\-\-Leader}}
+\subsubsection[{horizdir}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-R\-W\-\_\-\-Coord} D\-R\-W\-\_\-\-Leader\-::horizdir}}\label{classDRW__Leader_a31292925946b20b3c24f679c54f83523}
+\char`\"{}\-Horizontal\char`\"{} direction for leader, code 211, 221 \& 231 \hypertarget{classDRW__Leader_a4ba900b63165cb87b79612a9f9b4ff50}{\index{D\-R\-W\-\_\-\-Leader@{D\-R\-W\-\_\-\-Leader}!leadertype@{leadertype}}
+\index{leadertype@{leadertype}!DRW_Leader@{D\-R\-W\-\_\-\-Leader}}
+\subsubsection[{leadertype}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-Leader\-::leadertype}}\label{classDRW__Leader_a4ba900b63165cb87b79612a9f9b4ff50}
+Leader path type, code 72, 0=Straight line segments; 1=Spline \hypertarget{classDRW__Leader_aa6a2e2b354365f405b52240c9bca3c8a}{\index{D\-R\-W\-\_\-\-Leader@{D\-R\-W\-\_\-\-Leader}!offsetblock@{offsetblock}}
+\index{offsetblock@{offsetblock}!DRW_Leader@{D\-R\-W\-\_\-\-Leader}}
+\subsubsection[{offsetblock}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-R\-W\-\_\-\-Coord} D\-R\-W\-\_\-\-Leader\-::offsetblock}}\label{classDRW__Leader_aa6a2e2b354365f405b52240c9bca3c8a}
+Offset of last leader vertex from block, code 212, 222 \& 232 \hypertarget{classDRW__Leader_a6326c764bc74feaf7a5a3efa57325f67}{\index{D\-R\-W\-\_\-\-Leader@{D\-R\-W\-\_\-\-Leader}!offsettext@{offsettext}}
+\index{offsettext@{offsettext}!DRW_Leader@{D\-R\-W\-\_\-\-Leader}}
+\subsubsection[{offsettext}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-R\-W\-\_\-\-Coord} D\-R\-W\-\_\-\-Leader\-::offsettext}}\label{classDRW__Leader_a6326c764bc74feaf7a5a3efa57325f67}
+Offset of last leader vertex from annotation, code 213, 223 \& 233 \hypertarget{classDRW__Leader_a7a4e898ceae92208a03e86f7857e78e0}{\index{D\-R\-W\-\_\-\-Leader@{D\-R\-W\-\_\-\-Leader}!style@{style}}
+\index{style@{style}!DRW_Leader@{D\-R\-W\-\_\-\-Leader}}
+\subsubsection[{style}]{\setlength{\rightskip}{0pt plus 5cm}U\-T\-F8\-S\-T\-R\-I\-N\-G D\-R\-W\-\_\-\-Leader\-::style}}\label{classDRW__Leader_a7a4e898ceae92208a03e86f7857e78e0}
+Dimension style name, code 3 \hypertarget{classDRW__Leader_a5d4c5d32e962710240fc6ffa392c951b}{\index{D\-R\-W\-\_\-\-Leader@{D\-R\-W\-\_\-\-Leader}!textheight@{textheight}}
+\index{textheight@{textheight}!DRW_Leader@{D\-R\-W\-\_\-\-Leader}}
+\subsubsection[{textheight}]{\setlength{\rightskip}{0pt plus 5cm}double D\-R\-W\-\_\-\-Leader\-::textheight}}\label{classDRW__Leader_a5d4c5d32e962710240fc6ffa392c951b}
+Text annotation height, code 40 \hypertarget{classDRW__Leader_ab08450146f7f0658eca773a534d64be0}{\index{D\-R\-W\-\_\-\-Leader@{D\-R\-W\-\_\-\-Leader}!textwidth@{textwidth}}
+\index{textwidth@{textwidth}!DRW_Leader@{D\-R\-W\-\_\-\-Leader}}
+\subsubsection[{textwidth}]{\setlength{\rightskip}{0pt plus 5cm}double D\-R\-W\-\_\-\-Leader\-::textwidth}}\label{classDRW__Leader_ab08450146f7f0658eca773a534d64be0}
+Text annotation width, code 41 \hypertarget{classDRW__Leader_a7aef5bd8c0202b0c6836e15552866fcd}{\index{D\-R\-W\-\_\-\-Leader@{D\-R\-W\-\_\-\-Leader}!vertexlist@{vertexlist}}
+\index{vertexlist@{vertexlist}!DRW_Leader@{D\-R\-W\-\_\-\-Leader}}
+\subsubsection[{vertexlist}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf D\-R\-W\-\_\-\-Coord} $\ast$$>$ D\-R\-W\-\_\-\-Leader\-::vertexlist}}\label{classDRW__Leader_a7aef5bd8c0202b0c6836e15552866fcd}
+vertex points list, code 10, 20 \& 30 \hypertarget{classDRW__Leader_a8c0f8d7ebce1a2f1a4cb6d367a0c6a0d}{\index{D\-R\-W\-\_\-\-Leader@{D\-R\-W\-\_\-\-Leader}!vertnum@{vertnum}}
+\index{vertnum@{vertnum}!DRW_Leader@{D\-R\-W\-\_\-\-Leader}}
+\subsubsection[{vertnum}]{\setlength{\rightskip}{0pt plus 5cm}int D\-R\-W\-\_\-\-Leader\-::vertnum}}\label{classDRW__Leader_a8c0f8d7ebce1a2f1a4cb6d367a0c6a0d}
+Number of vertices, code 76 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+libraries/libdxfrw/src/drw\-\_\-entities.\-h\item 
+libraries/libdxfrw/src/drw\-\_\-entities.\-cpp\end{DoxyCompactItemize}

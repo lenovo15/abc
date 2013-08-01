@@ -1,0 +1,58 @@
+\hypertarget{classQC__DialogFactory}{\section{Q\-C\-\_\-\-Dialog\-Factory Class Reference}
+\label{classQC__DialogFactory}\index{Q\-C\-\_\-\-Dialog\-Factory@{Q\-C\-\_\-\-Dialog\-Factory}}
+}
+
+
+{\ttfamily \#include $<$qc\-\_\-dialogfactory.\-h$>$}
+
+Inheritance diagram for Q\-C\-\_\-\-Dialog\-Factory\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classQC__DialogFactory}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classQC__DialogFactory_a32df06a5281058acc1ba430e20ce7b26}{{\bfseries Q\-C\-\_\-\-Dialog\-Factory} (Q\-Widget $\ast$\hyperlink{classQG__DialogFactory_a3f4a0e132723a8da0aaac5c1f8bab7dd}{parent}, Q\-Tool\-Bar $\ast$ow)}\label{classQC__DialogFactory_a32df06a5281058acc1ba430e20ce7b26}
+
+\item 
+virtual void \hyperlink{classQC__DialogFactory_a8e29de8d89f21be4baa06d6d3417484f}{request\-Edit\-Block\-Window} (\hyperlink{classRS__BlockList}{R\-S\-\_\-\-Block\-List} $\ast$block\-List=N\-U\-L\-L)
+\item 
+virtual void \hyperlink{classQC__DialogFactory_a52ea89acfc6fe034fe68a8be8310b12d}{close\-Edit\-Block\-Window} (\hyperlink{classRS__Block}{R\-S\-\_\-\-Block} $\ast$block=N\-U\-L\-L)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This is the Libre\-C\-A\-D specific implementation of a widget which can create and show dialogs. Some functions cannot be implemented on the Libre\-C\-A\-D library level and need to be implemented here, on the application level. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classQC__DialogFactory_a52ea89acfc6fe034fe68a8be8310b12d}{\index{Q\-C\-\_\-\-Dialog\-Factory@{Q\-C\-\_\-\-Dialog\-Factory}!close\-Edit\-Block\-Window@{close\-Edit\-Block\-Window}}
+\index{close\-Edit\-Block\-Window@{close\-Edit\-Block\-Window}!QC_DialogFactory@{Q\-C\-\_\-\-Dialog\-Factory}}
+\subsubsection[{close\-Edit\-Block\-Window}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-C\-\_\-\-Dialog\-Factory\-::close\-Edit\-Block\-Window (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block} $\ast$}]{block = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQC__DialogFactory_a52ea89acfc6fe034fe68a8be8310b12d}
+Closes all windows that are editing the given block. 
+
+Reimplemented from \hyperlink{classQG__DialogFactory}{Q\-G\-\_\-\-Dialog\-Factory}.
+
+\hypertarget{classQC__DialogFactory_a8e29de8d89f21be4baa06d6d3417484f}{\index{Q\-C\-\_\-\-Dialog\-Factory@{Q\-C\-\_\-\-Dialog\-Factory}!request\-Edit\-Block\-Window@{request\-Edit\-Block\-Window}}
+\index{request\-Edit\-Block\-Window@{request\-Edit\-Block\-Window}!QC_DialogFactory@{Q\-C\-\_\-\-Dialog\-Factory}}
+\subsubsection[{request\-Edit\-Block\-Window}]{\setlength{\rightskip}{0pt plus 5cm}void Q\-C\-\_\-\-Dialog\-Factory\-::request\-Edit\-Block\-Window (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-S\-\_\-\-Block\-List} $\ast$}]{block\-List = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classQC__DialogFactory_a8e29de8d89f21be4baa06d6d3417484f}
+Provides a new window for editing the active block. 
+
+Reimplemented from \hyperlink{classQG__DialogFactory_a083de978c17fbf8e802e6ae828fa9117}{Q\-G\-\_\-\-Dialog\-Factory}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/main/qc\-\_\-dialogfactory.\-h\item 
+librecad/src/main/qc\-\_\-dialogfactory.\-cpp\end{DoxyCompactItemize}

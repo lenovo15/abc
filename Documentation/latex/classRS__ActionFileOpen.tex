@@ -1,0 +1,76 @@
+\hypertarget{classRS__ActionFileOpen}{\section{R\-S\-\_\-\-Action\-File\-Open Class Reference}
+\label{classRS__ActionFileOpen}\index{R\-S\-\_\-\-Action\-File\-Open@{R\-S\-\_\-\-Action\-File\-Open}}
+}
+
+
+{\ttfamily \#include $<$rs\-\_\-actionfileopen.\-h$>$}
+
+Inheritance diagram for R\-S\-\_\-\-Action\-File\-Open\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRS__ActionFileOpen}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionFileOpen_ad64532231914bcdc60d54b663752f58a}{{\bfseries R\-S\-\_\-\-Action\-File\-Open} (\hyperlink{classRS__EntityContainer}{R\-S\-\_\-\-Entity\-Container} \&container, \hyperlink{classRS__GraphicView}{R\-S\-\_\-\-Graphic\-View} \&graphic\-View)}\label{classRS__ActionFileOpen_ad64532231914bcdc60d54b663752f58a}
+
+\item 
+virtual void \hyperlink{classRS__ActionFileOpen_a5cb312c3c0bc307bfa33fef47b832c5d}{init} (int status=0)
+\item 
+virtual void \hyperlink{classRS__ActionFileOpen_ab1d0e9decc05bd5dbe3460c890b0b350}{trigger} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRS__ActionFileOpen_a0d6539bed5bb0453567316da3b3c5fa8}{static Q\-Action $\ast$ {\bfseries create\-G\-U\-I\-Action} (\hyperlink{classRS2_afe3523e0bc41fd637b892321cfc4b9d7}{R\-S2\-::\-Action\-Type} type, Q\-Object $\ast$parent)}\label{classRS__ActionFileOpen_a0d6539bed5bb0453567316da3b3c5fa8}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This action class can handle user events to open files.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRS__ActionFileOpen_a5cb312c3c0bc307bfa33fef47b832c5d}{\index{R\-S\-\_\-\-Action\-File\-Open@{R\-S\-\_\-\-Action\-File\-Open}!init@{init}}
+\index{init@{init}!RS_ActionFileOpen@{R\-S\-\_\-\-Action\-File\-Open}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-File\-Open\-::init (
+\begin{DoxyParamCaption}
+\item[{int}]{status = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionFileOpen_a5cb312c3c0bc307bfa33fef47b832c5d}
+Called to initiate an action. This funtcion is often overwritten by the implementing action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status on which to initiate this action. default is 0 to begin the action. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classRS__ActionInterface_a05b7dca5deeb371eb51edcb73facd45f}{R\-S\-\_\-\-Action\-Interface}.
+
+\hypertarget{classRS__ActionFileOpen_ab1d0e9decc05bd5dbe3460c890b0b350}{\index{R\-S\-\_\-\-Action\-File\-Open@{R\-S\-\_\-\-Action\-File\-Open}!trigger@{trigger}}
+\index{trigger@{trigger}!RS_ActionFileOpen@{R\-S\-\_\-\-Action\-File\-Open}}
+\subsubsection[{trigger}]{\setlength{\rightskip}{0pt plus 5cm}void R\-S\-\_\-\-Action\-File\-Open\-::trigger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRS__ActionFileOpen_ab1d0e9decc05bd5dbe3460c890b0b350}
+Triggers this action. This should be called after all data needed for this action was collected / set. The default implementation does nothing. 
+
+Reimplemented from \hyperlink{classRS__ActionInterface_aa2ba8f6f697f735eace4ec5449c0b8cd}{R\-S\-\_\-\-Action\-Interface}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+librecad/src/actions/rs\-\_\-actionfileopen.\-h\item 
+librecad/src/actions/rs\-\_\-actionfileopen.\-cpp\end{DoxyCompactItemize}

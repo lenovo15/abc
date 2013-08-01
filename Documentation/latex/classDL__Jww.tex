@@ -1,0 +1,1379 @@
+\hypertarget{classDL__Jww}{\section{D\-L\-\_\-\-Jww Class Reference}
+\label{classDL__Jww}\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}}
+}
+
+
+{\ttfamily \#include $<$dl\-\_\-jww.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDL__Jww_a72c0332a88b20baf3ee396f5e5ca5eff}{D\-L\-\_\-\-Jww} ()
+\item 
+\hyperlink{classDL__Jww_aa3e4099dc71d093b8a163b08c182dedf}{$\sim$\-D\-L\-\_\-\-Jww} ()
+\item 
+bool \hyperlink{classDL__Jww_a08c6ea45c58369fa8082fe085ac7c515}{in} (const string \&file, \hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\begin{DoxyCompactList}\small\item\em Reads the given file and calls the appropriate functions in the given creation interface for every entity found in the file. \end{DoxyCompactList}\item 
+\hypertarget{classDL__Jww_a8bf33184cd773ac09d91e14a4a9f8e9c}{bool {\bfseries read\-Jww\-Groups} (F\-I\-L\-E $\ast$fp, \hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface, int $\ast$error\-Counter=N\-U\-L\-L)}\label{classDL__Jww_a8bf33184cd773ac09d91e14a4a9f8e9c}
+
+\item 
+bool \hyperlink{classDL__Jww_a8b43a0934fe87abd26f8836c29d1be07}{process\-Jww\-Group} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface, int group\-Code, const char $\ast$group\-Value)
+\item 
+void \hyperlink{classDL__Jww_ab000bb3f54570a44fd01c9add1bd0726}{add\-Setting} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_ad0b4ab866d5dd808d4f9f342396b8266}{add\-Layer} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_aed69df968bcb9bf0bffd088e018da522}{add\-Block} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_a1084339c6f7ba10405e1a60a768673fc}{end\-Block} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_a062805465b6d38b19185e6370051e0bf}{add\-Point} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_a290faf39f4ee51d3fb715560e1f22a4f}{add\-Line} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_a4edf5d3635d7c803cdc3c452564ea3ed}{add\-Polyline} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_a1d235c3ce741b812323635caf18bd310}{add\-Vertex} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_a9df7f11c29f2dae33bbab5d109c887d4}{add\-Spline} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_acc41f4c85577f14559f17211ac5a09cb}{add\-Arc} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_a1b4a6deb83772971cc4a8403262b3cd7}{add\-Circle} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_a184d596b538825525ce5301cba9cb89e}{add\-Ellipse} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_a1a76a7e3e93dff3320472b81fd083a8a}{add\-Insert} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_af7f4691ea21313ebd679965461af750d}{add\-Trace} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_a9a23b3106508562afc648f03b7275d9c}{add\-Solid} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_a958e6554d2b62ee953a86721b0558b52}{add\-M\-Text} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+bool \hyperlink{classDL__Jww_ac8f27defc2e61d310f17bd2b8ecc54f2}{handle\-M\-Text\-Data} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+bool \hyperlink{classDL__Jww_a36c6c0ca2b9df638e72204ea028b9290}{handle\-L\-W\-Polyline\-Data} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+bool \hyperlink{classDL__Jww_aa5f8dbcc6ea9f102fd8a49aa736c73bd}{handle\-Spline\-Data} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+bool \hyperlink{classDL__Jww_a9d496ac42563373a3e4d4893764cb9b8}{handle\-Leader\-Data} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+bool \hyperlink{classDL__Jww_a233bc4b34189839f73298cb7133d949c}{handle\-Hatch\-Data} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_a363455add370595edf87f35b62dcf486}{add\-Text} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_a17c123f29e2ac263c92a1726080bacbc}{add\-Attrib} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+\hyperlink{structDL__DimensionData}{D\-L\-\_\-\-Dimension\-Data} \hyperlink{classDL__Jww_a5a9706b7ab9fa9fe7c8ff45633d4f2c8}{get\-Dim\-Data} ()
+\item 
+void \hyperlink{classDL__Jww_aac79a956728e59e7eefa3093815c3f6f}{add\-Dim\-Linear} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_a6cdb659715136c13300febe280540a60}{add\-Dim\-Aligned} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_a3d755a59470ea63e942b7ee8adc61ba0}{add\-Dim\-Radial} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_a622433317b17380b3202622ace625c9b}{add\-Dim\-Diametric} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_af369b3ed0deb26433287b2f396e8f405}{add\-Dim\-Angular} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_a9fc5ce1e80df56fc62854a618726b1c3}{add\-Dim\-Angular3\-P} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_a464f0ff227afcac6aadb85c4d5c2dba2}{add\-Leader} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_a638e43dfce889a5e84b2f5979eff7af1}{add\-Hatch} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_a4d5716211e828da57656c6b751c1f248}{add\-Image} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_a33aba2b7bbaf06fab909ce9547a08e8f}{add\-Image\-Def} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_ac087ba128079598ea41ee114978a6bd2}{end\-Entity} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+void \hyperlink{classDL__Jww_a64b01766fcbddeeb15f3dd25c4d904c1}{end\-Sequence} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface)
+\item 
+int \hyperlink{classDL__Jww_a7261b1a7090ab37ac757dfe47c490100}{string\-To\-Int} (const char $\ast$s, bool $\ast$ok=N\-U\-L\-L)
+\item 
+\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} $\ast$ \hyperlink{classDL__Jww_aad15221b60ada330f8ec03a6060465da}{out} (const char $\ast$file, \hyperlink{classDL__Codes_a5eba107e2d280c70b52ffab0292fb9dc}{D\-L\-\_\-\-Codes\-::version} version=V\-E\-R\-\_\-2000)
+\begin{DoxyCompactList}\small\item\em Opens the given file for writing and returns a pointer to the dxf writer. This pointer needs to be passed on to other writing functions. \end{DoxyCompactList}\item 
+\hypertarget{classDL__Jww_a2eb885ef30754f3db11026487b70ea43}{void \hyperlink{classDL__Jww_a2eb885ef30754f3db11026487b70ea43}{write\-Header} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw)}\label{classDL__Jww_a2eb885ef30754f3db11026487b70ea43}
+
+\begin{DoxyCompactList}\small\item\em Writes a D\-X\-F header to the file currently opened by the given D\-X\-F writer object. \end{DoxyCompactList}\item 
+void \hyperlink{classDL__Jww_a349bd7b4a2a09c5512287257290325fc}{write\-Point} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__PointData}{D\-L\-\_\-\-Point\-Data} \&data, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classDL__Jww_a46875184f540e9b60a8ba86cdac0e247}{write\-Line} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__LineData}{D\-L\-\_\-\-Line\-Data} \&data, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classDL__Jww_a285fb0224b0b90c89af9f312f240c622}{write\-Polyline} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__PolylineData}{D\-L\-\_\-\-Polyline\-Data} \&data, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classDL__Jww_a250cbdd4d5e8e4976fa72ad91329df9d}{write\-Vertex} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__VertexData}{D\-L\-\_\-\-Vertex\-Data} \&data)
+\item 
+void \hyperlink{classDL__Jww_a4baa9d770fb3668f4bbedbc098a64989}{write\-Polyline\-End} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw)
+\item 
+void \hyperlink{classDL__Jww_a78a0f4a1f952297b1be5f275e6833dbb}{write\-Spline} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__SplineData}{D\-L\-\_\-\-Spline\-Data} \&data, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classDL__Jww_a1c265cc4dfc39a2ff89e03044668b3c8}{write\-Control\-Point} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__ControlPointData}{D\-L\-\_\-\-Control\-Point\-Data} \&data)
+\item 
+void \hyperlink{classDL__Jww_aaae8b4f870a9a582a86fb801e9a24c88}{write\-Knot} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__KnotData}{D\-L\-\_\-\-Knot\-Data} \&data)
+\item 
+void \hyperlink{classDL__Jww_a31380c1fd71a80c4c5bc971fa9b75700}{write\-Circle} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__CircleData}{D\-L\-\_\-\-Circle\-Data} \&data, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classDL__Jww_a1a9da4bf1b26a3466afadda87fc3e56d}{write\-Arc} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__ArcData}{D\-L\-\_\-\-Arc\-Data} \&data, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classDL__Jww_a8c06577ca47cea35fafb6f568c19a8b5}{write\-Ellipse} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__EllipseData}{D\-L\-\_\-\-Ellipse\-Data} \&data, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classDL__Jww_a0099b398f95cb2ebaadbf8cc5e5da26b}{write\-Insert} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__InsertData}{D\-L\-\_\-\-Insert\-Data} \&data, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classDL__Jww_aba56a9a5b0f8d87ff0f67bcfab58f2fd}{write\-M\-Text} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__MTextData}{D\-L\-\_\-\-M\-Text\-Data} \&data, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classDL__Jww_abcdaff0bca8ced6c94e3cff9e3c758b1}{write\-Text} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__TextData}{D\-L\-\_\-\-Text\-Data} \&data, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classDL__Jww_a29bdac82f784c2c5da01c848db044b73}{write\-Dim\-Aligned} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__DimensionData}{D\-L\-\_\-\-Dimension\-Data} \&data, const \hyperlink{structDL__DimAlignedData}{D\-L\-\_\-\-Dim\-Aligned\-Data} \&edata, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classDL__Jww_a3fc9a2f3a0b6acffe398d7fd4f7286b3}{write\-Dim\-Linear} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__DimensionData}{D\-L\-\_\-\-Dimension\-Data} \&data, const \hyperlink{structDL__DimLinearData}{D\-L\-\_\-\-Dim\-Linear\-Data} \&edata, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classDL__Jww_a63c86960d29f01c47acc8a86c9b5779e}{write\-Dim\-Radial} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__DimensionData}{D\-L\-\_\-\-Dimension\-Data} \&data, const \hyperlink{structDL__DimRadialData}{D\-L\-\_\-\-Dim\-Radial\-Data} \&edata, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classDL__Jww_a57e1bd75c5f9044b320a6731f45a30f6}{write\-Dim\-Diametric} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__DimensionData}{D\-L\-\_\-\-Dimension\-Data} \&data, const \hyperlink{structDL__DimDiametricData}{D\-L\-\_\-\-Dim\-Diametric\-Data} \&edata, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classDL__Jww_a562f795baba64bb1de43e5dc79db3482}{write\-Dim\-Angular} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__DimensionData}{D\-L\-\_\-\-Dimension\-Data} \&data, const \hyperlink{structDL__DimAngularData}{D\-L\-\_\-\-Dim\-Angular\-Data} \&edata, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classDL__Jww_a9ce2b1d96a5306504cd786acf5cf38bf}{write\-Dim\-Angular3\-P} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__DimensionData}{D\-L\-\_\-\-Dimension\-Data} \&data, const \hyperlink{structDL__DimAngular3PData}{D\-L\-\_\-\-Dim\-Angular3\-P\-Data} \&edata, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classDL__Jww_a2f48871dce3ce0424172212f7ff2a798}{write\-Leader} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__LeaderData}{D\-L\-\_\-\-Leader\-Data} \&data, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classDL__Jww_a3d15752d4c1d8178052b0cbf25b84296}{write\-Leader\-Vertex} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__LeaderVertexData}{D\-L\-\_\-\-Leader\-Vertex\-Data} \&data)
+\item 
+void \hyperlink{classDL__Jww_a18fd5b69d891dc78605ba2ff1ed926d4}{write\-Hatch1} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__HatchData}{D\-L\-\_\-\-Hatch\-Data} \&data, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classDL__Jww_a77d8dc4678f6c7fb803a8d106044714a}{write\-Hatch2} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__HatchData}{D\-L\-\_\-\-Hatch\-Data} \&data, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classDL__Jww_a84fec96772112d1a9e67695b015f4459}{write\-Hatch\-Loop1} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__HatchLoopData}{D\-L\-\_\-\-Hatch\-Loop\-Data} \&data)
+\item 
+void \hyperlink{classDL__Jww_afe5795107046cbdecdbfc6d69c490827}{write\-Hatch\-Loop2} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__HatchLoopData}{D\-L\-\_\-\-Hatch\-Loop\-Data} \&data)
+\item 
+void \hyperlink{classDL__Jww_ab468fed13399e34742fe9b5cc7115c1c}{write\-Hatch\-Edge} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__HatchEdgeData}{D\-L\-\_\-\-Hatch\-Edge\-Data} \&data)
+\item 
+int \hyperlink{classDL__Jww_a16a70594a388162ca074ee82f6046425}{write\-Image} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__ImageData}{D\-L\-\_\-\-Image\-Data} \&data, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classDL__Jww_a9b3c239e7248cb80e9a573aabf0ce806}{write\-Image\-Def} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, int handle, const \hyperlink{structDL__ImageData}{D\-L\-\_\-\-Image\-Data} \&data)
+\item 
+void \hyperlink{classDL__Jww_a147c0555f8b63c23a1bcafd5a44b8f38}{write\-Layer} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__LayerData}{D\-L\-\_\-\-Layer\-Data} \&data, const \hyperlink{classDL__Attributes}{D\-L\-\_\-\-Attributes} \&attrib)
+\item 
+void \hyperlink{classDL__Jww_a7978c1b58bc2b681e1b759e210ae8dad}{write\-Line\-Type} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__LineTypeData}{D\-L\-\_\-\-Line\-Type\-Data} \&data)
+\item 
+void \hyperlink{classDL__Jww_a764515ba3869e0caef71cb431a707b3e}{write\-Appid} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const string \&name)
+\item 
+void \hyperlink{classDL__Jww_a2604a086785c870ea6b0f0710b7fca3a}{write\-Block} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const \hyperlink{structDL__BlockData}{D\-L\-\_\-\-Block\-Data} \&data)
+\item 
+void \hyperlink{classDL__Jww_a44ae7ddbcab7865514e8f04863887b42}{write\-End\-Block} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const string \&name)
+\item 
+void \hyperlink{classDL__Jww_a83d80c0542a39fe60fcc6281a6ad1e64}{write\-V\-Port} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw)
+\item 
+void \hyperlink{classDL__Jww_aebc0e1fc77e63d17707887660bf0b334}{write\-Style} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw)
+\item 
+void \hyperlink{classDL__Jww_a253faff9517a165071932dc688853b55}{write\-View} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw)
+\item 
+void \hyperlink{classDL__Jww_a504de91e55fc8b897fa177e14ff96a5f}{write\-Ucs} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw)
+\item 
+void \hyperlink{classDL__Jww_a32ddda913f2538ce26eeeb9648f3ec7a}{write\-Dim\-Style} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, double dimasz, double dimexe, double dimexo, double dimgap, double dimtxt)
+\item 
+void \hyperlink{classDL__Jww_a2d131ed835cf3a6872b0486edcaf2f28}{write\-Block\-Record} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw)
+\item 
+void \hyperlink{classDL__Jww_aae6742d43025466554cfd047da56b567}{write\-Block\-Record} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw, const string \&name)
+\item 
+void \hyperlink{classDL__Jww_a08f2617820707ce3ea4a6b2b5b8cb458}{write\-Objects} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw)
+\item 
+void \hyperlink{classDL__Jww_ad9204c6bfce1ac6eff07cd66ca215510}{write\-Objects\-End} (\hyperlink{classDL__WriterA}{D\-L\-\_\-\-Writer\-A} \&dw)
+\item 
+\hypertarget{classDL__Jww_a5210a8f7c70f6898bc8e6050a932ea18}{\hyperlink{classDL__Codes_a5eba107e2d280c70b52ffab0292fb9dc}{D\-L\-\_\-\-Codes\-::version} {\bfseries get\-Version} ()}\label{classDL__Jww_a5210a8f7c70f6898bc8e6050a932ea18}
+
+\item 
+int \hyperlink{classDL__Jww_a08cfa285f902c87a45c8beed373a8d2b}{get\-Lib\-Version} (const char $\ast$str)
+\item 
+\hypertarget{classDL__Jww_a18f35c0bb73abd04501c70642c7653fd}{void {\bfseries Create\-Sen} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface, \hyperlink{classCDataSen}{C\-Data\-Sen} \&D\-Sen)}\label{classDL__Jww_a18f35c0bb73abd04501c70642c7653fd}
+
+\item 
+\hypertarget{classDL__Jww_a088c5366e972bac76312531fe93533c5}{void {\bfseries Create\-Enko} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface, \hyperlink{classCDataEnko}{C\-Data\-Enko} \&D\-Enko)}\label{classDL__Jww_a088c5366e972bac76312531fe93533c5}
+
+\item 
+\hypertarget{classDL__Jww_aecbf559077998aadf68b905ab2935eb7}{void {\bfseries Create\-Ten} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface, \hyperlink{classCDataTen}{C\-Data\-Ten} \&D\-Ten)}\label{classDL__Jww_aecbf559077998aadf68b905ab2935eb7}
+
+\item 
+\hypertarget{classDL__Jww_a52dbf1428d4ca8e14986578d2e18dac6}{void {\bfseries Create\-Moji} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface, \hyperlink{classCDataMoji}{C\-Data\-Moji} \&D\-Moji)}\label{classDL__Jww_a52dbf1428d4ca8e14986578d2e18dac6}
+
+\item 
+\hypertarget{classDL__Jww_a0cffd03394012be63c63034e9917faf8}{void {\bfseries Create\-Solid} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface, \hyperlink{classCDataSolid}{C\-Data\-Solid} \&D\-Solid)}\label{classDL__Jww_a0cffd03394012be63c63034e9917faf8}
+
+\item 
+\hypertarget{classDL__Jww_ac1f0293371b41ebed10409ae3e44a9af}{void {\bfseries Create\-Sunpou} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface, \hyperlink{classCDataSunpou}{C\-Data\-Sunpou} \&D\-Sunpou)}\label{classDL__Jww_ac1f0293371b41ebed10409ae3e44a9af}
+
+\item 
+\hypertarget{classDL__Jww_a9a23feb08ea80734a45ad56cc34ec203}{void {\bfseries Create\-Block} (\hyperlink{classDL__CreationInterface}{D\-L\-\_\-\-Creation\-Interface} $\ast$creation\-Interface, \hyperlink{classCDataBlock}{C\-Data\-Block} \&D\-Block)}\label{classDL__Jww_a9a23feb08ea80734a45ad56cc34ec203}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \hyperlink{classDL__Jww_a6a95607e4af33bb104255c203d7c7152}{to\-Real} (const char $\ast$value, double def=0.\-0)
+\item 
+static int \hyperlink{classDL__Jww_a91a4c8cfe9f0feab648fe321f0ce99ce}{to\-Int} (const char $\ast$value, int def=0)
+\item 
+static const char $\ast$ \hyperlink{classDL__Jww_abad4d8debb1e9b5d58b01d072178913e}{to\-String} (const char $\ast$value, const char $\ast$def=\char`\"{}\char`\"{})
+\item 
+static bool \hyperlink{classDL__Jww_ad24d539b89e190a20792918229eac553}{check\-Variable} (const char $\ast$var, \hyperlink{classDL__Codes_a5eba107e2d280c70b52ffab0292fb9dc}{D\-L\-\_\-\-Codes\-::version} version)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Reading and writing of D\-X\-F files.
+
+This class can read in a D\-X\-F file and calls methods from the interface D\-L\-\_\-\-Entity\-Container to add the entities to the contianer provided by the user of the library.
+
+It can also be used to write D\-X\-F files to a certain extent.
+
+When saving entities, special values for colors and linetypes can be used\-:
+
+Special colors are 0 (=B\-Y\-B\-L\-O\-C\-K) and 256 (=B\-Y\-L\-A\-Y\-E\-R). Special linetypes are \char`\"{}\-B\-Y\-L\-A\-Y\-E\-R\char`\"{} and \char`\"{}\-B\-Y\-B\-L\-O\-C\-K\char`\"{}.
+
+\begin{DoxyAuthor}{Author}
+Andrew Mustun 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDL__Jww_a72c0332a88b20baf3ee396f5e5ca5eff}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}}
+\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{D\-L\-\_\-\-Jww}]{\setlength{\rightskip}{0pt plus 5cm}D\-L\-\_\-\-Jww\-::\-D\-L\-\_\-\-Jww (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a72c0332a88b20baf3ee396f5e5ca5eff}
+Default constructor. \hypertarget{classDL__Jww_aa3e4099dc71d093b8a163b08c182dedf}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!$\sim$\-D\-L\-\_\-\-Jww@{$\sim$\-D\-L\-\_\-\-Jww}}
+\index{$\sim$\-D\-L\-\_\-\-Jww@{$\sim$\-D\-L\-\_\-\-Jww}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{$\sim$\-D\-L\-\_\-\-Jww}]{\setlength{\rightskip}{0pt plus 5cm}D\-L\-\_\-\-Jww\-::$\sim$\-D\-L\-\_\-\-Jww (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_aa3e4099dc71d093b8a163b08c182dedf}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classDL__Jww_acc41f4c85577f14559f17211ac5a09cb}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Arc@{add\-Arc}}
+\index{add\-Arc@{add\-Arc}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Arc}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Arc (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_acc41f4c85577f14559f17211ac5a09cb}
+Adds a knot to the previously added spline. Adds a control point to the previously added spline. Adds an arc entity that was read from the file via the creation interface. \hypertarget{classDL__Jww_a17c123f29e2ac263c92a1726080bacbc}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Attrib@{add\-Attrib}}
+\index{add\-Attrib@{add\-Attrib}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Attrib}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Attrib (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a17c123f29e2ac263c92a1726080bacbc}
+Adds an attrib entity that was read from the file via the creation interface. \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]add attrib instead of normal text \end{DoxyRefDesc}
+
+
+Adds an attrib entity that was read from the file via the creation interface. \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000003}{Todo}]add attrib instead of normal text \end{DoxyRefDesc}
+\hypertarget{classDL__Jww_aed69df968bcb9bf0bffd088e018da522}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Block@{add\-Block}}
+\index{add\-Block@{add\-Block}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Block}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Block (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_aed69df968bcb9bf0bffd088e018da522}
+Adds a block that was read from the file via the creation interface. \hypertarget{classDL__Jww_a1b4a6deb83772971cc4a8403262b3cd7}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Circle@{add\-Circle}}
+\index{add\-Circle@{add\-Circle}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Circle}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Circle (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a1b4a6deb83772971cc4a8403262b3cd7}
+Adds a circle entity that was read from the file via the creation interface. \hypertarget{classDL__Jww_a6cdb659715136c13300febe280540a60}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Dim\-Aligned@{add\-Dim\-Aligned}}
+\index{add\-Dim\-Aligned@{add\-Dim\-Aligned}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Dim\-Aligned}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Dim\-Aligned (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a6cdb659715136c13300febe280540a60}
+Adds an aligned dimension entity that was read from the file via the creation interface. \hypertarget{classDL__Jww_af369b3ed0deb26433287b2f396e8f405}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Dim\-Angular@{add\-Dim\-Angular}}
+\index{add\-Dim\-Angular@{add\-Dim\-Angular}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Dim\-Angular}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Dim\-Angular (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_af369b3ed0deb26433287b2f396e8f405}
+Adds an angular dimension entity that was read from the file via the creation interface. \hypertarget{classDL__Jww_a9fc5ce1e80df56fc62854a618726b1c3}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Dim\-Angular3\-P@{add\-Dim\-Angular3\-P}}
+\index{add\-Dim\-Angular3\-P@{add\-Dim\-Angular3\-P}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Dim\-Angular3\-P}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Dim\-Angular3\-P (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a9fc5ce1e80df56fc62854a618726b1c3}
+Adds an angular dimension entity that was read from the file via the creation interface. \hypertarget{classDL__Jww_a622433317b17380b3202622ace625c9b}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Dim\-Diametric@{add\-Dim\-Diametric}}
+\index{add\-Dim\-Diametric@{add\-Dim\-Diametric}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Dim\-Diametric}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Dim\-Diametric (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a622433317b17380b3202622ace625c9b}
+Adds a diametric dimension entity that was read from the file via the creation interface. \hypertarget{classDL__Jww_aac79a956728e59e7eefa3093815c3f6f}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Dim\-Linear@{add\-Dim\-Linear}}
+\index{add\-Dim\-Linear@{add\-Dim\-Linear}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Dim\-Linear}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Dim\-Linear (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_aac79a956728e59e7eefa3093815c3f6f}
+Adds a linear dimension entity that was read from the file via the creation interface. \hypertarget{classDL__Jww_a3d755a59470ea63e942b7ee8adc61ba0}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Dim\-Radial@{add\-Dim\-Radial}}
+\index{add\-Dim\-Radial@{add\-Dim\-Radial}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Dim\-Radial}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Dim\-Radial (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a3d755a59470ea63e942b7ee8adc61ba0}
+Adds a radial dimension entity that was read from the file via the creation interface. \hypertarget{classDL__Jww_a184d596b538825525ce5301cba9cb89e}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Ellipse@{add\-Ellipse}}
+\index{add\-Ellipse@{add\-Ellipse}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Ellipse}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Ellipse (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a184d596b538825525ce5301cba9cb89e}
+Adds an ellipse entity that was read from the file via the creation interface. \hypertarget{classDL__Jww_a638e43dfce889a5e84b2f5979eff7af1}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Hatch@{add\-Hatch}}
+\index{add\-Hatch@{add\-Hatch}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Hatch}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Hatch (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a638e43dfce889a5e84b2f5979eff7af1}
+Adds a hatch entity that was read from the file via the creation interface. \hypertarget{classDL__Jww_a4d5716211e828da57656c6b751c1f248}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Image@{add\-Image}}
+\index{add\-Image@{add\-Image}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Image}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Image (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a4d5716211e828da57656c6b751c1f248}
+Adds an image entity that was read from the file via the creation interface. \hypertarget{classDL__Jww_a33aba2b7bbaf06fab909ce9547a08e8f}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Image\-Def@{add\-Image\-Def}}
+\index{add\-Image\-Def@{add\-Image\-Def}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Image\-Def}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Image\-Def (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a33aba2b7bbaf06fab909ce9547a08e8f}
+Adds an image definition that was read from the file via the creation interface. \hypertarget{classDL__Jww_a1a76a7e3e93dff3320472b81fd083a8a}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Insert@{add\-Insert}}
+\index{add\-Insert@{add\-Insert}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Insert}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Insert (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a1a76a7e3e93dff3320472b81fd083a8a}
+Adds an insert entity that was read from the file via the creation interface. \hypertarget{classDL__Jww_ad0b4ab866d5dd808d4f9f342396b8266}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Layer@{add\-Layer}}
+\index{add\-Layer@{add\-Layer}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Layer (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_ad0b4ab866d5dd808d4f9f342396b8266}
+Adds a layer that was read from the file via the creation interface. \hypertarget{classDL__Jww_a464f0ff227afcac6aadb85c4d5c2dba2}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Leader@{add\-Leader}}
+\index{add\-Leader@{add\-Leader}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Leader}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Leader (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a464f0ff227afcac6aadb85c4d5c2dba2}
+Adds a leader entity that was read from the file via the creation interface. \hypertarget{classDL__Jww_a290faf39f4ee51d3fb715560e1f22a4f}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Line@{add\-Line}}
+\index{add\-Line@{add\-Line}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Line (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a290faf39f4ee51d3fb715560e1f22a4f}
+Adds a line entity that was read from the file via the creation interface. \hypertarget{classDL__Jww_a958e6554d2b62ee953a86721b0558b52}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-M\-Text@{add\-M\-Text}}
+\index{add\-M\-Text@{add\-M\-Text}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-M\-Text}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-M\-Text (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a958e6554d2b62ee953a86721b0558b52}
+Adds an M\-Text entity that was read from the file via the creation interface. \hypertarget{classDL__Jww_a062805465b6d38b19185e6370051e0bf}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Point@{add\-Point}}
+\index{add\-Point@{add\-Point}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Point}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Point (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a062805465b6d38b19185e6370051e0bf}
+Adds a point entity that was read from the file via the creation interface. \hypertarget{classDL__Jww_a4edf5d3635d7c803cdc3c452564ea3ed}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Polyline@{add\-Polyline}}
+\index{add\-Polyline@{add\-Polyline}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Polyline}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Polyline (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a4edf5d3635d7c803cdc3c452564ea3ed}
+Adds a polyline entity that was read from the file via the creation interface. \hypertarget{classDL__Jww_ab000bb3f54570a44fd01c9add1bd0726}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Setting@{add\-Setting}}
+\index{add\-Setting@{add\-Setting}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Setting}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Setting (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_ab000bb3f54570a44fd01c9add1bd0726}
+Adds a variable from the D\-X\-F file. \hypertarget{classDL__Jww_a9a23b3106508562afc648f03b7275d9c}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Solid@{add\-Solid}}
+\index{add\-Solid@{add\-Solid}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Solid}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Solid (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a9a23b3106508562afc648f03b7275d9c}
+Adds a solid entity (filled trace) that was read from the file via the creation interface.
+
+\begin{DoxyAuthor}{Author}
+A\-H\-M 
+\end{DoxyAuthor}
+\hypertarget{classDL__Jww_a9df7f11c29f2dae33bbab5d109c887d4}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Spline@{add\-Spline}}
+\index{add\-Spline@{add\-Spline}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Spline}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Spline (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a9df7f11c29f2dae33bbab5d109c887d4}
+Adds a spline entity that was read from the file via the creation interface. \hypertarget{classDL__Jww_a363455add370595edf87f35b62dcf486}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Text@{add\-Text}}
+\index{add\-Text@{add\-Text}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Text}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Text (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a363455add370595edf87f35b62dcf486}
+Adds an text entity that was read from the file via the creation interface. \hypertarget{classDL__Jww_af7f4691ea21313ebd679965461af750d}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Trace@{add\-Trace}}
+\index{add\-Trace@{add\-Trace}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Trace}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Trace (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_af7f4691ea21313ebd679965461af750d}
+Adds a trace entity (4 edge closed polyline) that was read from the file via the creation interface.
+
+\begin{DoxyAuthor}{Author}
+A\-H\-M 
+\end{DoxyAuthor}
+\hypertarget{classDL__Jww_a1d235c3ce741b812323635caf18bd310}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!add\-Vertex@{add\-Vertex}}
+\index{add\-Vertex@{add\-Vertex}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{add\-Vertex}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::add\-Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a1d235c3ce741b812323635caf18bd310}
+Adds a polyline vertex entity that was read from the file via the creation interface. \hypertarget{classDL__Jww_ad24d539b89e190a20792918229eac553}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!check\-Variable@{check\-Variable}}
+\index{check\-Variable@{check\-Variable}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{check\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}bool D\-L\-\_\-\-Jww\-::check\-Variable (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{var, }
+\item[{{\bf D\-L\-\_\-\-Codes\-::version}}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classDL__Jww_ad24d539b89e190a20792918229eac553}
+Checks if the given variable is known by the given D\-X\-F version. \hypertarget{classDL__Jww_a1084339c6f7ba10405e1a60a768673fc}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!end\-Block@{end\-Block}}
+\index{end\-Block@{end\-Block}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{end\-Block}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::end\-Block (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a1084339c6f7ba10405e1a60a768673fc}
+Ends a block that was read from the file via the creation interface. \hypertarget{classDL__Jww_ac087ba128079598ea41ee114978a6bd2}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!end\-Entity@{end\-Entity}}
+\index{end\-Entity@{end\-Entity}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{end\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::end\-Entity (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_ac087ba128079598ea41ee114978a6bd2}
+Ends some special entities like hatches or old style polylines. \hypertarget{classDL__Jww_a64b01766fcbddeeb15f3dd25c4d904c1}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!end\-Sequence@{end\-Sequence}}
+\index{end\-Sequence@{end\-Sequence}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{end\-Sequence}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::end\-Sequence (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a64b01766fcbddeeb15f3dd25c4d904c1}
+Ends a sequence and notifies the creation interface. \hypertarget{classDL__Jww_a5a9706b7ab9fa9fe7c8ff45633d4f2c8}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!get\-Dim\-Data@{get\-Dim\-Data}}
+\index{get\-Dim\-Data@{get\-Dim\-Data}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{get\-Dim\-Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-L\-\_\-\-Dimension\-Data} D\-L\-\_\-\-Jww\-::get\-Dim\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a5a9706b7ab9fa9fe7c8ff45633d4f2c8}
+\begin{DoxyReturn}{Returns}
+dimension data from current values. 
+\end{DoxyReturn}
+\hypertarget{classDL__Jww_a08cfa285f902c87a45c8beed373a8d2b}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!get\-Lib\-Version@{get\-Lib\-Version}}
+\index{get\-Lib\-Version@{get\-Lib\-Version}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{get\-Lib\-Version}]{\setlength{\rightskip}{0pt plus 5cm}int D\-L\-\_\-\-Jww\-::get\-Lib\-Version (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a08cfa285f902c87a45c8beed373a8d2b}
+\begin{DoxyReturn}{Returns}
+the library version as int (4 bytes, each byte one version number). e.\-g. if str = \char`\"{}2.\-0.\-2.\-0\char`\"{} get\-Lib\-Version returns 0x02000200 
+\end{DoxyReturn}
+\hypertarget{classDL__Jww_a233bc4b34189839f73298cb7133d949c}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!handle\-Hatch\-Data@{handle\-Hatch\-Data}}
+\index{handle\-Hatch\-Data@{handle\-Hatch\-Data}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{handle\-Hatch\-Data}]{\setlength{\rightskip}{0pt plus 5cm}bool D\-L\-\_\-\-Jww\-::handle\-Hatch\-Data (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a233bc4b34189839f73298cb7133d949c}
+Handles additional hatch data. \hypertarget{classDL__Jww_a9d496ac42563373a3e4d4893764cb9b8}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!handle\-Leader\-Data@{handle\-Leader\-Data}}
+\index{handle\-Leader\-Data@{handle\-Leader\-Data}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{handle\-Leader\-Data}]{\setlength{\rightskip}{0pt plus 5cm}bool D\-L\-\_\-\-Jww\-::handle\-Leader\-Data (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a9d496ac42563373a3e4d4893764cb9b8}
+Handles additional leader data. \hypertarget{classDL__Jww_a36c6c0ca2b9df638e72204ea028b9290}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!handle\-L\-W\-Polyline\-Data@{handle\-L\-W\-Polyline\-Data}}
+\index{handle\-L\-W\-Polyline\-Data@{handle\-L\-W\-Polyline\-Data}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{handle\-L\-W\-Polyline\-Data}]{\setlength{\rightskip}{0pt plus 5cm}bool D\-L\-\_\-\-Jww\-::handle\-L\-W\-Polyline\-Data (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a36c6c0ca2b9df638e72204ea028b9290}
+Handles additional polyline data. \hypertarget{classDL__Jww_ac8f27defc2e61d310f17bd2b8ecc54f2}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!handle\-M\-Text\-Data@{handle\-M\-Text\-Data}}
+\index{handle\-M\-Text\-Data@{handle\-M\-Text\-Data}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{handle\-M\-Text\-Data}]{\setlength{\rightskip}{0pt plus 5cm}bool D\-L\-\_\-\-Jww\-::handle\-M\-Text\-Data (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_ac8f27defc2e61d310f17bd2b8ecc54f2}
+Handles additional M\-Text data. \hypertarget{classDL__Jww_aa5f8dbcc6ea9f102fd8a49aa736c73bd}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!handle\-Spline\-Data@{handle\-Spline\-Data}}
+\index{handle\-Spline\-Data@{handle\-Spline\-Data}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{handle\-Spline\-Data}]{\setlength{\rightskip}{0pt plus 5cm}bool D\-L\-\_\-\-Jww\-::handle\-Spline\-Data (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_aa5f8dbcc6ea9f102fd8a49aa736c73bd}
+Handles additional spline data. \hypertarget{classDL__Jww_a08c6ea45c58369fa8082fe085ac7c515}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!in@{in}}
+\index{in@{in}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{in}]{\setlength{\rightskip}{0pt plus 5cm}bool D\-L\-\_\-\-Jww\-::in (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{file, }
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a08c6ea45c58369fa8082fe085ac7c515}
+
+
+Reads the given file and calls the appropriate functions in the given creation interface for every entity found in the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & Input Path and name of file to read \\
+\hline
+{\em creation\-Interface} & Pointer to the class which takes care of the entities in the file.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & If {\ttfamily file} could be opened. \\
+\hline
+{\em false} & If {\ttfamily file} could not be opened.\\
+\hline
+\end{DoxyRetVals}
+Reads a D\-X\-F file from an existing stream.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The string stream. \\
+\hline
+{\em creation\-Interface} & Pointer to the class which takes care of the entities in the file.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & If {\ttfamily file} could be opened. \\
+\hline
+{\em false} & If {\ttfamily file} could not be opened. \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{classDL__Jww_aad15221b60ada330f8ec03a6060465da}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!out@{out}}
+\index{out@{out}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{out}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-L\-\_\-\-Writer\-A} $\ast$ D\-L\-\_\-\-Jww\-::out (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file, }
+\item[{{\bf D\-L\-\_\-\-Codes\-::version}}]{version = {\ttfamily VER\-\_\-2000}}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_aad15221b60ada330f8ec03a6060465da}
+
+
+Opens the given file for writing and returns a pointer to the dxf writer. This pointer needs to be passed on to other writing functions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & Full path of the file to open.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to an ascii dxf writer object. 
+\end{DoxyReturn}
+\hypertarget{classDL__Jww_a8b43a0934fe87abd26f8836c29d1be07}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!process\-Jww\-Group@{process\-Jww\-Group}}
+\index{process\-Jww\-Group@{process\-Jww\-Group}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{process\-Jww\-Group}]{\setlength{\rightskip}{0pt plus 5cm}bool D\-L\-\_\-\-Jww\-::process\-Jww\-Group (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Creation\-Interface} $\ast$}]{creation\-Interface, }
+\item[{int}]{group\-Code, }
+\item[{const char $\ast$}]{group\-Value}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a8b43a0934fe87abd26f8836c29d1be07}
+Processes a group (pair of group code and value).
+
+
+\begin{DoxyParams}{Parameters}
+{\em creation\-Interface} & Handle to class that creates entities and other C\-A\-D data from D\-X\-F group codes\\
+\hline
+{\em group\-Code} & Constant indicating the data type of the group. \\
+\hline
+{\em group\-Value} & The data value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & if done processing current entity and new entity begun \\
+\hline
+{\em false} & if not done processing current entity \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{classDL__Jww_a7261b1a7090ab37ac757dfe47c490100}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!string\-To\-Int@{string\-To\-Int}}
+\index{string\-To\-Int@{string\-To\-Int}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{string\-To\-Int}]{\setlength{\rightskip}{0pt plus 5cm}int D\-L\-\_\-\-Jww\-::string\-To\-Int (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s, }
+\item[{bool $\ast$}]{ok = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a7261b1a7090ab37ac757dfe47c490100}
+Converts the given string into an int. ok is set to false if there was an error. \hypertarget{classDL__Jww_a91a4c8cfe9f0feab648fe321f0ce99ce}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!to\-Int@{to\-Int}}
+\index{to\-Int@{to\-Int}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{to\-Int}]{\setlength{\rightskip}{0pt plus 5cm}static int D\-L\-\_\-\-Jww\-::to\-Int (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{value, }
+\item[{int}]{def = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classDL__Jww_a91a4c8cfe9f0feab648fe321f0ce99ce}
+Converts the given string into an int or returns the given default valud (def) if value is N\-U\-L\-L or empty. \hypertarget{classDL__Jww_a6a95607e4af33bb104255c203d7c7152}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!to\-Real@{to\-Real}}
+\index{to\-Real@{to\-Real}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{to\-Real}]{\setlength{\rightskip}{0pt plus 5cm}static double D\-L\-\_\-\-Jww\-::to\-Real (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{value, }
+\item[{double}]{def = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classDL__Jww_a6a95607e4af33bb104255c203d7c7152}
+Converts the given string into a double or returns the given default valud (def) if value is N\-U\-L\-L or empty. \hypertarget{classDL__Jww_abad4d8debb1e9b5d58b01d072178913e}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ D\-L\-\_\-\-Jww\-::to\-String (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{value, }
+\item[{const char $\ast$}]{def = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classDL__Jww_abad4d8debb1e9b5d58b01d072178913e}
+Converts the given string into a string or returns the given default valud (def) if value is N\-U\-L\-L or empty. \hypertarget{classDL__Jww_a764515ba3869e0caef71cb431a707b3e}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Appid@{write\-Appid}}
+\index{write\-Appid@{write\-Appid}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Appid}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Appid (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const string \&}]{name}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a764515ba3869e0caef71cb431a707b3e}
+Writes the A\-P\-P\-I\-D section to the D\-X\-F file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Application name \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_a1a9da4bf1b26a3466afadda87fc3e56d}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Arc@{write\-Arc}}
+\index{write\-Arc@{write\-Arc}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Arc}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Arc (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Arc\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a1a9da4bf1b26a3466afadda87fc3e56d}
+Writes an arc entity to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Entity data from the file \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_a2604a086785c870ea6b0f0710b7fca3a}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Block@{write\-Block}}
+\index{write\-Block@{write\-Block}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Block}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Block (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Block\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a2604a086785c870ea6b0f0710b7fca3a}
+Writes a block's definition (no entities) to the D\-X\-F file. strcasecmp(name, \char`\"{}$\ast$paper\-\_\-space0\char`\"{}); \hypertarget{classDL__Jww_a2d131ed835cf3a6872b0486edcaf2f28}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Block\-Record@{write\-Block\-Record}}
+\index{write\-Block\-Record@{write\-Block\-Record}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Block\-Record}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Block\-Record (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a2d131ed835cf3a6872b0486edcaf2f28}
+Writes a blockrecord section. This section is needed in V\-E\-R\-\_\-\-R13. Note that this method currently only writes a faked B\-L\-O\-C\-K\-R\-E\-C\-O\-R\-D section to make the file readable by Aut$\ast$cad. \hypertarget{classDL__Jww_aae6742d43025466554cfd047da56b567}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Block\-Record@{write\-Block\-Record}}
+\index{write\-Block\-Record@{write\-Block\-Record}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Block\-Record}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Block\-Record (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const string \&}]{name}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_aae6742d43025466554cfd047da56b567}
+Writes a single block record with the given name. \hypertarget{classDL__Jww_a31380c1fd71a80c4c5bc971fa9b75700}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Circle@{write\-Circle}}
+\index{write\-Circle@{write\-Circle}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Circle}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Circle (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Circle\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a31380c1fd71a80c4c5bc971fa9b75700}
+Writes a circle entity to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Entity data from the file \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_a1c265cc4dfc39a2ff89e03044668b3c8}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Control\-Point@{write\-Control\-Point}}
+\index{write\-Control\-Point@{write\-Control\-Point}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Control\-Point}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Control\-Point (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Control\-Point\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a1c265cc4dfc39a2ff89e03044668b3c8}
+Writes a single control point of a spline to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Entity data from the file \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_a29bdac82f784c2c5da01c848db044b73}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Dim\-Aligned@{write\-Dim\-Aligned}}
+\index{write\-Dim\-Aligned@{write\-Dim\-Aligned}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Dim\-Aligned}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Dim\-Aligned (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Dimension\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Dim\-Aligned\-Data} \&}]{edata, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a29bdac82f784c2c5da01c848db044b73}
+Writes an aligned dimension entity to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Generic dimension data for from the file \\
+\hline
+{\em data} & Specific aligned dimension data from the file \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_a562f795baba64bb1de43e5dc79db3482}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Dim\-Angular@{write\-Dim\-Angular}}
+\index{write\-Dim\-Angular@{write\-Dim\-Angular}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Dim\-Angular}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Dim\-Angular (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Dimension\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Dim\-Angular\-Data} \&}]{edata, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a562f795baba64bb1de43e5dc79db3482}
+Writes an angular dimension entity to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Generic dimension data for from the file \\
+\hline
+{\em data} & Specific angular dimension data from the file \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_a9ce2b1d96a5306504cd786acf5cf38bf}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Dim\-Angular3\-P@{write\-Dim\-Angular3\-P}}
+\index{write\-Dim\-Angular3\-P@{write\-Dim\-Angular3\-P}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Dim\-Angular3\-P}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Dim\-Angular3\-P (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Dimension\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Dim\-Angular3\-P\-Data} \&}]{edata, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a9ce2b1d96a5306504cd786acf5cf38bf}
+Writes an angular dimension entity (3 points version) to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Generic dimension data for from the file \\
+\hline
+{\em data} & Specific angular dimension data from the file \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_a57e1bd75c5f9044b320a6731f45a30f6}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Dim\-Diametric@{write\-Dim\-Diametric}}
+\index{write\-Dim\-Diametric@{write\-Dim\-Diametric}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Dim\-Diametric}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Dim\-Diametric (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Dimension\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Dim\-Diametric\-Data} \&}]{edata, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a57e1bd75c5f9044b320a6731f45a30f6}
+Writes a diametric dimension entity to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Generic dimension data for from the file \\
+\hline
+{\em data} & Specific diametric dimension data from the file \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_a3fc9a2f3a0b6acffe398d7fd4f7286b3}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Dim\-Linear@{write\-Dim\-Linear}}
+\index{write\-Dim\-Linear@{write\-Dim\-Linear}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Dim\-Linear}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Dim\-Linear (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Dimension\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Dim\-Linear\-Data} \&}]{edata, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a3fc9a2f3a0b6acffe398d7fd4f7286b3}
+Writes a linear dimension entity to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Generic dimension data for from the file \\
+\hline
+{\em data} & Specific linear dimension data from the file \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_a63c86960d29f01c47acc8a86c9b5779e}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Dim\-Radial@{write\-Dim\-Radial}}
+\index{write\-Dim\-Radial@{write\-Dim\-Radial}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Dim\-Radial}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Dim\-Radial (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Dimension\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Dim\-Radial\-Data} \&}]{edata, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a63c86960d29f01c47acc8a86c9b5779e}
+Writes a radial dimension entity to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Generic dimension data for from the file \\
+\hline
+{\em data} & Specific radial dimension data from the file \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_a32ddda913f2538ce26eeeb9648f3ec7a}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Dim\-Style@{write\-Dim\-Style}}
+\index{write\-Dim\-Style@{write\-Dim\-Style}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Dim\-Style}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Dim\-Style (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{double}]{dimasz, }
+\item[{double}]{dimexe, }
+\item[{double}]{dimexo, }
+\item[{double}]{dimgap, }
+\item[{double}]{dimtxt}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a32ddda913f2538ce26eeeb9648f3ec7a}
+Writes a dimstyle section. This section is needed in V\-E\-R\-\_\-\-R13. Note that this method currently only writes a faked D\-I\-M\-S\-T\-Y\-L\-E section to make the file readable by Aut$\ast$cad. \hypertarget{classDL__Jww_a8c06577ca47cea35fafb6f568c19a8b5}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Ellipse@{write\-Ellipse}}
+\index{write\-Ellipse@{write\-Ellipse}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Ellipse}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Ellipse (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Ellipse\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a8c06577ca47cea35fafb6f568c19a8b5}
+Writes an ellipse entity to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Entity data from the file \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_a44ae7ddbcab7865514e8f04863887b42}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-End\-Block@{write\-End\-Block}}
+\index{write\-End\-Block@{write\-End\-Block}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-End\-Block}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-End\-Block (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const string \&}]{name}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a44ae7ddbcab7865514e8f04863887b42}
+Writes a block end.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Block name \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_a18fd5b69d891dc78605ba2ff1ed926d4}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Hatch1@{write\-Hatch1}}
+\index{write\-Hatch1@{write\-Hatch1}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Hatch1}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Hatch1 (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Hatch\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a18fd5b69d891dc78605ba2ff1ed926d4}
+Writes the beginning of a hatch entity to the file. This must be followed by one or more write\-Hatch\-Loop() calls and a \hyperlink{classDL__Jww_a77d8dc4678f6c7fb803a8d106044714a}{write\-Hatch2()} call.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Entity data. \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_a77d8dc4678f6c7fb803a8d106044714a}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Hatch2@{write\-Hatch2}}
+\index{write\-Hatch2@{write\-Hatch2}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Hatch2}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Hatch2 (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Hatch\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a77d8dc4678f6c7fb803a8d106044714a}
+Writes the end of a hatch entity to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Entity data. \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_ab468fed13399e34742fe9b5cc7115c1c}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Hatch\-Edge@{write\-Hatch\-Edge}}
+\index{write\-Hatch\-Edge@{write\-Hatch\-Edge}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Hatch\-Edge}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Hatch\-Edge (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Hatch\-Edge\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_ab468fed13399e34742fe9b5cc7115c1c}
+Writes the beginning of a hatch entity to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Entity data. \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_a84fec96772112d1a9e67695b015f4459}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Hatch\-Loop1@{write\-Hatch\-Loop1}}
+\index{write\-Hatch\-Loop1@{write\-Hatch\-Loop1}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Hatch\-Loop1}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Hatch\-Loop1 (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Hatch\-Loop\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a84fec96772112d1a9e67695b015f4459}
+Writes the beginning of a hatch loop to the file. This must happen after writing the beginning of a hatch entity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Entity data. \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_afe5795107046cbdecdbfc6d69c490827}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Hatch\-Loop2@{write\-Hatch\-Loop2}}
+\index{write\-Hatch\-Loop2@{write\-Hatch\-Loop2}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Hatch\-Loop2}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Hatch\-Loop2 (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Hatch\-Loop\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_afe5795107046cbdecdbfc6d69c490827}
+Writes the end of a hatch loop to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Entity data. \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_a16a70594a388162ca074ee82f6046425}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Image@{write\-Image}}
+\index{write\-Image@{write\-Image}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Image}]{\setlength{\rightskip}{0pt plus 5cm}int D\-L\-\_\-\-Jww\-::write\-Image (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Image\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a16a70594a388162ca074ee82f6046425}
+Writes an image entity.
+
+\begin{DoxyReturn}{Returns}
+I\-M\-A\-G\-E\-D\-E\-F handle. Needed for the I\-M\-A\-G\-E\-D\-E\-F counterpart. 
+\end{DoxyReturn}
+\hypertarget{classDL__Jww_a9b3c239e7248cb80e9a573aabf0ce806}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Image\-Def@{write\-Image\-Def}}
+\index{write\-Image\-Def@{write\-Image\-Def}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Image\-Def}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Image\-Def (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{int}]{handle, }
+\item[{const {\bf D\-L\-\_\-\-Image\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a9b3c239e7248cb80e9a573aabf0ce806}
+Writes an image definiition entity. \hypertarget{classDL__Jww_a0099b398f95cb2ebaadbf8cc5e5da26b}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Insert@{write\-Insert}}
+\index{write\-Insert@{write\-Insert}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Insert}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Insert (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Insert\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a0099b398f95cb2ebaadbf8cc5e5da26b}
+Writes an insert to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Entity data from the file \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_aaae8b4f870a9a582a86fb801e9a24c88}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Knot@{write\-Knot}}
+\index{write\-Knot@{write\-Knot}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Knot}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Knot (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Knot\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_aaae8b4f870a9a582a86fb801e9a24c88}
+Writes a single knot of a spline to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Entity data from the file \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_a147c0555f8b63c23a1bcafd5a44b8f38}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Layer@{write\-Layer}}
+\index{write\-Layer@{write\-Layer}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Layer}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Layer (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Layer\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a147c0555f8b63c23a1bcafd5a44b8f38}
+Writes a layer to the file. Layers are stored in the tables section of a D\-X\-F file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Entity data from the file \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_a2f48871dce3ce0424172212f7ff2a798}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Leader@{write\-Leader}}
+\index{write\-Leader@{write\-Leader}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Leader}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Leader (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Leader\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a2f48871dce3ce0424172212f7ff2a798}
+Writes a leader entity to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Entity data from the file \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classDL__Jww_a250cbdd4d5e8e4976fa72ad91329df9d}{write\-Vertex} 
+\end{DoxySeeAlso}
+\hypertarget{classDL__Jww_a3d15752d4c1d8178052b0cbf25b84296}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Leader\-Vertex@{write\-Leader\-Vertex}}
+\index{write\-Leader\-Vertex@{write\-Leader\-Vertex}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Leader\-Vertex}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Leader\-Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Leader\-Vertex\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a3d15752d4c1d8178052b0cbf25b84296}
+Writes a single vertex of a leader to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Entity data \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_a46875184f540e9b60a8ba86cdac0e247}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Line@{write\-Line}}
+\index{write\-Line@{write\-Line}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Line (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Line\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a46875184f540e9b60a8ba86cdac0e247}
+Writes a line entity to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Entity data from the file \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_a7978c1b58bc2b681e1b759e210ae8dad}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Line\-Type@{write\-Line\-Type}}
+\index{write\-Line\-Type@{write\-Line\-Type}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Line\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Line\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Line\-Type\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a7978c1b58bc2b681e1b759e210ae8dad}
+Writes a line type to the file. Line types are stored in the tables section of a D\-X\-F file. \hypertarget{classDL__Jww_aba56a9a5b0f8d87ff0f67bcfab58f2fd}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-M\-Text@{write\-M\-Text}}
+\index{write\-M\-Text@{write\-M\-Text}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-M\-Text}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-M\-Text (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-M\-Text\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_aba56a9a5b0f8d87ff0f67bcfab58f2fd}
+Writes a multi text entity to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Entity data from the file \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_a08f2617820707ce3ea4a6b2b5b8cb458}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Objects@{write\-Objects}}
+\index{write\-Objects@{write\-Objects}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Objects}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Objects (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a08f2617820707ce3ea4a6b2b5b8cb458}
+Writes a objects section. This section is needed in V\-E\-R\-\_\-\-R13. Note that this method currently only writes a faked O\-B\-J\-E\-C\-T\-S section to make the file readable by Aut$\ast$cad. \hypertarget{classDL__Jww_ad9204c6bfce1ac6eff07cd66ca215510}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Objects\-End@{write\-Objects\-End}}
+\index{write\-Objects\-End@{write\-Objects\-End}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Objects\-End}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Objects\-End (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_ad9204c6bfce1ac6eff07cd66ca215510}
+Writes the end of the objects section. This section is needed in V\-E\-R\-\_\-\-R13. Note that this method currently only writes a faked O\-B\-J\-E\-C\-T\-S section to make the file readable by Aut$\ast$cad. \hypertarget{classDL__Jww_a349bd7b4a2a09c5512287257290325fc}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Point@{write\-Point}}
+\index{write\-Point@{write\-Point}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Point}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Point (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Point\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a349bd7b4a2a09c5512287257290325fc}
+Writes a point entity to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Entity data from the file \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_a285fb0224b0b90c89af9f312f240c622}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Polyline@{write\-Polyline}}
+\index{write\-Polyline@{write\-Polyline}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Polyline}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Polyline (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Polyline\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a285fb0224b0b90c89af9f312f240c622}
+Writes a polyline entity to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Entity data from the file \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classDL__Jww_a250cbdd4d5e8e4976fa72ad91329df9d}{write\-Vertex} 
+\end{DoxySeeAlso}
+\hypertarget{classDL__Jww_a4baa9d770fb3668f4bbedbc098a64989}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Polyline\-End@{write\-Polyline\-End}}
+\index{write\-Polyline\-End@{write\-Polyline\-End}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Polyline\-End}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Polyline\-End (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a4baa9d770fb3668f4bbedbc098a64989}
+Writes the polyline end. Only needed for D\-X\-F R12. \hypertarget{classDL__Jww_a78a0f4a1f952297b1be5f275e6833dbb}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Spline@{write\-Spline}}
+\index{write\-Spline@{write\-Spline}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Spline}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Spline (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Spline\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a78a0f4a1f952297b1be5f275e6833dbb}
+Writes a spline entity to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Entity data from the file \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classDL__Jww_a1c265cc4dfc39a2ff89e03044668b3c8}{write\-Control\-Point} 
+\end{DoxySeeAlso}
+\hypertarget{classDL__Jww_aebc0e1fc77e63d17707887660bf0b334}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Style@{write\-Style}}
+\index{write\-Style@{write\-Style}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Style}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Style (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_aebc0e1fc77e63d17707887660bf0b334}
+Writes a style section. This section is needed in V\-E\-R\-\_\-\-R13. Note that this method currently only writes a faked S\-T\-Y\-L\-E section to make the file readable by Aut$\ast$cad. \hypertarget{classDL__Jww_abcdaff0bca8ced6c94e3cff9e3c758b1}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Text@{write\-Text}}
+\index{write\-Text@{write\-Text}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Text}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Text (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Text\-Data} \&}]{data, }
+\item[{const {\bf D\-L\-\_\-\-Attributes} \&}]{attrib}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_abcdaff0bca8ced6c94e3cff9e3c758b1}
+Writes a text entity to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Entity data from the file \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_a504de91e55fc8b897fa177e14ff96a5f}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Ucs@{write\-Ucs}}
+\index{write\-Ucs@{write\-Ucs}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Ucs}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Ucs (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a504de91e55fc8b897fa177e14ff96a5f}
+Writes a ucs section. This section is needed in V\-E\-R\-\_\-\-R13. Note that this method currently only writes a faked U\-C\-S section to make the file readable by Aut$\ast$cad. \hypertarget{classDL__Jww_a250cbdd4d5e8e4976fa72ad91329df9d}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-Vertex@{write\-Vertex}}
+\index{write\-Vertex@{write\-Vertex}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-Vertex}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw, }
+\item[{const {\bf D\-L\-\_\-\-Vertex\-Data} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a250cbdd4d5e8e4976fa72ad91329df9d}
+Writes a single vertex of a polyline to the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw} & D\-X\-F writer \\
+\hline
+{\em data} & Entity data from the file \\
+\hline
+{\em attrib} & Attributes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDL__Jww_a253faff9517a165071932dc688853b55}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-View@{write\-View}}
+\index{write\-View@{write\-View}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-View}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-View (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a253faff9517a165071932dc688853b55}
+Writes a view section. This section is needed in V\-E\-R\-\_\-\-R13. Note that this method currently only writes a faked V\-I\-E\-W section to make the file readable by Aut$\ast$cad. \hypertarget{classDL__Jww_a83d80c0542a39fe60fcc6281a6ad1e64}{\index{D\-L\-\_\-\-Jww@{D\-L\-\_\-\-Jww}!write\-V\-Port@{write\-V\-Port}}
+\index{write\-V\-Port@{write\-V\-Port}!DL_Jww@{D\-L\-\_\-\-Jww}}
+\subsubsection[{write\-V\-Port}]{\setlength{\rightskip}{0pt plus 5cm}void D\-L\-\_\-\-Jww\-::write\-V\-Port (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-L\-\_\-\-Writer\-A} \&}]{dw}
+\end{DoxyParamCaption}
+)}}\label{classDL__Jww_a83d80c0542a39fe60fcc6281a6ad1e64}
+Writes a viewport section. This section is needed in V\-E\-R\-\_\-\-R13. Note that this method currently only writes a faked V\-P\-O\-R\-T section to make the file readable by Aut$\ast$cad. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+libraries/jwwlib/src/dl\-\_\-jww.\-h\item 
+libraries/jwwlib/src/dl\-\_\-jww-\/copy.\-cpp\item 
+libraries/jwwlib/src/dl\-\_\-jww.\-cpp\end{DoxyCompactItemize}
